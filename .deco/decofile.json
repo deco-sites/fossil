@@ -1593,7 +1593,9 @@
       "height": 16
     },
     "alerts": [
-      "Use this template to create your store at deco.cx"
+      "Frete Grátis nas compras acima de R$799",
+      "AME com 5% de CASHBACK",
+      "15% NA PRIMEIRA COMPRA COM CUPOM BEMVINDO15"
     ],
     "navItems": {
       "__resolveType": "navbar"
@@ -3561,7 +3563,8 @@
       "titleTemplate": "Fossil | Site Oficial no Brasil",
       "description": "Acesse a loja oficial Fossil e conheça nosso catálogo de relógios, bolsas e acessórios. Tendência, design e exclusividade você encontra aqui.",
       "favicon": "https://fossil.vteximg.com.br/arquivos/fossil-favicon.png?v=636724531251600000",
-      "image": "https://www.fossil.com.br/arquivos/fossil-logo.png?v=638295235683070000"
+      "image": "https://www.fossil.com.br/arquivos/fossil-logo.png?v=638295235683070000",
+      "descriptionTemplate": "%s"
     },
     "theme": {
       "__resolveType": "Fashion theme"
