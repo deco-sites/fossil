@@ -3145,6 +3145,14 @@
         "__resolveType": "Header - 01"
       },
       {
+        "__resolveType": "site/sections/Content/PromotionalBanner.tsx",
+        "title": "CONFIRA OS ÚLTIMOS LANÇAMENTOS",
+        "button": {
+          "name": "Compre Agora",
+          "url": "/lancamentos?&utmi_p=_&utmi_pc=Html&utmi_cp=html"
+        }
+      },
+      {
         "__resolveType": "site/sections/Images/Carousel.tsx",
         "dots": false,
         "arrows": true,
@@ -3362,8 +3370,8 @@
         }
       },
       {
-        "title": "Best Sellers",
         "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
+        "title": "Best Sellers",
         "tabs": [
           {
             "title": "Woman",
