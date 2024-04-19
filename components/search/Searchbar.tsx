@@ -53,7 +53,7 @@ export interface Props {
 }
 
 function Searchbar({
-  placeholder = "What are you looking for?",
+  placeholder = "digite sua busca",
   action = "/s",
   name = "q",
   loader,
@@ -75,25 +75,14 @@ function Searchbar({
 
   return (
     <div
-      class="w-full grid gap-8 px-4 py-6 overflow-y-hidden"
-      style={{ gridTemplateRows: "min-content auto" }}
+      class="grid gap-8 px-4 py-6 overflow-y-hidden"
+      style={{ }}
     >
       <form id={id} action={action} class="join">
-        <Button
-          type="submit"
-          class="join-item btn-square"
-          aria-label="Search"
-          for={id}
-          tabIndex={-1}
-        >
-          {loading.value
-            ? <span class="loading loading-spinner loading-xs" />
-            : <Icon id="MagnifyingGlass" size={24} strokeWidth={0.01} />}
-        </Button>
         <input
           ref={searchInputRef}
           id="search-input"
-          class="input input-bordered join-item flex-grow"
+          class="input input-bordered join-item flex-grow w-64 font-semibold text-sm  lowercase text-[#262626] focus:outline-none px-4 border-none bg-[#f5f5f5]"
           name={name}
           onInput={(e) => {
             const value = e.currentTarget.value;
@@ -114,6 +103,19 @@ function Searchbar({
           aria-expanded={displaySearchPopup.value}
           autocomplete="off"
         />
+
+        <Button
+          type="submit"
+          class="border-none focus:outline-none px-4 bg-[#f5f5f5]"
+          aria-label="Search"
+          for={id}
+          tabIndex={-1}
+        >
+          {loading.value
+            ? <span class="loading loading-spinner loading-xs" />
+            : <Icon id="MagnifyingGlass" size={24} strokeWidth={0.01} />}
+        </Button>
+
         <Button
           type="button"
           class="join-item btn-ghost btn-square hidden sm:inline-flex"
@@ -125,7 +127,7 @@ function Searchbar({
       </form>
 
       <div
-        class={`overflow-y-scroll ${!hasProducts && !hasTerms ? "hidden" : ""}`}
+        class={`overflow-y-scroll ${!hasProducts && !hasTerms ? "hidden" : ""} absolute bg-white top-24 right-0 w-full`}
       >
         <div class="gap-4 grid grid-cols-1 sm:grid-rows-1 sm:grid-cols-[150px_1fr]">
           <div class="flex flex-col gap-6">

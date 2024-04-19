@@ -54,3 +54,7 @@
     --dot-progress: 100%
   }
 }
+
+.n1-custom-grid-navbar{
+  grid-template-columns: 1fr auto;
+}

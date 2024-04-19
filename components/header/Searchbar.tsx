@@ -7,9 +7,10 @@ import { useUI } from "../../sdk/useUI.ts";
 
 export interface Props {
   searchbar?: SearchbarProps;
+  device?: string
 }
 
-function SearchbarModal({ searchbar }: Props) {
+function SearchbarModal({ searchbar, device= "desktop" }: Props) {
   const { displaySearchPopup } = useUI();
 
   if (!searchbar) {
@@ -17,18 +18,22 @@ function SearchbarModal({ searchbar }: Props) {
   }
 
   return (
-    <Modal
-      loading="lazy"
-      open={displaySearchPopup.value}
-      onClose={() => displaySearchPopup.value = false}
-    >
-      <div
-        class="absolute top-0 bg-base-100 container"
-        style={{ marginTop: headerHeight }}
+    device === "desktop" ? (
+      <Searchbar {...searchbar} />
+    ) : (
+      <Modal
+        loading="lazy"
+        open={displaySearchPopup.value}
+        onClose={() => displaySearchPopup.value = false}
       >
-        <Searchbar {...searchbar} />
-      </div>
-    </Modal>
+        <div
+          className="absolute top-0 bg-base-100 container"
+          style={{ marginTop: headerHeight }}
+        >
+          <Searchbar {...searchbar} />
+        </div>
+      </Modal>
+    )
   );
 }
 

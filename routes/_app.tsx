@@ -34,6 +34,41 @@ export default defineApp(async (_req, ctx) => {
       {/* Rest of Preact tree */}
       <ctx.Component />
 
+
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+            @font-face{
+              font-family: 'Soleil-Regular';
+              src: url(${asset("/fonts/Soleil-Regular.otf")}) format('otf');
+              font-weight: 400;
+              font-style: normal;
+            }; 
+
+            @font-face{
+              font-family: 'Soleil-Black';
+              src: url(${asset("/fonts/Soleil-Black.otf")}) format('otf');
+              font-weight: 900;
+              font-style: normal;
+            }; 
+
+            @font-face{
+              font-family: 'Soleil-Bold';
+              src: url(${asset("/fonts/Soleil-Bold.otf")}) format('otf');
+              font-weight: 400;
+              font-style: normal;
+            }; 
+           
+            @font-face{
+              font-family: 'Soleil-Light';
+              src: url(${asset("/fonts/Soleil-Light.otf")}) format('otf');
+              font-weight: 300;
+              font-style: normal;
+            }; 
+        `}}
+      />
+
+   
       {/* Include service worker */}
       <script
         type="module"
