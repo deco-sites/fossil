@@ -3618,7 +3618,7 @@
       "descriptionTemplate": "%s"
     },
     "theme": {
-      "__resolveType": "Fashion theme"
+      "__resolveType": "Fun"
     },
     "global": [
       {
@@ -3701,5 +3701,8 @@
   },
   "weather": {
     "__resolveType": "decohub/apps/weather.ts"
+  },
+  "My Theme": {
+    "__resolveType": "site/sections/Theme/Theme.tsx"
   }
 }
