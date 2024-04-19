@@ -2595,25 +2595,7 @@
             "@type": "ImageObject"
           }
         ],
-        "children": [
-          {
-            "url": "/feminino/saias",
-            "name": "Novidades",
-            "@type": "SiteNavigationElement",
-            "children": [
-              {
-                "url": "/feminino/vestidos",
-                "name": "Mais vendidos",
-                "@type": "SiteNavigationElement"
-              },
-              {
-                "url": "/feminino/vestidos",
-                "name": "Parcerias",
-                "@type": "SiteNavigationElement"
-              }
-            ]
-          }
-        ],
+        "children": [],
         "name": "Lançamentos"
       },
       {
@@ -2661,7 +2643,32 @@
               }
             ],
             "name": "Mecanismo",
-            "url": "https://www.fossil.com.br/relogio/masculino?PS=18&O=OrderByBestDiscountDESC"
+            "url": "/relogio/masculino?PS=18&O=OrderByBestDiscountDESC"
+          },
+          {
+            "image": [],
+            "children": [
+              {
+                "image": [],
+                "children": [],
+                "name": "Quadrada",
+                "url": "/relogio/masculino/quadrada?PS=18&O=OrderByBestDiscountDESC"
+              },
+              {
+                "image": [],
+                "children": [],
+                "name": "Redonda",
+                "url": "/relogio/masculino/redonda?PS=18&amp;O=OrderByBestDiscountDESC"
+              },
+              {
+                "image": [],
+                "children": [],
+                "name": "Retangular",
+                "url": "/relogio/masculino/retangular?PS=18&O=OrderByBestDiscountDESC"
+              }
+            ],
+            "name": "Caixa",
+            "url": "/relogio/masculino?PS=18&O=OrderByBestDiscountDESC"
           },
           {
             "image": [],
