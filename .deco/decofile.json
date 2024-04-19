@@ -2765,38 +2765,91 @@
         ],
         "children": [
           {
-            "url": "/feminino",
-            "name": "Feminino",
             "@type": "SiteNavigationElement",
             "children": [
               {
-                "url": "/feminino",
-                "name": "Camisetas",
-                "@type": "SiteNavigationElement"
+                "url": "/relogio/feminino/anadigi",
+                "@type": "SiteNavigationElement",
+                "name": "Anadigi"
               },
               {
-                "url": "/feminino",
-                "name": "Camisas",
-                "@type": "SiteNavigationElement"
+                "@type": "SiteNavigationElement",
+                "name": "Analógico",
+                "url": "/relogio/feminino/analogico"
+              },
+              {
+                "image": [],
+                "children": [],
+                "name": "Digital",
+                "url": "/relogio/feminino/digital"
+              },
+              {
+                "image": [],
+                "children": [],
+                "name": "Multifunção",
+                "url": "/relogio/feminino/multifuncao"
               }
-            ]
+            ],
+            "name": "Mecanismo",
+            "url": "/relogio/feminino"
           },
           {
-            "url": "/masculino",
-            "name": "Masculino",
             "@type": "SiteNavigationElement",
             "children": [
               {
-                "url": "/masculino",
-                "name": "Camisetas",
-                "@type": "SiteNavigationElement"
+                "@type": "SiteNavigationElement",
+                "name": "Quadrada",
+                "url": "/relogio/feminino/quadrada"
               },
               {
-                "url": "/masculino",
-                "name": "Regatas",
-                "@type": "SiteNavigationElement"
+                "@type": "SiteNavigationElement",
+                "name": "Redonda",
+                "url": "/relogio/feminino/redonda"
+              },
+              {
+                "image": [],
+                "children": [],
+                "name": "Retangular",
+                "url": "/relogio/feminino/retangular"
               }
-            ]
+            ],
+            "name": "Caixa",
+            "url": "/relogio/feminino"
+          },
+          {
+            "image": [],
+            "children": [
+              {
+                "image": [],
+                "children": [],
+                "name": "Aço",
+                "url": "/relogio/feminino/aco"
+              },
+              {
+                "image": [],
+                "children": [],
+                "name": "Silicone",
+                "url": "/relogio/feminino/silicone"
+              },
+              {
+                "image": [],
+                "children": [],
+                "name": "Cerâmica",
+                "url": "/relogio/feminino/ceramica"
+              },
+              {
+                "image": [],
+                "children": [],
+                "name": "Couro",
+                "url": "/relogio/feminino/couro"
+              }
+            ],
+            "name": "Pulseira",
+            "url": "/relogio/feminino"
+          },
+          {
+            "image": [],
+            "children": []
           }
         ],
         "name": "Relógio Feminino"
