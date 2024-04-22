@@ -7,10 +7,11 @@ export default {
   theme: {
     container: { center: true },
     fontFamily: {
-      "soleil-regular": "Soleil-Regular", 
-      "soleil-black":"Soleil-Black", 
-      "soleil-bold": "Soleil-Bold", 
-      "soleil-Light": "Soleil-Light"
+      "soleil-regular": "Soleil-Regular",
+      "soleil-bold": "Soleil-Bold",
+      "soleil-medium": "Soleil-Medium",
+      "soleil-light": "Soleil-Light",
+      "soleil-thin": "Soleil-Thin",
     },
     extend: {
       animation: {
@@ -22,8 +23,8 @@ export default {
           "100%": { transform: "translateX(-50%)" },
         },
       },
-      colors:{
-        "primary":"#262626"
+      colors: {
+        "primary": "#262626",
       },
     },
   },

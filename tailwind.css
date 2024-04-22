@@ -58,3 +58,19 @@
 .n1-custom-grid-navbar{
   grid-template-columns: 1fr auto;
 }
+
+.n1-custom-style-navbar{
+    display: table;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 500;
+    color: #262626;
+    padding-bottom: 6px;
+    margin-bottom: 8px;
+    border-bottom: 3px solid #262626;
+    text-transform: uppercase;
+}
+
+.n1-custom-text-shadow:hover{
+  text-shadow: 0 0 1px #000;
+}

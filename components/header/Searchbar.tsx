@@ -7,10 +7,10 @@ import { useUI } from "../../sdk/useUI.ts";
 
 export interface Props {
   searchbar?: SearchbarProps;
-  device?: string
+  device?: string;
 }
 
-function SearchbarModal({ searchbar, device= "desktop" }: Props) {
+function SearchbarModal({ searchbar, device = "desktop" }: Props) {
   const { displaySearchPopup } = useUI();
 
   if (!searchbar) {
@@ -18,9 +18,7 @@ function SearchbarModal({ searchbar, device= "desktop" }: Props) {
   }
 
   return (
-    device === "desktop" ? (
-      <Searchbar {...searchbar} />
-    ) : (
+    device === "desktop" ? <Searchbar {...searchbar} /> : (
       <Modal
         loading="lazy"
         open={displaySearchPopup.value}
