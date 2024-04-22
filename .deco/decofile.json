@@ -2905,7 +2905,39 @@
       {
         "url": "/acessorios",
         "@type": "SiteNavigationElement",
-        "children": [],
+        "children": [
+          {
+            "image": [],
+            "children": [
+              {
+                "image": [],
+                "children": [],
+                "name": "Bolsas Femininas",
+                "url": "/bolsasfemininas"
+              },
+              {
+                "image": [],
+                "children": [],
+                "name": "Acessórios Femininos",
+                "url": "/acessoriosfemininos"
+              },
+              {
+                "image": [],
+                "children": [],
+                "name": "Bolsas Masculinas",
+                "url": "/bolsasmasculinas"
+              },
+              {
+                "image": [],
+                "children": [],
+                "name": "Acessórios Masculinos",
+                "url": "/acessoriosmasculinos"
+              }
+            ],
+            "name": "Acessórios",
+            "url": "https://www.fossil.com.br/acessorios"
+          }
+        ],
         "name": "Acessórios"
       },
       {
