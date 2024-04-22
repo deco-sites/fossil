@@ -1612,7 +1612,7 @@
         },
         "__resolveType": "resolved"
       },
-      "placeholder": "What are you looking for?"
+      "placeholder": "digite sua busca"
     },
     "suggestions": {
       "products": [],
@@ -1979,7 +1979,25 @@
     "__resolveType": "website/matchers/device.ts"
   },
   "My Theme": {
-    "__resolveType": "site/sections/Theme/Theme.tsx"
+    "__resolveType": "site/sections/Theme/Theme.tsx",
+    "colorScheme": "light",
+    "buttonStyle": {
+      "--border-btn": "1px",
+      "--rounded-btn": "0.2rem",
+      "--btn-focus-scale": "0.95",
+      "--animation-btn": "0.25s"
+    },
+    "otherStyles": {
+      "--rounded-box": "1rem",
+      "--rounded-badge": "1.9rem",
+      "--animation-input": "0.2s",
+      "--tab-border": "1px",
+      "--tab-radius": "0.5rem"
+    },
+    "mode": "dark",
+    "font": {
+      "__resolveType": "website/loaders/fonts/local.ts"
+    }
   },
   "Newsletter - 01": {
     "form": {
@@ -3680,6 +3698,9 @@
       },
       {
         "__resolveType": "Footer - 04"
+      },
+      {
+        "__resolveType": "My Theme"
       }
     ],
     "__resolveType": "website/pages/Page.tsx"
