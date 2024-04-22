@@ -67,10 +67,11 @@ function Navbar(
 
   // Desktop header
   return (
-    <div class="container hidden sm:flex items-center justify-between border-b border-base-200 w-full px-6 relative">
+    <div class="container hidden sm:flex items-center justify-between border-base-200 w-full px-6 relative">
       <div
-        class={`flex ${logoPosition === "left" ? "justify-start -order-1" : "justify-center"
-          }`}
+        class={`flex ${
+          logoPosition === "left" ? "justify-start -order-1" : "justify-center"
+        }`}
       >
         {logo && (
           <a
@@ -91,18 +92,19 @@ function Navbar(
       <div class="flex-none grid n1-custom-grid-navbar items-center justif-center gap-6  w-full max-w-[1104px]">
         <div class="flex">
           <ul
-            class={`flex items-center gap-9 col-span-1 ${logoPosition === "left" ? "justify-center" : "justify-start"
-              }`}
+            class={`flex items-center gap-9 col-span-1 ${
+              logoPosition === "left" ? "justify-center" : "justify-start"
+            }`}
           >
             {items.map((item) => <NavItem item={item} />)}
           </ul>
-
         </div>
 
         <Searchbar searchbar={searchbar} device={"desktop"} />
-        {/* {!buttons?.hideWishlistButton && (
+
+        {!buttons?.hideWishlistButton && (
           <a
-            class="flex items-center text-xs font-thin"
+            class="items-center text-xs font-thin hidden"
             href="/wishlist"
             aria-label="Wishlist"
           >
@@ -114,7 +116,7 @@ function Navbar(
             </button>
             WISHLIST
           </a>
-        )} */}
+        )}
       </div>
     </div>
   );

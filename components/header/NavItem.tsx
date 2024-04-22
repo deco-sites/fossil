@@ -6,13 +6,26 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
   const { url, name, children } = item;
   const image = item?.image?.[0];
 
+  const hasSubMenu = children && children.length > 0 ? true : false;
   return (
-    <li class="group flex items-center">
-      <a href={url} class="py-6">
-        <span class={`group-hover:underline ${name === 'off' ? 'text-[#FF1010]': 'text-black' } uppercase text-sm font-medium`}>
+    <li
+      class={`group flex  ${
+        hasSubMenu
+          ? "n1-custom-text-shadow "
+          : "hover:border-primary border-transparent border-solid border-b-4"
+      }  items-center`}
+    >
+      <a href={url} class="py-6 ">
+        <span
+          class={`${
+            name === "off" ? "text-[#FF1010]" : "text-black)"
+          } uppercase text-sm font-medium`}
+        >
           {name}
         </span>
       </a>
+
+      {/* <div class="w-full h-2 hover:bg-primary"></div> */}
 
       {children && children.length > 0 &&
         (
@@ -23,15 +36,18 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
             <ul class="flex items-start justify-center gap-6">
               {children.map((node) => (
                 <li class="p-6">
-                  <a class="hover:underline" href={node.url}>
+                  <a class="n1-custom-style-navbar" href={node.url}>
                     <span>{node.name}</span>
                   </a>
 
-                  <ul class="flex flex-col gap-1 mt-4">
+                  <ul class="flex flex-col mt-4">
                     {node.children?.map((leaf) => (
                       <li>
-                        <a class="hover:underline" href={leaf.url}>
-                          <span class="text-xs">{leaf.name}</span>
+                        <a
+                          class=" text-[18px]  w-full leading-6 font-medium uppercase text-primary whitespace-nowrap"
+                          href={leaf.url}
+                        >
+                          <span class="">{leaf.name}</span>
                         </a>
                       </li>
                     ))}
@@ -40,16 +56,20 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
               ))}
             </ul>
 
-            {image?.url && (
-              <Image
-                class="p-6"
-                src={image.url}
-                alt={image.alternateName}
-                width={300}
-                height={332}
-                loading="lazy"
-              />
-            )}
+            <div class="flex items-center justify-center gap-6">
+              {item?.image && item.image.map((image) => (
+                image?.url && (
+                  <Image
+                    className="pt-6"
+                    src={image.url}
+                    alt={image.alternateName}
+                    width={205}
+                    height={236}
+                    loading="lazy"
+                  />
+                )
+              ))}
+            </div>
           </div>
         )}
     </li>

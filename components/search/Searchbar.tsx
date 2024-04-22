@@ -75,8 +75,8 @@ function Searchbar({
 
   return (
     <div
-      class="grid gap-8 px-4 py-6 overflow-y-hidden"
-      style={{ }}
+      class="grid gap-8 py-6 overflow-y-hidden"
+      style={{}}
     >
       <form id={id} action={action} class="join">
         <input
@@ -118,7 +118,7 @@ function Searchbar({
 
         <Button
           type="button"
-          class="join-item btn-ghost btn-square hidden sm:inline-flex"
+          class="join-item btn-ghost btn-square hidden"
           onClick={() => displaySearchPopup.value = false}
           ariaLabel={displaySearchPopup.value ? "open search" : "search closed"}
         >
@@ -127,7 +127,9 @@ function Searchbar({
       </form>
 
       <div
-        class={`overflow-y-scroll ${!hasProducts && !hasTerms ? "hidden" : ""} absolute bg-white top-24 right-0 w-full`}
+        class={`overflow-y-scroll ${
+          !hasProducts && !hasTerms ? "hidden" : ""
+        } absolute bg-white top-24 right-0 w-full`}
       >
         <div class="gap-4 grid grid-cols-1 sm:grid-rows-1 sm:grid-cols-[150px_1fr]">
           <div class="flex flex-col gap-6">
