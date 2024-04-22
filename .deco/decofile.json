@@ -2780,8 +2780,11 @@
         "@type": "SiteNavigationElement",
         "image": [
           {
-            "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/5e9310c0-c725-4643-ade3-f92a505bd1d6",
+            "url": "https://www.fossil.com.br/arquivos/banner-menu-feminino-fossil2.png?v=638439696800370000",
             "@type": "ImageObject"
+          },
+          {
+            "url": "https://www.fossil.com.br/arquivos/banner-menu-feminino-fossil.png?v=638439696797300000"
           }
         ],
         "children": [
@@ -2956,7 +2959,15 @@
             "url": "https://www.fossil.com.br/acessorios"
           }
         ],
-        "name": "Acessórios"
+        "name": "Acessórios",
+        "image": [
+          {
+            "url": "https://www.fossil.com.br/arquivos/banner-feminino-acessorios-couro.png?v=638439698465900000"
+          },
+          {
+            "url": "https://www.fossil.com.br/arquivos/banner-masculino-acessorios-couro.png?v=638439698466500000"
+          }
+        ]
       },
       {
         "children": [],
