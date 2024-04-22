@@ -1978,6 +1978,9 @@
     "mobile": true,
     "__resolveType": "website/matchers/device.ts"
   },
+  "My Theme": {
+    "__resolveType": "site/sections/Theme/Theme.tsx"
+  },
   "Newsletter - 01": {
     "form": {
       "helpText": "<p>By subscribing you agree to with our <u>Privacy Policy</u>.</p>",
@@ -2849,7 +2852,52 @@
           },
           {
             "image": [],
-            "children": []
+            "children": [
+              {
+                "image": [],
+                "children": [],
+                "name": "Color",
+                "url": "/relogio/feminino/color"
+              },
+              {
+                "image": [],
+                "children": [],
+                "name": "Dourado",
+                "url": "/relogio/feminino/dourado"
+              },
+              {
+                "image": [],
+                "children": [],
+                "name": "Prata",
+                "url": "/relogio/feminino/prata"
+              },
+              {
+                "image": [],
+                "children": [],
+                "name": "Preto",
+                "url": "/relogio/feminino/preto"
+              },
+              {
+                "image": [],
+                "children": [],
+                "name": "Rosê",
+                "url": "/relogio/feminino/rose"
+              },
+              {
+                "image": [],
+                "children": [],
+                "name": "Bicolor",
+                "url": "/relogio/feminino/bicolor"
+              },
+              {
+                "image": [],
+                "children": [],
+                "name": "Especiais",
+                "url": "/relogio/feminino/especiais"
+              }
+            ],
+            "name": "Cor",
+            "url": "/relogio/feminino"
           }
         ],
         "name": "Relógio Feminino"
@@ -3830,8 +3878,5 @@
   },
   "weather": {
     "__resolveType": "decohub/apps/weather.ts"
-  },
-  "My Theme": {
-    "__resolveType": "site/sections/Theme/Theme.tsx"
   }
 }
