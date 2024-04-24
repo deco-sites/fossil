@@ -67,7 +67,7 @@ function Navbar(
 
   // Desktop header
   return (
-    <div class="container hidden sm:flex items-center justify-between border-base-200 w-full px-6 relative">
+    <div class="hidden sm:flex items-center justify-between border-base-200 w-full max-w-screen-2xl m-auto px-6 relative">
       <div
         class={`flex ${
           logoPosition === "left" ? "justify-start -order-1" : "justify-center"
