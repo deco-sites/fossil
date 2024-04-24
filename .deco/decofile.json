@@ -3439,29 +3439,19 @@
             "alt": "dia das maes"
           },
           {
-            "alt": "Masculino",
             "action": {
-              "href": "/masculino",
-              "label": "Explore collection",
-              "title": "VTEX Store",
-              "subTitle": "Visit our site and start building now:"
+              "href": "/",
+              "label": "  ",
+              "title": " ",
+              "subTitle": " "
             },
-            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/c007e481-b1c6-4122-9761-5c3e554512c1",
-            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/d057fc10-5616-4f12-8d4c-201bb47a81f5"
-          },
-          {
-            "alt": "Vestidos",
-            "action": {
-              "href": "/feminino/roupas/vestidos",
-              "label": "Explore collection",
-              "title": "VTEX Store",
-              "subTitle": "Visit our site and start building now:"
-            },
-            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/c007e481-b1c6-4122-9761-5c3e554512c1",
-            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/d057fc10-5616-4f12-8d4c-201bb47a81f5"
+            "mobile": "https://timecenter.vteximg.com.br/arquivos/ids/220563/Banner_slide_mob_maescarlette(320x380).png?v=638491419091700000",
+            "desktop": "https://timecenter.vteximg.com.br/arquivos/ids/220562/banner_slide_desk_maescarlette(1920x600).png?v=638491418635530000",
+            "alt": "scarllet "
           }
         ],
-        "preload": true
+        "preload": true,
+        "interval": 4
       },
       {
         "__resolveType": "site/sections/Miscellaneous/Slide.tsx",
