@@ -32,15 +32,14 @@ function Navbar(
   if (device === "mobile") {
     return (
       <div
-        style={{ height: navbarHeight }}
-        class="lg:hidden grid grid-cols-3 justify-between items-center border-b border-base-200 w-full px-6 pb-6 gap-2"
+        style={``}
+        class="lg:hidden flex  justify-between items-center w-full px-4 py-4 gap-2"
       >
-        <MenuButton />
-        {logo && (
+         {logo && (
           <a
             href="/"
-            class="flex-grow inline-flex items-center justify-center"
-            style={{ minHeight: navbarHeight }}
+            class="flex-grow inline-flex items-center md:justify-center"
+            style={``}
             aria-label="Store logo"
           >
             <Image
@@ -52,7 +51,7 @@ function Navbar(
           </a>
         )}
 
-        <div class="flex justify-end gap-1">
+        <div class="flex  items-center justify-center  gap-1">
           <SearchButton />
           {platform === "vtex" && <CartButtonVTEX />}
           {platform === "vnda" && <CartButtonVDNA />}
@@ -60,6 +59,8 @@ function Navbar(
           {platform === "linx" && <CartButtonLinx />}
           {platform === "shopify" && <CartButtonShopify />}
           {platform === "nuvemshop" && <CartButtonNuvemshop />}
+          
+        <MenuButton />
         </div>
       </div>
     );

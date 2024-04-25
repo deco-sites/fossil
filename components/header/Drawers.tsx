@@ -30,15 +30,20 @@ const Aside = (
   },
 ) => (
   <div class="bg-base-100 grid grid-rows-[auto_1fr] h-full divide-y max-w-[100vw]">
-    <div class="flex justify-between items-center">
-      <h1 class="px-4 py-3">
-        <span class="font-medium text-2xl">{title}</span>
-      </h1>
-      {onClose && (
-        <Button aria-label="X" class="btn btn-ghost" onClick={onClose}>
-          <Icon id="XMark" size={24} strokeWidth={2} />
-        </Button>
-      )}
+    <div class="flex flex-col">
+      <div class="flex justify-between items-center">
+        <h1 class="px-4 py-3">
+          <span class="font-medium text-2xl">Olá! Seja bem vindo(a)</span>
+        </h1>
+        {onClose && (
+          <Button aria-label="X" class="btn btn-ghost" onClick={onClose}>
+            <Icon id="XMark" size={24} strokeWidth={2} />
+          </Button>
+        )}
+      </div>
+      <div class="w-full bg-black flex items-center h-14">
+        <span class="text-base text-white uppercase py-2 px-4 ">COMPRE POR CATEGORIA</span>
+      </div>
     </div>
     <Suspense
       fallback={

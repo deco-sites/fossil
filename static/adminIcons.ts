@@ -192,4 +192,37 @@ export const Bag = `<svg id="Bag" xmlns="http://www.w3.org/2000/svg" width="17.0
 	  </style></defs><g id="Elipse_18" data-name="Elipse 18" class="cls-1" transform="translate(2.847)"><circle class="cls-3" cx="5.694" cy="5.694" r="5.694"></circle><circle class="cls-4" cx="5.694" cy="5.694" r="4.444"></circle></g><g id="Retângulo_1226" data-name="Retângulo 1226" class="cls-2" transform="translate(0 6.405)"><path class="cls-3" d="M0,0H17.081a0,0,0,0,1,0,0V12.792a5,5,0,0,1-5,5H5a5,5,0,0,1-5-5V0A0,0,0,0,1,0,0Z"></path><path class="cls-4" d="M1.25,1.25H15.831a0,0,0,0,1,0,0V12.792a3.75,3.75,0,0,1-3.75,3.75H5a3.75,3.75,0,0,1-3.75-3.75V1.25A0,0,0,0,1,1.25,1.25Z"></path></g></svg>
     </svg>`;
 
-export const AvailableIcons = { ChevronLeft, ChevronRight, ChevronUp, ChevronDown, QuestionMarkCircle, User, ShoppingCart, Bars3, Heart, MagnifyingGlass, XMark, Plus, Minus, MapPin, Phone, Elos, Mastercards, Visas, Pixs, Instagram, Truck, Discount, Return, CreditCards, Deco, Discord, FilterList, Trash, WhatsApp, ArrowsPointingOut, Star, Ruler, Message, Close, Zoom, Twitter, Facebook, Linkedin, Tiktok, Elo, Diners, Mastercard, Pix, Visa, Alert, AlertInfo, AlertSuccess, AlertWarning, AlertError, share, Left, Center, Right, SideToSide, Default, AlignJustified, AlignLeft, AlignCenter, AlignRight, Uppercase, Lettercase, Lowercase, Bag };
+export const BagMobile = `<svg id="BagMobile" xmlns="http://www.w3.org/2000/svg" width="17.081" height="24.198" viewBox="0 0 17.081 24.198"><defs>
+		</defs><g id="Elipse_18" data-name="Elipse 18" class="cls-1" fill="none" stroke="#505050" stroke-width="2.5px" transform="translate(2.847)"><circle class="cls-3" cx="5.694" cy="5.694" r="5.694"></circle><circle class="cls-4" cx="5.694" cy="5.694" r="4.444"></circle></g><g id="Retângulo_1226" data-name="Retângulo 1226" class="cls-2" fill="#fff" stroke="#505050" stroke-width="2.5px" transform="translate(0 6.405)"><path class="cls-3" stroke="none" d="M0,0H17.081a0,0,0,0,1,0,0V12.792a5,5,0,0,1-5,5H5a5,5,0,0,1-5-5V0A0,0,0,0,1,0,0Z"></path><path class="cls-4" fill="none" d="M1.25,1.25H15.831a0,0,0,0,1,0,0V12.792a3.75,3.75,0,0,1-3.75,3.75H5a3.75,3.75,0,0,1-3.75-3.75V1.25A0,0,0,0,1,1.25,1.25Z"></path></g>
+	</svg>`;
+
+export const Hamburguer = `<svg id="Hamburguer" width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="2" rx="" fill="#262626"></rect><rect y="5" width="20" height="2" rx="" fill="#262626"></rect><rect y="10" width="20" height="2" rx="" fill="#262626"></rect></svg>`;
+
+export const Hamburgue = `<svg id="Hamburgue" viewBox="0 0 52 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M52 0H0V5.23077H52V0Z" fill="#262626"/>
+		<path d="M52 13.0769H0V18.3077H52V13.0769Z" fill="#262626"/>
+		<path d="M52 26.1538H0V31.3846H52V26.1538Z" fill="#262626"/>
+	</svg>`;
+export const lupa = `<svg id="lupa"  viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<g clip-path="url(#clip0_14390_1973)">
+		<path d="M41.2058 37.4641L40.9162 37.8083L41.228 38.1325L54.7859 52.2335C55.7415 53.2274 55.7099 54.813 54.7167 55.7687C54.2492 56.2187 53.6345 56.466 52.9844 56.466C52.2974 56.466 51.6594 56.1944 51.1825 55.6992L37.5218 41.4915L37.2247 41.1824L36.8739 41.4289C33.0792 44.0957 28.6426 45.5 23.9844 45.5C11.5785 45.5 1.48438 35.4059 1.48438 23C1.48438 10.5941 11.5785 0.5 23.9844 0.5C36.3902 0.5 46.4844 10.5941 46.4844 23C46.4844 28.3098 44.6162 33.41 41.2058 37.4641ZM41.4844 23C41.4844 13.3499 33.6345 5.5 23.9844 5.5C14.3342 5.5 6.48438 13.3499 6.48438 23C6.48438 32.6501 14.3342 40.5 23.9844 40.5C33.6345 40.5 41.4844 32.6501 41.4844 23Z" fill="black" stroke="black"/>
+		</g>
+		<defs>
+		<clipPath id="clip0_14390_1973">
+		<rect width="56" height="57" fill="white"/>
+		</clipPath>
+		</defs>
+	</svg>`;
+
+export const Lupa = `<svg id="Lupa"  viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<g clip-path="url(#clip0_14390_1973)">
+		<path d="M41.2058 37.4641L40.9162 37.8083L41.228 38.1325L54.7859 52.2335C55.7415 53.2274 55.7099 54.813 54.7167 55.7687C54.2492 56.2187 53.6345 56.466 52.9844 56.466C52.2974 56.466 51.6594 56.1944 51.1825 55.6992L37.5218 41.4915L37.2247 41.1824L36.8739 41.4289C33.0792 44.0957 28.6426 45.5 23.9844 45.5C11.5785 45.5 1.48438 35.4059 1.48438 23C1.48438 10.5941 11.5785 0.5 23.9844 0.5C36.3902 0.5 46.4844 10.5941 46.4844 23C46.4844 28.3098 44.6162 33.41 41.2058 37.4641ZM41.4844 23C41.4844 13.3499 33.6345 5.5 23.9844 5.5C14.3342 5.5 6.48438 13.3499 6.48438 23C6.48438 32.6501 14.3342 40.5 23.9844 40.5C33.6345 40.5 41.4844 32.6501 41.4844 23Z" fill="black" stroke="black"/>
+		</g>
+		<defs>
+		<clipPath id="clip0_14390_1973">
+		<rect width="56" height="57" fill="white"/>
+		</clipPath>
+		</defs>
+	</svg>`;
+
+export const AvailableIcons = { ChevronLeft, ChevronRight, ChevronUp, ChevronDown, QuestionMarkCircle, User, ShoppingCart, Bars3, Heart, MagnifyingGlass, XMark, Plus, Minus, MapPin, Phone, Elos, Mastercards, Visas, Pixs, Instagram, Truck, Discount, Return, CreditCards, Deco, Discord, FilterList, Trash, WhatsApp, ArrowsPointingOut, Star, Ruler, Message, Close, Zoom, Twitter, Facebook, Linkedin, Tiktok, Elo, Diners, Mastercard, Pix, Visa, Alert, AlertInfo, AlertSuccess, AlertWarning, AlertError, share, Left, Center, Right, SideToSide, Default, AlignJustified, AlignLeft, AlignCenter, AlignRight, Uppercase, Lettercase, Lowercase, Bag, BagMobile, Hamburguer, Hamburgue, lupa, Lupa };
