@@ -3449,43 +3449,6 @@
         "interval": 4
       },
       {
-        "__resolveType": "site/sections/Miscellaneous/Slide.tsx",
-        "content": [
-          {
-            "label": "HOT SALE",
-            "repeat": 30
-          }
-        ]
-      },
-      {
-        "__resolveType": "site/sections/Miscellaneous/CampaignTimer.tsx",
-        "link": {
-          "href": "https://github.com/deco-cx",
-          "text": "Visit our GitHub"
-        },
-        "text": "<p>Design, develop and deliver complete experiences</p>",
-        "labels": {
-          "days": "days",
-          "hours": "hours",
-          "expired": " Expired!",
-          "minutes": "minutes",
-          "seconds": "seconds"
-        },
-        "layout": {
-          "textPosition": "After counter"
-        },
-        "expiresAt": "2024-03-15T17:23:00.000Z"
-      },
-      {
-        "__resolveType": "site/sections/Miscellaneous/Slide.tsx",
-        "content": [
-          {
-            "label": "HOT SALE",
-            "repeat": 30
-          }
-        ]
-      },
-      {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "layout": {
           "showArrows": true
@@ -3526,9 +3489,6 @@
           },
           "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
         }
-      },
-      {
-        "__resolveType": "Shoppable Banner - 01"
       },
       {
         "__resolveType": "site/sections/Category/CategoryGrid.tsx",
@@ -3661,6 +3621,7 @@
       },
       {
         "__resolveType": "site/sections/Content/BlogPosts.tsx",
+        "title": "Blogposts",
         "posts": [
           {
             "alt": "Item of the Summer",
@@ -3689,8 +3650,7 @@
             "author": "deco.cx",
             "description": "Lorem ipsum dolor sit amet consectetur.  Condimentum dolor ultrices commodo et. Blandit vel est sodales tincidunt aliquam tincidunt. "
           }
-        ],
-        "title": "Blogposts"
+        ]
       },
       {
         "__resolveType": "Footer - 04"
