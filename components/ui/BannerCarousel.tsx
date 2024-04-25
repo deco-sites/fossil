@@ -25,11 +25,11 @@ export interface Banner {
     /** @description when user clicks on the image, go to this link */
     href: string;
     /** @description Image text title */
-    title: string;
+    title?: string;
     /** @description Image text subtitle */
-    subTitle: string;
+    subTitle?: string;
     /** @description Button label */
-    label: string;
+    label?: string;
   };
 }
 
@@ -120,18 +120,26 @@ function BannerItem(
     >
       {action && (
         <div class="absolute top-0 md:bottom-0 bottom-1/2 left-0 right-0 sm:right-auto max-w-[407px] flex flex-col justify-end gap-4 px-8 py-12">
-          <span class="text-2xl font-light text-base-100">
-            {action.title}
-          </span>
-          <span class="font-normal text-4xl text-base-100">
-            {action.subTitle}
-          </span>
-          <Button
-            class="bg-base-100 text-sm font-light py-4 px-6 w-fit"
-            aria-label={action.label}
-          >
-            {action.label}
-          </Button>
+          {action.title && (
+            <span class="text-2xl font-light text-base-100">
+              {action.title}
+            </span>
+          )}
+
+          {action.subTitle && (
+            <span class="font-normal text-4xl text-base-100">
+              {action.subTitle}
+            </span>
+          )}
+
+          {action.label && (
+            <Button
+              class="bg-base-100 text-sm font-light py-4 px-6 w-fit"
+              aria-label={action.label}
+            >
+              {action.label}
+            </Button>
+          )}
         </div>
       )}
       <Picture preload={lcp}>

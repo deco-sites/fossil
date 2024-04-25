@@ -16,7 +16,7 @@ function Alert({ alerts = [], interval = 2 }: Props) {
 
   return (
     <div class="w-full h-10 text-sm font-light lg:px-8 flex bg-primary items-center">
-      <div class=" container hidden lg:flex items-center justify-between w-full gap-8 ">
+      <div class=" container hidden lg:flex items-center justify-between w-full gap-8  font-soleil-regular font-light">
         <a href="/central" class="text-white text-sm font-light">
           Suporte
         </a>
@@ -29,7 +29,7 @@ function Alert({ alerts = [], interval = 2 }: Props) {
                 class="flex items-center
               "
               >
-                <span class="text-[.7rem] uppercase text-soleil-regular text-white h-[38px] flex items-center font-light">
+                <span class="text-[.7rem] uppercase text-white h-[38px] flex items-center  font-soleil-regular font-light">
                   {alert}
                 </span>
                 {index < alerts.length - 1 && (
@@ -56,7 +56,7 @@ function Alert({ alerts = [], interval = 2 }: Props) {
         <Slider class="carousel carousel-center gap-6 scrollbar-none lg:hidden">
           {alerts.map((alert, index) => (
             <Slider.Item index={index} class="carousel-item">
-              <span class="text-[0.7rem] uppercase w-screen text-soleil-regular text-white flex items-center justify-center h-[38px]">
+              <span class="text-[0.7rem] uppercase w-screen font-soleil-regular text-white flex items-center justify-center h-[38px]">
                 {alert}
               </span>
             </Slider.Item>

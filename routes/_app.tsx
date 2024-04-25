@@ -38,8 +38,8 @@ export default defineApp(async (_req, ctx) => {
         dangerouslySetInnerHTML={{
           __html: `
             @font-face{
-              font-family: 'Soleil';
-              src: url("/live/invoke/website/loaders/asset.ts?src=https://fossil.deco.site/fonts/Soleil-Regular.ttf") format("truetype");
+              font-family: 'Soleil-Regular';
+              src: url("/fonts/Soleil-Regular.ttf") format("truetype");
               font-weight: 400;
               font-display: swap;
               font-style: normal;
@@ -47,15 +47,24 @@ export default defineApp(async (_req, ctx) => {
 
             @font-face{
               font-family: 'Soleil-Black';
-              src: url("/live/invoke/website/loaders/asset.ts?src=https://fossil.deco.site/fonts/Soleil-Black.ttf") format("truetype");
+              src: url("/fonts/Soleil-Black.ttf") format("truetype");
               font-weight: 900;
               font-display: swap;
               font-style: normal;
             }; 
 
             @font-face{
+              font-family: 'Soleil-Medium';
+              src: url("/fonts/Soleil-Semibold.ttf") format("truetype");
+              font-weight: 500;
+              font-display: swap;
+              font-style: normal;
+            }; 
+
+
+            @font-face{
               font-family: 'Soleil-Bold';
-              src: url("/live/invoke/website/loaders/asset.ts?src=https://fossil.deco.site/fonts/Soleil-Bold.ttf") format("truetype");
+              src: url("/fonts/Soleil-Bold.ttf") format("truetype");
               font-weight: 700;
               font-display: swap;
               font-style: normal;
@@ -63,7 +72,7 @@ export default defineApp(async (_req, ctx) => {
            
             @font-face{
               font-family: 'Soleil-Light';
-              src: url("/live/invoke/website/loaders/asset.ts?src=https://fossil.deco.site/fonts/Soleil-Light.ttf") format("truetype");
+              src: url("/fonts/Soleil-Light.ttf") format("truetype");
               font-weight: 300;
               font-display: swap;
               font-style: normal;
