@@ -25,6 +25,7 @@ export default {
       },
       colors: {
         "primary": "#262626",
+        "warning": "#9D6E2D",
       },
     },
   },
