@@ -1532,7 +1532,7 @@
     },
     "mainColors": {
       "primary": "#ff7598",
-      "base-100": "#ffee00",
+      "base-100": "#0000",
       "tertiary": "#c07ecc",
       "secondary": "#75d1f0"
     },
@@ -3456,8 +3456,7 @@
         "products": {
           "props": {
             "sort": "price:desc",
-            "count": 6,
-            "collection": "139"
+            "count": 6
           },
           "crossSelling": "similars",
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
@@ -3804,7 +3803,7 @@
       "descriptionTemplate": "%s"
     },
     "theme": {
-      "__resolveType": "Fun"
+      "__resolveType": "My Theme"
     },
     "global": [
       {
