@@ -7,10 +7,10 @@ export default {
   theme: {
     container: { center: true },
     fontFamily: {
-      "soleil-regular": "Soleil-Regular",
-      "soleil-bold": "Soleil-Bold",
+      "soleil-regular":  "Soleil-Regular",
+      "soleil-bold":  "Soleil-Bold" ,
       "soleil-medium": "Soleil-Medium",
-      "soleil-light": "Soleil-Light",
+      "soleil-light": "Soleil-Light" ,
       "soleil-thin": "Soleil-Thin",
     },
     extend: {

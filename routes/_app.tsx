@@ -54,6 +54,15 @@ export default defineApp(async (_req, ctx) => {
             }; 
 
             @font-face{
+              font-family: 'Soleil-Medium';
+              src: url("/fonts/Soleil-Semibold.ttf") format("truetype");
+              font-weight: 500;
+              font-display: swap;
+              font-style: normal;
+            }; 
+
+
+            @font-face{
               font-family: 'Soleil-Bold';
               src: url("/fonts/Soleil-Bold.ttf") format("truetype");
               font-weight: 700;

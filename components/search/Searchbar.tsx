@@ -136,7 +136,7 @@ function Searchbar({
     }
   }, [displaySearchPopup.value]);
   return (
-    <div class="max-md:flex itens-center justify-center w-full relative">
+    <div class="max-md:flex itens-center justify-center w-full relative font-soleil-regular">
       <form id={id} action={action} class="join  md:h-10 bg-[#f5f5f5]">
         <input
           ref={searchInputRef}
@@ -194,7 +194,7 @@ function Searchbar({
             !hasProducts || loading.value
           ? (
             <div class="flex w-[80%] m-auto flex-1  h-full flex-col float-none pb-5 p-0 box-border">
-              <h5 class="text-lg w-[80%] uppercase mt-4 font-semibold pb-1 text-primary">
+              <h5 class="text-lg w-[80%] uppercase mt-4 font-semibold pb-1 text-primary  tracking-[1px]">
                 Termos mais buscados
               </h5>
               <span class="border-b-2 border-primary mb-4 border-solid">
@@ -204,7 +204,7 @@ function Searchbar({
                   <li>
                     <a
                       href={url}
-                      class="text-xs capitalize  font-semibold text-primary my-[5px]"
+                      class="text-xs capitalize  text-primary my-[5px]"
                     >
                       {text}
                     </a>
