@@ -1619,7 +1619,8 @@
       "searches": []
     },
     "logoPosition": "center",
-    "__resolveType": "site/sections/Header/Header.tsx"
+    "__resolveType": "site/sections/Header/Header.tsx",
+    "interval": 4
   },
   "Image Gallery - 01": {
     "title": "New collections",
@@ -3437,7 +3438,7 @@
       },
       {
         "__resolveType": "site/sections/Images/Carousel.tsx",
-        "dots": false,
+        "dots": true,
         "arrows": true,
         "images": [
           {
