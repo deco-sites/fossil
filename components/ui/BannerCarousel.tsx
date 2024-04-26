@@ -158,7 +158,7 @@ function BannerItem(
           height={508}
         />
         <img
-          class="object-cover w-full"
+          class="object-cover w-full h-auto"
           loading={lcp ? "eager" : "lazy"}
           src={desktop}
           alt={alt}
@@ -167,7 +167,6 @@ function BannerItem(
     </a>
   );
 }
-
 function Dots({ images, interval = 0 }: Props) {
   return (
     <>
@@ -182,13 +181,13 @@ function Dots({ images, interval = 0 }: Props) {
           `,
         }}
       />
-      <ul class="carousel justify-center col-span-full gap-6 z-10 row-start-4">
+      <ul class="carousel justify-center col-span-full gap-4 z-10 row-start-4 col-span-[1/2]">
         {images?.map((_, index) => (
           <li class="carousel-item">
             <Slider.Dot index={index}>
               <div class="py-5">
                 <div
-                  class="w-16 sm:w-20 h-0.5 rounded group-disabled:animate-progress bg-gradient-to-r from-base-100 from-[length:var(--dot-progress)] to-[rgba(255,255,255,0.4)] to-[length:var(--dot-progress)]"
+                  class=" w-[10px] h-[10px] md:w-[14px] md:h-[14px] sm:w-[16px] sm:h-[16px] group-disabled:bg-primary rounded-full bg-transparent border border-[#a4a4a4]"
                   style={{ animationDuration: `${interval}s` }}
                 />
               </div>
@@ -200,26 +199,27 @@ function Dots({ images, interval = 0 }: Props) {
   );
 }
 
+
 function Buttons() {
   return (
     <>
       <div class="flex items-center justify-center z-10 col-start-1 row-start-2">
-        <Slider.PrevButton class="btn btn-circle glass">
+        <Slider.PrevButton class=" " >
           <Icon
-            class="text-base-100"
-            size={24}
+            class="text-primary font-bold"
+            size={60}
             id="ChevronLeft"
-            strokeWidth={3}
+            strokeWidth={2}
           />
         </Slider.PrevButton>
       </div>
       <div class="flex items-center justify-center z-10 col-start-3 row-start-2">
-        <Slider.NextButton class="btn btn-circle glass">
+        <Slider.NextButton class=" ">
           <Icon
-            class="text-base-100"
-            size={24}
+            class="text-primary font-bold"
+            size={60}
             id="ChevronRight"
-            strokeWidth={3}
+            strokeWidth={2}
           />
         </Slider.NextButton>
       </div>
@@ -234,9 +234,9 @@ function BannerCarousel(props: Props) {
   return (
     <div
       id={id}
-      class="grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px] sm:min-h-min min-h-[660px]"
+      class="grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px]"
     >
-      <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-6">
+      <Slider class="carousel carousel-center w-full col-span-full row-[1/-2] gap-6">
         {images?.map((image, index) => {
           const params = { promotion_name: image.alt };
           return (
