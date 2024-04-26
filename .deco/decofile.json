@@ -1996,7 +1996,20 @@
     },
     "mode": "dark",
     "font": {
-      "__resolveType": "website/loaders/fonts/local.ts"
+      "__resolveType": "website/loaders/fonts/googleFonts.ts",
+      "fonts": [
+        {
+          "variations": [
+            {
+              "weight": "400"
+            },
+            {
+              "weight": "500"
+            }
+          ],
+          "family": "Poppins"
+        }
+      ]
     }
   },
   "Newsletter - 01": {
