@@ -1,6 +1,4 @@
-import Icon from "../../components/ui/Icon.tsx";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
-
 export interface Props {
   items: SiteNavigationElement[];
 }
@@ -37,8 +35,6 @@ function MenuItem({ item }: { item: SiteNavigationElement }) {
     </div>
   );
 }
-
-
 
 function Menu({ items }: Props) {
   return (

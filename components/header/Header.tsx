@@ -24,6 +24,9 @@ export interface Buttons {
 
 export interface Props {
   alerts?: string[];
+ 
+  /** @description intervalo do slider */
+  interval?: number; 
 
   /** @title Search Bar */
   searchbar?: Omit<SearchbarProps, "platform">;
@@ -44,6 +47,7 @@ export interface Props {
 
 function Header({
   alerts,
+  interval, 
   searchbar,
   navItems = [
     {
@@ -90,7 +94,7 @@ function Header({
           platform={platform}
         >
           <div class="bg-base-100 fixed w-full z-50">
-            {alerts && alerts.length > 0 && <Alert alerts={alerts} />}
+            {alerts && alerts.length > 0 && <Alert alerts={alerts} interval={interval} device={device} />}
             <Navbar
               device={device}
               items={items}
