@@ -3456,7 +3456,8 @@
         "products": {
           "props": {
             "sort": "price:desc",
-            "count": 6
+            "count": 20,
+            "collection": "2378"
           },
           "crossSelling": "similars",
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
