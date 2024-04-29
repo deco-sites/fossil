@@ -1275,11 +1275,18 @@
       {
         "items": [
           {
-            "label": "atendimento@fossilstore.com.br",
+            "label": "Phone",
             "href": "/",
             "icon": {
-              "label": "Email"
+              "label": "Phone"
             }
+          },
+          {
+            "icon": {
+              "label": "Email"
+            },
+            "label": "atendimento@fossilstore.com.br",
+            "href": "/"
           }
         ],
         "label": "Atendimento",
