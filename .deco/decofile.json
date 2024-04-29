@@ -3536,6 +3536,12 @@
       },
       {
         "__resolveType": "site/sections/Category/CategoryGrid.tsx",
+        "layout": {
+          "categoryCard": {
+            "textPosition": "bottom",
+            "textAlignment": "left"
+          }
+        },
         "list": [
           {
             "href": "/",
@@ -3564,12 +3570,6 @@
         ],
         "header": {
           "title": "Explore Our Categories"
-        },
-        "layout": {
-          "categoryCard": {
-            "textPosition": "bottom",
-            "textAlignment": "left"
-          }
         }
       },
       {
@@ -3629,72 +3629,46 @@
         }
       },
       {
-        "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
-        "title": "Best Sellers",
-        "tabs": [
-          {
-            "title": "Woman",
-            "products": {
-              "props": {
-                "sort": "price:desc",
-                "count": 8,
-                "query": "vestido"
-              },
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-            }
-          },
-          {
-            "title": "Man",
-            "products": {
-              "props": {
-                "sort": "price:desc",
-                "count": 8,
-                "collection": "140"
-              },
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-            }
-          }
-        ],
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "layout": {
-          "headerfontSize": "Large",
-          "headerAlignment": "center"
+          "showArrows": true
+        },
+        "products": {
+          "props": {
+            "sort": "price:desc",
+            "count": 20,
+            "collection": "2378"
+          },
+          "crossSelling": "similars",
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
         },
         "cardLayout": {
-          "__resolveType": "Product Card Layout - 01"
+          "layout": {
+            "hide": {
+              "allPrices": false,
+              "favoriteIcon": true,
+              "installments": false,
+              "productDescription": true
+            },
+            "basics": {
+              "oldPriceSize": "Normal",
+              "contentAlignment": "Left"
+            },
+            "onMouseOver": {
+              "card": "None",
+              "image": "Change image",
+              "showCta": true,
+              "showCardShadow": false,
+              "showSkuSelector": false,
+              "showFavoriteIcon": false
+            },
+            "elementsPositions": {
+              "skuSelector": "Bottom",
+              "favoriteIcon": "Top right"
+            }
+          },
+          "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
         }
-      },
-      {
-        "__resolveType": "site/sections/Content/BlogPosts.tsx",
-        "title": "Blogposts",
-        "posts": [
-          {
-            "alt": "Item of the Summer",
-            "date": "January 15, 2024",
-            "href": "/",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/7e80b083-d1ff-480d-b3a3-b744b69402b1",
-            "label": "Item of the Summer",
-            "author": "deco.cx",
-            "description": "Lorem ipsum dolor sit amet consectetur. Condimentum dolor ultrices commodo et. Blandit vel est sodales tincidunt aliquam tincidunt. "
-          },
-          {
-            "alt": "Item of the Summer",
-            "date": "January 15, 2024",
-            "href": "/",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/a3f329d8-795c-4c3b-8049-ede939d599ef",
-            "label": "Item of the Summer",
-            "author": "deco.cx",
-            "description": "Lorem ipsum dolor sit amet consectetur. Condimentum dolor ultrices commodo et. Blandit vel est sodales tincidunt aliquam tincidunt. "
-          },
-          {
-            "alt": "Item of the Summer",
-            "date": "January 15, 2024",
-            "href": "/",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/7e80b083-d1ff-480d-b3a3-b744b69402b1",
-            "label": "Item of the Summer",
-            "author": "deco.cx",
-            "description": "Lorem ipsum dolor sit amet consectetur.  Condimentum dolor ultrices commodo et. Blandit vel est sodales tincidunt aliquam tincidunt. "
-          }
-        ]
       },
       {
         "__resolveType": "Footer - 04"
