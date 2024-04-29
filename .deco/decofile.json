@@ -1132,27 +1132,23 @@
       "items": [
         {
           "link": "http://deco.cx/",
-          "label": "Discord"
-        },
-        {
-          "link": "http://deco.cx/",
           "label": "Facebook"
         },
         {
-          "link": "http://deco.cx/",
-          "label": "Instagram"
+          "label": "XMark",
+          "link": "https://www.instagram.com/fossil/"
         },
         {
-          "link": "http://deco.cx/",
-          "label": "Linkedin"
+          "label": "Instagram",
+          "link": "https://www.instagram.com/fossil/"
         },
         {
-          "link": "http://deco.cx/",
-          "label": "Tiktok"
+          "label": "Pinterest",
+          "link": "https://www.pinterest.com/fossil/"
         },
         {
-          "link": "http://deco.cx/",
-          "label": "Twitter"
+          "label": "Youtube",
+          "link": "https://www.youtube.com/channel/UC4kmXwr4Wcm2M3CrmgnkIfA"
         }
       ],
       "title": "Siga-nos nas redes"
@@ -1300,22 +1296,30 @@
       },
       "content": [
         {
-          "icon": {},
+          "icon": {
+            "label": "Email"
+          },
           "label": "Política de privacidade",
           "href": "/central"
         },
         {
-          "icon": {},
+          "icon": {
+            "label": "Email"
+          },
           "label": "Termos de Uso",
           "href": "https://www.fossil.com.br/us/en/customer-care/terms-of-use.html?&utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
         },
         {
-          "icon": {},
+          "icon": {
+            "label": "Email"
+          },
           "label": "Causa",
           "href": "/us/en/customer-care/terms-of-use.html?&utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
         },
         {
-          "icon": {},
+          "icon": {
+            "label": "Email"
+          },
           "label": "Lojas",
           "href": "/#?&utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
         }
