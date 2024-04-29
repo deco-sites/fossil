@@ -1,13 +1,17 @@
+import Image from "apps/website/components/Image.tsx";
 import Icon, { AvailableIcons } from "../../components/ui/Icon.tsx";
 
 export interface SocialItem {
   label:
-    | "Discord"
-    | "Facebook"
-    | "Instagram"
-    | "Linkedin"
-    | "Tiktok"
-    | "Twitter";
+  | "Discord"
+  | "Facebook"
+  | "Instagram"
+  | "Linkedin"
+  | "Tiktok"
+  | "Twitter"
+  | "YouTube"
+  | "Pinterest"
+  | "XMark"; 
   link: string;
 }
 
@@ -21,7 +25,6 @@ export default function Social(
     <>
       {content && content.items && content.items.length > 0 && (
         <div class="flex flex-col gap-4">
-          {content.title && <h3 class="text-lg">{content.title}</h3>}
           <ul
             class={`flex gap-4 ${
               vertical ? "lg:flex-col lg:items-start" : "flex-wrap items-center"
@@ -37,7 +40,7 @@ export default function Social(
                     aria-label={`${item.label} Logo`}
                     class="flex gap-2 items-center"
                   >
-                    <span class="block p-1 border rounded-full">
+                    <span class="block p-1 text-[#707070]">
                       <Icon size={24} id={item.label} />
                     </span>
                     {vertical && (
@@ -48,6 +51,11 @@ export default function Social(
               );
             })}
           </ul>
+           <Image src={`https://service.yourviews.com.br/Image/7f75d9ac-38c3-4026-9132-3b56ecca7415/Footer.jpg`} 
+            width={88} 
+            height={91} 
+            loading="lazy"
+            />
         </div>
       )}
     </>

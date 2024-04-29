@@ -2,6 +2,7 @@ import { invoke } from "../../runtime.ts";
 import { clx } from "../../sdk/clx.ts";
 import { useSignal } from "@preact/signals";
 import type { JSX } from "preact";
+import Icon from "../ui/Icon.tsx";
 
 export interface Form {
   placeholder?: string;
@@ -36,8 +37,12 @@ function Newsletter(
 
       const email =
         (e.currentTarget.elements.namedItem("email") as RadioNodeList)?.value;
-
-      await invoke.vtex.actions.newsletter.subscribe({ email });
+       
+       if(email){
+         await invoke.vtex.actions.newsletter.subscribe({ email });
+       }else{
+        alert("Erro! Preencha o campo de email.")
+       }
     } finally {
       loading.value = false;
     }
@@ -46,44 +51,37 @@ function Newsletter(
   return (
     <div
       class={clx(
-        "flex flex-col gap-4",
-        tiled && "lg:flex-row lg:w-full lg:justify-between",
+        "flex flex-col gap-4 w-full md:w-56",
+        tiled && "flex-col lg:justify-between",
       )}
     >
-      <div class="flex flex-col gap-4">
+      <div class="flex">
         {content?.title && (
-          <h4 class={tiled ? "text-2xl lg:text-3xl" : "text-lg"}>
+          <h4 class={"text-2xl tracking-[1px] text-primary font-bold uppercase"}>
             {content?.title}
           </h4>
         )}
-        {content?.description && <div>{content?.description}</div>}
       </div>
       <div class="flex flex-col gap-4">
         <form
           class="form-control"
           onSubmit={handleSubmit}
         >
-          <div class="flex flex-wrap gap-3">
+          <div class="flex">
             <input
               name="email"
-              class="flex-auto md:flex-none input input-bordered md:w-80 text-base-content"
+              class="flex-auto md:flex-none  w-56 border-solid border-b-[1px] border-primary focus:outline-none  text-base-content"
               placeholder={content?.form?.placeholder || "Digite seu email"}
             />
             <button
               type="submit"
-              class="btn disabled:loading"
+              class="border-solid border-primary border-b-[1px]"
               disabled={loading}
             >
-              {content?.form?.buttonText || "Inscrever"}
+              <Icon  id="EmailSubmitFooter" size={15} strokeWidth={1}/>
             </button>
           </div>
         </form>
-        {content?.form?.helpText && (
-          <div
-            class="text-sm"
-            dangerouslySetInnerHTML={{ __html: content?.form?.helpText }}
-          />
-        )}
       </div>
     </div>
   );
