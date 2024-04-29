@@ -6,8 +6,13 @@
 
   /* Allow changing font family via CMS */
   html {
-    font-family: var(--font-family);
+    font-family: Soleil;
   }
+
+  .drawer-side {
+    overflow-x: hidden;
+  }
+
 
   mark {
     @apply bg-accent text-accent-content;

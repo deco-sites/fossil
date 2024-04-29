@@ -50,7 +50,13 @@ export type AvailableIcons =
   | "Bag"
   | "BagMobile"
   | "Hamburguer"
-  | "Lupa"; 
+  | "Lupa"
+  | "EmailSubmitFooter"
+  | "YouTube"
+  | "Pinterest"
+  | "Phone" 
+  | "Email"; 
+
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**

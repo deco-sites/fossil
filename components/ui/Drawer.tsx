@@ -54,7 +54,7 @@ function Drawer(props: Props) {
         {children}
       </div>
 
-      <aside class="drawer-side h-full z-[99]">
+      <aside class="drawer-side h-full z-[99] overflow-y-hidden">
         <label for={id} class="drawer-overlay" />
         {!lazy.value && aside}
       </aside>
