@@ -1247,7 +1247,7 @@
       },
       {
         "items": [],
-        "label": "Atendimaneto"
+        "label": "Atendimento"
       }
     ],
     "extraLinks": [
@@ -1270,8 +1270,8 @@
       "form": {
         "helpText": "<p>Ao se inscrever, você está aceitando nossa <a href=\"/\" class=\"link\">Política de Privacidade</a>.</p>"
       },
-      "title": "Assine nossa newsletter",
-      "description": "Participe e ganhe 10% de desconto na primeira compra"
+      "description": "Participe e ganhe 10% de desconto na primeira compra",
+      "title": "Permaneça Conectado"
     },
     "backToTheTop": {
       "text": "Voltar ao topo"
