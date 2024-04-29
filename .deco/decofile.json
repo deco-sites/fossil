@@ -1281,8 +1281,8 @@
         }
       }
     ],
-    "extraLinks": [
-      {
+    "extraLinks": {
+      "0": {
         "href": "http://www.google.com",
         "link": "http://www.google.com/",
         "label": "Política de privacidade",
@@ -1290,15 +1290,38 @@
           "label": "Email"
         }
       },
-      {
+      "1": {
         "href": "http://www.google.com",
         "link": "http://www.google.com",
         "label": "Termos de serviço",
         "icon": {
           "label": "Email"
         }
-      }
-    ],
+      },
+      "content": [
+        {
+          "icon": {},
+          "label": "Política de privacidade",
+          "href": "/central"
+        },
+        {
+          "icon": {},
+          "label": "Termos de Uso",
+          "href": "https://www.fossil.com.br/us/en/customer-care/terms-of-use.html?&utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
+        },
+        {
+          "icon": {},
+          "label": "Causa",
+          "href": "/us/en/customer-care/terms-of-use.html?&utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
+        },
+        {
+          "icon": {},
+          "label": "Lojas",
+          "href": "/#?&utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
+        }
+      ],
+      "copyright": "2019 - FOSSIL GROUP, INC."
+    },
     "mobileApps": {
       "apple": "http://www.google.com",
       "android": "http://www.google.com"
