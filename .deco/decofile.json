@@ -1185,9 +1185,7 @@
           {
             "label": "Reluatory Compliance",
             "href": "https://www.fossilgroup.com/responsibility/regulatory-compliance/?&utmi_p=_&utmi_pc=Html&utmi_cp=menu",
-            "icon": {
-              "label": "Phone"
-            }
+            "icon": {}
           },
           {
             "label": "Blog",
@@ -1264,7 +1262,9 @@
         "items": [
           {
             "label": "Phone",
-            "icon": {},
+            "icon": {
+              "label": "Phone"
+            },
             "href": "/"
           },
           {
