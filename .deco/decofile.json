@@ -1178,23 +1178,18 @@
       {
         "items": [
           {
-            "href": "/quem-somos",
-            "label": "Quem somos"
+            "href": "https://www.fossilgroup.com/?&utmi_p=_&utmi_pc=Html&utmi_cp=menu",
+            "label": "Grupo Fossil"
           },
           {
-            "href": "/privacidade",
-            "label": "Privacidade e segurança"
+            "label": "Reluatory Compliance",
+            "href": "https://www.fossilgroup.com/responsibility/regulatory-compliance/?&utmi_p=_&utmi_pc=Html&utmi_cp=menu"
           },
           {
-            "href": "/termos-de-uso",
-            "label": "Termos de uso"
-          },
-          {
-            "href": "/trabalhe-conosco",
-            "label": "Trabalhe conosco"
+            "label": "Blog",
+            "href": "https://www.fossil.com.br/"
           }
         ],
-        "label": "Sobre",
         "children": [
           {
             "href": "/quemsomos",
@@ -1212,24 +1207,28 @@
             "href": "/trabalheconosco",
             "label": "Trabalhe conosco"
           }
-        ]
+        ],
+        "label": "Quem Somos"
       },
       {
         "items": [
           {
-            "href": "/central-de-atendimento",
-            "label": "Central de atendimento"
+            "href": "/account",
+            "label": "Meus pedidos"
           },
           {
-            "href": "/fale-whatsapp",
-            "label": "Fale conosco pelo Whatsapp"
+            "href": "/nossaslojas",
+            "label": "Onde encontrar"
           },
           {
-            "href": "/troca-e-devolucao",
-            "label": "Troca e devolução"
+            "href": "/central",
+            "label": "FAQ´s"
+          },
+          {
+            "label": "Política de Devolução",
+            "href": "/central"
           }
         ],
-        "label": "Atendimento",
         "children": [
           {
             "href": "/centraldeatendimento",
@@ -1243,30 +1242,12 @@
             "href": "/trocaedevolucao",
             "label": "Troca e devolução"
           }
-        ]
+        ],
+        "label": "Fale Conosco "
       },
       {
-        "items": [
-          {
-            "href": "/login",
-            "label": "Login e cadastro"
-          },
-          {
-            "href": "/meus-pedidos",
-            "label": "Meus pedidos"
-          }
-        ],
-        "label": "Minha conta",
-        "children": [
-          {
-            "href": "/loginecadastro",
-            "label": "Login e cadastro"
-          },
-          {
-            "href": "/meuspedidos",
-            "label": "Meus pedidos"
-          }
-        ]
+        "items": [],
+        "label": "Atendimaneto"
       }
     ],
     "extraLinks": [
