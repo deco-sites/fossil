@@ -12,6 +12,7 @@ import Newsletter from "../../islands/Newsletter.tsx";
 import { clx } from "../../sdk/clx.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import PoweredByDeco from "apps/website/components/PoweredByDeco.tsx";
+import { AppContext } from "../../apps/site.ts";
 
 export type Item = {
   label: string;
@@ -40,7 +41,7 @@ export interface SocialItem {
     | "Twitter"
     | "YouTube"
     | "Pinterest"
-    | "XMark"; 
+    | "XMark";
   link: string;
 }
 
@@ -110,7 +111,7 @@ export interface Props {
   };
   mobileApps?: MobileApps;
   extraLinks: ExtraLinks;
-  address?: string; 
+  address?: string;
   backToTheTop?: {
     text?: string;
   };
@@ -175,7 +176,8 @@ function Footer({
   },
   mobileApps = { apple: "/", android: "/" },
   extraLinks = { copyright: "2019", content: [] },
-  address = "Endereço: Est. Luiz Lopes Neto, 21 - Galpão A - Modulo 4 Do Tenentes - Extrema - MG - Cep: 37.640-000 CNPJ: 28.778.134/0026-05",
+  address =
+    "Endereço: Est. Luiz Lopes Neto, 21 - Galpão A - Modulo 4 Do Tenentes - Extrema - MG - Cep: 37.640-000 CNPJ: 28.778.134/0026-05",
   backToTheTop,
   layout = {
     backgroundColor: "Primary",
@@ -191,7 +193,8 @@ function Footer({
       backToTheTop: false,
     },
   },
-}: Props) {
+  device,
+}: Props & { device?: string }) {
   const _logo = layout?.hide?.logo ? <></> : <Logo logo={logo} />;
   const _newsletter = layout?.hide?.newsletter ? <></> : (
     <Newsletter
@@ -200,7 +203,7 @@ function Footer({
   );
   const _sectionLinks = layout?.hide?.sectionLinks ? <></> : (
     <FooterItems
-      sections={sections}
+      sections={sections} device={device}
     />
   );
   const _social = layout?.hide?.socialLinks
@@ -212,48 +215,80 @@ function Footer({
   const _apps = layout?.hide?.mobileApps
     ? <></>
     : <MobileApps content={mobileApps} />;
-  const _links = layout?.hide?.extraLinks
-    ? <></>
-    : (
-      <ExtraLinks
-        content={extraLinks.content}
-        copyright={extraLinks.copyright}
-      />
-    );
+  const _links = layout?.hide?.extraLinks ? <></> : (
+    <ExtraLinks
+      content={extraLinks.content}
+      copyright={extraLinks.copyright}
+    />
+  );
   return (
     <footer
       class={clx(
         "w-full flex flex-col pt-10 gap-10",
       )}
     >
-      <div class="container px-16 lg:mx-auto">
-        <Divider />
-        <div class="flex flex-col gap-10 pt-4">
-          <div class="flex flex-col lg:flex-row gap-14">
-            <div class="flex flex-col md:flex-row lg:flex-col md:justify-between lg:justify-normal gap-10 lg:w-2/5">
-              {_newsletter}
-              <div class="flex flex-col gap-10">
+      {/** Desktop */}
+      {device === "desktop"
+        ? (
+          <>
+            <div class="container hidden md:block px-16 lg:mx-auto">
+              <Divider />
+              <div class="flex flex-col gap-10 pt-4">
+                <div class="flex flex-col lg:flex-row gap-14">
+                  <div class="flex flex-col md:flex-row lg:flex-col md:justify-between lg:justify-normal gap-10 lg:w-2/5">
+                    {_newsletter}
+                    <div class="flex flex-col gap-10">
+                      {_social}
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-10 lg:gap-20 lg:w-3/5 lg:items-end">
+                    <div class="flex flex-col md:flex-row gap-10">
+                      {_sectionLinks}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <address class="w-full font-light not-italic py-8">
+                {address}
+              </address>
+            </div>
+            <div class="hidden md:flex flex-col items-center md:flex-row md:justify-between gap-10 bg-[#FAF8F6]">
+              <div class="w-full flex items-center">
+                {_links}
+              </div>
+            </div>
+          </>
+        )
+        : (
+          <>
+            {/* Mobile */}
+            <div  class="container block px-4 lg:mx-auto">
+              <Divider />
+              <div class="flex flex-col pt-4">
+                {_newsletter}
+              </div>
+              <div class="flex flex-col gap-6  pt-12">
                 {_social}
               </div>
-            </div>
-            <div class="flex flex-col gap-10 lg:gap-20 lg:w-3/5 lg:items-end">
-              <div class="flex flex-col md:flex-row gap-10">
+               <div class="w-full" >
                 {_sectionLinks}
+               </div>  
+               <address class="w-56 m-auto font-light not-italic py-8">
+                {address}
+              </address>
+              <div class="w-full flex flex-wrap justify-between bg-[#FAF8F6]">
+                {_links}
               </div>
             </div>
-          </div>
-        </div>
-         <address class="w-full font-light not-italic py-8"> 
-           {address}
-         </address>
-      </div>
-      <div class="flex flex-col items-center md:flex-row md:justify-between gap-10 bg-[#FAF8F6]">
-          <div class="w-full flex items-center">
-            {_links}
-          </div>
-        </div>
+          </>
+        )}
+
     </footer>
   );
 }
 
 export default Footer;
+
+export const loader = (props: Props, _req: Request, ctx: AppContext) => {
+  return { ...props, device: ctx.device };
+};
