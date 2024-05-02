@@ -3514,6 +3514,14 @@
             "mobile": "https://timecenter.vteximg.com.br/arquivos/ids/220563/Banner_slide_mob_maescarlette(320x380).png?v=638491419091700000",
             "desktop": "https://timecenter.vteximg.com.br/arquivos/ids/220562/banner_slide_desk_maescarlette(1920x600).png?v=638491418635530000",
             "alt": "scarllet "
+          },
+          {
+            "desktop": "https://timecenter.vteximg.com.br/arquivos/ids/220634/banner_slide_desk_maesraquel(1920x600).png?v=638500847858770000",
+            "mobile": "https://timecenter.vteximg.com.br/arquivos/ids/220635/Banner_slide_mob_maesraquel(320x380).png?v=638500848344630000",
+            "alt": "dia daas",
+            "action": {
+              "href": "/"
+            }
           }
         ],
         "preload": true,
