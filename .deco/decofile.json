@@ -3579,28 +3579,28 @@
         },
         "list": [
           {
-            "href": "/",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/01c01ba9-ac16-4371-82ca-b93d17545f9c",
-            "label": "Your Collection",
-            "buttonText": "Explore collection"
+            "href": "/https://www.fossil.com.br/relogio/masculino?PS=18&O=OrderByReleaseDateDESC&utmi_p=_&utmi_pc=Banner%3aBanner+Secund%c3%a1rio+1+-+Imagem&utmi_cp=Masculino",
+            "image": "https://timecenter.vteximg.com.br/arquivos/ids/220639/Banner_secundario_masci(610x400).png?v=638500849747300000",
+            "label": "Masculinos",
+            "buttonText": "CONHEÇA"
           },
           {
             "href": "/",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/9b80d57d-64b0-4eef-a3cd-fa8daafaae9c",
-            "label": "Your Collection",
-            "buttonText": "Explore collection"
+            "image": "https://timecenter.vteximg.com.br/arquivos/ids/220640/Banner_secundario_femi(610x400).png?v=638500849990230000",
+            "label": "Femininos",
+            "buttonText": " ENCANTE-SE"
           },
           {
-            "href": "/",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/ed4c0eb3-96ab-484f-b293-e91d196a5063",
-            "label": "Your Collection",
-            "buttonText": "Explore collection"
+            "image": "https://timecenter.vteximg.com.br/arquivos/ids/219840/Banner_secundario_semijoias(610x400).png?v=638500850173100000",
+            "label": "Semi Joia",
+            "buttonText": " CONHEÇA",
+            "href": "/2321?PS=12&map=productClusterIds&O=OrderByReleaseDateDESC&utmi_p=_&utmi_pc=Banner%3aBanner+Secund%c3%a1rio+3+-+Imagem&utmi_cp=semi+joia"
           },
           {
-            "href": "/",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/b9882ff7-3dbc-43e4-9813-5cec23c012cd",
-            "label": "Your Collection",
-            "buttonText": "Explore collection"
+            "image": "https://timecenter.vteximg.com.br/arquivos/ids/219839/Banner_secundario_bolsas(610x400).png?v=638500850465300000",
+            "label": "Bolsas em Couro",
+            "href": "/bolsasfemininas?&utmi_p=_&utmi_pc=Banner%3aBanner+Secund%c3%a1rio+4+-+Ima",
+            "buttonText": "ESCOLHA O SEU"
           }
         ],
         "header": {
