@@ -33,7 +33,7 @@ const Aside = (
   },
 ) => (
   <div
-    class={`${className} bg-base-100 grid grid-rows-[auto_1fr]  divide-y`}
+    class={`${className} bg-base-100 grid grid-rows-[auto_1fr]  divide-y !transition-none`}
   >
     {type === "menu"
       ? (
@@ -43,11 +43,6 @@ const Aside = (
               <h1 class="px-4 py-3">
                 <span class="font-medium text-2xl">Olá! Seja bem vindo(a)</span>
               </h1>
-              {onClose && (
-                <Button aria-label="X" class="btn btn-ghost" onClick={onClose}>
-                  <Icon id="XMark" size={24} strokeWidth={2} />
-                </Button>
-              )}
             </div>
             <div class="w-full bg-black flex items-center h-14">
               <span class="text-base text-white uppercase py-2 px-4 ">
@@ -59,15 +54,15 @@ const Aside = (
       )
       : (
         <>
-          <div class="flex justify-between items-center bg-black text-white z-10">
-            <h1 class="px-4 py-3">
+          <div class="flex justify-between items-center bg-primary text-white z-10">
+            <h1 class=" pl-6 md:px-4 py-1 md:py-3">
               <span class="font-medium text-2xl uppercase ">
                 Meu Carrinho
               </span>
             </h1>
             {onClose && (
               <Button aria-label="X" class="btn btn-ghost" onClick={onClose}>
-                <Icon id="XMark" size={24} strokeWidth={2} />
+                <span class="text-sm text-white font-bold mr-6">X</span>
               </Button>
             )}
           </div>
@@ -130,7 +125,7 @@ function Drawers(
               <Aside
                 title="Minha sacola"
                 onClose={() => displayCart.value = false}
-                className={` absolute  top-24 ${
+                className={`w-[97%] absolute top-24 ${
                   displayCart.value !== false ? "" : ""
                 } `}
                 type="minicart"

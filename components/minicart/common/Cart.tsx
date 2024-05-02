@@ -43,21 +43,12 @@ function Cart({
 
   return (
     <div
-      class="flex flex-col justify-center items-center overflow-hidden max-h-[508px]"
-      style={{ minWidth: "calc(min(100vw, 344px))", maxWidth: "344px" }}
+      class="flex flex-col justify-center items-center overflow-hidden max-h-[508px] w-full m-auto md:w-4/5  lg:w-[344px] "
     >
       {isEmtpy
         ? (
           <div class="flex flex-col gap-6">
-            <span class="font-medium text-2xl">Sua sacola está vazia</span>
-            <Button
-              class="btn-outline"
-              onClick={() => {
-                displayCart.value = false;
-              }}
-            >
-              Escolher produtos
-            </Button>
+            <span class="text-base text-primary pt-5 pb-6 text-center">Seu carrinho está vazio</span>
           </div>
         )
         : (
@@ -65,7 +56,7 @@ function Cart({
             {/* Cart Items */}
             <ul
               role="list"
-              class="mt-6 px-4 flex-grow overflow-y-auto flex flex-col gap-6 w-full pb-4"
+              class="mt-4 md:mt-6 px-4 flex-grow overflow-y-auto flex flex-col gap-6 w-full pb-2 md:pb-4"
             >
               {items.map((item, index) => (
                 <li key={index}>
@@ -93,7 +84,7 @@ function Cart({
                     </span>
                   </div>
                 )}
-                <div class="w-full flex justify-end px-4  text-[18px] uppercase font-medium text-primary tracking-[1px]">
+                <div class="w-full flex justify-end px-6 md:px-4  text-[18px] uppercase font-medium text-primary tracking-[1px]">
                   <span class="flex items-center pt-[2px]">Subtotal:</span>
                   <span class="font-bold text-xl pl-2">
                     {formatPrice(subtotal, currency, locale)}
@@ -118,7 +109,7 @@ function Cart({
                 <a class="inline-block w-full">
                   <Button
                     data-deco="buy-button"
-                    class=" w-full h-10 m-auto text-[18px] tracking-[1px] uppercase  text-black text-center font-medium bg-transparent color-white border-[1px] border-solid  border-black hover:brightness-90"
+                    class=" w-full h-10 underline md:no-underline m-auto text-[18px] tracking-[1px] uppercase  text-black text-center font-medium bg-transparent color-white border-[1px] border-solid  border-black hover:brightness-90"
                     disabled={loading || isEmtpy}
                     onClick={() => {
                       displayCart.value = false;
@@ -133,7 +124,7 @@ function Cart({
                 <a class="inline-block w-full" href={checkoutHref}>
                   <Button
                     data-deco="buy-button"
-                    class=" w-full h-10 m-auto text-[18px] tracking-[1px] uppercase  text-white text-center font-medium bg-warning color-white border-[1px] border-solid  border-warning hover:brightness-90"
+                    class=" w-full h-10 m-auto underline md:no-underline text-[18px] tracking-[1px] uppercase  text-white text-center font-medium bg-warning color-white border-[1px] border-solid  border-warning hover:brightness-90"
                     disabled={loading || isEmtpy}
                     onClick={() => {
                       sendEvent({

@@ -73,9 +73,9 @@ function CartItem(
         class="h-full object-contain"
       />
 
-      <div class="flex flex-col gap-2">
+      <div class="flex flex-col gap-1 md:gap-2">
         <div class="flex justify-between items-center">
-          <span class="table text-sm text-primary  font-light leading-[18px] w-44">
+          <span class="table text-sm text-primary  font-light leading-[18px] w-auto md:w-44">
             {name}
           </span>
           <Button

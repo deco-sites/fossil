@@ -24,9 +24,9 @@ function CartButton({ loading, currency, total, items }: Props) {
   };
 
   return (
-    <div class="indicator flex items-center md:justify-between">
+    <div class="indicator flex items-center md:justify-between text-[#505050]">
       <Button
-        class="btn-circle btn-sm btn-ghost indicator outline-none"
+        class="btn-circle btn-sm btn-ghost indicator outline-none flex items-center"
         aria-label="open cart"
         data-deco={!displayCart.value && "open-cart"}
         loading={loading}
