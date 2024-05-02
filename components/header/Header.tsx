@@ -92,6 +92,7 @@ function Header({
           menu={{ items }}
           searchbar={searchbar}
           platform={platform}
+          device = {device}
         >
           <div class="bg-base-100 fixed w-full z-50">
             {alerts && alerts.length > 0 && <Alert alerts={alerts} interval={interval} device={device} />}

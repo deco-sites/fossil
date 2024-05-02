@@ -75,7 +75,7 @@ function CartItem(
 
       <div class="flex flex-col gap-2">
         <div class="flex justify-between items-center">
-          <span>{name}</span>
+          <span class="table text-sm text-primary  font-light leading-4">{name}</span>
           <Button
             disabled={loading || isGift}
             loading={loading}
@@ -95,33 +95,15 @@ function CartItem(
           </Button>
         </div>
         <div class="flex items-center gap-2">
-          <span class="line-through text-sm">
-            {formatPrice(list, currency, locale)}
-          </span>
-          <span class="text-sm text-secondary">
+           {list !== sale && (
+            <span class="text-sm  line-through text-primary">
+              {formatPrice(list, currency, locale)}
+            </span>
+          )}
+          <span class=" text-xl font-semibold text-primary ">
             {isGift ? "Grátis" : formatPrice(sale, currency, locale)}
           </span>
         </div>
-
-        <QuantitySelector
-          disabled={loading || isGift}
-          quantity={quantity}
-          onChange={withLoading(async (quantity) => {
-            const analyticsItem = itemToAnalyticsItem(index);
-            const diff = quantity - item.quantity;
-
-            await onUpdateQuantity(quantity, index);
-
-            if (analyticsItem) {
-              sendEvent({
-                name: diff < 0 ? "remove_from_cart" : "add_to_cart",
-                params: {
-                  items: [{ ...analyticsItem, quantity: Math.abs(diff) }],
-                },
-              });
-            }
-          })}
-        />
       </div>
     </div>
   );
