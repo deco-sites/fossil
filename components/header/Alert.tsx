@@ -5,7 +5,7 @@ import { usePlatform } from "../../sdk/usePlatform.tsx";
 import CartButtonVTEX from "../../islands/Header/Cart/vtex.tsx";
 import Cart from "../../components/minicart/Cart.tsx";
 import { lazy, Suspense } from "preact/compat";
-import MiniCard from "../../islands/MiniCard.tsx";
+import MiniCart from "../../islands/MiniCart.tsx";
 
 export interface Props {
   alerts?: string[];
@@ -59,7 +59,7 @@ function Alert({ alerts = [], interval = 2, device }: Props) {
                   <>
                     <div class="relative">
                       <CartButtonVTEX />
-                      <MiniCard />
+                      <MiniCart />
                     </div>
                   </>
                 )}
