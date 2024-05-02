@@ -3608,62 +3608,6 @@
         }
       },
       {
-        "__resolveType": "site/sections/Product/ShelfWithImage.tsx",
-        "image": {
-          "alt": "Collection Image",
-          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/165c770b-cbbc-48c0-81ad-c732d527c77c",
-          "href": "/feminino"
-        },
-        "section": {
-          "title": "Summer Vibes",
-          "layout": {
-            "showArrows": true,
-            "headerfontSize": "Normal",
-            "headerAlignment": "center",
-            "numberOfSliders": {
-              "mobile": 1,
-              "desktop": 1
-            }
-          },
-          "products": {
-            "props": {
-              "sort": "price:desc",
-              "count": 3,
-              "query": "camisa"
-            },
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-          },
-          "cardLayout": {
-            "layout": {
-              "hide": {
-                "allPrices": false,
-                "favoriteIcon": true,
-                "installments": true,
-                "productDescription": true
-              },
-              "basics": {
-                "oldPriceSize": "Normal",
-                "contentAlignment": "Left"
-              },
-              "onMouseOver": {
-                "card": "None",
-                "image": "Change image",
-                "showCta": true,
-                "showCardShadow": false,
-                "showSkuSelector": true,
-                "showFavoriteIcon": false
-              },
-              "elementsPositions": {
-                "skuSelector": "Bottom",
-                "favoriteIcon": "Top right"
-              }
-            },
-            "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
-          },
-          "__resolveType": "site/sections/Product/ProductShelf.tsx"
-        }
-      },
-      {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "layout": {
           "showArrows": true
