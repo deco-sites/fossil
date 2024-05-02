@@ -9,15 +9,17 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
   const hasSubMenu = children && children.length > 0 ? true : false;
   return (
     <li
-      class={`group flex mb-1 ${hasSubMenu
-        ? "n1-custom-text-shadow "
-        : "hover:border-primary border-transparent border-solid border-b-4"
-        }  items-center`}
+      class={`group flex mb-1 ${
+        hasSubMenu
+          ? "n1-custom-text-shadow "
+          : "hover:border-primary border-transparent border-solid border-b-4"
+      }  items-center`}
     >
       <a href={url} class="py-6 ">
         <span
-          class={`${name === "off" ? "text-[#FF1010]" : "text-black"
-            } uppercase text-sm  font-soleil-regular font-medium`}
+          class={`${
+            name === "off" ? "text-[#FF1010]" : "text-black"
+          } uppercase text-sm  font-soleil-regular font-medium`}
         >
           {name}
         </span>
@@ -35,7 +37,10 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
               <ul class="flex items-start justify-center gap-6">
                 {children.map((node, index) => (
                   <li class="p-6 flex flex-col">
-                    <a class="n1-custom-style-navbar !font-soleil-regular hover:font-bold" href={node.url}>
+                    <a
+                      class="n1-custom-style-navbar !font-soleil-regular hover:font-bold"
+                      href={node.url}
+                    >
                       <span>{node.name}</span>
                     </a>
 
@@ -77,10 +82,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
                   )
                 ))}
               </div>
-
             </div>
-
-
           </div>
         )}
     </li>

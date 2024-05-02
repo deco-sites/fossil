@@ -203,7 +203,8 @@ function Footer({
   );
   const _sectionLinks = layout?.hide?.sectionLinks ? <></> : (
     <FooterItems
-      sections={sections} device={device}
+      sections={sections}
+      device={device}
     />
   );
   const _social = layout?.hide?.socialLinks
@@ -262,7 +263,7 @@ function Footer({
         : (
           <>
             {/* Mobile */}
-            <div  class="container block px-4 lg:mx-auto">
+            <div class="container block px-4 lg:mx-auto">
               <Divider />
               <div class="flex flex-col pt-4">
                 {_newsletter}
@@ -270,10 +271,10 @@ function Footer({
               <div class="flex flex-col gap-6  pt-12">
                 {_social}
               </div>
-               <div class="w-full" >
+              <div class="w-full">
                 {_sectionLinks}
-               </div>  
-               <address class="w-56 m-auto font-light not-italic py-8">
+              </div>
+              <address class="w-56 m-auto font-light not-italic py-8">
                 {address}
               </address>
               <div class="w-full flex flex-wrap justify-between bg-[#FAF8F6]">
@@ -282,7 +283,6 @@ function Footer({
             </div>
           </>
         )}
-
     </footer>
   );
 }

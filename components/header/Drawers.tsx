@@ -20,31 +20,55 @@ export interface Props {
    */
   children?: ComponentChildren;
   platform: ReturnType<typeof usePlatform>;
+  device?: string;
 }
 
 const Aside = (
-  { title, onClose, children }: {
+  { title, onClose, children, className, type }: {
     title: string;
     onClose?: () => void;
     children: ComponentChildren;
+    className?: string;
+    type: "menu" | "minicart";
   },
 ) => (
-  <div class="bg-base-100 grid grid-rows-[auto_1fr] h-full divide-y max-w-[100vw]">
-    <div class="flex flex-col">
-      <div class="flex justify-between items-center">
-        <h1 class="px-4 py-3">
-          <span class="font-medium text-2xl">Olá! Seja bem vindo(a)</span>
-        </h1>
-        {onClose && (
-          <Button aria-label="X" class="btn btn-ghost" onClick={onClose}>
-            <Icon id="XMark" size={24} strokeWidth={2} />
-          </Button>
-        )}
-      </div>
-      <div class="w-full bg-black flex items-center h-14">
-        <span class="text-base text-white uppercase py-2 px-4 ">COMPRE POR CATEGORIA</span>
-      </div>
-    </div>
+  <div
+    class={`${className} bg-base-100 grid grid-rows-[auto_1fr]  divide-y !transition-none`}
+  >
+    {type === "menu"
+      ? (
+        <>
+          <div class="flex flex-col">
+            <div class="flex justify-between items-center">
+              <h1 class="px-4 py-3">
+                <span class="font-medium text-2xl">Olá! Seja bem vindo(a)</span>
+              </h1>
+            </div>
+            <div class="w-full bg-black flex items-center h-14">
+              <span class="text-base text-white uppercase py-2 px-4 ">
+                COMPRE POR CATEGORIA
+              </span>
+            </div>
+          </div>
+        </>
+      )
+      : (
+        <>
+          <div class="flex justify-between items-center bg-primary text-white z-10">
+            <h1 class=" pl-6 md:px-4 py-1 md:py-3">
+              <span class="font-medium text-2xl uppercase ">
+                Meu Carrinho
+              </span>
+            </h1>
+            {onClose && (
+              <Button aria-label="X" class="btn btn-ghost" onClick={onClose}>
+                <span class="text-sm text-white font-bold mr-6">X</span>
+              </Button>
+            )}
+          </div>
+        </>
+      )}
+
     <Suspense
       fallback={
         <div class="w-screen flex items-center justify-center">
@@ -57,51 +81,64 @@ const Aside = (
   </div>
 );
 
-function Drawers({ menu, searchbar, children, platform }: Props) {
+function Drawers(
+  { menu, searchbar, children, platform, device }: Props & { device?: string },
+) {
   const { displayCart, displayMenu, displaySearchDrawer } = useUI();
 
   return (
     <>
-      <Drawer // left drawer
-        open={displayMenu.value || displaySearchDrawer.value}
-        onClose={() => {
-          displayMenu.value = false;
-          displaySearchDrawer.value = false;
-        }}
-        aside={
-          <Aside
+      {device === "mobile" && (
+        <>
+          <Drawer // left drawer
+            open={displayMenu.value || displaySearchDrawer.value}
             onClose={() => {
               displayMenu.value = false;
               displaySearchDrawer.value = false;
             }}
-            title={displayMenu.value ? "Menu" : "Buscar"}
+            aside={
+              <Aside
+                onClose={() => {
+                  displayMenu.value = false;
+                  displaySearchDrawer.value = false;
+                }}
+                title={displayMenu.value ? "Menu" : "Buscar"}
+                className="h-full max-w-[100vw]"
+                type="menu"
+              >
+                {displayMenu.value && <Menu {...menu} />}
+                {searchbar && displaySearchDrawer.value && (
+                  <div class="w-screen">
+                    <Searchbar {...searchbar} />
+                  </div>
+                )}
+              </Aside>
+            }
           >
-            {displayMenu.value && <Menu {...menu} />}
-            {searchbar && displaySearchDrawer.value && (
-              <div class="w-screen">
-                <Searchbar {...searchbar} />
-              </div>
-            )}
-          </Aside>
-        }
-      >
-        {children}
-      </Drawer>
-      <Drawer // right drawer
-        class="drawer-end"
-        open={displayCart.value !== false}
-        onClose={() => displayCart.value = false}
-        aside={
-          <Aside
-            title="Minha sacola"
+            {children}
+          </Drawer>
+          <Drawer // right drawer
+            class="drawer"
+            open={displayCart.value !== false}
             onClose={() => displayCart.value = false}
+            aside={
+              <Aside
+                title="Minha sacola"
+                onClose={() => displayCart.value = false}
+                className={`w-[97%] absolute top-24 ${
+                  displayCart.value !== false ? "" : ""
+                } `}
+                type="minicart"
+              >
+                <Cart platform={platform} />
+              </Aside>
+            }
           >
-            <Cart platform={platform} />
-          </Aside>
-        }
-      >
-        {children}
-      </Drawer>
+            {children}
+          </Drawer>
+        </>
+      )}
+      {children}
     </>
   );
 }

@@ -3,6 +3,9 @@ import SliderJS from "../../islands/SliderJS.tsx";
 import { useId } from "../../sdk/useId.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import CartButtonVTEX from "../../islands/Header/Cart/vtex.tsx";
+import Cart from "../../components/minicart/Cart.tsx";
+import { lazy, Suspense } from "preact/compat";
+import MiniCart from "../../islands/MiniCart.tsx";
 
 export interface Props {
   alerts?: string[];
@@ -15,7 +18,7 @@ export interface Props {
 function Alert({ alerts = [], interval = 2, device }: Props) {
   const id = useId();
   const platform = usePlatform();
-  
+
   return (
     <>
       {device === "desktop"
@@ -43,15 +46,23 @@ function Alert({ alerts = [], interval = 2, device }: Props) {
                   ))}
                 </ul>
               </div>
-              <div class=" hidden lg:flex gap-5 ">
+              <div class=" hidden lg:flex gap-5">
                 <a
-                  class="flex items-center text-white text-sm font-thin"
+                  class="flex items-center text-white text-sm font-thin "
                   href="/account"
                   aria-label="Account"
                 >
                   Entrar / Cadastrar
                 </a>
-                {platform === "vtex" && <CartButtonVTEX />}
+                {/**minicart */}
+                {(device === "desktop" || device === "tablet") && (
+                  <>
+                    <div class="relative">
+                      <CartButtonVTEX />
+                      <MiniCart />
+                    </div>
+                  </>
+                )}
               </div>
             </div>
           </div>

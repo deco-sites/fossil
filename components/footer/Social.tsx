@@ -3,15 +3,15 @@ import Icon, { AvailableIcons } from "../../components/ui/Icon.tsx";
 
 export interface SocialItem {
   label:
-  | "Discord"
-  | "Facebook"
-  | "Instagram"
-  | "Linkedin"
-  | "Tiktok"
-  | "Twitter"
-  | "YouTube"
-  | "Pinterest"
-  | "XMark"; 
+    | "Discord"
+    | "Facebook"
+    | "Instagram"
+    | "Linkedin"
+    | "Tiktok"
+    | "Twitter"
+    | "YouTube"
+    | "Pinterest"
+    | "XMark";
   link: string;
 }
 
@@ -51,11 +51,12 @@ export default function Social(
               );
             })}
           </ul>
-           <Image src={`https://service.yourviews.com.br/Image/7f75d9ac-38c3-4026-9132-3b56ecca7415/Footer.jpg`} 
-            width={88} 
-            height={91} 
+          <Image
+            src={`https://service.yourviews.com.br/Image/7f75d9ac-38c3-4026-9132-3b56ecca7415/Footer.jpg`}
+            width={88}
+            height={91}
             loading="lazy"
-            />
+          />
         </div>
       )}
     </>

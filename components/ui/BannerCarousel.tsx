@@ -199,12 +199,11 @@ function Dots({ images, interval = 0 }: Props) {
   );
 }
 
-
 function Buttons() {
   return (
     <>
       <div class="flex items-center justify-center z-10 col-start-1 row-start-2">
-        <Slider.PrevButton class=" " >
+        <Slider.PrevButton class=" ">
           <Icon
             class="text-primary font-bold"
             size={60}
