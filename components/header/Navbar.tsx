@@ -28,95 +28,100 @@ function Navbar(
 ) {
   const platform = usePlatform();
   return (
-
     <>
-      {(device === 'desktop' || device === 'tablet') ? (
-        // Header desktop
-        <div class="hidden sm:flex items-center justify-between border-base-200 w-full max-w-screen-2xl m-auto px-6 relative">
-          <div
-            class={`flex ${logoPosition === "left" ? "justify-start -order-1" : "justify-center"
+      {(device === "desktop" || device === "tablet")
+        ? (
+          // Header desktop
+          <div class="hidden sm:flex items-center justify-between border-base-200 w-full max-w-screen-2xl m-auto px-6 relative">
+            <div
+              class={`flex ${
+                logoPosition === "left"
+                  ? "justify-start -order-1"
+                  : "justify-center"
               }`}
+            >
+              {logo && (
+                <a
+                  href="/"
+                  aria-label="Store logo"
+                  class="block"
+                >
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={logo.width || 190}
+                    height={logo.height || 37}
+                    class={`w-48`}
+                  />
+                </a>
+              )}
+            </div>
+            <div class="flex-none grid n1-custom-grid-navbar items-center justif-center gap-6  w-full max-w-[1104px]">
+              <div class="flex">
+                <ul
+                  class={`flex items-center gap-9 col-span-1 ${
+                    logoPosition === "left" ? "justify-center" : "justify-start"
+                  }`}
+                >
+                  {items.map((item) => <NavItem item={item} />)}
+                </ul>
+              </div>
+
+              <Searchbar searchbar={searchbar} device={"desktop"} />
+
+              {!buttons?.hideWishlistButton && (
+                <a
+                  class="items-center text-xs font-thin hidden"
+                  href="/wishlist"
+                  aria-label="Wishlist"
+                >
+                  <button
+                    class="flex btn btn-circle btn-sm btn-ghost gap-1"
+                    aria-label="Wishlist"
+                  >
+                    <Icon id="Heart" size={24} strokeWidth={0.4} />
+                  </button>
+                  WISHLIST
+                </a>
+              )}
+            </div>
+          </div>
+        )
+        : (
+          //Header Mobile
+          <div
+            style={``}
+            class="lg:hidden flex  justify-between items-center w-full px-4 py-4 gap-2"
           >
             {logo && (
               <a
                 href="/"
+                class="flex-grow inline-flex items-center md:justify-center"
+                style={``}
                 aria-label="Store logo"
-                class="block"
               >
                 <Image
                   src={logo.src}
                   alt={logo.alt}
-                  width={logo.width || 190}
-                  height={logo.height || 37}
-                  class={`w-48`}
+                  width={logo.width || 100}
+                  height={logo.height || 13}
                 />
               </a>
             )}
-          </div>
-          <div class="flex-none grid n1-custom-grid-navbar items-center justif-center gap-6  w-full max-w-[1104px]">
-            <div class="flex">
-              <ul
-                class={`flex items-center gap-9 col-span-1 ${logoPosition === "left" ? "justify-center" : "justify-start"
-                  }`}
-              >
-                {items.map((item) => <NavItem item={item} />)}
-              </ul>
+
+            <div class="flex  items-center justify-center  gap-1">
+              <SearchButton />
+              {platform === "vtex" && <CartButtonVTEX />}
+              {platform === "vnda" && <CartButtonVDNA />}
+              {platform === "wake" && <CartButtonWake />}
+              {platform === "linx" && <CartButtonLinx />}
+              {platform === "shopify" && <CartButtonShopify />}
+              {platform === "nuvemshop" && <CartButtonNuvemshop />}
+
+              <MenuButton />
             </div>
-
-            <Searchbar searchbar={searchbar} device={"desktop"} />
-
-            {!buttons?.hideWishlistButton && (
-              <a
-                class="items-center text-xs font-thin hidden"
-                href="/wishlist"
-                aria-label="Wishlist"
-              >
-                <button
-                  class="flex btn btn-circle btn-sm btn-ghost gap-1"
-                  aria-label="Wishlist"
-                >
-                  <Icon id="Heart" size={24} strokeWidth={0.4} />
-                </button>
-                WISHLIST
-              </a>
-            )}
           </div>
-        </div>
-      ) : (
-        //Header Mobile
-        <div
-          style={``}
-          class="lg:hidden flex  justify-between items-center w-full px-4 py-4 gap-2"
-        >
-          {logo && (
-            <a
-              href="/"
-              class="flex-grow inline-flex items-center md:justify-center"
-              style={``}
-              aria-label="Store logo"
-            >
-              <Image
-                src={logo.src}
-                alt={logo.alt}
-                width={logo.width || 100}
-                height={logo.height || 13}
-              />
-            </a>
-          )}
-
-          <div class="flex  items-center justify-center  gap-1">
-            <SearchButton />
-            {platform === "vtex" && <CartButtonVTEX />}
-            {platform === "vnda" && <CartButtonVDNA />}
-            {platform === "wake" && <CartButtonWake />}
-            {platform === "linx" && <CartButtonLinx />}
-            {platform === "shopify" && <CartButtonShopify />}
-            {platform === "nuvemshop" && <CartButtonNuvemshop />}
-
-            <MenuButton />
-          </div>
-        </div>
-      )}
+        )}
     </>
   );
 }

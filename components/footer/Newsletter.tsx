@@ -37,12 +37,12 @@ function Newsletter(
 
       const email =
         (e.currentTarget.elements.namedItem("email") as RadioNodeList)?.value;
-       
-       if(email){
-         await invoke.vtex.actions.newsletter.subscribe({ email });
-       }else{
-        alert("Erro! Preencha o campo de email.")
-       }
+
+      if (email) {
+        await invoke.vtex.actions.newsletter.subscribe({ email });
+      } else {
+        alert("Erro! Preencha o campo de email.");
+      }
     } finally {
       loading.value = false;
     }
@@ -57,7 +57,9 @@ function Newsletter(
     >
       <div class="flex">
         {content?.title && (
-          <h4 class={"text-2xl tracking-[1px] text-primary font-bold uppercase"}>
+          <h4
+            class={"text-2xl tracking-[1px] text-primary font-bold uppercase"}
+          >
             {content?.title}
           </h4>
         )}
@@ -78,7 +80,7 @@ function Newsletter(
               class="border-solid border-primary border-b-[1px]"
               disabled={loading}
             >
-              <Icon  id="EmailSubmitFooter" size={15} strokeWidth={1}/>
+              <Icon id="EmailSubmitFooter" size={15} strokeWidth={1} />
             </button>
           </div>
         </form>

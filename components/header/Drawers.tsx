@@ -20,7 +20,7 @@ export interface Props {
    */
   children?: ComponentChildren;
   platform: ReturnType<typeof usePlatform>;
-  device?:string
+  device?: string;
 }
 
 const Aside = (
@@ -143,7 +143,7 @@ function Drawers(
           </Drawer>
         </>
       )}
-       {children}
+      {children}
     </>
   );
 }

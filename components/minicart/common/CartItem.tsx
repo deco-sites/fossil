@@ -59,7 +59,7 @@ function CartItem(
 
   return (
     <div
-      class="grid grid-rows-1 gap-2"
+      class="grid grid-rows-1 gap-2 pb-4"
       style={{
         gridTemplateColumns: "auto 1fr",
       }}
@@ -67,19 +67,21 @@ function CartItem(
       <Image
         {...image}
         src={image.src.replace("55-55", "255-255")}
-        style={{ aspectRatio: "108 / 150" }}
-        width={108}
-        height={150}
+        style={{ aspectRatio: "90 / 90" }}
+        width={90}
+        height={90}
         class="h-full object-contain"
       />
 
       <div class="flex flex-col gap-2">
         <div class="flex justify-between items-center">
-          <span class="table text-sm text-primary  font-light leading-4">{name}</span>
+          <span class="table text-sm text-primary  font-light leading-[18px] w-44">
+            {name}
+          </span>
           <Button
             disabled={loading || isGift}
             loading={loading}
-            class="btn-ghost btn-square"
+            class=""
             onClick={withLoading(async () => {
               const analyticsItem = itemToAnalyticsItem(index);
 
@@ -95,7 +97,7 @@ function CartItem(
           </Button>
         </div>
         <div class="flex items-center gap-2">
-           {list !== sale && (
+          {list !== sale && (
             <span class="text-sm  line-through text-primary">
               {formatPrice(list, currency, locale)}
             </span>

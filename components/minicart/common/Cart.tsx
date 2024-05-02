@@ -43,7 +43,7 @@ function Cart({
 
   return (
     <div
-      class="flex flex-col justify-center items-center overflow-hidden lg:h-[508px]"
+      class="flex flex-col justify-center items-center overflow-hidden max-h-[508px]"
       style={{ minWidth: "calc(min(100vw, 344px))", maxWidth: "344px" }}
     >
       {isEmtpy
@@ -65,7 +65,7 @@ function Cart({
             {/* Cart Items */}
             <ul
               role="list"
-              class="mt-6 px-2 flex-grow overflow-y-auto flex flex-col gap-6 w-full"
+              class="mt-6 px-4 flex-grow overflow-y-auto flex flex-col gap-6 w-full pb-4"
             >
               {items.map((item, index) => (
                 <li key={index}>
@@ -120,11 +120,11 @@ function Cart({
                     data-deco="buy-button"
                     class=" w-full h-10 m-auto text-[18px] tracking-[1px] uppercase  text-black text-center font-medium bg-transparent color-white border-[1px] border-solid  border-black hover:brightness-90"
                     disabled={loading || isEmtpy}
-                    onClick={() => { 
-                        displayCart.value = false; 
+                    onClick={() => {
+                      displayCart.value = false;
                     }}
                   >
-                   Continuar comprando
+                    Continuar comprando
                   </Button>
                 </a>
               </div>

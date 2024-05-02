@@ -32,7 +32,7 @@ function CartButton({ loading, currency, total, items }: Props) {
         loading={loading}
         onClick={onClick}
       >
-        <Icon id="Bag" size={24} strokeWidth={2} class="md:w-6"/>
+        <Icon id="Bag" size={24} strokeWidth={2} class="md:w-6" />
       </Button>
 
       <span class="text-white hidden md:block">{totalItems}</span>

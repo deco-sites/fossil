@@ -1,7 +1,7 @@
 import CartButtonVTEX from "../../islands/Header/Cart/vtex.tsx";
 import { useUI } from "../../sdk/useUI.ts";
 import Cart from "../minicart/Cart.tsx";
-import { Suspense, useId, lazy } from "preact/compat";
+import { lazy, Suspense, useId } from "preact/compat";
 import { useEffect } from "preact/hooks";
 import Button from "../ui/Button.tsx";
 
@@ -40,29 +40,34 @@ export default function MiniCart() {
 
   return (
     <>
-          <div id={id} class={`${open ? 'grid' : 'hidden'} absolute top-11 right-2 z-[99] !transition-none before:absolute before:-top-2 before:right-3 before:w-4 before:h-4 before:bg-white before:rotate-[135deg] bg-base-100 grid-rows-[auto_1fr]  divide-y dropdown-conten`}>
-            <>
-              <div class="flex justify-between items-center bg-black text-white z-10">
-                <h2 class="px-4 py-3">
-                  <span class="font-medium text-2xl uppercase ">
-                    Meu Carrinho
-                  </span>
-                </h2>
-                <Button aria-label="X" class="btn btn-ghost" onClick={onClose}>
-                    <span class="text-sm text-white font-bold">X</span>
-                </Button>
-              </div>
-              <Suspense
-                fallback={
-                  <div class="w-screen flex items-center justify-center">
-                    <span class="loading loading-ring" />
-                  </div>
-                }
-              >
-                 <Cart platform={"vtex"} />
-              </Suspense>
-            </>
+      <div
+        id={id}
+        class={`${
+          open ? "grid" : "hidden"
+        } absolute top-10 right-1 z-[99] !transition-none before:absolute before:-top-2 before:right-3 before:w-4 before:h-4 before:bg-white before:rotate-[135deg] bg-base-100 grid-rows-[auto_1fr]  divide-y dropdown-conten`}
+      >
+        <>
+          <div class="flex justify-between items-center bg-black text-white z-10">
+            <h2 class="pt-[6px] pr-0 pb-[6px]  pl-14">
+              <span class="font-medium text-2xl uppercase ">
+                Meu Carrinho
+              </span>
+            </h2>
+            <Button aria-label="X" class="btn btn-ghost" onClick={onClose}>
+              <span class="text-sm text-white font-bold">X</span>
+            </Button>
           </div>
+          <Suspense
+            fallback={
+              <div class="w-screen flex items-center justify-center">
+                <span class="loading loading-ring" />
+              </div>
+            }
+          >
+            <Cart platform={"vtex"} />
+          </Suspense>
+        </>
+      </div>
     </>
   );
 }
