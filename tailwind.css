@@ -79,3 +79,7 @@
 .n1-custom-text-shadow:hover{
   text-shadow: 0 0 1px #000;
 }
+
+input::placeholder {
+  color: #262626;
+}
