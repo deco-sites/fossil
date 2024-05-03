@@ -92,43 +92,41 @@ function CategoryGrid(props: Props) {
         alignment={layout.headerAlignment || "center"}
       />
 
-      <div class="grid md:grid-cols-2 grid-cols-1 mt-6">
+      <div class="grid md:grid-cols-2 grid-cols-1 mt-6 px-4 lg:px-20 gap-x-6  gap-y-12">
         {list.map((
           { href, image, label, buttonText },
         ) => (
-          <div>
+          <div class=" flex flex-col gap-4 items-center">
             <a
               href={href}
-              class={`relative flex ${
-                layout.categoryCard?.textAlignment === "left"
-                  ? "justify-start"
-                  : "justify-start items-center"
-              } ${
-                layout.categoryCard?.textPosition === "bottom"
-                  ? "flex-col-reverse"
-                  : "flex-col"
-              }`}
+              class={` flex items-center `}
             >
               {image &&
                 (
                   <figure>
                     <Image
-                      class="w-full"
+                      class="w-full h-auto object-cover"
                       src={image}
                       alt={label}
-                      width={720}
-                      height={480}
+                      width={610}
+                      height={400}
                       loading="lazy"
+                      fetchPriority="auto"
                     />
                   </figure>
                 )}
-              <Button
-                class="font-light text-base-content bg-base-100 py-4 px-6 absolute m-6"
-                aria-label={label}
-              >
-                {buttonText}
-              </Button>
             </a>
+
+            <h3 class="font-bold text-primary text-3xl">
+              {label}
+            </h3>
+
+            <Button
+              class="font-bold uppercase text-base text-primary  px-6  underline"
+              aria-label={label}
+            >
+              {buttonText}
+            </Button>
           </div>
         ))}
       </div>
