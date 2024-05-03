@@ -8,7 +8,6 @@ import { useUI } from "../../sdk/useUI.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import type { ComponentChildren } from "preact";
 import { lazy, Suspense } from "preact/compat";
-
 const Menu = lazy(() => import("../../components/header/Menu.tsx"));
 const Searchbar = lazy(() => import("../../components/search/Searchbar.tsx"));
 
@@ -29,45 +28,44 @@ const Aside = (
     onClose?: () => void;
     children: ComponentChildren;
     className?: string;
-    type: "menu" | "minicart";
+    type: "menu" | "minicart" | "searchbar";
   },
 ) => (
   <div
-    class={`${className} bg-base-100 grid grid-rows-[auto_1fr]  divide-y !transition-none`}
+    class={`${className} grid grid-rows-[auto_1fr]  divide-y !transition-none`}
   >
-    {type === "menu"
-      ? (
-        <>
-          <div class="flex flex-col">
-            <div class="flex justify-between items-center">
-              <h1 class="px-4 py-3">
-                <span class="font-medium text-2xl">Olá! Seja bem vindo(a)</span>
-              </h1>
-            </div>
-            <div class="w-full bg-black flex items-center h-14">
-              <span class="text-base text-white uppercase py-2 px-4 ">
-                COMPRE POR CATEGORIA
-              </span>
-            </div>
+    {type === "menu" && (
+      <>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <h3 class="px-4 py-3">
+              <span class="font-medium text-2xl">Olá! Seja bem vindo(a)</span>
+            </h3>
           </div>
-        </>
-      )
-      : (
-        <>
-          <div class="flex justify-between items-center bg-primary text-white z-10">
-            <h1 class=" pl-6 md:px-4 py-1 md:py-3">
-              <span class="font-medium text-2xl uppercase ">
-                Meu Carrinho
-              </span>
-            </h1>
-            {onClose && (
-              <Button aria-label="X" class="btn btn-ghost" onClick={onClose}>
-                <span class="text-sm text-white font-bold mr-6">X</span>
-              </Button>
-            )}
+          <div class="w-full bg-black flex items-center h-14">
+            <span class="text-base text-white uppercase py-2 px-4 ">
+              COMPRE POR CATEGORIA
+            </span>
           </div>
-        </>
-      )}
+        </div>
+      </>
+    )}
+    {type === "minicart" && (
+      <>
+        <div class="flex justify-between items-center bg-primary text-white z-10">
+          <h3 class=" pl-6 md:px-4 py-1 md:py-3">
+            <span class="font-medium text-2xl uppercase ">
+              Meu Carrinho
+            </span>
+          </h3>
+          {onClose && (
+            <Button aria-label="X" class="btn btn-ghost" onClick={onClose}>
+              <span class="text-sm text-white font-bold mr-6">X</span>
+            </Button>
+          )}
+        </div>
+      </>
+    )}
 
     <Suspense
       fallback={
@@ -88,7 +86,7 @@ function Drawers(
 
   return (
     <>
-      {device === "mobile" && (
+      {device !== "desktop" && (
         <>
           <Drawer // left drawer
             open={displayMenu.value || displaySearchDrawer.value}
@@ -96,6 +94,7 @@ function Drawers(
               displayMenu.value = false;
               displaySearchDrawer.value = false;
             }}
+            class={displayMenu.value ? "" : "mt-24"}
             aside={
               <Aside
                 onClose={() => {
@@ -103,13 +102,17 @@ function Drawers(
                   displaySearchDrawer.value = false;
                 }}
                 title={displayMenu.value ? "Menu" : "Buscar"}
-                className="h-full max-w-[100vw]"
-                type="menu"
+                className={`${
+                  displayMenu.value
+                    ? "h-full max-w-[100vw] bg-base-100"
+                    : "bg-transparent absolute top-24 w-full"
+                }`}
+                type={`${displayMenu.value ? "menu" : "searchbar"}`}
               >
                 {displayMenu.value && <Menu {...menu} />}
                 {searchbar && displaySearchDrawer.value && (
-                  <div class="w-screen">
-                    <Searchbar {...searchbar} />
+                  <div class="">
+                    <Searchbar {...searchbar} device={device} />
                   </div>
                 )}
               </Aside>
@@ -118,14 +121,14 @@ function Drawers(
             {children}
           </Drawer>
           <Drawer // right drawer
-            class="drawer"
+            class="mt-24 "
             open={displayCart.value !== false}
             onClose={() => displayCart.value = false}
             aside={
               <Aside
                 title="Minha sacola"
                 onClose={() => displayCart.value = false}
-                className={`w-[97%] absolute top-24 ${
+                className={`w-[97%] absolute top-24 bg-white ${
                   displayCart.value !== false ? "" : ""
                 } `}
                 type="minicart"

@@ -1,12 +1,11 @@
-
 import { useUI } from "../../sdk/useUI.ts";
 import Cart from "../minicart/Cart.tsx";
-import {Suspense, useId } from "preact/compat";
+import { Suspense, useId } from "preact/compat";
 import { useEffect } from "preact/hooks";
 import Button from "../ui/Button.tsx";
 import { lazy } from "preact/compat";
-import  CartVTEX from '../minicart/vtex/Cart.tsx'
- 
+import CartVTEX from "../minicart/vtex/Cart.tsx";
+
 export default function MiniCart() {
   const { displayCart } = useUI();
   const id = useId();
@@ -59,7 +58,7 @@ export default function MiniCart() {
               <span class="text-sm text-white font-bold mr-6">X</span>
             </Button>
           </div>
-            <CartVTEX />
+          <CartVTEX />
         </>
       </div>
     </>

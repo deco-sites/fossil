@@ -29,7 +29,7 @@ function Navbar(
   const platform = usePlatform();
   return (
     <>
-      {(device === "desktop" || device === "tablet")
+      {device === "desktop"
         ? (
           // Header desktop
           <div class="hidden sm:flex items-center justify-between border-base-200 w-full max-w-screen-2xl m-auto px-6 relative">

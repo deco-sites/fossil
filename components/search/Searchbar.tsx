@@ -93,7 +93,8 @@ function Searchbar({
   loader,
   platform,
   variant,
-}: Props & { variant?: string }) {
+  device,
+}: Props & { variant?: string; device?: string }) {
   const id = useId();
   const { displaySearchPopup } = useUI();
   const searchInputRef = useRef<HTMLInputElement>(null);
@@ -135,13 +136,19 @@ function Searchbar({
       setQuery("");
     }
   }, [displaySearchPopup.value]);
+
+  console.log(device);
   return (
     <div class="max-md:flex itens-center justify-center w-full relative font-soleil-regular">
-      <form id={id} action={action} class="join  md:h-10 bg-[#f5f5f5]">
+      <form
+        id={id}
+        action={action}
+        class="join rounded-none md:rounded-lg md:h-10 bg-[#f5f5f5] w-[90%] md:w-auto"
+      >
         <input
           ref={searchInputRef}
           id="search-input"
-          class="input input-bordered join-item flex-grow  lg:w-64 lg:h-10 text-sm lowercase text-primary font-medium focus:outline-none pl-4 border-none bg-[#f5f5f5]"
+          class="input input-bordered join-item flex-grow  lg:w-64 lg:h-10 text-sm lowercase text-black font-medium focus:outline-none pl-4 border-none bg-[#f5f5f5]"
           name={name}
           onFocus={() => displaySearchPopup.value = true}
           onBlur={() => {
@@ -186,72 +193,157 @@ function Searchbar({
       </form>
 
       <section
-        class={`absolute bg-white w-full md:w-[300px] h-auto flex-col z-50 top-14 right-0 border-t-[3px] border-solid border-primary ${
+        class={`absolute w-[90%] md:bg-white m-auto md:w-[300px] h-auto flex-col z-50 top-12 md:top-14 md:right-0 border-t-[3px] border-solid border-primary ${
           !displaySearchPopup.value ? "hidden" : "flex"
         }`}
       >
-        {searchInputRef.current && searchInputRef.current.value.length === 0 ||
-            !hasProducts || loading.value
+        {/**desktop */}
+        {device !== "mobile"
           ? (
-            <div class="flex w-[80%] m-auto flex-1  h-full flex-col float-none pb-5 p-0 box-border">
-              <h5 class="text-lg w-[80%] uppercase mt-4 font-semibold pb-1 text-primary  tracking-[1px]">
-                Termos mais buscados
-              </h5>
-              <span class="border-b-2 border-primary mb-4 border-solid">
-              </span>
-              <ul class="flex flex-col flex-1 w-auto border-none box-border">
-                {topSearches.map(({ text, url }, index) => (
-                  <li>
-                    <a
-                      href={url}
-                      class="text-xs capitalize  text-primary my-[5px]"
-                    >
-                      {text}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <>
+              {searchInputRef.current &&
+                    searchInputRef.current.value.length === 0 ||
+                  !hasProducts || loading.value
+                ? (
+                  <div class="flex m-auto flex-1 bg-white h-full flex-col float-none pb-5 p-0 box-border">
+                    <h5 class="text-lg leading-none w-[80%] uppercase mt-4 font-semibold pb-1 text-primary  tracking-[1px]">
+                      Termos mais buscados
+                    </h5>
+                    <span class="border-b-2 border-primary mb-4 border-solid">
+                    </span>
+                    <ul class="flex flex-col flex-1 w-auto border-none box-border">
+                      {topSearches.map(({ text, url }, index) => (
+                        <li>
+                          <a
+                            href={url}
+                            class="text-xs capitalize  text-primary my-[5px]"
+                          >
+                            {text}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )
+                : (
+                  <ul class="z-50 md:w-[334px] w-full max-md:h-full max-md:min-h-[300px] absolute top-0 right-0 bg-white py-3 pb-8 px-4 box-border">
+                    {searches.map(({ term }, index) => (
+                      <>
+                        {index < 2 && (
+                          <li class="font-medium text-sm leading-4 capitalize text-[#2e2e2eb3] mb-[10px] hidden ">
+                            <a href={`/s?q=${term}`}>{term}</a>
+                          </li>
+                        )}
+                      </>
+                    ))}
+                    <span class=" font-bold uppercas w-[80%] text-left border-b-2 border-solid border-black max-md:hidden box-border text-black text-[18px] leading-[18px]  flex pt-4 pb-5">
+                      Nossas sugestões
+                    </span>
+                    {products.map((
+                      { image, isVariantOf, offers, url },
+                      index,
+                    ) => (
+                      <>
+                        {index < 2 && (
+                          <li class="inline-block float-left w-1/2 pt-4 px-4">
+                            <a
+                              class="text-[10px] leading-none text-center text-black"
+                              href={url}
+                            >
+                              <Image
+                                src={image![0].url! || ""}
+                                width={240}
+                                height={240}
+                                class="w-4/5 h-auto block mb-4 p-2 mx-auto"
+                              />
+
+                              {isVariantOf!.name}
+                              <span class="table max-md:hidden relative top-3 w-full text-[13px] font-bold text-[#5e5e5e] leading-[14px] uppercase text-center mt-[10px]">
+                                {formatPrice(useOffer(offers).listPrice)}
+                              </span>
+                            </a>
+                          </li>
+                        )}
+                      </>
+                    ))}
+                  </ul>
+                )}
+            </>
           )
           : (
-            <ul class="z-50 md:w-[504px] w-full max-md:h-full max-md:min-h-[300px] absolute top-0 right-0 bg-white py-[32px] px-10 box-border">
-              {searches.map(({ term }, index) => (
-                <>
-                  {index < 2 && (
-                    <li class="font-medium text-sm leading-4 capitalize text-[#2e2e2eb3] mb-[10px]">
-                      <a href={`/s?q=${term}`}>{term}</a>
-                    </li>
-                  )}
-                </>
-              ))}
-              <span class=" font-bold uppercas w-[80%] text-left border-b-2 border-solid border-black max-md:hidden box-border text-primary leading-[18px]  flex pt-4 pb-5">
-                Nossas sugestões
-              </span>
-              {products.map(({ image, isVariantOf, offers, url }, index) => (
-                <>
-                  {index < 2 && (
-                    <li class="inline-block float-left w-1/2 px-2">
-                      <a
-                        class="text-[10px] leading-none text-center text-black"
-                        href={url}
-                      >
-                        <Image
-                          src={image![0].url! || ""}
-                          width={240}
-                          height={240}
-                          class="w-4/5 h-auto block mb-4 p-2 mx-auto"
-                        />
+            <>
+              {/** search  mobile */}
+              {searchInputRef.current &&
+                    searchInputRef.current.value.length === 0 ||
+                  !hasProducts || loading.value
+                ? (
+                  <div class="flex w-[80%] flex-1 bg-white h-full flex-col float-none pl-6 box-border">
+                    <h5 class="text-lg leading-none w-52 uppercase mt-4 font-semibold pb-1 text-primary  tracking-[1px]">
+                      Termos mais buscados
+                    </h5>
+                    <span class="border-b-2 w-52 border-primary mb-4 border-solid">
+                    </span>
+                    <ul class="flex flex-col flex-1 w-auto border-none box-border">
+                      {topSearches.map(({ text, url }, index) => (
+                        <li class="flex flex-col">
+                          <span class=" text-xl  font-semibold ml-2">
+                            {index + 1}
+                          </span>
+                          <a
+                            href={url}
+                            class="text-xs capitalize  text-primary my-[5px]"
+                          >
+                            {text}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )
+                : (
+                  <ul class="z-50 md:w-[504px] w-full max-md:min-h-[300px] absolute top-0 right-0 bg-white py-[32px] px-10 box-border">
+                    {searches.map(({ term }, index) => (
+                      <>
+                        {index < 2 && (
+                          <li class="font-medium text-sm leading-4 capitalize text-[#2e2e2eb3] mb-[10px] hidden">
+                            <a href={`/s?q=${term}`}>{term}</a>
+                          </li>
+                        )}
+                      </>
+                    ))}
+                    <span class=" font-bold uppercas w-[80%] text-left border-b-2 border-solid border-black max-md:hidden box-border text-primary leading-[18px]  flex pt-4 pb-5">
+                      Nossas sugestões
+                    </span>
+                    {products.map((
+                      { image, isVariantOf, offers, url },
+                      index,
+                    ) => (
+                      <>
+                        {index < 2 && (
+                          <li class="inline-block float-left w-1/2 px-2">
+                            <a
+                              class="text-[10px] leading-none text-center text-black"
+                              href={url}
+                            >
+                              <Image
+                                src={image![0].url! || ""}
+                                width={240}
+                                height={240}
+                                class="w-4/5 h-auto block mb-4 p-2 mx-auto"
+                              />
 
-                        {isVariantOf!.name}
-                        <span class="table max-md:hidden relative top-3 w-full text-[13px] font-bold text-[#5e5e5e] leading-[14px] uppercase text-center mt-[10px]">
-                          {formatPrice(useOffer(offers).listPrice)}
-                        </span>
-                      </a>
-                    </li>
-                  )}
-                </>
-              ))}
-            </ul>
+                              {isVariantOf!.name}
+                              <span class="table max-md:hidden relative top-3 w-full text-[13px] font-bold text-[#5e5e5e] leading-[14px] uppercase text-center mt-[10px]">
+                                {formatPrice(useOffer(offers).listPrice)}
+                              </span>
+                            </a>
+                          </li>
+                        )}
+                      </>
+                    ))}
+                  </ul>
+                )}
+            </>
           )}
       </section>
     </div>
