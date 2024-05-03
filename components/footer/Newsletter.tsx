@@ -58,7 +58,7 @@ function Newsletter(
       <div class="flex">
         {content?.title && (
           <h4
-            class={"text-2xl tracking-[1px] text-primary font-bold uppercase"}
+            class={"text-2xl tracking-[1px] text-primary font-bold leading-none uppercase"}
           >
             {content?.title}
           </h4>
