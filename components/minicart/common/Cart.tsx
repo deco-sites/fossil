@@ -42,13 +42,13 @@ function Cart({
   const isEmtpy = items.length === 0;
 
   return (
-    <div
-      class="flex flex-col justify-center items-center overflow-hidden max-h-[508px] w-full m-auto md:w-4/5  lg:w-[344px] "
-    >
+    <div class="flex flex-col justify-center items-center overflow-hidden max-h-[508px] w-full m-auto md:w-4/5  lg:w-[344px] ">
       {isEmtpy
         ? (
           <div class="flex flex-col gap-6">
-            <span class="text-base text-primary pt-5 pb-6 text-center">Seu carrinho está vazio</span>
+            <span class="text-base text-primary pt-5 pb-6 text-center">
+              Seu carrinho está vazio
+            </span>
           </div>
         )
         : (
@@ -135,7 +135,9 @@ function Cart({
                           value: total,
                           items: items
                             .map((_, index) => itemToAnalyticsItem(index))
-                            .filter((x): x is AnalyticsItem => Boolean(x)),
+                            .filter((x): x is AnalyticsItem =>
+                              Boolean(x)
+                            ),
                         },
                       });
                     }}
