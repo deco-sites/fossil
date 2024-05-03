@@ -40,7 +40,7 @@ function Drawer(props: Props) {
   }, []);
 
   return (
-    <div class={`drawer !transition-none ${_class}`}>
+    <div class={`drawer !transition-none`}>
       <input
         id={id}
         checked={open}
@@ -57,7 +57,7 @@ function Drawer(props: Props) {
       <aside class="drawer-side overflow-y-hidden z-[99] !transition-none ">
         <label
           for={id}
-          class="drawer-overlay mt-24 !transition-none "
+          class={`drawer-overlay !transition-none ${_class}  `}
         />
         {!lazy.value && aside}
       </aside>
