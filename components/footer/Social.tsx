@@ -56,6 +56,7 @@ export default function Social(
             width={88}
             height={91}
             loading="lazy"
+            alt="service yourviews"
           />
         </div>
       )}

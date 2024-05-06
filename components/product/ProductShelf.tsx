@@ -32,8 +32,8 @@ function ProductShelf({
   title,
   description,
   layout,
-  device
-}: Props & {device?:string}) {
+  device,
+}: Props & { device?: string }) {
   const id = useId();
   const platform = usePlatform();
 
@@ -68,7 +68,7 @@ function ProductShelf({
         id={id}
         class={clx(
           "grid",
-          (layout?.showArrows && device === 'desktop') &&
+          (layout?.showArrows && device === "desktop") &&
             "grid-cols-[48px_1fr_48px] sm:grid-cols-[70px_1fr_70px] grid-rows-[1fr_48px_1fr_64px]",
           "px-0 w-full",
         )}
@@ -111,7 +111,7 @@ function ProductShelf({
             <li
               class={`carousel-item   md:${
                 ((index === 0) || (index % 4 === 0)) ? "" : "hidden"
-              } ${((index === 0) || (index % 2 === 0)) ? "" : "hidden"}`} 
+              } ${((index === 0) || (index % 2 === 0)) ? "" : "hidden"}`}
             >
               <Slider.Dot index={index}>
                 <div class="py-5">
@@ -158,14 +158,8 @@ function ProductShelf({
   );
 }
 
-
 export const loader = (props: Props, _req: Request, ctx: AppContext) => {
   return { ...props, device: ctx.device };
 };
 
-
-
-
-
 export default ProductShelf;
-

@@ -117,9 +117,9 @@ function CategoryGrid(props: Props) {
                 )}
             </a>
 
-            <h3 class="font-bold text-primary text-3xl">
+            <h2 class="font-bold text-primary text-3xl">
               {label}
-            </h3>
+            </h2>
 
             <Button
               class="font-bold uppercase text-base text-primary  px-6  underline"
