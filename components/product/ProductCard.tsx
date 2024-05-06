@@ -194,7 +194,7 @@ function ProductCard({
         </div>
 
         {/* Price from/to */}
-        <div class="flex gap-2 items-center justify-end font-light">
+        <div class="flex gap-2 items-center justify-end  font-light    ">
           <span class="line-through text-sm">
             {formatPrice(listPrice, offers?.priceCurrency)}
           </span>
@@ -204,7 +204,7 @@ function ProductCard({
         </div>
 
         {/* Installments */}
-        <span class="flex justify-end gap-2 font-light text-sm truncate">
+        <span class="flex justify-end gap-2  font-light     text-sm truncate">
           ou {installments}
         </span>
 

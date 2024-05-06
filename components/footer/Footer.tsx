@@ -249,7 +249,7 @@ function Footer({
                   </div>
                 </div>
               </div>
-              <address class="w-full font-light not-italic py-8">
+              <address class="w-full  font-light    not-italic py-8">
                 {address}
               </address>
             </div>
@@ -274,7 +274,7 @@ function Footer({
               <div class="w-full">
                 {_sectionLinks}
               </div>
-              <address class="w-56 m-auto font-light not-italic py-8">
+              <address class="w-56 m-auto  font-light     not-italic py-8">
                 {address}
               </address>
               <div class="w-full flex flex-wrap justify-between bg-[#FAF8F6]">

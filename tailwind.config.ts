@@ -7,11 +7,11 @@ export default {
   theme: {
     container: { center: true },
     fontFamily: {
-      "soleil-regular": "Soleil-Regular",
-      "soleil-bold": "Soleil-Bold",
-      "soleil-medium": "Soleil-Medium",
-      "soleil-light": "Soleil-Light",
-      "soleil-thin": "Soleil-Thin",
+      "soleil-regular": "soleil-regular",
+      "soleil-black": "soleil-black",
+      "soleil-bold": "soleil-bold",
+      "soleil-light": "soleil-light",
+      "soleil-book": "soleil-book",
     },
     extend: {
       animation: {

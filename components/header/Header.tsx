@@ -94,7 +94,7 @@ function Header({
           platform={platform}
           device={device}
         >
-          <div class="bg-base-100 fixed w-full z-50">
+          <div class="bg-base-100 fixed w-full z-50 fonte">
             {alerts && alerts.length > 0 && (
               <Alert alerts={alerts} interval={interval} device={device} />
             )}

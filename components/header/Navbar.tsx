@@ -56,7 +56,7 @@ function Navbar(
                 </a>
               )}
             </div>
-            <div class="flex-none grid n1-custom-grid-navbar items-center justif-center gap-6  w-full max-w-[1104px]">
+            <div class="flex-none grid n1-custom-grid-navbar items-center justif-center gap-6  w-full max-w-[1104px] font-soleil-book font-medium">
               <div class="flex">
                 <ul
                   class={`flex items-center gap-9 col-span-1 ${

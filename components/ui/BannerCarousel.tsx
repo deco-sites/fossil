@@ -121,7 +121,7 @@ function BannerItem(
       {action && (
         <div class="absolute top-0 md:bottom-0 bottom-1/2 left-0 right-0 sm:right-auto max-w-[407px] flex flex-col justify-end gap-4 px-8 py-12">
           {action.title && (
-            <span class="text-2xl font-light text-base-100">
+            <span class="text-2xl  font-light     text-base-100">
               {action.title}
             </span>
           )}
@@ -134,7 +134,7 @@ function BannerItem(
 
           {action.label && (
             <Button
-              class="bg-base-100 text-sm font-light py-4 px-6 w-fit"
+              class="bg-base-100 text-sm  font-light     py-4 px-6 w-fit"
               aria-label={action.label}
             >
               {action.label}

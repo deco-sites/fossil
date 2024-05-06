@@ -31,33 +31,78 @@ export default defineApp(async (_req, ctx) => {
         <link rel="manifest" href={asset("/site.webmanifest")} />
 
         <link rel="stylesheet" href="https://use.typekit.net/ndp1dcv.css" />
-      </Head>
 
-      {/* Rest of Preact tree */}
-      <ctx.Component />
+        <link
+          rel="preload"
+          type="text/css"
+          href={asset("/fonts/SoleilRegular.ttf")}
+        />
 
-      <style
-        dangerouslySetInnerHTML={{
-          __html: `
+        <link
+          rel="preload"
+          type="text/css"
+          href={asset("/fonts/Soleil-Black.ttf")}
+        />
+
+        <link
+          rel="preload"
+          type="text/css"
+          href={asset("/fonts/SoleilBook.ttf")}
+        />
+
+        <link
+          rel="preload"
+          type="text/css"
+          href={asset("/fonts/SoleilBold.ttf")}
+        />
+
+        <link
+          rel="preload"
+          type="text/css"
+          href={asset("/fonts/SoleilLight.ttf")}
+        />
+
+        <link
+          rel="preload"
+          type="text/css"
+          href={asset("/fonts/Soleil-Extrabold.ttf")}
+        />
+
+        <link
+          rel="preload"
+          type="text/css"
+          href={asset("/fonts/Soleil-Semibold.ttf")}
+        />
+
+        <link
+          rel="preload"
+          type="text/css"
+          href={asset("/fonts/Soleil-Black.ttf")}
+        />
+
+        <style
+          type="text/css"
+          dangerouslySetInnerHTML={{
+            __html: `
             @font-face{
-              font-family: 'Soleil-Regular';
-              src: url("/fonts/Soleil-Regular.ttf") format("truetype");
+              font-family: soleil-regular;
+              src: url(${asset("/fonts/SoleilRegular.ttf")} format("truetype");
               font-weight: 400;
               font-display: swap;
               font-style: normal;
             }; 
 
             @font-face{
-              font-family: 'Soleil-Black';
-              src: url("/fonts/Soleil-Black.ttf") format("truetype");
+              font-family: soleil-black;
+              src: url(${asset("/fonts/Soleil-Black.ttf")} format("truetype");
               font-weight: 900;
               font-display: swap;
               font-style: normal;
             }; 
 
             @font-face{
-              font-family: 'Soleil-Medium';
-              src: url("/fonts/Soleil-Semibold.ttf") format("truetype");
+              font-family: soleil-book;
+              src: url(${asset("/fonts/SoleilBook.ttf")} format("truetype");
               font-weight: 500;
               font-display: swap;
               font-style: normal;
@@ -65,23 +110,27 @@ export default defineApp(async (_req, ctx) => {
 
 
             @font-face{
-              font-family: 'Soleil-Bold';
-              src: url("/fonts/Soleil-Bold.ttf") format("truetype");
+              font-family: soleil-bold;
+              src: url(${asset("/fonts/SoleilBold.ttf")} format("truetype");
               font-weight: 700;
               font-display: swap;
               font-style: normal;
             }; 
            
             @font-face{
-              font-family: 'Soleil-Light';
-              src: url("/fonts/Soleil-Light.ttf") format("truetype");
+              font-family:soleil-light;
+              src: url(${asset("/fonts/SoleilLight.ttf")}) format("truetype");
               font-weight: 300;
               font-display: swap;
               font-style: normal;
             }; 
         `,
-        }}
-      />
+          }}
+        />
+      </Head>
+
+      {/* Rest of Preact tree */}
+      <ctx.Component />
 
       {/* Include service worker */}
       <script

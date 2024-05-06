@@ -19,7 +19,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
         <span
           class={`${
             name === "off" ? "text-[#FF1010]" : "text-black"
-          } uppercase text-sm  font-soleil-regular font-medium`}
+          } uppercase text-sm    font-medium`}
         >
           {name}
         </span>
@@ -38,7 +38,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
                 {children.map((node, index) => (
                   <li class="p-6 flex flex-col">
                     <a
-                      class="n1-custom-style-navbar !font-soleil-regular hover:font-bold"
+                      class="n1-custom-style-navbar !  hover:font-bold"
                       href={node.url}
                     >
                       <span>{node.name}</span>
@@ -59,7 +59,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
 
                     {index === 0 && (
                       <a href={url} class="pt-20">
-                        <button class=" border-[1px] border-solid border-[#7F7F7F]  hover:bg-warning hover:border-none  font-medium text-primary hover:text-white w-[150px] h-11 text-[18px] leading-6 font-soleil-regular uppercase grid place-content-center">
+                        <button class=" border-[1px] border-solid border-[#7F7F7F]  hover:bg-warning hover:border-none  font-medium text-primary hover:text-white w-[150px] h-11 text-[18px] leading-6   uppercase grid place-content-center">
                           Ver todos
                         </button>
                       </a>
