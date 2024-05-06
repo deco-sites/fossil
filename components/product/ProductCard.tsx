@@ -28,8 +28,8 @@ interface Props {
   platform?: Platform;
 }
 
-const WIDTH = 200;
-const HEIGHT = 279;
+const WIDTH = 400;
+const HEIGHT = 400;
 
 function ProductCard({
   product,
@@ -37,12 +37,14 @@ function ProductCard({
   itemListName,
   platform,
   index,
-}: Props) {
+  device,
+}: Props & { device?: string }) {
   const { url, productID, name, image: images, offers, isVariantOf } = product;
   const id = `product-card-${productID}`;
   const hasVariant = isVariantOf?.hasVariant ?? [];
   const productGroupID = isVariantOf?.productGroupID;
   const description = product.description || isVariantOf?.description;
+  const productName = isVariantOf?.name;
   const [front, back] = images ?? [];
   const { listPrice, price, installments } = useOffer(offers);
   const possibilities = useVariantPossibilities(hasVariant, product);
@@ -54,7 +56,7 @@ function ProductCard({
     <div
       id={id}
       data-deco="view-product"
-      class="card card-compact group w-full lg:border lg:border-transparent lg:hover:border-inherit lg:p-4"
+      class="card card-compact group w-full lg:border-2 rounded-none border-transparent lg:hover:border-black p-3 lg:p-2"
     >
       {/* Add click event to dataLayer */}
       <SendEventOnClick
@@ -75,7 +77,7 @@ function ProductCard({
         }}
       />
 
-      <div class="flex flex-col gap-2 lg:group-hover:-translate-y-2">
+      <div class="flex flex-col gap-1 group/product">
         <figure
           class="relative overflow-hidden"
           style={{ aspectRatio }}
@@ -89,7 +91,7 @@ function ProductCard({
             )}
           >
             {/* Discount % */}
-            <div class="text-sm px-3">
+            <div class="text-sm px-3 hidden">
               <span class="font-bold">
                 {listPrice && price
                   ? `${Math.round(((listPrice - price) / listPrice) * 100)}% `
@@ -97,7 +99,7 @@ function ProductCard({
               </span>
               OFF
             </div>
-            <div class="lg:group-hover:block">
+            <div class="hidden">
               {platform === "vtex" && (
                 <WishlistButtonVtex
                   productGroupID={productGroupID}
@@ -135,28 +137,39 @@ function ProductCard({
                 "rounded w-full",
                 "col-span-full row-span-full",
               )}
-              sizes="(max-width: 640px) 50vw, 20vw"
+              sizes="(max-width: 400px) 50vw, 20vw"
               preload={preload}
               loading={preload ? "eager" : "lazy"}
               decoding="async"
             />
-            <Image
-              src={back?.url ?? front.url!}
-              alt={back?.alternateName ?? front.alternateName}
-              width={WIDTH}
-              height={HEIGHT}
-              style={{ aspectRatio }}
-              class={clx(
-                "bg-base-100",
-                "object-cover",
-                "rounded w-full",
-                "col-span-full row-span-full",
-                "transition-opacity opacity-0 lg:group-hover:opacity-100",
-              )}
-              sizes="(max-width: 640px) 50vw, 20vw"
-              loading="lazy"
-              decoding="async"
-            />
+            {device === "desktop" && (
+              <Image
+                src={back?.url ?? front.url!}
+                alt={back?.alternateName ?? front.alternateName}
+                width={WIDTH}
+                height={HEIGHT}
+                style={{ aspectRatio }}
+                class={clx(
+                  "bg-base-100",
+                  "object-cover",
+                  "rounded w-full",
+                  "col-span-full row-span-full",
+                  "transition-opacity opacity-0 lg:group-hover:opacity-100",
+                )}
+                sizes="(max-width: 400px) 50vw, 20vw"
+                loading="lazy"
+                decoding="async"
+              />
+            )}
+            {device === "desktop" && (
+              <a
+                href={relativeUrl}
+                aria-label="view product"
+                class="!transition-none !h-12 w-[96%] font-medium items-center justify-center !hover:brightness-90 uppercase !border-warning absolute bottom-2 right-0 !bg-[#A66C18] hidden text-white group-hover/product:flex text-base tracking-[1px] "
+              >
+                comprar
+              </a>
+            )}
           </a>
         </figure>
 
@@ -183,38 +196,28 @@ function ProductCard({
         {/* Name/Description */}
         <div class="flex flex-col">
           <h2
-            class="truncate text-base lg:text-lg uppercase"
-            dangerouslySetInnerHTML={{ __html: name ?? "" }}
-          />
-
-          <div
-            class="truncate text-xs"
-            dangerouslySetInnerHTML={{ __html: description ?? "" }}
+            class="text-xs md:text-sm uppercase font-normal  leading-3 md:leading-4  text-primary-content tracking-one"
+            dangerouslySetInnerHTML={{ __html: productName ?? "" }}
           />
         </div>
 
         {/* Price from/to */}
-        <div class="flex gap-2 items-center justify-end font-light">
-          <span class="line-through text-sm">
-            {formatPrice(listPrice, offers?.priceCurrency)}
-          </span>
-          <span>
+        <div class="flex gap-2 items-center font-light text-primary-content">
+          {listPrice !== price && (
+            <span class="line-through text-sm font-bold">
+              {formatPrice(listPrice, offers?.priceCurrency)}
+            </span>
+          )}
+
+          <span class="text-sm font-bold tracking-one">
             {formatPrice(price, offers?.priceCurrency)}
           </span>
         </div>
 
         {/* Installments */}
-        <span class="flex justify-end gap-2 font-light text-sm truncate">
+        <span class="flex gap-2 font-light text-xs truncate text-primary-content">
           ou {installments}
         </span>
-
-        <a
-          href={relativeUrl}
-          aria-label="view product"
-          class="btn btn-block"
-        >
-          Ver produto
-        </a>
       </div>
     </div>
   );

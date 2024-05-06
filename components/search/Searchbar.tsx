@@ -139,7 +139,7 @@ function Searchbar({
 
   console.log(device);
   return (
-    <div class="max-md:flex itens-center justify-center w-full relative font-soleil-regular">
+    <div class="max-md:flex itens-center justify-center w-full relative ">
       <form
         id={id}
         action={action}
