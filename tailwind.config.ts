@@ -25,7 +25,11 @@ export default {
       },
       colors: {
         "primary": "#262626",
+        "primary-content": "#282828",
         "warning": "#9D6E2D",
+      },
+      letterSpacing: {
+        "one": "1px",
       },
     },
   },

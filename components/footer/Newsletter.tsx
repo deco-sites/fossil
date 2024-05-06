@@ -79,6 +79,7 @@ function Newsletter(
               type="submit"
               class="border-solid border-primary border-b-[1px]"
               disabled={loading}
+              aria-label={`submit e-mail`}
             >
               <Icon id="EmailSubmitFooter" size={15} strokeWidth={1} />
             </button>

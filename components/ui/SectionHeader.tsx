@@ -21,7 +21,7 @@ function Header(props: Props) {
         ? (
           <div
             class={`flex flex-col gap-2 ${
-              props.alignment === "left" ? "text-left" : "text-center"
+              props.alignment === "left" ? "text-left pl-20" : "text-center"
             }`}
           >
             {props.title &&
