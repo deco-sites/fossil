@@ -72,11 +72,14 @@ export default function FooterItems(
             )
             : (
               <>
-                <ul class="flex flex-col  justify-between md:hidden gap-4 py-4">
+                <ul class="flex flex-col  justify-between md:hidden gap-2 py-4">
                   {sections.map((section, index) => (
                     <>
-                      <Divider />
-                      <li class="pt-4">
+                      <li class="">
+                        <div class="mb-6">
+                          <Divider />
+                        </div>
+
                         <div
                           class={` ${
                             index === sections.length - 1

@@ -283,6 +283,20 @@ function Footer({
             </div>
           </>
         )}
+      {/* Script for YourViews */}
+      <script type="text/javascript">
+        {`
+          (function () {
+              var yvs = document.createElement("script");
+              yvs.type = "text/javascript";
+              yvs.async = true;
+              yvs.id = "_yvsrc";
+              yvs.src = "//service.yourviews.com.br/script/7f75d9ac-38c3-4026-9132-3b56ecca7415/yvapi.js";
+              var yvs_script = document.getElementsByTagName("script")[0];
+              yvs_script.parentNode.insertBefore(yvs, yvs_script);
+          })();
+      `}
+      </script>
     </footer>
   );
 }

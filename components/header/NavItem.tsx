@@ -11,7 +11,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
     <li
       class={`group flex mb-1 ${
         hasSubMenu
-          ? "n1-custom-text-shadow "
+          ? "hover:[text-shadow:_0_0_1px_#000]"
           : "hover:border-primary border-transparent border-solid border-b-4"
       }  items-center`}
     >
@@ -33,12 +33,12 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
             class="fixed hidden hover:flex group-hover:flex bg-base-100 z-50 items-start  justify-center gap-6  w-screen border-t-4 border-solid border-primary"
             style={{ top: "0px", left: "0px", marginTop: headerHeight }}
           >
-            <div class=" w-full  max-w-7xl flex items-start  justify-between ">
-              <ul class="flex items-start justify-center gap-6">
+            <div class=" w-full   max-w-6xl flex items-start  justify-between ">
+              <ul class="flex items-start justify-center gap-6  pr-4">
                 {children.map((node, index) => (
                   <li class="p-6 flex flex-col">
                     <a
-                      class="n1-custom-style-navbar  hover:font-bold"
+                      class="n1-custom-style-navbar ![text-shadow:_0_0_0px_#fff]"
                       href={node.url}
                     >
                       <span>{node.name}</span>
@@ -48,7 +48,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
                       {node.children?.map((leaf) => (
                         <li>
                           <a
-                            class=" text-[18px]  w-full leading-6  uppercase hover:font-bold text-primary whitespace-nowrap"
+                            class=" text-[18px] ![text-shadow:_0_0_0px_#fff] w-full leading-6 uppercase font-medium hover:font-bold text-primary whitespace-nowrap"
                             href={leaf.url}
                           >
                             <span class="">{leaf.name}</span>
