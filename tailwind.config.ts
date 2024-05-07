@@ -33,7 +33,7 @@ export default {
       },
       dropShadow: {
         "5xl": "0 0 1px #000",
-      }
+      },
     },
   },
 };

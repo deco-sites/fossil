@@ -3,8 +3,6 @@ import SliderJS from "../../islands/SliderJS.tsx";
 import { useId } from "../../sdk/useId.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import CartButtonVTEX from "../../islands/Header/Cart/vtex.tsx";
-import Cart from "../../components/minicart/Cart.tsx";
-import { lazy, Suspense } from "preact/compat";
 import MiniCart from "../../islands/MiniCart.tsx";
 
 export interface Props {
@@ -12,11 +10,12 @@ export interface Props {
   /** @description slider mobile */
   interval?: number;
 
-  device: string;
+  device?: string;
 }
 
 function Alert({ alerts = [], interval = 2, device }: Props) {
   const id = useId();
+
   const platform = usePlatform();
 
   return (

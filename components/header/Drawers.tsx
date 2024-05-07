@@ -3,7 +3,6 @@ import Cart from "../../components/minicart/Cart.tsx";
 import type { Props as SearchbarProps } from "../../components/search/Searchbar.tsx";
 import Button from "../../components/ui/Button.tsx";
 import Drawer from "../../components/ui/Drawer.tsx";
-import Icon from "../../components/ui/Icon.tsx";
 import { useUI } from "../../sdk/useUI.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import type { ComponentChildren } from "preact";
@@ -86,62 +85,63 @@ function Drawers(
 
   return (
     <>
-      {device !== "desktop" && (
-        <>
-          <Drawer // left drawer
-            open={displayMenu.value || displaySearchDrawer.value}
-            onClose={() => {
-              displayMenu.value = false;
-              displaySearchDrawer.value = false;
-            }}
-            class={displayMenu.value ? "" : "mt-24"}
-            aside={
-              <Aside
-                onClose={() => {
-                  displayMenu.value = false;
-                  displaySearchDrawer.value = false;
-                }}
-                title={displayMenu.value ? "Menu" : "Buscar"}
-                className={`${
-                  displayMenu.value
-                    ? "h-full max-w-[100vw] bg-base-100"
-                    : "bg-transparent absolute top-24 w-full"
-                }`}
-                type={`${displayMenu.value ? "menu" : "searchbar"}`}
-              >
-                {displayMenu.value && <Menu {...menu} />}
-                {searchbar && displaySearchDrawer.value && (
-                  <div class="">
-                    <Searchbar {...searchbar} device={device} />
-                  </div>
-                )}
-              </Aside>
-            }
-          >
-            {children}
-          </Drawer>
-          <Drawer // right drawer
-            class="mt-24 "
-            open={displayCart.value !== false}
-            onClose={() => displayCart.value = false}
-            aside={
-              <Aside
-                title="Minha sacola"
-                onClose={() => displayCart.value = false}
-                className={`w-[97%] absolute top-24 bg-white ${
-                  displayCart.value !== false ? "" : ""
-                } `}
-                type="minicart"
-              >
-                <Cart platform={platform} />
-              </Aside>
-            }
-          >
-            {children}
-          </Drawer>
-        </>
-      )}
-      {children}
+      {device !== "desktop"
+        ? (
+          <>
+            <Drawer // left drawer
+              open={displayMenu.value || displaySearchDrawer.value}
+              onClose={() => {
+                displayMenu.value = false;
+                displaySearchDrawer.value = false;
+              }}
+              class={displayMenu.value ? "" : "mt-24"}
+              aside={
+                <Aside
+                  onClose={() => {
+                    displayMenu.value = false;
+                    displaySearchDrawer.value = false;
+                  }}
+                  title={displayMenu.value ? "Menu" : "Buscar"}
+                  className={`${
+                    displayMenu.value
+                      ? "h-full max-w-[100vw] bg-base-100"
+                      : "bg-transparent absolute top-24 w-full"
+                  }`}
+                  type={`${displayMenu.value ? "menu" : "searchbar"}`}
+                >
+                  {displayMenu.value && <Menu {...menu} />}
+                  {searchbar && displaySearchDrawer.value && (
+                    <div class="">
+                      <Searchbar {...searchbar} device={device} />
+                    </div>
+                  )}
+                </Aside>
+              }
+            >
+              {children}
+            </Drawer>
+            <Drawer // right drawer
+              class="mt-24 "
+              open={displayCart.value !== false}
+              onClose={() => displayCart.value = false}
+              aside={
+                <Aside
+                  title="Minha sacola"
+                  onClose={() => displayCart.value = false}
+                  className={`w-[97%] absolute top-24 bg-white ${
+                    displayCart.value !== false ? "" : ""
+                  } `}
+                  type="minicart"
+                >
+                  <Cart platform={platform} />
+                </Aside>
+              }
+            >
+              {children}
+            </Drawer>
+          </>
+        )
+        : <>{children}</>}
     </>
   );
 }
