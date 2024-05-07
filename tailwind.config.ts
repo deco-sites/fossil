@@ -31,6 +31,9 @@ export default {
       letterSpacing: {
         "one": "1px",
       },
+      dropShadow: {
+        "5xl": "0 0 1px #000",
+      }
     },
   },
 };
