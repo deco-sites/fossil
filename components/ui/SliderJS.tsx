@@ -12,6 +12,8 @@ const ATTRIBUTES = {
   "data-slider-item": "data-slider-item",
   'data-slide="prev"': 'data-slide="prev"',
   'data-slide="next"': 'data-slide="next"',
+  'data-slide="prev-custom"': 'data-slide="prev-custom"', 
+  'data-slide="next-custom"': 'data-slide="next-custom"',
   "data-dot": "data-dot",
 };
 
@@ -52,6 +54,8 @@ const setup = ({ rootId, scroll, interval, infinite }: Props) => {
   const items = root?.querySelectorAll(`[${ATTRIBUTES["data-slider-item"]}]`);
   const prev = root?.querySelector(`[${ATTRIBUTES['data-slide="prev"']}]`);
   const next = root?.querySelector(`[${ATTRIBUTES['data-slide="next"']}]`);
+  const prevCustom = root?.querySelector(`[${ATTRIBUTES['data-slide="prev-custom"']}]`);
+  const nextCustom = root?.querySelector(`[${ATTRIBUTES['data-slide="next-custom"']}]`);
   const dots = root?.querySelectorAll(`[${ATTRIBUTES["data-dot"]}]`);
 
   if (!root || !slider || !items || items.length === 0) {
@@ -166,6 +170,8 @@ const setup = ({ rootId, scroll, interval, infinite }: Props) => {
 
   prev?.addEventListener("click", onClickPrev);
   next?.addEventListener("click", onClickNext);
+  prevCustom?.addEventListener("click", onClickPrev);
+  nextCustom?.addEventListener("click", onClickNext);
 
   const timeout = interval && setInterval(onClickNext, interval);
 
