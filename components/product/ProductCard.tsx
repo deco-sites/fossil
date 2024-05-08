@@ -39,7 +39,15 @@ function ProductCard({
   index,
   device,
 }: Props & { device?: string }) {
-  const { url, productID, name, image: images, offers, isVariantOf } = product;
+  const {
+    url,
+    productID,
+    name,
+    image: images,
+    offers,
+    isVariantOf,
+    inProductGroupWithID,
+  } = product;
   const id = `product-card-${productID}`;
   const hasVariant = isVariantOf?.hasVariant ?? [];
   const productGroupID = isVariantOf?.productGroupID;
@@ -91,13 +99,13 @@ function ProductCard({
             )}
           >
             {/* Discount % */}
-            <div class="text-sm px-3 hidden">
-              <span class="font-bold">
-                {listPrice && price
-                  ? `${Math.round(((listPrice - price) / listPrice) * 100)}% `
-                  : ""}
-              </span>
-              OFF
+            <div class="text-sm">
+              {(listPrice && price &&
+                (Math.round(((listPrice - price) / listPrice) * 100) > 0)) && (
+                <span class="w-9 h-9 flex items-center justify-center text-center text-sm font-medium bg-[#d20d17] text-white rounded-[100px]">
+                  OFF
+                </span>
+              )}
             </div>
             <div class="hidden">
               {platform === "vtex" && (
@@ -200,11 +208,15 @@ function ProductCard({
             dangerouslySetInnerHTML={{ __html: productName ?? "" }}
           />
         </div>
-
+        {/**review */}
+        <div class="h-5">
+          <div class="yv-review-quickreview" value={inProductGroupWithID}></div> 
+        </div>
+      
         {/* Price from/to */}
-        <div class="flex gap-2 items-center font-light text-primary-content">
+        <div class="flex flex-col gap-1 font-light text-primary-content">
           {listPrice !== price && (
-            <span class="line-through text-sm font-bold">
+            <span class="line-through text-sm ">
               {formatPrice(listPrice, offers?.priceCurrency)}
             </span>
           )}

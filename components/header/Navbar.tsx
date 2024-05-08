@@ -88,9 +88,7 @@ function Navbar(
         )
         : (
           //Header Mobile
-          <div
-            class="lg:hidden flex  justify-between items-center w-full px-4 py-4 gap-2"
-          >
+          <div class="lg:hidden flex  justify-between items-center w-full px-4 py-4 gap-2">
             {logo && (
               <a
                 href="/"
