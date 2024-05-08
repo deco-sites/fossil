@@ -34,9 +34,20 @@ function PrevButton(props: JSX.IntrinsicElements["button"]) {
   return <button data-slide="prev" aria-label="Previous item" {...props} />;
 }
 
+
+function Next(props: JSX.IntrinsicElements["button"]) {
+  return <button data-slide="next-custom" aria-label="Next item" {...props} />;
+}
+
+function Previous(props: JSX.IntrinsicElements["button"]) {
+  return <button data-slide="prev-custom" aria-label="Previous item" {...props} />;
+}
+
 Slider.Dot = Dot;
 Slider.Item = Item;
 Slider.NextButton = NextButton;
 Slider.PrevButton = PrevButton;
+Slider.Next = Next;
+Slider.Previous = Previous;
 
 export default Slider;
