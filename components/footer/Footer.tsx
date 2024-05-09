@@ -232,7 +232,7 @@ function Footer({
       {device === "desktop"
         ? (
           <>
-            <div class="container hidden md:block px-16 lg:mx-auto">
+            <div class="max-w-screen-2xl w-full hidden md:block px-16 lg:mx-auto">
               <Divider />
               <div class="flex flex-col gap-10 pt-4">
                 <div class="flex flex-col lg:flex-row gap-14">
@@ -283,20 +283,7 @@ function Footer({
             </div>
           </>
         )}
-      {/* Script for YourViews */}
-      <script type="text/javascript">
-        {`
-          (function () {
-              var yvs = document.createElement("script");
-              yvs.type = "text/javascript";
-              yvs.async = true;
-              yvs.id = "_yvsrc";
-              yvs.src = "//service.yourviews.com.br/script/7f75d9ac-38c3-4026-9132-3b56ecca7415/yvapi.js";
-              var yvs_script = document.getElementsByTagName("script")[0];
-              yvs_script.parentNode.insertBefore(yvs, yvs_script);
-          })();
-      `}
-      </script>
+       <BackToTop/>
     </footer>
   );
 }

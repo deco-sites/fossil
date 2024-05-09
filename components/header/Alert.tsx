@@ -28,7 +28,7 @@ function Alert({ alerts = [], interval = 2, device }: Props) {
                 Suporte
               </a>
               <div class="w-full  max-w-4xl">
-                <ul class="hidden lg:flex placeholder:flex">
+                <ul class="hidden lg:flex placeholder:flex justify-center">
                   {alerts.map((alert, index) => (
                     <li
                       key={index}

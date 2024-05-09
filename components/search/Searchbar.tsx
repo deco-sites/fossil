@@ -143,7 +143,7 @@ function Searchbar({
       <form
         id={id}
         action={action}
-        class="join rounded-none md:rounded-lg md:h-10 bg-[#f5f5f5] w-[90%] md:w-auto"
+        class="join rounded-none md:h-10 bg-[#f5f5f5] w-[90%] md:w-auto"
       >
         <input
           ref={searchInputRef}

@@ -58,7 +58,7 @@ function Navbar(
             <div class="flex-none grid n1-custom-grid-navbar items-center justif-center gap-6  w-full max-w-[1104px]">
               <div class="flex">
                 <ul
-                  class={`flex items-center gap-9 col-span-1 ${
+                  class={`flex items-center gap-9 col-span-1  lg:pl-28 2xl:pl-0 ${
                     logoPosition === "left" ? "justify-center" : "justify-start"
                   }`}
                 >
