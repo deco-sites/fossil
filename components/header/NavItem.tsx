@@ -12,7 +12,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
       class={`group flex mb-1 ${
         hasSubMenu
           ? "hover:[text-shadow:_0_0_1px_#000]"
-          : "hover:border-primary border-transparent border-solid border-b-4"
+          : "hover:border-primary border-transparent border-solid border-b-4 lg:mt-1"
       }  items-center`}
     >
       <a href={url} class="py-6 ">

@@ -249,9 +249,10 @@ function Footer({
                   </div>
                 </div>
               </div>
-              <address class="w-full font-light not-italic py-8">
+              <address class="w-full  font-light    not-italic pt-8">
                 {address}
               </address>
+              <BackToTop/>
             </div>
             <div class="hidden md:flex flex-col items-center md:flex-row md:justify-between gap-10 bg-[#FAF8F6]">
               <div class="w-full flex items-center">
@@ -274,16 +275,16 @@ function Footer({
               <div class="w-full">
                 {_sectionLinks}
               </div>
-              <address class="w-56 m-auto font-light not-italic py-8">
+              <address class="w-56 m-auto  font-light     not-italic py-8">
                 {address}
               </address>
+              <BackToTop/>
               <div class="w-full flex flex-wrap justify-between bg-[#FAF8F6]">
                 {_links}
               </div>
             </div>
           </>
         )}
-       <BackToTop/>
     </footer>
   );
 }

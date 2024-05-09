@@ -106,15 +106,15 @@ function BlogPosts({
             width={442}
             height={266}
           />
-          <figcaption class="text-2xl mt-4 font-light">{post.label}</figcaption>
+          <figcaption class="text-2xl mt-4  font-light    ">{post.label}</figcaption>
         </figure>
         <div class="flex flex-col gap-1">
-          <p class="text-base font-light pb-14 pt-2">{post.description}</p>
+          <p class="text-base  font-light     pb-14 pt-2">{post.description}</p>
           <div class="flex items-center justify-between">
-            <p class="font-light text-xs">
+            <p class=" font-light     text-xs">
               {post.author}
             </p>
-            <p class="font-light text-xs">{post.date}</p>
+            <p class=" font-light     text-xs">{post.date}</p>
           </div>
         </div>
       </article>

@@ -30,58 +30,112 @@ export default defineApp(async (_req, ctx) => {
         {/* Web Manifest */}
         <link rel="manifest" href={asset("/site.webmanifest")} />
 
-        <link rel="stylesheet" href="https://use.typekit.net/ndp1dcv.css" />
+        <link
+          rel="preload"
+          type="text/css"
+          href={asset("/fonts/SoleilRegular.woff")}
+        />
+
+        <link
+          rel="preload"
+          type="text/css"
+          href={asset("/fonts/SoleilBlack.woff")}
+        />
+
+        <link
+          rel="preload"
+          type="text/css"
+          href={asset("/fonts/SoleilBook.woff")}
+        />
+
+        <link
+          rel="preload"
+          type="text/css"
+          href={asset("/fonts/SoleilBold.woff")}
+        />
+
+        <link
+          rel="preload"
+          type="text/css"
+          href={asset("/fonts/SoleilLight.woff")}
+        />
+
+        <link
+          rel="preload"
+          type="text/css"
+          href={asset("/fonts/SoleilExtrabold.woff")}
+        />
+
+        <link
+          rel="preload"
+          type="text/css"
+          href={asset("/fonts/SoleilSemibold.woff")}
+        />
+
+        <link
+          rel="preload"
+          type="text/css"
+          href={asset("/fonts/SoleilBlack.woff")}
+        />
+
+        <style
+          type="text/css"
+          dangerouslySetInnerHTML={{
+            __html: `
+            @font-face {
+              font-family: "soleil";
+              src: url(${asset("/fonts/SoleilRegular.woff")}) format('woff');
+              font-weight: 400;
+              font-display: swap;
+              font-style: normal;
+            }
+            
+            @font-face {
+              font-family: "soleil"; 
+              src: url(${asset("/fonts/SoleilBlack.woff")}) format('woff');
+              font-weight: 900;
+              font-display: swap;
+              font-style: normal;
+            }
+            
+            @font-face {
+              font-family: "soleil";
+              src: url(${asset("/fonts/SoleilBook.woff")}) format('woff');
+              font-weight: 500;
+              font-display: swap;
+              font-style: normal;
+            }
+            
+            @font-face {
+              font-family: "soleil";
+              src: url(${asset("/fonts/SoleilBold.woff")}) format('woff');
+              font-weight: 700;
+              font-display: swap;
+              font-style: normal;
+            }
+            
+            @font-face {
+              font-family: "soleil";
+              src: url(${asset("/fonts/SoleilLight.woff")}) format('woff');
+              font-weight: 300;
+              font-display: swap;
+              font-style: normal;
+            }
+
+            @font-face {
+              font-family: "soleil";
+              src: url(${asset("/fonts/SoleilSemibold.woff")}) format('woff');
+              font-weight: 600;
+              font-display: swap;
+              font-style: normal;
+            }
+        `,
+          }}
+        />
       </Head>
 
       {/* Rest of Preact tree */}
       <ctx.Component />
-
-      <style
-        dangerouslySetInnerHTML={{
-          __html: `
-            @font-face{
-              font-family: 'Soleil-Regular';
-              src: url("/fonts/Soleil-Regular.ttf") format("truetype");
-              font-weight: 400;
-              font-display: swap;
-              font-style: normal;
-            }; 
-
-            @font-face{
-              font-family: 'Soleil-Black';
-              src: url("/fonts/Soleil-Black.ttf") format("truetype");
-              font-weight: 900;
-              font-display: swap;
-              font-style: normal;
-            }; 
-
-            @font-face{
-              font-family: 'Soleil-Medium';
-              src: url("/fonts/Soleil-Semibold.ttf") format("truetype");
-              font-weight: 500;
-              font-display: swap;
-              font-style: normal;
-            }; 
-
-
-            @font-face{
-              font-family: 'Soleil-Bold';
-              src: url("/fonts/Soleil-Bold.ttf") format("truetype");
-              font-weight: 700;
-              font-display: swap;
-              font-style: normal;
-            }; 
-           
-            @font-face{
-              font-family: 'Soleil-Light';
-              src: url("/fonts/Soleil-Light.ttf") format("truetype");
-              font-weight: 300;
-              font-display: swap;
-              font-style: normal;
-            }; 
-        `,
-        }}
-      />
 
       {/* Include service worker */}
       <script
