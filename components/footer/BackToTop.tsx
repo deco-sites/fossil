@@ -6,7 +6,7 @@ export default function BackToTop({ content }: { content?: string }) {
       <div class="w-full flex items-center justify-center">
         <a
           href="#top"
-          alt="back to top"
+          aria-label="back to top"
           class=" w-8 h-8 md:w-14 md:h-12 fixed flex justify-center items-center  right-1 md:right-6 bottom-16 md:bottom-[72px] border-solid text-primary border-primary border-[3px] bg-[#ffffff99] hover:bg-[#e07f16] text-center z-20 "
         >
           {content}{" "}
