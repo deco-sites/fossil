@@ -95,7 +95,7 @@ export default function BannerFossilCoousel({
               <Slider.Item
                 index={index}
                 class={clx(
-                  "carousel-item",
+                  "carousel-item lg:flex lg:justify-center",
                   slideDesktop[layout?.numberOfSliders?.desktop ?? 3],
                   slideMobile[layout?.numberOfSliders?.mobile ?? 1],
                 )}

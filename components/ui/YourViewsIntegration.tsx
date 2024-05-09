@@ -1,4 +1,3 @@
-
 const js = () => {
   const init = () => {
     const node = document.createElement("script");
