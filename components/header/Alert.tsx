@@ -3,8 +3,6 @@ import SliderJS from "../../islands/SliderJS.tsx";
 import { useId } from "../../sdk/useId.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import CartButtonVTEX from "../../islands/Header/Cart/vtex.tsx";
-import Cart from "../../components/minicart/Cart.tsx";
-import { lazy, Suspense } from "preact/compat";
 import MiniCart from "../../islands/MiniCart.tsx";
 
 export interface Props {
@@ -12,30 +10,31 @@ export interface Props {
   /** @description slider mobile */
   interval?: number;
 
-  device: string;
+  device?: string;
 }
 
 function Alert({ alerts = [], interval = 2, device }: Props) {
   const id = useId();
+
   const platform = usePlatform();
 
   return (
     <>
       {device === "desktop"
         ? (
-          <div class="w-full h-10 text-sm  font-light     lg:px-8 flex bg-primary items-center">
-            <div class=" container hidden lg:flex items-center justify-between w-full gap-8     font-light    ">
-              <a href="/central" class="text-white text-sm  font-light font-soleil ">
+          <div class="w-full h-10 text-sm font-light lg:px-8 flex bg-primary items-center">
+            <div class=" container hidden lg:flex items-center justify-between w-full gap-8   font-light">
+              <a href="/central" class="text-white text-sm font-light">
                 Suporte
               </a>
               <div class="w-full  max-w-4xl">
-                <ul class="hidden lg:flex placeholder:flex">
+                <ul class="hidden lg:flex placeholder:flex justify-center">
                   {alerts.map((alert, index) => (
                     <li
                       key={index}
                       class="flex items-center"
                     >
-                      <span class="text-[.7rem] uppercase text-white h-[38px] flex items-center     font-light    ">
+                      <span class="text-[.7rem] uppercase text-white h-[38px] flex items-center  font-light">
                         {alert}
                       </span>
                       {index < alerts.length - 1 && (
@@ -75,7 +74,7 @@ function Alert({ alerts = [], interval = 2, device }: Props) {
                   index={index}
                   class="carousel-item items-center justify-center"
                 >
-                  <span class="text-[0.7rem] uppercase w-screen   text-white flex items-center justify-center h-[38px]">
+                  <span class="text-[0.7rem] uppercase w-screen text-white flex items-center justify-center h-[38px]">
                     {alert}
                   </span>
                 </Slider.Item>

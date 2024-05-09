@@ -139,11 +139,11 @@ function Searchbar({
 
   console.log(device);
   return (
-    <div class="max-md:flex itens-center justify-center w-full relative  ">
+    <div class="max-md:flex itens-center justify-center w-full relative ">
       <form
         id={id}
         action={action}
-        class="join rounded-none md:rounded-lg md:h-10 bg-[#f5f5f5] w-[90%] md:w-auto"
+        class="join rounded-none md:h-10 bg-[#f5f5f5] w-[90%] md:w-auto"
       >
         <input
           ref={searchInputRef}

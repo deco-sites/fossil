@@ -12,7 +12,6 @@ import { usePlatform } from "../../sdk/usePlatform.tsx";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import NavItem from "./NavItem.tsx";
-import { navbarHeight } from "./constants.ts";
 import { Buttons, Logo } from "../../components/header/Header.tsx";
 
 // Make it sure to render it on the server only. DO NOT render it on an island
@@ -59,7 +58,7 @@ function Navbar(
             <div class="flex-none grid n1-custom-grid-navbar items-center justif-center gap-6  w-full max-w-[1104px] font-soleil-book font-medium">
               <div class="flex">
                 <ul
-                  class={`flex items-center gap-9 col-span-1 ${
+                  class={`flex items-center gap-9 col-span-1  lg:pl-28 2xl:pl-0 ${
                     logoPosition === "left" ? "justify-center" : "justify-start"
                   }`}
                 >
@@ -89,15 +88,11 @@ function Navbar(
         )
         : (
           //Header Mobile
-          <div
-            style={``}
-            class="lg:hidden flex  justify-between items-center w-full px-4 py-4 gap-2"
-          >
+          <div class="lg:hidden flex  justify-between items-center w-full px-4 py-4 gap-2">
             {logo && (
               <a
                 href="/"
                 class="flex-grow inline-flex items-center md:justify-center"
-                style={``}
                 aria-label="Store logo"
               >
                 <Image

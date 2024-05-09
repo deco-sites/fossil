@@ -87,27 +87,29 @@ function Header({
 
   return (
     <>
-      <header style={{ height: headerHeight }}>
-        <Drawers
-          menu={{ items }}
-          searchbar={searchbar}
-          platform={platform}
-          device={device}
-        >
-          <div class="bg-base-100 fixed w-full z-50 fonte">
-            {alerts && alerts.length > 0 && (
-              <Alert alerts={alerts} interval={interval} device={device} />
-            )}
-            <Navbar
-              device={device}
-              items={items}
-              searchbar={searchbar && { ...searchbar, platform }}
-              logo={logo}
-              logoPosition={logoPosition}
-              buttons={buttons}
-            />
-          </div>
-        </Drawers>
+      <header style={{ height: headerHeight }} class="">
+        <div class="fixed z-[100] w-full">
+          {alerts && alerts.length > 0 && (
+            <Alert alerts={alerts} interval={interval} device={device} />
+          )}
+          <Drawers
+            menu={{ items }}
+            searchbar={searchbar}
+            platform={platform}
+            device={device}
+          >
+            <div class="bg-base-100 fixed w-full z-50">
+              <Navbar
+                device={device}
+                items={items}
+                searchbar={searchbar && { ...searchbar, platform }}
+                logo={logo}
+                logoPosition={logoPosition}
+                buttons={buttons}
+              />
+            </div>
+          </Drawers>
+        </div>
       </header>
     </>
   );

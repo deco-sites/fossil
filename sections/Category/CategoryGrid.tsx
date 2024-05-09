@@ -84,7 +84,7 @@ function CategoryGrid(props: Props) {
   return (
     <div
       id={id}
-      class="container mt-16"
+      class="max-w-screen-2xl w-full mt-16"
     >
       <Header
         title={header.title}
@@ -96,14 +96,14 @@ function CategoryGrid(props: Props) {
         {list.map((
           { href, image, label, buttonText },
         ) => (
-          <div class=" flex flex-col gap-4 items-center">
+          <div class=" flex flex-col gap-4 items-center w-full ">
             <a
               href={href}
-              class={` flex items-center `}
+              class={` flex items-center w-full `}
             >
               {image &&
                 (
-                  <figure>
+                  <figure className={`w-full`}>
                     <Image
                       class="w-full h-auto object-cover"
                       src={image}
@@ -117,9 +117,9 @@ function CategoryGrid(props: Props) {
                 )}
             </a>
 
-            <h3 class="font-bold text-primary text-3xl">
+            <h2 class="font-bold text-primary text-3xl">
               {label}
-            </h3>
+            </h2>
 
             <Button
               class="font-bold uppercase text-base text-primary  px-6  underline"

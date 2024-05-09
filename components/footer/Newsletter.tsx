@@ -57,11 +57,11 @@ function Newsletter(
     >
       <div class="flex">
         {content?.title && (
-          <h4
+          <h3
             class={"text-2xl tracking-[1px] text-primary font-bold leading-none uppercase"}
           >
             {content?.title}
-          </h4>
+          </h3>
         )}
       </div>
       <div class="flex flex-col gap-4">
@@ -79,6 +79,7 @@ function Newsletter(
               type="submit"
               class="border-solid border-primary border-b-[1px]"
               disabled={loading}
+              aria-label={`submit e-mail`}
             >
               <Icon id="EmailSubmitFooter" size={15} strokeWidth={1} />
             </button>
