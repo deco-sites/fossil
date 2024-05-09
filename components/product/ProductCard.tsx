@@ -85,7 +85,7 @@ function ProductCard({
         }}
       />
 
-      <div class="flex flex-col gap-1 group/product">
+      <div class="flex flex-col gap-1 group/product font-soleil">
         <figure
           class="relative overflow-hidden"
           style={{ aspectRatio }}

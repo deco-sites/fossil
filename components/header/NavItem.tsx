@@ -12,7 +12,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
       class={`group flex mb-1 ${
         hasSubMenu
           ? "hover:[text-shadow:_0_0_1px_#000]"
-          : "hover:border-primary border-transparent border-solid border-b-4"
+          : "hover:border-primary border-transparent border-solid border-b-4 lg:mt-1"
       }  items-center`}
     >
       <a href={url} class="py-6 ">
@@ -38,11 +38,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
                 {children.map((node, index) => (
                   <li class="p-6 flex flex-col">
                     <a
-<<<<<<< HEAD
-                      class="n1-custom-style-navbar !  hover:font-bold"
-=======
                       class="n1-custom-style-navbar ![text-shadow:_0_0_0px_#fff]"
->>>>>>> origin/main
                       href={node.url}
                     >
                       <span>{node.name}</span>
@@ -63,11 +59,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
 
                     {index === 0 && (
                       <a href={url} class="pt-20">
-<<<<<<< HEAD
-                        <button class=" border-[1px] border-solid border-[#7F7F7F]  hover:bg-warning hover:border-none  font-medium text-primary hover:text-white w-[150px] h-11 text-[18px] leading-6   uppercase grid place-content-center">
-=======
                         <button class=" border-[1px] border-solid border-[#7F7F7F]  hover:bg-warning hover:border-none  font-medium text-primary hover:text-white w-[150px] h-11 text-[18px] leading-6 uppercase grid place-content-center">
->>>>>>> origin/main
                           Ver todos
                         </button>
                       </a>

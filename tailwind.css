@@ -6,7 +6,7 @@
 
   /* Allow changing font family via CMS */
   html {
-    font-family: soleil;
+    font-family: "soleil" , "sans-serif";
   }
 
   .drawer-side {

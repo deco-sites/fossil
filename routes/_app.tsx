@@ -30,100 +30,105 @@ export default defineApp(async (_req, ctx) => {
         {/* Web Manifest */}
         <link rel="manifest" href={asset("/site.webmanifest")} />
 
-        <link rel="stylesheet" href="https://use.typekit.net/ndp1dcv.css" />
-
         <link
           rel="preload"
           type="text/css"
-          href={asset("/fonts/SoleilRegular.ttf")}
+          href={asset("/fonts/SoleilRegular.woff")}
         />
 
         <link
           rel="preload"
           type="text/css"
-          href={asset("/fonts/Soleil-Black.ttf")}
+          href={asset("/fonts/SoleilBlack.woff")}
         />
 
         <link
           rel="preload"
           type="text/css"
-          href={asset("/fonts/SoleilBook.ttf")}
+          href={asset("/fonts/SoleilBook.woff")}
         />
 
         <link
           rel="preload"
           type="text/css"
-          href={asset("/fonts/SoleilBold.ttf")}
+          href={asset("/fonts/SoleilBold.woff")}
         />
 
         <link
           rel="preload"
           type="text/css"
-          href={asset("/fonts/SoleilLight.ttf")}
+          href={asset("/fonts/SoleilLight.woff")}
         />
 
         <link
           rel="preload"
           type="text/css"
-          href={asset("/fonts/Soleil-Extrabold.ttf")}
+          href={asset("/fonts/SoleilExtrabold.woff")}
         />
 
         <link
           rel="preload"
           type="text/css"
-          href={asset("/fonts/Soleil-Semibold.ttf")}
+          href={asset("/fonts/SoleilSemibold.woff")}
         />
 
         <link
           rel="preload"
           type="text/css"
-          href={asset("/fonts/Soleil-Black.ttf")}
+          href={asset("/fonts/SoleilBlack.woff")}
         />
 
         <style
           type="text/css"
           dangerouslySetInnerHTML={{
             __html: `
-            @font-face{
-              font-family: soleil-regular;
-              src: url(${asset("/fonts/SoleilRegular.ttf")} format("truetype");
+            @font-face {
+              font-family: "soleil";
+              src: url(${asset("/fonts/SoleilRegular.woff")}) format('woff');
               font-weight: 400;
               font-display: swap;
               font-style: normal;
-            }; 
-
-            @font-face{
-              font-family: soleil-black;
-              src: url(${asset("/fonts/Soleil-Black.ttf")} format("truetype");
+            }
+            
+            @font-face {
+              font-family: "soleil"; 
+              src: url(${asset("/fonts/SoleilBlack.woff")}) format('woff');
               font-weight: 900;
               font-display: swap;
               font-style: normal;
-            }; 
-
-            @font-face{
-              font-family: soleil-book;
-              src: url(${asset("/fonts/SoleilBook.ttf")} format("truetype");
+            }
+            
+            @font-face {
+              font-family: "soleil";
+              src: url(${asset("/fonts/SoleilBook.woff")}) format('woff');
               font-weight: 500;
               font-display: swap;
               font-style: normal;
-            }; 
-
-
-            @font-face{
-              font-family: soleil-bold;
-              src: url(${asset("/fonts/SoleilBold.ttf")} format("truetype");
+            }
+            
+            @font-face {
+              font-family: "soleil";
+              src: url(${asset("/fonts/SoleilBold.woff")}) format('woff');
               font-weight: 700;
               font-display: swap;
               font-style: normal;
-            }; 
-           
-            @font-face{
-              font-family:soleil-light;
-              src: url(${asset("/fonts/SoleilLight.ttf")}) format("truetype");
+            }
+            
+            @font-face {
+              font-family: "soleil";
+              src: url(${asset("/fonts/SoleilLight.woff")}) format('woff');
               font-weight: 300;
               font-display: swap;
               font-style: normal;
-            }; 
+            }
+
+            @font-face {
+              font-family: "soleil";
+              src: url(${asset("/fonts/SoleilSemibold.woff")}) format('woff');
+              font-weight: 600;
+              font-display: swap;
+              font-style: normal;
+            }
         `,
           }}
         />
