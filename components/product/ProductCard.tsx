@@ -210,9 +210,9 @@ function ProductCard({
         </div>
         {/**review */}
         <div class="h-5">
-          <div class="yv-review-quickreview" value={inProductGroupWithID}></div> 
+          <div class="yv-review-quickreview" value={inProductGroupWithID}></div>
         </div>
-      
+
         {/* Price from/to */}
         <div class="flex flex-col gap-1 font-light text-primary-content">
           {listPrice !== price && (
