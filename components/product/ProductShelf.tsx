@@ -54,7 +54,7 @@ function ProductShelf({
     5: "w-1/5",
   };
   return (
-    <div class="w-full max-w-screen-2xl  m-auto py-8 flex flex-col gap-6 lg:py-10 px-3 font-soleil lg:px-4">
+    <div class="w-full max-w-screen-2xl  m-auto py-8 flex flex-col gap-6 lg:py-8 px-3 font-soleil lg:px-4">
       <div class="w-full relative">
         <div
           class={`flex flex-col gap-2 ${
@@ -67,7 +67,7 @@ function ProductShelf({
             (
               <h2
                 class={clx(
-                  " text-base tracking-one lg:text-xl font-bold uppercase leading-8 lg:leading-10 text-primary pb-4 lg:pb-8",
+                  " text-base tracking-one lg:text-xl font-bold uppercase leading-8 lg:leading-10 text-primary pb-4 lg:pb-4",
                 )}
               >
                 {title}
@@ -154,9 +154,9 @@ function ProductShelf({
 
           {/**buttons top */}
           <div class="absolute top-2 right-0 lg:right-24 w-20 lg:w-48 h-4 flex items-center justify-between pr-4 ">
-            <div class=" w-1/2 flex items-center pr-1 justify-between z-10 col-start-1 row-start-2 border-r-2 border-solid border-primary">
-              <Slider.Previous class=" w-full flex justify-around items-center">
-                <Icon size={20} id="ChevronLeft" strokeWidth={3} />
+            <div class=" w-1/2 flex items-center  py-1 lg:pr-1 justify-between z-10 col-start-1 row-start-2 border-r-2 border-solid border-[#0000004d]">
+              <Slider.Previous class=" w-full flex justify-around items-center bg-[`}`]">
+                <Icon size={16} id="ChevronLeft" strokeWidth={14} />
                 <span class="text-base hidden md:block text-primary font-medium">
                   Anterior
                 </span>
@@ -168,7 +168,7 @@ function ProductShelf({
                 <span class=" hidden md:block text-base text-primary font-medium">
                   Próximo
                 </span>
-                <Icon size={20} id="ChevronRight" strokeWidth={3} />
+                <Icon size={16} id="ChevronRight" strokeWidth={14} />
               </Slider.Next>
             </div>
           </div>
