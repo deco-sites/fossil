@@ -104,7 +104,7 @@ export default function BannerFossilCoousel({
                   href={card.action?.href}
                   label={card.action?.label}
                   title={card.action?.title}
-                  class="flex flex-col text-center items-center w-full  max-w-48"
+                  class="flex flex-col text-center items-center w-full  max-w-36 lg:max-w-48"
                 >
                   <div class="w-full ">
                     <Image
@@ -118,7 +118,7 @@ export default function BannerFossilCoousel({
                     />
                   </div>
                   <div class="w-full">
-                    <h3 class="underline text-primary text-base w-44 text-center">
+                    <h3 class="underline text-primary w-50 text-sm uppercase m-auto lg:text-base  w-20  lg:w-44 text-center">
                       {card.action?.title}
                     </h3>
                   </div>
@@ -163,20 +163,18 @@ export default function BannerFossilCoousel({
           {/**buttons bottom */}
           <div class=" absolute-center-buttons lg:hidden w-48 h-4 flex items-center justify-between pr-4">
             <div class=" w-1/2 flex items-center pr-1 justify-between z-10 col-start-1 row-start-2 border-r-2 border-solid border-primary">
-              <Slider.Previous class=" w-full flex justify-around items-center">
-                <Icon size={20} id="ChevronLeft" strokeWidth={3} />
-                <span class="text-base block text-primary font-medium">
-                  Anterior
-                </span>
+              <Slider.Previous class=" w-full flex justify-around items-center ">
+                <div class="text-base flex items-center justify-center gap-1 text-primary font-medium before:bg-arrow-left before:bg-no-repeat before:bg-center before:bg-14 before:w-4 before:h-6 before:block after:mb-2px">
+                  <span class="block">Anterior</span>
+                </div>
               </Slider.Previous>
             </div>
 
             <div class="flex items-center w-1/2  justify-center z-10 col-start-3 row-start-2">
               <Slider.Next class="w-full pl-1 flex justify-around  items-center">
-                <span class="block text-base text-primary font-medium">
-                  Próximo
-                </span>
-                <Icon size={20} id="ChevronRight" strokeWidth={3} />
+                <div class="flex items-center justify-center ga-1 text-base text-primary font-medium after:bg-arrow-right after:bg-no-repeat after:bg-center after:bg-14  after:w-4 after:h-6 after:block after:mb-2px">
+                  <span class="block">Próximo</span>
+                </div>
               </Slider.Next>
             </div>
           </div>
