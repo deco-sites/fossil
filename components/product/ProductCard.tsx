@@ -204,7 +204,7 @@ function ProductCard({
         {/* Name/Description */}
         <div class="flex flex-col">
           <h2
-            class="text-xs md:text-sm uppercase font-normal  leading-3 md:leading-4  text-primary-content tracking-one"
+            class="text-xs md:text-sm uppercase font-normal lg:leading-4  h-auto xs:h-16 lg:h-auto text-primary-content tracking-one"
             dangerouslySetInnerHTML={{ __html: productName ?? "" }}
           />
         </div>

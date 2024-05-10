@@ -1,7 +1,6 @@
 import { SendEventOnView } from "../../components/Analytics.tsx";
 import ProductCard from "../../components/product/ProductCard.tsx";
 import Icon from "../../components/ui/Icon.tsx";
-import Header from "../../components/ui/SectionHeader.tsx";
 import Slider from "../../components/ui/Slider.tsx";
 import SliderJS from "../../islands/SliderJS.tsx";
 import { useId } from "../../sdk/useId.ts";
@@ -54,7 +53,7 @@ function ProductShelf({
     5: "w-1/5",
   };
   return (
-    <div class="w-full max-w-screen-2xl  m-auto py-8 flex flex-col gap-6 lg:py-8 px-3 font-soleil lg:px-4">
+    <div class="w-full max-w-screen-2xl  m-auto pt-8 flex flex-col gap-6 lg:py-8 px-3 font-soleil lg:px-4">
       <div class="w-full relative">
         <div
           class={`flex flex-col gap-2 ${
@@ -136,39 +135,34 @@ function ProductShelf({
             <>
               <div class="hidden md:flex items-center justify-center z-10 col-start-1 row-start-2">
                 <Slider.PrevButton class="absolute w-12 h-12 flex justify-center items-center">
-                  <Icon
-                    size={25}
-                    id="ChevronLeft"
-                    strokeWidth={3}
-                    class="w-5"
-                  />
+                  <div class="text-base hidden md:flex items-center justify-center gap-1 text-primary font-medium before:bg-arrow-left before:bg-no-repeat before:bg-center before:bg-14 before:w-6 before:h-6 before:block after:mb-2px">
+                  </div>
                 </Slider.PrevButton>
               </div>
               <div class="flex items-center justify-center z-10 col-start-3 row-start-2">
                 <Slider.NextButton class="absolute w-12 h-12 flex justify-center items-center">
-                  <Icon size={25} id="ChevronRight" strokeWidth={3} />
+                  <div class=" hidden md:flex items-center justify-center ga-1 text-base text-primary font-medium after:bg-arrow-right after:bg-no-repeat after:bg-center after:bg-14 after:w-6 after:h-6 after:block after:mb-2px">
+                  </div>
                 </Slider.NextButton>
               </div>
             </>
           )}
 
           {/**buttons top */}
-          <div class="absolute top-2 right-0 lg:right-24 w-20 lg:w-48 h-4 flex items-center justify-between pr-4 ">
-            <div class=" w-1/2 flex items-center  py-1 lg:pr-1 justify-between z-10 col-start-1 row-start-2 border-r-2 border-solid border-[#0000004d]">
-              <Slider.Previous class=" w-full flex justify-around items-center bg-[`}`]">
-                <Icon size={16} id="ChevronLeft" strokeWidth={14} />
-                <span class="text-base hidden md:block text-primary font-medium">
-                  Anterior
-                </span>
+          <div class="absolute top-2 right-0 lg:right-24 w-20 lg:w-48 h-4 flex items-center justify-between lg:pr-4 ">
+            <div class=" w-1/2 flex items-center  py-1 lg:py-2 lg:pr-1 justify-between z-10 col-start-1 row-start-2 border-r  lg:border-r-2 border-solid border-[#262626]">
+              <Slider.Previous class=" w-full flex justify-around items-center ">
+                <div class="text-base flex items-center justify-center gap-1 text-primary font-medium before:bg-arrow-left before:bg-no-repeat before:bg-center before:bg-14 before:w-4 before:h-4 before:block after:mb-2px">
+                  <span class="hidden lg:block">Anterior</span>
+                </div>
               </Slider.Previous>
             </div>
 
             <div class="flex items-center w-1/2  justify-center z-10 col-start-3 row-start-2">
               <Slider.Next class="w-full pl-1 flex justify-around  items-center">
-                <span class=" hidden md:block text-base text-primary font-medium">
-                  Próximo
-                </span>
-                <Icon size={16} id="ChevronRight" strokeWidth={14} />
+                <div class="flex items-center justify-center ga-1 text-base text-primary font-medium after:bg-arrow-right after:bg-no-repeat after:bg-center after:bg-14 after:w-4 after:h-4 after:block after:mb-2px">
+                  <span class="hidden lg:block">Próximo</span>
+                </div>
               </Slider.Next>
             </div>
           </div>

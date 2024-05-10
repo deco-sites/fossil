@@ -86,3 +86,35 @@
 input::placeholder {
   color: #262626;
 }
+
+/* Define the breakpoints and aspect ratio */
+.breakpoints {
+  --xs: 340px;
+  --sm: 375px;
+  --md: 420px;
+  --lg: 480px;
+  --aspect-ratio: 1.5;
+}
+
+/* Calculate the ideal image-hero height for each breakpoint */
+.image-hero {
+  height: calc((var(--xs) * var(--aspect-ratio)) / 1px);
+}
+
+@media (min-width: var(--sm)) {
+ .image-hero {
+    height: calc((var(--sm) * var(--aspect-ratio)) / 1px);
+  }
+}
+
+@media (min-width: var(--md)) {
+ .image-hero {
+    height: calc((var(--md) * var(--aspect-ratio)) / 1px);
+  }
+}
+
+@media (min-width: var(--lg)) {
+ .image-hero {
+    height: calc((var(--lg) * var(--aspect-ratio)) / 1px);
+  }
+}

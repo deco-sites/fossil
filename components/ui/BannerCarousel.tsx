@@ -158,7 +158,7 @@ function BannerItem(
           height={508}
         />
         <img
-          class="object-cover w-full h-auto"
+          class="object-cover w-full md:h-auto image-hero"
           loading={lcp ? "eager" : "lazy"}
           src={desktop}
           alt={alt}

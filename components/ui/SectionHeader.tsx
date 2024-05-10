@@ -23,14 +23,14 @@ function Header(props: Props) {
             class={`flex flex-col gap-2 ${
               props.alignment === "left"
                 ? "text-left pl-20 uppercase"
-                : "text-center"
+                : "text-center w-4/5 lg:w-full m-auto"
             }`}
           >
             {props.title &&
               (
                 <h1
                   class={clx(
-                    " text-3xl lg:text-[2.5rem] font-bold leading-8 lg:leading-10 text-primary pb-8",
+                    " text-3xl lg:text-[2.5rem] font-bold leading-8 lg:leading-10 text-primary lg:pb-8",
                   )}
                 >
                   {props.title}
