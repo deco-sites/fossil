@@ -1,25 +1,33 @@
 import { SendEventOnView } from "../../components/Analytics.tsx";
-import Breadcrumb from "../../components/ui/Breadcrumb.tsx";
-import AddToCartButtonLinx from "../../islands/AddToCartButton/linx.tsx";
-import AddToCartButtonShopify from "../../islands/AddToCartButton/shopify.tsx";
-import AddToCartButtonVNDA from "../../islands/AddToCartButton/vnda.tsx";
 import AddToCartButtonVTEX from "../../islands/AddToCartButton/vtex.tsx";
-import AddToCartButtonWake from "../../islands/AddToCartButton/wake.tsx";
-import AddToCartButtonNuvemshop from "../../islands/AddToCartButton/nuvemshop.tsx";
 import OutOfStock from "../../islands/OutOfStock.tsx";
 import ShippingSimulation from "../../islands/ShippingSimulation.tsx";
-import WishlistButtonVtex from "../../islands/WishlistButton/vtex.tsx";
-import WishlistButtonWake from "../../islands/WishlistButton/wake.tsx";
 import { formatPrice } from "../../sdk/format.ts";
 import { useId } from "../../sdk/useId.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
-import ProductSelector from "./ProductVariantSelector.tsx";
+import { ImageWidget } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
 
 interface Props {
   page: ProductDetailsPage | null;
+
+  flagDiscount?: {
+    /**@title tag image */
+    /**@description  " ex : AME" */
+    image: ImageWidget;
+
+    /** @format html */
+    /** @title ex: Receba R$ 77,45 de volta pagando com Ame  */
+    description: string;
+  };
+
+  sizeChartLink?: {
+    url: string;
+  };
+
   layout?: {
     /**
      * @title Product Name
@@ -30,7 +38,7 @@ interface Props {
   };
 }
 
-function ProductInfo({ page, layout }: Props) {
+function ProductInfo({ page, layout, flagDiscount, sizeChartLink }: Props) {
   const platform = usePlatform();
   const id = useId();
 
@@ -48,6 +56,7 @@ function ProductInfo({ page, layout }: Props) {
     additionalProperty = [],
   } = product;
   const description = product.description || isVariantOf?.description;
+  const productName = isVariantOf?.name;
   const {
     price = 0,
     listPrice,
@@ -55,6 +64,7 @@ function ProductInfo({ page, layout }: Props) {
     installments,
     availability,
   } = useOffer(offers);
+
   const productGroupID = isVariantOf?.productGroupID ?? "";
   const breadcrumb = {
     ...breadcrumbList,
@@ -70,43 +80,65 @@ function ProductInfo({ page, layout }: Props) {
   });
 
   return (
-    <div class="flex flex-col px-4" id={id}>
-      <Breadcrumb itemListElement={breadcrumb.itemListElement} />
+    <div class="flex flex-col font- px-4 gap-6" id={id}>
+      {/* <Breadcrumb itemListElement={breadcrumb.itemListElement} /> */}
       {/* Code and name */}
       <div class="mt-4 sm:mt-8">
-        <div>
-          {gtin && <span class="text-sm text-base-300">Cod. {gtin}</span>}
-        </div>
         <h1>
-          <span class="font-medium text-xl capitalize">
-            {layout?.name === "concat"
-              ? `${isVariantOf?.name} ${name}`
-              : layout?.name === "productGroup"
-              ? isVariantOf?.name
-              : name}
+          <span class=" text-nowrap font-medium  font-scoutCond text-3xl leading-10 tracking-one text-primary uppercase m-0 ">
+            {productName && productName}
           </span>
         </h1>
+        <p class="text-base font-medium tracking-one text-[#89a290]  font-arial">
+          {name}
+        </p>
       </div>
+      <div class="h-6">
+        <div id="yv-review-quickreview"></div>
+      </div>
+
       {/* Prices */}
       <div class="mt-4">
-        <div class="flex flex-row gap-2 items-center">
+        <div class="flex flex-col gap-2 font-scoutCond">
           {(listPrice ?? 0) > price && (
-            <span class="line-through text-base-300 text-xs">
+            <span class="line-through text-base-300 text-xs  tracking-one">
               {formatPrice(listPrice, offers?.priceCurrency)}
             </span>
           )}
-          <span class="font-medium text-xl text-secondary">
+          <span class="tracking-one  text-primary font-medium text-3xl">
             {formatPrice(price, offers?.priceCurrency)}
           </span>
         </div>
-        <span class="text-sm text-base-300">{installments}</span>
+        {(installments && typeof installments !== "string") && (
+          <p class="text-sm text-primary tracking-one font-arial">
+            ou {installments.billingDuration} x de{"  "}
+            <span class="font-bold text-primary">
+              R$ {installments.billingIncrement} {" "}
+            </span>
+          </p>
+        )}
       </div>
-      {/* Sku Selector */}
-      <div class="mt-4 sm:mt-6">
-        <ProductSelector product={product} />
-      </div>
+      {flagDiscount && (
+        <div class="flex items-center ">
+          <Image
+            src={flagDiscount.image}
+            width={70}
+            height={19}
+            alt="tag de desconto"
+            loading="eager"
+            fetchPriority="auto"
+            class="mr-1"
+          />
+
+          <div
+            class="border-l border-solid font-montserrat border-[#5C5C5C] pl-1 text-sm"
+            dangerouslySetInnerHTML={{ __html: flagDiscount.description }}
+          />
+        </div>
+      )}
+
       {/* Add to Cart and Favorites button */}
-      <div class="mt-4 sm:mt-10 flex flex-col gap-2">
+      <div class="flex flex-col gap-2">
         {availability === "https://schema.org/InStock"
           ? (
             <>
@@ -117,59 +149,27 @@ function ProductInfo({ page, layout }: Props) {
                     productID={productID}
                     seller={seller}
                   />
-                  <WishlistButtonVtex
-                    variant="full"
-                    productID={productID}
-                    productGroupID={productGroupID}
-                  />
                 </>
-              )}
-              {platform === "wake" && (
-                <>
-                  <AddToCartButtonWake
-                    eventParams={{ items: [eventItem] }}
-                    productID={productID}
-                  />
-                  <WishlistButtonWake
-                    variant="full"
-                    productID={productID}
-                    productGroupID={productGroupID}
-                  />
-                </>
-              )}
-              {platform === "linx" && (
-                <AddToCartButtonLinx
-                  eventParams={{ items: [eventItem] }}
-                  productID={productID}
-                  productGroupID={productGroupID}
-                />
-              )}
-              {platform === "vnda" && (
-                <AddToCartButtonVNDA
-                  eventParams={{ items: [eventItem] }}
-                  productID={productID}
-                  additionalProperty={additionalProperty}
-                />
-              )}
-              {platform === "shopify" && (
-                <AddToCartButtonShopify
-                  eventParams={{ items: [eventItem] }}
-                  productID={productID}
-                />
-              )}
-              {platform === "nuvemshop" && (
-                <AddToCartButtonNuvemshop
-                  productGroupID={productGroupID}
-                  eventParams={{ items: [eventItem] }}
-                  additionalProperty={additionalProperty}
-                />
               )}
             </>
           )
           : <OutOfStock productID={productID} />}
+
+        {/** size chart */}
+
+        {sizeChartLink && (
+          <div class="">
+            <a href={sizeChartLink.url} class="text-primary my-4">
+              <span class="underline block  cursor-pointer  font-montserrat text-primary text-sm">
+                Tabela de Medidas
+              </span>
+            </a>
+          </div>
+        )}
       </div>
+
       {/* Shipping Simulation */}
-      <div class="mt-8">
+      <div class="">
         {platform === "vtex" && (
           <ShippingSimulation
             items={[
@@ -181,20 +181,6 @@ function ProductInfo({ page, layout }: Props) {
             ]}
           />
         )}
-      </div>
-      {/* Description card */}
-      <div class="mt-4 sm:mt-6">
-        <span class="text-sm">
-          {description && (
-            <details>
-              <summary class="cursor-pointer">Descrição</summary>
-              <div
-                class="ml-2 mt-2"
-                dangerouslySetInnerHTML={{ __html: description }}
-              />
-            </details>
-          )}
-        </span>
       </div>
       {/* Analytics Event */}
       <SendEventOnView

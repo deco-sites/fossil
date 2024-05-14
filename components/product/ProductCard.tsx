@@ -173,7 +173,7 @@ function ProductCard({
               <a
                 href={relativeUrl}
                 aria-label="view product"
-                class="!transition-none !h-12 w-[96%] font-medium items-center justify-center !hover:brightness-90 uppercase !border-warning absolute bottom-2 right-0 !bg-[#A66C18] hidden text-white group-hover/product:flex text-base tracking-[1px] "
+                class="!transition-none !h-12 w-[96%] font-scoutCond font-medium items-center justify-center !hover:brightness-90 uppercase !border-warning absolute bottom-2 right-0 !bg-[#A66C18] hidden text-white group-hover/product:flex text-base tracking-[1px] "
               >
                 comprar
               </a>
@@ -210,7 +210,7 @@ function ProductCard({
         </div>
         {/**review */}
         <div class="h-5">
-          <div class="yv-review-quickreview" value={inProductGroupWithID}></div>
+          <div class="yv-review-quickreview"></div>
         </div>
 
         {/* Price from/to */}
@@ -227,9 +227,13 @@ function ProductCard({
         </div>
 
         {/* Installments */}
-        <span class="flex gap-2 font-light text-xs truncate text-primary-content">
-          ou {installments}
-        </span>
+        {(installments && typeof installments !== "string") && (
+          <p class="flex gap-2 font-light text-xs truncate text-primary-content">
+            ou {installments.billingDuration} x de R${" "}
+            {installments.billingIncrement}{"  "}
+            {installments.withTaxes ? "com juros" : "sem juros"}
+          </p>
+        )}
       </div>
     </div>
   );

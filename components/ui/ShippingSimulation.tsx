@@ -95,9 +95,6 @@ function ShippingSimulation({ items }: Props) {
     <div class="flex flex-col gap-2">
       <div class="flex flex-col">
         <span>Calcular frete</span>
-        <span>
-          Informe seu CEP para consultar os prazos de entrega
-        </span>
       </div>
 
       <form
@@ -109,8 +106,8 @@ function ShippingSimulation({ items }: Props) {
         <input
           as="input"
           type="text"
-          class="input input-bordered join-item w-48"
-          placeholder="Seu cep aqui"
+          class="input input-bordered   focus:outline-none join-item w-48 h-10 text-xs bg-[#eee] !border-none"
+          placeholder="Digite o seu CEP"
           value={postalCode.value}
           maxLength={8}
           size={8}
@@ -118,10 +115,25 @@ function ShippingSimulation({ items }: Props) {
             postalCode.value = e.currentTarget.value;
           }}
         />
-        <Button type="submit" loading={loading.value} class="join-item">
-          Calcular
+        <Button
+          type="submit"
+          loading={loading.value}
+          class="w-10 h-10 font-scoutCond focus:outline-none text-base tracking-one text-white bg-primary border-none"
+        >
+          OK
         </Button>
       </form>
+
+      <div class="mt-4 text-sm tracking-one text-primary underline">
+        <a
+          title="Não sei meu CEP"
+          class="bt lnkExterno"
+          target="_blank"
+          href="http://www.buscacep.correios.com.br/sistemas/buscacep/"
+        >
+          Não sei meu CEP
+        </a>
+      </div>
 
       <div>
         <div>

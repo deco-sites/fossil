@@ -7,7 +7,11 @@ export default {
   theme: {
     container: { center: true },
     fontFamily: {
-      soleil: "soleil",
+      soleil: ["soleil", "Soleil", "sans-serif", "Helvetica Neue", "Helvetica"],
+      roboto: ["Roboto Condensed", "sans-serif", "Helvetica Neue", "Helvetica"],
+      montserrat: ["Montserrat", "sans-serif", "Helvetica Neue", "Helvetica"],
+      scoutCond: ["Scout Condensed", "Roboto Condensed", "sans-serif"],
+      arial: ["Arial", "Helvetica Neue", "Helvetica", "sans-serif"],
     },
     extend: {
       animation: {
@@ -23,6 +27,7 @@ export default {
         "primary": "#262626",
         "primary-content": "#282828",
         "warning": "#9D6E2D",
+        "gray61": "#618175",
       },
       letterSpacing: {
         "one": "1px",
@@ -31,21 +36,25 @@ export default {
         "5xl": "0 0 1px #000",
       },
       backgroundImage: {
-        'arrow-left': "url('/image/fossil-left-arrow.webp')",
-        'arrow-right': "url('/image/fossil-right-arrow.webp')",
-      }, 
+        "arrow-left": "url('/image/fossil-left-arrow.webp')",
+        "arrow-right": "url('/image/fossil-right-arrow.webp')",
+      },
       backgroundSize: {
-        "14" : "14px"
-      }, 
+        "14": "14px",
+      },
       margin: {
-        '2px': '2px',
-      }, 
+        "2px": "2px",
+      },
       screens: {
-        'xs': '340px',
-        '2xs': '375px',
-        '3xs': '360px',
-        'xxs': '390px',
-        'xxxs': '428px',
+        "xs": "340px",
+        "2xs": "375px",
+        "3xs": "360px",
+        "xxs": "390px",
+        "xxxs": "428px",
+      },
+      fontSize: {
+        "18": "18px",
+        "32": "32px",
       },
     },
   },
