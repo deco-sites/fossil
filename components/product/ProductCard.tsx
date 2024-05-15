@@ -102,7 +102,7 @@ function ProductCard({
             <div class="text-sm">
               {(listPrice && price &&
                 (Math.round(((listPrice - price) / listPrice) * 100) > 0)) && (
-                <span class="w-9 h-9 flex items-center justify-center text-center text-sm font-medium bg-[#d20d17] text-white rounded-[100px]">
+                <span class="w-10 h-10 flex absolute top-[33%] right-0  font-scoutCond z-50 items-center justify-center text-center text-2xl font-medium bg-[#d20d17] text-white rounded-[100px]">
                   OFF
                 </span>
               )}
@@ -173,7 +173,7 @@ function ProductCard({
               <a
                 href={relativeUrl}
                 aria-label="view product"
-                class="!transition-none !h-12 w-[96%] font-medium items-center justify-center !hover:brightness-90 uppercase !border-warning absolute bottom-2 right-0 !bg-[#A66C18] hidden text-white group-hover/product:flex text-base tracking-[1px] "
+                class="!transition-none !h-12 w-[96%] font-scoutCond font-medium items-center justify-center !hover:brightness-90 uppercase !border-warning absolute bottom-2 right-0 !bg-[#A66C18] hidden text-white group-hover/product:flex text-base tracking-[1px] "
               >
                 comprar
               </a>
@@ -212,7 +212,6 @@ function ProductCard({
         <div class="h-5">
           <div class="yv-review-quickreview" value={inProductGroupWithID}></div>
         </div>
-
         {/* Price from/to */}
         <div class="flex flex-col gap-1 font-light text-primary-content">
           {listPrice !== price && (
@@ -227,9 +226,13 @@ function ProductCard({
         </div>
 
         {/* Installments */}
-        <span class="flex gap-2 font-light text-xs truncate text-primary-content">
-          ou {installments}
-        </span>
+        {(installments && typeof installments !== "string") && (
+          <p class="flex gap-2 font-light text-xs truncate text-primary-content">
+            ou {installments.billingDuration} x de R${" "}
+            {installments.billingIncrement}{"  "}
+            {installments.withTaxes ? "com juros" : "sem juros"}
+          </p>
+        )}
       </div>
     </div>
   );

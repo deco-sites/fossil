@@ -1,20 +1,26 @@
+import Icon from "../../ui/Icon.tsx";
+import Slider from "../../ui/Slider.tsx";
+import ImageZoom from "../../../islands/ImageZoom.tsx";
+import SliderJS from "../../../islands/SliderJS.tsx";
+import ProductSliderDotsHandler from "../../../islands/ProductSliderDotsHandler.tsx";
 import { ProductDetailsPage } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
-import Icon from "../../../components/ui/Icon.tsx";
-import Slider from "../../../components/ui/Slider.tsx";
-import ProductImageZoom from "../../../islands/ProductImageZoom.tsx";
-import SliderJS from "../../../islands/SliderJS.tsx";
+import ProductHighlights, {
+  DEFAULT_HIGHLIGHTS,
+  HighLight,
+} from "../ProductHighlights.tsx";
+import { useOffer } from "../../../sdk/useOffer.ts";
 import { useId } from "../../../sdk/useId.ts";
 
 export interface Props {
   /** @title Integration */
   page: ProductDetailsPage | null;
 
-  layout?: {
-    width: number;
-    height: number;
-  };
+  highlights?: HighLight[];
 }
+
+const width = 500;
+const height = 500;
 
 /**
  * @title Product Image Slider
@@ -25,87 +31,110 @@ export interface Props {
 export default function GallerySlider(props: Props) {
   const id = useId();
 
-  if (!props.page) {
+  if (props.page === null) {
     throw new Error("Missing Product Details Page Info");
   }
 
   const {
-    page: { product: { image: images = [] } },
-    layout,
+    page: {
+      product,
+    },
+    highlights,
   } = props;
-
-  const { width, height } = layout || { width: 300, height: 370 };
-
   const aspectRatio = `${width} / ${height}`;
+  const { image: images = [], offers } = product;
+  const { isVariantOf } = product!;
+
+  const { listPrice, price } = useOffer(offers);
+  const discount = price != listPrice;
 
   return (
-    <div id={id} class="grid grid-flow-row sm:grid-flow-col">
-      {/* Image Slider */}
-      <div class="relative order-1 sm:order-2">
-        <Slider class="carousel carousel-center gap-6 w-screen sm:w-[40vw]">
+    <div class="float-left w-[48%] relative max-sm:w-auto max-lg:flex max-lg:items-center max-lg:justify-center max-lg:w-full">
+       <section class="w-full block">
+        <ul>
+          <li class="inline-block pb-1 mr-1  text-primary font-arial font-semibold text-xs  leading-4">
+            <a href="/" class="">Fossil/</a>
+          </li>
+          <li class="inline-block pb-1 mr-1 text-primary font-arial font-semibold text-xs  leading-4">
+            {isVariantOf?.name}
+          </li>
+        </ul>
+      </section>
+      {(listPrice && price &&
+        (Math.round(((listPrice - price) / listPrice) * 100) > 0)) && (
+        <span class="w-10 h-10 flex absolute  top-1/4 right-0  font-scoutCond z-20 items-center group-hover/discount:z-0 justify-center text-center text-2xl font-medium bg-[#d20d17] text-white rounded-[100px]">
+          OFF
+        </span>
+      )}
+      <div
+        id={id}
+        class="grid grid-flow-row sm:grid-flow-col max-md:grid-cols-[25px_1fr_25px] relative"
+      >
+        {/* Image Slider */}
+        <Slider class="carousel carousel-center gap-6 order-1 sm:order-2 h-[600px] max-2xl:h-[500px] max-xl:h-[300px] max-lg:h-[35vh] max-lg:mb-5">
           {images.map((img, index) => (
             <Slider.Item
               index={index}
-              class="carousel-item w-full"
+              class="carousel-item w-full relative max-lg:items-center max-lg:justify-center"
             >
-              <Image
-                class="w-full"
-                sizes="(max-width: 640px) 100vw, 40vw"
-                style={{ aspectRatio }}
-                src={img.url!}
-                alt={img.alternateName}
+              <ImageZoom
+                aspectRatio={aspectRatio}
+                src={img.url || ""}
+                alt={img.alternateName || ""}
                 width={width}
                 height={height}
-                // Preload LCP image for better web vitals
-                preload={index === 0}
-                loading={index === 0 ? "eager" : "lazy"}
+                index={index}
               />
             </Slider.Item>
           ))}
         </Slider>
 
-        <Slider.PrevButton
-          class="no-animation absolute left-2 top-1/2 btn btn-circle btn-outline"
-          disabled
+        {/* Dots */}
+        <ul
+          id="product-slider-dots"
+          class="carousel snap-both relative col-span-full gap-1 sm:flex-col order-3 sm:order-1 max-h-[595px] max-2xl:max-h-[500px] max-lg:max-w-[270px] max-lg:mx-auto max-lg:my-[10px]"
         >
-          <Icon size={24} id="ChevronLeft" strokeWidth={3} />
-        </Slider.PrevButton>
-
-        <Slider.NextButton
-          class="no-animation absolute right-2 top-1/2 btn btn-circle btn-outline"
-          disabled={images.length < 2}
+          {images.map((img, index) => (
+            <li class="carousel-item sm:min-w-[130px]">
+              <Slider.Dot index={index}>
+                <Image
+                  class="max-xl:h-[58px] w-auto h-[130px] object-cover lg:p-1"
+                  style={{ aspectRatio }}
+                  width={130}
+                  height={130}
+                  src={img.url!}
+                  alt={img.alternateName}
+                />
+              </Slider.Dot>
+            </li>
+          ))}
+        </ul>
+        <div
+          id="product-slider-dots-to-left"
+          class="absolute max-lg:left-4 rounded-full lg:z-10  h-[20px] w-[20px]  items-center justify-center max-lg:bottom-7 lg:-top-6 lg:left-[55px] lg:rotate-90 hidden"
         >
-          <Icon size={24} id="ChevronRight" strokeWidth={3} />
-        </Slider.NextButton>
-
-        <div class="absolute top-2 right-2 bg-base-100 rounded-full">
-          <ProductImageZoom
-            images={images}
-            width={700}
-            height={Math.trunc(700 * height / width)}
+          <Icon
+            width={22}
+            height={15}
+            id="ChevronLeft"
+            class=""
           />
         </div>
+        <div
+          id="product-slider-dots-to-right"
+          class="absolute max-lg:right-4 rounded-full lg:z-10 h-[20px] w-[20px] flex items-center justify-center bottom-7 lg:-bottom-6 lg:rotate-90 lg:left-[55px]"
+        >
+          <Icon
+            width={22}
+            height={15}
+            id="ChevronRight"
+            class=""
+          />
+        </div>
+
+        <SliderJS rootId={id} />
       </div>
-
-      {/* Dots */}
-      <ul class="carousel carousel-center gap-1 px-4 sm:px-0 sm:flex-col order-2 sm:order-1">
-        {images.map((img, index) => (
-          <li class="carousel-item min-w-[63px] sm:min-w-[100px]">
-            <Slider.Dot index={index}>
-              <Image
-                style={{ aspectRatio }}
-                class="group-disabled:border-base-300 border rounded "
-                width={100}
-                height={123}
-                src={img.url!}
-                alt={img.alternateName}
-              />
-            </Slider.Dot>
-          </li>
-        ))}
-      </ul>
-
-      <SliderJS rootId={id} />
+      <ProductSliderDotsHandler rootId="product-slider-dots" />
     </div>
   );
 }

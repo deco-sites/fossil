@@ -83,7 +83,7 @@
   transform: translate(-50%, -50%);
 }
 
-input::placeholder {
+.join > input::placeholder {
   color: #262626;
 }
 

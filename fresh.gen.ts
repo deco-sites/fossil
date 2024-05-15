@@ -18,16 +18,20 @@ import * as $Header_Cart_vtex from "./islands/Header/Cart/vtex.tsx";
 import * as $Header_Cart_wake from "./islands/Header/Cart/wake.tsx";
 import * as $Header_Drawers from "./islands/Header/Drawers.tsx";
 import * as $Header_Searchbar from "./islands/Header/Searchbar.tsx";
+import * as $ImageZoom from "./islands/ImageZoom.tsx";
 import * as $MiniCart from "./islands/MiniCart.tsx";
 import * as $Newsletter from "./islands/Newsletter.tsx";
 import * as $OutOfStock from "./islands/OutOfStock.tsx";
 import * as $ProductImageZoom from "./islands/ProductImageZoom.tsx";
+import * as $ProductSliderDotsHandler from "./islands/ProductSliderDotsHandler.tsx";
 import * as $SearchControls from "./islands/SearchControls.tsx";
 import * as $ShippingSimulation from "./islands/ShippingSimulation.tsx";
 import * as $ShowMore from "./islands/ShowMore.tsx";
 import * as $SliderJS from "./islands/SliderJS.tsx";
 import * as $WishlistButton_vtex from "./islands/WishlistButton/vtex.tsx";
 import * as $WishlistButton_wake from "./islands/WishlistButton/wake.tsx";
+import * as $YourQA from "./islands/YourQA.tsx";
+import * as $YourReviews from "./islands/YourReviews.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -50,16 +54,20 @@ const manifest = {
     "./islands/Header/Cart/wake.tsx": $Header_Cart_wake,
     "./islands/Header/Drawers.tsx": $Header_Drawers,
     "./islands/Header/Searchbar.tsx": $Header_Searchbar,
+    "./islands/ImageZoom.tsx": $ImageZoom,
     "./islands/MiniCart.tsx": $MiniCart,
     "./islands/Newsletter.tsx": $Newsletter,
     "./islands/OutOfStock.tsx": $OutOfStock,
     "./islands/ProductImageZoom.tsx": $ProductImageZoom,
+    "./islands/ProductSliderDotsHandler.tsx": $ProductSliderDotsHandler,
     "./islands/SearchControls.tsx": $SearchControls,
     "./islands/ShippingSimulation.tsx": $ShippingSimulation,
     "./islands/ShowMore.tsx": $ShowMore,
     "./islands/SliderJS.tsx": $SliderJS,
     "./islands/WishlistButton/vtex.tsx": $WishlistButton_vtex,
     "./islands/WishlistButton/wake.tsx": $WishlistButton_wake,
+    "./islands/YourQA.tsx": $YourQA,
+    "./islands/YourReviews.tsx": $YourReviews,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
