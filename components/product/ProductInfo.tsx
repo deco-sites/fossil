@@ -65,6 +65,18 @@ function ProductInfo({ page, layout, flagDiscount, sizeChartLink }: Props) {
     availability,
   } = useOffer(offers);
 
+  let stock;
+  let qtdText;
+  if (offers) {
+    stock = offers.offers[0].inventoryLevel.value;
+
+    if (stock === 1) {
+      qtdText = ` ${stock} peça em estoque`;
+    } else {
+      qtdText = ` ${stock} peças em estoque`;
+    }
+  }
+
   const productGroupID = isVariantOf?.productGroupID ?? "";
   const breadcrumb = {
     ...breadcrumbList,
@@ -80,7 +92,7 @@ function ProductInfo({ page, layout, flagDiscount, sizeChartLink }: Props) {
   });
 
   return (
-    <div class="flex flex-col font- px-4 gap-6" id={id}>
+    <div class="flex flex-col font- px-4 gap-6 w-[52%]" id={id}>
       {/* <Breadcrumb itemListElement={breadcrumb.itemListElement} /> */}
       {/* Code and name */}
       <div class="mt-4 sm:mt-8">
@@ -93,24 +105,35 @@ function ProductInfo({ page, layout, flagDiscount, sizeChartLink }: Props) {
           {name}
         </p>
       </div>
-      <div class="h-6">
-        <div id="yv-review-quickreview"></div>
+
+      <div>
+        {/** stock */}
+        {!(Number(stock) < 1 || Number(stock) > 3) && (
+          <div class=" px-2 block w-32 h-7 font-arial text-xs text-[#9e9e9e] text-center leading-7 border-solid border border-[#89a290]">
+            {qtdText}
+          </div>
+        )}
+
+        {/**Reviews */}
+        <div class="h-6">
+          <div id="yv-review-quickreview"></div>
+        </div>
       </div>
 
       {/* Prices */}
-      <div class="mt-4">
-        <div class="flex flex-col gap-2 font-scoutCond">
+      <div class="">
+        <div class="flex flex-col font-scoutCond">
           {(listPrice ?? 0) > price && (
-            <span class="line-through text-base-300 text-xs  tracking-one">
+            <span class="line-through block font-medium text-[#89a290] text-22 m-0 leading-none tracking-one">
               {formatPrice(listPrice, offers?.priceCurrency)}
             </span>
           )}
-          <span class="tracking-one  text-primary font-medium text-3xl">
+          <span class="tracking-one block text-primary font-medium text-3xl leading-none">
             {formatPrice(price, offers?.priceCurrency)}
           </span>
         </div>
         {(installments && typeof installments !== "string") && (
-          <p class="text-sm text-primary tracking-one font-arial">
+          <p class="text-sm mt-3 text-primary tracking-one font-arial">
             ou {installments.billingDuration} x de{"  "}
             <span class="font-bold text-primary">
               R$ {installments.billingIncrement} {" "}

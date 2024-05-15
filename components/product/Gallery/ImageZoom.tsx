@@ -42,7 +42,7 @@ export default function ImageZoom(
   return (
     <>
       <Image
-        class="w-auto h-[600px] max-2xl:h-[500px] max-xl:h-[300px] max-lg:h-[35vh] lg:object-contain"
+        class="w-auto h-[600px] max-2xl:h-[500px] max-xl:h-[300px] max-lg:h-[35vh] lg:object-contain cursor-pointer group/discount"
         sizes="(max-width: 640px) 100vw, 40vw"
         style={{ aspectRatio }}
         src={src}

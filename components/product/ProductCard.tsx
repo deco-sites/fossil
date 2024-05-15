@@ -102,7 +102,7 @@ function ProductCard({
             <div class="text-sm">
               {(listPrice && price &&
                 (Math.round(((listPrice - price) / listPrice) * 100) > 0)) && (
-                <span class="w-9 h-9 flex items-center justify-center text-center text-sm font-medium bg-[#d20d17] text-white rounded-[100px]">
+                <span class="w-10 h-10 flex absolute top-[33%] right-0  font-scoutCond z-50 items-center justify-center text-center text-2xl font-medium bg-[#d20d17] text-white rounded-[100px]">
                   OFF
                 </span>
               )}
@@ -210,9 +210,8 @@ function ProductCard({
         </div>
         {/**review */}
         <div class="h-5">
-          <div class="yv-review-quickreview"></div>
+          <div class="yv-review-quickreview" value={inProductGroupWithID}></div>
         </div>
-
         {/* Price from/to */}
         <div class="flex flex-col gap-1 font-light text-primary-content">
           {listPrice !== price && (

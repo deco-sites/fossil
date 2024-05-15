@@ -94,7 +94,7 @@ function ShippingSimulation({ items }: Props) {
   return (
     <div class="flex flex-col gap-2">
       <div class="flex flex-col">
-        <span>Calcular frete</span>
+        <span>Calcular o frete</span>
       </div>
 
       <form
@@ -124,7 +124,7 @@ function ShippingSimulation({ items }: Props) {
         </Button>
       </form>
 
-      <div class="mt-4 text-sm tracking-one text-primary underline">
+      <div class="text-sm tracking-one text-primary underline">
         <a
           title="Não sei meu CEP"
           class="bt lnkExterno"

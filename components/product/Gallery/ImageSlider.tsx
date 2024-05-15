@@ -43,29 +43,28 @@ export default function GallerySlider(props: Props) {
   } = props;
   const aspectRatio = `${width} / ${height}`;
   const { image: images = [], offers } = product;
+  const { isVariantOf } = product!;
 
   const { listPrice, price } = useOffer(offers);
   const discount = price != listPrice;
 
   return (
     <div class="float-left w-[48%] relative max-sm:w-auto max-lg:flex max-lg:items-center max-lg:justify-center max-lg:w-full">
-      {(discount || highlights) && (
-        <div class="flex items-end flex-col absolute top-0 overflow-hidden w-full z-20 p-[5px] pointer-events-none">
-          {discount && listPrice && price && (
-            <p class="flex items-center justify-center w-[2.375rem] h-5 text-white bg-[#C41C17] rounded-[0.3125rem] text-[0.5625rem] uppercase font-bold text-center mb-[5px]">
-              -{Math.round(((listPrice - price) / listPrice) * 100)}%
-            </p>
-          )}
-          {product && highlights && (
-            <ProductHighlights
-              product={product}
-              highlights={highlights && highlights?.length > 0
-                ? highlights
-                : DEFAULT_HIGHLIGHTS}
-              listPrice={price}
-            />
-          )}
-        </div>
+       <section class="w-full block">
+        <ul>
+          <li class="inline-block pb-1 mr-1  text-primary font-arial font-semibold text-xs  leading-4">
+            <a href="/" class="">Fossil/</a>
+          </li>
+          <li class="inline-block pb-1 mr-1 text-primary font-arial font-semibold text-xs  leading-4">
+            {isVariantOf?.name}
+          </li>
+        </ul>
+      </section>
+      {(listPrice && price &&
+        (Math.round(((listPrice - price) / listPrice) * 100) > 0)) && (
+        <span class="w-10 h-10 flex absolute  top-1/4 right-0  font-scoutCond z-20 items-center group-hover/discount:z-0 justify-center text-center text-2xl font-medium bg-[#d20d17] text-white rounded-[100px]">
+          OFF
+        </span>
       )}
       <div
         id={id}

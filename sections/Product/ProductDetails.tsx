@@ -37,18 +37,11 @@ export default function ProductDetails(
   }
 
   const { isVariantOf } = page?.product!;
+  const description = page.product.description || isVariantOf?.description;
+  const additionalProperty =  page.product.isVariantOf?.additionalProperty ?? [];
+
   return (
-    <div class="w-full  max-w-screen-2xl m-auto lg:px-20 py-8 flex flex-col gap-6 lg:py-10">
-      <section class="w-full block">
-        <ul>
-          <li class="inline-block pb-1 mr-1  text-primary font-arial font-semibold text-xs  leading-4">
-            <a href="/" class="">Fossil/</a>
-          </li>
-          <li class="inline-block pb-1 mr-1 text-primary font-arial font-semibold text-xs  leading-4">
-            {isVariantOf?.name}
-          </li>
-        </ul>
-      </section>
+    <div class="w-full  max-w-screen-2xl m-auto lg:px-20  lg:mt-24 pb-8 flex flex-col gap-6 lg:pb-10">
       <div class="flex flex-col gap-6 lg:flex-row lg:justify-center">
         <ImageGallerySlider
           page={page}
@@ -59,7 +52,7 @@ export default function ProductDetails(
           sizeChartLink={sizeChartLink}
         />
       </div>
-      <ProductDescription page={page} />
+      <ProductDescription description={description}  additionalProperty={additionalProperty}/>
     </div>
   );
 }

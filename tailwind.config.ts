@@ -54,6 +54,7 @@ export default {
       },
       fontSize: {
         "18": "18px",
+        "22": "22px", 
         "32": "32px",
       },
     },
