@@ -38,7 +38,11 @@ interface Props {
   };
 }
 
-function ProductInfo({ page, layout, flagDiscount, sizeChartLink }: Props) {
+function ProductInfo(
+  { page, layout, flagDiscount, sizeChartLink, device }: Props & {
+    device?: string;
+  },
+) {
   const platform = usePlatform();
   const id = useId();
 
@@ -92,12 +96,32 @@ function ProductInfo({ page, layout, flagDiscount, sizeChartLink }: Props) {
   });
 
   return (
-    <div class="flex flex-col font- px-4 gap-6 w-[52%]" id={id}>
-      {/* <Breadcrumb itemListElement={breadcrumb.itemListElement} /> */}
+    <div class="flex flex-col font- px-4 gap-3 lg:gap-6 w-full lg:w-[52%]" id={id}>
+      {/* Add to Cart and Favorites button Mobile */}
+      {device !== "desktop" && (
+        <div class="flex justify-center w-full m-auto">
+          {availability === "https://schema.org/InStock"
+            ? (
+              <>
+                {platform === "vtex" && (
+                  <>
+                    <AddToCartButtonVTEX
+                      eventParams={{ items: [eventItem] }}
+                      productID={productID}
+                      seller={seller}
+                    />
+                  </>
+                )}
+              </>
+            )
+            : <OutOfStock productID={productID} />}
+        </div>
+      )}
+
       {/* Code and name */}
       <div class="mt-4 sm:mt-8">
         <h1>
-          <span class=" text-nowrap font-medium  font-scoutCond text-3xl leading-10 tracking-one text-primary uppercase m-0 ">
+          <span class="hidden lg:block text-nowrap font-medium  font-scoutCond text-3xl leading-10 tracking-one text-primary uppercase m-0 ">
             {productName && productName}
           </span>
         </h1>
@@ -128,7 +152,7 @@ function ProductInfo({ page, layout, flagDiscount, sizeChartLink }: Props) {
               {formatPrice(listPrice, offers?.priceCurrency)}
             </span>
           )}
-          <span class="tracking-one block text-primary font-medium text-3xl leading-none">
+          <span class="lg:tracking-one block text-primary font-bold lg:font-medium text-3xl leading-none">
             {formatPrice(price, offers?.priceCurrency)}
           </span>
         </div>
@@ -142,7 +166,7 @@ function ProductInfo({ page, layout, flagDiscount, sizeChartLink }: Props) {
         )}
       </div>
       {flagDiscount && (
-        <div class="flex items-center ">
+        <div class="flex items-center  w-60 h-6 lg:w-auto lg:h-auto my-4 lg:my-0">
           <Image
             src={flagDiscount.image}
             width={70}
@@ -150,11 +174,11 @@ function ProductInfo({ page, layout, flagDiscount, sizeChartLink }: Props) {
             alt="tag de desconto"
             loading="eager"
             fetchPriority="auto"
-            class="mr-1"
+            class="pr-1 border-r border-solid border-[#5C5C5C] "
           />
 
           <div
-            class="border-l border-solid font-montserrat border-[#5C5C5C] pl-1 text-sm"
+            class=" font-museoSans border-[#5C5C5C] pl-1 text-xs lg:text-sm  leading-none"
             dangerouslySetInnerHTML={{ __html: flagDiscount.description }}
           />
         </div>
@@ -162,28 +186,32 @@ function ProductInfo({ page, layout, flagDiscount, sizeChartLink }: Props) {
 
       {/* Add to Cart and Favorites button */}
       <div class="flex flex-col gap-2">
-        {availability === "https://schema.org/InStock"
-          ? (
-            <>
-              {platform === "vtex" && (
+        {device === "desktop" && (
+          <>
+            {availability === "https://schema.org/InStock"
+              ? (
                 <>
-                  <AddToCartButtonVTEX
-                    eventParams={{ items: [eventItem] }}
-                    productID={productID}
-                    seller={seller}
-                  />
+                  {platform === "vtex" && (
+                    <>
+                      <AddToCartButtonVTEX
+                        eventParams={{ items: [eventItem] }}
+                        productID={productID}
+                        seller={seller}
+                      />
+                    </>
+                  )}
                 </>
-              )}
-            </>
-          )
-          : <OutOfStock productID={productID} />}
+              )
+              : <OutOfStock productID={productID} />}
+          </>
+        )}
 
         {/** size chart */}
 
         {sizeChartLink && (
           <div class="">
             <a href={sizeChartLink.url} class="text-primary my-4">
-              <span class="underline block  cursor-pointer  font-montserrat text-primary text-sm">
+              <span class="underline block font-auto cursor-pointer text-primary text-sm">
                 Tabela de Medidas
               </span>
             </a>

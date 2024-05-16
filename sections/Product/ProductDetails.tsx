@@ -4,6 +4,7 @@ import ProductInfo from "../../components/product/ProductInfo.tsx";
 import NotFound from "../../sections/Product/NotFound.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import ProductDescription from "../../components/product/ProductDescription.tsx";
+import { AppContext } from "../../apps/site.ts";
 
 export interface FlagDiscount {
   /**@title tag image */
@@ -30,7 +31,7 @@ export interface Props {
 }
 
 export default function ProductDetails(
-  { page, flagDiscount, sizeChartLink }: Props,
+  { page, flagDiscount, sizeChartLink, device }: Props & { device?: string },
 ) {
   if (!page?.seo) {
     return <NotFound />;
@@ -38,21 +39,26 @@ export default function ProductDetails(
 
   const { isVariantOf } = page?.product!;
   const description = page.product.description || isVariantOf?.description;
-  const additionalProperty =  page.product.isVariantOf?.additionalProperty ?? [];
+  const additionalProperty = page.product.isVariantOf?.additionalProperty ?? [];
 
   return (
     <div class="w-full  max-w-screen-2xl m-auto lg:px-20  lg:mt-24 pb-8 flex flex-col gap-6 lg:pb-10">
       <div class="flex flex-col gap-6 lg:flex-row lg:justify-center">
         <ImageGallerySlider
           page={page}
+          device={device}
         />
         <ProductInfo
           page={page}
           flagDiscount={flagDiscount}
           sizeChartLink={sizeChartLink}
+          device={device}
         />
       </div>
-      <ProductDescription description={description}  additionalProperty={additionalProperty}/>
+      <ProductDescription
+        description={description}
+        additionalProperty={additionalProperty}
+      />
     </div>
   );
 }
@@ -67,3 +73,7 @@ export function LoadingFallback() {
     </div>
   );
 }
+
+export const loader = (props: Props, _req: Request, ctx: AppContext) => {
+  return { ...props, device: ctx.device };
+};
