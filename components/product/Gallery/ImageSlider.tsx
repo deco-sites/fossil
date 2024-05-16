@@ -73,7 +73,7 @@ export default function GallerySlider(props: Props) {
         class="grid grid-flow-row sm:grid-flow-col max-md:grid-cols-[25px_1fr_25px] relative"
       >
         {/* Image Slider */}
-        <Slider class="carousel carousel-center max-lg:col-span-full max-lg:row-[1/-2] lg:gap-6 order-1 sm:order-2 h-[600px]  max-lg:w-full max-2xl:h-[500px] max-xl:h-[300px] max-lg:h-[60vh] max-lg:mb-5">
+        <Slider class="carousel carousel-center max-lg:col-span-full max-lg:row-[1/-2] lg:gap-6 order-1 sm:order-2 h-[600px]  max-lg:w-full max-2xl:h-[500px] max-xl:h-[300px] max-lg:h-auto max-lg:mb-5">
           {images.map((img, index) => (
             <Slider.Item
               index={index}
