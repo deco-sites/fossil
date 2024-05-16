@@ -31,15 +31,15 @@ export interface Props {
 }
 
 export default function ProductDetails(
-  { page, flagDiscount, sizeChartLink, device }: Props & {device?: string},
-) { 
+  { page, flagDiscount, sizeChartLink, device }: Props & { device?: string },
+) {
   if (!page?.seo) {
     return <NotFound />;
   }
 
   const { isVariantOf } = page?.product!;
   const description = page.product.description || isVariantOf?.description;
-  const additionalProperty =  page.product.isVariantOf?.additionalProperty ?? [];
+  const additionalProperty = page.product.isVariantOf?.additionalProperty ?? [];
 
   return (
     <div class="w-full  max-w-screen-2xl m-auto lg:px-20  lg:mt-24 pb-8 flex flex-col gap-6 lg:pb-10">
@@ -52,10 +52,13 @@ export default function ProductDetails(
           page={page}
           flagDiscount={flagDiscount}
           sizeChartLink={sizeChartLink}
-          device = {device}
+          device={device}
         />
       </div>
-      <ProductDescription description={description}  additionalProperty={additionalProperty}/>
+      <ProductDescription
+        description={description}
+        additionalProperty={additionalProperty}
+      />
     </div>
   );
 }
@@ -74,5 +77,3 @@ export function LoadingFallback() {
 export const loader = (props: Props, _req: Request, ctx: AppContext) => {
   return { ...props, device: ctx.device };
 };
-
-

@@ -101,6 +101,18 @@ export default defineApp(async (_req, ctx) => {
           href={asset("/fonts/ Montserrat-Regular.woff")}
         />
 
+        <link
+          rel="preload"
+          type="text/css"
+          href="https://fossil.vteximg.com.br/arquivos/museosans_300-webfont.woff2.css"
+        />
+
+        <link
+          rel="preload"
+          type="text/css"
+          href="https://fossil.vteximg.com.br/arquivos/museosans_500-webfont.woff2.css"
+        />
+
         <style
           type="text/css"
           dangerouslySetInnerHTML={{
@@ -352,6 +364,46 @@ export default defineApp(async (_req, ctx) => {
               url('https://fossil.vteximg.com.br/arquivos/Gotham-Bold2.ttf.css') format('truetype'),
               url('https://fossil.vteximg.com.br/arquivos/Gotham-Bold2.svg.css#Gotham-Bold') format('svg');
               font-weight: bold;
+              font-style: normal;
+            }
+
+            @font-face {
+              font-family: "Museo Sans";
+              src: url("https://fossil.vteximg.com.br/arquivos/museosans_300-webfont.woff2.css") format("woff2"),
+              url("https://fossil.vteximg.com.br/arquivos/museosans_300-webfont.woff.css") format("woff");
+              font-weight: 300;
+            }
+        
+            @font-face {
+              font-family: "Museo Sans";
+              src: url("https://fossil.vteximg.com.br/arquivos/museosans_500-webfont.woff2.css") format("woff2"),
+              url("https://fossil.vteximg.com.br/arquivos/museosans_500-webfont.woff.css") format("woff");
+              font-weight: 500;
+            }
+
+            
+            @font-face {
+              font-family: 'Gotham Bold';
+              src: url('https://fossil.vteximg.com.br/arquivos/GothamBold.eot.css?#iefix') format("embedded-opentype"), url('https://fossil.vteximg.com.br/arquivos/GothamBold.woff.css') format("woff"), url('https://fossil.vteximg.com.br/arquivos/GothamBold.ttf.css') format("truetype"), url('https://fossil.vteximg.com.br/arquivos/GothamBold.svg.css#/arquivos/GothamBold') format("svg");
+              font-weight: normal;
+              font-style: normal;
+            }
+
+            @font-face {
+              font-family: 'Gotham Medium';
+              src: url('https://fossil.vteximg.com.br/arquivos/TimeCenter2017GothamMK3Medium.eot.css?#iefix') format("embedded-opentype"), url('https://fossil.vteximg.com.br/arquivos/TimeCenter2017GothamMK3Medium.woff.css') format("woff"), url('https://fossil.vteximg.com.br/arquivos/TimeCenter2017GothamMK3Medium.ttf.css') format("truetype"), url('https://fossil.vteximg.com.br/arquivos/TimeCenter2017GothamMK3Medium.svg.css#/arquivos/TimeCenter2017GothamMK3Medium') format("svg");
+              font-weight: normal;
+              font-style: normal;
+            }
+
+            @font-face {
+              font-family: 'icomoon';
+              src:    url('https://fossil.vteximg.com.br/arquivos/smartwatch-icomoon.eot.css?uk4201');
+              src:    url('https://fossil.vteximg.com.br/arquivos/smartwatch-icomoon.eot.css?uk4201#iefix') format('embedded-opentype'),
+                      url('https://fossil.vteximg.com.br/arquivos/smartwatch-icomoon.ttf.css?uk4201') format('truetype'),
+                      url('https://fossil.vteximg.com.br/arquivos/smartwatch-icomoon.woff.css?uk4201') format('woff'),
+                      url('https://fossil.vteximg.com.br/arquivos/smartwatch-icomoon.svg.css?uk4201#icomoon') format('svg');
+              font-weight: normal;
               font-style: normal;
             }
         `,

@@ -96,7 +96,7 @@ function ProductInfo(
   });
 
   return (
-    <div class="flex flex-col font- px-4 gap-6 w-full lg:w-[52%]" id={id}>
+    <div class="flex flex-col font- px-4 gap-3 lg:gap-6 w-full lg:w-[52%]" id={id}>
       {/* Add to Cart and Favorites button Mobile */}
       {device !== "desktop" && (
         <div class="flex justify-center w-full m-auto">
@@ -152,7 +152,7 @@ function ProductInfo(
               {formatPrice(listPrice, offers?.priceCurrency)}
             </span>
           )}
-          <span class="tracking-one block text-primary font-medium text-3xl leading-none">
+          <span class="lg:tracking-one block text-primary font-bold lg:font-medium text-3xl leading-none">
             {formatPrice(price, offers?.priceCurrency)}
           </span>
         </div>
@@ -166,7 +166,7 @@ function ProductInfo(
         )}
       </div>
       {flagDiscount && (
-        <div class="flex items-center ">
+        <div class="flex items-center  w-60 h-6 lg:w-auto lg:h-auto my-4 lg:my-0">
           <Image
             src={flagDiscount.image}
             width={70}
@@ -174,11 +174,11 @@ function ProductInfo(
             alt="tag de desconto"
             loading="eager"
             fetchPriority="auto"
-            class="mr-1"
+            class="pr-1 border-r border-solid border-[#5C5C5C] "
           />
 
           <div
-            class="border-l border-solid font-montserrat border-[#5C5C5C] pl-1 text-sm"
+            class=" font-museoSans border-[#5C5C5C] pl-1 text-xs lg:text-sm  leading-none"
             dangerouslySetInnerHTML={{ __html: flagDiscount.description }}
           />
         </div>
@@ -211,7 +211,7 @@ function ProductInfo(
         {sizeChartLink && (
           <div class="">
             <a href={sizeChartLink.url} class="text-primary my-4">
-              <span class="underline block  cursor-pointer  font-montserrat text-primary text-sm">
+              <span class="underline block font-auto cursor-pointer text-primary text-sm">
                 Tabela de Medidas
               </span>
             </a>
