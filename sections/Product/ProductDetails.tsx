@@ -58,6 +58,7 @@ export default function ProductDetails(
       <ProductDescription
         description={description}
         additionalProperty={additionalProperty}
+        device = {device}
       />
     </div>
   );

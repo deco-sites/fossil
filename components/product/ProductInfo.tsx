@@ -245,6 +245,8 @@ function ProductInfo(
           },
         }}
       />
+      {/** input Reviews */}
+      <input class="hidden" id="___rc-p-id" value={productID} />
     </div>
   );
 }
