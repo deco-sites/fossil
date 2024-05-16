@@ -1,6 +1,3 @@
-import type { ProductDetailsPage } from "apps/commerce/types.ts";
-import { Head } from "$fresh/runtime.ts";
-
 const js = () => {
   const init = () => {
     const node = document.createElement("script");
@@ -22,13 +19,7 @@ const js = () => {
   );
 };
 
-interface Props {
-  jsonLD: ProductDetailsPage | null;
-}
-
-function YourViewsIntegration({ jsonLD }: Props) {
-  const productLD = jsonLD?.product
-
+function YourViewsIntegration() {
   return (
     <>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" />
@@ -36,21 +27,6 @@ function YourViewsIntegration({ jsonLD }: Props) {
         type="text/javascript"
         dangerouslySetInnerHTML={{ __html: `(${js})()` }}
       />
-      {productLD && (
-        <>
-          <input class="hidden" id="___rc-p-id" value={productLD.productID} />
-          <Head>
-            <script
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{
-                __html: JSON.stringify({
-                  "@context": "https://schema.org",
-                  ...productLD
-                }),
-              }}
-            />
-          </Head>
-        </>)}
     </>
   );
 }
