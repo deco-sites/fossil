@@ -43,7 +43,7 @@ export default function AddToCartButton(props: Props) {
   return (
     <Button
       {...btnProps}
-      class=" w-80 h-14 font-scoutCond text-white bg-warning text-2xl text-center tracking-one uppercase hover:brightness-90"
+      class="w-full h-11  lg:w-80 lg:h-14 font-scoutCond text-white bg-warning text-2xl text-center tracking-one uppercase hover:brightness-90"
     >
       COMPRAR
     </Button>

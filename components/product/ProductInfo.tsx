@@ -38,7 +38,11 @@ interface Props {
   };
 }
 
-function ProductInfo({ page, layout, flagDiscount, sizeChartLink }: Props) {
+function ProductInfo(
+  { page, layout, flagDiscount, sizeChartLink, device }: Props & {
+    device?: string;
+  },
+) {
   const platform = usePlatform();
   const id = useId();
 
@@ -92,12 +96,32 @@ function ProductInfo({ page, layout, flagDiscount, sizeChartLink }: Props) {
   });
 
   return (
-    <div class="flex flex-col font- px-4 gap-6 w-[52%]" id={id}>
-      {/* <Breadcrumb itemListElement={breadcrumb.itemListElement} /> */}
+    <div class="flex flex-col font- px-4 gap-6 w-full lg:w-[52%]" id={id}>
+      {/* Add to Cart and Favorites button Mobile */}
+      {device !== "desktop" && (
+        <div class="flex justify-center w-full m-auto">
+          {availability === "https://schema.org/InStock"
+            ? (
+              <>
+                {platform === "vtex" && (
+                  <>
+                    <AddToCartButtonVTEX
+                      eventParams={{ items: [eventItem] }}
+                      productID={productID}
+                      seller={seller}
+                    />
+                  </>
+                )}
+              </>
+            )
+            : <OutOfStock productID={productID} />}
+        </div>
+      )}
+
       {/* Code and name */}
       <div class="mt-4 sm:mt-8">
         <h1>
-          <span class=" text-nowrap font-medium  font-scoutCond text-3xl leading-10 tracking-one text-primary uppercase m-0 ">
+          <span class="hidden lg:block text-nowrap font-medium  font-scoutCond text-3xl leading-10 tracking-one text-primary uppercase m-0 ">
             {productName && productName}
           </span>
         </h1>
@@ -162,21 +186,25 @@ function ProductInfo({ page, layout, flagDiscount, sizeChartLink }: Props) {
 
       {/* Add to Cart and Favorites button */}
       <div class="flex flex-col gap-2">
-        {availability === "https://schema.org/InStock"
-          ? (
-            <>
-              {platform === "vtex" && (
+        {device === "desktop" && (
+          <>
+            {availability === "https://schema.org/InStock"
+              ? (
                 <>
-                  <AddToCartButtonVTEX
-                    eventParams={{ items: [eventItem] }}
-                    productID={productID}
-                    seller={seller}
-                  />
+                  {platform === "vtex" && (
+                    <>
+                      <AddToCartButtonVTEX
+                        eventParams={{ items: [eventItem] }}
+                        productID={productID}
+                        seller={seller}
+                      />
+                    </>
+                  )}
                 </>
-              )}
-            </>
-          )
-          : <OutOfStock productID={productID} />}
+              )
+              : <OutOfStock productID={productID} />}
+          </>
+        )}
 
         {/** size chart */}
 

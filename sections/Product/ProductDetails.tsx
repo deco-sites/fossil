@@ -4,6 +4,7 @@ import ProductInfo from "../../components/product/ProductInfo.tsx";
 import NotFound from "../../sections/Product/NotFound.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import ProductDescription from "../../components/product/ProductDescription.tsx";
+import { AppContext } from "../../apps/site.ts";
 
 export interface FlagDiscount {
   /**@title tag image */
@@ -30,8 +31,8 @@ export interface Props {
 }
 
 export default function ProductDetails(
-  { page, flagDiscount, sizeChartLink }: Props,
-) {
+  { page, flagDiscount, sizeChartLink, device }: Props & {device?: string},
+) { 
   if (!page?.seo) {
     return <NotFound />;
   }
@@ -45,11 +46,13 @@ export default function ProductDetails(
       <div class="flex flex-col gap-6 lg:flex-row lg:justify-center">
         <ImageGallerySlider
           page={page}
+          device={device}
         />
         <ProductInfo
           page={page}
           flagDiscount={flagDiscount}
           sizeChartLink={sizeChartLink}
+          device = {device}
         />
       </div>
       <ProductDescription description={description}  additionalProperty={additionalProperty}/>
@@ -67,3 +70,9 @@ export function LoadingFallback() {
     </div>
   );
 }
+
+export const loader = (props: Props, _req: Request, ctx: AppContext) => {
+  return { ...props, device: ctx.device };
+};
+
+
