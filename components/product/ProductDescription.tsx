@@ -47,7 +47,8 @@ const ProductDescription = (
   const technicalSpecificationsProduct = additionalProperty.filter(
     (item) => item && item.name && techSpecsFilters.includes(item.name),
   );
-
+  
+  
   return (
     <div className="bg-[#eee] p-8 flex flex-col gap-20 lg:px-8 lg:pt-12 lg:pb-12">
       {device !== "desktop"
