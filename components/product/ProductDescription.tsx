@@ -55,9 +55,9 @@ const ProductDescription = (
       {device !== "desktop"
         ? (
           <>
-            <div className="collapse collapse-arrow">
+            <div className="collapse collapse-arrow ">
               <input id={`descrição`} type="checkbox" class="" />
-              <h2 className="collapse-title font-scoutCond   font-28 font-bold text-[#252525] tracking-one pb-2 block uppercase ">
+              <h2 className="collapse-title font-scoutCond   text-28 font-bold text-[#252525] tracking-one pb-2 block uppercase ">
                 Descrição
               </h2>
               <div class="collapse-content">
@@ -67,8 +67,8 @@ const ProductDescription = (
               </div>
             </div>
             <div className="collapse collapse-arrow">
-             <input id={` Características`} type="checkbox" class="" />
-              <h2 className=" collapse-title font-scoutCond  font-28 font-bold text-[#252525] tracking-one pb-2 block uppercase ">
+              <input id={` Características`} type="checkbox" class="" />
+              <h2 className=" collapse-title font-scoutCond  text-28 font-bold text-[#252525] tracking-one pb-2 block uppercase ">
                 Características
               </h2>
               <ul className="grid collapse-content grid-cols-2 md:grid-cols-4 gap-4 mt-4">
@@ -86,7 +86,7 @@ const ProductDescription = (
             </div>
             <div class="collapse collapse-arrow">
               <input id={`especifiações técnicas`} type="checkbox" class="" />
-              <h2 className="font-scoutCond collapse-title  font-28 font-bold text-[#252525] tracking-one pb-2 block uppercase ">
+              <h2 className="font-scoutCond collapse-title  text-28 font-bold text-[#252525] tracking-one pb-2 block uppercase ">
                 Especificações Técnicas
               </h2>
               <ul className="grid collapse-content grid-cols-1 md:grid-cols-4 gap-4 mt-4">

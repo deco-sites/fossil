@@ -20,6 +20,7 @@ export interface Props {
       desktop?: 1 | 2 | 3 | 4 | 5;
     };
     headerAlignment?: "center" | "left";
+    headerStyle?: "variante1" | "variante2";
     headerfontSize?: "Normal" | "Large" | "Small";
     showArrows?: boolean;
   };
@@ -52,9 +53,15 @@ function ProductShelf({
     4: "w-1/4",
     5: "w-1/5",
   };
+
+  const styleTitle = {
+     variante1: "text-base tracking-one lg:text-xl font-arial font-bold uppercase leading-8 lg:leading-10 text-primary pb-5 lg:pb-4",
+     variante2: "text-28 font-black tracking-one font-scoutCond  lg:text-xl lg:font-bold uppercase leading-8 lg:leading-10 text-primary pb-5 lg:pb-4",
+  }
+
   return (
     <div class="w-full max-w-screen-2xl  m-auto pt-8 flex flex-col gap-6 lg:py-8 px-3 font-soleil lg:px-4">
-      <div class="w-full relative">
+      <div class="w-full lg:relative"> 
         <div
           class={`flex flex-col gap-2 ${
             layout?.headerAlignment === "left"
@@ -66,7 +73,7 @@ function ProductShelf({
             (
               <h2
                 class={clx(
-                  " text-base tracking-one lg:text-xl font-bold uppercase leading-8 lg:leading-10 text-primary pb-4 lg:pb-4",
+                   `${styleTitle[layout?.headerStyle ?? 'variante1']}` ,
                 )}
               >
                 {title}
@@ -76,7 +83,7 @@ function ProductShelf({
         <div
           id={id}
           class={clx(
-            "grid ",
+            "grid relative lg:static ",
             (layout?.showArrows && device === "desktop") &&
               "grid-cols-[48px_1fr_48px] sm:grid-cols-[70px_1fr_70px] grid-rows-[1fr_48px_1fr_64px]",
             "px-0 w-full",
@@ -149,7 +156,7 @@ function ProductShelf({
           )}
 
           {/**buttons top */}
-          <div class="absolute top-2 right-0 lg:right-24 w-20 lg:w-48 h-4 flex items-center justify-between lg:pr-4 ">
+          <div class="absolute -top-4 right-0 lg:right-24 w-20 lg:w-48 h-4 flex items-center justify-between lg:pr-4 ">
             <div class=" w-1/2 flex items-center  py-1 lg:py-2 lg:pr-1 justify-between z-10 col-start-1 row-start-2 border-r  lg:border-r-2 border-solid border-[#262626]">
               <Slider.Previous class=" w-full flex justify-around items-center ">
                 <div class="text-base flex items-center justify-center gap-1 text-primary font-medium before:bg-arrow-left before:bg-no-repeat before:bg-center before:bg-14 before:w-4 before:h-4 before:block after:mb-2px">

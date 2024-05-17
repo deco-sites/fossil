@@ -96,7 +96,10 @@ function ProductInfo(
   });
 
   return (
-    <div class="flex flex-col font- px-4 gap-3 lg:gap-6 w-full lg:w-[52%]" id={id}>
+    <div
+      class="flex flex-col font- px-4 gap-3 lg:gap-6 w-full lg:w-[52%]"
+      id={id}
+    >
       {/* Add to Cart and Favorites button Mobile */}
       {device !== "desktop" && (
         <div class="flex justify-center w-full m-auto">

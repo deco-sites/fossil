@@ -73,7 +73,7 @@ export default function GallerySlider(props: Props) {
         class="grid grid-flow-row sm:grid-flow-col max-md:grid-cols-[25px_1fr_25px] relative"
       >
         {/* Image Slider */}
-        <Slider class="carousel carousel-center max-lg:col-span-full max-lg:row-[1/-2] lg:gap-6 order-1 sm:order-2 h-[600px]  max-lg:w-full max-2xl:h-[500px] max-xl:h-[300px] max-lg:h-auto max-lg:mb-5">
+        <Slider class="carousel carousel-center max-lg:col-span-full max-lg:row-[1/-2] lg:gap-6 order-1 sm:order-2   max-lg:w-full image-hero max-lg:mb-5">
           {images.map((img, index) => (
             <Slider.Item
               index={index}
@@ -95,13 +95,13 @@ export default function GallerySlider(props: Props) {
         {props.device !== "desktop" && (
           <>
             <div class="relative block lg:hidden col-start-1  row-start-2 z-20">
-              <Slider.PrevButton class="absolute top-[-150px] lg:top-[-150px] left-[10px] lg:left-[140px] rounded-full h-[20px] w-[20px] flex items-center justify-center">
+              <Slider.PrevButton class="absolute top-[-250px] left-[10px] lg:left-[140px] rounded-full h-[20px] w-[20px] flex items-center justify-center">
                 <div class="text-base md:flex items-center justify-center gap-1 text-primary font-medium before:bg-arrow-left before:bg-no-repeat before:bg-center before:bg-14 before:w-3 before:h-4 before:block after:mb-2px">
                 </div>
               </Slider.PrevButton>
             </div>
             <div class="relative block lg:hidden col-start-3 row-start-2 z-20">
-              <Slider.NextButton class="absolute top-[-150px] lg:top-[-150px] right-[10px] rounded-full h-[20px] w-[20px] flex items-center justify-center">
+              <Slider.NextButton class="absolute top-[-250px] right-[10px] rounded-full h-[20px] w-[20px] flex items-center justify-center">
                 <div class="  md:flex items-center justify-center ga-1 text-base text-primary font-medium after:bg-arrow-right after:bg-no-repeat after:bg-center after:bg-14 after:w-3 after:h-4 after:block after:mb-2px">
                 </div>
               </Slider.NextButton>

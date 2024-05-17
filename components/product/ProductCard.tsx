@@ -93,7 +93,7 @@ function ProductCard({
           {/* Wishlist button */}
           <div
             class={clx(
-              "absolute top-0 left-0",
+              "absolute top-[10%] left-[-15%]  lg:top-0 lg:left-0",
               "z-10 w-full",
               "flex items-center justify-end",
             )}
@@ -102,7 +102,7 @@ function ProductCard({
             <div class="text-sm">
               {(listPrice && price &&
                 (Math.round(((listPrice - price) / listPrice) * 100) > 0)) && (
-                <span class="w-10 h-10 flex absolute top-[33%] right-0  font-scoutCond z-50 items-center justify-center text-center text-2xl font-medium bg-[#d20d17] text-white rounded-[100px]">
+                <span class=" h-6 w-6 text-sm lg:w-10 lg:h-10 flex absolute top-[33%] right-0  font-scoutCond z-50 items-center justify-center text-center lg:text-2xl font-medium bg-[#d20d17] text-white rounded-[100px]">
                   OFF
                 </span>
               )}
