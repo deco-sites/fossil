@@ -18,10 +18,6 @@ interface Props {
     /**@title tag image */
     /**@description  " ex : AME" */
     image: ImageWidget;
-
-    /** @format html */
-    /** @title ex: Receba R$ 77,45 de volta pagando com Ame  */
-    description: string;
   };
 
   sizeChartLink?: {
@@ -169,7 +165,7 @@ function ProductInfo(
         )}
       </div>
       {flagDiscount && (
-        <div class="flex items-center  w-60 h-6 lg:w-auto lg:h-auto my-4 lg:my-0">
+        <div className="flex items-center w-60 h-6 lg:w-auto lg:h-auto my-4 lg:my-0">
           <Image
             src={flagDiscount.image}
             width={70}
@@ -177,13 +173,16 @@ function ProductInfo(
             alt="tag de desconto"
             loading="eager"
             fetchPriority="auto"
-            class="pr-1 border-r border-solid border-[#5C5C5C] "
+            className="pr-1 border-r border-solid border-[#5C5C5C]"
           />
-
-          <div
-            class=" font-museoSans border-[#5C5C5C] pl-1 text-xs lg:text-sm  leading-none"
-            dangerouslySetInnerHTML={{ __html: flagDiscount.description }}
-          />
+          <p className="font-museoSans border-[#5C5C5C] pl-1 text-xs lg:text-sm leading-none">
+            Receba{" "}
+            <span className="font-bold">
+              {formatPrice(price * 0.05, offers?.priceCurrency)}
+              {" "}
+            </span>
+            de volta pagando com Ame
+          </p>
         </div>
       )}
 
