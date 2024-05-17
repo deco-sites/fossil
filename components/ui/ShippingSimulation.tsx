@@ -94,7 +94,9 @@ function ShippingSimulation({ items }: Props) {
   return (
     <div class="flex flex-col">
       <div class="flex flex-col">
-        <span class="font-arial font-base tracking-one text-primary">Calcular o frete</span>
+        <span class="font-arial font-base tracking-one text-primary">
+          Calcular o frete
+        </span>
       </div>
 
       <form

@@ -42,7 +42,7 @@ export default function ProductDetails(
   const additionalProperty = page.product.isVariantOf?.additionalProperty ?? [];
 
   return (
-    <div class="w-full  max-w-screen-2xl m-auto lg:px-20  lg:mt-24 pb-8 flex flex-col gap-6 lg:pb-10">
+    <div class="w-full  max-w-screen-2xl m-auto lg:px-20  lg:mt-24  flex flex-col gap-6 lg:pb-10">
       <div class="flex flex-col gap-6 lg:flex-row lg:justify-center">
         <ImageGallerySlider
           page={page}
@@ -58,7 +58,7 @@ export default function ProductDetails(
       <ProductDescription
         description={description}
         additionalProperty={additionalProperty}
-        device = {device}
+        device={device}
       />
     </div>
   );
