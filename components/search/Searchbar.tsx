@@ -89,7 +89,7 @@ export interface Props {
 
 function Searchbar({
   action = "/s",
-  name = "q",
+  name = "&utm_p=",
   loader,
   platform,
   variant,
@@ -131,19 +131,32 @@ function Searchbar({
   const scroll = useScroll();
   const locationHref = useLocation();
   const gradientHeader = locationHref.value === "/" && scroll.value === 0;
+
+
   useEffect(() => {
     if (displaySearchPopup.value === false && !hasTerms && !hasProducts) {
       setQuery("");
     }
   }, [displaySearchPopup.value]);
 
-  console.log(device);
+  const handleSearch = (event: Event) => {
+    event.preventDefault();
+    const value = searchInputRef?.current?.value.trim();
+    if (value) {
+      const searchURL = `${action}?${name}=${encodeURIComponent(value)}&utmi_p=_&utmi_pc=BuscaFullText&utmi_cp=${encodeURIComponent(value)}`;
+      window.location.href = searchURL;
+    }
+  };
+  
+
+
   return (
     <div class="max-md:flex itens-center justify-center w-full relative ">
       <form
         id={id}
         action={action}
         class="join rounded-none md:h-10 bg-[#f5f5f5] w-[90%] md:w-auto"
+        onSubmit={handleSearch}
       >
         <input
           ref={searchInputRef}
@@ -177,6 +190,7 @@ function Searchbar({
                 params: { search_term: value },
               });
             }
+            handleSearch
           }}
         >
           {loading.value
