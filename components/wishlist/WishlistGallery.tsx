@@ -2,11 +2,13 @@ import { SectionProps } from "deco/mod.ts";
 import SearchResult, {
   Props as SearchResultProps,
 } from "../../components/search/SearchResult.tsx";
+import { AppContext } from "../../apps/site.ts";
 
 export type Props = SearchResultProps;
 
 function WishlistGallery(props: SectionProps<typeof loader>) {
   const isEmpty = !props.page || props.page.products.length === 0;
+  const device = props.device ?? "";
 
   if (isEmpty) {
     return (
@@ -22,13 +24,14 @@ function WishlistGallery(props: SectionProps<typeof loader>) {
     );
   }
 
-  return <SearchResult {...props} />;
+  return <SearchResult {...props} device={device} />;
 }
 
-export const loader = (props: Props, req: Request) => {
+export const loader = (props: Props, req: Request, ctx: AppContext) => {
   return {
     ...props,
     url: req.url,
+    device: ctx.device,
   };
 };
 

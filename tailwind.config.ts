@@ -11,6 +11,7 @@ export default {
       roboto: ["Roboto Condensed", "sans-serif", "Helvetica Neue", "Helvetica"],
       montserrat: ["Montserrat", "sans-serif", "Helvetica Neue", "Helvetica"],
       scoutCond: ["Scout Condensed", "Roboto Condensed", "sans-serif"],
+      scout: ["Scout", "Roboto Condensed"],
       arial: ["Arial", "Helvetica Neue", "Helvetica", "sans-serif"],
       gotham: ["Gotham", "sans-serif", "Arial", "Helvetica Neue", "Helvetica"],
       gothamBook: [

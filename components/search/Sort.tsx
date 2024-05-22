@@ -28,7 +28,7 @@ export type Props = Pick<ProductListingPage, "sortOptions">;
 
 // TODO: move this to the loader
 const portugueseMappings = {
-  "relevance:desc": "Relevância",
+  "relevance:desc": "SELECIONE",
   "price:desc": "Maior Preço",
   "price:asc": "Menor Preço",
   "orders:desc": "Mais vendidos",
@@ -43,12 +43,17 @@ function Sort({ sortOptions }: Props) {
 
   return (
     <>
-      <label for="sort" class="sr-only">Ordenar por</label>
+      <label
+        for="sort"
+        class=" uppercase hidden lg:block text-[#636363] text-xl font-scout"
+      >
+        Ordenar por :
+      </label>
       <select
         id="sort"
         name="sort"
         onInput={applySort}
-        class="w-min h-[36px] px-1 rounded m-2 text-base-content cursor-pointer outline-none"
+        class=" h-[36px] rounded-none uppercase flex items-center justify-center w-48  m-2  cursor-pointer outline-none text-[#89A290] border border-[#89A290] font-scout text-xs leading-normal tracking-one py-[10px] px-5"
       >
         {sortOptions.map(({ value, label }) => ({
           value,
@@ -56,7 +61,9 @@ function Sort({ sortOptions }: Props) {
             label,
         })).filter(({ label }) => label).map(({ value, label }) => (
           <option key={value} value={value} selected={value === sort}>
-            <span class="text-sm">{label}</span>
+            <span class="font-scout text-xs mb-[2px] leading-normal tracking-one uppercase">
+              {label}
+            </span>
           </option>
         ))}
       </select>

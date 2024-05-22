@@ -10,6 +10,10 @@ import ProductGallery, { Columns } from "../product/ProductGallery.tsx";
 import NotFound from "./NotFound.tsx";
 import { redirect } from "deco/mod.ts";
 import { AppContext } from "../../apps/site.ts";
+import Pagination from "../../islands/Pagination.tsx";
+import Sort from "../../islands/sort.tsx";
+import Button from "../ui/Button.tsx";
+import Breadcrumb from "../ui/Breadcrumb.tsx";
 
 export type Format = "Show More" | "Pagination";
 
@@ -33,6 +37,9 @@ export interface Props {
   page: ProductListingPage | null;
   layout?: Layout;
 
+  /** @hide */
+  isCollection?: boolean;
+
   /** @description 0 for ?page=0 as your first page */
   startingPage?: 0 | 1;
 }
@@ -43,45 +50,83 @@ function Result({
   startingPage = 0,
   url: _url,
   device,
+  isCollection,
 }: Omit<Props, "page"> & {
   page: ProductListingPage;
   url: string;
   device?: string;
 }) {
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
-  const perPage = pageInfo?.recordPerPage || products.length;
-  const url = new URL(_url);
+  const { recordPerPage, nextPage, previousPage, currentPage } = pageInfo;
+  const perPage = recordPerPage || products.length;
 
-  const { format = "Show More" } = layout ?? {};
+  const url = new URL(_url);
 
   const id = useId();
 
-  const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;
+  const { format = "Show More" } = layout ?? {};
+
+  const zeroIndexedOffsetPage = currentPage - startingPage;
   const offset = zeroIndexedOffsetPage * perPage;
 
-  const isPartial = url.searchParams.get("partial") === "true";
-  const isFirstPage = !pageInfo.previousPage;
+  const searchParams = url.search;
+
+  const getSearchValue = (search: string) => {
+    const nameMatch = search.match(/q=([^&]*)/);
+    if (nameMatch) {
+      const decodedValue = decodeURIComponent(nameMatch[1]);
+      return decodedValue.split(" ")[0];
+    }
+    return "";
+  };
+
+  const getSearch = (search: string) => {
+    const match = search.match(/q=([^&]*)/);
+    return match ? match[1] : "";
+  };
+
+  const searchValue = getSearchValue(searchParams);
+
+  const productsFound = (
+    <h6 class="text-primary uppercase font-medium">
+      {pageInfo.records} Produtos encontrados
+    </h6>
+  );
 
   return (
     <>
-      <div class="container px-4 sm:py-10">
-        {(isFirstPage || !isPartial) && (
-          <SearchControls
-            sortOptions={sortOptions}
-            filters={filters}
-            breadcrumb={breadcrumb}
-            displayFilter={layout?.variant === "drawer"}
-          />
-        )}
-
+      <div class=" w-full max-w-7xl m-auto px-4 lg:px-0 sm:pb-10">
+        <Breadcrumb itemListElement={breadcrumb?.itemListElement} />
         <div class="flex flex-row">
           {layout?.variant === "aside" && filters.length > 0 &&
-            (isFirstPage || !isPartial) && (
-            <aside class="hidden sm:block w-min min-w-[250px]">
-              <Filters filters={filters} />
-            </aside>
-          )}
+            (
+              <aside class="hidden sm:block w-min min-w-[250px]">
+                <div class="h-[52px] flex items-center mb-5">
+                  <span class="font-bold text-2xl text-black font-scout uppercase">
+                    FILTRA POR:
+                  </span>
+                </div>
+                <div class="lg:py-6">
+                  <a
+                    href={`s?q=${getSearch(searchParams)}`}
+                    arial-label="link de pesquisa de produto"
+                    class="font-arial text-base text-primary uppercase lg:px-6 lg:mb-4"
+                  >
+                    {searchValue == "relogio" ? "Relógios" : searchValue}{"  "}
+                    ({pageInfo.records})
+                  </a>
+                </div>
+              </aside>
+            )}
           <div class="flex-grow" id={id}>
+            <div class=" flex justify-between items-center gap-2.5">
+              <div class="hidden lg:block text-primary text-base  tracking-[.0625rem] uppercase font-scout">
+                {productsFound}
+              </div>
+              <div class="flex flex-row items-center justify-between border-b border-base-200 sm:gap-1 sm:border-none">
+                {sortOptions.length > 0 && <Sort sortOptions={sortOptions} />}
+              </div>
+            </div>
             <ProductGallery
               products={products}
               offset={offset}
@@ -90,34 +135,16 @@ function Result({
               url={url}
               device={device}
             />
+
+            {(nextPage || previousPage) && (
+              <Pagination
+                pageInfo={pageInfo}
+                productsLength={products.length}
+                startingPage={startingPage}
+              />
+            )}
           </div>
         </div>
-
-        {format == "Pagination" && (
-          <div class="flex justify-center my-4">
-            <div class="join">
-              <a
-                aria-label="previous page link"
-                rel="prev"
-                href={pageInfo.previousPage ?? "#"}
-                class="btn btn-ghost join-item"
-              >
-                <Icon id="ChevronLeft" size={24} strokeWidth={2} />
-              </a>
-              <span class="btn btn-ghost join-item">
-                Page {zeroIndexedOffsetPage + 1}
-              </span>
-              <a
-                aria-label="next page link"
-                rel="next"
-                href={pageInfo.nextPage ?? "#"}
-                class="btn btn-ghost join-item"
-              >
-                <Icon id="ChevronRight" size={24} strokeWidth={2} />
-              </a>
-            </div>
-          </div>
-        )}
       </div>
       <SendEventOnView
         id={id}
