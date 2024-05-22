@@ -8,6 +8,7 @@ import * as $$$2 from "./loaders/availableIcons.ts";
 import * as $$$3 from "./loaders/icons.ts";
 import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
 import * as $$$1 from "./loaders/List/Sections.tsx";
+import * as $$$$$$$0 from "./matchers/utm.ts";
 import * as $$$$$$0 from "./sections/Animation/Animation.tsx";
 import * as $$$$$$1 from "./sections/Cards/IconCardsCarousel.tsx";
 import * as $$$$$$2 from "./sections/Cards/IconCardsCarouselWithImage.tsx";
@@ -58,11 +59,12 @@ import * as $$$$$$46 from "./sections/Product/ProductDetails.tsx";
 import * as $$$$$$47 from "./sections/Product/ProductShelf.tsx";
 import * as $$$$$$48 from "./sections/Product/ProductShelfTabbed.tsx";
 import * as $$$$$$49 from "./sections/Product/SearchResult.tsx";
-import * as $$$$$$50 from "./sections/Product/ShelfWithImage.tsx";
-import * as $$$$$$51 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$52 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$53 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$54 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$50 from "./sections/Product/SearchResultView.tsx";
+import * as $$$$$$51 from "./sections/Product/ShelfWithImage.tsx";
+import * as $$$$$$52 from "./sections/Product/Wishlist.tsx";
+import * as $$$$$$53 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$54 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$55 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
@@ -122,11 +124,15 @@ const manifest = {
     "site/sections/Product/ProductShelf.tsx": $$$$$$47,
     "site/sections/Product/ProductShelfTabbed.tsx": $$$$$$48,
     "site/sections/Product/SearchResult.tsx": $$$$$$49,
-    "site/sections/Product/ShelfWithImage.tsx": $$$$$$50,
-    "site/sections/Product/Wishlist.tsx": $$$$$$51,
-    "site/sections/Social/InstagramPosts.tsx": $$$$$$52,
-    "site/sections/Social/WhatsApp.tsx": $$$$$$53,
-    "site/sections/Theme/Theme.tsx": $$$$$$54,
+    "site/sections/Product/SearchResultView.tsx": $$$$$$50,
+    "site/sections/Product/ShelfWithImage.tsx": $$$$$$51,
+    "site/sections/Product/Wishlist.tsx": $$$$$$52,
+    "site/sections/Social/InstagramPosts.tsx": $$$$$$53,
+    "site/sections/Social/WhatsApp.tsx": $$$$$$54,
+    "site/sections/Theme/Theme.tsx": $$$$$$55,
+  },
+  "matchers": {
+    "site/matchers/utm.ts": $$$$$$$0,
   },
   "apps": {
     "site/apps/decohub.ts": $$$$$$$$$$$0,

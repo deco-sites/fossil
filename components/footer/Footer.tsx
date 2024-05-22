@@ -225,7 +225,7 @@ function Footer({
   return (
     <footer
       class={clx(
-        "w-full flex flex-col pt-10 gap-10",
+        "w-full flex flex-col pt-4 gap-10",
       )}
     >
       {/** Desktop */}

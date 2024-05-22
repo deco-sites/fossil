@@ -22,6 +22,7 @@ import * as $ImageZoom from "./islands/ImageZoom.tsx";
 import * as $MiniCart from "./islands/MiniCart.tsx";
 import * as $Newsletter from "./islands/Newsletter.tsx";
 import * as $OutOfStock from "./islands/OutOfStock.tsx";
+import * as $Pagination from "./islands/Pagination.tsx";
 import * as $ProductImageZoom from "./islands/ProductImageZoom.tsx";
 import * as $ProductSliderDotsHandler from "./islands/ProductSliderDotsHandler.tsx";
 import * as $SearchControls from "./islands/SearchControls.tsx";
@@ -32,6 +33,7 @@ import * as $WishlistButton_vtex from "./islands/WishlistButton/vtex.tsx";
 import * as $WishlistButton_wake from "./islands/WishlistButton/wake.tsx";
 import * as $YourQA from "./islands/YourQA.tsx";
 import * as $YourReviews from "./islands/YourReviews.tsx";
+import * as $sort from "./islands/sort.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -58,6 +60,7 @@ const manifest = {
     "./islands/MiniCart.tsx": $MiniCart,
     "./islands/Newsletter.tsx": $Newsletter,
     "./islands/OutOfStock.tsx": $OutOfStock,
+    "./islands/Pagination.tsx": $Pagination,
     "./islands/ProductImageZoom.tsx": $ProductImageZoom,
     "./islands/ProductSliderDotsHandler.tsx": $ProductSliderDotsHandler,
     "./islands/SearchControls.tsx": $SearchControls,
@@ -68,6 +71,7 @@ const manifest = {
     "./islands/WishlistButton/wake.tsx": $WishlistButton_wake,
     "./islands/YourQA.tsx": $YourQA,
     "./islands/YourReviews.tsx": $YourReviews,
+    "./islands/sort.tsx": $sort,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

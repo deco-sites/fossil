@@ -132,7 +132,6 @@ function Searchbar({
   const locationHref = useLocation();
   const gradientHeader = locationHref.value === "/" && scroll.value === 0;
 
-
   useEffect(() => {
     if (displaySearchPopup.value === false && !hasTerms && !hasProducts) {
       setQuery("");
@@ -143,12 +142,12 @@ function Searchbar({
     event.preventDefault();
     const value = searchInputRef?.current?.value.trim();
     if (value) {
-      const searchURL = `${action}?${name}=${encodeURIComponent(value)}&utmi_p=_&utmi_pc=BuscaFullText&utmi_cp=${encodeURIComponent(value)}`;
+      const searchURL = `${action}?${name}=${
+        encodeURIComponent(value)
+      }&utmi_p=_&utmi_pc=BuscaFullText&utmi_cp=${encodeURIComponent(value)}`;
       window.location.href = searchURL;
     }
   };
-  
-
 
   return (
     <div class="max-md:flex itens-center justify-center w-full relative ">
@@ -190,7 +189,7 @@ function Searchbar({
                 params: { search_term: value },
               });
             }
-            handleSearch
+            handleSearch;
           }}
         >
           {loading.value
