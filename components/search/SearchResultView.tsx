@@ -1,8 +1,6 @@
 import type { ProductListingPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import { SendEventOnView } from "../../components/Analytics.tsx";
-import Filters from "../../components/search/Filters.tsx";
-import Icon from "../../components/ui/Icon.tsx";
 import SearchControls from "../../islands/SearchControls.tsx";
 import { useId } from "../../sdk/useId.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
@@ -12,8 +10,9 @@ import { redirect } from "deco/mod.ts";
 import { AppContext } from "../../apps/site.ts";
 import Pagination from "../../islands/Pagination.tsx";
 import Sort from "../../islands/sort.tsx";
-import Button from "../ui/Button.tsx";
 import Breadcrumb from "../ui/Breadcrumb.tsx";
+import { getSearchTerm } from "../../util/getSearchTerm.ts";
+import { GetSearchQueryParameter } from "../../util/getSearchQueryParameter.ts";
 
 export type Format = "Show More" | "Pagination";
 
@@ -44,6 +43,12 @@ export interface Props {
   startingPage?: 0 | 1;
 }
 
+type FilterDrawerProps = {
+  searchParams: string;
+  quantityProduct: number;
+  searchTerm: string;
+};
+
 function Result({
   page,
   layout,
@@ -71,62 +76,83 @@ function Result({
 
   const searchParams = url.search;
 
-  const getSearchValue = (search: string) => {
-    const nameMatch = search.match(/q=([^&]*)/);
-    if (nameMatch) {
-      const decodedValue = decodeURIComponent(nameMatch[1]);
-      return decodedValue.split(" ")[0];
-    }
-    return "";
-  };
-
   const getSearch = (search: string) => {
     const match = search.match(/q=([^&]*)/);
     return match ? match[1] : "";
   };
 
-  const searchValue = getSearchValue(searchParams);
-
+  const searchTerm = getSearchTerm(searchParams);
   const productsFound = (
     <h6 class="text-primary uppercase font-medium">
       {pageInfo.records} Produtos encontrados
     </h6>
   );
 
+  const filterDrawerProps = {
+    searchParams,
+    quantityProduct: pageInfo.records || 0,
+    searchTerm,
+  };
   return (
     <>
       <div class=" w-full max-w-7xl m-auto px-4 lg:px-0 sm:pb-10">
-        <Breadcrumb itemListElement={breadcrumb?.itemListElement} />
+        {device === "desktop" && (
+          <>
+            <Breadcrumb itemListElement={breadcrumb?.itemListElement} />
+          </>
+        )}
         <div class="flex flex-row">
-          {layout?.variant === "aside" && filters.length > 0 &&
-            (
-              <aside class="hidden sm:block w-min min-w-[250px]">
-                <div class="h-[52px] flex items-center mb-5">
-                  <span class="font-bold text-2xl text-black font-scout uppercase">
-                    FILTRA POR:
-                  </span>
-                </div>
-                <div class="lg:py-6">
-                  <a
-                    href={`s?q=${getSearch(searchParams)}`}
-                    arial-label="link de pesquisa de produto"
-                    class="font-arial text-base text-primary uppercase lg:px-6 lg:mb-4"
-                  >
-                    {searchValue == "relogio" ? "Relógios" : searchValue}{"  "}
-                    ({pageInfo.records})
-                  </a>
-                </div>
-              </aside>
-            )}
+          {device === "desktop" && (
+            <>
+              {layout?.variant === "aside" && filters.length > 0 &&
+                (
+                  <aside class="hidden sm:block w-min min-w-[250px]">
+                    <div class="h-[52px] flex items-center mb-5">
+                      <span class="font-bold text-2xl text-black font-scout uppercase">
+                        FILTRA POR:
+                      </span>
+                    </div>
+                    <div class="lg:py-6">
+                      <a
+                        href={`s?q=${GetSearchQueryParameter(searchParams)}`}
+                        arial-label="link de pesquisa de produto"
+                        class="font-arial text-base text-primary uppercase lg:px-6 lg:mb-4"
+                      >
+                        {searchTerm == "relogio" ? "Relógios" : searchTerm}
+                        {"  "}({pageInfo.records})
+                      </a>
+                    </div>
+                  </aside>
+                )}
+            </>
+          )}
           <div class="flex-grow" id={id}>
-            <div class=" flex justify-between items-center gap-2.5">
-              <div class="hidden lg:block text-primary text-base  tracking-[.0625rem] uppercase font-scout">
-                {productsFound}
-              </div>
-              <div class="flex flex-row items-center justify-between border-b border-base-200 sm:gap-1 sm:border-none">
-                {sortOptions.length > 0 && <Sort sortOptions={sortOptions} />}
-              </div>
-            </div>
+            {device !== "desktop"
+              ? (
+                <SearchControls
+                  sortOptions={sortOptions}
+                  filters={filters}
+                  breadcrumb={breadcrumb}
+                  displayFilter={layout?.variant === "drawer"}
+                  quantityProduct={pageInfo.records}
+                  type="searchView"
+                  filterDrawerProps={filterDrawerProps}
+                >
+                </SearchControls>
+              )
+              : (
+                <div class=" flex justify-between items-center gap-2.5">
+                  <div class="hidden lg:block text-primary text-base  tracking-[.0625rem] uppercase font-scout">
+                    {productsFound}
+                  </div>
+                  <div class="flex flex-row items-center justify-between border-b border-base-200 sm:gap-1 sm:border-none">
+                    {sortOptions.length > 0 && (
+                      <Sort sortOptions={sortOptions} />
+                    )}
+                  </div>
+                </div>
+              )}
+
             <ProductGallery
               products={products}
               offset={offset}

@@ -53,7 +53,11 @@ function Sort({ sortOptions }: Props) {
         id="sort"
         name="sort"
         onInput={applySort}
-        class=" h-[36px] rounded-none uppercase flex items-center justify-center w-48  m-2  cursor-pointer outline-none text-[#89A290] border border-[#89A290] font-scout text-xs leading-normal tracking-one py-[10px] px-5"
+        class=" w-full h-[42px] lg:h-[36px] text-base py-2 rounded-none uppercase flex items-center justify-center lg:w-48  lg:m-2  cursor-pointer outline-none text-[#89A290] bg-[] border border-[#89A290] font-scout lg:text-xs leading-normal tracking-one lg:py-[10px] px-5"
+        style={{
+          color: "#89A290",
+          backgroundColor: "white",
+        }}
       >
         {sortOptions.map(({ value, label }) => ({
           value,
