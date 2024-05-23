@@ -160,7 +160,7 @@ function Searchbar({
         <input
           ref={searchInputRef}
           id="search-input"
-          class="input input-bordered join-item flex-grow  lg:w-64 lg:h-10 text-sm lowercase text-black font-medium focus:outline-none pl-4 border-none bg-[#f5f5f5]"
+          class="input input-bordered join-item flex-grow  lg:w-64 lg:h-10 text-base lg:text-sm lowercase text-black font-medium focus:outline-none pl-4 border-none bg-[#f5f5f5]"
           name={name}
           onFocus={() => displaySearchPopup.value = true}
           onBlur={() => {

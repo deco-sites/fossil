@@ -10,6 +10,7 @@ import ProductGallery, { Columns } from "../product/ProductGallery.tsx";
 import NotFound from "./NotFound.tsx";
 import { redirect } from "deco/mod.ts";
 import { AppContext } from "../../apps/site.ts";
+import Pagination from "../../islands/Pagination.tsx";
 
 export type Format = "Show More" | "Pagination";
 
@@ -49,6 +50,7 @@ function Result({
   device?: string;
 }) {
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
+  const { nextPage, previousPage } = pageInfo;
   const perPage = pageInfo?.recordPerPage || products.length;
   const url = new URL(_url);
 
@@ -62,6 +64,12 @@ function Result({
   const isPartial = url.searchParams.get("partial") === "true";
   const isFirstPage = !pageInfo.previousPage;
 
+  const productsFound = (
+    <h6 class="text-primary uppercase font-medium">
+      {pageInfo.records} Produtos encontrados
+    </h6>
+  );
+
   return (
     <>
       <div class="container px-4 sm:py-10">
@@ -71,6 +79,8 @@ function Result({
             filters={filters}
             breadcrumb={breadcrumb}
             displayFilter={layout?.variant === "drawer"}
+            quantityProduct={pageInfo.records}
+            type="searchResult"
           />
         )}
 
@@ -90,6 +100,14 @@ function Result({
               url={url}
               device={device}
             />
+
+            {(nextPage || previousPage) && (
+              <Pagination
+                pageInfo={pageInfo}
+                productsLength={products.length}
+                startingPage={startingPage}
+              />
+            )}
           </div>
         </div>
 

@@ -118,3 +118,93 @@
     height: calc((var(--lg) * var(--aspect-ratio)) / 1px);
   }
 }
+
+.breadcrumbs-fossil {
+  max-width: 100%;
+  overflow-x: auto;
+  padding-top: 0.5rem/* 8px */;
+  padding-bottom: 0.5rem/* 8px */;
+}
+.breadcrumbs-fossil > ul,
+.breadcrumbs-fossil > ol {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  min-height: min-content;
+}
+.breadcrumbs-fossil > ul,
+.breadcrumbs-fossil > ol {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  min-height: min-content;
+}
+.breadcrumbs-fossil > ul > li, .breadcrumbs-fossil > ol > li {
+  display: flex;
+  align-items: center;
+}
+.breadcrumbs-fossil > ul > li, .breadcrumbs-fossil > ol > li {
+  display: flex;
+  align-items: center;
+}
+.breadcrumbs-fossil > ul > li > a, .breadcrumbs-fossil > ol > li > a {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+.breadcrumbs-fossil > ul > li > a, .breadcrumbs-fossil > ol > li > a {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+@media (hover:hover) {
+  .breadcrumbs-fossil > ul > li > a:hover, .breadcrumbs-fossil > ol > li > a:hover {
+      text-decoration-line: underline;
+  }
+}
+@media (hover:hover) {
+  .breadcrumbs-fossil > ul > li > a:hover, .breadcrumbs-fossil > ol > li > a:hover {
+      text-decoration-line: underline;
+  }
+}
+.breadcrumbs-fossil > ul > li > a:focus, .breadcrumbs-fossil > ol > li > a:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+.breadcrumbs-fossil > ul > li > a:focus, .breadcrumbs-fossil > ol > li > a:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+.breadcrumbs-fossil > ul > li > a:focus-visible, .breadcrumbs-fossil > ol > li > a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+.breadcrumbs-fossil > ul > li > a:focus-visible, .breadcrumbs-fossil > ol > li > a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+.breadcrumbs-fossil > ul > li + *:before, .breadcrumbs-fossil > ol > li + *:before {
+  content: "|";
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  margin-bottom: 2px;
+  display: block;
+  background-color: transparent;
+}
+.breadcrumbs-fossil > ul > li + *:before, .breadcrumbs-fossil > ol > li + *:before {
+  content: "|";
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  margin-bottom: 2px;
+  display: block;
+  opacity: 0.4;
+  background-color: transparent;
+}
+[dir="rtl"] .breadcrumbs-fossil > ul > li + *:before,
+[dir="rtl"] .breadcrumbs-fossil > ol > li + *:before {
+  --tw-rotate: -135deg;
+}
+[dir="rtl"] .breadcrumbs-fossil > ul > li + *:before,
+[dir="rtl"] .breadcrumbs-fossil > ol > li + *:before {
+  --tw-rotate: -135deg;
+}
