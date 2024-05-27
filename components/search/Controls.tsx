@@ -33,8 +33,7 @@ function SearchControls(
     quantityProduct,
     type,
     filterDrawerProps,
-  }:
-    & Props
+  }: Props,
 ) {
   const open = useSignal(false);
 
@@ -55,7 +54,7 @@ function SearchControls(
         <>
           {type !== "searchView"
             ? (
-              <div class="bg-base-100 flex flex-col h-full divide-y overflow-y-hidden">
+              <div class="bg-base-100 flex flex-col h-full divide-y overflow-y-hidden  w-3/4">
                 <div class="flex justify-between items-center">
                   <h1 class="px-4 py-3">
                     <span class="font-medium text-2xl">Filtrar</span>
@@ -67,7 +66,7 @@ function SearchControls(
                     <Icon id="XMark" size={24} strokeWidth={2} />
                   </Button>
                 </div>
-                <div class="flex-grow overflow-auto">
+                <div class="flex-grow overflow-auto mt-[3rem] px-6">
                   <Filters filters={filters} />
                 </div>
               </div>

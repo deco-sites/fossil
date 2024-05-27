@@ -1,4 +1,3 @@
-import Avatar from "../../components/ui/Avatar.tsx";
 import { formatPrice } from "../../sdk/format.ts";
 import type {
   Filter,
@@ -15,68 +14,122 @@ interface Props {
 const isToggle = (filter: Filter): filter is FilterToggle =>
   filter["@type"] === "FilterToggle";
 
-function ValueItem(
-  { url, selected, label, quantity }: FilterToggleValue,
-) {
+const allowedFilters = [
+  "Cor",
+  "Tamanho",
+  "Coleção",
+  "Gênero",
+  "off",
+].map((filter) => filter.toUpperCase());
+
+const orderedFilters = [
+  "off",
+  "Cor",
+  "Tamanho",
+  "Coleção",
+  "Gênero",
+].map((filter) => filter.toUpperCase());
+
+function ValueItem({ url, selected, label, quantity }: FilterToggleValue) {
   return (
-    <a href={url} rel="nofollow" class="flex items-center gap-2">
-      <div aria-checked={selected} class="checkbox" />
+    <a
+      href={url}
+      rel="nofollow"
+      class="flex items-center pt-2 gap-1 text-gray-600 text-sm font-arial"
+    >
+      <div aria-checked={selected} class="checkbox !rounded-none !h-4 !w-4 !border-black" />
       <span class="text-sm">{label}</span>
-      {quantity > 0 && <span class="text-sm text-base-300">({quantity})</span>}
+      {quantity > 0 && <span class="text-gray-600 text-sm font-arial">({quantity})</span>}
     </a>
   );
 }
 
 function FilterValues({ key, values }: FilterToggle) {
-  const flexDirection = key === "tamanho" || key === "cor"
-    ? "flex-row"
-    : "flex-col";
+  const selectedValues = values.filter((item) => item.selected);
+  const unselectedValues = values.filter((item) => !item.selected);
 
   return (
-    <ul class={`flex flex-wrap gap-2 ${flexDirection}`}>
-      {values.map((item) => {
-        const { url, selected, value, quantity } = item;
+    <>
+      {selectedValues.length > 0 ? (
+        <div class="flex flex-wrap gap-2 mb-2 w-full">
+          {selectedValues.map((item) => (
+            <div
+              key={item.value}
+              class=" border-b-[3px]  border-solid border-primary w-full flex justify-between"
+            >
+              <span class="font-semibold lg:pl-6 text-[#5A5A5A] text-sm font-arial">{item.label}</span>
+              <a href={item.url} class="ml-2 text-[#5A5A5A]">x</a>
+            </div>
+          ))}
+        </div>
+      ) : (
+        unselectedValues.map((item) => {
+          const { url, selected, value, quantity } = item;
 
-        if (key === "cor" || key === "tamanho") {
-          return (
-            <a href={url} rel="nofollow">
-              <Avatar
-                content={value}
-                variant={selected ? "active" : "default"}
+          if (key === "price") {
+            const range = parseRange(item.value);
+
+            return range && (
+              <ValueItem
+                {...item}
+                label={`${formatPrice(range.from)} - ${formatPrice(range.to)}`}
               />
-            </a>
-          );
-        }
+            );
+          }
 
-        if (key === "price") {
-          const range = parseRange(item.value);
-
-          return range && (
-            <ValueItem
-              {...item}
-              label={`${formatPrice(range.from)} - ${formatPrice(range.to)}`}
-            />
-          );
-        }
-
-        return <ValueItem {...item} />;
-      })}
-    </ul>
+          return <ValueItem {...item} />;
+        })
+      )}
+    </>
   );
 }
 
 function Filters({ filters }: Props) {
+  const filteredAndSortedFilters = filters
+    .filter(isToggle)
+    .filter((filter) => allowedFilters.includes(filter.label.toUpperCase()))
+    .sort((a, b) => {
+      const indexA = orderedFilters.indexOf(a.label.toUpperCase());
+      const indexB = orderedFilters.indexOf(b.label.toUpperCase());
+
+      // Se um filtro não estiver na lista de ordenação, coloca-o no final
+      const orderA = indexA !== -1 ? indexA : orderedFilters.length;
+      const orderB = indexB !== -1 ? indexB : orderedFilters.length;
+
+      return orderA - orderB;
+    });
+
   return (
-    <ul class="flex flex-col gap-6 p-4">
-      {filters
-        .filter(isToggle)
-        .map((filter) => (
-          <li class="flex flex-col gap-4">
-            <span>{filter.label}</span>
-            <FilterValues {...filter} />
-          </li>
-        ))}
-    </ul>
+    <>
+      <span class="w-full table font-bold text-2xl text-black font-scout uppercase">
+        FILTRAR POR:
+      </span>
+      <div>
+        <div class="lg:mt-5 flex flex-col gap-4">
+          {filteredAndSortedFilters.map((filter) => (
+            <fieldset
+              tabIndex={0}
+              value={filter.label}
+              class="collapse collapse-plus rounded-none"
+              key={filter.label}
+            >
+              <input
+                type="checkbox"
+                class="peer min-h-0 flex items-end"
+                name="accordion"
+                defaultChecked
+              />
+              <h5 class="collapse-title !min-h-0 flex p-0 items-end tracking-one uppercase text-primary py-2 text-base font-arial leading-[110%] cursor-pointer border-b border-solid border-gray-300">
+                {filter.label}
+              </h5>
+              <div class="collapse-content py-4 !px-0 flex flex-col gap-2">
+                <FilterValues {...filter} />
+              </div>
+            </fieldset>
+          ))}
+        </div>
+      </div>
+    </>
   );
 }
 
