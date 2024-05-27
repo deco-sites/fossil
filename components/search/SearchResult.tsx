@@ -18,7 +18,8 @@ import { usePartialSection } from "deco/hooks/usePartialSection.ts";
 
 export type Format = "Show More" | "Pagination";
 
-export interface Layout {  /**
+export interface Layout {
+  /**
    * @description Use drawer for mobile like behavior on desktop. Aside for rendering the filters alongside the products
    */
   variant?: "aside" | "drawer";
@@ -48,7 +49,7 @@ function Result({
   startingPage = 0,
   url: _url,
   device,
-  isCollection  = false,
+  isCollection = false,
 }: Omit<Props, "page"> & {
   page: ProductListingPage;
   url: string;
@@ -67,10 +68,9 @@ function Result({
   const offset = zeroIndexedOffsetPage * perPage;
 
   const isPartial = url.searchParams.get("partial") === "true";
-  const hasParams = url.search.length > 1
+  const hasParams = url.search.length > 1;
 
   const isFirstPage = !pageInfo.previousPage;
-
 
   const productsFound = (
     <h6 class="text-primary uppercase font-medium">
@@ -80,14 +80,14 @@ function Result({
 
   return (
     <>
-      <div class="w-full max-w-7xl m-auto px-1 sm:py-10">
-        {device === "desktop" && isCollection && (
+      <div class="w-full max-w-7xl m-auto px-1 sm:py-5">
+        {device === "desktop" && (
           <>
             <Breadcrumb itemListElement={breadcrumb?.itemListElement} />
           </>
         )}
         <div class="flex flex-row gap-7">
-          {filters.length > 0 && (!isCollection || hasParams ) &&
+          {filters.length > 0 && (!isCollection || hasParams) &&
               (isFirstPage || !isPartial)
             ? (
               <aside class="hidden sm:block w-min min-w-[300px]">
@@ -122,7 +122,7 @@ function Result({
               </aside>
             )}
           <div class="flex-grow" id={id}>
-            {!isCollection
+            { device !== 'desktop'
               ? (
                 <SearchControls
                   sortOptions={sortOptions}
@@ -130,7 +130,7 @@ function Result({
                   breadcrumb={breadcrumb}
                   displayFilter={layout?.variant === "drawer"}
                   quantityProduct={pageInfo.records}
-                  type="searchView"
+                  type="searchResult"
                 >
                 </SearchControls>
               )
@@ -146,6 +146,7 @@ function Result({
                   </div>
                 </div>
               )}
+
             <ProductGallery
               products={products}
               offset={offset}

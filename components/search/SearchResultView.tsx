@@ -14,7 +14,6 @@ import Breadcrumb from "../ui/Breadcrumb.tsx";
 import { getSearchTerm } from "../../util/getSearchTerm.ts";
 import { GetSearchQueryParameter } from "../../util/getSearchQueryParameter.ts";
 
-
 export type Format = "Show More" | "Pagination";
 
 export interface Layout {
