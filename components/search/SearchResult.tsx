@@ -11,11 +11,14 @@ import NotFound from "./NotFound.tsx";
 import { redirect } from "deco/mod.ts";
 import { AppContext } from "../../apps/site.ts";
 import Pagination from "../../islands/Pagination.tsx";
+import Sort from "../../islands/sort.tsx";
+import Breadcrumb from "../ui/Breadcrumb.tsx";
+import Button from "../ui/Button.tsx";
+import { usePartialSection } from "deco/hooks/usePartialSection.ts";
 
 export type Format = "Show More" | "Pagination";
 
-export interface Layout {
-  /**
+export interface Layout {  /**
    * @description Use drawer for mobile like behavior on desktop. Aside for rendering the filters alongside the products
    */
   variant?: "aside" | "drawer";
@@ -33,6 +36,7 @@ export interface Props {
   /** @title Integration */
   page: ProductListingPage | null;
   layout?: Layout;
+  isCollection?: boolean;
 
   /** @description 0 for ?page=0 as your first page */
   startingPage?: 0 | 1;
@@ -44,6 +48,7 @@ function Result({
   startingPage = 0,
   url: _url,
   device,
+  isCollection  = false,
 }: Omit<Props, "page"> & {
   page: ProductListingPage;
   url: string;
@@ -62,7 +67,10 @@ function Result({
   const offset = zeroIndexedOffsetPage * perPage;
 
   const isPartial = url.searchParams.get("partial") === "true";
+  const hasParams = url.search.length > 1
+
   const isFirstPage = !pageInfo.previousPage;
+
 
   const productsFound = (
     <h6 class="text-primary uppercase font-medium">
@@ -72,26 +80,72 @@ function Result({
 
   return (
     <>
-      <div class="container px-4 sm:py-10">
-        {(isFirstPage || !isPartial) && (
-          <SearchControls
-            sortOptions={sortOptions}
-            filters={filters}
-            breadcrumb={breadcrumb}
-            displayFilter={layout?.variant === "drawer"}
-            quantityProduct={pageInfo.records}
-            type="searchResult"
-          />
+      <div class="w-full max-w-7xl m-auto px-1 sm:py-10">
+        {device === "desktop" && isCollection && (
+          <>
+            <Breadcrumb itemListElement={breadcrumb?.itemListElement} />
+          </>
         )}
-
-        <div class="flex flex-row">
-          {layout?.variant === "aside" && filters.length > 0 &&
-            (isFirstPage || !isPartial) && (
-            <aside class="hidden sm:block w-min min-w-[250px]">
-              <Filters filters={filters} />
-            </aside>
-          )}
+        <div class="flex flex-row gap-7">
+          {filters.length > 0 && (!isCollection || hasParams ) &&
+              (isFirstPage || !isPartial)
+            ? (
+              <aside class="hidden sm:block w-min min-w-[300px]">
+                <Filters filters={filters} />
+              </aside>
+            )
+            : (
+              <aside class="hidden sm:block w-min min-w-[300px]">
+                <div class="h-[52px] flex items-center mb-5">
+                  <span class="font-bold text-2xl text-black font-scout uppercase">
+                    FILTRA POR:
+                  </span>
+                </div>
+                <div class="lg:pt-6">
+                  <div class="grid grid-cols-2 gap-4">
+                    <Button
+                      {...usePartialSection<typeof Result>({
+                        props: { isCollection: false },
+                      })}
+                      class="inline-block cursor-pointer  h-11 font-scoutCond text-2xl tracking-one text-center leading-[44px] border border-black text-primary"
+                    >
+                      Limpar
+                    </Button>
+                    <a
+                      href=""
+                      class="inline-block h-11 font-scoutCond text-2xl tracking-one text-center leading-[44px] border border-black bg-primary text-white"
+                    >
+                      Aplicar
+                    </a>
+                  </div>
+                </div>
+              </aside>
+            )}
           <div class="flex-grow" id={id}>
+            {!isCollection
+              ? (
+                <SearchControls
+                  sortOptions={sortOptions}
+                  filters={filters}
+                  breadcrumb={breadcrumb}
+                  displayFilter={layout?.variant === "drawer"}
+                  quantityProduct={pageInfo.records}
+                  type="searchView"
+                >
+                </SearchControls>
+              )
+              : (
+                <div class=" flex justify-between items-center gap-2.5">
+                  <div class="hidden lg:block text-primary text-base  tracking-[.0625rem] uppercase font-scout">
+                    {productsFound}
+                  </div>
+                  <div class="flex flex-row items-center justify-between border-b border-base-200 sm:gap-1 sm:border-none">
+                    {sortOptions.length > 0 && (
+                      <Sort sortOptions={sortOptions} />
+                    )}
+                  </div>
+                </div>
+              )}
             <ProductGallery
               products={products}
               offset={offset}
