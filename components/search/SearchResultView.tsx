@@ -137,6 +137,8 @@ function Result({
                   quantityProduct={pageInfo.records}
                   type="searchView"
                   filterDrawerProps={filterDrawerProps}
+                  device={device}
+                  url={_url}
                 >
                 </SearchControls>
               )
@@ -158,7 +160,6 @@ function Result({
               offset={offset}
               layout={{ columns: layout?.columns, format }}
               pageInfo={pageInfo}
-              url={url}
               device={device}
             />
 

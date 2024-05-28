@@ -208,3 +208,20 @@
 [dir="rtl"] .breadcrumbs-fossil > ol > li + *:before {
   --tw-rotate: -135deg;
 }
+
+.collapse-plus > .collapse-title:after {
+  position: absolute;
+  display: block;
+  right: -10px;
+  height: 0.5rem;
+  width: 0.5rem;
+  font-size: 1.5rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 300ms;
+  top: 0.6rem;
+  inset-inline-end: 0.6rem !important ;
+  content: "+";
+  pointer-events: none;
+}

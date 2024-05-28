@@ -20,7 +20,6 @@ export interface Props {
     columns?: Columns;
     format?: Format;
   };
-  url: URL;
 }
 
 const MOBILE_COLUMNS = {
