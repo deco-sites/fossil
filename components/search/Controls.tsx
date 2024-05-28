@@ -5,7 +5,6 @@ import Sort from "../../islands/sort.tsx";
 import Drawer from "../../components/ui/Drawer.tsx";
 import Breadcrumb from "../../components/ui/Breadcrumb.tsx";
 import { useSignal } from "@preact/signals";
-import type { ComponentChildren } from "preact";
 import type { ProductListingPage } from "apps/commerce/types.ts";
 import { GetSearchQueryParameter } from "../../util/getSearchQueryParameter.ts";
 
@@ -22,6 +21,8 @@ export type Props =
     quantityProduct?: number;
     type: "searchView" | "searchResult";
     filterDrawerProps?: FilterDrawerProps;
+    url: string;
+    device?: string;
   };
 
 function SearchControls(
@@ -33,9 +34,14 @@ function SearchControls(
     quantityProduct,
     type,
     filterDrawerProps,
+    url: _url,
+    device,
   }: Props,
 ) {
   const open = useSignal(false);
+  const url = new URL(_url, window.location.origin);
+  const searchParams = url.search;
+  const urlSearchCustom = `s?q=${GetSearchQueryParameter(searchParams)}`;
 
   const productsFound = (
     <h6 class="text-primary uppercase font-medium">
@@ -57,7 +63,7 @@ function SearchControls(
               <div class="bg-base-100 flex flex-col h-full divide-y overflow-y-hidden  w-3/4">
                 <div class="flex justify-between items-center">
                   <h1 class="px-4 py-3">
-                    <span class="font-medium text-2xl">Filtrar</span>
+                    <span class="lg:font-medium text-2xl">Filtrar</span>
                   </h1>
                   <Button
                     class="btn btn-ghost"
@@ -67,7 +73,17 @@ function SearchControls(
                   </Button>
                 </div>
                 <div class="flex-grow overflow-auto mt-[3rem] px-6">
-                  <Filters filters={filters} />
+                  <Filters filters={filters} device={device} />
+                  <div class="grid grid-cols-2 gap-6 my-6">
+                    <a
+                      href={`${
+                        url.pathname === "/s" ? urlSearchCustom : url.pathname
+                      }`}
+                      class="inline-block cursor-pointer h-9 font-scoutCond text-18 tracking-one text-center leading-[32px] border border-black text-primary"
+                    >
+                      Limpar
+                    </a>
+                  </div>
                 </div>
               </div>
             )

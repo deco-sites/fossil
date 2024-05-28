@@ -15,6 +15,7 @@ import Sort from "../../islands/sort.tsx";
 import Breadcrumb from "../ui/Breadcrumb.tsx";
 import Button from "../ui/Button.tsx";
 import { usePartialSection } from "deco/hooks/usePartialSection.ts";
+import { GetSearchQueryParameter } from "../../util/getSearchQueryParameter.ts";
 
 export type Format = "Show More" | "Pagination";
 
@@ -58,7 +59,7 @@ function Result({
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
   const { nextPage, previousPage } = pageInfo;
   const perPage = pageInfo?.recordPerPage || products.length;
-  const url = new URL(_url);
+  const url = new URL(_url, window.location.origin);
 
   const { format = "Show More" } = layout ?? {};
 
@@ -69,6 +70,8 @@ function Result({
 
   const isPartial = url.searchParams.get("partial") === "true";
   const hasParams = url.search.length > 1;
+  const searchParams = url.search;
+  const urlSearchCustom = `s?q=${GetSearchQueryParameter(searchParams)}`;
 
   const isFirstPage = !pageInfo.previousPage;
 
@@ -91,13 +94,23 @@ function Result({
               (isFirstPage || !isPartial)
             ? (
               <aside class="hidden sm:block w-min min-w-[300px]">
-                <Filters filters={filters} />
+                <Filters filters={filters} device={device} />
+                <div class="grid grid-cols-2 gap-6">
+                  <a
+                    href={`${
+                      url.pathname === "/s" ? urlSearchCustom : url.pathname
+                    }`}
+                    class="inline-block cursor-pointer  h-11 font-scoutCond text-2xl tracking-one text-center leading-[44px] border border-black text-primary"
+                  >
+                    Limpar
+                  </a>
+                </div>
               </aside>
             )
             : (
               <aside class="hidden sm:block w-min min-w-[300px]">
                 <div class="h-[52px] flex items-center mb-5">
-                  <span class="font-bold text-2xl text-black font-scout uppercase">
+                  <span class="lg:font-bold text-2xl text-black font-scout uppercase">
                     FILTRA POR:
                   </span>
                 </div>
@@ -111,18 +124,12 @@ function Result({
                     >
                       Limpar
                     </Button>
-                    <a
-                      href=""
-                      class="inline-block h-11 font-scoutCond text-2xl tracking-one text-center leading-[44px] border border-black bg-primary text-white"
-                    >
-                      Aplicar
-                    </a>
                   </div>
                 </div>
               </aside>
             )}
           <div class="flex-grow" id={id}>
-            { device !== 'desktop'
+            {device !== "desktop"
               ? (
                 <SearchControls
                   sortOptions={sortOptions}
@@ -131,6 +138,8 @@ function Result({
                   displayFilter={layout?.variant === "drawer"}
                   quantityProduct={pageInfo.records}
                   type="searchResult"
+                  url={url.toString()}
+                  device={device}
                 >
                 </SearchControls>
               )
@@ -152,7 +161,6 @@ function Result({
               offset={offset}
               layout={{ columns: layout?.columns, format }}
               pageInfo={pageInfo}
-              url={url}
               device={device}
             />
 

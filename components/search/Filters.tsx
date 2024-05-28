@@ -30,16 +30,25 @@ const orderedFilters = [
   "Gênero",
 ].map((filter) => filter.toUpperCase());
 
-function ValueItem({ url, selected, label, quantity }: FilterToggleValue) {
+function ValueItem(
+  { url, selected, label, quantity, device }: FilterToggleValue & {
+    device?: string;
+  },
+) {
   return (
     <a
       href={url}
       rel="nofollow"
       class="flex items-center pt-2 gap-1 text-gray-600 text-sm font-arial"
     >
-      <div aria-checked={selected} class="checkbox !rounded-none !h-4 !w-4 !border-black" />
+      <div
+        aria-checked={selected}
+        class="checkbox !rounded-none !h-4 !w-4 !border-black"
+      />
       <span class="text-sm">{label}</span>
-      {quantity > 0 && <span class="text-gray-600 text-sm font-arial">({quantity})</span>}
+      {quantity > 0 && (
+        <span class="text-gray-600 text-sm font-arial">({quantity})</span>
+      )}
     </a>
   );
 }
@@ -50,41 +59,49 @@ function FilterValues({ key, values }: FilterToggle) {
 
   return (
     <>
-      {selectedValues.length > 0 ? (
-        <div class="flex flex-wrap gap-2 mb-2 w-full">
-          {selectedValues.map((item) => (
-            <div
-              key={item.value}
-              class=" border-b-[3px]  border-solid border-primary w-full flex justify-between"
-            >
-              <span class="font-semibold lg:pl-6 text-[#5A5A5A] text-sm font-arial">{item.label}</span>
-              <a href={item.url} class="ml-2 text-[#5A5A5A]">x</a>
-            </div>
-          ))}
-        </div>
-      ) : (
-        unselectedValues.map((item) => {
-          const { url, selected, value, quantity } = item;
+      {selectedValues.length > 0
+        ? (
+          <div class="flex flex-wrap gap-2 mb-2 w-full">
+            {selectedValues.map((item) => (
+              <div
+                key={item.value}
+                class=" border-b-[3px]  border-solid border-primary w-full flex justify-between"
+              >
+                <span class="font-semibold lg:pl-6 text-[#5A5A5A] text-sm font-arial">
+                  {item.label}
+                </span>
+                <a href={item.url} class="ml-2 mr-2 text-[#5A5A5A]">x</a>
+              </div>
+            ))}
+          </div>
+        )
+        : (
+          unselectedValues.map((item) => {
+            const { url, selected, value, quantity } = item;
 
-          if (key === "price") {
-            const range = parseRange(item.value);
+            if (key === "price") {
+              const range = parseRange(item.value);
 
-            return range && (
-              <ValueItem
-                {...item}
-                label={`${formatPrice(range.from)} - ${formatPrice(range.to)}`}
-              />
-            );
-          }
+              return range && (
+                <ValueItem
+                  {...item}
+                  label={`${formatPrice(range.from)} - ${
+                    formatPrice(range.to)
+                  }`}
+                />
+              );
+            }
 
-          return <ValueItem {...item} />;
-        })
-      )}
+            return <ValueItem {...item} />;
+          })
+        )}
     </>
   );
 }
 
-function Filters({ filters }: Props) {
+function Filters({ filters, device }: Props & { device?: string }) {
+  const isDesktop = device === "desktop";
+
   const filteredAndSortedFilters = filters
     .filter(isToggle)
     .filter((filter) => allowedFilters.includes(filter.label.toUpperCase()))
@@ -101,7 +118,7 @@ function Filters({ filters }: Props) {
 
   return (
     <>
-      <span class="w-full table font-bold text-2xl text-black font-scout uppercase">
+      <span class="w-full table my-4 lg:my-0 lg:font-bold text-2xl text-black font-scout uppercase">
         FILTRAR POR:
       </span>
       <div>
@@ -110,14 +127,14 @@ function Filters({ filters }: Props) {
             <fieldset
               tabIndex={0}
               value={filter.label}
-              class="collapse collapse-plus rounded-none"
+              class="collapse collapse-plus  rounded-none"
               key={filter.label}
             >
               <input
                 type="checkbox"
                 class="peer min-h-0 flex items-end"
                 name="accordion"
-                defaultChecked
+                defaultChecked={isDesktop}
               />
               <h5 class="collapse-title !min-h-0 flex p-0 items-end tracking-one uppercase text-primary py-2 text-base font-arial leading-[110%] cursor-pointer border-b border-solid border-gray-300">
                 {filter.label}
