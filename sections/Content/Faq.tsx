@@ -1,4 +1,7 @@
 import Header from "../../components/ui/SectionHeader.tsx";
+import { Head } from "$fresh/runtime.ts";
+import Icon from "../../components/ui/Icon.tsx";
+import { clx } from "../../sdk/clx.ts";
 
 export interface Question {
   question: string;
@@ -6,23 +9,11 @@ export interface Question {
   answer: string;
 }
 
-export interface Contact {
-  title?: string;
-  /** @format html */
-  description?: string;
-  link?: {
-    text: string;
-    href: string;
-  };
-}
-
 export interface Props {
   title?: string;
   description?: string;
   questions?: Question[];
-  contact?: Contact;
   layout?: {
-    variation?: "Compact" | "Full" | "Side to side";
     headerAlignment?: "center" | "left";
   };
 }
@@ -54,8 +45,8 @@ const DEFAULT_PROPS = {
 
 function Question({ question, answer }: Question) {
   return (
-    <details class="collapse collapse-arrow join-item border-t border-base-200">
-      <summary class="collapse-title text-lg font-medium">
+    <details class="collapse collapse-plus join-item border-b border-[#eee]">
+      <summary class="collapse-title !min-h-0 text-2xl font-scoutCond tracking-one font-medium text-[#1e1d2e]  !pt-0 !pb-1 !mb-2 ">
         {question}
       </summary>
       <div
@@ -63,24 +54,6 @@ function Question({ question, answer }: Question) {
         dangerouslySetInnerHTML={{ __html: answer }}
       />
     </details>
-  );
-}
-
-function Contact({ title, description, link }: Contact) {
-  return (
-    <div class="flex flex-col gap-6 items-center text-center">
-      <div class="flex flex-col gap-2">
-        {title && <h2 class="text-xl lg:text-3xl">{title}</h2>}
-        {description && (
-          <div
-            class="text-lg lg:text-xl"
-            dangerouslySetInnerHTML={{ __html: description }}
-          />
-        )}
-      </div>
-      {link &&
-        <a href={link.href} class="btn">{link.text}</a>}
-    </div>
   );
 }
 
@@ -95,59 +68,74 @@ export default function FAQ(props: Props) {
 
   return (
     <>
-      {(!layout?.variation || layout?.variation === "Compact") && (
-        <div class="w-full container px-4 py-8 flex flex-col gap-4 lg:gap-8 lg:py-10 lg:px-40">
-          <div class="flex flex-col gap-8 lg:gap-10">
-            <Header
-              title={title || ""}
-              description={description || ""}
-              alignment={layout?.headerAlignment || "center"}
-            />
+    <Head>
+    <style
+          type="text/css"
+          dangerouslySetInnerHTML={{
+            __html: `
+             .collapse-content p {
+              font-size: 12px;
+             }
+
+             .collapse-content table td {
+              border-right: 1px solid #eee;
+              padding: 9px;
+             }
+
+             .collapse-content table {
+              text-align: center;
+              font-size: 13px;
+              margin-top: 20px;
+              border: 1px solid #eee;
+             }
+
+             @media only screen and (max-width: 768px) {
+               .collapse-content table {
+                  width: 100% !important;
+                  border-collapse: collapse;
+              }
+            }
+            `}}
+     />
+    </Head>
+
+
+      <div class="w-full  max-w-7xl m-auto px-4 py-8 flex flex-col lg:flex-row gap-4 lg:my-28 lg:gap-8 lg:py-10  lg:px-10">
+        <div class="flex flex-col gap-8 lg:gap-10 w-full">
+        <div
+          class={`flex flex-col gap-2 ${
+            layout?.headerAlignment === "left"
+              ? "text-left lg:pl-20 uppercase"
+              : "text-center"
+          }`}
+        >
+          {title &&
+            (
+              <h1
+                class={clx(
+                  ` text-4xl font-scoutCond  font-bold   tracking-[2px] lg:text-[40px] lg:font-bold uppercase leading-8 lg:leading-10 text-[#1e1d2e] pb-5 lg:pb-6`,
+                )}
+              >
+                {title}
+              </h1>
+            )}
+        </div>
+
+          <div class="flex w-full gap-16">
+            <aside class="hidden lg:block">
+              <div class="font-arial text-white p-8 bg-primary-content">
+                <div class="flex gap-3 items-center justify-center mt-6">
+                  <Icon id="Email" size={16} class="" />
+                  <p>atendimento@fossil.com.br</p>
+                </div>
+              </div>
+            </aside>
             <div class="join join-vertical w-full">
               {questions.map((question) => <Question {...question} />)}
             </div>
           </div>
-
-          <Contact {...contact} />
         </div>
-      )}
-
-      {layout?.variation === "Full" && (
-        <div class="w-full container px-4 py-8 flex flex-col gap-4 lg:gap-8 lg:py-10 lg:px-0">
-          <div class="flex flex-col gap-8 lg:gap-10">
-            <Header
-              title={title || ""}
-              description={description || ""}
-              alignment={layout?.headerAlignment || "center"}
-            />
-            <div class="join join-vertical w-full">
-              {questions.map((question) => <Question {...question} />)}
-            </div>
-          </div>
-
-          <Contact {...contact} />
-        </div>
-      )}
-
-      {layout?.variation === "Side to side" && (
-        <div class="w-full container px-4 py-8 grid gap-8 grid-flow-row grid-cols-1 lg:grid-flow-col lg:grid-cols-2 lg:grid-rows-2 lg:py-10 lg:px-0">
-          <div class="order-1 lg:order-1">
-            <Header
-              title={title || ""}
-              description={description || ""}
-              alignment={layout?.headerAlignment || "center"}
-            />
-          </div>
-          <div class="order-2 lg:order-3 lg:row-span-2">
-            <div class="join join-vertical">
-              {questions.map((question) => <Question {...question} />)}
-            </div>
-          </div>
-          <div class="order-3 lg:order-2">
-            <Contact {...contact} />
-          </div>
-        </div>
-      )}
+      </div>
     </>
   );
 }
