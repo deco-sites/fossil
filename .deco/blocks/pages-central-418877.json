@@ -1,0 +1,1 @@
+{"name":"central","path":"/central","sections":[{"type":"website","__resolveType":"website/sections/Seo/Seo.tsx","titleTemplate":"%s | Deco.cx","descriptionTemplate":"%s | Deco.cx"},{"__resolveType":"Header - 01"},{"__resolveType":"FAQ - 03"},{"__resolveType":"Footer - 01"}],"seo":{"__resolveType":"website/sections/Seo/SeoV2.tsx"},"__resolveType":"website/pages/Page.tsx"}
