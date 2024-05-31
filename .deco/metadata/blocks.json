@@ -490,5 +490,95 @@
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx",
     "path": "/relogio/masculino/dourado"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Prata-575855.json": {
+    "name": "Relógio Masculino Prata",
+    "path": "/relogio/masculino/prata",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Preto-829751.json": {
+    "name": "Relógio Masculino Preto",
+    "path": "/relogio/masculino/preto",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Rose-289949.json": {
+    "name": "Relógio Masculino Rose",
+    "path": "/relogio/masculino/rose",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Bicolor-551721.json": {
+    "name": "Relógio Masculino Bicolor",
+    "path": "/relogio/masculino/bicolor",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Especiais-987448.json": {
+    "name": "Relógio Masculino Especiais",
+    "path": "/relogio/masculino/especiais",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Anadigi-268381.json": {
+    "name": "Relógio Feminino Anadigi",
+    "path": "/relogio/feminino/anadigi",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Analogico-833159.json": {
+    "name": "Relógio Feminino Analogico",
+    "path": "/relogio/feminino/analogico",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Digital-848710.json": {
+    "name": "Relógio Feminino Digital",
+    "path": "/relogio/feminino/digital",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Multifun%25C3%25A7%25C3%25A3o-633824.json": {
+    "name": "Relógio Masculino Multifunção",
+    "path": "/relogio/feminino/multifuncao",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Quadrada-420806.json": {
+    "name": "Relógio Feminino Quadrada",
+    "path": "/relogio/feminino/quadrada",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Redonda-562658.json": {
+    "name": "Relógio Feminino Redonda",
+    "path": "/relogio/feminino/redonda",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Retangular-836788.json": {
+    "name": "Relógio Feminino Retangular",
+    "path": "/relogio/feminino/retangular",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520A%25C3%25A7o-136212.json": {
+    "name": "Relógio Feminino Aço",
+    "path": "/relogio/feminino/aco",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Silicone-364166.json": {
+    "name": "Relógio Feminino Silicone",
+    "path": "/relogio/feminino/silicone",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Ceramica-293481.json": {
+    "name": "Relógio Feminino Ceramica",
+    "path": "/relogio/feminino/ceramica",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }

@@ -1,0 +1,31 @@
+{
+  "name": "Relógio Masculino Bicolor",
+  "path": "/relogio/masculino/bicolor",
+  "sections": [
+    {
+      "type": "website",
+      "__resolveType": "website/sections/Seo/Seo.tsx",
+      "titleTemplate": "%s | Deco.cx",
+      "descriptionTemplate": "%s | Deco.cx"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "Category Banner - 01"
+    },
+    {
+      "__resolveType": "Search Result"
+    },
+    {
+      "__resolveType": "Footer - 01"
+    },
+    {
+      "__resolveType": "YourViewsIntegration"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
