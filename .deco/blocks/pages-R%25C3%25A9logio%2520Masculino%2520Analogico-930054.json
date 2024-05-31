@@ -1,6 +1,6 @@
 {
-  "name": "Relogio Masculino",
-  "path": "/relogio/masculino",
+  "name": "Relógio Masculino Analogico",
+  "path": "/relogio/masculino/analogico",
   "sections": [
     {
       "type": "website",
@@ -31,7 +31,7 @@
               "format": "Show More"
             },
             "__resolveType": "site/sections/Product/SearchResultView.tsx",
-            "startingPage": 0
+            "startingPage": 1
           },
           "rule": {
             "__resolveType": "site/matchers/utm.ts"
@@ -50,7 +50,7 @@
               "variant": "aside"
             },
             "__resolveType": "site/sections/Product/SearchResult.tsx",
-            "startingPage": 0
+            "startingPage": 1
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

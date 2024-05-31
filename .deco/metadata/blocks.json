@@ -402,5 +402,35 @@
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx",
     "name": "Off"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculina%2520Quadrada%2520-611014.json": {
+    "name": "Relógio Masculina Quadrada ",
+    "path": "/relogio/masculino/quadrada",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Anadigi-452651.json": {
+    "name": "Relógio Masculino Anadigi",
+    "path": "/relogio/masculino/anadigi",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-R%25C3%25A9logio%2520Masculino%2520Analogico-930054.json": {
+    "name": "Relógio Masculino Analogico",
+    "path": "/relogio/masculino/analogico",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Digital-732524.json": {
+    "name": "Relógio Masculino Digital",
+    "path": "/relogio/masculino/digital",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Multifun%25C3%25A7%25C3%25A3o-995708.json": {
+    "name": "Relógio Masculino Multifunção",
+    "path": "/relogio/masculino/multifuncao",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
