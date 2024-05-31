@@ -432,5 +432,39 @@
     "path": "/relogio/masculino/multifuncao",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Redonda-730782.json": {
+    "name": "Relógio Masculino Redonda",
+    "path": "/relogio/masculino/redonda",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Cron%25C3%25B3grafo-857871.json": {
+    "name": "Relógio Masculino Cronógrafo",
+    "path": "/relogio/masculino/cronografo",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Retangular-258455.json": {
+    "name": "Relógio Masculino Retangular",
+    "path": "/relogio/masculino/retangular",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520A%25C3%25A7%25C3%25B5-322029.json": {
+    "name": "Relógio Masculino Açõ",
+    "path": "/relogio/masculino/aco",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Silicone-87821.json": {
+    "name": "Relógio Masculino Silicone",
+    "path": "/relogio/masculino/silicone",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Search%20Result.json": {
+    "blockType": "flags",
+    "__resolveType": "website/flags/multivariate/section.ts"
   }
 }
