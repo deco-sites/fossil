@@ -466,5 +466,29 @@
   "/.deco/blocks/Search%20Result.json": {
     "blockType": "flags",
     "__resolveType": "website/flags/multivariate/section.ts"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Cer%25C3%25A2mica-272818.json": {
+    "name": "Relógio Masculino Cerâmica",
+    "path": "/relogio/masculino/ceramica",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Couro%2520-943267.json": {
+    "name": "Relógio Masculino Couro ",
+    "path": "/relogio/masculino/couro",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Color-789121.json": {
+    "name": "Relógio Masculino Color",
+    "path": "/relogio/masculino/color",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Dourado-869316.json": {
+    "name": "Relógio Masculino Dourado",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx",
+    "path": "/relogio/masculino/dourado"
   }
 }
