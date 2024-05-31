@@ -580,5 +580,53 @@
     "path": "/relogio/feminino/ceramica",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Relogio%2520Feminino%2520Couro-237029.json": {
+    "name": "Relogio Feminino Couro",
+    "path": "/relogio/feminino/couro",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Color-226948.json": {
+    "name": "Relógio Feminino Color",
+    "path": "/relogio/feminino/color",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Dourado-248962.json": {
+    "name": "Relógio Feminino Dourado",
+    "path": "/relogio/feminino/dourado",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Prata-64381.json": {
+    "name": "Relógio Feminino Prata",
+    "path": "/relogio/feminino/prata",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Preto-412629.json": {
+    "name": "Relógio Feminino Preto",
+    "path": "/relogio/feminino/preto",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Rose-38188.json": {
+    "name": "Relógio Feminino Rose",
+    "path": "/relogio/feminino/rose",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Bicolor-298816.json": {
+    "name": "Relógio Feminino Bicolor",
+    "path": "/relogio/feminino/bicolor",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Especiais-181393.json": {
+    "name": "Relógio Feminino Especiais",
+    "path": "/relogio/feminino/especiais",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
