@@ -1,6 +1,5 @@
 {
-  "name": "Bolsas masculinas ",
-  "path": "/bolsasmasculinas",
+  "path": "/off",
   "sections": [
     {
       "type": "website",
@@ -28,7 +27,7 @@
                 "selectedFacets": [
                   {
                     "key": "productClusterIds",
-                    "value": "2318"
+                    "value": "2166"
                   }
                 ],
                 "count": 17
@@ -62,5 +61,6 @@
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },
-  "__resolveType": "website/pages/Page.tsx"
+  "__resolveType": "website/pages/Page.tsx",
+  "name": "Off"
 }

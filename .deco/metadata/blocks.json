@@ -369,7 +369,7 @@
   },
   "/.deco/blocks/pages-Bolsas%2520masculinas%2520-567267.json": {
     "name": "Bolsas masculinas ",
-    "path": "/bolsasmasculinas ",
+    "path": "/bolsasmasculinas",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
   },
@@ -397,10 +397,10 @@
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
   },
-  "/.deco/blocks/pages-Off%2520-%2520desconto-962502.json": {
-    "name": "Off - desconto",
+  "/.deco/blocks/pages-Off%2520-%2520desconto%2520-227423.json": {
     "path": "/off",
     "blockType": "pages",
-    "__resolveType": "website/pages/Page.tsx"
+    "__resolveType": "website/pages/Page.tsx",
+    "name": "Off"
   }
 }
