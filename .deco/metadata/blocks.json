@@ -385,12 +385,6 @@
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
   },
-  "/.deco/blocks/pages-off-398581.json": {
-    "name": "off",
-    "path": "/off",
-    "blockType": "pages",
-    "__resolveType": "website/pages/Page.tsx"
-  },
   "/.deco/blocks/pages-central-418877.json": {
     "name": "central",
     "path": "/central",
@@ -400,6 +394,12 @@
   "/.deco/blocks/pages-Nossas%2520Lojas-501704.json": {
     "name": "Nossas Lojas",
     "path": "/nossas-lojas",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Off%2520-%2520desconto-962502.json": {
+    "name": "Off - desconto",
+    "path": "/off",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
   }
