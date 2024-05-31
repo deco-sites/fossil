@@ -227,17 +227,8 @@
 }
 
 
-div#zendeskChat {
-  background-image: url("https://technos.vteximg.com.br/arquivos/CHAT_2.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 60px;
-  height: 60px;
-  position: fixed;
-  bottom: 7px;
-  right: 0;
-  margin-right: 19px;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 98;
+@media screen and (max-width: 680px) {
+div#launcher{
+    margin-right: 2px;
+  }
 }

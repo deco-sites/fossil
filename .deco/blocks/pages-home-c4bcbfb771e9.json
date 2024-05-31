@@ -6,9 +6,6 @@
       "__resolveType": "Fashion theme"
     },
     {
-      "__resolveType": "site/sections/Integrations/Zendesk.tsx"
-    },
-    {
       "__resolveType": "website/sections/Seo/Seo.tsx",
       "noIndexing": false
     },

@@ -1,1 +1,1 @@
-export { default } from "../../components/integrations/Zendesk.tsx";
+export { default } from "../../islands/Zendesk.tsx";
