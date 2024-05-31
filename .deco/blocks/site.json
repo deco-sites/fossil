@@ -1,1 +1,70 @@
-{"seo":{"type":"website","title":"fossil","jsonLDs":[],"noIndexing":false,"titleTemplate":"Fossil | Site Oficial no Brasil","description":"Acesse a loja oficial Fossil e conheça nosso catálogo de relógios, bolsas e acessórios. Tendência, design e exclusividade você encontra aqui.","favicon":"https://fossil.vteximg.com.br/arquivos/fossil-favicon.png?v=636724531251600000","image":"https://www.fossil.com.br/arquivos/fossil-logo.png?v=638295235683070000","descriptionTemplate":"%s"},"theme":{"__resolveType":"My Theme"},"global":[{"__resolveType":"website/sections/Analytics/Analytics.tsx","dangerouslyRunOnMainThread":true},{"__resolveType":"algolia/sections/Analytics/Algolia.tsx"},{"__resolveType":"analytics/sections/Analytics/DecoAnalytics.tsx"}],"routes":[{"__resolveType":"vtex/loaders/proxy.ts","includeSiteMap":[],"extraPathsToProxy":[],"includeScriptsToHead":{"includes":[{"__resolveType":"analytics/loaders/DecoAnalyticsScript.ts"}],"includePlausible":true}},{"__resolveType":"website/loaders/pages.ts"},{"__resolveType":"website/loaders/redirects.ts"}],"caching":{"directives":[]},"commerce":{"platform":"other"},"platform":"vtex","__resolveType":"site/apps/site.ts","firstByteThresholdMS":false,"abTesting":{"replaces":[],"includeScriptsToHead":{"includes":[]}}}
+{
+  "seo": {
+    "type": "website",
+    "title": "fossil",
+    "jsonLDs": [],
+    "noIndexing": false,
+    "titleTemplate": "Fossil | Site Oficial no Brasil",
+    "description": "Acesse a loja oficial Fossil e conheça nosso catálogo de relógios, bolsas e acessórios. Tendência, design e exclusividade você encontra aqui.",
+    "favicon": "https://fossil.vteximg.com.br/arquivos/fossil-favicon.png?v=636724531251600000",
+    "image": "https://www.fossil.com.br/arquivos/fossil-logo.png?v=638295235683070000",
+    "descriptionTemplate": "%s"
+  },
+  "theme": {
+    "__resolveType": "My Theme"
+  },
+  "global": [
+    {
+      "__resolveType": "website/sections/Analytics/Analytics.tsx",
+      "dangerouslyRunOnMainThread": true
+    },
+    {
+      "__resolveType": "site/sections/Integrations/Zendesk.tsx"
+    },
+    {
+      "__resolveType": "algolia/sections/Analytics/Algolia.tsx"
+    },
+    {
+      "__resolveType": "analytics/sections/Analytics/DecoAnalytics.tsx"
+    }
+  ],
+  "routes": [
+    {
+      "__resolveType": "vtex/loaders/proxy.ts",
+      "includeSiteMap": [],
+      "extraPathsToProxy": [],
+      "includeScriptsToHead": {
+        "includes": [
+          {
+            "__resolveType": "analytics/loaders/DecoAnalyticsScript.ts"
+          }
+        ],
+        "includePlausible": true
+      }
+    },
+    {
+      "__resolveType": "website/loaders/pages.ts"
+    },
+    {
+      "__resolveType": "website/loaders/redirects.ts"
+    }
+  ],
+  "caching": {
+    "directives": []
+  },
+  "commerce": {
+    "platform": "other"
+  },
+  "platform": "vtex",
+  "__resolveType": "site/apps/site.ts",
+  "firstByteThresholdMS": false,
+  "abTesting": {
+    "replaces": [],
+    "includeScriptsToHead": {
+      "includes": []
+    }
+  },
+  "flavor": {
+    "framework": "fresh"
+  }
+}

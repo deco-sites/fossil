@@ -68,8 +68,8 @@ export default function FAQ(props: Props) {
 
   return (
     <>
-    <Head>
-    <style
+      <Head>
+        <style
           type="text/css"
           dangerouslySetInnerHTML={{
             __html: `
@@ -95,31 +95,31 @@ export default function FAQ(props: Props) {
                   border-collapse: collapse;
               }
             }
-            `}}
-     />
-    </Head>
-
+            `,
+          }}
+        />
+      </Head>
 
       <div class="w-full  max-w-7xl m-auto px-4 py-8 flex flex-col lg:flex-row gap-4 lg:my-28 lg:gap-8 lg:py-10  lg:px-10">
         <div class="flex flex-col gap-8 lg:gap-10 w-full">
-        <div
-          class={`flex flex-col gap-2 ${
-            layout?.headerAlignment === "left"
-              ? "text-left lg:pl-20 uppercase"
-              : "text-center"
-          }`}
-        >
-          {title &&
-            (
-              <h1
-                class={clx(
-                  ` text-4xl font-scoutCond  font-bold   tracking-[2px] lg:text-[40px] lg:font-bold uppercase leading-8 lg:leading-10 text-[#1e1d2e] pb-5 lg:pb-6`,
-                )}
-              >
-                {title}
-              </h1>
-            )}
-        </div>
+          <div
+            class={`flex flex-col gap-2 ${
+              layout?.headerAlignment === "left"
+                ? "text-left lg:pl-20 uppercase"
+                : "text-center"
+            }`}
+          >
+            {title &&
+              (
+                <h1
+                  class={clx(
+                    ` text-4xl font-scoutCond  font-bold   tracking-[2px] lg:text-[40px] lg:font-bold uppercase leading-8 lg:leading-10 text-[#1e1d2e] pb-5 lg:pb-6`,
+                  )}
+                >
+                  {title}
+                </h1>
+              )}
+          </div>
 
           <div class="flex w-full gap-16">
             <aside class="hidden lg:block">
