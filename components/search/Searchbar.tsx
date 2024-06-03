@@ -111,17 +111,16 @@ function Searchbar({
       text: "Feminino",
       url: "/relogio/feminino?PS=18&O=OrderByReleaseDateDESC",
     },
-    { text: "Smartwatch", url: "/Smartwatch" },
     {
       text: "Nate",
-      url: "/nate?PS=30&O=OrderByReleaseDateDESC",
+      url: "/s?q=nate?PS=30&O=OrderByReleaseDateDESC",
     },
     {
       text: "Lançamentos",
       url: "/2146?PS=18&map=productClusterIds&O=OrderByReleaseDateDESC",
     },
-    { text: "Relógio", url: "/relogio?O=OrderByReleaseDateDESC" },
-    { text: "Stella", url: "/stella?O=OrderByReleaseDateDESC" },
+    { text: "Relógio", url: "/s?q=relogio?O=OrderByReleaseDateDESC" },
+    { text: "Stella", url: "/s?q=stella?O=OrderByReleaseDateDESC" },
     {
       text: "Feminino",
       url: "/relogio/feminino?&utmi_p=_&utmi_pc=Html&utmi_cp=Popular",
