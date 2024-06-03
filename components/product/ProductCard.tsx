@@ -213,7 +213,7 @@ function ProductCard({
           <div class="yv-review-quickreview" value={inProductGroupWithID}></div>
         </div>
         {/* Price from/to */}
-        <div class="flex flex-col gap-1 font-light text-primary-content">
+        <div class="flex flex-col justify-end gap-1 font-light text-primary-content h-11">
           {listPrice !== price && (
             <span class="line-through text-sm ">
               {formatPrice(listPrice, offers?.priceCurrency)}
