@@ -47,10 +47,26 @@
                 "mobile": 2,
                 "desktop": 3
               },
-              "variant": "aside"
+              "variant": "aside",
+              "banners": [
+                {
+                  "img": "https://timecenter.vteximg.com.br/arquivos/ids/217174/ME3154_Vitrine_275X406px.jpg?v=638282260441870000",
+                  "alt": "Relógio Automático",
+                  "url": "/s?q=automatico"
+                },
+                {
+                  "img": "https://timecenter.vteximg.com.br/arquivos/ids/217253/FS5908_Vitrine_275X406px.jpg?v=638282284771700000"
+                }
+              ]
             },
             "__resolveType": "site/sections/Product/SearchResult.tsx",
-            "startingPage": 0
+            "startingPage": 0,
+            "banners": [
+              {
+                "img": "https://timecenter.vteximg.com.br/arquivos/ids/217174/ME3154_Vitrine_275X406px.jpg?v=638282260441870000",
+                "url": "s?q=automatico"
+              }
+            ]
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

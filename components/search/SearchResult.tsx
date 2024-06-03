@@ -16,8 +16,15 @@ import Breadcrumb from "../ui/Breadcrumb.tsx";
 import Button from "../ui/Button.tsx";
 import { usePartialSection } from "deco/hooks/usePartialSection.ts";
 import { GetSearchQueryParameter } from "../../util/getSearchQueryParameter.ts";
+import type { ImageWidget } from "apps/admin/widgets.ts";
 
 export type Format = "Show More" | "Pagination";
+
+export interface Banner {
+  img: ImageWidget;
+  alt: string;
+  url: string;
+}
 
 export interface Layout {
   /**
@@ -32,12 +39,15 @@ export interface Layout {
    * @description Format of the pagination
    */
   format?: Format;
+
+  banners?: Banner[];
 }
 
 export interface Props {
   /** @title Integration */
   page: ProductListingPage | null;
   layout?: Layout;
+
   isCollection?: boolean;
 
   /** @description 0 for ?page=0 as your first page */
@@ -159,7 +169,11 @@ function Result({
             <ProductGallery
               products={products}
               offset={offset}
-              layout={{ columns: layout?.columns, format }}
+              layout={{
+                columns: layout?.columns,
+                format,
+                banners: layout?.banners,
+              }}
               pageInfo={pageInfo}
               device={device}
             />
