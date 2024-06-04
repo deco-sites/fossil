@@ -1,1 +1,45 @@
-{"name":"NotFound","path":"/Sistema/buscavazia","sections":[{"type":"website","__resolveType":"website/sections/Seo/Seo.tsx","titleTemplate":"%s | Deco.cx","descriptionTemplate":"%s | Deco.cx"},{"__resolveType":"Header - 01"},{"__resolveType":"site/sections/Product/NotFound.tsx"},{"__resolveType":"site/sections/Product/ProductShelf.tsx","title":"CONFIRA TAMBÉM","layout":{"numberOfSliders":{"mobile":2,"desktop":4},"headerAlignment":"center","headerStyle":"variante2","showArrows":true},"products":{"__resolveType":"vtex/loaders/intelligentSearch/productList.ts","props":{"collection":"2181","count":21}}},{"__resolveType":"Footer - 01"}],"seo":{"__resolveType":"website/sections/Seo/SeoV2.tsx"},"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "NotFound",
+  "path": "/Sistema/buscavazia",
+  "sections": [
+    {
+      "type": "website",
+      "__resolveType": "website/sections/Seo/Seo.tsx",
+      "titleTemplate": "%s | Deco.cx",
+      "descriptionTemplate": "%s | Deco.cx"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "site/sections/Product/NotFound.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Product/ProductShelf.tsx",
+      "title": "CONFIRA TAMBÉM",
+      "layout": {
+        "numberOfSliders": {
+          "mobile": 2,
+          "desktop": 4
+        },
+        "headerAlignment": "center",
+        "headerStyle": "variante2",
+        "showArrows": true
+      },
+      "products": {
+        "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+        "props": {
+          "collection": "2181",
+          "count": 21
+        }
+      }
+    },
+    {
+      "__resolveType": "Footer - 04"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
