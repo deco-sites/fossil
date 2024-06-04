@@ -1,1 +1,72 @@
-{"name":"Relogio Feminino","path":"/relogio/feminino","sections":[{"type":"website","__resolveType":"website/sections/Seo/Seo.tsx","titleTemplate":"%s | Deco.cx","descriptionTemplate":"%s | Deco.cx"},{"__resolveType":"Header - 01"},{"__resolveType":"Category Banner - 01"},{"__resolveType":"website/flags/multivariate/section.ts","variants":[{"value":{"page":{"__resolveType":"PLP Loader"},"layout":{"columns":{"mobile":2,"desktop":3},"variant":"aside","format":"Show More"},"__resolveType":"site/sections/Product/SearchResultView.tsx","startingPage":0},"rule":{"__resolveType":"site/matchers/utm.ts"}},{"value":{"page":{"__resolveType":"PLP Loader"},"layout":{"columns":{"mobile":2,"desktop":3},"variant":"aside"},"__resolveType":"site/sections/Product/SearchResult.tsx","startingPage":0},"rule":{"__resolveType":"website/matchers/always.ts"}}]},{"__resolveType":"Footer - 01"},{"__resolveType":"YourViewsIntegration"}],"seo":{"__resolveType":"website/sections/Seo/SeoV2.tsx"},"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Relogio Feminino",
+  "path": "/relogio/feminino",
+  "sections": [
+    {
+      "type": "website",
+      "__resolveType": "website/sections/Seo/Seo.tsx",
+      "titleTemplate": "%s | Deco.cx",
+      "descriptionTemplate": "%s | Deco.cx"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "Category Banner - 01"
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "page": {
+              "__resolveType": "PLP Loader"
+            },
+            "layout": {
+              "columns": {
+                "mobile": 2,
+                "desktop": 3
+              },
+              "variant": "aside",
+              "format": "Show More"
+            },
+            "__resolveType": "site/sections/Product/SearchResultView.tsx",
+            "startingPage": 0
+          },
+          "rule": {
+            "__resolveType": "site/matchers/utm.ts"
+          }
+        },
+        {
+          "value": {
+            "page": {
+              "__resolveType": "PLP Loader"
+            },
+            "layout": {
+              "columns": {
+                "mobile": 2,
+                "desktop": 3
+              },
+              "variant": "aside"
+            },
+            "__resolveType": "site/sections/Product/SearchResult.tsx",
+            "startingPage": 0
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer - 04"
+    },
+    {
+      "__resolveType": "YourViewsIntegration"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
