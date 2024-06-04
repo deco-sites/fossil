@@ -50,7 +50,6 @@ function ProductGallery(
 
   const isFirstPage = !pageInfo.previousPage;
 
-  console.log(isFirstPage);
 
   let i = 6;
 

@@ -9,34 +9,64 @@ export interface Props {
 
 function Notify({ productID }: Props) {
   const loading = useSignal(false);
+  const sendEmail = useSignal(false);
 
   const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
 
-    try {
-      loading.value = true;
+    const name = (e.currentTarget.elements.namedItem("name") as RadioNodeList)
+      ?.value;
+    const email = (e.currentTarget.elements.namedItem("email") as RadioNodeList)
+      ?.value;
 
-      const name = (e.currentTarget.elements.namedItem("name") as RadioNodeList)
-        ?.value;
-      const email =
-        (e.currentTarget.elements.namedItem("email") as RadioNodeList)?.value;
-
-      await invoke.vtex.actions.notifyme({ skuId: productID, name, email });
-    } finally {
-      loading.value = false;
+    if (email) {
+      try {
+        loading.value = true;
+        await invoke.vtex.actions.notifyme({ skuId: productID, name, email });
+      } finally {
+        loading.value = false;
+        sendEmail.value = true;
+      }
     }
   };
 
   return (
-    <form class="form-control justify-start gap-2" onSubmit={handleSubmit}>
-      <span class="text-base">Este produto está indisponivel no momento</span>
-      <span class="text-sm">Avise-me quando estiver disponivel</span>
-
-      <input placeholder="Nome" class="input input-bordered" name="name" />
-      <input placeholder="Email" class="input input-bordered" name="email" />
-
-      <button class="btn disabled:loading" disabled={loading}>Enviar</button>
-    </form>
+    <>
+      <form class="form-control justify-start gap-2 w-full mb-6" onSubmit={handleSubmit}>
+        <span class=" text-32 font-scoutCond font-bold tracking-one text-primary ">
+          PRODUTO INDISPONÍVEL
+        </span>
+        {!sendEmail.value
+          ? (
+            <div class="flex flex-col">
+              <span class="text-sm block w-[300px] font-arial leading-[18px] tracking-one text-[#89a290]">
+                Digite seu e-mail e seja avisado quando tivermos mais deste
+                produto em estoque
+              </span>
+              <div class="flex h-10 mt-2">
+                <input
+                  placeholder="Email"
+                  class="input input-bordered rounded-none !outline-none inline-block w-full max-w-80 h-10 font-arial px-2 !border !border-solid !border-primary"
+                  name="email"
+                />
+                <button
+                  class="rounded-none disabled:loading uppercase w-[120px] !outline-none   text-white !h-10 inline-block font-scoutCond text-18 font-bold tracking-one  bg-warning border border-warning hover:brightness-90"
+                >
+                  Avisa-me
+                </button>
+              </div>
+            </div>
+          )
+          : (
+            <>
+              <span class="text-xs font-arial">
+                Cadastrado com sucesso, assim que o produto for disponibilizado
+                você receberá um email avisando.
+              </span>
+            </>
+          )}
+      </form>
+    </>
   );
 }
 
