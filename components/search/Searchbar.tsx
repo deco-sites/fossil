@@ -111,20 +111,19 @@ function Searchbar({
       text: "Feminino",
       url: "/relogio/feminino?PS=18&O=OrderByReleaseDateDESC",
     },
-    { text: "Smartwatch", url: "/Smartwatch" },
     {
       text: "Nate",
-      url: "/nate?PS=30&O=OrderByReleaseDateDESC",
+      url: "/s?q=nate&PS=30&O=OrderByReleaseDateDESC&utmi_pc=search",
     },
     {
       text: "Lançamentos",
       url: "/2146?PS=18&map=productClusterIds&O=OrderByReleaseDateDESC",
     },
-    { text: "Relógio", url: "/relogio?O=OrderByReleaseDateDESC" },
-    { text: "Stella", url: "/stella?O=OrderByReleaseDateDESC" },
+    { text: "Relógio", url: "/s?q=relogio&O=OrderByReleaseDateDESC&utmi_pc=search" },
+    { text: "Stella", url: "/s?q=stella&O=OrderByReleaseDateDESC&utmi_pc=search" },
     {
       text: "Feminino",
-      url: "/relogio/feminino?&utmi_p=_&utmi_pc=Html&utmi_cp=Popular",
+      url: "/relogio/feminino?&utmi_pc=Html&utmi_cp=Popular",
     },
   ];
 
@@ -144,7 +143,7 @@ function Searchbar({
     if (value) {
       const searchURL = `${action}?${name}=${
         encodeURIComponent(value)
-      }&utmi_p=_&utmi_pc=BuscaFullText&utmi_cp=${encodeURIComponent(value)}`;
+      }&utmi_pc=search&utmi_cp=${encodeURIComponent(value)}`;
       window.location.href = searchURL;
     }
   };

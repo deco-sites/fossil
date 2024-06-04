@@ -17,5 +17,5 @@ export default function Utm(
   const url = new URL(ctx.request.url);
   const utmCampaign = url.searchParams.get("utmi_pc");
   return (utmCampaign !== null && utmCampaign === campaignName) ||
-    utmCampaign === "BuscaFullText";
+    utmCampaign === "search";
 }
