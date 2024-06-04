@@ -67,6 +67,8 @@ function ProductInfo(
 
   let stock;
   let qtdText;
+
+  const hasProduct = availability === "https://schema.org/InStock";
   if (offers) {
     stock = offers.offers[0].inventoryLevel.value;
 
@@ -93,7 +95,7 @@ function ProductInfo(
 
   return (
     <div
-      class="flex flex-col font- px-4 gap-3 lg:gap-6 w-full lg:w-[52%]"
+      class="flex flex-col mb-10 lg:mb-0  px-4 gap-1 lg:gap-6 w-full lg:w-[52%]"
       id={id}
     >
       {/* Add to Cart and Favorites button Mobile */}
@@ -127,6 +129,12 @@ function ProductInfo(
         <p class="text-base font-medium tracking-one text-[#89a290]  font-arial">
           {name}
         </p>
+        {/**Reviews */}
+        {!hasProduct && (
+          <div class="h-6">
+            <div id="yv-review-quickreview"></div>
+          </div>
+        )}
       </div>
 
       <div>
@@ -138,32 +146,37 @@ function ProductInfo(
         )}
 
         {/**Reviews */}
-        <div class="h-6">
-          <div id="yv-review-quickreview"></div>
-        </div>
+        {hasProduct && (
+          <div class="h-6">
+            <div id="yv-review-quickreview"></div>
+          </div>
+        )}
       </div>
 
       {/* Prices */}
-      <div class="">
-        <div class="flex flex-col font-scoutCond">
-          {(listPrice ?? 0) > price && (
-            <span class="line-through block font-medium text-[#89a290] text-22 m-0 leading-none tracking-one">
-              {formatPrice(listPrice, offers?.priceCurrency)}
+      {hasProduct && (
+        <div class="">
+          <div class="flex flex-col font-scoutCond">
+            {(listPrice ?? 0) > price && (
+              <span class="line-through block font-medium text-[#89a290] text-22 m-0 leading-none tracking-one">
+                {formatPrice(listPrice, offers?.priceCurrency)}
+              </span>
+            )}
+            <span class="lg:tracking-one block text-primary font-bold lg:font-medium text-3xl leading-none">
+              {formatPrice(price, offers?.priceCurrency)}
             </span>
+          </div>
+          {(installments && typeof installments !== "string") && (
+            <p class="text-sm mt-3 text-primary tracking-one font-arial">
+              ou {installments.billingDuration} x de{"  "}
+              <span class="font-bold text-primary">
+                R$ {installments.billingIncrement} {" "}
+              </span>
+            </p>
           )}
-          <span class="lg:tracking-one block text-primary font-bold lg:font-medium text-3xl leading-none">
-            {formatPrice(price, offers?.priceCurrency)}
-          </span>
         </div>
-        {(installments && typeof installments !== "string") && (
-          <p class="text-sm mt-3 text-primary tracking-one font-arial">
-            ou {installments.billingDuration} x de{"  "}
-            <span class="font-bold text-primary">
-              R$ {installments.billingIncrement} {" "}
-            </span>
-          </p>
-        )}
-      </div>
+      )}
+
       {flagDiscount && (
         <div className="flex items-center w-60 h-6 lg:w-auto lg:h-auto my-4 lg:my-0">
           <Image
@@ -178,8 +191,18 @@ function ProductInfo(
           <p className="font-museoSans border-[#5C5C5C] pl-1 text-xs lg:text-sm leading-none">
             Receba{" "}
             <span className="font-bold">
-              {formatPrice(price * 0.05, offers?.priceCurrency)}
-              {" "}
+              {hasProduct
+                ? (
+                  <>
+                    {formatPrice(price * 0.05, offers?.priceCurrency)}
+                    {" "}
+                  </>
+                )
+                : (
+                  <>
+                    R$ 0,00 {" "}
+                  </>
+                )}
             </span>
             de volta pagando com Ame
           </p>
@@ -190,7 +213,7 @@ function ProductInfo(
       <div class="flex flex-col gap-2">
         {device === "desktop" && (
           <>
-            {availability === "https://schema.org/InStock"
+            {hasProduct
               ? (
                 <>
                   {platform === "vtex" && (
@@ -209,7 +232,6 @@ function ProductInfo(
         )}
 
         {/** size chart */}
-
         {sizeChartLink && (
           <div class="">
             <a href={sizeChartLink.url} class="text-primary my-4">
@@ -222,19 +244,22 @@ function ProductInfo(
       </div>
 
       {/* Shipping Simulation */}
-      <div class="">
-        {platform === "vtex" && (
-          <ShippingSimulation
-            items={[
-              {
-                id: Number(product.sku),
-                quantity: 1,
-                seller: seller,
-              },
-            ]}
-          />
-        )}
-      </div>
+      {hasProduct && (
+        <div class="">
+          {platform === "vtex" && (
+            <ShippingSimulation
+              items={[
+                {
+                  id: Number(product.sku),
+                  quantity: 1,
+                  seller: seller,
+                },
+              ]}
+            />
+          )}
+        </div>
+      )}
+
       {/* Analytics Event */}
       <SendEventOnView
         id={id}

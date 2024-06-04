@@ -59,12 +59,13 @@ function ProductCard({
   const variants = Object.entries(Object.values(possibilities)[0] ?? {});
   const relativeUrl = relative(url);
   const aspectRatio = `${WIDTH} / ${HEIGHT}`;
+  const hasStock = offers?.offers[0].inventoryLevel.value ===  0;
 
   return (
     <div
       id={id}
       data-deco="view-product"
-      class="card card-compact group w-full lg:border-2 rounded-none border-transparent lg:hover:border-black p-3 lg:p-2"
+      class="card card-compact group w-full h-full lg:border-2 rounded-none border-transparent lg:hover:border-black p-3 lg:p-2"
     >
       {/* Add click event to dataLayer */}
       <SendEventOnClick
@@ -212,27 +213,38 @@ function ProductCard({
         <div class="h-5">
           <div class="yv-review-quickreview" value={inProductGroupWithID}></div>
         </div>
-        {/* Price from/to */}
-        <div class="flex flex-col justify-end gap-1 font-light text-primary-content h-11">
-          {listPrice !== price && (
-            <span class="line-through text-sm ">
-              {formatPrice(listPrice, offers?.priceCurrency)}
-            </span>
+
+        {!hasStock
+          ? (
+            <>
+              {/* Price from/to */}
+              <div class="flex flex-col justify-end gap-1 font-light text-primary-content h-11">
+                {listPrice !== price && (
+                  <span class="line-through text-sm ">
+                    {formatPrice(listPrice, offers?.priceCurrency)}
+                  </span>
+                )}
+
+                <span class="text-sm font-bold tracking-one">
+                  {formatPrice(price, offers?.priceCurrency)}
+                </span>
+              </div>
+
+              {/* Installments */}
+              {(installments && typeof installments !== "string") && (
+                <p class="flex gap-2 font-light text-xs truncate text-primary-content">
+                  ou {installments.billingDuration} x de R${" "}
+                  {installments.billingIncrement}{"  "}
+                  {installments.withTaxes ? "com juros" : "sem juros"}
+                </p>
+              )}
+            </>
+          )
+          : (
+            <>
+              <span>Produto Esgotado</span>
+            </>
           )}
-
-          <span class="text-sm font-bold tracking-one">
-            {formatPrice(price, offers?.priceCurrency)}
-          </span>
-        </div>
-
-        {/* Installments */}
-        {(installments && typeof installments !== "string") && (
-          <p class="flex gap-2 font-light text-xs truncate text-primary-content">
-            ou {installments.billingDuration} x de R${" "}
-            {installments.billingIncrement}{"  "}
-            {installments.withTaxes ? "com juros" : "sem juros"}
-          </p>
-        )}
       </div>
     </div>
   );
