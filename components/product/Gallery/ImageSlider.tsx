@@ -1,4 +1,3 @@
-import Icon from "../../ui/Icon.tsx";
 import Slider from "../../ui/Slider.tsx";
 import ImageZoom from "../../../islands/ImageZoom.tsx";
 import SliderJS from "../../../islands/SliderJS.tsx";
@@ -11,6 +10,7 @@ import ProductHighlights, {
 } from "../ProductHighlights.tsx";
 import { useOffer } from "../../../sdk/useOffer.ts";
 import { useId } from "../../../sdk/useId.ts";
+import Button from "../../ui/Button.tsx";
 
 export interface Props {
   /** @title Integration */
@@ -80,13 +80,13 @@ export default function GallerySlider(props: Props) {
         {/* Arrows slider Mobile */}
         {props.device !== "desktop" && (
           <div class="">
-            <div class=" block lg:hidden  z-20">
+            <div class=" block lg:hidden  ">
               <Slider.PrevButton class="absolute top-1/2 left-[10px] transform -translate-y-1/2 rounded-full h-[20px] w-[20px] flex items-center justify-center">
                 <div class="items-center justify-center ga-1 text-base text-primary font-medium after:bg-arrow-down after:bg-no-repeat after:bg-center after:bg-contain after:w-[22px] after:h-6 after:block after:mb-2px transform rotate-90">
                 </div>
               </Slider.PrevButton>
             </div>
-            <div class=" block lg:hidden z-20">
+            <div class=" block lg:hidden ">
               <Slider.NextButton class="absolute top-1/2 right-[10px] transform -translate-y-1/2 rounded-full h-[20px] w-[20px] flex items-center justify-center">
                 <div class="text-base  items-center justify-center gap-1 text-primary font-medium before:bg-arrow-up before:bg-no-repeat before:bg-center before:bg-contain before:w-[22px] before:h-6 before:block after:mb-2px transform rotate-90">
                 </div>
@@ -128,7 +128,7 @@ export default function GallerySlider(props: Props) {
               {/* Dots Desktop */}
               <ul
                 id="product-slider-dots"
-                class="carousel hidden lg:flex snap-both relative col-span-full gap-1 sm:flex-col order-3 sm:order-1 max-h-[450px] max-2xl:max-h-[450px] max-lg:max-w-[270px] max-lg:mx-auto max-lg:my-[10px]"
+                class="carousel hidden lg:flex snap-both relative col-span-full gap-1 sm:flex-col order-3 sm:order-1 max-h-[455px] max-2xl:max-h-[455px] max-lg:max-w-[270px] max-lg:mx-auto max-lg:my-[10px]"
               >
                 {images.map((img, index) => (
                   <li class="carousel-item sm:min-w-[110px]">
@@ -145,21 +145,23 @@ export default function GallerySlider(props: Props) {
                   </li>
                 ))}
               </ul>
-
-              <div
+             {/** Arrow dots */}
+              <Button
                 id="product-slider-dots-to-left"
-                class="absolute hidden cursor-pointer lg:flex max-lg:left-4 rounded-full lg:z-10 h-[15px] w-[22px] items-center justify-center max-lg:bottom-7 lg:-top-4 lg:left-11"
+                aria-label="dots-to-left"
+                class="absolute cursor-pointer flex max-lg:left-4 rounded-full lg:z-10 h-[15px] w-[22px] items-center justify-center max-lg:bottom-7 lg:-top-4 lg:left-11"
               >
-                <div class="text-base hidden md:flex items-center justify-center gap-1 text-primary font-medium before:bg-arrow-up before:bg-no-repeat before:bg-center before:bg-contain before:w-[22px] before:h-6 before:block after:mb-2px">
-                </div>
-              </div>
-              <div
+                <span class="text-base flex items-center justify-center gap-1 text-primary font-medium before:bg-arrow-up before:bg-no-repeat before:bg-center before:bg-contain before:w-[22px] before:h-6 before:block after:mb-2px">
+                </span>
+              </Button>
+              <Button
                 id="product-slider-dots-to-right"
-                class="absolute hidden lg:flex max-lg:right-4 rounded-full lg:z-10 h-[15px] w-[22px] items-center justify-center bottom-4 lg:bottom-4 lg:left-11"
+                aria-label="dots-to-right"
+                class="absolute max-lg:right-4 flex curso pointer rounded-full lg:z-10 h-[15px] w-[22px] items-center justify-center bottom-4 lg:bottom-4 lg:left-11"
               >
-                <div class="hidden md:flex items-center justify-center ga-1 text-base text-primary font-medium after:bg-arrow-down after:bg-no-repeat after:bg-center after:bg-contain after:w-[22px] after:h-6 after:block after:mb-2px">
-                </div>
-              </div>
+                <span class="flex items-center justify-center ga-1 text-base text-primary font-medium after:bg-arrow-down after:bg-no-repeat after:bg-center after:bg-contain after:w-[22px] after:h-6 after:block after:mb-2px">
+                </span>
+              </Button>
             </>
           )}
 
