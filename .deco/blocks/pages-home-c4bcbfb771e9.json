@@ -113,10 +113,10 @@
       },
       "list": [
         {
-          "href": "/https://www.fossil.com.br/relogio/masculino",
           "image": "https://timecenter.vteximg.com.br/arquivos/ids/220639/Banner_secundario_masci(610x400).png?v=638500849747300000",
           "label": "Masculinos",
-          "buttonText": "CONHEÇA"
+          "buttonText": "CONHEÇA",
+          "href": "/relogio/masculino"
         },
         {
           "image": "https://timecenter.vteximg.com.br/arquivos/ids/220640/Banner_secundario_femi(610x400).png?v=638500849990230000",
