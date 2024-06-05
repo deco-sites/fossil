@@ -40,7 +40,7 @@ export default function ImageZoom(
     image.style.backgroundPosition = `${xPercentage}% ${yPercentage}%`;
   };
   return (
-    <div class="w-full h-[497.85px] max-2xl:h-[497.85px] max-xl:h-[300px] max-lg:h-[416px] ">
+    <div class= {`w-full h-auto`} >
       <Image
         class="w-auto h-[497.85px] max-2xl:h-[497.85px] max-xl:h-[300px] max-lg:h-auto lg:object-contain cursor-pointer"
         sizes="(max-width: 497.85px) 100vw, 40vw"
@@ -51,6 +51,7 @@ export default function ImageZoom(
         height={height}
         // Preload LCP image for better web vitals
         preload={index === 0}
+        fetchPriority={index === 0 ? "high" : "auto"}
         loading={index === 0 ? "eager" : "lazy"}
         onMouseLeave={handleMouseLeave}
         onMouseMove={handleMouseMove}
