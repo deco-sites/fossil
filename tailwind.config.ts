@@ -70,6 +70,8 @@ export default {
       backgroundImage: {
         "arrow-left": "url('/image/fossil-left-arrow.webp')",
         "arrow-right": "url('/image/fossil-right-arrow.webp')",
+        "arrow-up": "url('/image/arrow-up.png')",
+        "arrow-down": "url('/image/arrow-down.png')",
       },
       backgroundSize: {
         "14": "14px",

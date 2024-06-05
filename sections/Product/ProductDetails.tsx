@@ -43,6 +43,16 @@ export default function ProductDetails(
 
   return (
     <div class="w-full  max-w-screen-2xl m-auto lg:px-20  lg:mt-24  flex flex-col gap-6 lg:pb-10">
+       <section class="w-full block px-4 lg:px-0 lg:mb-4">
+        <ul class="flex flex-col lg:block max-lg:font-scoutCond font-arial">
+          <li class="inline-block pb-1 mr-1  text-[#252525] font-arial font-semibold text-xs my-4 lg:my-0 leading-4">
+            <a href="/" arial-label="Link para home" class="">Fossil /</a>
+          </li>
+          <li class="inline-block leading-8 text-[#252525]  pb-2 text-28 lg:px-0 lg:pb-1 mr-1 font-medium lg:font-semibold lg:text-xs  lg:leading-4">
+            {isVariantOf?.name}
+          </li>
+        </ul>
+      </section>
       <div class="flex flex-col gap-6 lg:flex-row lg:justify-center">
         <ImageGallerySlider
           page={page}
