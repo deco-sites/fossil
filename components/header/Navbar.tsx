@@ -51,6 +51,8 @@ function Navbar(
                     width={logo.width || 190}
                     height={logo.height || 37}
                     class={`w-48`}
+                    loading="eager"
+                    fetchPriority="high"
                   />
                 </a>
               )}
@@ -100,6 +102,8 @@ function Navbar(
                   alt={logo.alt}
                   width={logo.width || 100}
                   height={logo.height || 13}
+                  loading="eager"
+                  fetchPriority="high"
                 />
               </a>
             )}

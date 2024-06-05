@@ -140,12 +140,13 @@ export default function GallerySlider(props: Props) {
                         height={110}
                         src={img.url!}
                         alt={img.alternateName}
+                        fetchPriority="high"
                       />
                     </Slider.Dot>
                   </li>
                 ))}
               </ul>
-             {/** Arrow dots */}
+              {/** Arrow dots */}
               <Button
                 id="product-slider-dots-to-left"
                 aria-label="dots-to-left"
