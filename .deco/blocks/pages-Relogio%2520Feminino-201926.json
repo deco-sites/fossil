@@ -31,7 +31,7 @@
               "format": "Show More"
             },
             "__resolveType": "site/sections/Product/SearchResultView.tsx",
-            "startingPage": 0
+            "startingPage": 1
           },
           "rule": {
             "__resolveType": "site/matchers/utm.ts"
@@ -57,12 +57,12 @@
                 {
                   "img": "https://timecenter.vteximg.com.br/arquivos/ids/217180/ES4649_Vitrine_275X406px.jpg?v=638282477458700000",
                   "alt": "Coleção Carlie",
-                  "url": "s?q=carlie&utmi_pc=search&utmi_cp=carlie"
+                  "url": "/s?q=carlie&utmi_pc=search&utmi_cp=carlie"
                 }
               ]
             },
             "__resolveType": "site/sections/Product/SearchResult.tsx",
-            "startingPage": 0
+            "startingPage": 1
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"

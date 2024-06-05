@@ -43,7 +43,7 @@
               "isCollection": true
             },
             "__resolveType": "site/sections/Product/SearchResult.tsx",
-            "startingPage": 0,
+            "startingPage": 1,
             "isCollection": true
           },
           "rule": {
