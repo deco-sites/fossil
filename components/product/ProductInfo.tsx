@@ -120,7 +120,7 @@ function ProductInfo(
       )}
 
       {/* Code and name */}
-      <div class="mt-4 sm:mt-8">
+      <div class="mt-4 sm:mt-0">
         <h1>
           <span class="hidden lg:block text-nowrap font-medium  font-scoutCond text-3xl leading-10 tracking-one text-primary uppercase m-0 ">
             {productName && productName}
