@@ -18,6 +18,7 @@ const goToPage = (page: number) => {
 export default function Pagination(
   { pageInfo, productsLength, startingPage }: Props,
 ) {
+
   const { recordPerPage, records = 0, nextPage, previousPage, currentPage } =
     pageInfo;
 
@@ -26,13 +27,12 @@ export default function Pagination(
   const offset = Math.abs(startingPage - 1);
   const perPage = recordPerPage || productsLength;
   const lastPage = Math.ceil(records / perPage);
-  const zeroIndexedOffsetPage = currentPage - startingPage;
 
   const calculatePageOptions = () => {
     const pageOptions = [];
     const maxVisibleOptions = 5;
 
-    let startPage = zeroIndexedOffsetPage + 1;
+    let startPage = currentPage;
     let endPage = startPage + maxVisibleOptions - 1;
 
     if (endPage > lastPage) {
@@ -58,7 +58,7 @@ export default function Pagination(
   };
 
   const handlePageSelection = (pageIndex: number) => {
-    goToPage(pageIndex - offset);
+    goToPage(pageIndex);
     setDropdownOpen(false);
   };
 
@@ -94,7 +94,7 @@ export default function Pagination(
               dropdownOpen ? "!border-b-0" : "!border-black"
             }`}
           >
-            {zeroIndexedOffsetPage}
+            {currentPage}
             <Icon id="ChevronDown" size={9} strokeWidth={2} class="ml-1" />
           </button>
           {dropdownOpen && (
@@ -103,7 +103,7 @@ export default function Pagination(
                 <button
                   key={option.pageIndex}
                   class="w-full text-black text-start hover:bg-black hover:text-white text-xs py-2"
-                  onClick={() => handlePageSelection(option.pageIndex + 1)}
+                  onClick={() => handlePageSelection(option.pageIndex)}
                 >
                   <span class="pl-1">{option.pageName}</span>
                 </button>
