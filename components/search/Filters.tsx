@@ -43,6 +43,8 @@ function ValueItem(
     >
       <div
         aria-checked={selected}
+        aria-label={label}
+        role="checkbox"
         class="checkbox !rounded-none !h-4 !w-4 !border-black"
       />
       <span class="text-sm">{label}</span>
@@ -129,6 +131,8 @@ function Filters({ filters, device }: Props & { device?: string }) {
               value={filter.label}
               class="collapse collapse-plus  rounded-none"
               key={filter.label}
+              role="group"
+              aria-labelledby={`filter-${filter.label}`}
             >
               <input
                 type="checkbox"
