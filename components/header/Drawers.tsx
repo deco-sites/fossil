@@ -31,7 +31,7 @@ const Aside = (
   },
 ) => (
   <div
-    class={`${className} grid grid-rows-[auto_1fr]  divide-y !transition-none`}
+    class={`${className} !transition-none`}
   >
     {type === "menu" && (
       <>
@@ -85,6 +85,7 @@ function Drawers(
 
   return (
     <>
+     {/** Mobile / Tablet */}
       {device !== "desktop"
         ? (
           <>
@@ -128,8 +129,7 @@ function Drawers(
                 <Aside
                   title="Minha sacola"
                   onClose={() => displayCart.value = false}
-                  className={`w-[97%] absolute top-24 bg-white ${
-                    displayCart.value !== false ? "" : ""
+                  className={`w-[97%] absolute top-24 bg-white
                   } `}
                   type="minicart"
                 >
