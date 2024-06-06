@@ -4,6 +4,9 @@ import { useId } from "../../sdk/useId.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import CartButtonVTEX from "../../islands/Header/Cart/vtex.tsx";
 import MiniCart from "../../islands/MiniCart.tsx";
+import Button from "../ui/Button.tsx";
+import { usePartialSection } from "deco/hooks/usePartialSection.ts";
+import Icon from "../ui/Icon.tsx";
 
 export interface Props {
   alerts?: string[];
@@ -11,15 +14,22 @@ export interface Props {
   interval?: number;
 
   device?: string;
+
+  isShow?: boolean;
 }
 
-function Alert({ alerts = [], interval = 2, device }: Props) {
+function Alert(
+  { alerts = [], interval = 2, device, isShow }: Props,
+) {
   const id = useId();
 
   const platform = usePlatform();
 
+  console.log(device);
+
   return (
     <>
+      {/** Desktop */}
       {device === "desktop"
         ? (
           <div class="w-full h-10 text-sm font-light lg:px-8 flex bg-primary items-center">
@@ -67,25 +77,44 @@ function Alert({ alerts = [], interval = 2, device }: Props) {
           </div>
         )
         : (
-          <div id={id} class="">
-            <Slider class="carousel carousel-center gap-6 w-screen bg-primary">
-              {alerts.map((alert, index) => (
-                <Slider.Item
-                  index={index}
-                  class="carousel-item items-center justify-center"
+          /** Mobile */
+          <>
+            {isShow && (
+              <div id={id} class="">
+                <Slider class="carousel carousel-center gap-6 w-screen bg-primary">
+                  {alerts.map((alert, index) => (
+                    <Slider.Item
+                      index={index}
+                      class="carousel-item items-center justify-center"
+                    >
+                      <span class="text-[0.7rem] uppercase w-screen text-white flex items-center justify-center h-[38px]">
+                        {alert}
+                      </span>
+                    </Slider.Item>
+                  ))}
+                </Slider>
+                <SliderJS
+                  rootId={id}
+                  interval={interval && interval * 1e3}
+                  infinite
+                />
+                <Button
+                  {...usePartialSection<typeof Alert>({
+                    props: { isShow: false },
+                  })}
+                  aria-label={"close alert"}
+                  class="h-full w-8 text-left absolute transform -translate-y-1/2 top-1/2 right-0 text-white rounded-none bg-primary"
                 >
-                  <span class="text-[0.7rem] uppercase w-screen text-white flex items-center justify-center h-[38px]">
-                    {alert}
-                  </span>
-                </Slider.Item>
-              ))}
-            </Slider>
-            <SliderJS
-              rootId={id}
-              interval={interval && interval * 1e3}
-              infinite
-            />
-          </div>
+                  <Icon
+                    id="XAlert"
+                    size={16}
+                    aria-label={"close"}
+                    class="z-0 first-letter:pointer-events-none"
+                  />
+                </Button>
+              </div>
+            )}
+          </>
         )}
     </>
   );

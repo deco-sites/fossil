@@ -24,8 +24,10 @@ export interface Buttons {
 
 export interface Props {
   alerts?: string[];
+ /** @description to show Alert */
+  isShow?:boolean
 
-  /** @description intervalo do slider */
+  /**@description intervalo do slider */
   interval?: number;
 
   /** @title Search Bar */
@@ -49,6 +51,7 @@ function Header({
   alerts,
   interval,
   searchbar,
+  isShow,
   navItems = [
     {
       "@type": "SiteNavigationElement",
@@ -87,10 +90,10 @@ function Header({
 
   return (
     <>
-      <header style={{ height: headerHeight }} class="">
+      <header style={{ height: isShow ? headerHeight : 64 }} class="">
         <div class="fixed z-[100] w-full">
           {alerts && alerts.length > 0 && (
-            <Alert alerts={alerts} interval={interval} device={device} />
+            <Alert alerts={alerts} interval={interval} device={device}  isShow={isShow} />
           )}
           <Drawers
             menu={{ items }}
