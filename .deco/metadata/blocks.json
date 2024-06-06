@@ -628,5 +628,9 @@
     "path": "/relogio/feminino/especiais",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Preview%20site%2Fsections%2FProduct%2FSearchResult.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Product/SearchResult.tsx"
   }
 }
