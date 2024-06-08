@@ -113,16 +113,12 @@
         {
           "href": "/central",
           "label": "FAQ´s",
-          "icon": {
-            "label": "Email"
-          }
+          "icon": {}
         },
         {
           "label": "Política de Devolução",
           "href": "/central",
-          "icon": {
-            "label": "Email"
-          }
+          "icon": {}
         }
       ],
       "children": [
