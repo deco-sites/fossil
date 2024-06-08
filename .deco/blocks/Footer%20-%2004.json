@@ -33,7 +33,7 @@
         "link": "https://www.pinterest.com/fossil/"
       },
       {
-        "label": "Youtube",
+        "label": "YouTube",
         "link": "https://www.youtube.com/channel/UC4kmXwr4Wcm2M3CrmgnkIfA"
       }
     ],
@@ -62,17 +62,23 @@
         {
           "href": "https://www.fossilgroup.com/?&utmi_p=_&utmi_pc=Html&utmi_cp=menu",
           "label": "Grupo Fossil",
-          "icon": {}
+          "icon": {
+            "label": "Email"
+          }
         },
         {
           "label": "Reluatory Compliance",
           "href": "https://www.fossilgroup.com/responsibility/regulatory-compliance/?&utmi_p=_&utmi_pc=Html&utmi_cp=menu",
-          "icon": {}
+          "icon": {
+            "label": "Email"
+          }
         },
         {
           "label": "Blog",
           "href": "https://www.fossil.com.br/",
-          "icon": {}
+          "icon": {
+            "label": "Email"
+          }
         }
       ],
       "children": [
@@ -102,23 +108,31 @@
       "items": [
         {
           "label": "Meus pedidos",
-          "icon": {},
+          "icon": {
+            "label": "Email"
+          },
           "href": "/login?ReturnUrl=%2f_secure%2faccount#/orders"
         },
         {
           "href": "/nossas-lojas",
           "label": "Onde encontrar",
-          "icon": {}
+          "icon": {
+            "label": "Email"
+          }
         },
         {
           "href": "/central",
           "label": "FAQ´s",
-          "icon": {}
+          "icon": {
+            "label": "Email"
+          }
         },
         {
           "label": "Política de Devolução",
           "href": "/central",
-          "icon": {}
+          "icon": {
+            "label": "Email"
+          }
         }
       ],
       "children": [
@@ -189,6 +203,11 @@
         "href": "/central"
       },
       {
+        "icon": {},
+        "label": "Politica de Privacidade do App",
+        "href": "https://www.fossilgroup.com/compliance/regulatory-compliance/?utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
+      },
+      {
         "icon": {
           "label": "Email"
         },
@@ -203,11 +222,9 @@
         "href": "/us/en/customer-care/terms-of-use.html?&utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
       },
       {
-        "icon": {
-          "label": "Email"
-        },
+        "icon": {},
         "label": "Lojas",
-        "href": "/#?&utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
+        "href": "/nossas-lojas"
       }
     ],
     "copyright": "2019 - FOSSIL GROUP, INC."
