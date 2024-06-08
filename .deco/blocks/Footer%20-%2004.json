@@ -62,23 +62,17 @@
         {
           "href": "https://www.fossilgroup.com/?&utmi_p=_&utmi_pc=Html&utmi_cp=menu",
           "label": "Grupo Fossil",
-          "icon": {
-            "label": "Email"
-          }
+          "icon": {}
         },
         {
           "label": "Reluatory Compliance",
           "href": "https://www.fossilgroup.com/responsibility/regulatory-compliance/?&utmi_p=_&utmi_pc=Html&utmi_cp=menu",
-          "icon": {
-            "label": "Email"
-          }
+          "icon": {}
         },
         {
           "label": "Blog",
           "href": "https://www.fossil.com.br/",
-          "icon": {
-            "label": "Email"
-          }
+          "icon": {}
         }
       ],
       "children": [
@@ -108,17 +102,13 @@
       "items": [
         {
           "label": "Meus pedidos",
-          "icon": {
-            "label": "Email"
-          },
+          "icon": {},
           "href": "/login?ReturnUrl=%2f_secure%2faccount#/orders"
         },
         {
           "href": "/nossas-lojas",
           "label": "Onde encontrar",
-          "icon": {
-            "label": "Email"
-          }
+          "icon": {}
         },
         {
           "href": "/central",
@@ -203,7 +193,9 @@
         "href": "/central"
       },
       {
-        "icon": {},
+        "icon": {
+          "label": "Email"
+        },
         "label": "Politica de Privacidade do App",
         "href": "https://www.fossilgroup.com/compliance/regulatory-compliance/?utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
       },
@@ -222,7 +214,9 @@
         "href": "/us/en/customer-care/terms-of-use.html?&utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
       },
       {
-        "icon": {},
+        "icon": {
+          "label": "Email"
+        },
         "label": "Lojas",
         "href": "/nossas-lojas"
       }
