@@ -45,7 +45,7 @@ function Sort({ sortOptions }: Props) {
     <>
       <label
         for="sort"
-        class=" uppercase hidden lg:block text-[#636363] text-xl font-scout"
+        class=" uppercase hidden lg:block text-[#636363] lg:text-18 font-scout"
       >
         Ordenar por :
       </label>

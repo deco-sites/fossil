@@ -84,7 +84,7 @@ function CategoryGrid(props: Props) {
   return (
     <div
       id={id}
-      class="max-w-screen-2xl w-full mt-16 m-auto"
+      class="  w-full mt-16 m-auto"
     >
       <Header
         title={header.title}

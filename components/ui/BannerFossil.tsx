@@ -49,7 +49,7 @@ const BannerFossil = (
   const { height: mobileHeight, width: mobileWidth } = mobileImageDimensions;
 
   return (
-    <div className="w-full max-w-screen-2xl m-auto flex justify-center px-4 lg:px-20 pt-12">
+    <div className="w-full   m-auto flex justify-center px-4 lg:px-20 pt-12">
       {device === "desktop"
         ? (
           <a href={url} alt="link" class="w-full">

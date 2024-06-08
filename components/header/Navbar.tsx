@@ -31,7 +31,7 @@ function Navbar(
       {device === "desktop"
         ? (
           // Header desktop
-          <div class="hidden sm:flex items-center justify-between border-base-200 w-full max-w-screen-2xl m-auto px-6 relative font-soleil">
+          <div class="hidden sm:flex items-center justify-between border-base-200 w-full   m-auto px-6 relative font-soleil">
             <div
               class={`flex ${
                 logoPosition === "left"
@@ -57,17 +57,16 @@ function Navbar(
                 </a>
               )}
             </div>
-            <div class="flex-none grid n1-custom-grid-navbar items-center justif-center gap-6  w-full max-w-[1104px] font-medium">
-              <div class="flex">
-                <ul
-                  class={`flex items-center gap-9 col-span-1  lg:pl-28 2xl:pl-0 ${
-                    logoPosition === "left" ? "justify-center" : "justify-start"
-                  }`}
-                >
-                  {items.map((item) => <NavItem item={item} />)}
-                </ul>
-              </div>
-
+            <div class="flex">
+              <ul
+                class={`flex items-center gap-9 col-span-1  lg:pl-28 2xl:pl-0 ${
+                  logoPosition === "left" ? "justify-center" : "justify-start"
+                }`}
+              >
+                {items.map((item) => <NavItem item={item} />)}
+              </ul>
+            </div>
+            <div class="flex-none grid n1-custom-grid-navbar items-center justif-end w-auto font-medium">
               <Searchbar searchbar={searchbar} device={"desktop"} />
 
               {!buttons?.hideWishlistButton && (

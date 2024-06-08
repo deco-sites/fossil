@@ -42,7 +42,7 @@ export default function ProductDetails(
   const additionalProperty = page.product.isVariantOf?.additionalProperty ?? [];
 
   return (
-    <div class="w-full  max-w-screen-2xl m-auto lg:px-20  lg:mt-24  flex flex-col gap-6 lg:pb-10">
+    <div class="w-full    m-auto lg:px-20  lg:mt-24  flex flex-col gap-6 lg:pb-10">
        <section class="w-full block px-4 lg:px-0 lg:mb-4">
         <ul class="flex flex-col lg:block max-lg:font-scoutCond font-arial">
           <li class="inline-block pb-1 mr-1  text-[#252525] font-arial font-semibold text-xs my-4 lg:my-0 leading-4">

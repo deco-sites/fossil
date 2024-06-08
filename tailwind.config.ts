@@ -80,6 +80,7 @@ export default {
         "2px": "2px",
       },
       screens: {
+        "3xl": "2000px",
         "xs": "340px",
         "2xs": "375px",
         "3xs": "360px",
