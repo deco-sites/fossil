@@ -33,7 +33,7 @@ function Alert(
       {device === "desktop"
         ? (
           <div class="w-full h-10 text-sm font-light lg:px-8 flex bg-primary items-center">
-            <div class=" container hidden lg:flex items-center justify-between w-full gap-8 font-soleil  font-light">
+            <div class="hidden lg:flex items-center justify-between w-full gap-8 font-soleil  font-light">
               <a href="/central" class="text-white text-sm font-light">
                 Suporte
               </a>

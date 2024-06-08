@@ -39,7 +39,7 @@ function ValueItem(
     <a
       href={url}
       rel="nofollow"
-      class="flex items-center pt-2 gap-1 text-gray-600 text-sm font-arial"
+      class="flex items-center pt-1 gap-1 text-gray-600 text-sm font-arial"
     >
       <div
         aria-checked={selected}
@@ -67,7 +67,7 @@ function FilterValues({ key, values }: FilterToggle) {
             {selectedValues.map((item) => (
               <div
                 key={item.value}
-                class=" border-b-[3px]  border-solid border-primary w-full flex justify-between"
+                class=" border-b-[3px] border-solid border-primary w-full flex justify-between"
               >
                 <span class="font-semibold lg:pl-6 text-[#5A5A5A] text-sm font-arial">
                   {item.label}
@@ -128,8 +128,7 @@ function Filters({ filters, device }: Props & { device?: string }) {
           {filteredAndSortedFilters.map((filter) => (
             <fieldset
               tabIndex={0}
-              value={filter.label}
-              class="collapse collapse-plus  rounded-none"
+              class="collapse collapse-plus rounded-none"
               key={filter.label}
               role="group"
               aria-labelledby={`filter-${filter.label}`}
@@ -138,12 +137,18 @@ function Filters({ filters, device }: Props & { device?: string }) {
                 type="checkbox"
                 class="peer min-h-0 flex items-end"
                 name="accordion"
+                id={`filter-${filter.label}`}
                 defaultChecked={isDesktop}
+                aria-labelledby={`label-${filter.label}`}
               />
-              <h5 class="collapse-title !min-h-0 flex p-0 items-end tracking-one uppercase text-primary py-2 text-base font-arial leading-[110%] cursor-pointer border-b border-solid border-gray-300">
+              <label
+                id={`label-${filter.label}`}
+                for={`filter-${filter.label}`}
+                class="collapse-title !min-h-0 flex p-0 items-end tracking-one uppercase text-primary py-2 text-base font-arial leading-[110%] cursor-pointer border-b border-solid border-gray-300"
+              >
                 {filter.label}
-              </h5>
-              <div class="collapse-content py-4 !px-0 flex flex-col gap-2">
+              </label>
+              <div class="collapse-content py-4 !px-0 flex flex-col">
                 <FilterValues {...filter} />
               </div>
             </fieldset>

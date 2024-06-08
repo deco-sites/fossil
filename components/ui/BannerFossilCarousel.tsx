@@ -61,7 +61,7 @@ export default function BannerFossilCoousel({
   };
 
   return (
-    <div class="w-full relative max-w-screen-2xl  m-auto py-8 flex flex-col gap-6 lg:pb-10 pt-20 px-4 lg:px-10">
+    <div class="w-full relative    m-auto py-8 flex flex-col gap-6 lg:pb-10 pt-20 px-4 lg:px-10">
       <div class="w-full">
         <div
           class={`flex flex-col gap-2 ${

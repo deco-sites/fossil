@@ -232,7 +232,7 @@ function Footer({
       {device === "desktop"
         ? (
           <>
-            <div class="max-w-screen-2xl w-full hidden md:block px-16 lg:mx-auto">
+            <div class="  w-full hidden md:block px-16 lg:mx-auto">
               <Divider />
               <div class="flex flex-col gap-10 pt-4">
                 <div class="flex flex-col lg:flex-row gap-14">

@@ -93,7 +93,7 @@ function Result({
 
   return (
     <>
-      <div class="w-full max-w-7xl m-auto px-1 sm:py-5">
+      <div class="w-full max-w-7xl m-auto px-1 sm:pb-5">
         {device === "desktop" && (
           <>
             <Breadcrumb itemListElement={breadcrumb?.itemListElement} />
@@ -158,7 +158,7 @@ function Result({
                   <div class="hidden lg:block text-primary text-base  tracking-[.0625rem] uppercase font-scout">
                     {productsFound}
                   </div>
-                  <div class="flex flex-row items-center justify-between border-b border-base-200 sm:gap-1 sm:border-none">
+                  <div class="flex flex-row items-center justify-between border-b border-base-200 sm:border-none">
                     {sortOptions.length > 0 && (
                       <Sort sortOptions={sortOptions} />
                     )}

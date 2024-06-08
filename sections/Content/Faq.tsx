@@ -46,11 +46,11 @@ const DEFAULT_PROPS = {
 function Question({ question, answer }: Question) {
   return (
     <details class="collapse collapse-plus join-item border-b border-[#eee]">
-      <summary class="collapse-title !min-h-0 text-2xl font-scoutCond tracking-one font-medium text-[#1e1d2e]  !pt-0 !pb-1 !mb-2 ">
+      <summary class="collapse-title !min-h-0 text-2xl font-scoutCond tracking-one font-medium text-[#1e1d2e]  !pl-0 !pt-2 !pb-0 !mb-0 ">
         {question}
       </summary>
       <div
-        class="collapse-content"
+        class="collapse-content section_content"
         dangerouslySetInnerHTML={{ __html: answer }}
       />
     </details>
@@ -100,7 +100,7 @@ export default function FAQ(props: Props) {
         />
       </Head>
 
-      <div class="w-full  max-w-7xl m-auto px-4 py-8 flex flex-col lg:flex-row gap-4 lg:my-28 lg:gap-8 lg:py-10  lg:px-10">
+      <div class="w-full  max-w-7xl m-auto px-4 pt-8 pb-[100px] flex flex-col lg:flex-row gap-4 lg:my-28 lg:gap-8 lg:py-10  lg:px-10">
         <div class="flex flex-col gap-8 lg:gap-10 w-full">
           <div
             class={`flex flex-col gap-2 ${

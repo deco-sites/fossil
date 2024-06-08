@@ -62,7 +62,7 @@ function ProductShelf({
   };
 
   return (
-    <div class="w-full max-w-screen-2xl  m-auto mt-8 flex flex-col gap-6 lg:my-8 px-3 font-soleil lg:px-4">
+    <div class="w-full    m-auto mt-8 flex flex-col gap-6 lg:my-8 px-3 font-soleil lg:px-4">
       <div class="w-full">
         <div
           class={`flex flex-col gap-2 ${
@@ -169,8 +169,8 @@ function ProductShelf({
 
             <div class="flex items-center w-1/2  justify-center z-10 col-start-3 row-start-2">
               <Slider.Next class="w-full pl-1 flex justify-around  items-center">
-                <div class="flex items-center justify-center ga-1 text-base text-primary font-medium after:bg-arrow-right after:bg-no-repeat after:bg-center after:bg-14 after:w-4 after:h-4 after:block after:mb-2px">
-                  <span class="hidden lg:block">Próximo</span>
+                <div class="flex items-center justify-center ga-1 text-base gap-1 text-primary font-medium after:bg-arrow-right after:mt-1 after:bg-no-repeat after:bg-center after:bg-14 after:w-4 after:h-4 after:block after:mb-2px">
+                  <span class="hidden lg:block mt-[1px]">Próximo</span>
                 </div>
               </Slider.Next>
             </div>

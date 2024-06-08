@@ -226,6 +226,16 @@
   pointer-events: none;
 }
 
+.conteudo_section {
+  border-radius: 0;
+}
+
+.section_content{
+  border-radius: 0;
+  margin-bottom: 25px;
+  padding: 16px 20px;
+}
+
 
 @media screen and (max-width: 680px) {
 div#launcher{

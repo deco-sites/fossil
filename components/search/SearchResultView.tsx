@@ -147,7 +147,7 @@ function Result({
                   <div class="hidden lg:block text-primary text-base  tracking-[.0625rem] uppercase font-scout">
                     {productsFound}
                   </div>
-                  <div class="flex flex-row items-center justify-between border-b border-base-200 sm:gap-1 sm:border-none">
+                  <div class="flex flex-row items-center justify-between border-b border-base-200 sm:border-none">
                     {sortOptions.length > 0 && (
                       <Sort sortOptions={sortOptions} />
                     )}

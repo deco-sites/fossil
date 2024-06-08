@@ -34,9 +34,9 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
             style={{ top: "0px", left: "0px", marginTop: headerHeight }}
           >
             <div class=" w-full   max-w-6xl flex items-start  justify-between ">
-              <ul class="flex items-start justify-center gap-6  pr-4">
+              <ul class="flex items-start justify-center pr-4">
                 {children.map((node, index) => (
-                  <li class="p-6 flex flex-col">
+                  <li class="p-6 lg:p-5 flex flex-col">
                     <a
                       class="n1-custom-style-navbar ![text-shadow:_0_0_0px_#fff]"
                       href={node.url}
@@ -44,7 +44,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
                       <span>{node.name}</span>
                     </a>
 
-                    <ul class="block mt-4 ">
+                    <ul class="block mt-4 lg:mt-0">
                       {node.children?.map((leaf) => (
                         <li>
                           <a
