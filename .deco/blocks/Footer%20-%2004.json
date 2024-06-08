@@ -192,6 +192,13 @@
         "icon": {
           "label": "Email"
         },
+        "label": "Politica de Privacidade do App",
+        "href": "https://www.fossilgroup.com/compliance/regulatory-compliance/?utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
+      },
+      {
+        "icon": {
+          "label": "Email"
+        },
         "label": "Termos de Uso",
         "href": "https://www.fossil.com.br/us/en/customer-care/terms-of-use.html?&utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
       },
@@ -207,7 +214,7 @@
           "label": "Email"
         },
         "label": "Lojas",
-        "href": "/#?&utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
+        "href": "/nossas-lojas"
       }
     ],
     "copyright": "2019 - FOSSIL GROUP, INC."

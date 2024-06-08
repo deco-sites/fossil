@@ -25,7 +25,73 @@
       "name": "Pages",
       "pinned": true,
       "icon": "files",
-      "layout": [],
+      "layout": {
+        "settings": {
+          "hasHeaders": true,
+          "constrainDragToContainer": true,
+          "reorderEnabled": true,
+          "selectionEnabled": false,
+          "popoutWholeStack": false,
+          "blockedPopoutsThrowError": true,
+          "closePopoutsOnUnload": true,
+          "showPopoutIcon": false,
+          "showMaximiseIcon": false,
+          "showCloseIcon": false,
+          "responsiveMode": "onload"
+        },
+        "dimensions": {
+          "borderWidth": 8,
+          "minItemHeight": 10,
+          "minItemWidth": 10,
+          "headerHeight": 40,
+          "dragProxyWidth": 300,
+          "dragProxyHeight": 200
+        },
+        "labels": {
+          "close": "close",
+          "maximise": "maximise",
+          "minimise": "minimise",
+          "popout": "open in new window",
+          "popin": "pop in",
+          "tabDropdown": "additional tabs"
+        },
+        "content": [
+          {
+            "type": "row",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "content": [
+              {
+                "type": "stack",
+                "width": 100,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "pages::List::list::List::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-pages::List::list::List::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "pages::List::list::List::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "openPopouts": [],
+        "maximisedItemId": null
+      },
       "tabs": {
         "pages::List::list::List::%7B%7D": {
           "name": "List",
@@ -45,7 +111,73 @@
       "name": "Sections",
       "pinned": true,
       "icon": "block",
-      "layout": [],
+      "layout": {
+        "settings": {
+          "hasHeaders": true,
+          "constrainDragToContainer": true,
+          "reorderEnabled": true,
+          "selectionEnabled": false,
+          "popoutWholeStack": false,
+          "blockedPopoutsThrowError": true,
+          "closePopoutsOnUnload": true,
+          "showPopoutIcon": false,
+          "showMaximiseIcon": false,
+          "showCloseIcon": false,
+          "responsiveMode": "onload"
+        },
+        "dimensions": {
+          "borderWidth": 8,
+          "minItemHeight": 10,
+          "minItemWidth": 10,
+          "headerHeight": 40,
+          "dragProxyWidth": 300,
+          "dragProxyHeight": 200
+        },
+        "labels": {
+          "close": "close",
+          "maximise": "maximise",
+          "minimise": "minimise",
+          "popout": "open in new window",
+          "popin": "pop in",
+          "tabDropdown": "additional tabs"
+        },
+        "content": [
+          {
+            "type": "row",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "content": [
+              {
+                "type": "stack",
+                "width": 100,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "sections::List::list::List::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-sections::List::list::List::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "sections::List::list::List::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "openPopouts": [],
+        "maximisedItemId": null
+      },
       "tabs": {
         "sections::List::list::List::%7B%7D": {
           "name": "List",
@@ -2584,23 +2716,31 @@
         },
         "content": [
           {
-            "type": "stack",
-            "width": 100,
+            "type": "row",
             "isClosable": true,
             "reorderEnabled": true,
             "title": "",
-            "activeItemIndex": 0,
             "content": [
               {
-                "id": "Publish::Environment::rocket::Environment::%7B%7D",
-                "title": "<div class=\"contents text-base-700\" id=\"header-Publish::Environment::rocket::Environment::%7B%7D\" />",
-                "type": "component",
-                "componentName": "component",
-                "componentState": {
-                  "id": "Publish::Environment::rocket::Environment::%7B%7D"
-                },
+                "type": "stack",
+                "width": 100,
                 "isClosable": true,
-                "reorderEnabled": true
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "Publish::Environment::rocket::Environment::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-Publish::Environment::rocket::Environment::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "Publish::Environment::rocket::Environment::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
               }
             ]
           }
@@ -2786,7 +2926,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 17.31532962668785,
+                "width": 41.66666666666667,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -2800,6 +2940,7 @@
                     "componentState": {
                       "id": "%2F.deco%2Fblocks%2Fpages-home-c4bcbfb771e9.json::Properties::list::Properties::%7B%7D"
                     },
+                    "width": 30,
                     "isClosable": true,
                     "reorderEnabled": true
                   }
@@ -2807,7 +2948,7 @@
               },
               {
                 "type": "stack",
-                "width": 82.68467037331216,
+                "width": 58.333333333333336,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -2821,6 +2962,7 @@
                     "componentState": {
                       "id": "%2F.deco%2Fblocks%2Fpages-home-c4bcbfb771e9.json::Preview::world::Preview::%7B%7D"
                     },
+                    "width": 70,
                     "isClosable": true,
                     "reorderEnabled": true
                   }
@@ -2842,10 +2984,10 @@
           "accepts": "function",
           "render": "function",
           "viewId": "Properties",
+          "width": 30,
           "id": "%2F.deco%2Fblocks%2Fpages-home-c4bcbfb771e9.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null,
-            "value": null
+            "__signal": null
           }
         },
         "%2F.deco%2Fblocks%2Fpages-home-c4bcbfb771e9.json::Preview::world::Preview::%7B%7D": {
@@ -2854,6 +2996,7 @@
           "accepts": "function",
           "render": "function",
           "viewId": "Preview",
+          "width": 70,
           "id": "%2F.deco%2Fblocks%2Fpages-home-c4bcbfb771e9.json::Preview::world::Preview::%7B%7D",
           "state": {
             "__signal": null
@@ -2905,7 +3048,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 50,
+                "width": 41.66666666666667,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -2919,6 +3062,7 @@
                     "componentState": {
                       "id": "%2F.deco%2Fblocks%2FFooter%2520-%252004.json::Properties::list::Properties::%7B%7D"
                     },
+                    "width": 30,
                     "isClosable": true,
                     "reorderEnabled": true
                   }
@@ -2926,7 +3070,7 @@
               },
               {
                 "type": "stack",
-                "width": 50,
+                "width": 58.333333333333336,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -2940,6 +3084,7 @@
                     "componentState": {
                       "id": "%2F.deco%2Fblocks%2FFooter%2520-%252004.json::Preview::world::Preview::%7B%7D"
                     },
+                    "width": 70,
                     "isClosable": true,
                     "reorderEnabled": true
                   }
@@ -2961,6 +3106,7 @@
           "accepts": "function",
           "render": "function",
           "viewId": "Properties",
+          "width": 30,
           "id": "%2F.deco%2Fblocks%2FFooter%2520-%252004.json::Properties::list::Properties::%7B%7D",
           "state": {
             "__signal": null
@@ -2972,6 +3118,7 @@
           "accepts": "function",
           "render": "function",
           "viewId": "Preview",
+          "width": 70,
           "id": "%2F.deco%2Fblocks%2FFooter%2520-%252004.json::Preview::world::Preview::%7B%7D",
           "state": {
             "__signal": null
@@ -4037,6 +4184,112 @@
           "id": "%2F.deco%2Fblocks%2Fnavbar.json::Preview::world::Preview::%7B%7D",
           "state": {
             "__signal": null
+          }
+        }
+      }
+    },
+    {
+      "id": "/.deco/blocks/pages-off-398581.json",
+      "name": "pages-off-398581.json",
+      "pinned": false,
+      "icon": "braces",
+      "layout": {
+        "settings": {
+          "hasHeaders": true,
+          "constrainDragToContainer": true,
+          "reorderEnabled": true,
+          "selectionEnabled": false,
+          "popoutWholeStack": false,
+          "blockedPopoutsThrowError": true,
+          "closePopoutsOnUnload": true,
+          "showPopoutIcon": false,
+          "showMaximiseIcon": false,
+          "showCloseIcon": false,
+          "responsiveMode": "onload"
+        },
+        "dimensions": {
+          "borderWidth": 8,
+          "minItemHeight": 10,
+          "minItemWidth": 10,
+          "headerHeight": 40,
+          "dragProxyWidth": 300,
+          "dragProxyHeight": 200
+        },
+        "labels": {
+          "close": "close",
+          "maximise": "maximise",
+          "minimise": "minimise",
+          "popout": "open in new window",
+          "popin": "pop in",
+          "tabDropdown": "additional tabs"
+        },
+        "content": [
+          {
+            "type": "stack",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "content": [
+              {
+                "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-off-398581.json::Code::code::Code::%7B%22spaceId%22%3A%22%2F.deco%2Fblocks%2Fpages-off-910873.json%22%7D\" />",
+                "type": "component",
+                "isClosable": true,
+                "reorderEnabled": true,
+                "id": "%2F.deco%2Fblocks%2Fpages-off-398581.json::Code::code::Code::%7B%22spaceId%22%3A%22%2F.deco%2Fblocks%2Fpages-off-910873.json%22%7D",
+                "componentName": "component",
+                "componentState": {
+                  "id": "%2F.deco%2Fblocks%2Fpages-off-398581.json::Code::code::Code::%7B%22spaceId%22%3A%22%2F.deco%2Fblocks%2Fpages-off-910873.json%22%7D"
+                }
+              },
+              {
+                "type": "component",
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-off-398581.json::Code::code::Code::%7B%22spaceId%22%3A%22%2F.deco%2Fdecofile.json%22%7D\" />",
+                "id": "%2F.deco%2Fblocks%2Fpages-off-398581.json::Code::code::Code::%7B%22spaceId%22%3A%22%2F.deco%2Fdecofile.json%22%7D",
+                "componentName": "component",
+                "componentState": {
+                  "id": "%2F.deco%2Fblocks%2Fpages-off-398581.json::Code::code::Code::%7B%22spaceId%22%3A%22%2F.deco%2Fdecofile.json%22%7D"
+                }
+              }
+            ],
+            "width": 100,
+            "activeItemIndex": 1
+          }
+        ],
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "openPopouts": [],
+        "maximisedItemId": null
+      },
+      "tabs": {
+        "%2F.deco%2Fblocks%2Fpages-off-398581.json::Code::code::Code::%7B%22spaceId%22%3A%22%2F.deco%2Fblocks%2Fpages-off-910873.json%22%7D": {
+          "name": "Code",
+          "icon": "code",
+          "accepts": "function",
+          "render": "function",
+          "viewId": "Code",
+          "viewProps": {
+            "spaceId": "/.deco/blocks/pages-off-910873.json"
+          },
+          "id": "%2F.deco%2Fblocks%2Fpages-off-398581.json::Code::code::Code::%7B%22spaceId%22%3A%22%2F.deco%2Fblocks%2Fpages-off-910873.json%22%7D",
+          "state": {
+            "__signal": "error"
+          }
+        },
+        "%2F.deco%2Fblocks%2Fpages-off-398581.json::Code::code::Code::%7B%22spaceId%22%3A%22%2F.deco%2Fdecofile.json%22%7D": {
+          "name": "Code",
+          "icon": "code",
+          "accepts": "function",
+          "render": "function",
+          "viewId": "Code",
+          "viewProps": {
+            "spaceId": "/.deco/decofile.json"
+          },
+          "id": "%2F.deco%2Fblocks%2Fpages-off-398581.json::Code::code::Code::%7B%22spaceId%22%3A%22%2F.deco%2Fdecofile.json%22%7D",
+          "state": {
+            "__signal": "error"
           }
         }
       }
