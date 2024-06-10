@@ -29,8 +29,8 @@
           "action": {
             "href": "/feminino"
           },
-          "mobile": "https://timecenter.vteximg.com.br/arquivos/ids/220992/sport_mobile.png?v=638530457933800000",
-          "desktop": "https://timecenter.vteximg.com.br/arquivos/ids/220990/sport_desktop.png?v=638530406248300000",
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/b05333c3-8659-4135-9e06-6a63e1b9bdcb",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/52e851c1-7c15-440f-8fa8-2b4ee033edd5",
           "alt": "Presente pra ele"
         },
         {
@@ -38,13 +38,13 @@
             "href": "/",
             "title": " "
           },
-          "mobile": "https://timecenter.vteximg.com.br/arquivos/ids/220943/Banner_slide_mob_elaharwell(320x380).png?v=638527595373430000",
-          "desktop": "https://timecenter.vteximg.com.br/arquivos/ids/220939/banner_slide_desk_elaharwell(1920x600).png?v=638527591351700000",
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/2b1c2b8c-4e0b-4da7-985b-4175cc1514de",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/a50df16c-0beb-4cf5-82ea-e3aa972ddc6c",
           "alt": "presente para ela "
         },
         {
-          "desktop": "https://timecenter.vteximg.com.br/arquivos/ids/220991/carraway_desktop.png?v=638530406902930000",
-          "mobile": "https://timecenter.vteximg.com.br/arquivos/ids/220993/carraway_mobile.png?v=638530458195200000",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/98a20ffb-e927-4725-a4c6-034da28fbd79",
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/ce893d0c-40b7-4352-a8c9-fc32140b2dbf",
           "action": {
             "href": "/"
           },
