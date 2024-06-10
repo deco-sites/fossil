@@ -23,7 +23,7 @@ function Header(props: Props) {
             class={`flex flex-col gap-2 ${
               props.alignment === "left"
                 ? "text-left pl-20 uppercase"
-                : "text-center w-4/5 lg:w-full m-auto"
+                : "text-center lg:w-full m-auto"
             }`}
           >
             {props.title &&
