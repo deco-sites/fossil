@@ -29,26 +29,26 @@
           "action": {
             "href": "/feminino"
           },
-          "mobile": "https://timecenter.vteximg.com.br/arquivos/ids/220472/banner_fossil_carlie_mobile.png?v=638488693099900000",
-          "desktop": "https://timecenter.vteximg.com.br/arquivos/ids/220471/banner_fossil_carlie_destop.png?v=638488692342730000",
-          "alt": "dia das maes"
+          "mobile": "https://timecenter.vteximg.com.br/arquivos/ids/220992/sport_mobile.png?v=638530457933800000",
+          "desktop": "https://timecenter.vteximg.com.br/arquivos/ids/220990/sport_desktop.png?v=638530406248300000",
+          "alt": "Presente pra ele"
         },
         {
           "action": {
             "href": "/",
             "title": " "
           },
-          "mobile": "https://timecenter.vteximg.com.br/arquivos/ids/220563/Banner_slide_mob_maescarlette(320x380).png?v=638491419091700000",
-          "desktop": "https://timecenter.vteximg.com.br/arquivos/ids/220562/banner_slide_desk_maescarlette(1920x600).png?v=638491418635530000",
-          "alt": "scarllet "
+          "mobile": "https://timecenter.vteximg.com.br/arquivos/ids/220943/Banner_slide_mob_elaharwell(320x380).png?v=638527595373430000",
+          "desktop": "https://timecenter.vteximg.com.br/arquivos/ids/220939/banner_slide_desk_elaharwell(1920x600).png?v=638527591351700000",
+          "alt": "presente para ela "
         },
         {
-          "desktop": "https://timecenter.vteximg.com.br/arquivos/ids/220634/banner_slide_desk_maesraquel(1920x600).png?v=638500847858770000",
-          "mobile": "https://timecenter.vteximg.com.br/arquivos/ids/220635/Banner_slide_mob_maesraquel(320x380).png?v=638500848344630000",
-          "alt": "dia daas",
+          "desktop": "https://timecenter.vteximg.com.br/arquivos/ids/220991/carraway_desktop.png?v=638530406902930000",
+          "mobile": "https://timecenter.vteximg.com.br/arquivos/ids/220993/carraway_mobile.png?v=638530458195200000",
           "action": {
             "href": "/"
-          }
+          },
+          "alt": "presentes para ele"
         }
       ],
       "preload": true,
