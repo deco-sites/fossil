@@ -46,20 +46,20 @@ function ShippingContent({ simulation }: {
     <ul class="flex flex-col gap-4 p-4 bg-base-200 rounded-[4px]">
       {methods.map((method) => (
         <li class="flex justify-between items-center border-base-200 not-first-child:border-t">
-          <span class="text-button text-center">
+          <span class="text-button !text-primary text-center">
             Entrega {method.name}
           </span>
           <span class="text-button">
             até {formatShippingEstimate(method.shippingEstimate)}
           </span>
-          <span class="text-base font-semibold text-right">
+          <span class="text-primary  text-right">
             {method.price === 0 ? "Grátis" : (
               formatPrice(method.price / 100, currencyCode, locale)
             )}
           </span>
         </li>
       ))}
-      <span class="text-base-300">
+      <span class="text-[#618175]">
         Os prazos de entrega começam a contar a partir da confirmação do
         pagamento e podem variar de acordo com a quantidade de produtos na
         sacola.
@@ -126,7 +126,7 @@ function ShippingSimulation({ items }: Props) {
         </Button>
       </form>
 
-      <div class="text-sm tracking-one text-primary underline mt-4">
+      <div class="text-sm tracking-one text-primary underline my-4">
         <a
           title="Não sei meu CEP"
           class="bt lnkExterno"
