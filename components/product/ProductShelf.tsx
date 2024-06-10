@@ -56,7 +56,7 @@ function ProductShelf({
 
   const styleTitle = {
     variante1:
-      "text-base tracking-one lg:text-xl font-arial font-bold uppercase leading-8 lg:leading-10 text-primary pb-5 lg:pb-6",
+      "text-[1.3rem] tracking-one lg:text-xl font-arial font-bold uppercase leading-8 lg:leading-10 text-primary pb-5 lg:pb-6",
     variante2:
       "text-28 font-black tracking-one font-scoutCond lg:text-42 lg:font-bold uppercase leading-8 lg:leading-10 text-primary pb-5 lg:pb-6",
   };
