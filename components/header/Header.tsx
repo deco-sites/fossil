@@ -106,7 +106,7 @@ function Header({
             platform={platform}
             device={device}
           >
-            <div class="bg-base-100 fixed w-full z-50">
+            <div class="bg-white fixed w-full z-50">
               <Navbar
                 device={device}
                 items={items}
