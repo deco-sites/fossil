@@ -48,7 +48,7 @@ export default function ProductDetails(
           <li class="inline-block pb-1 mr-1  text-[#252525] font-arial font-semibold text-xs my-4 lg:my-0 leading-4">
             <a href="/" arial-label="Link para home" class="">Fossil /</a>
           </li>
-          <li class="inline-block leading-8 text-[#252525]  pb-2 text-28 lg:px-0 lg:pb-1 mr-1 font-medium lg:font-semibold lg:text-xs  lg:leading-4">
+          <li class="inline-block leading-8 text-[#252525] uppercase pb-2 text-28 lg:px-0 lg:pb-1 mr-1 font-medium lg:font-semibold lg:text-xs  lg:leading-4">
             {isVariantOf?.name}
           </li>
         </ul>
