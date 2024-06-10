@@ -31,6 +31,13 @@ interface Props {
 const WIDTH = 400;
 const HEIGHT = 400;
 
+function truncateText(text: string, maxLength: number) {
+  if (text.length > maxLength) {
+    return text.slice(0, maxLength) + "...";
+  }
+  return text;
+}
+
 function ProductCard({
   product,
   preload,
@@ -52,7 +59,6 @@ function ProductCard({
   const hasVariant = isVariantOf?.hasVariant ?? [];
   const productGroupID = isVariantOf?.productGroupID;
   const description = product.description || isVariantOf?.description;
-  const productName = isVariantOf?.name;
   const [front, back] = images ?? [];
   const { listPrice, price, installments } = useOffer(offers);
   const possibilities = useVariantPossibilities(hasVariant, product);
@@ -60,6 +66,9 @@ function ProductCard({
   const relativeUrl = relative(url);
   const aspectRatio = `${WIDTH} / ${HEIGHT}`;
   const hasStock = offers?.offers[0].inventoryLevel.value === 0;
+  const productName = device === "desktop"
+    ? isVariantOf?.name
+    : truncateText(isVariantOf?.name || "", 46);
 
   return (
     <div
@@ -205,7 +214,7 @@ function ProductCard({
         {/* Name/Description */}
         <div class="flex flex-col">
           <h2
-            class="text-xs md:text-sm uppercase font-normal lg:leading-4  h-auto xs:h-16 lg:h-auto text-primary-content tracking-one"
+            class="text-xs md:text-sm uppercase  font-normal lg:leading-4  h-auto xs:h-12 lg:h-auto text-primary-content tracking-one"
             dangerouslySetInnerHTML={{ __html: productName ?? "" }}
           />
         </div>
