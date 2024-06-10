@@ -109,7 +109,7 @@ function Alert(
                     id="XAlert"
                     size={16}
                     aria-label={"close"}
-                    class="z-0 first-letter:pointer-events-none"
+                    class="z-0 pointer-events-none"
                   />
                 </Button>
               </div>
