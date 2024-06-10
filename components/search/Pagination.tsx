@@ -18,7 +18,6 @@ const goToPage = (page: number) => {
 export default function Pagination(
   { pageInfo, productsLength, startingPage }: Props,
 ) {
-
   const { recordPerPage, records = 0, nextPage, previousPage, currentPage } =
     pageInfo;
 

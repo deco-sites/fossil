@@ -59,7 +59,7 @@ function ProductCard({
   const variants = Object.entries(Object.values(possibilities)[0] ?? {});
   const relativeUrl = relative(url);
   const aspectRatio = `${WIDTH} / ${HEIGHT}`;
-  const hasStock = offers?.offers[0].inventoryLevel.value ===  0;
+  const hasStock = offers?.offers[0].inventoryLevel.value === 0;
 
   return (
     <div

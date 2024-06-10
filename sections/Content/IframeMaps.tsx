@@ -1,1 +1,1 @@
-export {default} from '../../components/ui/IframeMaps.tsx'
+export { default } from "../../components/ui/IframeMaps.tsx";
