@@ -51,7 +51,7 @@ function Newsletter(
   return (
     <div
       class={clx(
-        "flex flex-col gap-4 w-full md:w-56",
+        "flex flex-col gap-4 w-full md:w-full",
         tiled && "flex-col lg:justify-between",
       )}
     >
@@ -69,10 +69,10 @@ function Newsletter(
           class="form-control"
           onSubmit={handleSubmit}
         >
-          <div class="flex">
+          <div class="flex w-full">
             <input
               name="email"
-              class="flex-auto md:flex-none  w-56 border-solid border-b-[1px] border-primary focus:outline-none  text-base-content"
+              class="flex-auto md:flex-none w-9/12 border-solid border-b-[1px] border-primary focus:outline-none  text-base-content"
               placeholder={content?.form?.placeholder || "Digite seu email"}
             />
             <button
@@ -81,7 +81,7 @@ function Newsletter(
               disabled={loading}
               aria-label={`submit e-mail`}
             >
-              <Icon id="EmailSubmitFooter" size={15} strokeWidth={1} />
+              <Icon id="EmailSubmitFooter" size={24} strokeWidth={1} />
             </button>
           </div>
         </form>
