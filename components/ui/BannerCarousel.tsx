@@ -144,11 +144,11 @@ function BannerItem(
       )}
       <Picture preload={lcp}>
         <Source
-          media="(max-width: 767px)"
+          media="(max-width: 510px)"
           fetchPriority={lcp ? "high" : "auto"}
           src={mobile}
           width={430}
-          height={590}
+          height={510}
         />
         <Source
           media="(min-width: 768px)"
@@ -162,6 +162,7 @@ function BannerItem(
           loading={lcp ? "eager" : "lazy"}
           src={desktop}
           alt={alt}
+          srcset={`${mobile} 480w`}
         />
       </Picture>
     </a>

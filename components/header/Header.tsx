@@ -24,8 +24,8 @@ export interface Buttons {
 
 export interface Props {
   alerts?: string[];
- /** @description to show Alert */
-  isShow?:boolean
+  /** @description to show Alert */
+  isShow?: boolean;
 
   /**@description intervalo do slider */
   interval?: number;
@@ -93,7 +93,12 @@ function Header({
       <header style={{ height: isShow ? headerHeight : 64 }} class="">
         <div class="fixed z-[100] w-full">
           {alerts && alerts.length > 0 && (
-            <Alert alerts={alerts} interval={interval} device={device}  isShow={isShow} />
+            <Alert
+              alerts={alerts}
+              interval={interval}
+              device={device}
+              isShow={isShow}
+            />
           )}
           <Drawers
             menu={{ items }}

@@ -119,8 +119,14 @@ function Searchbar({
       text: "Lançamentos",
       url: "/2146?PS=18&map=productClusterIds&O=OrderByReleaseDateDESC",
     },
-    { text: "Relógio", url: "/s?q=relogio&O=OrderByReleaseDateDESC&utmi_pc=search" },
-    { text: "Stella", url: "/s?q=stella&O=OrderByReleaseDateDESC&utmi_pc=search" },
+    {
+      text: "Relógio",
+      url: "/s?q=relogio&O=OrderByReleaseDateDESC&utmi_pc=search",
+    },
+    {
+      text: "Stella",
+      url: "/s?q=stella&O=OrderByReleaseDateDESC&utmi_pc=search",
+    },
     {
       text: "Feminino",
       url: "/relogio/feminino?&utmi_pc=Html&utmi_cp=Popular",

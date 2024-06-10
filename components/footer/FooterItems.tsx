@@ -79,7 +79,9 @@ export default function FooterItems(
                       </div>
                       <div
                         class={` ${
-                          index === sections.length - 1 ? "" : "collapse collapse-plus"
+                          index === sections.length - 1
+                            ? ""
+                            : "collapse collapse-plus"
                         } `}
                       >
                         {!(index === sections.length - 1) && (
@@ -99,14 +101,17 @@ export default function FooterItems(
                         </label>
                         <div
                           class={`${
-                            index === sections.length - 1 ? " " : "collapse-content"
+                            index === sections.length - 1
+                              ? " "
+                              : "collapse-content"
                           } !p-0`}
                         >
                           <ul class={`flex flex-col`}>
                             {section.items?.map((item, idx) => (
                               <li
                                 class={`flex items-center gap-2 ${
-                                  section.label === "Atendimento" && "first:mt-4"
+                                  section.label === "Atendimento" &&
+                                  "first:mt-4"
                                 }`}
                                 key={idx}
                               >
@@ -121,7 +126,9 @@ export default function FooterItems(
                                 <a
                                   href={item.href}
                                   class={`block py-1 text-sm font-medium text-primary ${
-                                    item.icon?.label ? "pointer-events-none" : ""
+                                    item.icon?.label
+                                      ? "pointer-events-none"
+                                      : ""
                                   }`}
                                 >
                                   {item.label}
