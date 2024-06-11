@@ -154,11 +154,11 @@ function BannerItem(
           media="(min-width: 768px)"
           fetchPriority={lcp ? "high" : "auto"}
           src={desktop}
-          width={1422}
-          height={508}
+          width={1920}
+          height={600}
         />
         <img
-          class="object-cover w-full md:h-auto max-2xl:max-h-[600px] 3xl:h-auto"
+          class="object-cover w-full md:h-auto lg:max-h-[474.69px] 2/1xl:max-h-[600px]  3xl:max-h-[1000px]"
           loading={lcp ? "eager" : "lazy"}
           src={desktop}
           alt={alt}
