@@ -7,7 +7,7 @@ import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import type { SectionProps } from "deco/types.ts";
 import Alert from "./Alert.tsx";
 import Navbar from "./Navbar.tsx";
-import { headerHeight } from "./constants.ts";
+import { headerHeight, headerHeightMobile } from "./constants.ts";
 
 export interface Logo {
   src: ImageWidget;
@@ -90,7 +90,7 @@ function Header({
 
   return (
     <>
-      <header style={{ height: isShow ? headerHeight : 64 }} class="">
+      <header style={{ height: device === 'desktop' ? headerHeight :  isShow ? headerHeightMobile : 64 }} class="">
         <div class="fixed z-[100] w-full">
           {alerts && alerts.length > 0 && (
             <Alert
@@ -106,7 +106,7 @@ function Header({
             platform={platform}
             device={device}
           >
-            <div class="bg-white fixed w-full z-50">
+            <div class="bg-white fixed w-full z-50 h-14 md:auto">
               <Navbar
                 device={device}
                 items={items}
