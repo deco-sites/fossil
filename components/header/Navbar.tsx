@@ -31,7 +31,7 @@ function Navbar(
       {device === "desktop"
         ? (
           // Header desktop
-          <div class="hidden sm:flex items-center justify-between border-base-200 w-full   m-auto px-6 relative font-soleil">
+          <div class="hidden sm:flex items-center justify-between border-base-200 w-full bg-white  m-auto px-6 relative font-soleil">
             <div
               class={`flex ${
                 logoPosition === "left"
@@ -89,7 +89,7 @@ function Navbar(
         )
         : (
           //Header Mobile
-          <div class="lg:hidden flex  justify-between items-center w-full px-4 py-4 gap-2">
+          <div class="lg:hidden flex  justify-between items-center w-full  px-4  py-[0.72rem] gap-2">
             {logo && (
               <a
                 href="/"
