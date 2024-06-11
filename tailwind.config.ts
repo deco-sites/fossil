@@ -81,6 +81,7 @@ export default {
       },
       screens: {
         "3xl": "2000px",
+        "2/1xl": "1600px",
         "xs": "340px",
         "2xs": "375px",
         "3xs": "360px",
