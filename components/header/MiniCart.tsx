@@ -1,9 +1,7 @@
 import { useUI } from "../../sdk/useUI.ts";
-import Cart from "../minicart/Cart.tsx";
-import { Suspense, useId } from "preact/compat";
+import { useId } from "preact/compat";
 import { useEffect } from "preact/hooks";
 import Button from "../ui/Button.tsx";
-import { lazy } from "preact/compat";
 import CartVTEX from "../minicart/vtex/Cart.tsx";
 
 export default function MiniCart() {

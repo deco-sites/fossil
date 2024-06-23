@@ -21,7 +21,6 @@ function Drawer(props: Props) {
     onClose,
     class: _class = "",
     loading = "lazy",
-    alerts,
   } = props;
   const lazy = useSignal(loading === "lazy" && !open);
   const id = useId();

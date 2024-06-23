@@ -1,4 +1,3 @@
-import Header from "../../components/ui/SectionHeader.tsx";
 import { Head } from "$fresh/runtime.ts";
 import Icon from "../../components/ui/Icon.tsx";
 import { clx } from "../../sdk/clx.ts";
@@ -61,8 +60,6 @@ export default function FAQ(props: Props) {
   const {
     questions = [],
     title,
-    description,
-    contact,
     layout,
   } = { ...DEFAULT_PROPS, ...props };
 

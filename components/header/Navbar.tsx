@@ -57,9 +57,9 @@ function Navbar(
                 </a>
               )}
             </div>
-            <div class="flex">
+            <div class="flex justify-between items-center">
               <ul
-                class={`flex items-center gap-9 col-span-1  lg:pl-28 2xl:pl-0 ${
+                class={`flex items-center gap-9 col-span-1   2xl:pl-0 ${
                   logoPosition === "left" ? "justify-center" : "justify-start"
                 }`}
               >

@@ -4,7 +4,6 @@ import { headerHeight } from "./constants.ts";
 
 function NavItem({ item }: { item: SiteNavigationElement }) {
   const { url, name, children } = item;
-  const image = item?.image?.[0];
 
   const hasSubMenu = children && children.length > 0 ? true : false;
   return (

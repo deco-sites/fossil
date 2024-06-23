@@ -1,7 +1,6 @@
 import Slider from "../../components/ui/Slider.tsx";
 import SliderJS from "../../islands/SliderJS.tsx";
 import { useId } from "../../sdk/useId.ts";
-import { usePlatform } from "../../sdk/usePlatform.tsx";
 import CartButtonVTEX from "../../islands/Header/Cart/vtex.tsx";
 import MiniCart from "../../islands/MiniCart.tsx";
 import Button from "../ui/Button.tsx";
@@ -22,10 +21,6 @@ function Alert(
   { alerts = [], interval = 2, device, isShow }: Props,
 ) {
   const id = useId();
-
-  const platform = usePlatform();
-
-  console.log(device);
 
   return (
     <>

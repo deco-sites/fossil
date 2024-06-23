@@ -154,7 +154,11 @@
         "width": 380,
         "height": 250
       },
-      "url": "/carteira?&utmi_p=_Sistema_buscavazia&utmi_pc=BuscaFullText&utmi_cp=carteira&utmi_p=_&utmi_pc=Banner%3aBanner+terci%c3%a1rio+-+mobile&utmi_cp=Carteira"
+      "url": "/carteira?&utmi_p=_Sistema_buscavazia&utmi_pc=BuscaFullText&utmi_cp=carteira&utmi_p=_&utmi_pc=Banner%3aBanner+terci%c3%a1rio+-+mobile&utmi_cp=Carteira",
+      "button": {
+        "label": "LANÇAMENTOS",
+        "href": "/lancamentos"
+      }
     },
     {
       "__resolveType": "site/sections/Content/BannerFossilCarousel.tsx",

@@ -4,8 +4,7 @@ import { sendEvent } from "../../../sdk/analytics.tsx";
 import { formatPrice } from "../../../sdk/format.ts";
 import { useUI } from "../../../sdk/useUI.ts";
 import CartItem, { Item, Props as ItemProps } from "./CartItem.tsx";
-import Coupon, { Props as CouponProps } from "./Coupon.tsx";
-import FreeShippingProgressBar from "./FreeShippingProgressBar.tsx";
+import { Props as CouponProps } from "./Coupon.tsx";
 
 interface Props {
   items: Item[];
@@ -32,11 +31,9 @@ function Cart({
   loading,
   currency,
   discounts,
-  freeShippingTarget,
   checkoutHref,
   itemToAnalyticsItem,
   onUpdateQuantity,
-  onAddCoupon,
 }: Props) {
   const { displayCart } = useUI();
   const isEmtpy = items.length === 0;

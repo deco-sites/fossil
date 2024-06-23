@@ -1,6 +1,5 @@
 import { PageInfo } from "apps/commerce/types.ts";
 import Icon from "../ui/Icon.tsx";
-import { h } from "preact";
 import { useState } from "preact/hooks";
 
 export interface Props {
@@ -16,14 +15,13 @@ const goToPage = (page: number) => {
 };
 
 export default function Pagination(
-  { pageInfo, productsLength, startingPage }: Props,
+  { pageInfo, productsLength }: Props,
 ) {
   const { recordPerPage, records = 0, nextPage, previousPage, currentPage } =
     pageInfo;
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const offset = Math.abs(startingPage - 1);
   const perPage = recordPerPage || productsLength;
   const lastPage = Math.ceil(records / perPage);
 

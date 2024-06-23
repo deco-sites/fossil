@@ -3,7 +3,6 @@ import Image from "apps/website/components/Image.tsx";
 import { useCallback, useState } from "preact/hooks";
 import Button from "../../../components/ui/Button.tsx";
 import Icon from "../../../components/ui/Icon.tsx";
-import QuantitySelector from "../../../components/ui/QuantitySelector.tsx";
 import { sendEvent } from "../../../sdk/analytics.tsx";
 import { formatPrice } from "../../../sdk/format.ts";
 
@@ -41,7 +40,7 @@ function CartItem(
     itemToAnalyticsItem,
   }: Props,
 ) {
-  const { image, name, price: { sale, list }, quantity } = item;
+  const { image, name, price: { sale, list } } = item;
   const isGift = sale < 0.01;
   const [loading, setLoading] = useState(false);
 

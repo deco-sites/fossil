@@ -90,7 +90,16 @@ function Header({
 
   return (
     <>
-      <header style={{ height: device === 'desktop' ? headerHeight :  isShow ? headerHeightMobile : 64 }} class="">
+      <header
+        style={{
+          height: device === "desktop"
+            ? headerHeight
+            : isShow
+            ? headerHeightMobile
+            : 64,
+        }}
+        class=""
+      >
         <div class="fixed z-[100] w-full">
           {alerts && alerts.length > 0 && (
             <Alert

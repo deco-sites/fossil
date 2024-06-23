@@ -55,7 +55,6 @@ function Result({
   startingPage = 0,
   url: _url,
   device,
-  isCollection,
 }: Omit<Props, "page"> & {
   page: ProductListingPage;
   url: string;
@@ -75,11 +74,6 @@ function Result({
   const offset = zeroIndexedOffsetPage * perPage;
 
   const searchParams = url.search;
-
-  const getSearch = (search: string) => {
-    const match = search.match(/q=([^&]*)/);
-    return match ? match[1] : "";
-  };
 
   const searchTerm = getSearchTerm(searchParams);
   const productsFound = (

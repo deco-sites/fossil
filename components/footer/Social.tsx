@@ -1,5 +1,5 @@
 import Image from "apps/website/components/Image.tsx";
-import Icon, { AvailableIcons } from "../../components/ui/Icon.tsx";
+import Icon from "../../components/ui/Icon.tsx";
 
 export interface SocialItem {
   label:

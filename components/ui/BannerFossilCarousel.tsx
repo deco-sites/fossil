@@ -1,13 +1,10 @@
-import Header from "../../components/ui/SectionHeader.tsx";
 import Slider from "../../components/ui/Slider.tsx";
 import SliderJS from "../../islands/SliderJS.tsx";
 import { useId } from "../../sdk/useId.ts";
-import { usePlatform } from "../../sdk/usePlatform.tsx";
 import { clx } from "../../sdk/clx.ts";
-import { AppContext } from "../../apps/site.ts";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import Icon, { AvailableIcons } from "../../components/ui/Icon.tsx";
+import Icon from "../../components/ui/Icon.tsx";
 
 /** @title {{{action.title}}} */
 export interface Card {
@@ -40,7 +37,6 @@ export default function BannerFossilCoousel({
   device,
 }: Props & { device?: string }) {
   const id = useId();
-  const platform = usePlatform();
 
   const slideDesktop = {
     1: "md:w-full",

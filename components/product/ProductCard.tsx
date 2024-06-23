@@ -49,7 +49,6 @@ function ProductCard({
   const {
     url,
     productID,
-    name,
     image: images,
     offers,
     isVariantOf,
@@ -58,7 +57,6 @@ function ProductCard({
   const id = `product-card-${productID}`;
   const hasVariant = isVariantOf?.hasVariant ?? [];
   const productGroupID = isVariantOf?.productGroupID;
-  const description = product.description || isVariantOf?.description;
   const [front, back] = images ?? [];
   const { listPrice, price, installments } = useOffer(offers);
   const possibilities = useVariantPossibilities(hasVariant, product);
@@ -242,9 +240,10 @@ function ProductCard({
               {/* Installments */}
               {(installments && typeof installments !== "string") && (
                 <p class="flex gap-2 font-light text-xs truncate text-primary-content">
-                  ou {installments.billingDuration} x de R${" "}
-                  {installments.billingIncrement}{"  "}
-                  {installments.withTaxes ? "com juros" : "sem juros"}
+                  ou {installments.billingDuration} x de R$ {formatPrice(
+                    installments.billingIncrement,
+                    offers?.priceCurrency,
+                  )}{"  "}{installments.withTaxes ? "com juros" : "sem juros"}
                 </p>
               )}
             </>

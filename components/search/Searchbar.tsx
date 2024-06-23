@@ -9,10 +9,7 @@
  * no JavaScript is shipped to the browser!
  */
 
-import ProductCard from "../../components/product/ProductCard.tsx";
-import Button from "../../components/ui/Button.tsx";
 import Icon from "../../components/ui/Icon.tsx";
-import Slider from "../../components/ui/Slider.tsx";
 import { sendEvent } from "../../sdk/analytics.tsx";
 import { useId } from "../../sdk/useId.ts";
 import { useSuggestions } from "../../sdk/useSuggestions.ts";
@@ -21,8 +18,6 @@ import { Suggestion } from "apps/commerce/types.ts";
 import { Resolved } from "deco/engine/core/resolver.ts";
 import { useEffect, useRef } from "preact/compat";
 import type { Platform } from "../../apps/site.ts";
-import { useScroll } from "../../sdk/useScroll.ts";
-import { useLocation } from "../../sdk/useLocation.ts";
 import { formatPrice } from "../../sdk/format.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import Image from "apps/website/components/Image.tsx";
@@ -91,8 +86,6 @@ function Searchbar({
   action = "/s",
   name = "&utm_p=",
   loader,
-  platform,
-  variant,
   device,
 }: Props & { variant?: string; device?: string }) {
   const id = useId();
@@ -132,10 +125,6 @@ function Searchbar({
       url: "/relogio/feminino?&utmi_pc=Html&utmi_cp=Popular",
     },
   ];
-
-  const scroll = useScroll();
-  const locationHref = useLocation();
-  const gradientHeader = locationHref.value === "/" && scroll.value === 0;
 
   useEffect(() => {
     if (displaySearchPopup.value === false && !hasTerms && !hasProducts) {
@@ -230,7 +219,7 @@ function Searchbar({
                     <span class="border-b-2 border-primary mb-4 border-solid">
                     </span>
                     <ul class="flex flex-col flex-1 w-auto border-none box-border">
-                      {topSearches.map(({ text, url }, index) => (
+                      {topSearches.map(({ text, url }) => (
                         <li>
                           <a
                             href={url}
