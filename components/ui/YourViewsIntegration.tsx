@@ -16,8 +16,8 @@ const loadJQuery = () => {
       "load",
       () =>
         typeof requestIdleCallback !== "undefined"
-          ? requestIdleCallback(() => setTimeout(init, 500))
-          : setTimeout(init, 500)
+          ? requestIdleCallback(() => setTimeout(init, 2_500))
+          : setTimeout(init, 2_500)
     );
   };
   document.head.appendChild(script);
@@ -27,8 +27,8 @@ addEventListener(
   "load",
   () =>
     typeof requestIdleCallback !== "undefined"
-      ? requestIdleCallback(() => setTimeout(loadJQuery, 5000))
-      : setTimeout(loadJQuery, 5000)
+      ? requestIdleCallback(() => setTimeout(loadJQuery, 1000))
+      : setTimeout(loadJQuery, 1000)
 );
 
 function YourViewsIntegration() {
