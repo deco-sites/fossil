@@ -17,8 +17,8 @@
   "social": {
     "items": [
       {
-        "link": "http://deco.cx/",
-        "label": "Facebook"
+        "label": "Facebook",
+        "link": " https://www.facebook.com/Fossil"
       },
       {
         "label": "XMark",
@@ -67,11 +67,6 @@
         {
           "label": "Reluatory Compliance",
           "href": "https://www.fossilgroup.com/responsibility/regulatory-compliance/?&utmi_p=_&utmi_pc=Html&utmi_cp=menu",
-          "icon": {}
-        },
-        {
-          "label": "Blog",
-          "href": "https://www.fossil.com.br/",
           "icon": {}
         }
       ],
@@ -143,17 +138,8 @@
     {
       "items": [
         {
-          "label": "Phone",
-          "icon": {
-            "label": "Phone"
-          },
-          "href": "/"
-        },
-        {
-          "icon": {
-            "label": "Email"
-          },
           "label": "atendimento@fossilstore.com.br",
+          "icon": {},
           "href": "/"
         }
       ],
