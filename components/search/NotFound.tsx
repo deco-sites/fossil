@@ -1,5 +1,4 @@
 import Image from "apps/website/components/Image.tsx";
-import { asset } from "$fresh/runtime.ts";
 
 export default function NotFound() {
   return (
@@ -10,7 +9,7 @@ export default function NotFound() {
             OOPS!
           </h1>
           <p class="font-arial font-base leading-5 m-0 text-center text-primary tracking-one">
-            Não encontramso nenhum resultado para o termo buscado
+            Não encontramos nenhum resultado para o termo buscado.
           </p>
           <a
             href="/"

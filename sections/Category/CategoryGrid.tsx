@@ -2,12 +2,11 @@ import Header from "../../components/ui/SectionHeader.tsx";
 import { useId } from "../../sdk/useId.ts";
 import Image from "apps/website/components/Image.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import Button from "../../components/ui/Button.tsx";
 
 export interface CategoryGridProps {
   href?: string;
   image?: ImageWidget;
-  /** @description Alternative text */
+  /** @description  âncora do link  */
   label?: string;
   buttonText?: string;
 }
@@ -121,12 +120,13 @@ function CategoryGrid(props: Props) {
               {label}
             </h2>
 
-            <Button
+            <a
               class="font-bold uppercase text-base text-primary  px-6  underline"
               aria-label={label}
+              href={href}
             >
               {buttonText}
-            </Button>
+            </a>
           </div>
         ))}
       </div>

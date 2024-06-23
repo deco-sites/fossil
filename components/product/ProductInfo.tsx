@@ -35,7 +35,7 @@ interface Props {
 }
 
 function ProductInfo(
-  { page, layout, flagDiscount, sizeChartLink, device }: Props & {
+  { page, flagDiscount, sizeChartLink, device }: Props & {
     device?: string;
   },
 ) {
@@ -51,11 +51,9 @@ function ProductInfo(
     productID,
     offers,
     name = "",
-    gtin,
     isVariantOf,
-    additionalProperty = [],
   } = product;
-  const description = product.description || isVariantOf?.description;
+
   const productName = isVariantOf?.name;
   const {
     price = 0,
@@ -79,7 +77,6 @@ function ProductInfo(
     }
   }
 
-  const productGroupID = isVariantOf?.productGroupID ?? "";
   const breadcrumb = {
     ...breadcrumbList,
     itemListElement: breadcrumbList?.itemListElement.slice(0, -1),

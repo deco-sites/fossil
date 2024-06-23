@@ -22,7 +22,7 @@ export interface Props {
 }
 
 const Aside = (
-  { title, onClose, children, className, type }: {
+  { onClose, children, className, type }: {
     title: string;
     onClose?: () => void;
     children: ComponentChildren;

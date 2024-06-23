@@ -31,7 +31,7 @@ const orderedFilters = [
 ].map((filter) => filter.toUpperCase());
 
 function ValueItem(
-  { url, selected, label, quantity, device }: FilterToggleValue & {
+  { url, selected, label, quantity }: FilterToggleValue & {
     device?: string;
   },
 ) {
@@ -79,8 +79,6 @@ function FilterValues({ key, values }: FilterToggle) {
         )
         : (
           unselectedValues.map((item) => {
-            const { url, selected, value, quantity } = item;
-
             if (key === "price") {
               const range = parseRange(item.value);
 

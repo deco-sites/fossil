@@ -1,5 +1,3 @@
-import Divider from "../footer/Divider.tsx";
-
 interface PropertyValue {
   "@type": string;
   name?: string;

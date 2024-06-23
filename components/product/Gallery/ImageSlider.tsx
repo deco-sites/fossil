@@ -4,10 +4,7 @@ import SliderJS from "../../../islands/SliderJS.tsx";
 import ProductSliderDotsHandler from "../../../islands/ProductSliderDotsHandler.tsx";
 import { ProductDetailsPage } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
-import ProductHighlights, {
-  DEFAULT_HIGHLIGHTS,
-  HighLight,
-} from "../ProductHighlights.tsx";
+import { HighLight } from "../ProductHighlights.tsx";
 import { useOffer } from "../../../sdk/useOffer.ts";
 import { useId } from "../../../sdk/useId.ts";
 import Button from "../../ui/Button.tsx";
@@ -37,14 +34,11 @@ export default function GallerySlider(props: Props) {
 
   const {
     page: { product },
-    highlights,
   } = props;
   const aspectRatio = `${width} / ${height}`;
   const { image: images = [], offers } = product;
-  const { isVariantOf } = product!;
 
   const { listPrice, price } = useOffer(offers);
-  const discount = price != listPrice;
 
   return (
     <div class="float-left w-[48%] relative max-sm:w-auto max-lg:flex max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:w-full">

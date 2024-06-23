@@ -1,4 +1,3 @@
-import { itemToAnalyticsItem } from "apps/vtex/hooks/useCart.ts";
 import BackToTop from "../../components/footer/BackToTop.tsx";
 import Divider from "../../components/footer/Divider.tsx";
 import ExtraLinks from "../../components/footer/ExtraLinks.tsx";
@@ -6,12 +5,10 @@ import FooterItems from "../../components/footer/FooterItems.tsx";
 import Logo from "../../components/footer/Logo.tsx";
 import MobileApps from "../../components/footer/MobileApps.tsx";
 import PaymentMethods from "../../components/footer/PaymentMethods.tsx";
-import RegionSelector from "../../components/footer/RegionSelector.tsx";
 import Social from "../../components/footer/Social.tsx";
 import Newsletter from "../../islands/Newsletter.tsx";
 import { clx } from "../../sdk/clx.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import PoweredByDeco from "apps/website/components/PoweredByDeco.tsx";
 import { AppContext } from "../../apps/site.ts";
 
 export type Item = {
@@ -118,14 +115,6 @@ export interface Props {
   layout?: Layout;
 }
 
-const LAYOUT = {
-  "Primary": "bg-primary text-primary-content",
-  "Secondary": "bg-secondary text-secondary-content",
-  "Accent": "bg-accent text-accent-content",
-  "Base 100": "bg-base-100 text-base-content",
-  "Base 100 inverted": "bg-base-content text-base-100",
-};
-
 function Footer({
   logo,
   newsletter = {
@@ -178,7 +167,6 @@ function Footer({
   extraLinks = { copyright: "2019", content: [] },
   address =
     "Endereço: Est. Luiz Lopes Neto, 21 - Galpão A - Modulo 4 Do Tenentes - Extrema - MG - Cep: 37.640-000 CNPJ: 28.778.134/0026-05",
-  backToTheTop,
   layout = {
     backgroundColor: "Primary",
     hide: {
@@ -225,7 +213,7 @@ function Footer({
   return (
     <footer
       class={clx(
-        "w-full flex flex-col pt-4 gap-10",
+        "w-full flex flex-col gap-10",
       )}
     >
       {/** Desktop */}
@@ -236,13 +224,13 @@ function Footer({
               <Divider />
               <div class="flex flex-col gap-10 pt-4">
                 <div class="flex flex-col lg:flex-row gap-14">
-                  <div class="flex flex-col md:flex-row lg:flex-col md:justify-between lg:justify-normal gap-10 lg:w-2/5">
+                  <div class="flex flex-col md:flex-row lg:flex-col md:justify-between lg:justify-normal gap-10 lg:w-[30%]">
                     {_newsletter}
                     <div class="flex flex-col gap-10">
                       {_social}
                     </div>
                   </div>
-                  <div class="flex flex-col gap-10 lg:gap-20 lg:w-3/5 lg:items-end">
+                  <div class="flex flex-col gap-10 lg:gap-20 lg:w-[70%] lg:items-end">
                     <div class="flex flex-col md:flex-row gap-10">
                       {_sectionLinks}
                     </div>

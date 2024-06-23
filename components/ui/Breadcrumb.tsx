@@ -7,6 +7,8 @@ interface Props {
 function Breadcrumb({ itemListElement = [] }: Props) {
   const items = [{ name: "FOSSIL", item: "/" }, ...itemListElement];
 
+  console.log(itemListElement);
+
   return (
     <div class="breadcrumbs-fossil uppercase font-arial text-xs font-semibold text-primary lg:mb-6 lg:mt-5">
       <ul>
