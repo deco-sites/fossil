@@ -30,34 +30,34 @@
             {
               "@type": "SiteNavigationElement",
               "name": "Anadigi",
-              "url": "/relogio/masculino/anadigi?PS=18&O=OrderByBestDiscountDESC"
+              "url": "/relogio/masculino/anadigi"
             },
             {
               "@type": "SiteNavigationElement",
               "name": "Analógico",
-              "url": "/relogio/masculino/analogico?PS=18&O=OrderByBestDiscountDESC"
+              "url": "/relogio/masculino/analogico"
             },
             {
               "image": [],
               "children": [],
               "name": "Digital",
-              "url": "/relogio/masculino/digital?PS=18&O=OrderByBestDiscountDESC"
+              "url": "/relogio/masculino/digital"
             },
             {
               "image": [],
               "children": [],
               "name": "Multifunção",
-              "url": "/relogio/masculino/multifuncao?PS=18&O=OrderByBestDiscountDESC"
+              "url": "/relogio/masculino/multifuncao"
             },
             {
               "image": [],
               "children": [],
               "name": "Cronógrafo",
-              "url": "/relogio/masculino/cronografo?PS=18&O=OrderByBestDiscountDESC"
+              "url": "/relogio/masculino/cronografo"
             }
           ],
           "name": "Mecanismo",
-          "url": "/relogio/masculino?PS=18&O=OrderByBestDiscountDESC"
+          "url": "/relogio/masculino"
         },
         {
           "image": [],
@@ -82,7 +82,7 @@
             }
           ],
           "name": "Caixa",
-          "url": "/relogio/masculino?PS=18&O=OrderByBestDiscountDESC"
+          "url": "/relogio/masculino"
         },
         {
           "image": [],
@@ -91,29 +91,29 @@
               "image": [],
               "children": [],
               "name": "Aço",
-              "url": "/relogio/masculino/aco?PS=18&O=OrderByBestDiscountDESC"
+              "url": "/relogio/masculino/aco"
             },
             {
               "image": [],
               "children": [],
               "name": "Silicone",
-              "url": "/relogio/masculino/silicone?PS=18&O=OrderByBestDiscountDESC"
+              "url": "/relogio/masculino/silicone"
             },
             {
               "image": [],
               "children": [],
               "name": "Cerâmica",
-              "url": "/relogio/masculino/ceramica?PS=18&O=OrderByBestDiscountDESC"
+              "url": "/relogio/masculino/ceramica"
             },
             {
               "image": [],
               "children": [],
               "name": "Couro",
-              "url": "/relogio/masculino/couro?PS=18&O=OrderByBestDiscountDESC"
+              "url": "/relogio/masculino/couro"
             }
           ],
           "name": "Pulseira",
-          "url": "/relogio/masculino?PS=18&O=OrderByBestDiscountDESC"
+          "url": "/relogio/masculino"
         },
         {
           "image": [],
@@ -122,54 +122,54 @@
               "image": [],
               "children": [],
               "name": "Color",
-              "url": "/relogio/masculino/color?PS=18&O=OrderByBestDiscountDESC"
+              "url": "/relogio/masculino/color"
             },
             {
               "image": [],
               "children": [],
               "name": "Dourado",
-              "url": "/relogio/masculino/dourado?PS=18&O=OrderByBestDiscountDESC"
+              "url": "/relogio/masculino/dourado"
             },
             {
               "image": [],
               "children": [],
               "name": "Prata",
-              "url": "/relogio/masculino/prata?PS=18&O=OrderByBestDiscountDESC"
+              "url": "/relogio/masculino/prata"
             },
             {
               "image": [],
               "children": [],
               "name": "Preto",
-              "url": "/relogio/masculino/preto?PS=18&O=OrderByBestDiscountDESC"
+              "url": "/relogio/masculino/preto"
             },
             {
               "image": [],
               "children": [],
               "name": "Rosê",
-              "url": "/relogio/masculino/rose?PS=18&O=OrderByBestDiscountDESC"
+              "url": "/relogio/masculino/rose"
             },
             {
               "image": [],
               "children": [],
               "name": "Bicolor",
-              "url": "/relogio/masculino/bicolor?PS=18&O=OrderByBestDiscountDESC"
+              "url": "/relogio/masculino/bicolor"
             },
             {
               "image": [],
               "children": [],
               "name": "Especiais",
-              "url": "/relogio/masculino/especiais?PS=18&O=OrderByBestDiscountDESC"
+              "url": "/relogio/masculino/especiais"
             }
           ],
           "name": "Cor",
-          "url": "/relogio/masculino?PS=18&O=OrderByBestDiscountDESC"
+          "url": "/relogio/masculino"
         }
       ],
       "name": "Relógio Masculino",
-      "url": "/relogio/masculino?PS=18&O=OrderByReleaseDateDESC"
+      "url": "/relogio/masculino"
     },
     {
-      "url": "/relogio/feminino?PS=18&O=OrderByReleaseDateDESC",
+      "url": "/relogio/feminino",
       "@type": "SiteNavigationElement",
       "image": [
         {
@@ -349,7 +349,7 @@
             }
           ],
           "name": "Acessórios",
-          "url": "https://www.fossil.com.br/acessorios"
+          "url": "/acessorios"
         }
       ],
       "name": "Acessórios",
