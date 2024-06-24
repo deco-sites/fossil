@@ -225,7 +225,7 @@ function ProductCard({
           ? (
             <>
               {/* Price from/to */}
-              <div class="flex flex-col justify-end gap-1 font-light text-primary-content h-11">
+              <div class="flex flex-col justify-end gap-1 font-light text-primary-content">
                 {listPrice !== price && (
                   <span class="line-through text-sm ">
                     {formatPrice(listPrice, offers?.priceCurrency)}
