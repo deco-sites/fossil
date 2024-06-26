@@ -1,34 +1,33 @@
-import Icon from "../../components/ui/Icon.tsx";
+import Image from "apps/website/components/Image.tsx";
 
 export interface PaymentItem {
-  label: "Diners" | "Elo" | "Mastercard" | "Pix" | "Visa";
+  label: string;
+  image: string;
+  width: number;
 }
 
 export default function PaymentMethods(
-  { content }: { content?: { title?: string; items?: PaymentItem[] } },
+  { content }: { content?: { items?: PaymentItem[] } },
 ) {
   return (
     <>
       {content && content.items && content.items.length > 0 && (
-        <div class="flex flex-col gap-4">
-          {content.title && <h3 class="text-lg">{content.title}</h3>}
-          <ul class="flex items-center gap-4 flex-wrap">
-            {content.items.map((item) => {
-              return (
-                <li
-                  class="border"
-                  title={item.label}
-                >
-                  <Icon
-                    width={48}
-                    height={32}
-                    strokeWidth={1}
-                    id={item.label}
-                  />
-                </li>
-              );
-            })}
-          </ul>
+        <div class="block md:w-[30%]">
+          <div class="flex md:flex-col w-full mb-5">
+            <div class="pt-[9px] flex flex-wrap w-full md:justify-center">
+              {content.items.map((item) => {
+                return (
+                  <div class="flex w-[65px] h-[35px] items-center justify-center">
+                    <Image
+                      width={item.width}
+                      src={item.image}
+                      loading="lazy"
+                    />
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
       )}
     </>

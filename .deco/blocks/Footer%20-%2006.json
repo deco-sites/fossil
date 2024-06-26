@@ -1,0 +1,270 @@
+{
+  "__resolveType": "site/sections/Footer/Footer.tsx",
+  "sections": [
+    {
+      "items": [
+        {
+          "href": "/institucional",
+          "label": "Sobre Technos"
+        },
+        {
+          "href": "/institucional/politica-de-seguranca",
+          "label": "Política de Segurança"
+        },
+        {
+          "href": "/institucional/politica-de-privacidade",
+          "label": "Política de Privacidade"
+        },
+        {
+          "href": "/institucional/termos-de-uso",
+          "label": "Termos de Uso"
+        },
+        {
+          "href": "/institucional/formas-de-entrega",
+          "label": "Formas de Entrega"
+        },
+        {
+          "href": "/institucional/formas-de-pagamento",
+          "label": "Formas de Pagamento"
+        },
+        {
+          "href": "https://www.grupotechnos.com.br/pt",
+          "label": "RI"
+        },
+        {
+          "href": "/onde-encontrar",
+          "label": "Onde Encontrar"
+        }
+      ],
+      "label": "Intitucional",
+      "children": [
+        {
+          "href": "/quemsomos",
+          "label": "Quem somos"
+        },
+        {
+          "href": "/privacidadeeseguranca",
+          "label": "Privacidade e segurança"
+        },
+        {
+          "href": "/termosdeuso",
+          "label": "Termos de uso"
+        },
+        {
+          "href": "/trabalheconosco",
+          "label": "Trabalhe conosco"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "href": "/ajuda",
+          "label": "Ajuda"
+        },
+        {
+          "href": "/contato",
+          "label": "Fale Conosco"
+        },
+        {
+          "href": "/institucional/cupons-e-promocoes",
+          "label": "Cupons e Promoções"
+        },
+        {
+          "href": "/institucional/rastreie-seu-pedido",
+          "label": "Rastreie seu Pedido"
+        },
+        {
+          "href": "/institucional/trocas-e-devolucoes",
+          "label": "Trocas e Devoluções"
+        },
+        {
+          "href": "/ajuda",
+          "label": "Assistência Técnica"
+        },
+        {
+          "href": "/seja-um-revendedor",
+          "label": "Seja um Revendedor"
+        }
+      ],
+      "label": "Atendimento",
+      "children": [
+        {
+          "href": "/centraldeatendimento",
+          "label": "Central de atendimento"
+        },
+        {
+          "href": "/whatsapp",
+          "label": "Fale conosco pelo WhatsApp"
+        },
+        {
+          "href": "/trocaedevolucao",
+          "label": "Troca e devolução"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "href": "/account",
+          "label": "Meu Perfil"
+        }
+      ],
+      "label": "Minha conta",
+      "children": [
+        {
+          "href": "/loginecadastro",
+          "label": "Login e cadastro"
+        },
+        {
+          "href": "/meuspedidos",
+          "label": "Meus pedidos"
+        }
+      ]
+    }
+  ],
+  "payments": {
+    "items": [
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3446/85b80dd0-e64c-42d6-9daa-bfee3f16267a",
+        "label": "Visa",
+        "width": 44
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3446/66e1b1ce-f579-410f-9e3a-b62504af9541",
+        "label": "Mastercard",
+        "width": 35
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3446/2ebfe2c6-8701-423e-8c98-e40cc3c08c1a",
+        "label": "Elo",
+        "width": 45
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3446/b18db9f1-efc8-413b-b003-b528fe3466f5",
+        "label": "American Express",
+        "width": 26
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3446/961e6417-bb62-40c6-8b84-7b77cb8c87a9",
+        "label": "Diners",
+        "width": 54
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3446/96deb744-b8f5-416a-8aca-f2bb9e4e3e8b",
+        "label": "Aura",
+        "width": 36
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3446/cab1d932-aa6e-4fb5-9443-88610448af68",
+        "label": "Hipercard",
+        "width": 46
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3446/70633ecd-0eae-42a2-9d63-b4a1048849ad",
+        "label": "PicPay",
+        "width": 52
+      }
+    ]
+  },
+  "selos": [
+    {
+      "alt": "VTEX",
+      "href": "https://vtex.com/",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3446/654136c7-bfc5-46ff-ad34-7182a95d3a03"
+    },
+    {
+      "alt": "Agência N1",
+      "href": "https://www.n1.ag/",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3446/0bca1293-167d-4c23-9f2c-371beb827fbd"
+    },
+    {
+      "alt": "Loja confiável",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3446/49f24b72-4f71-4fe2-80c3-0e2403823ed0"
+    },
+    {
+      "alt": "Procon",
+      "href": "http://www.procononline.rj.gov.br/",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3446/607f0502-d4fd-4989-abbc-adf1871080f5"
+    }
+  ],
+  "contactNetworks": [
+    {
+      "label": "Canais Oficiais",
+      "links": [
+        {
+          "href": "https://www.instagram.com/technosoficial/",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3446/d538a760-c8f1-464b-8197-cf45b24c4f00",
+          "label": "Instagram"
+        },
+        {
+          "href": "https://www.facebook.com/technosoficial/",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3446/5013e2da-8cd6-487d-82e0-5e204410dd3d",
+          "label": "Facebook"
+        },
+        {
+          "href": "https://www.youtube.com/channel/UCIXVPszLSczOiapSao5QDag",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3446/49c5a7c0-5aa3-40d1-916e-0233346cd1d2",
+          "label": "Youtube"
+        }
+      ]
+    },
+    {
+      "label": "Trocas e Devoluções",
+      "links": [
+        {
+          "href": "https://technos.minhatroca.com.br/",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3446/ae6ad9b9-8249-48d4-bc5c-c6aeff84b6db",
+          "label": "Trocas e devoluções"
+        }
+      ]
+    },
+    {
+      "label": "Seja um revendedor",
+      "links": [
+        {
+          "href": "/seja-um-revendedor",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3446/18b89eaa-d618-4403-8806-1268d0d2972b",
+          "label": "Seja um revendedor"
+        }
+      ]
+    }
+  ],
+  "logo": {
+    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/c1c3df7f-51b6-48c1-9093-185f28f607ad"
+  },
+  "extraLinks": [
+    {
+      "href": "http://www.google.com",
+      "link": "http://www.google.com/",
+      "label": "Política de privacidade"
+    },
+    {
+      "href": "http://www.google.com",
+      "link": "http://www.google.com",
+      "label": "Termos de serviço"
+    }
+  ],
+  "regionOptions": {
+    "currency": [
+      {
+        "href": "/",
+        "label": "Brasil BRL"
+      },
+      {
+        "href": "/",
+        "label": "United Stated USD"
+      }
+    ],
+    "language": [
+      {
+        "href": "/",
+        "label": "PT"
+      },
+      {
+        "href": "/",
+        "label": "EN"
+      }
+    ]
+  }
+}
