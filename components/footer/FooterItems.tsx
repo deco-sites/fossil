@@ -20,12 +20,12 @@ export default function FooterItems(
             <>
               {sections.map((section) => (
                 <div class="flex flex-col">
-                  <span class="font-bold uppercase text-sm py-[10%] leading-none text-[#4a4a4a]">
+                  <span class="font-bold uppercase text-sm py-[10%] leading-none text-white">
                     {section.label}
                   </span>
                   {section.items?.map((item) => (
                     <a href={item.href} class="mt-[10px]">
-                      <span class="text-sm leading-none text-[#4a4a4a]">
+                      <span class="text-sm leading-none text-white">
                         {item.label}
                       </span>
                     </a>

@@ -12,12 +12,12 @@ export default function PaymentMethods(
   return (
     <>
       {content && content.items && content.items.length > 0 && (
-        <div class="block md:w-[30%]">
+        <div class="block md:w-[40%]">
           <div class="flex md:flex-col w-full mb-5">
-            <div class="pt-[9px] flex flex-wrap w-full md:justify-center">
+            <div class="pt-[9px] flex flex-wrap w-full gap-2 md:justify-center">
               {content.items.map((item) => {
                 return (
-                  <div class="flex w-[65px] h-[35px] items-center justify-center">
+                  <div class="flex bg-white w-[65px] h-[35px] items-center justify-center">
                     <Image
                       width={item.width}
                       src={item.image}

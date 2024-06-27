@@ -55,7 +55,7 @@ function Footer({
     <>
       {contactNetworks && <ContactNetwork networks={contactNetworks} />}
       <footer
-        class={`bg-[#F0F0F0] pt-10 px-[100px] pb-5 border border-[#d8d8d8] max-md:p-[40px_26px_20px]`}
+        class={`bg-primary pt-10 px-[100px] pb-5 max-md:p-[40px_26px_20px]`}
       >
         <div class="block p-0 mb-[5%] max-md:hidden">
           <Image
