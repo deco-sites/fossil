@@ -632,5 +632,13 @@
   "/.deco/blocks/Preview%20site%2Fsections%2FProduct%2FSearchResult.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Product/SearchResult.tsx"
+  },
+  "/.deco/blocks/Footer%20Global.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Footer.tsx"
+  },
+  "/.deco/blocks/Footer%20-%2006.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Footer/Footer.tsx"
   }
 }

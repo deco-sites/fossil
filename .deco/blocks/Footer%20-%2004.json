@@ -62,12 +62,16 @@
         {
           "href": "https://www.fossilgroup.com/?&utmi_p=_&utmi_pc=Html&utmi_cp=menu",
           "label": "Grupo Fossil",
-          "icon": {}
+          "icon": {
+            "label": "Email"
+          }
         },
         {
           "label": "Reluatory Compliance",
           "href": "https://www.fossilgroup.com/responsibility/regulatory-compliance/?&utmi_p=_&utmi_pc=Html&utmi_cp=menu",
-          "icon": {}
+          "icon": {
+            "label": "Email"
+          }
         }
       ],
       "children": [
@@ -97,23 +101,31 @@
       "items": [
         {
           "label": "Meus pedidos",
-          "icon": {},
+          "icon": {
+            "label": "Email"
+          },
           "href": "/login?ReturnUrl=%2f_secure%2faccount#/orders"
         },
         {
           "href": "/nossas-lojas",
           "label": "Onde encontrar",
-          "icon": {}
+          "icon": {
+            "label": "Email"
+          }
         },
         {
           "href": "/central",
           "label": "FAQ´s",
-          "icon": {}
+          "icon": {
+            "label": "Email"
+          }
         },
         {
           "label": "Política de Devolução",
           "href": "/central",
-          "icon": {}
+          "icon": {
+            "label": "Email"
+          }
         }
       ],
       "children": [
@@ -139,7 +151,9 @@
       "items": [
         {
           "label": "atendimento@fossilstore.com.br",
-          "icon": {},
+          "icon": {
+            "label": "Email"
+          },
           "href": "/"
         }
       ],
@@ -253,5 +267,7 @@
         }
       }
     ]
-  }
+  },
+  "selos": [],
+  "contactNetworks": []
 }
