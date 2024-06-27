@@ -4,10 +4,6 @@
     {
       "items": [
         {
-          "href": "/institucional",
-          "label": "Sobre Technos"
-        },
-        {
           "href": "/institucional/politica-de-seguranca",
           "label": "Política de Segurança"
         },
@@ -26,14 +22,6 @@
         {
           "href": "/institucional/formas-de-pagamento",
           "label": "Formas de Pagamento"
-        },
-        {
-          "href": "https://www.grupotechnos.com.br/pt",
-          "label": "RI"
-        },
-        {
-          "href": "/onde-encontrar",
-          "label": "Onde Encontrar"
         }
       ],
       "label": "Intitucional",
@@ -81,10 +69,6 @@
         {
           "href": "/ajuda",
           "label": "Assistência Técnica"
-        },
-        {
-          "href": "/seja-um-revendedor",
-          "label": "Seja um Revendedor"
         }
       ],
       "label": "Atendimento",
