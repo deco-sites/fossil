@@ -56,7 +56,8 @@ export type AvailableIcons =
   | "Pinterest"
   | "Phone"
   | "Email"
-  | "XAlert";
+  | "XAlert"
+  | "Manual";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**

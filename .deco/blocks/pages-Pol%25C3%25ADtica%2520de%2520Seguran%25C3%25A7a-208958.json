@@ -12,6 +12,12 @@
       "__resolveType": "Header - 01"
     },
     {
+      "__resolveType": "site/sections/Institutional/PageContent.tsx",
+      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8f17334a-a7a8-4c39-b24f-46b16d2180fb",
+      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/d4309f4a-21d9-4c9b-b81a-4ea0718b5ab8",
+      "content": "<div class=\"conteiner-paragraph-intitucional\"><div class=\"element-text-institucional\"><h1 class=\"header-text-intitucional\">POLÍTICA DE SEGURANÇA</h1></div><br><div class=\"bloco-text-technos\"><p class=\"paragf\">No site da Technos, toda a comunicação com os browsers dos seus usuários é criptografada e 100% processada por computador, sem intervenção humana, impedindo que hackers interceptem os dados e consigam usá-los para cometer fraudes.<br><br>Todas as informações solicitadas que passam pelo nosso processo de compra on-line são codificadas, desde os seus dados pessoais até a forma de pagamento escolhida e os dados do cartão. <br><br>O navegador com o certificado exibe um cadeado no momento da compra, mostrando desta forma que as informações inseridas estão seguras. Verifique este ícone \"cadeado fechado\" na parte inferior do seu monitor durante o seu pedido de compra na Technos. No site <a href=\"https://www.technos.com.br/\" data-mce-href=\"https://www.technos.com.br/\">https://www.technos.com.br</a>, o número do seu cartão de crédito é usado somente no processamento de compra, não sendo, de nenhuma forma, guardado nos arquivos depois da operação.<br><br>Possuímos certificados de segurança para garantir a maior segurança, confiabilidade e tranquilidade para os nossos clientes. Esta certificação e a blindagem do site significam que o site da Technos foi testado pelos mais rígidos padrões internacionais de segurança para a internet. Com isso, ao comprar no nosso site, você está protegido.<br><br></p></div></div>"
+    },
+    {
       "__resolveType": "Footer - 04"
     }
   ],
