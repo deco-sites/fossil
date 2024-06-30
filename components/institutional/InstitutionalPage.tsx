@@ -1,11 +1,10 @@
-import { asset, Head } from "$fresh/runtime.ts";
+import { Head } from "$fresh/runtime.ts";
 import { FnContext, SectionProps } from "deco/mod.ts";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import { HTML } from "./types.ts";
 import { useId } from "../../sdk/useId.ts";
 import Slider from "../ui/Slider.tsx";
 import SliderJS from "../../islands/SliderJS.tsx";
-
 
 interface Block {
   backgroundImage?: ImageWidget;
@@ -81,33 +80,13 @@ function InstitutionalPage(props: SectionProps<typeof loader>) {
         <style
           dangerouslySetInnerHTML={{
             __html: `
-
-                @font-face {
-                  font-family: "Gotham";
-                  src: url("${
-              asset("/font/Gotham-Light2.woff2")
-            }") format('woff2');
-                  font-weight: 300;
-                }
-                @font-face {
-                  font-family: "Gotham Book";
-                  src: url("${asset("/font/Gotham-Book2.eot")}") format('eot');
-                  font-weight: 400;
-                }
-                @font-face {
-                  font-family: "Gotham";
-                  src: url("${
-              asset("/font/Gotham-Bold2.woff2")
-            }") format('woff2');
-                  font-weight: 700;
-                }
                 .institucionalBanner>.content {
                   width: 100%;
                   max-width: 1150px;
                   margin-left: auto;
                   margin-right: auto;
                   display: table;
-                  font-family: Gotham;
+                  font-family: "soleil" , "sans-serif";
                   color: #FFF;
                   padding: 100px 0 72px
                }
@@ -170,7 +149,7 @@ function InstitutionalPage(props: SectionProps<typeof loader>) {
                     max-width: 1150px;
                     margin-left: auto;
                     margin-right: auto;
-                    font-family: Gotham;
+                    font-family: "soleil" , "sans-serif";
                     color: #000
                 }
                 .institucionallab>.content h2 {
@@ -190,7 +169,7 @@ function InstitutionalPage(props: SectionProps<typeof loader>) {
                 .institucionaltimeline {
                     display: table;
                     width: 100%;
-                    font-family: Gotham;
+                    font-family: "soleil" , "sans-serif";
                     color: #000;
                     margin-top: 72px
                 }
@@ -219,7 +198,7 @@ function InstitutionalPage(props: SectionProps<typeof loader>) {
                     display: table;
                     width: 100%;
                     height: 448px;
-                    font-family: Gotham;
+                    font-family: "soleil" , "sans-serif";
                     margin-top: 72px;
                     background-image: url(https://technos.vteximg.com.br/arquivos/slideinstitucional-lines.png);
                     background-repeat: no-repeat;

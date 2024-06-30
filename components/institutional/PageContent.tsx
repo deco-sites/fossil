@@ -43,7 +43,7 @@ function PageContent(props: SectionProps<ReturnType<typeof loader>>) {
           }
 
             p.paragf {
-              font-family: 'Montserrat', sans-serif;
+                font-family: "soleil" , "sans-serif";
               font-style: normal;
               font-weight: 400;
               font-size: 16px;
@@ -53,7 +53,7 @@ function PageContent(props: SectionProps<ReturnType<typeof loader>>) {
             }
 
             h1.header-text-intitucional {
-                font-family: 'Montserrat';
+                  font-family: "soleil" , "sans-serif";
                 font-style: normal;
                 font-weight: 700;
                 font-size: 35px;
@@ -65,7 +65,7 @@ function PageContent(props: SectionProps<ReturnType<typeof loader>>) {
             }
 
             h3.head-text {
-                font-family: 'Montserrat', sans-serif;
+                  font-family: "soleil" , "sans-serif";
                 font-style: normal;
                 font-weight: 700;
                 font-size: 16px;
@@ -94,7 +94,7 @@ function PageContent(props: SectionProps<ReturnType<typeof loader>>) {
             }
 
             .head-text-destaque {
-                font-family: 'Montserrat', sans-serif;
+                  font-family: "soleil" , "sans-serif";
                 font-style: normal;
                 font-weight: 700;
                 font-size: 18px;
@@ -130,7 +130,7 @@ function PageContent(props: SectionProps<ReturnType<typeof loader>>) {
 
 
             div.bloco-text-technos::-webkit-scrollbar-thumb {
-                background: #db0c22;
+                background: #262626;
             }
 
             ::-webkit-scrollbar-track {

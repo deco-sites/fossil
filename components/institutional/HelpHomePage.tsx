@@ -1,8 +1,6 @@
-
 import { Head } from "$fresh/runtime.ts";
 import Icon, { AvailableIcons } from "../ui/Icon.tsx";
 import { HTML } from "./types.ts";
-
 
 export interface Props {
   title: string;

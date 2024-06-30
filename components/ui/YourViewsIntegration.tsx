@@ -1,6 +1,7 @@
 const loadJQuery = () => {
   const script = document.createElement("script");
-  script.src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js";
+  script.src =
+    "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js";
   script.async = true;
   script.onload = () => {
     const init = () => {
@@ -17,7 +18,7 @@ const loadJQuery = () => {
       () =>
         typeof requestIdleCallback !== "undefined"
           ? requestIdleCallback(() => setTimeout(init, 2_500))
-          : setTimeout(init, 2_500)
+          : setTimeout(init, 2_500),
     );
   };
   document.head.appendChild(script);
@@ -28,7 +29,7 @@ addEventListener(
   () =>
     typeof requestIdleCallback !== "undefined"
       ? requestIdleCallback(() => setTimeout(loadJQuery, 1000))
-      : setTimeout(loadJQuery, 1000)
+      : setTimeout(loadJQuery, 1000),
 );
 
 function YourViewsIntegration() {
