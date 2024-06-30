@@ -1,5 +1,5 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
-import {Head } from "$fresh/runtime.ts";
+import { Head } from "$fresh/runtime.ts";
 import type { HTML } from "./types.ts";
 import { FnContext, SectionProps } from "deco/mod.ts";
 
@@ -30,7 +30,7 @@ function PolicyPage(props: SectionProps<typeof loader>) {
             __html: `
 
                 .containerInfo {
-                    font-family: sans-serif;
+                    font-family: "soleil" , "sans-serif";
                 }
 
                 .containerInfo h2{

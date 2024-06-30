@@ -1,4 +1,3 @@
-
 import { FnContext, SectionProps } from "deco/mod.ts";
 import { useState } from "preact/compat";
 import Icon, { AvailableIcons } from "../ui/Icon.tsx";

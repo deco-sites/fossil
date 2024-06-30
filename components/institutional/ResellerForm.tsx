@@ -4,11 +4,7 @@ import type { JSX } from "preact";
 import { useSignal } from "@preact/signals";
 
 import { FnContext, SectionProps } from "deco/mod.ts";
-import {
-  cnpjCpfMask,
-  phoneMask,
-  zipCodeMask,
-} from "./utils/mask.ts";
+import { cnpjCpfMask, phoneMask, zipCodeMask } from "./utils/mask.ts";
 import { invoke } from "../../runtime.ts";
 
 export interface Props {

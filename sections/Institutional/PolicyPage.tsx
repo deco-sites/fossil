@@ -1,4 +1,1 @@
-export {
-  default,
-  loader,
-} from "../../components/institutional/PolicyPage.tsx";
+export { default, loader } from "../../components/institutional/PolicyPage.tsx";
