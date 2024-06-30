@@ -178,7 +178,7 @@ function PageContent(props: SectionProps<ReturnType<typeof loader>>) {
         />
       </Head>
       <div
-        className={`conteiner-text-intitucional flex 
+        className={`conteiner-text-intitucional flex sm:py-16 py-4
         ${
           pageType == "Vertical"
             ? "flex-col sm:flex-col"
