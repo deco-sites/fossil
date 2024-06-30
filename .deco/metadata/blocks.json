@@ -386,10 +386,10 @@
     "__resolveType": "website/pages/Page.tsx"
   },
   "/.deco/blocks/pages-central-418877.json": {
-    "name": "central",
-    "path": "/central",
     "blockType": "pages",
-    "__resolveType": "website/pages/Page.tsx"
+    "__resolveType": "website/pages/Page.tsx",
+    "name": "Ajuda",
+    "path": "/ajuda"
   },
   "/.deco/blocks/pages-Nossas%2520Lojas-501704.json": {
     "name": "Nossas Lojas",
