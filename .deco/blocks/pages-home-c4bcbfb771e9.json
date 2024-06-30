@@ -169,7 +169,8 @@
           "desktop": 6
         },
         "headerAlignment": "center",
-        "headerfontSize": "Small"
+        "headerfontSize": "Small",
+        "showArrows": false
       },
       "cards": [
         {

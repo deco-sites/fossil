@@ -632,5 +632,11 @@
   "/.deco/blocks/Preview%20site%2Fsections%2FProduct%2FSearchResult.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Product/SearchResult.tsx"
+  },
+  "/.deco/blocks/pages-Pol%25C3%25ADtica%2520de%2520Seguran%25C3%25A7a-208958.json": {
+    "name": "Política de Segurança",
+    "path": "/institucional/politica-de-seguranca",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
