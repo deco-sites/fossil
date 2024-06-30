@@ -46,6 +46,7 @@ import * as $$$$$$33 from "./sections/Images/BannerGrid.tsx";
 import * as $$$$$$34 from "./sections/Images/Carousel.tsx";
 import * as $$$$$$35 from "./sections/Images/ImageGallery.tsx";
 import * as $$$$$$36 from "./sections/Images/ShoppableBanner.tsx";
+import * as $$$$$$58 from "./sections/institucional/PageContent.tsx";
 import * as $$$$$$37 from "./sections/Integrations/Zendesk.tsx";
 import * as $$$$$$38 from "./sections/ItWorks.tsx";
 import * as $$$$$$39 from "./sections/Links/LinkTree.tsx";
@@ -113,6 +114,7 @@ const manifest = {
     "site/sections/Images/Carousel.tsx": $$$$$$34,
     "site/sections/Images/ImageGallery.tsx": $$$$$$35,
     "site/sections/Images/ShoppableBanner.tsx": $$$$$$36,
+    "site/sections/institucional/PageContent.tsx": $$$$$$58,
     "site/sections/Integrations/Zendesk.tsx": $$$$$$37,
     "site/sections/ItWorks.tsx": $$$$$$38,
     "site/sections/Links/LinkTree.tsx": $$$$$$39,
