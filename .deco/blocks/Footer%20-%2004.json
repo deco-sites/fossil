@@ -18,7 +18,7 @@
     "items": [
       {
         "label": "Facebook",
-        "link": " https://www.facebook.com/Fossil"
+        "link": "https://www.facebook.com/FOSSILBR"
       },
       {
         "label": "XMark",
@@ -106,7 +106,7 @@
           "icon": {}
         },
         {
-          "href": "/central",
+          "href": "/ajuda",
           "label": "FAQ´s",
           "icon": {}
         },
@@ -139,7 +139,9 @@
       "items": [
         {
           "label": "atendimento@fossilstore.com.br",
-          "icon": {},
+          "icon": {
+            "label": "Email"
+          },
           "href": "/"
         }
       ],
@@ -168,30 +170,22 @@
     },
     "content": [
       {
-        "icon": {
-          "label": "Email"
-        },
+        "icon": {},
         "label": "Política de privacidade",
         "href": "/central"
       },
       {
-        "icon": {
-          "label": "Email"
-        },
+        "icon": {},
         "label": "Politica de Privacidade do App",
         "href": "https://www.fossilgroup.com/compliance/regulatory-compliance/?utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
       },
       {
-        "icon": {
-          "label": "Email"
-        },
+        "icon": {},
         "label": "Termos de Uso",
         "href": "https://www.fossil.com.br/us/en/customer-care/terms-of-use.html?&utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
       },
       {
-        "icon": {
-          "label": "Email"
-        },
+        "icon": {},
         "label": "Causa",
         "href": "/us/en/customer-care/terms-of-use.html?&utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
       },

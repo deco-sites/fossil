@@ -44,7 +44,7 @@
             },
             "__resolveType": "site/sections/Product/SearchResult.tsx",
             "startingPage": 1,
-            "isCollection": true
+            "isCollection": false
           },
           "rule": {
             "__resolveType": "website/matchers/always.ts"
