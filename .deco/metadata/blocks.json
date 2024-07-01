@@ -671,7 +671,7 @@
   },
   "/.deco/blocks/pages-Rastreie%2520seu%2520Pedido-939894.json": {
     "name": "Rastreie seu Pedido",
-    "path": "/example-path",
+    "path": "/institucional/rastreie-seu-pedido",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
   },
