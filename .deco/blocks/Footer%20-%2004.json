@@ -60,14 +60,29 @@
     {
       "items": [
         {
-          "href": "https://www.fossilgroup.com/?&utmi_p=_&utmi_pc=Html&utmi_cp=menu",
-          "label": "Grupo Fossil",
+          "label": "Política de Segurança",
+          "icon": {},
+          "href": "/institucional/politica-de-seguranca"
+        },
+        {
+          "label": "Política de Privacidade",
+          "href": "/institucional/politica-de-privacidade",
           "icon": {}
         },
         {
-          "label": "Reluatory Compliance",
-          "href": "https://www.fossilgroup.com/responsibility/regulatory-compliance/?&utmi_p=_&utmi_pc=Html&utmi_cp=menu",
-          "icon": {}
+          "icon": {},
+          "label": "Termos de Uso",
+          "href": "/institucional/termos-de-uso"
+        },
+        {
+          "icon": {},
+          "label": "Formas de Entrega",
+          "href": "/institucional/formas-de-entrega"
+        },
+        {
+          "icon": {},
+          "label": "Formas de Pagamento",
+          "href": "/institucional/formas-de-pagamento"
         }
       ],
       "children": [
@@ -88,7 +103,7 @@
           "label": "Trabalhe conosco"
         }
       ],
-      "label": "Quem Somos",
+      "label": "INSTITUCIONAL",
       "icon": {
         "label": "Email"
       }
@@ -96,24 +111,29 @@
     {
       "items": [
         {
-          "label": "Meus pedidos",
+          "label": "Ajuda",
           "icon": {},
-          "href": "/login?ReturnUrl=%2f_secure%2faccount#/orders"
+          "href": "/ajuda"
         },
         {
-          "href": "/nossas-lojas",
-          "label": "Onde encontrar",
+          "href": "/institucional/cupons-e-promocoes",
+          "label": "Cupons e Promoções",
           "icon": {}
         },
         {
-          "href": "/ajuda",
-          "label": "FAQ´s",
+          "href": "/institucional/rastreie-seu-pedido",
+          "label": "Rastreie seu Pedido",
           "icon": {}
         },
         {
-          "label": "Política de Devolução",
-          "href": "/central",
+          "label": "Trocas e Devoluções",
+          "href": "/institucional/trocas-e-devolucoes",
           "icon": {}
+        },
+        {
+          "icon": {},
+          "label": "Assistência Técnica",
+          "href": "/ajuda"
         }
       ],
       "children": [
@@ -130,7 +150,7 @@
           "label": "Troca e devolução"
         }
       ],
-      "label": "Fale Conosco ",
+      "label": "ATENDIMENTO",
       "icon": {
         "label": "Email"
       }
@@ -138,14 +158,24 @@
     {
       "items": [
         {
-          "label": "atendimento@fossilstore.com.br",
+          "label": "Meu Perfil",
+          "icon": {},
+          "href": "/account"
+        }
+      ],
+      "label": "MINHA CONTA"
+    },
+    {
+      "items": [
+        {
           "icon": {
             "label": "Email"
           },
+          "label": "atendimento@fossilstore.com.br",
           "href": "/"
         }
       ],
-      "label": "Atendimento",
+      "label": "CONTATO",
       "icon": {
         "label": "Phone"
       }
@@ -170,22 +200,30 @@
     },
     "content": [
       {
-        "icon": {},
+        "icon": {
+          "label": "Email"
+        },
         "label": "Política de privacidade",
         "href": "/central"
       },
       {
-        "icon": {},
+        "icon": {
+          "label": "Email"
+        },
         "label": "Politica de Privacidade do App",
         "href": "https://www.fossilgroup.com/compliance/regulatory-compliance/?utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
       },
       {
-        "icon": {},
+        "icon": {
+          "label": "Email"
+        },
         "label": "Termos de Uso",
         "href": "https://www.fossil.com.br/us/en/customer-care/terms-of-use.html?&utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
       },
       {
-        "icon": {},
+        "icon": {
+          "label": "Email"
+        },
         "label": "Causa",
         "href": "/us/en/customer-care/terms-of-use.html?&utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
       },
