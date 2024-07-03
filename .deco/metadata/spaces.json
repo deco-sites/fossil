@@ -1934,7 +1934,8 @@
           "width": 30,
           "id": "%2F.deco%2Fblocks%2Fpages-Rastreie%252520seu%252520Pedido-939894.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": null
           }
         },
         "%2F.deco%2Fblocks%2Fpages-Rastreie%252520seu%252520Pedido-939894.json::Preview::visibility::Preview::%7B%7D": {
@@ -2264,7 +2265,8 @@
           "width": 30,
           "id": "%2F.deco%2Fblocks%2Fpages-Pol%2525C3%2525ADtica%252520de%252520Seguran%2525C3%2525A7a-208958.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": null
           }
         },
         "%2F.deco%2Fblocks%2Fpages-Pol%2525C3%2525ADtica%252520de%252520Seguran%2525C3%2525A7a-208958.json::Preview::visibility::Preview::%7B%7D": {
@@ -2386,7 +2388,8 @@
           "width": 30,
           "id": "%2F.deco%2Fblocks%2Fpages-%252520Politica%252520de%252520Privacidade-632912.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": null
           }
         },
         "%2F.deco%2Fblocks%2Fpages-%252520Politica%252520de%252520Privacidade-632912.json::Preview::visibility::Preview::%7B%7D": {
