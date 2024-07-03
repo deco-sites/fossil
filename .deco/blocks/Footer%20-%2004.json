@@ -61,36 +61,26 @@
       "items": [
         {
           "label": "Política de Segurança",
-          "icon": {
-            "label": "Email"
-          },
+          "icon": {},
           "href": "/institucional/politica-de-seguranca"
         },
         {
           "label": "Política de Privacidade",
           "href": "/institucional/politica-de-privacidade",
-          "icon": {
-            "label": "Email"
-          }
+          "icon": {}
         },
         {
-          "icon": {
-            "label": "Email"
-          },
+          "icon": {},
           "label": "Termos de Uso",
           "href": "/institucional/termos-de-uso"
         },
         {
-          "icon": {
-            "label": "Email"
-          },
+          "icon": {},
           "label": "Formas de Entrega",
           "href": "/institucional/formas-de-entrega"
         },
         {
-          "icon": {
-            "label": "Email"
-          },
+          "icon": {},
           "label": "Formas de Pagamento",
           "href": "/institucional/formas-de-pagamento"
         }
@@ -122,36 +112,26 @@
       "items": [
         {
           "label": "Ajuda",
-          "icon": {
-            "label": "Email"
-          },
+          "icon": {},
           "href": "/ajuda"
         },
         {
           "href": "/institucional/cupons-e-promocoes",
           "label": "Cupons e Promoções",
-          "icon": {
-            "label": "Email"
-          }
+          "icon": {}
         },
         {
           "href": "/institucional/rastreie-seu-pedido",
           "label": "Rastreie seu Pedido",
-          "icon": {
-            "label": "Email"
-          }
+          "icon": {}
         },
         {
           "label": "Trocas e Devoluções",
           "href": "/institucional/trocas-e-devolucoes",
-          "icon": {
-            "label": "Email"
-          }
+          "icon": {}
         },
         {
-          "icon": {
-            "label": "Email"
-          },
+          "icon": {},
           "label": "Assistência Técnica",
           "href": "/ajuda"
         }
@@ -179,9 +159,7 @@
       "items": [
         {
           "label": "Meu Perfil",
-          "icon": {
-            "label": "Email"
-          },
+          "icon": {},
           "href": "/account"
         }
       ],
@@ -222,7 +200,9 @@
     },
     "content": [
       {
-        "icon": {},
+        "icon": {
+          "label": "Email"
+        },
         "label": "Política de privacidade",
         "href": "/institucional/politica-de-privacidade"
       },
