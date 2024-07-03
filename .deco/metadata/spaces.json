@@ -1565,7 +1565,8 @@
           "width": 30,
           "id": "%2F.deco%2Fblocks%2Fpages-Trocas%252520e%252520Devolu%2525C3%2525A7%2525C3%2525B5es-129467.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": null
           }
         },
         "%2F.deco%2Fblocks%2Fpages-Trocas%252520e%252520Devolu%2525C3%2525A7%2525C3%2525B5es-129467.json::Preview::visibility::Preview::%7B%7D": {
@@ -1687,7 +1688,8 @@
           "width": 30,
           "id": "%2F.deco%2Fblocks%2Fpages-Cupons%252520e%252520Promo%2525C3%2525A7%2525C3%2525B5es-717660.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": null
           }
         },
         "%2F.deco%2Fblocks%2Fpages-Cupons%252520e%252520Promo%2525C3%2525A7%2525C3%2525B5es-717660.json::Preview::visibility::Preview::%7B%7D": {
@@ -1809,7 +1811,8 @@
           "width": 30,
           "id": "%2F.deco%2Fblocks%2Fpages-Formas%252520de%252520Pagamento-440809.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": null
           }
         },
         "%2F.deco%2Fblocks%2Fpages-Formas%252520de%252520Pagamento-440809.json::Preview::world::Preview::%7B%7D": {
@@ -1931,7 +1934,8 @@
           "width": 30,
           "id": "%2F.deco%2Fblocks%2Fpages-Rastreie%252520seu%252520Pedido-939894.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": null
           }
         },
         "%2F.deco%2Fblocks%2Fpages-Rastreie%252520seu%252520Pedido-939894.json::Preview::world::Preview::%7B%7D": {
@@ -2053,7 +2057,8 @@
           "width": 30,
           "id": "%2F.deco%2Fblocks%2Fpages-Formas%252520de%252520Entrega-650021.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": null
           }
         },
         "%2F.deco%2Fblocks%2Fpages-Formas%252520de%252520Entrega-650021.json::Preview::world::Preview::%7B%7D": {
