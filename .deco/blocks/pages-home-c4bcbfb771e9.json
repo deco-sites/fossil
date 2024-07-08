@@ -27,28 +27,28 @@
       "images": [
         {
           "action": {
-            "href": "/feminino"
+            "href": "/relogio/masculino?PS=18&O=OrderByReleaseDateDESC"
           },
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/b05333c3-8659-4135-9e06-6a63e1b9bdcb",
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/52e851c1-7c15-440f-8fa8-2b4ee033edd5",
-          "alt": "Presente pra ele"
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8c4a5b80-ef9a-4974-8aa8-20c0d19f757a",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/e2a61a9c-af4d-4a76-b168-e48ede5a3a0a",
+          "alt": "Relógios Masculinos"
         },
         {
           "action": {
-            "href": "/",
+            "href": "/relogio/feminino?PS=18&O=OrderByReleaseDateDESC"
+          },
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/dad3fb3f-1603-40d8-84e7-f309c4da196d",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/d2352af5-093d-409e-9898-9dcf86d24339",
+          "alt": "Relógios Femininos"
+        },
+        {
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/d979a618-7686-4075-a7c4-826ef08533f4",
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/f3c890f6-3ef1-4852-8543-0f12aa83270f",
+          "action": {
+            "href": "/acessoriosfemininos",
             "title": " "
           },
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/2b1c2b8c-4e0b-4da7-985b-4175cc1514de",
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/a50df16c-0beb-4cf5-82ea-e3aa972ddc6c",
-          "alt": "presente para ela "
-        },
-        {
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/98a20ffb-e927-4725-a4c6-034da28fbd79",
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/ce893d0c-40b7-4352-a8c9-fc32140b2dbf",
-          "action": {
-            "href": "/"
-          },
-          "alt": "presentes para ele"
+          "alt": "Semi joias"
         }
       ],
       "preload": true,
@@ -113,25 +113,25 @@
       },
       "list": [
         {
-          "image": "https://timecenter.vteximg.com.br/arquivos/ids/220639/Banner_secundario_masci(610x400).png?v=638500849747300000",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/6ebe3551-b604-4cbb-8e48-37a34479b299",
           "label": "Masculinos",
           "buttonText": "CONHEÇA",
           "href": "/relogio/masculino"
         },
         {
-          "image": "https://timecenter.vteximg.com.br/arquivos/ids/220640/Banner_secundario_femi(610x400).png?v=638500849990230000",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/e2e7052a-dd3c-4ed8-b76b-a25bd1bc8bc7",
           "label": "Femininos",
           "buttonText": " ENCANTE-SE",
           "href": "/relogio/feminino"
         },
         {
-          "image": "https://timecenter.vteximg.com.br/arquivos/ids/219840/Banner_secundario_semijoias(610x400).png?v=638500850173100000",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/85d8f53e-34a4-43b5-9f6e-b8e59330a56f",
           "label": "Semi Joia",
           "buttonText": " CONHEÇA",
           "href": "/2321?PS=12&map=productClusterIds&O=OrderByReleaseDateDESC&utmi_p=_&utmi_pc=Banner%3aBanner+Secund%c3%a1rio+3+-+Imagem&utmi_cp=semi+joia"
         },
         {
-          "image": "https://timecenter.vteximg.com.br/arquivos/ids/219839/Banner_secundario_bolsas(610x400).png?v=638500850465300000",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/20c8e0a6-f970-4fc6-84cf-388695fb98f1",
           "label": "Bolsas em Couro",
           "href": "/bolsasfemininas?&utmi_p=_&utmi_pc=Banner%3aBanner+Secund%c3%a1rio+4+-+Ima",
           "buttonText": "ESCOLHA O SEU"
@@ -143,18 +143,18 @@
     },
     {
       "__resolveType": "site/sections/Content/BannerFossil.tsx",
-      "desktopImage": "https://timecenter.vteximg.com.br/arquivos/ids/219841/banner_terc_desk_carteiras(1230x400).png?v=638500851225570000",
+      "desktopImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/22a14e9e-3882-4189-bbe4-c633273e1dbf",
       "desktopImageDimensions": {
         "width": 1230,
         "height": 400
       },
       "alt": "Banner Terciário ",
-      "mobileImage": "https://timecenter.vteximg.com.br/arquivos/ids/220642/banner_terc_mob_carteiras(380x250).png?v=638500852001000000",
+      "mobileImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/e396c53f-e5b1-4b8a-a182-2a674efc74d3",
       "mobileImageDimensions": {
         "width": 380,
         "height": 250
       },
-      "url": "/carteira?&utmi_p=_Sistema_buscavazia&utmi_pc=BuscaFullText&utmi_cp=carteira&utmi_p=_&utmi_pc=Banner%3aBanner+terci%c3%a1rio+-+mobile&utmi_cp=Carteira",
+      "url": "/bolsasmasculinas",
       "button": {
         "label": "LANÇAMENTOS",
         "href": "/lancamentos"
