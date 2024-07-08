@@ -1,1 +1,69 @@
-{"banners":[{"image":{"mobile":"https://timecenter.vteximg.com.br/arquivos/ids/217166/FS5666_HP%20Duplos_390x160px.jpg?v=638277217328500000","desktop":"https://timecenter.vteximg.com.br/arquivos/ids/217182/FS5666_Desktop%20Lanc%C2%B8amentos_1920x240px.jpg?v=638277217592530000","alt":"Banner Relógio Masculino"},"matcher":"/relogio/masculino*"},{"image":{"desktop":"https://timecenter.vteximg.com.br/arquivos/ids/217179/ES5217_Desktop%20Lanc%C2%B8amentos_1920x240px.jpg?v=638277217952370000","mobile":"https://timecenter.vteximg.com.br/arquivos/ids/217167/ES4301_HP%20Duplos_390x160px.jpg?v=638277219014870000","alt":"Banner Relógios Femininos"},"matcher":"/relogio/feminino*"},{"image":{"desktop":"https://timecenter.vteximg.com.br/arquivos/ids/219770/bannerdepart_feitopara(1920x240).png?v=638439717438100000","mobile":"https://timecenter.vteximg.com.br/arquivos/ids/219771/banner_depart_mob_feitopara(360x180).png?v=638439717680630000","alt":"Banner Lançamentos"},"matcher":"/lancamentos*"},{"image":{"desktop":"https://timecenter.vteximg.com.br/arquivos/ids/219766/bannerdepart_off(1920x240).png?v=638439709711270000","mobile":"https://timecenter.vteximg.com.br/arquivos/ids/219767/banner_depart_mob_off(360x180).png?v=638439709935200000","alt":"Banner Off "},"matcher":"/off*"},{"image":{"desktop":"https://timecenter.vteximg.com.br/arquivos/ids/220155/Bolsa%20masc%20copiar.png?v=638465683887100000","mobile":"https://timecenter.vteximg.com.br/arquivos/ids/220156/Bolsa%20Masculina.png?v=638465684170030000","alt":"Banner Bolsas Masculinas"},"matcher":"/bolsasmasculinas*"},{"image":{"desktop":"https://timecenter.vteximg.com.br/arquivos/ids/220153/Bolsa%20Feminina.png?v=638465672371030000","mobile":"https://timecenter.vteximg.com.br/arquivos/ids/220154/Bolsa%20feminina%20(1).png?v=638465672568700000","alt":"Banner Bolsas femininas"},"matcher":"/bolsasfemininas*"},{"image":{"mobile":"https://timecenter.vteximg.com.br/arquivos/ids/220158/Acessorios%20Fem.png?v=638465682709170000","desktop":"https://timecenter.vteximg.com.br/arquivos/ids/220157/Acessorios%20Fem%20(1).png?v=638465683015600000","alt":"Banner Semi Joias"},"matcher":"/acessoriosfemininos*"},{"image":{"desktop":"https://timecenter.vteximg.com.br/arquivos/ids/220159/Acessorios%20Masc.png?v=638465685335030000","mobile":"https://timecenter.vteximg.com.br/arquivos/ids/220160/Acessorios%20Masc%20(1).png?v=638465685454830000","alt":"Banner acessorios masculinos"},"matcher":"/acessoriosmasculinos*"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"}
+{
+  "banners": [
+    {
+      "image": {
+        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/b599c83c-d78f-4d4c-bdcc-168a261a9f90",
+        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/a536c58e-9a52-48d9-aa54-656b516c7285",
+        "alt": "Banner Relógio Masculino"
+      },
+      "matcher": "/relogio/masculino*"
+    },
+    {
+      "image": {
+        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/2e6a4809-ee3e-4877-b495-7f7e0a722e21",
+        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/7fae8c74-ff40-4e2e-bdea-d16212c1b22a",
+        "alt": "Banner Relógios Femininos"
+      },
+      "matcher": "/relogio/feminino*"
+    },
+    {
+      "image": {
+        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/7e3eb60c-d12b-4762-ae68-d1468ddd3192",
+        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/388c15d4-c72e-4682-b8ee-e2ba9e0a3f9a",
+        "alt": "Banner Lançamentos"
+      },
+      "matcher": "/lancamentos*"
+    },
+    {
+      "image": {
+        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/e1df9e9d-1379-47d0-898d-61bfec379fcf",
+        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/4cb1d2a6-ca6f-4ca0-8695-2d72433fd518",
+        "alt": "Banner Off "
+      },
+      "matcher": "/off*"
+    },
+    {
+      "image": {
+        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/827ee984-f175-4460-bd0b-3debe0574912",
+        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/91d2e193-4c40-45b0-a5f9-8a404c93fcf8",
+        "alt": "Banner Bolsas Masculinas"
+      },
+      "matcher": "/bolsasmasculinas*"
+    },
+    {
+      "image": {
+        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/0658f091-8bd5-458d-8f32-a934b9011a35",
+        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/d173ffe4-a223-4913-b411-858f66dd781e",
+        "alt": "Banner Bolsas femininas"
+      },
+      "matcher": "/bolsasfemininas*"
+    },
+    {
+      "image": {
+        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/11c08773-0ecc-41da-8f86-b5a8660b4f81",
+        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/61cc77d8-5c29-4321-9738-3ec4486ca74e",
+        "alt": "Banner Semi Joias"
+      },
+      "matcher": "/acessoriosfemininos*"
+    },
+    {
+      "image": {
+        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/b5825658-9725-46ec-838f-35d833731774",
+        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/cb6ddb03-2d8d-470e-8163-70637817cb7d",
+        "alt": "Banner acessorios masculinos"
+      },
+      "matcher": "/acessoriosmasculinos*"
+    }
+  ],
+  "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+}
