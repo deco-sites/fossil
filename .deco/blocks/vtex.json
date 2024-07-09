@@ -16,7 +16,7 @@
     "channelPrivacy": "public",
     "channel": "15"
   },
-  "publicUrl": "www.fossil.com.br",
   "salesChannel": "15",
-  "usePortalSitemap": false
+  "usePortalSitemap": false,
+  "publicUrl": "secure.fossil.com.br"
 }
