@@ -175,26 +175,26 @@
       "cards": [
         {
           "Image": "https://www.fossil.com.br/arquivos/men-gold-tone-watch.jpg?v=638253915301130000",
-          "alt": "Relógio de Ouro para  Homensa",
+          "alt": "Relógio de Ouro para  Homens",
           "action": {
             "href": "/relogio/masculino/dourado",
-            "title": "Relógio Masculino Ouro",
-            "label": "Masculino Ouro"
+            "title": "Relógios Masculinos Dourados",
+            "label": "Relógios Masculinos Dourados"
           }
         },
         {
           "Image": "https://www.fossil.com.br/arquivos/men-black-tone-watch.jpg?v=638253915297830000",
           "action": {
-            "title": "Relógio Masculino Preto",
+            "title": "Relógios Masculinos Pretos",
             "href": "/relogio/masculino/preto",
-            "label": "Masculino Preto"
+            "label": "Relógios Masculinos Pretos"
           },
-          "alt": "Relógio preto para homen. "
+          "alt": "Relógio preto para homem "
         },
         {
           "action": {
-            "title": "Relógio Masculino Prata",
-            "label": " Masculino Prata",
+            "title": "Relógios Masculinos Prateados",
+            "label": "Relógios Masculinos Prateados",
             "href": "/relogio/masculino/prata"
           },
           "Image": "https://www.fossil.com.br/arquivos/men-silver-tone-watch.jpg?v=638253915307570000",
@@ -203,16 +203,16 @@
         {
           "Image": "https://fossil.vteximg.com.br/arquivos/women-gold-tone-watch.jpg?v=638253915310530000",
           "action": {
-            "title": "Relógio Feminino Ouro",
-            "label": " Feminino Ouro",
+            "title": "Relógios Femininos Dourados",
+            "label": "Relógios Femininos Dourados",
             "href": "/relogio/feminino/dourado"
           },
           "alt": "Relógio de Ouro feminino"
         },
         {
           "action": {
-            "title": "Relógio Feminino Preto",
-            "label": "Feminino Preto",
+            "title": "Relógios Femininos Bicolores",
+            "label": "Relógios Femininos Bicolores",
             "href": "/relogio/feminino/bicolor"
           },
           "Image": "https://www.fossil.com.br/arquivos/women-black-tone-watch.jpg?v=638253915308570000",
@@ -221,8 +221,8 @@
         {
           "Image": "https://fossil.vteximg.com.br/arquivos/men-rosegold-tone-watch.jpg?v=638253915305200000",
           "action": {
-            "title": "Relógio Feminino Rose Gold",
-            "label": "Feminino Rose Gold",
+            "title": "Relógios Femininos Rosés",
+            "label": "Relógios Femininos Rosés",
             "href": "/relogio/feminino/rose"
           },
           "alt": "Relógio  Rose Gold para as mulheres"
