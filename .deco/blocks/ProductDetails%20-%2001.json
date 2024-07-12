@@ -1,0 +1,13 @@
+{
+  "__resolveType": "site/sections/Product/ProductDetails.tsx",
+  "page": {
+    "__resolveType": "PDP Loader"
+  },
+  "flagDiscount": {
+    "image": "https://fossil.vteximg.com.br/arquivos/logo-flag-produtos-ame-preto.svg",
+    "description": "<p>Receba<strong> R$ 77,45 </strong>de volta pagando com Ame</p>"
+  },
+  "sizeChartLink": {
+    "url": "https://www.technos.com.br/api/dataentities/MI/documents/405a6e7f-cce7-11ed-83ab-02f9c48fe6b5/file/attachments/GuiaDeMedidasTechnos.pdf"
+  }
+}

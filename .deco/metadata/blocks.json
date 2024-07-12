@@ -680,5 +680,21 @@
     "path": "/institucional/trocas-e-devolucoes",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/ProductDetails%20-%2001.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Product/ProductDetails.tsx"
+  },
+  "/.deco/blocks/SeoPLP.json": {
+    "blockType": "sections",
+    "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+  },
+  "/.deco/blocks/SEOv2-01.json": {
+    "blockType": "sections",
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "/.deco/blocks/SeoPDP.json": {
+    "blockType": "sections",
+    "__resolveType": "commerce/sections/Seo/SeoPDPV2.tsx"
   }
 }

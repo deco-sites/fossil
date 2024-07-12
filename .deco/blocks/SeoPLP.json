@@ -1,0 +1,9 @@
+{
+  "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
+  "jsonLD": {
+    "__resolveType": "PLP Loader"
+  },
+  "titleTemplate": "%s",
+  "descriptionTemplate": "%s",
+  "type": "website"
+}

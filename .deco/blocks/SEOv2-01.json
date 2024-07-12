@@ -1,0 +1,11 @@
+{
+  "__resolveType": "website/sections/Seo/SeoV2.tsx",
+  "title": "fossil",
+  "titleTemplate": "Fossil | Site Oficial no Brasil",
+  "description": "Acesse a loja oficial Fossil e conheça nosso catálogo de relógios, bolsas e acessórios. Tendência, design e exclusividade você encontra aqui.",
+  "descriptionTemplate": "Acesse a loja oficial Fossil e conheça nosso catálogo de relógios, bolsas e acessórios. Tendência, design e exclusividade você encontra aqui.",
+  "type": "website",
+  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8db83d98-a44e-4366-9acc-432477aa2afd",
+  "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/4a9c2cba-77fb-4dab-aa17-89d675b9188b",
+  "jsonLDs": []
+}

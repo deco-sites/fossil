@@ -3,10 +3,7 @@
   "path": "/Sistema/buscavazia",
   "sections": [
     {
-      "type": "website",
-      "__resolveType": "website/sections/Seo/Seo.tsx",
-      "titleTemplate": "%s | Deco.cx",
-      "descriptionTemplate": "%s | Deco.cx"
+      "__resolveType": "SEOv2-01"
     },
     {
       "__resolveType": "Header - 01"

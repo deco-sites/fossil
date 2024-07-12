@@ -6,8 +6,7 @@
       "__resolveType": "Fashion theme"
     },
     {
-      "__resolveType": "website/sections/Seo/Seo.tsx",
-      "noIndexing": false
+      "__resolveType": "SEOv2-01"
     },
     {
       "__resolveType": "Header - 01"

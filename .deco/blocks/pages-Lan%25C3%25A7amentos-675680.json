@@ -2,10 +2,7 @@
   "path": "/acessorios",
   "sections": [
     {
-      "type": "website",
-      "__resolveType": "website/sections/Seo/Seo.tsx",
-      "titleTemplate": "%s | Deco.cx",
-      "descriptionTemplate": "%s | Deco.cx"
+      "__resolveType": "SeoPLP"
     },
     {
       "__resolveType": "Header - 01"
