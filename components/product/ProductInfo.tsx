@@ -167,7 +167,7 @@ function ProductInfo(
             <p class="text-sm mt-3 text-primary tracking-one font-arial">
               ou {installments.billingDuration} x de{"  "}
               <span class="font-bold text-primary">
-                R$ {installments.billingIncrement} {" "}
+                { formatPrice (installments.billingIncrement, offers?.priceCurrency)} {" "}
               </span>
             </p>
           )}
