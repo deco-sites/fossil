@@ -42,7 +42,10 @@
       "__resolveType": "Preview /sections/Content/YourViewsIntegration.tsx"
     },
     {
-      "__resolveType": "SeoPDP"
+      "__resolveType": "commerce/sections/Seo/SeoPDPV2.tsx",
+      "jsonLD": {
+        "__resolveType": "PDP Loader"
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
