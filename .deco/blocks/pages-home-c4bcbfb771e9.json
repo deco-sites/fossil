@@ -39,6 +39,14 @@
           "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/ee814de6-8b61-41fc-8131-9fd2a9233371",
           "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/c72675da-a8ba-41a1-8d29-7d100244d66b",
           "alt": "Sport Tourer"
+        },
+        {
+          "action": {
+            "href": "/s?q=carteira&utmi_pc=search&utmi_cp=carteira"
+          },
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/1c93dd57-4a45-4a85-a4b7-7230fa4a34b6",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/cc14d001-fb04-43ca-88ac-be3d723bb5af",
+          "alt": "Carteira"
         }
       ],
       "preload": true,
