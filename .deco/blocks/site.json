@@ -16,7 +16,13 @@
   "global": [
     {
       "__resolveType": "website/sections/Analytics/Analytics.tsx",
-      "dangerouslyRunOnMainThread": true
+      "dangerouslyRunOnMainThread": true,
+      "googleAnalyticsIds": [
+        "G-TD25NCMPDS"
+      ],
+      "trackingIds": [
+        "GTM-TQCHNQ"
+      ]
     },
     {
       "__resolveType": "site/sections/Integrations/Zendesk.tsx"

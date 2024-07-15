@@ -28,26 +28,17 @@
           "action": {
             "href": "/relogio/masculino?PS=18&O=OrderByReleaseDateDESC"
           },
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8c4a5b80-ef9a-4974-8aa8-20c0d19f757a",
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/e2a61a9c-af4d-4a76-b168-e48ede5a3a0a",
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/62803efa-aaa0-4fd6-8253-a0562f513e6b",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/4b092998-4e47-4626-8baf-78bd0715a314",
           "alt": "Relógios Masculinos"
         },
         {
           "action": {
-            "href": "/relogio/feminino?PS=18&O=OrderByReleaseDateDESC"
+            "href": "/s?q=sport%20tourer&utmi_pc=search&utmi_cp=sport%20tourer"
           },
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/dad3fb3f-1603-40d8-84e7-f309c4da196d",
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/d2352af5-093d-409e-9898-9dcf86d24339",
-          "alt": "Relógios Femininos"
-        },
-        {
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/d979a618-7686-4075-a7c4-826ef08533f4",
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/f3c890f6-3ef1-4852-8543-0f12aa83270f",
-          "action": {
-            "href": "/acessoriosfemininos",
-            "title": " "
-          },
-          "alt": "Semi joias"
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/ee814de6-8b61-41fc-8131-9fd2a9233371",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/c72675da-a8ba-41a1-8d29-7d100244d66b",
+          "alt": "Sport Tourer"
         }
       ],
       "preload": true,
