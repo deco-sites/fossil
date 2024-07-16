@@ -63,6 +63,14 @@
         "alt": "Banner acessorios masculinos"
       },
       "matcher": "/acessoriosmasculinos*"
+    },
+    {
+      "image": {
+        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/adec49c1-2ce7-4372-9be5-a72c820fab07",
+        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/4e455c41-418e-4782-89fd-c4670f88dc14",
+        "alt": "Banner Livelo"
+      },
+      "matcher": "/livelo*"
     }
   ],
   "__resolveType": "site/sections/Category/CategoryBanner.tsx"
