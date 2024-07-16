@@ -696,5 +696,11 @@
   "/.deco/blocks/SeoPDP.json": {
     "blockType": "sections",
     "__resolveType": "commerce/sections/Seo/SeoPDPV2.tsx"
+  },
+  "/.deco/blocks/pages-Livelo-87909.json": {
+    "name": "Livelo",
+    "path": "/livelo",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }

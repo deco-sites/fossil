@@ -1,0 +1,63 @@
+{
+  "path": "/livelo",
+  "sections": [
+    {
+      "__resolveType": "SeoPLP"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "Category Banner - 01"
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "page": {
+              "__resolveType": "commerce/loaders/product/extensions/listingPage.ts",
+              "data": {
+                "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                "sort": "release:desc",
+                "fuzzy": "automatic",
+                "selectedFacets": [
+                  {
+                    "key": "productClusterIds",
+                    "value": "2256"
+                  }
+                ],
+                "count": 17
+              },
+              "extensions": []
+            },
+            "layout": {
+              "columns": {
+                "mobile": 2,
+                "desktop": 3
+              },
+              "variant": "aside"
+            },
+            "__resolveType": "site/sections/Product/SearchResult.tsx",
+            "startingPage": 1,
+            "isCollection": false
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer - 04"
+    },
+    {
+      "__resolveType": "YourViewsIntegration"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx",
+  "name": "Livelo"
+}
