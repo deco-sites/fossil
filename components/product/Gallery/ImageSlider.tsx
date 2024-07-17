@@ -44,7 +44,7 @@ export default function GallerySlider(props: Props) {
     <div class="float-left w-[48%] relative max-sm:w-auto max-lg:flex max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:w-full">
       {listPrice && price &&
         Math.round(((listPrice - price) / listPrice) * 100) > 0 && (
-        <span class="w-10 h-10 flex absolute top-1/4 right-0 font-scoutCond z-20 items-center group-hover/discount:z-0 justify-center text-center text-2xl font-medium bg-[#d20d17] text-white rounded-[100px]">
+        <span class="w-10 h-10 flex absolute top-0 right-0 font-scoutCond z-20 items-center group-hover/discount:z-0 justify-center text-center text-2xl font-medium bg-[#d20d17] text-white rounded-[100px]">
           OFF
         </span>
       )}
