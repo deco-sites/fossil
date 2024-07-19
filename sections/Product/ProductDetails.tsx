@@ -11,7 +11,7 @@ export interface FlagDiscount {
   /**@description  " ex : AME" */
   image: ImageWidget;
 
-  /** @format html */
+  /** @format rich-text */
   /** @title ex: Receba R$ 77,45 de volta pagando com Ame  */
   description: string;
 }

@@ -1,5 +1,5 @@
 /**
- * @format html
+ * @format rich-text
  */
 export type HTML = string;
 
