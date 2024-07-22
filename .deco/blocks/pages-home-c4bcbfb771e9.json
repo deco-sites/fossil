@@ -34,7 +34,7 @@
         },
         {
           "action": {
-            "href": "/masculino?sort=release%3Adesc"
+            "href": "relogio/masculino?sort=release%3Adesc"
           },
           "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/f9170bd7-d2da-46e0-98ea-b0554fc18e76",
           "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/88fc132b-4507-400c-aeda-8e0e77522348",
