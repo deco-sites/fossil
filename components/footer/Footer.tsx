@@ -61,7 +61,7 @@ export interface RegionOptions {
 export interface NewsletterForm {
   placeholder?: string;
   buttonText?: string;
-  /** @format html */
+  /** @format rich-text */
   helpText?: string;
 }
 

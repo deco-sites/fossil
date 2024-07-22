@@ -4,7 +4,7 @@ import { clx } from "../../sdk/clx.ts";
 
 export interface Question {
   question: string;
-  /** @format html */
+  /** @format rich-text */
   answer: string;
 }
 
