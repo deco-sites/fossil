@@ -50,7 +50,7 @@
         }
       ],
       "preload": true,
-      "interval": 4
+      "interval": 5
     },
     {
       "__resolveType": "site/sections/Product/ProductShelf.tsx",
