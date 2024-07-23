@@ -65,7 +65,7 @@
       },
       "products": {
         "props": {
-          "sort": "price:desc",
+          "sort": "",
           "count": 20,
           "collection": "2378"
         },
