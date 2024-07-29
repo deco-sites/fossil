@@ -104,9 +104,7 @@
         }
       ],
       "label": "INSTITUCIONAL",
-      "icon": {
-        "label": "Email"
-      }
+      "icon": {}
     },
     {
       "items": [
@@ -127,7 +125,7 @@
         },
         {
           "label": "Trocas e Devoluções",
-          "href": "/institucional/trocas-e-devolucoes",
+          "href": "https://grupotechnos.troquefacil.com.br/",
           "icon": {}
         },
         {
@@ -151,9 +149,7 @@
         }
       ],
       "label": "ATENDIMENTO",
-      "icon": {
-        "label": "Email"
-      }
+      "icon": {}
     },
     {
       "items": [
@@ -186,51 +182,37 @@
       "href": "http://www.google.com",
       "link": "http://www.google.com/",
       "label": "Política de privacidade",
-      "icon": {
-        "label": "Email"
-      }
+      "icon": {}
     },
     "1": {
       "href": "http://www.google.com",
       "link": "http://www.google.com",
       "label": "Termos de serviço",
-      "icon": {
-        "label": "Email"
-      }
+      "icon": {}
     },
     "content": [
       {
-        "icon": {
-          "label": "Email"
-        },
+        "icon": {},
         "label": "Política de privacidade",
         "href": "/institucional/politica-de-privacidade"
       },
       {
-        "icon": {
-          "label": "Email"
-        },
+        "icon": {},
         "label": "Politica de Privacidade do App",
         "href": "https://www.fossilgroup.com/compliance/regulatory-compliance/?utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
       },
       {
-        "icon": {
-          "label": "Email"
-        },
+        "icon": {},
         "label": "Termos de Uso",
         "href": "https://www.fossil.com.br/us/en/customer-care/terms-of-use.html?&utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
       },
       {
-        "icon": {
-          "label": "Email"
-        },
+        "icon": {},
         "label": "Causa",
         "href": "/us/en/customer-care/terms-of-use.html?&utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
       },
       {
-        "icon": {
-          "label": "Email"
-        },
+        "icon": {},
         "label": "Lojas",
         "href": "/nossas-lojas"
       }
