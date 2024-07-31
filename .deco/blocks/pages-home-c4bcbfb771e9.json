@@ -119,27 +119,27 @@
       },
       "list": [
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/6ebe3551-b604-4cbb-8e48-37a34479b299",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/1f1e43f8-890d-44cb-863e-74905032c852",
           "label": "Masculinos",
           "buttonText": "CONHEÇA",
           "href": "/relogio/masculino"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/e2e7052a-dd3c-4ed8-b76b-a25bd1bc8bc7",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/18857c5f-11bb-4144-bdc5-c7472c7e97f6",
           "label": "Femininos",
           "buttonText": " ENCANTE-SE",
           "href": "/relogio/feminino"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/85d8f53e-34a4-43b5-9f6e-b8e59330a56f",
-          "label": "Semi Joia",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8b53088f-073b-414c-bed9-5e05913d821d",
+          "label": "Carteira Masculina",
           "buttonText": " CONHEÇA",
-          "href": "/2321?PS=12&map=productClusterIds&O=OrderByReleaseDateDESC&utmi_p=_&utmi_pc=Banner%3aBanner+Secund%c3%a1rio+3+-+Imagem&utmi_cp=semi+joia"
+          "href": "/acessoriosmasculinos"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/20c8e0a6-f970-4fc6-84cf-388695fb98f1",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/1d00df82-ce01-4ea5-b422-f9eb47f3b84d",
           "label": "Bolsas em Couro",
-          "href": "/bolsasfemininas?&utmi_p=_&utmi_pc=Banner%3aBanner+Secund%c3%a1rio+4+-+Ima",
+          "href": "/bolsasmasculinas",
           "buttonText": "ESCOLHA O SEU"
         }
       ],
@@ -149,18 +149,18 @@
     },
     {
       "__resolveType": "site/sections/Content/BannerFossil.tsx",
-      "desktopImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/22a14e9e-3882-4189-bbe4-c633273e1dbf",
+      "desktopImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/a30ab52c-00cc-4402-8fe0-6e2476de3051",
       "desktopImageDimensions": {
         "width": 1230,
         "height": 400
       },
       "alt": "Banner Terciário ",
-      "mobileImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/e396c53f-e5b1-4b8a-a182-2a674efc74d3",
+      "mobileImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/a79ef5e1-c9bb-47cc-8dba-68d0988d3806",
       "mobileImageDimensions": {
         "width": 380,
         "height": 250
       },
-      "url": "/bolsasmasculinas",
+      "url": "/acessoriosmasculinos",
       "button": {
         "label": "LANÇAMENTOS",
         "href": "/lancamentos"
