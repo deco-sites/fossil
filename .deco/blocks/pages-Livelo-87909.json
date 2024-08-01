@@ -27,7 +27,7 @@
                     "value": "2256"
                   }
                 ],
-                "count": 17
+                "count": 18
               },
               "extensions": []
             },
@@ -36,10 +36,7 @@
                 "mobile": 2,
                 "desktop": 3
               },
-              "variant": "aside",
-              "banners": [
-                {}
-              ]
+              "variant": "aside"
             },
             "__resolveType": "site/sections/Product/SearchResult.tsx",
             "startingPage": 1,
