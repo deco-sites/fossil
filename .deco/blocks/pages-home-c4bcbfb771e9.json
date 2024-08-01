@@ -26,6 +26,14 @@
       "images": [
         {
           "action": {
+            "href": "/masculino?sort=release%3Adesc"
+          },
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/42b7489c-6f26-42e1-9029-42194550ee5a",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/d378d1fb-c536-4ff9-8666-8241a7b839be",
+          "alt": "Promo"
+        },
+        {
+          "action": {
             "href": "/s?q=sport%20tourer&utmi_pc=search&utmi_cp=sport%20tourer"
           },
           "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/9b2d00da-6891-44d3-afa4-deddd40226b1",
@@ -47,14 +55,6 @@
           "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/3e027c41-a243-4671-8d53-daecbdba226d",
           "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/2cfe92cf-46d1-4da3-a98e-9149ec67ac7d",
           "alt": "Bolsa"
-        },
-        {
-          "action": {
-            "href": "/s?q=carteira%20masculina&utmi_pc=search&utmi_cp=carteira%20masculina"
-          },
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/ceaea97a-1067-437d-8cbb-67cd841611eb",
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8282c03c-96d3-4771-ba06-35c90308b93c",
-          "alt": "Carteira"
         }
       ],
       "preload": true,
