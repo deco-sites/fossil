@@ -36,7 +36,10 @@
                 "mobile": 2,
                 "desktop": 3
               },
-              "variant": "aside"
+              "variant": "aside",
+              "banners": [
+                {}
+              ]
             },
             "__resolveType": "site/sections/Product/SearchResult.tsx",
             "startingPage": 1,
