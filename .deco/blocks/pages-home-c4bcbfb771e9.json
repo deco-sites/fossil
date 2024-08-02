@@ -149,13 +149,13 @@
     },
     {
       "__resolveType": "site/sections/Content/BannerFossil.tsx",
-      "desktopImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/a30ab52c-00cc-4402-8fe0-6e2476de3051",
+      "desktopImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/673128dd-cc4b-4a64-a7e0-9ad8d23d22b7",
       "desktopImageDimensions": {
         "width": 1230,
         "height": 400
       },
       "alt": "Banner Terciário ",
-      "mobileImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/a79ef5e1-c9bb-47cc-8dba-68d0988d3806",
+      "mobileImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/d6cf4c28-8b00-4f62-9971-29c682feda17",
       "mobileImageDimensions": {
         "width": 380,
         "height": 250
