@@ -66,8 +66,8 @@
     },
     {
       "image": {
-        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/2bbeafdd-b608-468a-b672-b86f050bbd6f",
-        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/31166eb9-afa1-40ae-9b40-8c9c1b7820b3",
+        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/9da0a2de-1faf-412e-bcca-54bf89b5ce9a",
+        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/d0c80bb4-9336-4f01-891f-150c9f45c4e3",
         "alt": "Banner Livelo"
       },
       "matcher": "/livelo*"
