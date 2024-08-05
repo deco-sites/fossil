@@ -26,7 +26,7 @@
       "images": [
         {
           "action": {
-            "href": "/masculino?sort=release%3Adesc"
+            "href": "/2418?PS=12&map=productClusterIds&sort=orders%3Adesc"
           },
           "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/0ff3ac1b-3bc1-4569-90da-de6e9a396068",
           "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/d378d1fb-c536-4ff9-8666-8241a7b839be",
