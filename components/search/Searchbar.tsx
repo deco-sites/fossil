@@ -19,7 +19,7 @@ import { Resolved } from "deco/engine/core/resolver.ts";
 import { useEffect, useRef } from "preact/compat";
 import type { Platform } from "../../apps/site.ts";
 import { formatPrice } from "../../sdk/format.ts";
-import { useOffer } from "../../sdk/useOffer.ts";
+import { useOffer } from "../../util/useOffer.ts";
 import Image from "apps/website/components/Image.tsx";
 
 // Editable props
@@ -249,30 +249,47 @@ function Searchbar({
                     {products.map((
                       { image, isVariantOf, offers, url },
                       index,
-                    ) => (
-                      <>
-                        {index < 2 && (
-                          <li class="inline-block float-left w-1/2 pt-4 px-4">
-                            <a
-                              class="text-[10px] leading-none text-center text-black"
-                              href={url}
-                            >
-                              <Image
-                                src={image![0].url! || ""}
-                                width={240}
-                                height={240}
-                                class="w-4/5 h-auto block mb-4 p-2 mx-auto"
-                              />
+                    ) => {
+                      const { has_discount, listPrice, price } = useOffer(
+                        offers,
+                      );
 
-                              {isVariantOf!.name}
-                              <span class="table max-md:hidden relative top-3 w-full text-[13px] font-bold text-[#5e5e5e] leading-[14px] uppercase text-center mt-[10px]">
-                                {formatPrice(useOffer(offers).listPrice)}
-                              </span>
-                            </a>
-                          </li>
-                        )}
-                      </>
-                    ))}
+                      return (
+                        <>
+                          {index < 2 && (
+                            <li class="inline-block float-left w-1/2 pt-4 px-4">
+                              <a
+                                class="text-[10px] leading-none text-center text-black"
+                                href={url}
+                              >
+                                <Image
+                                  src={image![0].url! || ""}
+                                  width={240}
+                                  height={240}
+                                  class="w-4/5 h-auto block mb-4 p-2 mx-auto"
+                                />
+
+                                {isVariantOf!.name}
+
+                                {has_discount && (
+                                  <span class="table max-md:hidden relative top-3 w-full text-[13px] font-bold text-[#5e5e5e] leading-[14px] uppercase text-center mt-[10px]">
+                                    De: {formatPrice(
+                                      listPrice,
+                                      offers?.priceCurrency,
+                                    )}
+                                  </span>
+                                )}
+
+                                <span class="table max-md:hidden relative top-3 w-full text-[13px] font-bold text-[#5e5e5e] leading-[14px] uppercase text-center mt-[10px]">
+                                  Por:{" "}
+                                  {formatPrice(price, offers?.priceCurrency)}
+                                </span>
+                              </a>
+                            </li>
+                          )}
+                        </>
+                      );
+                    })}
                   </ul>
                 )}
             </>
@@ -324,30 +341,47 @@ function Searchbar({
                     {products.map((
                       { image, isVariantOf, offers, url },
                       index,
-                    ) => (
-                      <>
-                        {index < 2 && (
-                          <li class="inline-block float-left w-1/2 px-2">
-                            <a
-                              class="text-[10px] leading-none text-center text-black"
-                              href={url}
-                            >
-                              <Image
-                                src={image![0].url! || ""}
-                                width={240}
-                                height={240}
-                                class="w-4/5 h-auto block mb-4 p-2 mx-auto"
-                              />
+                    ) => {
+                      const { has_discount, listPrice, price } = useOffer(
+                        offers,
+                      );
 
-                              {isVariantOf!.name}
-                              <span class="table max-md:hidden relative top-3 w-full text-[13px] font-bold text-[#5e5e5e] leading-[14px] uppercase text-center mt-[10px]">
-                                {formatPrice(useOffer(offers).listPrice)}
-                              </span>
-                            </a>
-                          </li>
-                        )}
-                      </>
-                    ))}
+                      return (
+                        <>
+                          {index < 2 && (
+                            <li class="inline-block float-left w-1/2 px-2">
+                              <a
+                                class="text-[10px] leading-none text-center text-black"
+                                href={url}
+                              >
+                                <Image
+                                  src={image![0].url! || ""}
+                                  width={240}
+                                  height={240}
+                                  class="w-4/5 h-auto block mb-4 p-2 mx-auto"
+                                />
+
+                                {isVariantOf!.name}
+
+                                {has_discount && (
+                                  <span class="table max-md:hidden relative top-3 w-full text-[13px] font-bold text-[#5e5e5e] leading-[14px] uppercase text-center mt-[10px]">
+                                    De: {formatPrice(
+                                      listPrice,
+                                      offers?.priceCurrency,
+                                    )}
+                                  </span>
+                                )}
+
+                                <span class="table max-md:hidden relative top-3 w-full text-[13px] font-bold text-[#5e5e5e] leading-[14px] uppercase text-center mt-[10px]">
+                                  Por:{" "}
+                                  {formatPrice(price, offers?.priceCurrency)}
+                                </span>
+                              </a>
+                            </li>
+                          )}
+                        </>
+                      );
+                    })}
                   </ul>
                 )}
             </>
