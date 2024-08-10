@@ -4,7 +4,7 @@ import OutOfStock from "../../islands/OutOfStock.tsx";
 import ShippingSimulation from "../../islands/ShippingSimulation.tsx";
 import { formatPrice } from "../../sdk/format.ts";
 import { useId } from "../../sdk/useId.ts";
-import { useOffer } from "../../sdk/useOffer.ts";
+import { useOffer } from "../../util/useOffer.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
@@ -56,17 +56,18 @@ function ProductInfo(
 
   const productName = isVariantOf?.name;
   const {
-    price = 0,
+    price,
     listPrice,
     seller = "1",
-    installments,
+    installment,
     availability,
+    priceWithPixDiscount,
+    has_discount,
   } = useOffer(offers);
 
   let stock;
   let qtdText;
 
-  const hasProduct = availability === "https://schema.org/InStock";
   if (offers) {
     stock = offers.offers[0].inventoryLevel.value;
 
@@ -98,17 +99,15 @@ function ProductInfo(
       {/* Add to Cart and Favorites button Mobile */}
       {device !== "desktop" && (
         <div class="flex justify-center w-full m-auto">
-          {availability === "https://schema.org/InStock"
+          {availability
             ? (
               <>
                 {platform === "vtex" && (
-                  <>
-                    <AddToCartButtonVTEX
-                      eventParams={{ items: [eventItem] }}
-                      productID={productID}
-                      seller={seller}
-                    />
-                  </>
+                  <AddToCartButtonVTEX
+                    eventParams={{ items: [eventItem] }}
+                    productID={productID}
+                    seller={seller}
+                  />
                 )}
               </>
             )
@@ -123,11 +122,13 @@ function ProductInfo(
             {productName && productName}
           </span>
         </h1>
+
         <p class="text-base font-medium tracking-one text-[#89a290]  font-arial">
           {name}
         </p>
+
         {/**Reviews */}
-        {!hasProduct && (
+        {availability && (
           <div class="h-6">
             <div id="yv-review-quickreview"></div>
           </div>
@@ -143,7 +144,7 @@ function ProductInfo(
         )}
 
         {/**Reviews */}
-        {hasProduct && (
+        {availability && (
           <div class="h-6">
             <div id="yv-review-quickreview"></div>
           </div>
@@ -151,23 +152,37 @@ function ProductInfo(
       </div>
 
       {/* Prices */}
-      {hasProduct && (
+      {availability && (
         <div class="">
           <div class="flex flex-col font-scoutCond">
-            {(listPrice ?? 0) > price && (
+            {has_discount && (
               <span class="line-through block font-medium text-[#89a290] text-22 m-0 leading-none tracking-one">
-                {formatPrice(listPrice, offers?.priceCurrency)}
+                De: {formatPrice(listPrice, offers?.priceCurrency)}
               </span>
             )}
+
             <span class="lg:tracking-one block text-primary font-bold lg:font-medium text-3xl leading-none">
-              {formatPrice(price, offers?.priceCurrency)}
+              Por: {formatPrice(price, offers?.priceCurrency)}
             </span>
           </div>
-          {(installments && typeof installments !== "string") && (
+
+          <div class="flex flex-col font-scoutCond mt-3">
+            <p class="lg:tracking-one block text-primary font-bold lg:font-medium text-3xl leading-none">
+              {formatPrice(priceWithPixDiscount, offers?.priceCurrency)}
+              <span class="text-[0.7em] leading-none block">
+                à vista com Pix
+              </span>
+            </p>
+          </div>
+
+          {installment && (
             <p class="text-sm mt-3 text-primary tracking-one font-arial">
-              ou {installments.billingDuration} x de{"  "}
+              ou {installment.billingDuration} x de{"  "}
               <span class="font-bold text-primary">
-                { formatPrice (installments.billingIncrement, offers?.priceCurrency)} {" "}
+                {formatPrice(
+                  installment.billingIncrement,
+                  offers?.priceCurrency,
+                )}
               </span>
             </p>
           )}
@@ -188,7 +203,7 @@ function ProductInfo(
           <p className="font-museoSans border-[#5C5C5C] pl-1 text-xs lg:text-sm leading-none">
             Receba{" "}
             <span className="font-bold">
-              {hasProduct
+              {availability
                 ? (
                   <>
                     {formatPrice(price * 0.05, offers?.priceCurrency)}
@@ -210,7 +225,7 @@ function ProductInfo(
       <div class="flex flex-col gap-2">
         {device === "desktop" && (
           <>
-            {hasProduct
+            {availability
               ? (
                 <>
                   {platform === "vtex" && (
@@ -241,7 +256,7 @@ function ProductInfo(
       </div>
 
       {/* Shipping Simulation */}
-      {hasProduct && (
+      {availability && (
         <div class="">
           {platform === "vtex" && (
             <ShippingSimulation
