@@ -8,7 +8,7 @@ import Header from "../../components/ui/SectionHeader.tsx";
 import Slider from "../../components/ui/Slider.tsx";
 import SliderJS from "../../islands/SliderJS.tsx";
 import { useId } from "../../sdk/useId.ts";
-import { useOffer } from "../../sdk/useOffer.ts";
+import { useOffer } from "../../util/useOffer.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 
 /** @titleBy title */
