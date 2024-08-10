@@ -3,7 +3,7 @@ import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalytic
 import { SendEventOnView } from "../../components/Analytics.tsx";
 import SearchControls from "../../islands/SearchControls.tsx";
 import { useId } from "../../sdk/useId.ts";
-import { useOffer } from "../../sdk/useOffer.ts";
+import { useOffer } from "../../util/useOffer.ts";
 import ProductGallery, { Columns } from "../product/ProductGallery.tsx";
 import NotFound from "./NotFound.tsx";
 import { redirect } from "deco/mod.ts";
