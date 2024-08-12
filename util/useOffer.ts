@@ -56,9 +56,10 @@ export const useOffer = (aggregateOffer?: AggregateOffer) => {
   const availability = (offer?.inventoryLevel.value || 0) > 0;
   const price = sellerPrice?.price || 0;
 
-  const priceWithPixDiscount = (priceWithPixPayment?.price || price) < price
-    ? priceWithPixPayment?.price
-    : price * 0.95;
+  const priceWithPixDiscount =
+    (priceWithPixPayment?.price || price) < price
+      ? priceWithPixPayment?.price || price
+      : price * 0.95;
 
   return {
     price,
