@@ -26,35 +26,35 @@
       "images": [
         {
           "action": {
-            "href": "/2418?PS=12&map=productClusterIds&sort=orders%3Adesc"
+            "href": "/s?q=breaker&utmi_pc=search&utmi_cp=breaker"
           },
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/91731047-207b-46fe-96e5-f5b1b8d9d889",
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/34d40ebb-81ce-4f0f-ba76-b2e614db0867",
-          "alt": "Promo"
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/16a3cacb-7c98-45ab-b993-d499e14f3e4e",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/86c76d2f-1097-4578-9eec-51acd2666931",
+          "alt": "Breaker"
         },
         {
           "action": {
-            "href": "/s?q=sport%20tourer&utmi_pc=search&utmi_cp=sport%20tourer"
+            "href": "/s?q=blue%20feminino&utmi_pc=search&utmi_cp=blue%20feminino"
           },
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/1edb06d8-77ee-44c6-bd38-c7dc3ce295e8",
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/0a64126e-b719-4601-83fc-53d789813b98",
-          "alt": "Sport Tourer"
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/53f840bb-cc00-4e6c-8dbb-b6220e9a2cea",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/71560982-92f4-4f46-b064-a30733a26151",
+          "alt": "Blue Feminino"
         },
         {
           "action": {
-            "href": "/masculino?sort=release%3Adesc"
+            "href": "/bolsasfemininas"
           },
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/69b04d9e-05f2-40ae-a462-109eff05073f",
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/59ecb069-9fa5-4fe2-8985-d7737b7433c0",
-          "alt": "Relógio Masculino"
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/349ce6e4-b8eb-4432-8e6e-92b2ff9c872d",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/2773a729-ac5c-467b-9dbc-75cbdacdb63c",
+          "alt": "Bolsa"
         },
         {
           "action": {
             "href": "/acessoriosmasculinos"
           },
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/6a447c4f-14eb-4f9f-9fbc-3c87bceb1236",
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/e84ff787-8bef-41da-8d1c-7ffd7c4ad91f",
-          "alt": "Bolsa"
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/ba5ed7ca-a634-4ea3-9773-3adda0ad72d2",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/44cacf4a-1bd6-4b6d-95ea-ac674cb31281",
+          "alt": "Acessórios"
         }
       ],
       "preload": true,
