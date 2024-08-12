@@ -149,18 +149,18 @@
     },
     {
       "__resolveType": "site/sections/Content/BannerFossil.tsx",
-      "desktopImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/673128dd-cc4b-4a64-a7e0-9ad8d23d22b7",
+      "desktopImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/85b5dd01-4823-4d3e-84f4-bb1c2f36512b",
       "desktopImageDimensions": {
         "width": 1230,
         "height": 400
       },
       "alt": "Banner Terciário ",
-      "mobileImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/d6cf4c28-8b00-4f62-9971-29c682feda17",
+      "mobileImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8c2cb2a0-15a7-466c-949a-ded7329ac77e",
       "mobileImageDimensions": {
         "width": 380,
         "height": 250
       },
-      "url": "/acessoriosmasculinos",
+      "url": "/bolsasmasculinas",
       "button": {
         "label": "LANÇAMENTOS",
         "href": "/lancamentos"
