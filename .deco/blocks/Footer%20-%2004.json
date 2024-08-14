@@ -125,7 +125,7 @@
         },
         {
           "label": "Trocas e Devoluções",
-          "href": "https://grupotechnos.troquefacil.com.br/",
+          "href": "/institucional/trocas-e-devolucoes",
           "icon": {}
         },
         {
@@ -144,7 +144,7 @@
           "label": "Fale conosco pelo WhatsApp"
         },
         {
-          "href": "/trocaedevolucao",
+          "href": "/institucional/trocas-e-devolucoes",
           "label": "Troca e devolução"
         }
       ],
@@ -239,32 +239,24 @@
       {
         "href": "/",
         "label": "Brasil BRL",
-        "icon": {
-          "label": "Email"
-        }
+        "icon": {}
       },
       {
         "href": "/",
         "label": "United Stated USD",
-        "icon": {
-          "label": "Email"
-        }
+        "icon": {}
       }
     ],
     "language": [
       {
         "href": "/",
         "label": "PT",
-        "icon": {
-          "label": "Email"
-        }
+        "icon": {}
       },
       {
         "href": "/",
         "label": "EN",
-        "icon": {
-          "label": "Email"
-        }
+        "icon": {}
       }
     ]
   }
