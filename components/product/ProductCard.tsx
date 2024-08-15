@@ -68,6 +68,10 @@ function ProductCard({
     ? isVariantOf?.name
     : truncateText(isVariantOf?.name || "", 46);
 
+  const has_any_variant_in_stock = product.offers?.offers.some((
+    { inventoryLevel },
+  ) => inventoryLevel.value && inventoryLevel.value > 0);
+
   return (
     <div
       id={id}
@@ -177,15 +181,25 @@ function ProductCard({
                 decoding="async"
               />
             )}
-            {device === "desktop" && (
-              <a
-                href={relativeUrl}
-                aria-label="view product"
-                class="!transition-none !h-12 w-[96%] font-scoutCond font-medium items-center justify-center !hover:brightness-90 uppercase !border-warning absolute bottom-2 right-0 !bg-[#A66C18] hidden text-white group-hover/product:flex text-base tracking-[1px]  lg:text-2xl "
-              >
-                comprar
-              </a>
-            )}
+            {device === "desktop" && has_any_variant_in_stock
+              ? (
+                <a
+                  href={relativeUrl}
+                  aria-label="view product"
+                  class="!transition-none !h-12 w-[96%] font-scoutCond font-medium items-center justify-center !hover:brightness-90 uppercase !border-warning absolute bottom-2 right-0 !bg-[#A66C18] hidden text-white group-hover/product:flex text-base tracking-[1px]  lg:text-2xl "
+                >
+                  comprar
+                </a>
+              )
+              : (
+                <a
+                  href={relativeUrl}
+                  aria-label="view product"
+                  class="!transition-none !h-12 w-[96%] font-scoutCond font-medium items-center justify-center !hover:brightness-90 uppercase !border-warning absolute bottom-2 right-0 !bg-[#A66C18] hidden text-white group-hover/product:flex text-base tracking-[1px]  lg:text-2xl "
+                >
+                  Avise-me
+                </a>
+              )}
           </a>
         </figure>
 
