@@ -26,35 +26,35 @@
       "images": [
         {
           "action": {
-            "href": "/2418?PS=12&map=productClusterIds&sort=orders%3Adesc"
+            "href": "/s?q=harwell&utmi_pc=search&utmi_cp=harwell"
           },
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/91731047-207b-46fe-96e5-f5b1b8d9d889",
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/34d40ebb-81ce-4f0f-ba76-b2e614db0867",
-          "alt": "Promo"
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/00a837e6-2b68-4266-b58e-5c9b31ce9bec",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/e01900c9-bec3-4c38-b135-c737cc47ba61",
+          "alt": "Harwell"
         },
         {
           "action": {
-            "href": "/s?q=sport%20tourer&utmi_pc=search&utmi_cp=sport%20tourer"
+            "href": "/s?q=carraway&utmi_pc=search&utmi_cp=carraway"
           },
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/1edb06d8-77ee-44c6-bd38-c7dc3ce295e8",
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/0a64126e-b719-4601-83fc-53d789813b98",
-          "alt": "Sport Tourer"
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/e5acb16c-8f80-4974-bba2-974426c9319a",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/779f3135-3613-4d94-b93f-84f7d0813b93",
+          "alt": "Carraway"
         },
         {
           "action": {
-            "href": "/masculino?sort=release%3Adesc"
+            "href": "/s?q=carteira%20fossil%20feminino&utmi_pc=search&utmi_cp=carteira%20fossil%20feminino"
           },
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/69b04d9e-05f2-40ae-a462-109eff05073f",
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/59ecb069-9fa5-4fe2-8985-d7737b7433c0",
-          "alt": "Relógio Masculino"
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8891248e-307f-4b87-b2b4-13dc8bd15da7",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/d27b6557-ab20-4f0c-8f0f-39613a1e27bd",
+          "alt": "Carteira"
         },
         {
           "action": {
-            "href": "/acessoriosmasculinos"
+            "href": "/off"
           },
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/6a447c4f-14eb-4f9f-9fbc-3c87bceb1236",
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/e84ff787-8bef-41da-8d1c-7ffd7c4ad91f",
-          "alt": "Bolsa"
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/92b1a767-f9c4-4189-8e15-dcda035bf1e0",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/d33031ae-b2a4-4a7c-be78-ee11156988d6",
+          "alt": "OFF"
         }
       ],
       "preload": true,
@@ -149,18 +149,18 @@
     },
     {
       "__resolveType": "site/sections/Content/BannerFossil.tsx",
-      "desktopImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/673128dd-cc4b-4a64-a7e0-9ad8d23d22b7",
+      "desktopImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/85b5dd01-4823-4d3e-84f4-bb1c2f36512b",
       "desktopImageDimensions": {
         "width": 1230,
         "height": 400
       },
       "alt": "Banner Terciário ",
-      "mobileImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/d6cf4c28-8b00-4f62-9971-29c682feda17",
+      "mobileImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8c2cb2a0-15a7-466c-949a-ded7329ac77e",
       "mobileImageDimensions": {
         "width": 380,
         "height": 250
       },
-      "url": "/acessoriosmasculinos",
+      "url": "/bolsasmasculinas",
       "button": {
         "label": "LANÇAMENTOS",
         "href": "/lancamentos"
