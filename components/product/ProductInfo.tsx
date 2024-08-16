@@ -10,6 +10,7 @@ import { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
+import ProductInfoPriceModel from "./ProductInfoPriceModel.tsx";
 
 interface Props {
   page: ProductDetailsPage | null;
@@ -53,8 +54,6 @@ function ProductInfo(
     name = "",
     isVariantOf,
   } = product;
-
-  const productName = isVariantOf?.name;
   const {
     price,
     listPrice,
@@ -62,6 +61,7 @@ function ProductInfo(
     installment,
     availability,
     priceWithPixDiscount,
+    pixPercentDiscountByDiferenceSellerPrice,
     has_discount,
   } = useOffer(offers);
 
@@ -91,6 +91,11 @@ function ProductInfo(
     listPrice,
   });
 
+  const referenceID =
+    product.additionalProperty?.find(({ valueReference }) =>
+      valueReference == "ReferenceID"
+    )?.value ?? product.gtin;
+
   return (
     <div
       class="flex flex-col mb-10 lg:mb-0  px-4 gap-1 lg:gap-6 w-full lg:w-[52%]"
@@ -118,14 +123,16 @@ function ProductInfo(
       {/* Code and name */}
       <div class="mt-4 sm:mt-0">
         <h1>
-          <span class="hidden lg:block text-nowrap font-medium  font-scoutCond text-3xl leading-10 tracking-one text-primary uppercase m-0 ">
-            {productName && productName}
+          <span class="uppercase font-medium text-base-content text-xl lg:text-2xl">
+            {isVariantOf?.name}
           </span>
         </h1>
 
-        <p class="text-base font-medium tracking-one text-[#89a290]  font-arial">
-          {name}
-        </p>
+        <div>
+          <span class="text-xs font-normal text-[#585858]">
+            Ref: {referenceID}
+          </span>
+        </div>
 
         {/**Reviews */}
         {availability && (
@@ -135,58 +142,27 @@ function ProductInfo(
         )}
       </div>
 
-      <div>
-        {/** stock */}
-        {!(Number(stock) < 1 || Number(stock) > 3) && (
+      {/** stock */}
+      {!(Number(stock) < 1 || Number(stock) > 3) && (
+        <div>
           <div class=" px-2 block w-32 h-7 font-arial text-xs text-[#9e9e9e] text-center leading-7 border-solid border border-[#89a290]">
             {qtdText}
           </div>
-        )}
-
-        {/**Reviews */}
-        {availability && (
-          <div class="h-6">
-            <div id="yv-review-quickreview"></div>
-          </div>
-        )}
-      </div>
+        </div>
+      )}
 
       {/* Prices */}
       {availability && (
-        <div class="">
-          <div class="flex flex-col font-scoutCond">
-            {has_discount && (
-              <span class="line-through block font-medium text-[#89a290] text-22 m-0 leading-none tracking-one">
-                De: {formatPrice(listPrice, offers?.priceCurrency)}
-              </span>
-            )}
-
-            <span class="lg:tracking-one block text-primary font-bold lg:font-medium text-3xl leading-none">
-              Por: {formatPrice(price, offers?.priceCurrency)}
-            </span>
-          </div>
-
-          <div class="flex flex-col font-scoutCond mt-3">
-            <p class="lg:tracking-one block text-primary font-bold lg:font-medium text-3xl leading-none">
-              {formatPrice(priceWithPixDiscount, offers?.priceCurrency)}
-              <span class="text-[0.7em] leading-none block">
-                à vista com Pix
-              </span>
-            </p>
-          </div>
-
-          {installment && (
-            <p class="text-sm mt-3 text-primary tracking-one font-arial">
-              ou {installment.billingDuration} x de{"  "}
-              <span class="font-bold text-primary">
-                {formatPrice(
-                  installment.billingIncrement,
-                  offers?.priceCurrency,
-                )}
-              </span>
-            </p>
-          )}
-        </div>
+        <ProductInfoPriceModel
+          installmentBillingDuration={installment?.billingDuration}
+          installmentBillingIncrement={installment?.billingIncrement}
+          priceCurrency={offers?.priceCurrency}
+          priceWithPixDiscount={priceWithPixDiscount}
+          sellerPrice={price}
+          hasDiscount={has_discount}
+          listPrice={listPrice}
+          pixPercentDiscountByDiferenceSellerPrice={pixPercentDiscountByDiferenceSellerPrice}
+        />
       )}
 
       {flagDiscount && (
