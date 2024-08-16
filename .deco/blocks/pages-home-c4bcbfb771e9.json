@@ -26,35 +26,35 @@
       "images": [
         {
           "action": {
-            "href": "/s?q=breaker&utmi_pc=search&utmi_cp=breaker"
+            "href": "/s?q=harwell&utmi_pc=search&utmi_cp=harwell"
           },
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/16a3cacb-7c98-45ab-b993-d499e14f3e4e",
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/86c76d2f-1097-4578-9eec-51acd2666931",
-          "alt": "Breaker"
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/00a837e6-2b68-4266-b58e-5c9b31ce9bec",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/e01900c9-bec3-4c38-b135-c737cc47ba61",
+          "alt": "Harwell"
         },
         {
           "action": {
-            "href": "/s?q=blue%20feminino&utmi_pc=search&utmi_cp=blue%20feminino"
+            "href": "/s?q=carraway&utmi_pc=search&utmi_cp=carraway"
           },
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/53f840bb-cc00-4e6c-8dbb-b6220e9a2cea",
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/71560982-92f4-4f46-b064-a30733a26151",
-          "alt": "Blue Feminino"
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/e5acb16c-8f80-4974-bba2-974426c9319a",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/779f3135-3613-4d94-b93f-84f7d0813b93",
+          "alt": "Carraway"
         },
         {
           "action": {
-            "href": "/bolsasfemininas"
+            "href": "/s?q=carteira%20fossil%20feminino&utmi_pc=search&utmi_cp=carteira%20fossil%20feminino"
           },
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/349ce6e4-b8eb-4432-8e6e-92b2ff9c872d",
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/2773a729-ac5c-467b-9dbc-75cbdacdb63c",
-          "alt": "Bolsa"
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8891248e-307f-4b87-b2b4-13dc8bd15da7",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/d27b6557-ab20-4f0c-8f0f-39613a1e27bd",
+          "alt": "Carteira"
         },
         {
           "action": {
-            "href": "/acessoriosmasculinos"
+            "href": "/off"
           },
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/ba5ed7ca-a634-4ea3-9773-3adda0ad72d2",
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/44cacf4a-1bd6-4b6d-95ea-ac674cb31281",
-          "alt": "Acessórios"
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/92b1a767-f9c4-4189-8e15-dcda035bf1e0",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/d33031ae-b2a4-4a7c-be78-ee11156988d6",
+          "alt": "OFF"
         }
       ],
       "preload": true,
