@@ -13,6 +13,8 @@ import { formatPrice } from "../../sdk/format.ts";
 import { relative } from "../../sdk/url.ts";
 import { useVariantPossibilities } from "../../sdk/useVariantPossiblities.ts";
 import { useOffer } from "../../util/useOffer.ts";
+import ProductCardPriceModel from "./ProductCardPriceModel.tsx";
+import ProductCardName from "./ProductCardName.tsx";
 
 interface Props {
   product: Product;
@@ -58,14 +60,17 @@ function ProductCard({
   const hasVariant = isVariantOf?.hasVariant ?? [];
   const productGroupID = isVariantOf?.productGroupID;
   const [front, back] = images ?? [];
+
   const {
     listPrice,
     price,
-    installment_text,
+    installment,
     availability,
     priceWithPixDiscount,
+    pixPercentDiscountByDiferenceSellerPrice,
     has_discount,
   } = useOffer(offers);
+
   const possibilities = useVariantPossibilities(hasVariant, product);
   const variants = Object.entries(Object.values(possibilities)[0] ?? {});
   const relativeUrl = relative(url);
@@ -244,31 +249,16 @@ function ProductCard({
           ? (
             <>
               {/* Price from/to */}
-              <div class="flex flex-col justify-end font-light text-primary-content">
-                <p class="text-sm font-bold tracking-one mb-2 mt-1">
-                  {formatPrice(priceWithPixDiscount, offers?.priceCurrency)}
-
-                  <span class="text-[0.7em] leading-none block">
-                    à vista com Pix
-                  </span>
-                </p>
-
-                {has_discount && (
-                  <span class="line-through text-sm">
-                    De: {formatPrice(listPrice, offers?.priceCurrency)}
-                  </span>
-                )}
-
-                <span class="text-sm font-bold tracking-one">
-                  Por: {formatPrice(price, offers?.priceCurrency)}
-                </span>
-
-                {installment_text && (
-                  <p class="flex font-light text-xs truncate text-primary-content">
-                    ou {installment_text} sem juros
-                  </p>
-                )}
-              </div>
+              <ProductCardPriceModel
+                installmentBillingDuration={installment?.billingDuration}
+                installmentBillingIncrement={installment?.billingIncrement}
+                priceCurrency={offers?.priceCurrency}
+                priceWithPixDiscount={priceWithPixDiscount}
+                sellerPrice={price}
+                hasDiscount={has_discount}
+                listPrice={listPrice}
+                pixPercentDiscountByDiferenceSellerPrice={pixPercentDiscountByDiferenceSellerPrice}
+              />
             </>
           )
           : (
