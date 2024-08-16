@@ -31,7 +31,7 @@ export default function ProductInfoPriceModel(props: Props) {
         <span class="text-xs lg:text-[13px] font-bold font-arial">
           {props.pixPercentDiscountByDiferenceSellerPrice}% de desconto
         </span>
-        <span class="text-xs lg:text-[13px] font-arial">no PIX</span>
+        <span class="text-xs lg:text-[13px] font-arial">{" "}no PIX</span>
       </p>
 
       {props.installmentBillingDuration &&
@@ -40,9 +40,9 @@ export default function ProductInfoPriceModel(props: Props) {
           <span class="font-bold">
             {formatPrice(props.sellerPrice, props.priceCurrency || "BRL")}
           </span>
-          <span class="font-normal">em até</span>
+          <span class="font-normal">{" "}em até{" "}</span>
           <span class="font-bold">{props.installmentBillingDuration}x</span>
-          <span class="font-normal">de</span>
+          <span class="font-normal">{" "}de{" "}</span>
           <span class="font-bold">
             {formatPrice(
               props.installmentBillingIncrement,
