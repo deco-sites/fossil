@@ -1,4 +1,4 @@
-import { formatPrice } from "site/sdk/format.ts";
+import { formatPrice } from "../../sdk/format.ts";
 
 export interface Props {
   priceWithPixDiscount: number;
@@ -13,46 +13,44 @@ export interface Props {
 
 export default function ProductInfoPriceModel(props: Props) {
   return (
-    <div class="py-5">
+    <div class="">
       {props.hasDiscount && (
-        <p class="w-full text-left text-[#4a4a4a] text-[13px] font-[Montserrat] font-normal line-through">
-          De {formatPrice(props.listPrice, props.priceCurrency)}
+        <p class="w-full text-left text-[#89A290] text-sm font-scoutCond font-normal line-through">
+          {formatPrice(props.listPrice, props.priceCurrency)}
         </p>
       )}
 
-      <p class="w-full block text-left font-[Montserrat] text-[#4A4A4A] leading-none">
-        <span class="text-2xl font-bold">
+      <p class="w-full block text-left text-black leading-none">
+        <span class="text-3xl lg:text-2xl font-bold font-scoutCond">
           {formatPrice(
             props.priceWithPixDiscount,
             props.priceCurrency || "BRL",
           )}
         </span>
-        <span class="text-[13px]">{" "}com{" "}</span>
-        <span class="text-[13px] font-bold">
+        <span class="text-xs lg:text-[13px] font-arial">com</span>
+        <span class="text-xs lg:text-[13px] font-bold font-arial">
           {props.pixPercentDiscountByDiferenceSellerPrice}% de desconto
         </span>
-        <span class="text-[13px]">{" "}no PIX</span>
+        <span class="text-xs lg:text-[13px] font-arial">no PIX</span>
       </p>
 
-      {props.installmentBillingDuration && props.installmentBillingIncrement &&
-        (
-          <div class="w-[310px] mt-3 py-1 flex items-center justify-center bg-[#F4E8DB]">
-            <p class="text-[13px]">
-              <span class="font-bold">
-                {formatPrice(props.sellerPrice, props.priceCurrency || "BRL")}
-              </span>
-              <span class="font-normal">{" "}em até{" "}</span>
-              <span class="font-bold">{props.installmentBillingDuration}x</span>
-              <span class="font-normal">{" "}de{" "}</span>
-              <span class="font-bold">
-                {formatPrice(
-                  props.installmentBillingIncrement,
-                  props.priceCurrency || "BRL",
-                )}
-              </span>
-            </p>
-          </div>
-        )}
+      {props.installmentBillingDuration &&
+        props.installmentBillingIncrement && (
+        <p class="text-xs leading-none mt-1">
+          <span class="font-bold">
+            {formatPrice(props.sellerPrice, props.priceCurrency || "BRL")}
+          </span>
+          <span class="font-normal">em até</span>
+          <span class="font-bold">{props.installmentBillingDuration}x</span>
+          <span class="font-normal">de</span>
+          <span class="font-bold">
+            {formatPrice(
+              props.installmentBillingIncrement,
+              props.priceCurrency || "BRL",
+            )}
+          </span>
+        </p>
+      )}
     </div>
   );
 }
