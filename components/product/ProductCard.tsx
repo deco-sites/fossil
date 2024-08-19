@@ -11,8 +11,10 @@ import {
 import { clx } from "../../sdk/clx.ts";
 import { formatPrice } from "../../sdk/format.ts";
 import { relative } from "../../sdk/url.ts";
-import { useOffer } from "../../sdk/useOffer.ts";
 import { useVariantPossibilities } from "../../sdk/useVariantPossiblities.ts";
+import { useOffer } from "../../util/useOffer.ts";
+import ProductCardPriceModel from "./ProductCardPriceModel.tsx";
+import ProductCardName from "./ProductCardName.tsx";
 
 interface Props {
   product: Product;
@@ -58,12 +60,21 @@ function ProductCard({
   const hasVariant = isVariantOf?.hasVariant ?? [];
   const productGroupID = isVariantOf?.productGroupID;
   const [front, back] = images ?? [];
-  const { listPrice, price, installments } = useOffer(offers);
+
+  const {
+    listPrice,
+    price,
+    installment,
+    availability,
+    priceWithPixDiscount,
+    pixPercentDiscountByDiferenceSellerPrice,
+    has_discount,
+  } = useOffer(offers);
+
   const possibilities = useVariantPossibilities(hasVariant, product);
   const variants = Object.entries(Object.values(possibilities)[0] ?? {});
   const relativeUrl = relative(url);
   const aspectRatio = `${WIDTH} / ${HEIGHT}`;
-  const hasStock = offers?.offers[0].inventoryLevel.value === 0;
   const productName = device === "desktop"
     ? isVariantOf?.name
     : truncateText(isVariantOf?.name || "", 46);
@@ -98,10 +109,7 @@ function ProductCard({
       />
 
       <div class="flex flex-col gap-1 group/product font-soleil">
-        <figure
-          class="relative overflow-hidden"
-          style={{ aspectRatio }}
-        >
+        <figure class="relative overflow-hidden" style={{ aspectRatio }}>
           {/* Wishlist button */}
           <div
             class={clx(
@@ -111,14 +119,14 @@ function ProductCard({
             )}
           >
             {/* Discount % */}
-            <div class="text-sm">
-              {(listPrice && price &&
-                (Math.round(((listPrice - price) / listPrice) * 100) > 0)) && (
+            {has_discount && (
+              <div class="text-sm">
                 <span class=" h-6 w-6 text-sm lg:w-10 lg:h-10 flex absolute top-[33%] right-0  font-scoutCond z-50 items-center justify-center text-center lg:text-2xl font-medium bg-[#d20d17] text-white rounded-[100px]">
                   OFF
                 </span>
-              )}
-            </div>
+              </div>
+            )}
+
             <div class="hidden">
               {platform === "vtex" && (
                 <WishlistButtonVtex
@@ -126,6 +134,7 @@ function ProductCard({
                   productID={productID}
                 />
               )}
+
               {platform === "wake" && (
                 <WishlistButtonWake
                   productGroupID={productGroupID}
@@ -230,36 +239,26 @@ function ProductCard({
             dangerouslySetInnerHTML={{ __html: productName ?? "" }}
           />
         </div>
+
         {/**review */}
         <div class="h-5">
           <div class="yv-review-quickreview" value={inProductGroupWithID}></div>
         </div>
 
-        {!hasStock
+        {availability
           ? (
             <>
               {/* Price from/to */}
-              <div class="flex flex-col justify-end gap-1 font-light text-primary-content">
-                {listPrice !== price && (
-                  <span class="line-through text-sm ">
-                    {formatPrice(listPrice, offers?.priceCurrency)}
-                  </span>
-                )}
-
-                <span class="text-sm font-bold tracking-one">
-                  {formatPrice(price, offers?.priceCurrency)}
-                </span>
-              </div>
-
-              {/* Installments */}
-              {(installments && typeof installments !== "string") && (
-                <p class="flex gap-2 font-light text-xs truncate text-primary-content">
-                  ou {installments.billingDuration} x de R$ {formatPrice(
-                    installments.billingIncrement,
-                    offers?.priceCurrency,
-                  )}{"  "}{installments.withTaxes ? "com juros" : "sem juros"}
-                </p>
-              )}
+              <ProductCardPriceModel
+                installmentBillingDuration={installment?.billingDuration}
+                installmentBillingIncrement={installment?.billingIncrement}
+                priceCurrency={offers?.priceCurrency}
+                priceWithPixDiscount={priceWithPixDiscount}
+                sellerPrice={price}
+                hasDiscount={has_discount}
+                listPrice={listPrice}
+                pixPercentDiscountByDiferenceSellerPrice={pixPercentDiscountByDiferenceSellerPrice}
+              />
             </>
           )
           : (
