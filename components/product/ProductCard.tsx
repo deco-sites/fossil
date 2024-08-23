@@ -9,12 +9,12 @@ import {
   default as WishlistButtonWake,
 } from "../../islands/WishlistButton/vtex.tsx";
 import { clx } from "../../sdk/clx.ts";
-import { formatPrice } from "../../sdk/format.ts";
+//import { formatPrice } from "../../sdk/format.ts";
 import { relative } from "../../sdk/url.ts";
 import { useVariantPossibilities } from "../../sdk/useVariantPossiblities.ts";
 import { useOffer } from "../../util/useOffer.ts";
 import ProductCardPriceModel from "./ProductCardPriceModel.tsx";
-import ProductCardName from "./ProductCardName.tsx";
+//import ProductCardName from "./ProductCardName.tsx";
 
 interface Props {
   product: Product;

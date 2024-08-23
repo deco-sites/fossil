@@ -6,6 +6,45 @@
       "__resolveType": "Header - 01"
     },
     {
+      "__resolveType": "site/sections/Product/ProductShelf.tsx",
+      "products": {
+        "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+        "props": {
+          "sort": "price:desc",
+          "collection": "2378",
+          "count": 20
+        }
+      },
+      "title": "Novidades",
+      "layout": {
+        "numberOfSliders": {
+          "mobile": 2,
+          "desktop": 4
+        },
+        "headerAlignment": "left",
+        "headerfontSize": "Small"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Hotsites/PresenteInfoCard.tsx",
+      "cards": [
+        {
+          "title": "BESTSELLING RAQUEL",
+          "description": "A true icon from our archive, the Raquel watch is the epitome of timeless style.",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/75f001fd-8f10-45fe-9645-6aaf2cd6050a",
+          "url": "/",
+          "label": "BESTSELLING RAQUEL"
+        },
+        {
+          "title": "SPORT TOURER",
+          "description": "Japanese center second chronograph. Engineered for precise measurement.",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/570e6078-62f9-45be-8b97-0ba10d4e4c80",
+          "url": "/",
+          "label": "SPORT TOURER"
+        }
+      ]
+    },
+    {
       "__resolveType": "Footer - 01"
     }
   ],

@@ -51,7 +51,7 @@ function ProductInfo(
   const {
     productID,
     offers,
-    name = "",
+    //name = "",
     isVariantOf,
   } = product;
   const {
