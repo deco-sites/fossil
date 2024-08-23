@@ -45,6 +45,22 @@
       ]
     },
     {
+      "__resolveType": "site/sections/Hotsites/PresenteShopByGender.tsx",
+      "title": "JEWELRY  MUST-HAVES",
+      "description": "All the shine. All the style. All perfect for layering.",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/2f3f2c42-92fa-4ba2-a41c-2b4e794e4f7e",
+      "links": [
+        {
+          "label": "Shop Hers",
+          "url": "/"
+        },
+        {
+          "label": "Shop His",
+          "url": "/"
+        }
+      ]
+    },
+    {
       "__resolveType": "Footer - 01"
     }
   ],
