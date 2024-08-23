@@ -22,7 +22,8 @@
           "desktop": 4
         },
         "headerAlignment": "left",
-        "headerfontSize": "Small"
+        "headerfontSize": "Small",
+        "showArrows": true
       }
     },
     {
@@ -59,6 +60,19 @@
           "url": "/"
         }
       ]
+    },
+    {
+      "__resolveType": "site/sections/Hotsites/PresenteActionBanner.tsx",
+      "banner": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/fca37290-6b74-4a48-b869-c266f630d326",
+      "action": {
+        "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/ced2eb0a-a4ee-4685-bfcc-ab2c8a7885dc",
+        "description": "Resort style is served. Made for collectors, our exclusive new collab sports all the playfulness of our favorite champ.",
+        "cta": {
+          "label": "Shop the Tennis Capsule",
+          "url": "/"
+        },
+        "link": "/"
+      }
     },
     {
       "__resolveType": "Footer - 01"
