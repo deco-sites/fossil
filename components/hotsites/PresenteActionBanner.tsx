@@ -20,7 +20,7 @@ export interface Props {
 
 export default function PresenteActionBanner({ banner, action }: Props) {
   return (
-    <div class="w-full flex justify-center py-10">
+    <div class="w-full flex justify-center">
       <div class="w-full lg:relative max-lg:flex max-lg:flex-col max-lg:gap-5">
         {banner && (
           <Image

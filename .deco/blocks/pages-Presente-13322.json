@@ -121,6 +121,32 @@
       ]
     },
     {
+      "__resolveType": "site/sections/Hotsites/PresenteShopByCategory.tsx",
+      "title": "SHOP BY CATEGORY",
+      "categories": [
+        {
+          "label": "WOMEN’S WATCHES",
+          "url": "/"
+        },
+        {
+          "label": "MEN’S WATCHES",
+          "url": "/"
+        },
+        {
+          "label": "WOMEN’S HANDBAGS",
+          "url": "/"
+        },
+        {
+          "label": "MEN’S WALLETS",
+          "url": "/"
+        },
+        {
+          "label": "WOMEN’S JEWELRY",
+          "url": "/"
+        }
+      ]
+    },
+    {
       "__resolveType": "Footer - 01"
     }
   ],
