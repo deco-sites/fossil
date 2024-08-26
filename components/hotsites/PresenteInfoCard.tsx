@@ -42,7 +42,7 @@ export default function PresenteInfoCard({ cards }: Props) {
             </div>
           )}
           <div class="w-full flex flex-col items-center gap-3">
-            <p class="text-xl font-medium font-sacker text-center text-[#262626]">
+            <p class="text-xl font-medium font-sacker tracking-wider text-center text-[#262626]">
               {label}
             </p>
             <p class="text-base font-normal font-soleil text-center text-[#262626] max-w-[320px] max-lg:text-sm">
