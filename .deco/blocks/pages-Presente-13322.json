@@ -75,6 +75,52 @@
       }
     },
     {
+      "__resolveType": "site/sections/Hotsites/PresenteWhatNews.tsx",
+      "title": "What's New",
+      "news": [
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/77f8e8b1-94f6-4dd0-9c52-ea03f10d8756",
+          "title": "Breaker Watch",
+          "subtitle": "Our newest dive style, with 20 ATM water resistance.",
+          "link": {
+            "label": "Shop Now",
+            "url": "/"
+          },
+          "label": "Breaker Watch"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/4519c174-6183-4fa8-8829-04cdf136b75f",
+          "title": "Fossil Blue Dive Watch",
+          "subtitle": "Finally, a true dive-style watch for her.",
+          "link": {
+            "label": "Shop Now",
+            "url": "/"
+          },
+          "label": "Fossil Blue Dive Watch"
+        },
+        {
+          "title": "Harwell Handbag",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/f775a5a1-e890-4fb9-86c0-b294c9677711",
+          "subtitle": "Our irresistible crescent-shaped carryall.",
+          "link": {
+            "label": "Show Now",
+            "url": "/"
+          },
+          "label": "Harwell Handbag"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/01df48c3-448c-4b56-8705-288d54c6b52e",
+          "title": "Bold Chains",
+          "subtitle": "Timeless jewelry with subtle texture.",
+          "link": {
+            "label": "Shop Now",
+            "url": "/"
+          },
+          "label": "Bold Chains"
+        }
+      ]
+    },
+    {
       "__resolveType": "Footer - 01"
     }
   ],
