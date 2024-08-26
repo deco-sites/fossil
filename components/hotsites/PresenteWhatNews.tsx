@@ -28,7 +28,7 @@ export interface Props {
 export default function PresenteWhatNews({ title, news }: Props) {
   return (
     <div class="w-full flex justify-center py-10 px-5 bg-[#F6F4F0]">
-      <div class="w-full max-w-[1256px] flex flex-col gap-2">
+      <div class="w-full max-w-[1256px] flex flex-col gap-5">
         <p class="text-xl font-medium font-sacker text-black">{title}</p>
         <div class="w-full flex gap-4 max-lg:flex-wrap max-lg:justify-center">
           {(news || []).map(({ image, label, subtitle, link }) => (

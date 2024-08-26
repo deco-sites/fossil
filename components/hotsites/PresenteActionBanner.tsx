@@ -1,11 +1,18 @@
 import Image from "apps/website/components/Image.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import { PresenteButton } from "./PresenteButton.tsx";
+import { Picture, Source } from "apps/website/components/Picture.tsx";
 
 export interface Props {
-  banner?: ImageWidget;
+  banner?: {
+    desktop?: ImageWidget;
+    mobile?: ImageWidget;
+  };
   action?: {
-    logo?: ImageWidget;
+    logo?: {
+      desktop?: ImageWidget;
+      mobile?: ImageWidget;
+    };
     /**
      * @format html
      */
@@ -22,24 +29,39 @@ export default function PresenteActionBanner({ banner, action }: Props) {
   return (
     <div class="w-full flex justify-center">
       <div class="w-full lg:relative max-lg:flex max-lg:flex-col max-lg:gap-5">
-        {banner && (
-          <Image
-            src={banner}
-            class=""
-            width={1920}
-            loading="lazy"
-          />
+        {banner?.desktop && (
+          <Picture class="">
+            <Source
+              media="(max-width: 1024px)"
+              src={banner.mobile || banner.desktop}
+              width={176}
+            />
+            <Image
+              src={banner.desktop}
+              class="w-full object-cover"
+              width={2000}
+              loading={"lazy"}
+            />
+          </Picture>
         )}
-        <div class="w-full lg:max-w-[350px] h-full lg:absolute flex flex-col items-center justify-center lg:top-0 lg:ml-[95px] max-lg:px-4">
+        <div class="w-full lg:max-w-[350px] h-full lg:absolute flex flex-col items-center justify-center lg:top-0 lg:ml-[95px] max-lg:px-4 max-lg:pb-9">
           <div class="w-full flex flex-col items-center gap-5">
             <div class="flex flex-col items-center gap-2">
-              {action?.logo && (
-                <Image
-                  src={action.logo}
-                  class="w-full max-w-[260px]"
-                  width={260}
-                />
-              )}
+              {action?.logo?.desktop
+                ? (
+                  <Picture class="">
+                    <Source
+                      media="(max-width: 1024px)"
+                      src={action?.logo.mobile || action?.logo.desktop}
+                      width={176}
+                    />
+                    <img
+                      src={action?.logo.desktop}
+                      class="w-full object-cover"
+                    />
+                  </Picture>
+                )
+                : null}
               {action?.description && (
                 <p
                   class="text-white text-center font-soleil text-base max-lg:text-[#262626]"
