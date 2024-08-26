@@ -47,7 +47,7 @@ export default function PresenteShopByGender(
           </div>
         )}
         <div class="flex flex-col max-lg:items-center gap-2">
-          <p class="text-3xl font-medium font-soleil max-lg:text-center text-[#262626] max-lg:text-xl">
+          <p class="text-3xl font-medium font-sacker max-lg:text-center text-[#262626] max-lg:text-xl">
             {title}
           </p>
           <p class="text-base font-normal font-soleil max-lg:text-center text-[#262626] max-w-[320px] max-lg:text-sm">
