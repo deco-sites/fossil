@@ -211,17 +211,16 @@
           "url": "/relogio/feminino?sort=release%3Adesc"
         },
         {
-          "@type": "SiteNavigationElement",
           "children": [
             {
-              "@type": "SiteNavigationElement",
               "name": "Quadrada",
-              "url": "/relogio/feminino/quadrada"
+              "url": "/relogio/feminino/quadrada",
+              "@type": "SiteNavigationElement"
             },
             {
-              "@type": "SiteNavigationElement",
               "name": "Redonda",
-              "url": "/relogio/feminino/redonda"
+              "url": "/relogio/feminino/redonda",
+              "@type": "SiteNavigationElement"
             },
             {
               "image": [],
@@ -231,7 +230,8 @@
             }
           ],
           "name": "Caixa",
-          "url": "/relogio/feminino?sort=release%3Adesc"
+          "url": "/relogio/feminino?sort=release%3Adesc",
+          "@type": "SiteNavigationElement"
         },
         {
           "image": [],
@@ -321,19 +321,18 @@
       "@type": "SiteNavigationElement",
       "children": [
         {
-          "image": [],
           "children": [
             {
-              "image": [],
-              "children": [],
               "name": "Bolsas Femininas",
-              "url": "/bolsasfemininas"
+              "url": "/bolsasfemininas",
+              "image": [],
+              "children": []
             },
             {
-              "image": [],
-              "children": [],
               "name": "Acessórios Femininos",
-              "url": "/acessoriosfemininos"
+              "url": "/acessoriosfemininos",
+              "image": [],
+              "children": []
             },
             {
               "image": [],
@@ -349,7 +348,8 @@
             }
           ],
           "name": "Acessórios",
-          "url": "/acessorios"
+          "url": "/acessorios",
+          "image": []
         }
       ],
       "name": "Acessórios",
@@ -361,6 +361,18 @@
           "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/6c7f2239-f23a-4cb8-b3e6-2fc48cf1acc4"
         }
       ]
+    },
+    {
+      "children": [],
+      "image": [
+        {
+          "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7733d479-0fd1-4f33-bed9-6f9e170655d6",
+          "@type": "ImageObject"
+        }
+      ],
+      "name": "Presentes",
+      "url": "/presentes",
+      "@type": "SiteNavigationElement"
     },
     {
       "children": [],
