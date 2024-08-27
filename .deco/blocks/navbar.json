@@ -364,18 +364,6 @@
     },
     {
       "children": [],
-      "image": [
-        {
-          "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7733d479-0fd1-4f33-bed9-6f9e170655d6",
-          "@type": "ImageObject"
-        }
-      ],
-      "name": "Presentes",
-      "url": "/presentes",
-      "@type": "SiteNavigationElement"
-    },
-    {
-      "children": [],
       "image": [],
       "name": "off",
       "url": "/off"
