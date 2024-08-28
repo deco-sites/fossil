@@ -3,26 +3,31 @@ import { ImageWidget } from "apps/admin/widgets.ts";
 import { PresenteButton } from "./PresenteButton.tsx";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 
+interface ActionProps {
+  logo?: {
+    desktop?: ImageWidget;
+    mobile?: ImageWidget;
+  };
+  /**
+   * @title Título
+   */
+  title?: string;
+  /**
+   * @title Descrição
+   */
+  description?: string;
+  cta: {
+    label?: string;
+    url?: string;
+  };
+  link?: string;
+}
 export interface Props {
   banner?: {
     desktop?: ImageWidget;
     mobile?: ImageWidget;
   };
-  action?: {
-    logo?: {
-      desktop?: ImageWidget;
-      mobile?: ImageWidget;
-    };
-    /**
-     * @format html
-     */
-    description?: string;
-    cta: {
-      label?: string;
-      url?: string;
-    };
-    link?: string;
-  };
+  action?: ActionProps;
 }
 
 export default function PresenteActionBanner({ banner, action }: Props) {
@@ -62,11 +67,14 @@ export default function PresenteActionBanner({ banner, action }: Props) {
                   </Picture>
                 )
                 : null}
+              {action?.title && (
+                <p class="text-white text-center font-soleil text-xl font-bold max-lg:text-[#262626]">
+                  {action.title}
+                </p>
+              )}
               {action?.description && (
-                <p
-                  class="text-white text-center font-soleil text-base max-lg:text-[#262626]"
-                  dangerouslySetInnerHTML={{ __html: action?.description }}
-                >
+                <p class="text-white text-center font-soleil text-base max-lg:text-[#262626]">
+                  {action.description}
                 </p>
               )}
             </div>

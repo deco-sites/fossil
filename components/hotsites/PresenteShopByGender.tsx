@@ -35,19 +35,19 @@ export default function PresenteShopByGender(
 ) {
   return (
     <div class="w-full py-10 flex justify-center max-lg:gap-10 max-lg:px-8">
-      <div class="w-full max-w-[1192px] flex justify-center items-center gap-14 max-lg:flex-col max-lg:gap-5">
+      <div class="w-full max-w-[1366px] flex justify-center items-center gap-14 max-lg:flex-col max-lg:gap-5">
         {image && (
-          <div class="w-full max-w-[720px] max-h-[620px]">
+          <div class="w-full max-h-[620px]">
             <Image
               src={image}
               loading={"lazy"}
               width={720}
-              class="h-full object-contain"
+              class="h-full object-contain relative"
             />
           </div>
         )}
-        <div class="flex flex-col max-lg:items-center gap-2">
-          <p class="text-3xl font-medium font-sacker max-lg:text-center text-[#262626] max-lg:text-xl">
+        <div class="w-full max-w-[412px] flex flex-col max-lg:items-center gap-2">
+          <p class="text-3xl font-medium font-sacker uppercase max-lg:text-center text-[#262626] max-lg:text-xl">
             {title}
           </p>
           <p class="text-base font-normal font-soleil max-lg:text-center text-[#262626] max-w-[320px] max-lg:text-sm">
