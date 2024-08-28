@@ -211,17 +211,16 @@
           "url": "/relogio/feminino?sort=release%3Adesc"
         },
         {
-          "@type": "SiteNavigationElement",
           "children": [
             {
-              "@type": "SiteNavigationElement",
               "name": "Quadrada",
-              "url": "/relogio/feminino/quadrada"
+              "url": "/relogio/feminino/quadrada",
+              "@type": "SiteNavigationElement"
             },
             {
-              "@type": "SiteNavigationElement",
               "name": "Redonda",
-              "url": "/relogio/feminino/redonda"
+              "url": "/relogio/feminino/redonda",
+              "@type": "SiteNavigationElement"
             },
             {
               "image": [],
@@ -231,7 +230,8 @@
             }
           ],
           "name": "Caixa",
-          "url": "/relogio/feminino?sort=release%3Adesc"
+          "url": "/relogio/feminino?sort=release%3Adesc",
+          "@type": "SiteNavigationElement"
         },
         {
           "image": [],
@@ -321,19 +321,18 @@
       "@type": "SiteNavigationElement",
       "children": [
         {
-          "image": [],
           "children": [
             {
-              "image": [],
-              "children": [],
               "name": "Bolsas Femininas",
-              "url": "/bolsasfemininas"
+              "url": "/bolsasfemininas",
+              "image": [],
+              "children": []
             },
             {
-              "image": [],
-              "children": [],
               "name": "Acessórios Femininos",
-              "url": "/acessoriosfemininos"
+              "url": "/acessoriosfemininos",
+              "image": [],
+              "children": []
             },
             {
               "image": [],
@@ -349,7 +348,8 @@
             }
           ],
           "name": "Acessórios",
-          "url": "/acessorios"
+          "url": "/acessorios",
+          "image": []
         }
       ],
       "name": "Acessórios",

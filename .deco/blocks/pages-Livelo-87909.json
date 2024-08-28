@@ -15,6 +15,7 @@
       "variants": [
         {
           "value": {
+            "__resolveType": "site/sections/Product/SearchResult.tsx",
             "page": {
               "__resolveType": "commerce/loaders/product/extensions/listingPage.ts",
               "data": {
@@ -38,7 +39,6 @@
               },
               "variant": "aside"
             },
-            "__resolveType": "site/sections/Product/SearchResult.tsx",
             "startingPage": 1,
             "isCollection": false
           },
