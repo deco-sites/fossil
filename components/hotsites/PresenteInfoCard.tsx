@@ -13,6 +13,7 @@ interface Card {
   description?: string;
   /**
    * @title Imagem
+   * @description Tamanho da imagem 770x470
    */
   image?: ImageWidget;
   /**

@@ -23,6 +23,7 @@ export interface Props {
   description?: string;
   /**
    * @title Imagem
+   * @description Tamanho da imagem 900x620
    */
   image?: ImageWidget;
   /**
