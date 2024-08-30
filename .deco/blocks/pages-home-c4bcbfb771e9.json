@@ -193,18 +193,18 @@
     },
     {
       "__resolveType": "site/sections/Content/BannerFossil.tsx",
-      "desktopImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/85b5dd01-4823-4d3e-84f4-bb1c2f36512b",
+      "desktopImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/e7076051-2d4d-48fd-a419-d843ec843a27/banner_terc_desk_bolsaemcouro(1230x400).jpg",
       "desktopImageDimensions": {
         "width": 1230,
         "height": 400
       },
       "alt": "Banner Terciário ",
-      "mobileImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8c2cb2a0-15a7-466c-949a-ded7329ac77e",
+      "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/2c66c3f5-c471-428a-a775-a70d3e4991f2/banner_terc_mob_bolsasemcouro(380x250).jpg",
       "mobileImageDimensions": {
         "width": 380,
         "height": 250
       },
-      "url": "/bolsasmasculinas",
+      "url": "/bolsasfemininas",
       "button": {
         "label": "LANÇAMENTOS",
         "href": "/lancamentos"
