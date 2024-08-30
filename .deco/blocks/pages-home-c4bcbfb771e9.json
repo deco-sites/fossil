@@ -163,27 +163,27 @@
       },
       "list": [
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/1f1e43f8-890d-44cb-863e-74905032c852",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/4968882e-6198-439f-b486-e616fd8d8837/Banner_secundario_setembro_relomasc(610x400).png",
           "label": "Masculinos",
           "buttonText": "CONHEÇA",
           "href": "/relogio/masculino"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/18857c5f-11bb-4144-bdc5-c7472c7e97f6",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/ba4ba9b1-9bee-444e-8898-128da2faad5f/Banner_secundario_setembro_relofem(610x400).png",
           "label": "Femininos",
           "buttonText": " ENCANTE-SE",
           "href": "/relogio/feminino"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8b53088f-073b-414c-bed9-5e05913d821d",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/d3e99653-70b3-4cca-ba33-d21f029505b8/Banner_secundario_setembro_carteiras(610x400).png",
           "label": "Carteira Masculina",
           "buttonText": " CONHEÇA",
           "href": "/acessoriosmasculinos"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/1d00df82-ce01-4ea5-b422-f9eb47f3b84d",
-          "label": "Bolsas em Couro",
-          "href": "/bolsasmasculinas",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/f619c1cb-25dd-48c0-a9d5-9827f22e6400/Banner_secundario_setembro_semijoias(610x400).png",
+          "label": "Semijoias",
+          "href": "/acessoriosfemininos",
           "buttonText": "ESCOLHA O SEU"
         }
       ],
