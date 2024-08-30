@@ -1,1 +1,312 @@
-{"name":"Home","path":"/","sections":[{"__resolveType":"Fashion theme"},{"__resolveType":"SEOv2-01"},{"__resolveType":"Header - 01"},{"__resolveType":"site/sections/Content/PromotionalBanner.tsx","title":"CONFIRA OS ÚLTIMOS LANÇAMENTOS","button":{"name":"Compre Agora","url":"/lancamentos?&utmi_p=_&utmi_pc=Html&utmi_cp=html"}},{"__resolveType":"website/flags/multivariate/section.ts","variants":[{"value":{"__resolveType":"site/sections/Images/Carousel.tsx","dots":true,"arrows":true,"images":[{"action":{"href":"/s?q=raquel&utmi_pc=search&utmi_cp=raquel"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/57154902-abf5-444c-a762-2f7388a1edac","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8b0be31c-8657-4840-b858-18da31131fb3","alt":"Raquel"},{"action":{"href":"/s?q=sport%20tourer&utmi_pc=search&utmi_cp=sport%20tourer"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/9e42c693-6581-4bf3-aa4a-57b9b1fa63e3","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/4d2de001-aef0-476e-9b26-87b21a021da6","alt":"Sport Tourer"},{"action":{"href":"/s?q=carteira%20masculino&utmi_pc=search&utmi_cp=carteira%20masculino"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/fd030277-eaac-40fc-9593-b2780e7a58b5","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/f5704f4b-332b-4b35-87ce-7a7820ce984f","alt":"Carteira"},{"action":{"href":"/bolsasfemininas"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/18f83f32-0785-4e86-bd4f-bc18a3d567ca","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/4db45841-015f-4f15-8949-0804884a18a0","alt":"Bolsa Feminina"}],"preload":true,"interval":5},"rule":{"__resolveType":"website/matchers/date.ts","end":"2024-09-03T15:00:00.000Z","start":"2024-08-01T15:00:00.000Z"}},{"value":{"__resolveType":"site/sections/Images/Carousel.tsx","dots":true,"arrows":true,"images":[{"action":{"href":"/s?q=raquel&utmi_pc=search&utmi_cp=raquel"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/57154902-abf5-444c-a762-2f7388a1edac","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8b0be31c-8657-4840-b858-18da31131fb3","alt":"Raquel"},{"action":{"href":"/s?q=sport%20tourer&utmi_pc=search&utmi_cp=sport%20tourer"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/9e42c693-6581-4bf3-aa4a-57b9b1fa63e3","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/4d2de001-aef0-476e-9b26-87b21a021da6","alt":"Sport Tourer"},{"action":{"href":"/s?q=carteira%20masculino&utmi_pc=search&utmi_cp=carteira%20masculino"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/fd030277-eaac-40fc-9593-b2780e7a58b5","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/f5704f4b-332b-4b35-87ce-7a7820ce984f","alt":"Carteira"},{"action":{"href":"/bolsasfemininas"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/18f83f32-0785-4e86-bd4f-bc18a3d567ca","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/4db45841-015f-4f15-8949-0804884a18a0","alt":"Bolsa Feminina"}],"preload":true,"interval":5},"rule":{"__resolveType":"website/matchers/date.ts","start":"2024-08-01T15:00:00.000Z","end":"2024-08-07T15:00:00.000Z"}}]},{"__resolveType":"site/sections/Product/ProductShelf.tsx","layout":{"showArrows":true,"numberOfSliders":{"desktop":4,"mobile":2},"headerAlignment":"left","headerfontSize":"Small"},"products":{"props":{"sort":"","count":20,"collection":"2378"},"crossSelling":"similars","__resolveType":"vtex/loaders/intelligentSearch/productList.ts"},"cardLayout":{"layout":{"hide":{"allPrices":false,"favoriteIcon":true,"installments":false,"productDescription":true},"basics":{"oldPriceSize":"Normal","contentAlignment":"Left"},"onMouseOver":{"card":"None","image":"Change image","showCta":true,"showCardShadow":false,"showSkuSelector":false,"showFavoriteIcon":false},"elementsPositions":{"skuSelector":"Bottom","favoriteIcon":"Top right"}},"__resolveType":"site/loaders/Layouts/ProductCard.tsx"},"title":"Novidades"},{"__resolveType":"site/sections/Category/CategoryGrid.tsx","layout":{"categoryCard":{"textPosition":"bottom","textAlignment":"left"}},"list":[{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/1f1e43f8-890d-44cb-863e-74905032c852","label":"Masculinos","buttonText":"CONHEÇA","href":"/relogio/masculino"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/18857c5f-11bb-4144-bdc5-c7472c7e97f6","label":"Femininos","buttonText":" ENCANTE-SE","href":"/relogio/feminino"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8b53088f-073b-414c-bed9-5e05913d821d","label":"Carteira Masculina","buttonText":" CONHEÇA","href":"/acessoriosmasculinos"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/1d00df82-ce01-4ea5-b422-f9eb47f3b84d","label":"Bolsas em Couro","href":"/bolsasmasculinas","buttonText":"ESCOLHA O SEU"}],"header":{"title":"Comprar Relógios Por Tipo"}},{"__resolveType":"site/sections/Content/BannerFossil.tsx","desktopImage":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/85b5dd01-4823-4d3e-84f4-bb1c2f36512b","desktopImageDimensions":{"width":1230,"height":400},"alt":"Banner Terciário ","mobileImage":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8c2cb2a0-15a7-466c-949a-ded7329ac77e","mobileImageDimensions":{"width":380,"height":250},"url":"/bolsasmasculinas","button":{"label":"LANÇAMENTOS","href":"/lancamentos"}},{"__resolveType":"site/sections/Content/BannerFossilCarousel.tsx","title":"Veja Também","layout":{"numberOfSliders":{"mobile":3,"desktop":6},"headerAlignment":"center","headerfontSize":"Small","showArrows":false},"cards":[{"Image":"https://www.fossil.com.br/arquivos/men-gold-tone-watch.jpg?v=638253915301130000","alt":"Relógio de Ouro para  Homens","action":{"href":"/relogio/masculino/dourado","title":"Relógios Masculinos Dourados","label":"Relógios Masculinos Dourados"}},{"Image":"https://www.fossil.com.br/arquivos/men-black-tone-watch.jpg?v=638253915297830000","action":{"title":"Relógios Masculinos Pretos","href":"/relogio/masculino/preto","label":"Relógios Masculinos Pretos"},"alt":"Relógio preto para homem "},{"action":{"title":"Relógios Masculinos Prateados","label":"Relógios Masculinos Prateados","href":"/relogio/masculino/prata"},"Image":"https://www.fossil.com.br/arquivos/men-silver-tone-watch.jpg?v=638253915307570000","alt":"Relógio Prata para homem"},{"Image":"https://fossil.vteximg.com.br/arquivos/women-gold-tone-watch.jpg?v=638253915310530000","action":{"title":"Relógios Femininos Dourados","label":"Relógios Femininos Dourados","href":"/relogio/feminino/dourado"},"alt":"Relógio de Ouro feminino"},{"action":{"title":"Relógios Femininos Bicolores","label":"Relógios Femininos Bicolores","href":"/relogio/feminino/bicolor"},"Image":"https://www.fossil.com.br/arquivos/women-black-tone-watch.jpg?v=638253915308570000","alt":"Relógio Preto  para as mulheres"},{"Image":"https://fossil.vteximg.com.br/arquivos/men-rosegold-tone-watch.jpg?v=638253915305200000","action":{"title":"Relógios Femininos Rosés","label":"Relógios Femininos Rosés","href":"/relogio/feminino/rose"},"alt":"Relógio  Rose Gold para as mulheres"}]},{"__resolveType":"site/sections/Content/YourViewstestimonial.tsx"},{"__resolveType":"Footer - 04"},{"__resolveType":"My Theme"},{"__resolveType":"Preview /sections/Content/YourViewsIntegration.tsx"}],"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Home",
+  "path": "/",
+  "sections": [
+    {
+      "__resolveType": "Fashion theme"
+    },
+    {
+      "__resolveType": "SEOv2-01"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "site/sections/Content/PromotionalBanner.tsx",
+      "title": "CONFIRA OS ÚLTIMOS LANÇAMENTOS",
+      "button": {
+        "name": "Compre Agora",
+        "url": "/lancamentos?&utmi_p=_&utmi_pc=Html&utmi_cp=html"
+      }
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Images/Carousel.tsx",
+            "dots": true,
+            "arrows": true,
+            "images": [
+              {
+                "action": {
+                  "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/57154902-abf5-444c-a762-2f7388a1edac",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8b0be31c-8657-4840-b858-18da31131fb3",
+                "alt": "Raquel"
+              },
+              {
+                "action": {
+                  "href": "/s?q=sport%20tourer&utmi_pc=search&utmi_cp=sport%20tourer"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/9e42c693-6581-4bf3-aa4a-57b9b1fa63e3",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/4d2de001-aef0-476e-9b26-87b21a021da6",
+                "alt": "Sport Tourer"
+              },
+              {
+                "action": {
+                  "href": "/s?q=carteira%20masculino&utmi_pc=search&utmi_cp=carteira%20masculino"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/fd030277-eaac-40fc-9593-b2780e7a58b5",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/f5704f4b-332b-4b35-87ce-7a7820ce984f",
+                "alt": "Carteira"
+              },
+              {
+                "action": {
+                  "href": "/bolsasfemininas"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/18f83f32-0785-4e86-bd4f-bc18a3d567ca",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/4db45841-015f-4f15-8949-0804884a18a0",
+                "alt": "Bolsa Feminina"
+              }
+            ],
+            "preload": true,
+            "interval": 5
+          },
+          "rule": {
+            "__resolveType": "website/matchers/date.ts",
+            "end": "2024-09-01T15:00:00.000Z",
+            "start": "2024-08-01T15:00:00.000Z"
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/Images/Carousel.tsx",
+            "dots": true,
+            "arrows": true,
+            "images": [
+              {
+                "action": {
+                  "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/57154902-abf5-444c-a762-2f7388a1edac",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8b0be31c-8657-4840-b858-18da31131fb3",
+                "alt": "Raquel"
+              },
+              {
+                "action": {
+                  "href": "/s?q=sport%20tourer&utmi_pc=search&utmi_cp=sport%20tourer"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/9e42c693-6581-4bf3-aa4a-57b9b1fa63e3",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/4d2de001-aef0-476e-9b26-87b21a021da6",
+                "alt": "Sport Tourer"
+              },
+              {
+                "action": {
+                  "href": "/s?q=carteira%20masculino&utmi_pc=search&utmi_cp=carteira%20masculino"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/fd030277-eaac-40fc-9593-b2780e7a58b5",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/f5704f4b-332b-4b35-87ce-7a7820ce984f",
+                "alt": "Carteira"
+              },
+              {
+                "action": {
+                  "href": "/bolsasfemininas"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/18f83f32-0785-4e86-bd4f-bc18a3d567ca",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/4db45841-015f-4f15-8949-0804884a18a0",
+                "alt": "Bolsa Feminina"
+              }
+            ],
+            "preload": true,
+            "interval": 5
+          },
+          "rule": {
+            "__resolveType": "website/matchers/date.ts",
+            "start": "2024-08-01T15:00:00.000Z",
+            "end": "2024-08-07T15:00:00.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Product/ProductShelf.tsx",
+      "layout": {
+        "showArrows": true,
+        "numberOfSliders": {
+          "desktop": 4,
+          "mobile": 2
+        },
+        "headerAlignment": "left",
+        "headerfontSize": "Small"
+      },
+      "products": {
+        "props": {
+          "sort": "",
+          "count": 20,
+          "collection": "2378"
+        },
+        "crossSelling": "similars",
+        "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+      },
+      "cardLayout": {
+        "layout": {
+          "hide": {
+            "allPrices": false,
+            "favoriteIcon": true,
+            "installments": false,
+            "productDescription": true
+          },
+          "basics": {
+            "oldPriceSize": "Normal",
+            "contentAlignment": "Left"
+          },
+          "onMouseOver": {
+            "card": "None",
+            "image": "Change image",
+            "showCta": true,
+            "showCardShadow": false,
+            "showSkuSelector": false,
+            "showFavoriteIcon": false
+          },
+          "elementsPositions": {
+            "skuSelector": "Bottom",
+            "favoriteIcon": "Top right"
+          }
+        },
+        "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
+      },
+      "title": "Novidades"
+    },
+    {
+      "__resolveType": "site/sections/Category/CategoryGrid.tsx",
+      "layout": {
+        "categoryCard": {
+          "textPosition": "bottom",
+          "textAlignment": "left"
+        }
+      },
+      "list": [
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/1f1e43f8-890d-44cb-863e-74905032c852",
+          "label": "Masculinos",
+          "buttonText": "CONHEÇA",
+          "href": "/relogio/masculino"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/18857c5f-11bb-4144-bdc5-c7472c7e97f6",
+          "label": "Femininos",
+          "buttonText": " ENCANTE-SE",
+          "href": "/relogio/feminino"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8b53088f-073b-414c-bed9-5e05913d821d",
+          "label": "Carteira Masculina",
+          "buttonText": " CONHEÇA",
+          "href": "/acessoriosmasculinos"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/1d00df82-ce01-4ea5-b422-f9eb47f3b84d",
+          "label": "Bolsas em Couro",
+          "href": "/bolsasmasculinas",
+          "buttonText": "ESCOLHA O SEU"
+        }
+      ],
+      "header": {
+        "title": "Comprar Relógios Por Tipo"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Content/BannerFossil.tsx",
+      "desktopImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/85b5dd01-4823-4d3e-84f4-bb1c2f36512b",
+      "desktopImageDimensions": {
+        "width": 1230,
+        "height": 400
+      },
+      "alt": "Banner Terciário ",
+      "mobileImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8c2cb2a0-15a7-466c-949a-ded7329ac77e",
+      "mobileImageDimensions": {
+        "width": 380,
+        "height": 250
+      },
+      "url": "/bolsasmasculinas",
+      "button": {
+        "label": "LANÇAMENTOS",
+        "href": "/lancamentos"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Content/BannerFossilCarousel.tsx",
+      "title": "Veja Também",
+      "layout": {
+        "numberOfSliders": {
+          "mobile": 3,
+          "desktop": 6
+        },
+        "headerAlignment": "center",
+        "headerfontSize": "Small",
+        "showArrows": false
+      },
+      "cards": [
+        {
+          "Image": "https://www.fossil.com.br/arquivos/men-gold-tone-watch.jpg?v=638253915301130000",
+          "alt": "Relógio de Ouro para  Homens",
+          "action": {
+            "href": "/relogio/masculino/dourado",
+            "title": "Relógios Masculinos Dourados",
+            "label": "Relógios Masculinos Dourados"
+          }
+        },
+        {
+          "Image": "https://www.fossil.com.br/arquivos/men-black-tone-watch.jpg?v=638253915297830000",
+          "action": {
+            "title": "Relógios Masculinos Pretos",
+            "href": "/relogio/masculino/preto",
+            "label": "Relógios Masculinos Pretos"
+          },
+          "alt": "Relógio preto para homem "
+        },
+        {
+          "action": {
+            "title": "Relógios Masculinos Prateados",
+            "label": "Relógios Masculinos Prateados",
+            "href": "/relogio/masculino/prata"
+          },
+          "Image": "https://www.fossil.com.br/arquivos/men-silver-tone-watch.jpg?v=638253915307570000",
+          "alt": "Relógio Prata para homem"
+        },
+        {
+          "Image": "https://fossil.vteximg.com.br/arquivos/women-gold-tone-watch.jpg?v=638253915310530000",
+          "action": {
+            "title": "Relógios Femininos Dourados",
+            "label": "Relógios Femininos Dourados",
+            "href": "/relogio/feminino/dourado"
+          },
+          "alt": "Relógio de Ouro feminino"
+        },
+        {
+          "action": {
+            "title": "Relógios Femininos Bicolores",
+            "label": "Relógios Femininos Bicolores",
+            "href": "/relogio/feminino/bicolor"
+          },
+          "Image": "https://www.fossil.com.br/arquivos/women-black-tone-watch.jpg?v=638253915308570000",
+          "alt": "Relógio Preto  para as mulheres"
+        },
+        {
+          "Image": "https://fossil.vteximg.com.br/arquivos/men-rosegold-tone-watch.jpg?v=638253915305200000",
+          "action": {
+            "title": "Relógios Femininos Rosés",
+            "label": "Relógios Femininos Rosés",
+            "href": "/relogio/feminino/rose"
+          },
+          "alt": "Relógio  Rose Gold para as mulheres"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Content/YourViewstestimonial.tsx"
+    },
+    {
+      "__resolveType": "Footer - 04"
+    },
+    {
+      "__resolveType": "My Theme"
+    },
+    {
+      "__resolveType": "Preview /sections/Content/YourViewsIntegration.tsx"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}
