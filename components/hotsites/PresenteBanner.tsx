@@ -5,7 +5,6 @@ import { PresenteButton } from "./PresenteButton.tsx";
 export interface Props {
   banner: {
     imageDesktop: ImageWidget;
-    animationImageDesktop: ImageWidget;
     imageMobile: ImageWidget;
   };
   logo?: {

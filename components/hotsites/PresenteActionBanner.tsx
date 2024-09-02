@@ -3,11 +3,17 @@ import { ImageWidget } from "apps/admin/widgets.ts";
 import { PresenteButton } from "./PresenteButton.tsx";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 
+interface CtaProps {
+  label?: string;
+  url?: string;
+}
+
+interface LogoProps {
+  desktop?: ImageWidget;
+  mobile?: ImageWidget;
+}
 interface ActionProps {
-  logo?: {
-    desktop?: ImageWidget;
-    mobile?: ImageWidget;
-  };
+  logo?: LogoProps;
   /**
    * @title Título
    */
@@ -16,10 +22,7 @@ interface ActionProps {
    * @title Descrição
    */
   description?: string;
-  cta: {
-    label?: string;
-    url?: string;
-  };
+  cta: CtaProps;
   link?: string;
 }
 export interface Props {

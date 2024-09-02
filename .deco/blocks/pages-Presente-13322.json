@@ -9,9 +9,8 @@
       "__resolveType": "site/sections/Hotsites/PresenteBanner.tsx",
       "title": "FOSSIL",
       "banner": {
-        "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/cce98e4d-e494-4e34-a08b-953c16a8b98b",
-        "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/df17cc42-0a0b-446b-b4e6-3a9011eab811",
-        "animationImageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/087131f7-7010-4c61-a36d-a84d399b3075"
+        "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/ad70a200-74bc-4c2d-a3d7-038a33204235/Banner_principal_desk.jpg",
+        "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/fa391135-c99b-4a6a-a442-72ca9d6d4276/banner_principal_mob.jpg"
       },
       "subtitle": "Encontre o presente perfeito na nossa seleção exclusiva de relógios, carteiras e acessórios!",
       "cta": {
@@ -164,14 +163,14 @@
         {
           "title": "BESTSELLING RAQUEL",
           "description": "O presente perfeito para mulheres que apreciam estilo e qualidade.",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/75f001fd-8f10-45fe-9645-6aaf2cd6050a",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/39456e4e-e381-450f-bbb5-e409f4d3ed42/banner_secudario_deskemob.jpg",
           "url": "/",
           "label": "Presentes femininos"
         },
         {
           "title": "SPORT TOURER",
           "description": "Para homens que valorizam design e praticidade.",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/570e6078-62f9-45be-8b97-0ba10d4e4c80",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/0a54925d-535e-4e44-b693-cfbaca2ad895/banner_secudario_deskemob2.jpg",
           "url": "/",
           "label": "Presentes masculinos"
         }
@@ -181,7 +180,7 @@
       "__resolveType": "site/sections/Hotsites/PresenteShopByGender.tsx",
       "title": "Semi Joias",
       "description": "Perfeito para te acompanhar no dia a dia.",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/2f3f2c42-92fa-4ba2-a41c-2b4e794e4f7e",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/c729d0e6-4443-4e8b-aeaf-bb178358061f/banner_deskemob_semijoias.jpg",
       "links": [
         {
           "label": "Presentear",
@@ -192,8 +191,8 @@
     {
       "__resolveType": "site/sections/Hotsites/PresenteActionBanner.tsx",
       "banner": {
-        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/52053803-6d9b-40de-b9ad-e1778acb8f72",
-        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/0405b0ad-9d8b-410d-ba2f-2155f0a05a41"
+        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/65e26edf-3b02-4603-a091-790d56f5e8a5/banner_desk_acessoriosemcouro.jpg",
+        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/d83578a4-1d2b-42e1-91c9-9bc615188921/banner_mob_acessoriosemcouro.jpg"
       },
       "action": {
         "description": "O presente perfeito para quem valoriza sofisticação e estilo.",
@@ -210,7 +209,7 @@
       "title": "Para presentear quem você ama!",
       "news": [
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/77f8e8b1-94f6-4dd0-9c52-ea03f10d8756",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/273eb130-737c-40ab-aafe-34f9627857b5/banner_desk_novidades3.jpg",
           "title": "Breaker Watch",
           "subtitle": "Sofisticação e resistência em cada detalhe.",
           "link": {
@@ -220,7 +219,7 @@
           "label": "Carteira Masculina"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/4519c174-6183-4fa8-8829-04cdf136b75f",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/b8241b86-8f98-43e4-a084-75ce4979e756/banner_desk_novidades2.jpg",
           "title": "Fossil Blue Dive Watch",
           "subtitle": "Perfeito para qualquer ocasião.",
           "link": {
@@ -231,7 +230,7 @@
         },
         {
           "title": "Harwell Handbag",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/f775a5a1-e890-4fb9-86c0-b294c9677711",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/a881bd83-a94a-4ff5-98bf-24ee587b5e9e/banner_desk_novidades4.jpg",
           "subtitle": "Para encantar e marcar cada momento especial.",
           "link": {
             "label": "Comprar",
@@ -240,7 +239,7 @@
           "label": "Bolsa Feminina"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/01df48c3-448c-4b56-8705-288d54c6b52e",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/a72a89bf-a86e-4fa0-962e-c1b05a87555b/banner_desk_novidades.jpg",
           "title": "Bold Chains",
           "subtitle": "Para combinações e diferentes estilos.",
           "link": {
