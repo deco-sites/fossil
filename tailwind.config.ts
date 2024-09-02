@@ -8,6 +8,7 @@ export default {
     container: { center: true },
     fontFamily: {
       soleil: ["soleil", "Soleil", "sans-serif", "Helvetica Neue", "Helvetica"],
+      sacker: ["Sacker Gothics", "sans-serif", "Helvetica Neue", "Helvetica"],
       roboto: ["Roboto Condensed", "sans-serif", "Helvetica Neue", "Helvetica"],
       montserrat: ["Montserrat", "sans-serif", "Helvetica Neue", "Helvetica"],
       scoutCond: ["Scout Condensed", "Roboto Condensed", "sans-serif"],

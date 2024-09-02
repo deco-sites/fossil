@@ -77,6 +77,21 @@ export default defineApp(async (_req, ctx) => {
           type="text/css"
           href={asset("/fonts/SoleilBlack.woff")}
         />
+        <link
+          rel="preload"
+          type="text/css"
+          href={asset("/fonts/SackersGothicStdHeavy.woff")}
+        />
+        <link
+          rel="preload"
+          type="text/css"
+          href={asset("/fonts/SackersGothicStdLight.woff")}
+        />
+        <link
+          rel="preload"
+          type="text/css"
+          href={asset("/fonts/SackersGothicStdMedium.woff")}
+        />
 
         <link
           rel="preload"
@@ -117,6 +132,33 @@ export default defineApp(async (_req, ctx) => {
           type="text/css"
           dangerouslySetInnerHTML={{
             __html: `
+            @font-face {
+              font-family: "Sacker Gothics";
+              src: url(${
+              asset("/fonts/SackersGothicStdLight.woff")
+            }) format('woff');
+              font-weight: 400;
+              font-display: swap;
+              font-style: normal;
+            }
+            @font-face {
+              font-family: "Sacker Gothics";
+              src: url(${
+              asset("/fonts/SackersGothicStdMedium.woff")
+            }) format('woff');
+              font-weight: 500;
+              font-display: swap;
+              font-style: normal;
+            }
+            @font-face {
+              font-family: "Sacker Gothics";
+              src: url(${
+              asset("/fonts/SackersGothicStdHeavy.woff")
+            }) format('woff');
+              font-weight: 700;
+              font-display: swap;
+              font-style: normal;
+            }
             @font-face {
               font-family: "soleil";
               src: url(${asset("/fonts/SoleilRegular.woff")}) format('woff');

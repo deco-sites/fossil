@@ -6,7 +6,281 @@
       "__resolveType": "Header - 01"
     },
     {
+      "__resolveType": "site/sections/Hotsites/PresenteBanner.tsx",
+      "title": "FOSSIL",
+      "banner": {
+        "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/ad70a200-74bc-4c2d-a3d7-038a33204235/Banner_principal_desk.jpg",
+        "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/fa391135-c99b-4a6a-a442-72ca9d6d4276/banner_principal_mob.jpg"
+      },
+      "subtitle": "Encontre o presente perfeito na nossa seleção exclusiva de relógios, carteiras e acessórios!",
+      "cta": {
+        "label": "Conheça",
+        "url": "/"
+      },
+      "logo": {
+        "0": "h",
+        "1": "t",
+        "2": "t",
+        "3": "p",
+        "4": "s",
+        "5": ":",
+        "6": "/",
+        "7": "/",
+        "8": "o",
+        "9": "z",
+        "10": "k",
+        "11": "s",
+        "12": "g",
+        "13": "d",
+        "14": "m",
+        "15": "y",
+        "16": "r",
+        "17": "q",
+        "18": "c",
+        "19": "x",
+        "20": "c",
+        "21": "w",
+        "22": "h",
+        "23": "n",
+        "24": "b",
+        "25": "e",
+        "26": "p",
+        "27": "g",
+        "28": ".",
+        "29": "s",
+        "30": "u",
+        "31": "p",
+        "32": "a",
+        "33": "b",
+        "34": "a",
+        "35": "s",
+        "36": "e",
+        "37": ".",
+        "38": "c",
+        "39": "o",
+        "40": "/",
+        "41": "s",
+        "42": "t",
+        "43": "o",
+        "44": "r",
+        "45": "a",
+        "46": "g",
+        "47": "e",
+        "48": "/",
+        "49": "v",
+        "50": "1",
+        "51": "/",
+        "52": "o",
+        "53": "b",
+        "54": "j",
+        "55": "e",
+        "56": "c",
+        "57": "t",
+        "58": "/",
+        "59": "p",
+        "60": "u",
+        "61": "b",
+        "62": "l",
+        "63": "i",
+        "64": "c",
+        "65": "/",
+        "66": "a",
+        "67": "s",
+        "68": "s",
+        "69": "e",
+        "70": "t",
+        "71": "s",
+        "72": "/",
+        "73": "7",
+        "74": "4",
+        "75": "2",
+        "76": "4",
+        "77": "/",
+        "78": "e",
+        "79": "e",
+        "80": "3",
+        "81": "a",
+        "82": "9",
+        "83": "4",
+        "84": "b",
+        "85": "8",
+        "86": "-",
+        "87": "1",
+        "88": "e",
+        "89": "2",
+        "90": "f",
+        "91": "-",
+        "92": "4",
+        "93": "b",
+        "94": "8",
+        "95": "8",
+        "96": "-",
+        "97": "9",
+        "98": "a",
+        "99": "1",
+        "100": "1",
+        "101": "-",
+        "102": "a",
+        "103": "0",
+        "104": "2",
+        "105": "e",
+        "106": "8",
+        "107": "3",
+        "108": "2",
+        "109": "7",
+        "110": "3",
+        "111": "a",
+        "112": "1",
+        "113": "0",
+        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/b0a95c54-5471-4976-b3a9-e74bacf7349b",
+        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/6a1b6aea-c5cc-4876-82d8-4693b6e9f07a"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Product/ProductShelf.tsx",
+      "products": {
+        "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+        "props": {
+          "sort": "price:desc",
+          "collection": "2378",
+          "count": 20
+        }
+      },
+      "title": "Novidades",
+      "layout": {
+        "numberOfSliders": {
+          "mobile": 2,
+          "desktop": 4
+        },
+        "headerAlignment": "left",
+        "headerfontSize": "Small",
+        "showArrows": true
+      }
+    },
+    {
+      "__resolveType": "site/sections/Hotsites/PresenteInfoCard.tsx",
+      "cards": [
+        {
+          "title": "BESTSELLING RAQUEL",
+          "description": "O presente perfeito para mulheres que apreciam estilo e qualidade.",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/39456e4e-e381-450f-bbb5-e409f4d3ed42/banner_secudario_deskemob.jpg",
+          "url": "/",
+          "label": "Presentes femininos"
+        },
+        {
+          "title": "SPORT TOURER",
+          "description": "Para homens que valorizam design e praticidade.",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/0a54925d-535e-4e44-b693-cfbaca2ad895/banner_secudario_deskemob2.jpg",
+          "url": "/",
+          "label": "Presentes masculinos"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Hotsites/PresenteShopByGender.tsx",
+      "title": "Semi Joias",
+      "description": "Perfeito para te acompanhar no dia a dia.",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/c729d0e6-4443-4e8b-aeaf-bb178358061f/banner_deskemob_semijoias.jpg",
+      "links": [
+        {
+          "label": "Presentear",
+          "url": "/"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Hotsites/PresenteActionBanner.tsx",
+      "banner": {
+        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/65e26edf-3b02-4603-a091-790d56f5e8a5/banner_desk_acessoriosemcouro.jpg",
+        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/d83578a4-1d2b-42e1-91c9-9bc615188921/banner_mob_acessoriosemcouro.jpg"
+      },
+      "action": {
+        "description": "O presente perfeito para quem valoriza sofisticação e estilo.",
+        "cta": {
+          "label": "Comprar",
+          "url": "/"
+        },
+        "logo": {},
+        "title": "ACESSÓRIOS EM COURO"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Hotsites/PresenteWhatNews.tsx",
+      "title": "Para presentear quem você ama!",
+      "news": [
+        {
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/273eb130-737c-40ab-aafe-34f9627857b5/banner_desk_novidades3.jpg",
+          "title": "Breaker Watch",
+          "subtitle": "Sofisticação e resistência em cada detalhe.",
+          "link": {
+            "label": "Comprar",
+            "url": "/"
+          },
+          "label": "Carteira Masculina"
+        },
+        {
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/b8241b86-8f98-43e4-a084-75ce4979e756/banner_desk_novidades2.jpg",
+          "title": "Fossil Blue Dive Watch",
+          "subtitle": "Perfeito para qualquer ocasião.",
+          "link": {
+            "label": "Comprar",
+            "url": "/"
+          },
+          "label": "Relógio Feminino Harwell"
+        },
+        {
+          "title": "Harwell Handbag",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/a881bd83-a94a-4ff5-98bf-24ee587b5e9e/banner_desk_novidades4.jpg",
+          "subtitle": "Para encantar e marcar cada momento especial.",
+          "link": {
+            "label": "Comprar",
+            "url": "/"
+          },
+          "label": "Bolsa Feminina"
+        },
+        {
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/a72a89bf-a86e-4fa0-962e-c1b05a87555b/banner_desk_novidades.jpg",
+          "title": "Bold Chains",
+          "subtitle": "Para combinações e diferentes estilos.",
+          "link": {
+            "label": "Comprar",
+            "url": "/"
+          },
+          "label": "Relógio Masculino Automático"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Hotsites/PresenteShopByCategory.tsx",
+      "title": "Para quem você está buscando presentear?",
+      "categories": [
+        {
+          "label": "Relógios Masculinos",
+          "url": "/"
+        },
+        {
+          "label": "Relógios Femininos",
+          "url": "/"
+        },
+        {
+          "label": "Bolsas Femininas",
+          "url": "/"
+        },
+        {
+          "label": "Bolsas Masculinas",
+          "url": "/"
+        },
+        {
+          "label": "Semi Joias Femininas",
+          "url": "/"
+        }
+      ]
+    },
+    {
       "__resolveType": "Footer - 01"
+    },
+    {
+      "__resolveType": "site/sections/Content/YourViewsIntegration.tsx"
     }
   ],
   "seo": {
