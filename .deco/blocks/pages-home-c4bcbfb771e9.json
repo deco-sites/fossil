@@ -20,45 +20,89 @@
       }
     },
     {
-      "__resolveType": "site/sections/Images/Carousel.tsx",
-      "dots": true,
-      "arrows": true,
-      "images": [
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
         {
-          "action": {
-            "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
+          "value": {
+            "__resolveType": "site/sections/Images/Carousel.tsx",
+            "dots": true,
+            "arrows": true,
+            "images": [
+              {
+                "action": {
+                  "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/57154902-abf5-444c-a762-2f7388a1edac",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8b0be31c-8657-4840-b858-18da31131fb3",
+                "alt": "Raquel"
+              },
+              {
+                "action": {
+                  "href": "/s?q=sport%20tourer&utmi_pc=search&utmi_cp=sport%20tourer"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/9e42c693-6581-4bf3-aa4a-57b9b1fa63e3",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/4d2de001-aef0-476e-9b26-87b21a021da6",
+                "alt": "Sport Tourer"
+              },
+              {
+                "action": {
+                  "href": "/s?q=carteira%20masculino&utmi_pc=search&utmi_cp=carteira%20masculino"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/fd030277-eaac-40fc-9593-b2780e7a58b5",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/f5704f4b-332b-4b35-87ce-7a7820ce984f",
+                "alt": "Carteira"
+              },
+              {
+                "action": {
+                  "href": "/bolsasfemininas"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/18f83f32-0785-4e86-bd4f-bc18a3d567ca",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/4db45841-015f-4f15-8949-0804884a18a0",
+                "alt": "Bolsa Feminina"
+              }
+            ],
+            "preload": true,
+            "interval": 5
           },
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/57154902-abf5-444c-a762-2f7388a1edac",
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8b0be31c-8657-4840-b858-18da31131fb3",
-          "alt": "Raquel"
+          "rule": {
+            "__resolveType": "website/matchers/date.ts",
+            "end": "2024-09-01T15:00:00.000Z",
+            "start": "2024-08-01T15:00:00.000Z"
+          }
         },
         {
-          "action": {
-            "href": "/s?q=sport%20tourer&utmi_pc=search&utmi_cp=sport%20tourer"
+          "value": {
+            "__resolveType": "site/sections/Images/Carousel.tsx",
+            "dots": true,
+            "arrows": true,
+            "images": [
+              {
+                "action": {
+                  "href": "/semanadobrasil"
+                },
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/0dc9eef8-7a05-44fb-9e85-ad740415474f/Banner_slide_mob_semanabrasil(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/c553f05e-b52a-4785-8d3d-13417f062a36/banner_slide_desk_semanabrasil(1920x600).jpg",
+                "alt": "Semana do Brasil"
+              },
+              {
+                "action": {
+                  "href": "/off"
+                },
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/40f8fd61-4a01-448b-a781-6d9f287c53c2/Banner_slide_mob_semanabrasil40(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/55855062-9e17-424d-97d9-dbd3152b592a/banner_slide_desk_semanabrasil40(1920x600).jpg",
+                "alt": "40% OFF Selecionados"
+              }
+            ],
+            "preload": true,
+            "interval": 5
           },
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/9e42c693-6581-4bf3-aa4a-57b9b1fa63e3",
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/4d2de001-aef0-476e-9b26-87b21a021da6",
-          "alt": "Sport Tourer"
-        },
-        {
-          "action": {
-            "href": "/s?q=carteira%20masculino&utmi_pc=search&utmi_cp=carteira%20masculino"
-          },
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/fd030277-eaac-40fc-9593-b2780e7a58b5",
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/f5704f4b-332b-4b35-87ce-7a7820ce984f",
-          "alt": "Carteira"
-        },
-        {
-          "action": {
-            "href": "/bolsasfemininas"
-          },
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/18f83f32-0785-4e86-bd4f-bc18a3d567ca",
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/4db45841-015f-4f15-8949-0804884a18a0",
-          "alt": "Bolsa Feminina"
+          "rule": {
+            "__resolveType": "website/matchers/date.ts",
+            "start": "2024-09-01T03:00:00.000Z",
+            "end": "2024-09-08T13:00:00.000Z"
+          }
         }
-      ],
-      "preload": true,
-      "interval": 5
+      ]
     },
     {
       "__resolveType": "site/sections/Product/ProductShelf.tsx",
@@ -119,27 +163,27 @@
       },
       "list": [
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/1f1e43f8-890d-44cb-863e-74905032c852",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/4968882e-6198-439f-b486-e616fd8d8837/Banner_secundario_setembro_relomasc(610x400).png",
           "label": "Masculinos",
           "buttonText": "CONHEÇA",
           "href": "/relogio/masculino"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/18857c5f-11bb-4144-bdc5-c7472c7e97f6",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/ba4ba9b1-9bee-444e-8898-128da2faad5f/Banner_secundario_setembro_relofem(610x400).png",
           "label": "Femininos",
           "buttonText": " ENCANTE-SE",
           "href": "/relogio/feminino"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8b53088f-073b-414c-bed9-5e05913d821d",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/d3e99653-70b3-4cca-ba33-d21f029505b8/Banner_secundario_setembro_carteiras(610x400).png",
           "label": "Carteira Masculina",
           "buttonText": " CONHEÇA",
           "href": "/acessoriosmasculinos"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/1d00df82-ce01-4ea5-b422-f9eb47f3b84d",
-          "label": "Bolsas em Couro",
-          "href": "/bolsasmasculinas",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/f619c1cb-25dd-48c0-a9d5-9827f22e6400/Banner_secundario_setembro_semijoias(610x400).png",
+          "label": "Semijoias",
+          "href": "/acessoriosfemininos",
           "buttonText": "ESCOLHA O SEU"
         }
       ],
@@ -149,18 +193,18 @@
     },
     {
       "__resolveType": "site/sections/Content/BannerFossil.tsx",
-      "desktopImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/85b5dd01-4823-4d3e-84f4-bb1c2f36512b",
+      "desktopImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/e7076051-2d4d-48fd-a419-d843ec843a27/banner_terc_desk_bolsaemcouro(1230x400).jpg",
       "desktopImageDimensions": {
         "width": 1230,
         "height": 400
       },
       "alt": "Banner Terciário ",
-      "mobileImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8c2cb2a0-15a7-466c-949a-ded7329ac77e",
+      "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/2c66c3f5-c471-428a-a775-a70d3e4991f2/banner_terc_mob_bolsasemcouro(380x250).jpg",
       "mobileImageDimensions": {
         "width": 380,
         "height": 250
       },
-      "url": "/bolsasmasculinas",
+      "url": "/bolsasfemininas",
       "button": {
         "label": "LANÇAMENTOS",
         "href": "/lancamentos"
