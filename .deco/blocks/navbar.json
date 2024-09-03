@@ -363,25 +363,16 @@
       ]
     },
     {
-      "children": [
-        {
-          "children": [],
-          "name": "Presentes",
-          "url": "/presentes",
-          "image": []
-        }
-      ],
+      "children": [],
       "image": [
         {
-          "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/787f0d38-1104-4508-a120-c36d6c4e7a12"
-        },
-        {
-          "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/6c7f2239-f23a-4cb8-b3e6-2fc48cf1acc4"
+          "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7733d479-0fd1-4f33-bed9-6f9e170655d6",
+          "@type": "ImageObject"
         }
       ],
       "url": "/presentes",
-      "@type": "SiteNavigationElement",
-      "name": "Presentes"
+      "name": "Presentes",
+      "@type": "SiteNavigationElement"
     },
     {
       "children": [],
