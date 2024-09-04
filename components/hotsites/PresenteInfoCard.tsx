@@ -30,7 +30,7 @@ interface Props {
 export default function PresenteInfoCard({ cards }: Props) {
   return (
     <div class="w-full py-10 flex justify-center">
-      <div class="w-full max-w-[1536px] flex max-lg:gap-10 max-lg:flex-col">
+      <div class="w-full flex max-lg:gap-10 max-lg:flex-col">
         {(cards || []).map(({ label, description, image, url }) => (
           <div class="w-full flex flex-col gap-5">
             {image && (
@@ -39,7 +39,7 @@ export default function PresenteInfoCard({ cards }: Props) {
                   src={image}
                   loading={"lazy"}
                   width={500}
-                  class="w-full h-full max-h-[470px]"
+                  class="w-full h-full"
                 />
               </div>
             )}
