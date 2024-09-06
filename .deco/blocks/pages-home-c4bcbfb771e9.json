@@ -30,35 +30,19 @@
             "images": [
               {
                 "action": {
-                  "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
+                  "href": "/semanadocliente"
                 },
-                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/57154902-abf5-444c-a762-2f7388a1edac",
-                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/8b0be31c-8657-4840-b858-18da31131fb3",
-                "alt": "Raquel"
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/de066bf6-09b8-46c5-8fbf-836647d94fe9/Banner_slide_mob_semanacliente(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/e45c120f-114e-429c-8ddd-4e707acab668/banner_slide_desk_semanacliente(1920x600).jpg",
+                "alt": "Semana do Cliente"
               },
               {
                 "action": {
-                  "href": "/s?q=sport%20tourer&utmi_pc=search&utmi_cp=sport%20tourer"
+                  "href": "/off"
                 },
-                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/9e42c693-6581-4bf3-aa4a-57b9b1fa63e3",
-                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/4d2de001-aef0-476e-9b26-87b21a021da6",
-                "alt": "Sport Tourer"
-              },
-              {
-                "action": {
-                  "href": "/s?q=carteira%20masculino&utmi_pc=search&utmi_cp=carteira%20masculino"
-                },
-                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/fd030277-eaac-40fc-9593-b2780e7a58b5",
-                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/f5704f4b-332b-4b35-87ce-7a7820ce984f",
-                "alt": "Carteira"
-              },
-              {
-                "action": {
-                  "href": "/bolsasfemininas"
-                },
-                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/18f83f32-0785-4e86-bd4f-bc18a3d567ca",
-                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/4db45841-015f-4f15-8949-0804884a18a0",
-                "alt": "Bolsa Feminina"
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/3d200df0-8aa5-480d-804d-4101192c7d0e/Banner_slide_mob_semanacliente40(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/23b8876d-b8e1-4857-967b-2c78960ca845/banner_slide_desk_semanacliente40(1920x600).jpg",
+                "alt": "Até 40% OFF"
               }
             ],
             "preload": true,
@@ -66,8 +50,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2024-09-01T15:00:00.000Z",
-            "start": "2024-08-01T15:00:00.000Z"
+            "end": "2024-09-16T02:55:00.000Z",
+            "start": "2024-09-09T03:00:00.000Z"
           }
         },
         {
