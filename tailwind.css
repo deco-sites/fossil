@@ -43,9 +43,12 @@
     @apply flex flex-col items-center justify-start gap-8 py-10 px-8 lg:px-12;
   }
 
+  .modal-fossil::backdrop {
+    background: rgba(0, 0, 0, 0.7) !important;
+  }
+
   .modal-fossil[open] {
     pointer-events: auto;
-    visibility: visible;
   }
 
   .popup-custom-check #newsletter {
