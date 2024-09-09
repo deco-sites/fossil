@@ -1,1 +1,730 @@
-{"/.deco/blocks/algolia.json":{"blockType":"apps","__resolveType":"decohub/apps/algolia.ts"},"/.deco/blocks/Halloween.json":{"blockType":"sections","__resolveType":"site/sections/Theme/Theme.tsx"},"/.deco/blocks/navbar.json":{"blockType":"loaders","__resolveType":"commerce/loaders/navbar.ts"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Anadigi-452651.json":{"name":"Relógio Masculino Anadigi","path":"/relogio/masculino/anadigi","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Color-789121.json":{"name":"Relógio Masculino Color","path":"/relogio/masculino/color","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Termos%2520e%2520Condi%25C3%25A7%25C3%25B5es-723362.json":{"name":"Termos e Condições","path":"/institucional/termos-de-uso","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Anadigi-268381.json":{"name":"Relógio Feminino Anadigi","path":"/relogio/feminino/anadigi","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/site.json":{"blockType":"apps","__resolveType":"site/apps/site.ts"},"/.deco/blocks/plausible.json":{"blockType":"apps","__resolveType":"decohub/apps/analytics.ts"},"/.deco/blocks/Newsletter%20-%2002.json":{"blockType":"sections","__resolveType":"site/sections/Newsletter/Newsletter.tsx"},"/.deco/blocks/Fun.json":{"blockType":"sections","__resolveType":"site/sections/Theme/Theme.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Silicone-87821.json":{"name":"Relógio Masculino Silicone","path":"/relogio/masculino/silicone","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Luxury.json":{"blockType":"sections","__resolveType":"site/sections/Theme/Theme.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Analogico-833159.json":{"name":"Relógio Feminino Analogico","path":"/relogio/feminino/analogico","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Logos%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Content/Logos.tsx"},"/.deco/blocks/Footer%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Footer/Footer.tsx"},"/.deco/blocks/pages-R%25C3%25A9logio%2520Masculino%2520Analogico-930054.json":{"name":"Relógio Masculino Analogico","path":"/relogio/masculino/analogico","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Product%20Shelf%20-%2006.json":{"blockType":"sections","__resolveType":"site/sections/Product/ProductShelf.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Multifun%25C3%25A7%25C3%25A3o-633824.json":{"name":"Relógio Feminino Multifunção","path":"/relogio/feminino/multifuncao","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Newsletter%20-%2005.json":{"blockType":"sections","__resolveType":"site/sections/Newsletter/Newsletter.tsx"},"/.deco/blocks/LinkTree%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Links/LinkTree.tsx"},"/.deco/blocks/Testimonials%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Content/Testimonials.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Prata-575855.json":{"name":"Relógio Masculino Prata","path":"/relogio/masculino/prata","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Deco%20HUB.json":{"blockType":"apps","__resolveType":"site/apps/decohub.ts"},"/.deco/blocks/Banner%20Grid%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Images/BannerGrid.tsx"},"/.deco/blocks/Shoppable%20Banner%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Images/ShoppableBanner.tsx"},"/.deco/blocks/Product%20Shelf%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Product/ProductShelf.tsx"},"/.deco/blocks/pages-search-2f446eadce44.json":{"name":"Search","path":"/s","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/vtex-trigger.json":{"blockType":"workflows","__resolveType":"vtex/workflows/events.ts"},"/.deco/blocks/brand-assistant.json":{"blockType":"apps","__resolveType":"decohub/apps/brand-assistant.ts"},"/.deco/blocks/Campaign%20Timer%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Miscellaneous/CampaignTimer.tsx"},"/.deco/blocks/Image%20Gallery%20-%2003.json":{"blockType":"sections","__resolveType":"site/sections/Images/ImageGallery.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Prata-64381.json":{"name":"Relógio Feminino Prata","path":"/relogio/feminino/prata","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/My%20Theme.json":{"blockType":"sections","__resolveType":"site/sections/Theme/Theme.tsx"},"/.deco/blocks/Category%20List%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Category/CategoryList.tsx"},"/.deco/blocks/pages-home-c4bcbfb771e9.json":{"name":"Home","path":"/","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/vtex.json":{"blockType":"apps","__resolveType":"decohub/apps/vtex.ts"},"/.deco/blocks/pages-category-7493d4326022.json":{"name":"Category","path":"/*","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Benefits%20-%2002.json":{"blockType":"sections","__resolveType":"site/sections/Content/Benefits.tsx"},"/.deco/blocks/pages-aiassistant-c38e51d3049a.json":{"name":"AI Assistant","path":"/ai-assistant-deco-test","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Product%20Card%20Layout%20-%2001.json":{"blockType":"loaders","__resolveType":"site/loaders/Layouts/ProductCard.tsx"},"/.deco/blocks/pages-Formas%2520de%2520Pagamento-440809.json":{"name":"Formas de Pagamento","path":"/institucional/formas-de-pagamento","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/weather.json":{"blockType":"apps","__resolveType":"decohub/apps/weather.ts"},"/.deco/blocks/Carousel%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Images/Carousel.tsx"},"/.deco/blocks/Footer%20-%2003.json":{"blockType":"sections","__resolveType":"site/sections/Footer/Footer.tsx"},"/.deco/blocks/pages-Relogio%2520Masculino-56120.json":{"name":"Relogio Masculino","path":"/relogio/masculino","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Rose-38188.json":{"name":"Relógio Feminino Rose","path":"/relogio/feminino/rose","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Benefits%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Content/Benefits.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculina%2520Quadrada%2520-611014.json":{"name":"Relógio Masculina Quadrada ","path":"/relogio/masculino/quadrada","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Retangular-836788.json":{"name":"Relógio Feminino Retangular","path":"/relogio/feminino/retangular","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/FAQ%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Content/Faq.tsx"},"/.deco/blocks/pages-central-418877.json":{"name":"Ajuda","path":"/ajuda","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Search%20Result.json":{"blockType":"flags","__resolveType":"website/flags/multivariate/section.ts"},"/.deco/blocks/Newsletter%20-%2006.json":{"blockType":"sections","__resolveType":"site/sections/Newsletter/Newsletter.tsx"},"/.deco/blocks/Footer%20-%2002.json":{"blockType":"sections","__resolveType":"site/sections/Footer/Footer.tsx"},"/.deco/blocks/pages-Acessorios%2520femininos-969789.json":{"name":"Acessorios femininos","path":"/acessoriosfemininos","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Redonda-562658.json":{"name":"Relógio Feminino Redonda","path":"/relogio/feminino/redonda","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Product%20Shelf%20-%2003.json":{"blockType":"sections","__resolveType":"site/sections/Product/ProductShelf.tsx"},"/.deco/blocks/pages-Lan%25C3%25A7amentos-675680.json":{"name":"Acessórios","path":"/acessorios","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/PDP%20Loader.json":{"blockType":"loaders","__resolveType":"commerce/loaders/product/extensions/detailsPage.ts"},"/.deco/blocks/pages-Bolsas%2520masculinas%2520-567267.json":{"name":"Bolsas masculinas ","path":"/bolsasmasculinas","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520A%25C3%25A7o-136212.json":{"name":"Relógio Feminino Aço","path":"/relogio/feminino/aco","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Newsletter%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Newsletter/Newsletter.tsx"},"/.deco/blocks/pages-Rastreie%2520seu%2520Pedido-939894.json":{"name":"Rastreie seu Pedido","path":"/institucional/rastreie-seu-pedido","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/implementation.json":{"blockType":"apps","__resolveType":"decohub/apps/implementation.ts"},"/.deco/blocks/Product%20Shelf%20-%2004.json":{"blockType":"sections","__resolveType":"site/sections/Product/ProductShelf.tsx"},"/.deco/blocks/Desktop.json":{"blockType":"matchers","__resolveType":"website/matchers/device.ts"},"/.deco/blocks/PLP%20Loader.json":{"blockType":"loaders","__resolveType":"commerce/loaders/product/extensions/listingPage.ts"},"/.deco/blocks/Cookie%20Consent%20-%2002.json":{"blockType":"sections","__resolveType":"site/sections/Miscellaneous/CookieConsent.tsx"},"/.deco/blocks/files.json":{"blockType":"apps","__resolveType":"decohub/apps/files.ts"},"/.deco/blocks/pages-Livelo-87909.json":{"name":"Livelo","path":"/livelo","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/FAQ%20-%2003.json":{"blockType":"sections","__resolveType":"site/sections/Content/Faq.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Bicolor-298816.json":{"name":"Relógio Feminino Bicolor","path":"/relogio/feminino/bicolor","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Footer%20-%2004.json":{"blockType":"sections","__resolveType":"site/sections/Footer/Footer.tsx"},"/.deco/blocks/Product%20Shelf%20-%2002.json":{"blockType":"sections","__resolveType":"site/sections/Product/ProductShelf.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Preto-829751.json":{"name":"Relógio Masculino Preto","path":"/relogio/masculino/preto","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Retangular-258455.json":{"name":"Relógio Masculino Retangular","path":"/relogio/masculino/retangular","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Especiais-987448.json":{"name":"Relógio Masculino Especiais","path":"/relogio/masculino/especiais","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Trocas%2520e%2520Devolu%25C3%25A7%25C3%25B5es-129467.json":{"name":"Trocas e Devoluções","path":"/institucional/trocas-e-devolucoes","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Shortcuts%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Links/Shortcuts.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Multifun%25C3%25A7%25C3%25A3o-995708.json":{"name":"Relógio Masculino Multifunção","path":"/relogio/masculino/multifuncao","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Lemonade.json":{"blockType":"sections","__resolveType":"site/sections/Theme/Theme.tsx"},"/.deco/blocks/Cookie%20Consent%20-%2003.json":{"blockType":"sections","__resolveType":"site/sections/Miscellaneous/CookieConsent.tsx"},"/.deco/blocks/Preview%20site%2Fsections%2FContent%2FBannerFossil.tsx.json":{"blockType":"sections","__resolveType":"site/sections/Content/BannerFossil.tsx"},"/.deco/blocks/Newsletter%20-%2004.json":{"blockType":"sections","__resolveType":"site/sections/Newsletter/Newsletter.tsx"},"/.deco/blocks/Product%20Shelf%20-%2005.json":{"blockType":"sections","__resolveType":"site/sections/Product/ProductShelf.tsx"},"/.deco/blocks/Image%20Gallery%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Images/ImageGallery.tsx"},"/.deco/blocks/Preview%20site%2Fsections%2FProduct%2FSearchResult.tsx.json":{"blockType":"sections","__resolveType":"site/sections/Product/SearchResult.tsx"},"/.deco/blocks/ProductDetails%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Product/ProductDetails.tsx"},"/.deco/blocks/pages-Pol%25C3%25ADtica%2520de%2520Seguran%25C3%25A7a-208958.json":{"name":"Política de Segurança","path":"/institucional/politica-de-seguranca","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-productpage-ce4850591828.json":{"name":"Product Page","path":"/:slug/p","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Preview%20%2Fsections%2FContent%2FYourViewsIntegration.tsx.json":{"blockType":"sections","__resolveType":"site/sections/Content/YourViewsIntegration.tsx"},"/.deco/blocks/pages-Presente-13322.json":{"name":"Presente","path":"/presentes","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Rose-289949.json":{"name":"Relógio Masculino Rose","path":"/relogio/masculino/rose","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Benefits%20-%2003.json":{"blockType":"sections","__resolveType":"site/sections/Content/Benefits.tsx"},"/.deco/blocks/pages-Off%2520-%2520desconto%2520-227423.json":{"name":"Off","path":"/off","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Workflows.json":{"blockType":"apps","__resolveType":"decohub/apps/workflows.ts"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Preto-412629.json":{"name":"Relógio Feminino Preto","path":"/relogio/feminino/preto","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Acessorios%2520masculinos-114810.json":{"name":"Acessorios masculinos","path":"/acessoriosmasculinos","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Couro%2520-943267.json":{"name":"Relógio Masculino Couro ","path":"/relogio/masculino/couro","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Cron%25C3%25B3grafo-857871.json":{"name":"Relógio Masculino Cronógrafo","path":"/relogio/masculino/cronografo","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/SLIDER.json":{"blockType":"sections","__resolveType":"site/sections/Miscellaneous/Slide.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Dourado-869316.json":{"name":"Relógio Masculino Dourado","path":"/relogio/masculino/dourado","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Header%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Header/Header.tsx"},"/.deco/blocks/pages-Semana%2520do%2520Cliente-819978.json":{"name":"Semana do Cliente","path":"/semanadocliente","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Cer%25C3%25A2mica-272818.json":{"name":"Relógio Masculino Cerâmica","path":"/relogio/masculino/ceramica","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/SeoPDP.json":{"blockType":"sections","__resolveType":"commerce/sections/Seo/SeoPDPV2.tsx"},"/.deco/blocks/FAQ%20-%2002.json":{"blockType":"sections","__resolveType":"site/sections/Content/Faq.tsx"},"/.deco/blocks/Search%20Loader.json":{"blockType":"loaders","__resolveType":"commerce/loaders/product/extensions/listingPage.ts"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Especiais-181393.json":{"name":"Relógio Feminino Especiais","path":"/relogio/feminino/especiais","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Semana%2520do%2520Brasil-106491.json":{"name":"Semana do Brasil","path":"/semanadobrasil","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Digital-732524.json":{"name":"Relógio Masculino Digital","path":"/relogio/masculino/digital","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-NotFound-620669.json":{"name":"NotFound","path":"/Sistema/buscavazia","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Newsletter%20-%2003.json":{"blockType":"sections","__resolveType":"site/sections/Newsletter/Newsletter.tsx"},"/.deco/blocks/Mobile.json":{"blockType":"matchers","__resolveType":"website/matchers/device.ts"},"/.deco/blocks/Image%20Gallery%20-%2004.json":{"blockType":"sections","__resolveType":"site/sections/Images/ImageGallery.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Digital-848710.json":{"name":"Relógio Feminino Digital","path":"/relogio/feminino/digital","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Bicolor-551721.json":{"name":"Relógio Masculino Bicolor","path":"/relogio/masculino/bicolor","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Preview%20commerce%2Fsections%2FSeo%2FSeoPDPV2.tsx.json":{"blockType":"sections","__resolveType":"commerce/sections/Seo/SeoPDPV2.tsx"},"/.deco/blocks/pages-Formas%2520de%2520Entrega-650021.json":{"name":"Formas de Entrega","path":"/institucional/formas-de-entrega","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520A%25C3%25A7%25C3%25B5-322029.json":{"name":"Relógio Masculino Açõ","path":"/relogio/masculino/aco","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/SEOv2-01.json":{"blockType":"sections","__resolveType":"website/sections/Seo/SeoV2.tsx"},"/.deco/blocks/pages-Nossas%2520Lojas-501704.json":{"name":"Nossas Lojas","path":"/nossas-lojas","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Image%20Gallery%20-%2002.json":{"blockType":"sections","__resolveType":"site/sections/Images/ImageGallery.tsx"},"/.deco/blocks/pages-R%25C3%25A9logio%2520Masculino%2520Cron%25C3%25B3grafo-637978.json":{"name":"Rélogio Masculino Cronógrafo","path":"/relogio/masculino/cronografo","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Fashion%20theme.json":{"blockType":"sections","__resolveType":"site/sections/Theme/Theme.tsx"},"/.deco/blocks/Campaign%20Timer%20-%2002.json":{"blockType":"sections","__resolveType":"site/sections/Miscellaneous/CampaignTimer.tsx"},"/.deco/blocks/Footer%20-%2005.json":{"blockType":"sections","__resolveType":"site/sections/Footer/Footer.tsx"},"/.deco/blocks/SeoPLP.json":{"blockType":"sections","__resolveType":"commerce/sections/Seo/SeoPLP.tsx"},"/.deco/blocks/Testimonials%20-%2002.json":{"blockType":"sections","__resolveType":"site/sections/Content/Testimonials.tsx"},"/.deco/blocks/pages-Relogio%2520Feminino%2520Couro-237029.json":{"name":"Relogio Feminino Couro","path":"/relogio/feminino/couro","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Ceramica-293481.json":{"name":"Relógio Feminino Ceramica","path":"/relogio/feminino/ceramica","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Lan%25C3%25A7amentos-707429.json":{"name":"Lançamentos","path":"/lancamentos","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Campaing%20Timer%20-%20Github.json":{"blockType":"sections","__resolveType":"site/sections/Miscellaneous/CampaignTimer.tsx"},"/.deco/blocks/pages-Bolsas%2520femininas-316535.json":{"name":"Bolsas femininas","path":"/bolsasfemininas","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Category%20Banner%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Category/CategoryBanner.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Quadrada-420806.json":{"name":"Relógio Feminino Quadrada","path":"/relogio/feminino/quadrada","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Cookie%20Consent%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Miscellaneous/CookieConsent.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Color-226948.json":{"name":"Relógio Feminino Color","path":"/relogio/feminino/color","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-%2520Politica%2520de%2520Privacidade-632912.json":{"name":" Politica de Privacidade","path":"/institucional/politica-de-privacidade","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/YourViewsIntegration.json":{"blockType":"sections","__resolveType":"Preview /sections/Content/YourViewsIntegration.tsx"},"/.deco/blocks/sales-assistant.json":{"blockType":"apps","__resolveType":"decohub/apps/ai-assistants.ts"},"/.deco/blocks/pages-Cupons%2520e%2520Promo%25C3%25A7%25C3%25B5es-717660.json":{"name":"Cupons e Promoções","path":"/institucional/cupons-e-promocoes","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Dourado-248962.json":{"name":"Relógio Feminino Dourado","path":"/relogio/feminino/dourado","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Silicone-364166.json":{"name":"Relógio Feminino Silicone","path":"/relogio/feminino/silicone","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Relogio%2520Feminino-201926.json":{"name":"Relogio Feminino","path":"/relogio/feminino","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Redonda-730782.json":{"name":"Relógio Masculino Redonda","path":"/relogio/masculino/redonda","blockType":"pages","__resolveType":"website/pages/Page.tsx"}}
+{
+  "/.deco/blocks/algolia.json": {
+    "blockType": "apps",
+    "__resolveType": "decohub/apps/algolia.ts"
+  },
+  "/.deco/blocks/Halloween.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Theme/Theme.tsx"
+  },
+  "/.deco/blocks/navbar.json": {
+    "blockType": "loaders",
+    "__resolveType": "commerce/loaders/navbar.ts"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Anadigi-452651.json": {
+    "name": "Relógio Masculino Anadigi",
+    "path": "/relogio/masculino/anadigi",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Color-789121.json": {
+    "name": "Relógio Masculino Color",
+    "path": "/relogio/masculino/color",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Termos%2520e%2520Condi%25C3%25A7%25C3%25B5es-723362.json": {
+    "name": "Termos e Condições",
+    "path": "/institucional/termos-de-uso",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Anadigi-268381.json": {
+    "name": "Relógio Feminino Anadigi",
+    "path": "/relogio/feminino/anadigi",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/site.json": {
+    "blockType": "apps",
+    "__resolveType": "site/apps/site.ts"
+  },
+  "/.deco/blocks/plausible.json": {
+    "blockType": "apps",
+    "__resolveType": "decohub/apps/analytics.ts"
+  },
+  "/.deco/blocks/Newsletter%20-%2002.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
+  },
+  "/.deco/blocks/Fun.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Theme/Theme.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Silicone-87821.json": {
+    "name": "Relógio Masculino Silicone",
+    "path": "/relogio/masculino/silicone",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Luxury.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Theme/Theme.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Analogico-833159.json": {
+    "name": "Relógio Feminino Analogico",
+    "path": "/relogio/feminino/analogico",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Logos%20-%2001.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Content/Logos.tsx"
+  },
+  "/.deco/blocks/Footer%20-%2001.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Footer/Footer.tsx"
+  },
+  "/.deco/blocks/pages-R%25C3%25A9logio%2520Masculino%2520Analogico-930054.json": {
+    "name": "Relógio Masculino Analogico",
+    "path": "/relogio/masculino/analogico",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Product%20Shelf%20-%2006.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Product/ProductShelf.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Multifun%25C3%25A7%25C3%25A3o-633824.json": {
+    "name": "Relógio Feminino Multifunção",
+    "path": "/relogio/feminino/multifuncao",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Newsletter%20-%2005.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
+  },
+  "/.deco/blocks/LinkTree%20-%2001.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Links/LinkTree.tsx"
+  },
+  "/.deco/blocks/Testimonials%20-%2001.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Content/Testimonials.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Prata-575855.json": {
+    "name": "Relógio Masculino Prata",
+    "path": "/relogio/masculino/prata",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Deco%20HUB.json": {
+    "blockType": "apps",
+    "__resolveType": "site/apps/decohub.ts"
+  },
+  "/.deco/blocks/Banner%20Grid%20-%2001.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Images/BannerGrid.tsx"
+  },
+  "/.deco/blocks/Shoppable%20Banner%20-%2001.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Images/ShoppableBanner.tsx"
+  },
+  "/.deco/blocks/Product%20Shelf%20-%2001.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Product/ProductShelf.tsx"
+  },
+  "/.deco/blocks/pages-search-2f446eadce44.json": {
+    "name": "Search",
+    "path": "/s",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/vtex-trigger.json": {
+    "blockType": "workflows",
+    "__resolveType": "vtex/workflows/events.ts"
+  },
+  "/.deco/blocks/brand-assistant.json": {
+    "blockType": "apps",
+    "__resolveType": "decohub/apps/brand-assistant.ts"
+  },
+  "/.deco/blocks/Campaign%20Timer%20-%2001.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Miscellaneous/CampaignTimer.tsx"
+  },
+  "/.deco/blocks/Image%20Gallery%20-%2003.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Images/ImageGallery.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Prata-64381.json": {
+    "name": "Relógio Feminino Prata",
+    "path": "/relogio/feminino/prata",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/My%20Theme.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Theme/Theme.tsx"
+  },
+  "/.deco/blocks/Category%20List%20-%2001.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Category/CategoryList.tsx"
+  },
+  "/.deco/blocks/pages-home-c4bcbfb771e9.json": {
+    "name": "Home",
+    "path": "/",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/vtex.json": {
+    "blockType": "apps",
+    "__resolveType": "decohub/apps/vtex.ts"
+  },
+  "/.deco/blocks/pages-category-7493d4326022.json": {
+    "name": "Category",
+    "path": "/*",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Benefits%20-%2002.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Content/Benefits.tsx"
+  },
+  "/.deco/blocks/pages-aiassistant-c38e51d3049a.json": {
+    "name": "AI Assistant",
+    "path": "/ai-assistant-deco-test",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Product%20Card%20Layout%20-%2001.json": {
+    "blockType": "loaders",
+    "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
+  },
+  "/.deco/blocks/pages-Formas%2520de%2520Pagamento-440809.json": {
+    "name": "Formas de Pagamento",
+    "path": "/institucional/formas-de-pagamento",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/weather.json": {
+    "blockType": "apps",
+    "__resolveType": "decohub/apps/weather.ts"
+  },
+  "/.deco/blocks/Carousel%20-%2001.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Images/Carousel.tsx"
+  },
+  "/.deco/blocks/Footer%20-%2003.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Footer/Footer.tsx"
+  },
+  "/.deco/blocks/pages-Relogio%2520Masculino-56120.json": {
+    "name": "Relogio Masculino",
+    "path": "/relogio/masculino",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Rose-38188.json": {
+    "name": "Relógio Feminino Rose",
+    "path": "/relogio/feminino/rose",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Benefits%20-%2001.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Content/Benefits.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculina%2520Quadrada%2520-611014.json": {
+    "name": "Relógio Masculina Quadrada ",
+    "path": "/relogio/masculino/quadrada",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Retangular-836788.json": {
+    "name": "Relógio Feminino Retangular",
+    "path": "/relogio/feminino/retangular",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/FAQ%20-%2001.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Content/Faq.tsx"
+  },
+  "/.deco/blocks/pages-central-418877.json": {
+    "name": "Ajuda",
+    "path": "/ajuda",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Search%20Result.json": {
+    "blockType": "flags",
+    "__resolveType": "website/flags/multivariate/section.ts"
+  },
+  "/.deco/blocks/Newsletter%20-%2006.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
+  },
+  "/.deco/blocks/Footer%20-%2002.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Footer/Footer.tsx"
+  },
+  "/.deco/blocks/pages-Acessorios%2520femininos-969789.json": {
+    "name": "Acessorios femininos",
+    "path": "/acessoriosfemininos",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Redonda-562658.json": {
+    "name": "Relógio Feminino Redonda",
+    "path": "/relogio/feminino/redonda",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Product%20Shelf%20-%2003.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Product/ProductShelf.tsx"
+  },
+  "/.deco/blocks/pages-Lan%25C3%25A7amentos-675680.json": {
+    "name": "Acessórios",
+    "path": "/acessorios",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/PDP%20Loader.json": {
+    "blockType": "loaders",
+    "__resolveType": "commerce/loaders/product/extensions/detailsPage.ts"
+  },
+  "/.deco/blocks/pages-Bolsas%2520masculinas%2520-567267.json": {
+    "name": "Bolsas masculinas ",
+    "path": "/bolsasmasculinas",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520A%25C3%25A7o-136212.json": {
+    "name": "Relógio Feminino Aço",
+    "path": "/relogio/feminino/aco",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Newsletter%20-%2001.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
+  },
+  "/.deco/blocks/pages-Rastreie%2520seu%2520Pedido-939894.json": {
+    "name": "Rastreie seu Pedido",
+    "path": "/institucional/rastreie-seu-pedido",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/implementation.json": {
+    "blockType": "apps",
+    "__resolveType": "decohub/apps/implementation.ts"
+  },
+  "/.deco/blocks/Product%20Shelf%20-%2004.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Product/ProductShelf.tsx"
+  },
+  "/.deco/blocks/Desktop.json": {
+    "blockType": "matchers",
+    "__resolveType": "website/matchers/device.ts"
+  },
+  "/.deco/blocks/PLP%20Loader.json": {
+    "blockType": "loaders",
+    "__resolveType": "commerce/loaders/product/extensions/listingPage.ts"
+  },
+  "/.deco/blocks/Cookie%20Consent%20-%2002.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Miscellaneous/CookieConsent.tsx"
+  },
+  "/.deco/blocks/files.json": {
+    "blockType": "apps",
+    "__resolveType": "decohub/apps/files.ts"
+  },
+  "/.deco/blocks/pages-Livelo-87909.json": {
+    "name": "Livelo",
+    "path": "/livelo",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/FAQ%20-%2003.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Content/Faq.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Bicolor-298816.json": {
+    "name": "Relógio Feminino Bicolor",
+    "path": "/relogio/feminino/bicolor",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Footer%20-%2004.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Footer/Footer.tsx"
+  },
+  "/.deco/blocks/Product%20Shelf%20-%2002.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Product/ProductShelf.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Preto-829751.json": {
+    "name": "Relógio Masculino Preto",
+    "path": "/relogio/masculino/preto",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Retangular-258455.json": {
+    "name": "Relógio Masculino Retangular",
+    "path": "/relogio/masculino/retangular",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Especiais-987448.json": {
+    "name": "Relógio Masculino Especiais",
+    "path": "/relogio/masculino/especiais",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Trocas%2520e%2520Devolu%25C3%25A7%25C3%25B5es-129467.json": {
+    "name": "Trocas e Devoluções",
+    "path": "/institucional/trocas-e-devolucoes",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Shortcuts%20-%2001.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Links/Shortcuts.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Multifun%25C3%25A7%25C3%25A3o-995708.json": {
+    "name": "Relógio Masculino Multifunção",
+    "path": "/relogio/masculino/multifuncao",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Lemonade.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Theme/Theme.tsx"
+  },
+  "/.deco/blocks/Cookie%20Consent%20-%2003.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Miscellaneous/CookieConsent.tsx"
+  },
+  "/.deco/blocks/Preview%20site%2Fsections%2FContent%2FBannerFossil.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Content/BannerFossil.tsx"
+  },
+  "/.deco/blocks/Newsletter%20-%2004.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
+  },
+  "/.deco/blocks/Product%20Shelf%20-%2005.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Product/ProductShelf.tsx"
+  },
+  "/.deco/blocks/Image%20Gallery%20-%2001.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Images/ImageGallery.tsx"
+  },
+  "/.deco/blocks/Preview%20site%2Fsections%2FProduct%2FSearchResult.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Product/SearchResult.tsx"
+  },
+  "/.deco/blocks/ProductDetails%20-%2001.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Product/ProductDetails.tsx"
+  },
+  "/.deco/blocks/pages-Pol%25C3%25ADtica%2520de%2520Seguran%25C3%25A7a-208958.json": {
+    "name": "Política de Segurança",
+    "path": "/institucional/politica-de-seguranca",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-productpage-ce4850591828.json": {
+    "name": "Product Page",
+    "path": "/:slug/p",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FContent%2FYourViewsIntegration.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Content/YourViewsIntegration.tsx"
+  },
+  "/.deco/blocks/pages-Presente-13322.json": {
+    "name": "Presente",
+    "path": "/presentes",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Rose-289949.json": {
+    "name": "Relógio Masculino Rose",
+    "path": "/relogio/masculino/rose",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Benefits%20-%2003.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Content/Benefits.tsx"
+  },
+  "/.deco/blocks/pages-Off%2520-%2520desconto%2520-227423.json": {
+    "name": "Off",
+    "path": "/off",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Workflows.json": {
+    "blockType": "apps",
+    "__resolveType": "decohub/apps/workflows.ts"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Preto-412629.json": {
+    "name": "Relógio Feminino Preto",
+    "path": "/relogio/feminino/preto",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Acessorios%2520masculinos-114810.json": {
+    "name": "Acessorios masculinos",
+    "path": "/acessoriosmasculinos",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Couro%2520-943267.json": {
+    "name": "Relógio Masculino Couro ",
+    "path": "/relogio/masculino/couro",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Cron%25C3%25B3grafo-857871.json": {
+    "name": "Relógio Masculino Cronógrafo",
+    "path": "/relogio/masculino/cronografo",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/SLIDER.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Miscellaneous/Slide.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Dourado-869316.json": {
+    "name": "Relógio Masculino Dourado",
+    "path": "/relogio/masculino/dourado",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Header%20-%2001.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Header/Header.tsx"
+  },
+  "/.deco/blocks/pages-Semana%2520do%2520Cliente-819978.json": {
+    "name": "Semana do Cliente",
+    "path": "/semanadocliente",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Cer%25C3%25A2mica-272818.json": {
+    "name": "Relógio Masculino Cerâmica",
+    "path": "/relogio/masculino/ceramica",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/SeoPDP.json": {
+    "blockType": "sections",
+    "__resolveType": "commerce/sections/Seo/SeoPDPV2.tsx"
+  },
+  "/.deco/blocks/FAQ%20-%2002.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Content/Faq.tsx"
+  },
+  "/.deco/blocks/Search%20Loader.json": {
+    "blockType": "loaders",
+    "__resolveType": "commerce/loaders/product/extensions/listingPage.ts"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Especiais-181393.json": {
+    "name": "Relógio Feminino Especiais",
+    "path": "/relogio/feminino/especiais",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Semana%2520do%2520Brasil-106491.json": {
+    "name": "Semana do Brasil",
+    "path": "/semanadobrasil",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Digital-732524.json": {
+    "name": "Relógio Masculino Digital",
+    "path": "/relogio/masculino/digital",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-NotFound-620669.json": {
+    "name": "NotFound",
+    "path": "/Sistema/buscavazia",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Newsletter%20-%2003.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
+  },
+  "/.deco/blocks/Mobile.json": {
+    "blockType": "matchers",
+    "__resolveType": "website/matchers/device.ts"
+  },
+  "/.deco/blocks/Image%20Gallery%20-%2004.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Images/ImageGallery.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Digital-848710.json": {
+    "name": "Relógio Feminino Digital",
+    "path": "/relogio/feminino/digital",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Bicolor-551721.json": {
+    "name": "Relógio Masculino Bicolor",
+    "path": "/relogio/masculino/bicolor",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Preview%20commerce%2Fsections%2FSeo%2FSeoPDPV2.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "commerce/sections/Seo/SeoPDPV2.tsx"
+  },
+  "/.deco/blocks/pages-Formas%2520de%2520Entrega-650021.json": {
+    "name": "Formas de Entrega",
+    "path": "/institucional/formas-de-entrega",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520A%25C3%25A7%25C3%25B5-322029.json": {
+    "name": "Relógio Masculino Açõ",
+    "path": "/relogio/masculino/aco",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/SEOv2-01.json": {
+    "blockType": "sections",
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "/.deco/blocks/pages-Nossas%2520Lojas-501704.json": {
+    "name": "Nossas Lojas",
+    "path": "/nossas-lojas",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Image%20Gallery%20-%2002.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Images/ImageGallery.tsx"
+  },
+  "/.deco/blocks/pages-R%25C3%25A9logio%2520Masculino%2520Cron%25C3%25B3grafo-637978.json": {
+    "name": "Rélogio Masculino Cronógrafo",
+    "path": "/relogio/masculino/cronografo",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Fashion%20theme.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Theme/Theme.tsx"
+  },
+  "/.deco/blocks/Campaign%20Timer%20-%2002.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Miscellaneous/CampaignTimer.tsx"
+  },
+  "/.deco/blocks/Footer%20-%2005.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Footer/Footer.tsx"
+  },
+  "/.deco/blocks/SeoPLP.json": {
+    "blockType": "sections",
+    "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+  },
+  "/.deco/blocks/Testimonials%20-%2002.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Content/Testimonials.tsx"
+  },
+  "/.deco/blocks/pages-Relogio%2520Feminino%2520Couro-237029.json": {
+    "name": "Relogio Feminino Couro",
+    "path": "/relogio/feminino/couro",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Ceramica-293481.json": {
+    "name": "Relógio Feminino Ceramica",
+    "path": "/relogio/feminino/ceramica",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Lan%25C3%25A7amentos-707429.json": {
+    "name": "Lançamentos",
+    "path": "/lancamentos",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Campaing%20Timer%20-%20Github.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Miscellaneous/CampaignTimer.tsx"
+  },
+  "/.deco/blocks/pages-Bolsas%2520femininas-316535.json": {
+    "name": "Bolsas femininas",
+    "path": "/bolsasfemininas",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Category%20Banner%20-%2001.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Quadrada-420806.json": {
+    "name": "Relógio Feminino Quadrada",
+    "path": "/relogio/feminino/quadrada",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Cookie%20Consent%20-%2001.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Miscellaneous/CookieConsent.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Color-226948.json": {
+    "name": "Relógio Feminino Color",
+    "path": "/relogio/feminino/color",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-%2520Politica%2520de%2520Privacidade-632912.json": {
+    "name": " Politica de Privacidade",
+    "path": "/institucional/politica-de-privacidade",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/YourViewsIntegration.json": {
+    "blockType": "sections",
+    "__resolveType": "Preview /sections/Content/YourViewsIntegration.tsx"
+  },
+  "/.deco/blocks/sales-assistant.json": {
+    "blockType": "apps",
+    "__resolveType": "decohub/apps/ai-assistants.ts"
+  },
+  "/.deco/blocks/pages-Cupons%2520e%2520Promo%25C3%25A7%25C3%25B5es-717660.json": {
+    "name": "Cupons e Promoções",
+    "path": "/institucional/cupons-e-promocoes",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Dourado-248962.json": {
+    "name": "Relógio Feminino Dourado",
+    "path": "/relogio/feminino/dourado",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Feminino%2520Silicone-364166.json": {
+    "name": "Relógio Feminino Silicone",
+    "path": "/relogio/feminino/silicone",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Relogio%2520Feminino-201926.json": {
+    "name": "Relogio Feminino",
+    "path": "/relogio/feminino",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Rel%25C3%25B3gio%2520Masculino%2520Redonda-730782.json": {
+    "name": "Relógio Masculino Redonda",
+    "path": "/relogio/masculino/redonda",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Home%2520task%252011037-783341.json": {
+    "name": "Home task 11037",
+    "path": "/task-11037",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  }
+}
