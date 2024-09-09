@@ -2,24 +2,15 @@ import { SendEventOnView } from "../../components/Analytics.tsx";
 import AddToCartButtonVTEX from "../../islands/AddToCartButton/vtex.tsx";
 import OutOfStock from "../../islands/OutOfStock.tsx";
 import ShippingSimulation from "../../islands/ShippingSimulation.tsx";
-import { formatPrice } from "../../sdk/format.ts";
 import { useId } from "../../sdk/useId.ts";
 import { useOffer } from "../../util/useOffer.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
-import { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
 import ProductInfoPriceModel from "./ProductInfoPriceModel.tsx";
 
 interface Props {
   page: ProductDetailsPage | null;
-
-  flagDiscount?: {
-    /**@title tag image */
-    /**@description  " ex : AME" */
-    image: ImageWidget;
-  };
 
   sizeChartLink?: {
     url: string;
@@ -36,7 +27,7 @@ interface Props {
 }
 
 function ProductInfo(
-  { page, flagDiscount, sizeChartLink, device }: Props & {
+  { page, sizeChartLink, device }: Props & {
     device?: string;
   },
 ) {
@@ -163,38 +154,6 @@ function ProductInfo(
           listPrice={listPrice}
           pixPercentDiscountByDiferenceSellerPrice={pixPercentDiscountByDiferenceSellerPrice}
         />
-      )}
-
-      {flagDiscount && (
-        <div className="flex items-center w-60 h-6 lg:w-auto lg:h-auto my-4 lg:my-0">
-          <Image
-            src={flagDiscount.image}
-            width={70}
-            height={19}
-            alt="tag de desconto"
-            loading="eager"
-            fetchPriority="auto"
-            className="pr-1 border-r border-solid border-[#5C5C5C]"
-          />
-          <p className="font-museoSans border-[#5C5C5C] pl-1 text-xs lg:text-sm leading-none">
-            Receba{" "}
-            <span className="font-bold">
-              {availability
-                ? (
-                  <>
-                    {formatPrice(price * 0.05, offers?.priceCurrency)}
-                    {" "}
-                  </>
-                )
-                : (
-                  <>
-                    R$ 0,00 {" "}
-                  </>
-                )}
-            </span>
-            de volta pagando com Ame
-          </p>
-        </div>
       )}
 
       {/* Add to Cart and Favorites button */}
