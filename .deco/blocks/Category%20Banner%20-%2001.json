@@ -66,8 +66,8 @@
     },
     {
       "image": {
-        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/624c6b4c-fb0c-45ec-a4b2-13bab434ebd8/banner_livelo_desk_10_9.jpg",
-        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/d492f73e-7438-474a-9b9d-56fb9393446a/banner_livelo_mob_10_9.jpg",
+        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/ab4d6038-0b9b-451f-b370-f65d84106aa7/banner_livelo_desk_11a12_9.jpg",
+        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/19a29f75-3a2a-45ed-8a71-5ef756883046/banner_livelo_mob_11a12_9.jpg",
         "alt": "Banner Livelo"
       },
       "matcher": "/livelo*"
