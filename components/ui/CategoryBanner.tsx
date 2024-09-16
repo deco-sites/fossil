@@ -60,7 +60,7 @@ function Banner(props: SectionProps<ReturnType<typeof loader>>) {
         <Source
           src={image.desktop}
           width={1440}
-          height={200}
+          height={220}
           media="(min-width: 767px)"
         />
         <img class="w-full" src={image.desktop} alt={image.alt ?? title} />
