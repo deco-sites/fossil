@@ -62,19 +62,27 @@
             "images": [
               {
                 "action": {
-                  "href": "/semanadobrasil"
+                  "href": "/relogio/feminino?sort=release%3Adesc"
                 },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/0dc9eef8-7a05-44fb-9e85-ad740415474f/Banner_slide_mob_semanabrasil(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/c553f05e-b52a-4785-8d3d-13417f062a36/banner_slide_desk_semanabrasil(1920x600).jpg",
-                "alt": "Semana do Brasil"
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/9eb7b97a-b7d9-4cc0-955d-8aed16797547/Banner_slide_mob_raquel(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/953138d7-02e6-497f-963a-f6bbd44ecae3/banner_slide_desk_raquel(1920x600).jpg",
+                "alt": "Raquel"
               },
               {
                 "action": {
-                  "href": "/off"
+                  "href": "/s?q=carraway&utmi_pc=search&utmi_cp=carraway"
                 },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/40f8fd61-4a01-448b-a781-6d9f287c53c2/Banner_slide_mob_semanabrasil40(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/55855062-9e17-424d-97d9-dbd3152b592a/banner_slide_desk_semanabrasil40(1920x600).jpg",
-                "alt": "40% OFF Selecionados"
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/c426def8-5c1f-402a-a222-b5ef90033d58/Banner_slide_mob_carraway(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/4dad188f-cd07-49c2-9ab6-8da432f2f1ca/banner_slide_desk_carraway(1920x600).jpg",
+                "alt": "Carraway"
+              },
+              {
+                "action": {
+                  "href": "/acessorios"
+                },
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/f17e4b1f-40f5-4ad0-ae42-b36f64a66d59/Banner_slide_mob_couros(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/b0017f30-4767-4959-b435-2b5810bbb4af/banner_slide_desk_couros(1920x600).jpg",
+                "alt": "Acessórios"
               }
             ],
             "preload": true,
@@ -82,8 +90,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "start": "2024-09-01T03:00:00.000Z",
-            "end": "2024-09-08T13:00:00.000Z"
+            "start": "2024-09-16T03:00:00.000Z",
+            "end": "2024-09-23T02:55:00.000Z"
           }
         }
       ]

@@ -26,12 +26,10 @@ export interface Props {
 
   /** @title Size chart link */
   sizeChartLink?: sizeChartLink;
-
-  flagDiscount: FlagDiscount;
 }
 
 export default function ProductDetails(
-  { page, flagDiscount, sizeChartLink, device }: Props & { device?: string },
+  { page, sizeChartLink, device }: Props & { device?: string },
 ) {
   if (!page?.seo) {
     return <NotFound />;
@@ -60,7 +58,6 @@ export default function ProductDetails(
         />
         <ProductInfo
           page={page}
-          flagDiscount={flagDiscount}
           sizeChartLink={sizeChartLink}
           device={device}
         />
