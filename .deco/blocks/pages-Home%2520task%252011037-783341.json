@@ -199,7 +199,7 @@
     },
     {
       "__resolveType": "site/sections/Newsletter/NewsletterModal.tsx",
-      "textSendSucess": "<p><span style=\"font-size: 24pt\">Cadastro realizado com sucesso!</span></p>",
+      "textSendSucess": "<p><strong><span style=\"font-size: 31.5pt\">Ganhe 10% off</span></strong></p><p><span style=\"font-size: 19.5pt\">na primeira compra!</span></p>",
       "text": "<p><span style=\"font-size: 19.5pt\">Cadastre-se no site</span></p><p><strong><span style=\"font-size: 30pt\">e receba promoções exclusivas</span></strong></p>",
       "colorText": "#000000",
       "backgrounds": {
@@ -240,7 +240,9 @@
         "button": {
           "label": "Inscreva-se"
         }
-      }
+      },
+      "textFieldCupom": "Use o cupom",
+      "textCupom": "10BOASVINDAS"
     },
     {
       "__resolveType": "Footer - 04"

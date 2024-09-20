@@ -54,7 +54,9 @@ export interface INewsletterFormProps {
 }
 
 export interface Props {
-  /**@title Imagem */
+  /**
+   * @title Imagem
+   */
   image?: Device;
   /**
    * @title Newsletter Form
@@ -70,6 +72,14 @@ export interface Props {
    * @format rich-text
    */
   textSendSucess?: string;
+  /**
+   * @title Nome do campo cupom
+   */
+  textFieldCupom?: string;
+  /**
+   * @title Texto do cupom
+   */
+  textCupom?: string;
   /**
    * @title Cor do texto
    * @format color
@@ -108,7 +118,9 @@ function InputNewsletter(
     <input
       name={name}
       type={type}
-      class="px-[15px] font-gotham py-[5px] h-8 w-full max-w-[276px] text-[.688rem] rounded-[3px] leading-10 focus:outline-none border border-[#969696]"
+      class={clx(
+        `px-[15px] font-gotham py-[5px] h-8 w-full max-w-[276px] text-[.688rem] rounded-[3px] leading-10 focus:outline-none border border-[#969696]`,
+      )}
       placeholder={placeholder}
       required={required}
     />
@@ -117,6 +129,8 @@ function InputNewsletter(
 
 function NewsletterModal(
   {
+    textFieldCupom,
+    textCupom,
     textSendSucess,
     isOpen,
     form,
@@ -165,11 +179,6 @@ function NewsletterModal(
       success.value = true;
 
       setCookieOnCloseModal("registered", modalSignExpiredDate);
-
-      setTimeout(() => {
-        success.value = false;
-        modalRef.current?.close();
-      }, 2000);
     }
   };
 
@@ -189,6 +198,33 @@ function NewsletterModal(
     document.cookie = "DecoNewsletterModal" + "=" + cookieValue + ";" +
       expires + ";path=/";
   };
+
+  const refCupom = useRef<HTMLInputElement>(null);
+
+  function handleClickCopy() {
+    const elementTextCupom = refCupom.current;
+    if (!elementTextCupom) return null;
+
+    const cupomText = elementTextCupom?.querySelector<HTMLParagraphElement>(
+      ".popup-custom-text",
+    );
+
+    if (!cupomText) return null;
+
+    const elementSpan = document.createElement("span");
+
+    if (!elementSpan) return null;
+
+    navigator.clipboard.writeText(cupomText.innerText);
+
+    elementSpan?.classList.add("popup-copied");
+    elementSpan.innerText = "Copiado";
+    elementTextCupom.append(elementSpan);
+
+    setTimeout(() => {
+      elementSpan.remove();
+    }, 2500);
+  }
 
   const emailInput = !form?.email?.show
     ? (
@@ -221,7 +257,7 @@ function NewsletterModal(
         <div
           class={clx(
             `fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full 2xl:max-h-[687px] xl:max-w-[932px] 
-                        md:max-h-[80%] md:max-w-[80%] z-[101] max-md:w-[90%] max-md:max-w-[350px] max-md:max-h-[555px]`,
+             md:max-h-[80%] md:max-w-[80%] z-[101] max-md:w-[90%] max-md:max-w-[350px] max-md:max-h-[555px]`,
           )}
           id="newsletterModal"
         >
@@ -244,12 +280,69 @@ function NewsletterModal(
                     {textSendSucess && (
                       <div
                         class={clx(
-                          `text-[#fff] flex justify-center items-center top-2/4 relative -translate-y-1/2 z-10 w-full text-center`,
+                          `popup-custom-text is-title-cupom relative top-[35%] !-translate-y-[35%] md:translate-x-[34px] max-md:[&_*]:!text-[37px] 
+                          max-md:[&_*]:!leading-[25px] max-md:top-[70px] max-md:text-center max-md:left-2/4 max-md:!-translate-x-1/2 leading-none z-10`,
                         )}
+                        style={{
+                          color: colorText ||
+                            "#ffffff",
+                        }}
                         dangerouslySetInnerHTML={{
                           __html: textSendSucess,
                         }}
                       >
+                      </div>
+                    )}
+
+                    {textFieldCupom && (
+                      <p
+                        class={clx(
+                          `popup-custom-text relative top-[40%] !-translate-y-[40%] md:translate-x-[90px] text-[1.75rem] md:max-w-[35%] 
+                          leading-none z-10 max-md:top-[15%]  max-md:text-center max-md:!text-[25px] max-md:!leading-[19px] max-md:-translate-y-[15%] 
+                          max-md:left-2/4 max-md:!-translate-x-1/2`,
+                        )}
+                        style={{
+                          color: colorText ||
+                            "#ffffff",
+                        }}
+                        dangerouslySetInnerHTML={{
+                          __html: textFieldCupom,
+                        }}
+                      >
+                      </p>
+                    )}
+
+                    {textCupom && (
+                      <div
+                        onClick={handleClickCopy}
+                        ref={refCupom}
+                        class={clx(
+                          `relative md:top-[42%] md:-translate-y-[42%] z-10 w-[254px] h-[40px] cursor-pointer md:left-10
+                          left-2/4 max-md:-translate-x-1/2 top-[16%] -translate-y-[16%]`,
+                        )}
+                      >
+                        <p
+                          class={clx(
+                            `popup-custom-text is-no-select max-md:!text-[1.063rem] max-md:!leading-[19px] text-[1.75rem] uppercase max-md:text-center 
+                            md:max-w-full max-md:left-0 leading-none z-10 w-[254px] h-[39px] rounded-[3px] bg-[#ffffff] 
+                            flex items-center justify-center absolute top-[0]`,
+                          )}
+                          style={{
+                            color: colorText ||
+                              "#ffffff",
+                          }}
+                          dangerouslySetInnerHTML={{
+                            __html: textCupom,
+                          }}
+                        >
+                        </p>
+                        <Icon
+                          id="Copy"
+                          width={22}
+                          height={28}
+                          strokeWidth={1}
+                          class="text-primary-content absolute top-[5px] left-[260px] cursor-pointer"
+                        />
                       </div>
                     )}
 
@@ -273,7 +366,7 @@ function NewsletterModal(
                             .height || 550}
                         />
                         <img
-                          class="w-full h-full object-cover absolute inset-0 filter brightness-[0.5]"
+                          class="w-full h-full object-cover absolute inset-0 filter"
                           sizes="(max-width: 640px) 100vw, 30vw"
                           src={image.mobile.src}
                           alt="Imagem de fundo do modal de newsletter"
@@ -320,7 +413,7 @@ function NewsletterModal(
                       <div
                         class={clx(
                           `popup-custom-text relative top-[19%] !-translate-y-[19%] md:translate-x-[64px] max-md:[&_*]:!text-[1.063rem] max-md:[&_*]:!leading-[19px]
-                                                    max-md:top-[40px] max-md:text-center md:max-w-[30%] max-md:left-2/4 max-md:!-translate-x-1/2 leading-none`,
+                           max-md:top-[40px] max-md:text-center md:max-w-[30%] max-md:left-2/4 max-md:!-translate-x-1/2 leading-none`,
                         )}
                         style={{
                           color: colorText ||
@@ -376,7 +469,7 @@ function NewsletterModal(
                         type="submit"
                         class={clx(
                           `border-none py-[10px] rounded-[3px] max-h-8 flex items-center justify-center text-white cursor-pointer 
-                                                    font-arial text-[1rem] leading-8 min-w-[128px] focus:outline-none duration-150 font-light bg-[#969696]`,
+                           font-arial text-[1rem] leading-8 min-w-[128px] focus:outline-none duration-150 font-light bg-[#969696]`,
                         )}
                         disabled={loading}
                       >
@@ -385,9 +478,10 @@ function NewsletterModal(
                       </button>
 
                       <div
-                        class={clx(`
-                                                    max-md:flex max-md:justify-center max-md:w-full popup-custom-check flex md:absolute md:translate-y-[25%] md:-bottom-[25%] 
-                                                    items-center gap-[1ch] text-white focus:outline-none`)}
+                        class={clx(
+                          `max-md:flex max-md:justify-center max-md:w-full popup-custom-check flex md:absolute md:translate-y-[25%] md:-bottom-[25%] 
+                          items-center gap-[1ch] text-white focus:outline-none`,
+                        )}
                       >
                         <input
                           class="w-auto p-[5px] max-w-[250px] text-sm focus:outline-none"

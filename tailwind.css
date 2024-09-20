@@ -98,15 +98,37 @@
     transition: all 0.175s linear;
   }
 
+  .is-no-select {
+    -webkit-touch-callout: none; /* iPhone OS, Safari */
+    -webkit-user-select: none; /* Chrome, Safari 3 */
+    -khtml-user-select: none; /* Safari 2 */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    user-select: none;
+  }
+
+  .popup-copied {
+    position: absolute;
+    z-index: 10;
+    right: -66px;
+    top: -35px;
+    padding: 5px 10px;
+    background: #000;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 0.75rem;
+    transition: all 0.175s linear;
+  }
+
   @media (min-width: 768px) and (max-width: 880px) {
     .popup-custom-text {
       max-width: 50%;
     }
   }
 
-  @media (min-width: 881px) {
-    .popup-custom-text {
-      max-width: 40%;
+  @media (min-width: 1048px) {
+    .popup-custom-text.is-title-cupom {
+      max-width: 35%;
     }
   }
 
@@ -115,6 +137,16 @@
     .popup-custom-text-send-sucess > * > *,
     .popup-custom-text-send-sucess > * > * > * {
       font-size: 1.125rem !important;
+    }
+
+    .popup-custom-text.is-title-cupom p:last-child span {
+      font-size: 25px !important;
+    }
+
+    .popup-copied {
+      top: initial;
+      bottom: -35px;
+      right: -30px;
     }
   }
 }
