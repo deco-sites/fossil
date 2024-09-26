@@ -3,6 +3,7 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_app from "./routes/_app.tsx";
+import * as $api_optin from "./routes/api/optin.tsx";
 import * as $AddToCartButton_linx from "./islands/AddToCartButton/linx.tsx";
 import * as $AddToCartButton_nuvemshop from "./islands/AddToCartButton/nuvemshop.tsx";
 import * as $AddToCartButton_shopify from "./islands/AddToCartButton/shopify.tsx";
@@ -21,6 +22,7 @@ import * as $Header_Searchbar from "./islands/Header/Searchbar.tsx";
 import * as $ImageZoom from "./islands/ImageZoom.tsx";
 import * as $MiniCart from "./islands/MiniCart.tsx";
 import * as $Newsletter from "./islands/Newsletter.tsx";
+import * as $NewsletterModal from "./islands/NewsletterModal.tsx";
 import * as $OutOfStock from "./islands/OutOfStock.tsx";
 import * as $Pagination from "./islands/Pagination.tsx";
 import * as $ProductImageZoom from "./islands/ProductImageZoom.tsx";
@@ -40,6 +42,7 @@ import { type Manifest } from "$fresh/server.ts";
 const manifest = {
   routes: {
     "./routes/_app.tsx": $_app,
+    "./routes/api/optin.tsx": $api_optin,
   },
   islands: {
     "./islands/AddToCartButton/linx.tsx": $AddToCartButton_linx,
@@ -60,6 +63,7 @@ const manifest = {
     "./islands/ImageZoom.tsx": $ImageZoom,
     "./islands/MiniCart.tsx": $MiniCart,
     "./islands/Newsletter.tsx": $Newsletter,
+    "./islands/NewsletterModal.tsx": $NewsletterModal,
     "./islands/OutOfStock.tsx": $OutOfStock,
     "./islands/Pagination.tsx": $Pagination,
     "./islands/ProductImageZoom.tsx": $ProductImageZoom,

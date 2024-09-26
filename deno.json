@@ -29,9 +29,7 @@
     "generate-icons": "deno run -A --unstable static/generate-icons.ts",
     "dev": "deno run -A --env --unstable --watch dev.ts"
   },
-  "githooks": {
-    "pre-commit": "check"
-  },
+  "githooks": { "pre-commit": "check" },
   "exclude": [
     "node_modules",
     "static/",
@@ -40,14 +38,7 @@
     "**/_fresh/*",
     ".deco"
   ],
-  "lint": {
-    "rules": {
-      "tags": [
-        "fresh",
-        "recommended"
-      ]
-    }
-  },
+  "lint": { "rules": { "tags": ["fresh", "recommended"] } },
   "nodeModulesDir": false,
   "compilerOptions": {
     "jsx": "react-jsx",
