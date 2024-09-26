@@ -283,6 +283,53 @@
       "__resolveType": "site/sections/Content/YourViewstestimonial.tsx"
     },
     {
+      "__resolveType": "site/sections/Newsletter/NewsletterModal.tsx",
+      "textSendSucess": "<p><strong><span style=\"font-size: 31.5pt\">Ganhe 10% off</span></strong></p><p><span style=\"font-size: 19.5pt\">na primeira compra!</span></p>",
+      "text": "<p><span style=\"font-size: 19.5pt\">Cadastre-se no site</span></p><p><strong><span style=\"font-size: 30pt\">e receba promoções exclusivas</span></strong></p>",
+      "colorText": "#000000",
+      "backgrounds": {
+        "desktop": {
+          "initial": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/af17e03d-5d4c-49cb-91a0-3c7d93a6bb1a/banner.png",
+          "width": 932,
+          "height": 687,
+          "success": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/ebd4b476-498b-40b9-aaed-507a5e2dce25/banner.png"
+        },
+        "mobile": {
+          "initial": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/910a99f9-2d55-4262-93de-fcd129f74d71/banner-mobile.png",
+          "success": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/9c3276a1-0691-4f66-959d-b5469736820f/banner-mobile.png",
+          "width": 393,
+          "height": 555
+        }
+      },
+      "modalSignExpiredDate": 360,
+      "modalCloseExpiredDate": 10,
+      "image": {
+        "desktop": {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/b804a45b-2346-4491-9e97-e2b0213b2763/banner.png",
+          "width": 932,
+          "height": 687
+        },
+        "mobile": {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/de80bf78-255f-4cdf-8e0b-79c1e900ecd8/banner-mobile.png",
+          "width": 393,
+          "height": 555
+        }
+      },
+      "form": {
+        "email": {
+          "placeholder": "Seu e-mail"
+        },
+        "name": {
+          "placeholder": "Seu nome"
+        },
+        "button": {
+          "label": "Inscreva-se"
+        }
+      },
+      "textFieldCupom": "Use o cupom",
+      "textCupom": "10BOASVINDAS"
+    },
+    {
       "__resolveType": "Footer - 04"
     },
     {
