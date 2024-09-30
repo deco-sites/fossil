@@ -163,22 +163,22 @@
       },
       "list": [
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/4968882e-6198-439f-b486-e616fd8d8837/Banner_secundario_setembro_relomasc(610x400).png",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/f11d5b48-0543-40c3-8693-370469f3aeaa/Banner_secundario_ourubro_relomasc(610x400).png",
           "label": "Masculinos",
           "buttonText": "CONHEÇA",
           "href": "/relogio/masculino"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/ba4ba9b1-9bee-444e-8898-128da2faad5f/Banner_secundario_setembro_relofem(610x400).png",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/bcb99f9f-0673-4449-ae40-747f6a06fa66/Banner_secundario_outubro_relofem(610x400).png",
           "label": "Femininos",
           "buttonText": " ENCANTE-SE",
           "href": "/relogio/feminino"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/d3e99653-70b3-4cca-ba33-d21f029505b8/Banner_secundario_setembro_carteiras(610x400).png",
-          "label": "Carteira Masculina",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/201daffc-0d5d-4e9f-a3f0-9a8e971fd249/Banner_secundario_outubro_bolsascouro(610x400).png",
+          "label": "Acessórios",
           "buttonText": " CONHEÇA",
-          "href": "/acessoriosmasculinos"
+          "href": "/acessorios"
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/f619c1cb-25dd-48c0-a9d5-9827f22e6400/Banner_secundario_setembro_semijoias(610x400).png",
