@@ -193,18 +193,18 @@
     },
     {
       "__resolveType": "site/sections/Content/BannerFossil.tsx",
-      "desktopImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/e7076051-2d4d-48fd-a419-d843ec843a27/banner_terc_desk_bolsaemcouro(1230x400).jpg",
+      "desktopImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/d24dd1ce-4227-47e1-80e6-fe9616de6181/banner_terc_desk_semijoias(1230x400).jpg",
       "desktopImageDimensions": {
         "width": 1230,
         "height": 400
       },
       "alt": "Banner Terciário ",
-      "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/2c66c3f5-c471-428a-a775-a70d3e4991f2/banner_terc_mob_bolsasemcouro(380x250).jpg",
+      "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/9c9c499c-d674-4115-9c8c-7638f054c364/banner_terc_mob_semijoias(380x250).jpg",
       "mobileImageDimensions": {
         "width": 380,
         "height": 250
       },
-      "url": "/bolsasfemininas",
+      "url": "/acessoriosfemininos",
       "button": {
         "label": "LANÇAMENTOS",
         "href": "/lancamentos"
