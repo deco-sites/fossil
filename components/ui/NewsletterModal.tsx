@@ -256,8 +256,8 @@ function NewsletterModal(
       >
         <div
           class={clx(
-            `fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full md:max-h-[555px] md:max-w-[745px]
-            z-[101] max-md:w-[90%] max-md:max-w-[350px] max-md:max-h-[555px]`,
+            `fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full sm:max-w-[80%] max-h-[555px] lg:max-w-[745px]
+            z-[101] max-md:w-[90%] max-md:max-w-[350px]`,
           )}
           id="newsletterModal"
         >
