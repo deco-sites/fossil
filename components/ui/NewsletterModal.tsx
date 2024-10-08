@@ -256,8 +256,8 @@ function NewsletterModal(
       >
         <div
           class={clx(
-            `fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full 2xl:max-h-[687px] xl:max-w-[932px] 
-             md:max-h-[80%] md:max-w-[80%] z-[101] max-md:w-[90%] max-md:max-w-[350px] max-md:max-h-[555px]`,
+            `fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full md:max-h-[555px] md:max-w-[745px]
+            z-[101] max-md:w-[90%] max-md:max-w-[350px] max-md:max-h-[555px]`,
           )}
           id="newsletterModal"
         >
@@ -413,7 +413,7 @@ function NewsletterModal(
                       <div
                         class={clx(
                           `popup-custom-text relative top-[19%] !-translate-y-[19%] md:translate-x-[64px] max-md:[&_*]:!text-[1.063rem] max-md:[&_*]:!leading-[19px]
-                           max-md:top-[40px] max-md:text-center md:max-w-[30%] max-md:left-2/4 max-md:!-translate-x-1/2 leading-none`,
+                           max-md:top-[40px] max-md:text-center md:max-w-[35%] max-md:left-2/4 max-md:!-translate-x-1/2 leading-none`,
                         )}
                         style={{
                           color: colorText ||
