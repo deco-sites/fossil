@@ -30,26 +30,26 @@
             "images": [
               {
                 "action": {
-                  "href": "/relogio?sort=release%3Adesc"
+                  "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
                 },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/85371a61-f53b-4e08-88ec-e69302a64bcd/Banner_slide_mob_everett(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/dbc72381-2d34-4367-9869-95fb923efcac/banner_slide_desk_everett(1920x600).jpg",
-                "alt": "EVERET"
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/1c143a3f-d28b-4bcd-988a-8857de61a6ea/Banner_slide_mob_lancaraquel(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/a7b0ce46-cebb-419f-b9b7-01432686abec/banner_slide_desk_lancaraquel(1920x600).jpg",
+                "alt": "Raquel"
               },
               {
                 "action": {
-                  "href": "/relogio/masculino?sort=release%3Adesc"
+                  "href": "/s?q=sport%20tourer&utmi_pc=search&utmi_cp=sport%20tourer"
                 },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/44fce21b-d557-4b8a-8a9f-d809a4563b0e/Banner_slide_mob_neutra(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/59dd7e59-d4fe-4b99-a088-a2eb467c5337/banner_slide_desk_neutra(1920x600).jpg",
-                "alt": "Masculino"
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/ff5f8903-b716-41f6-ad33-c0dfb355a1fe/Banner_slide_mob_sptour(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/836047af-7a94-4bf7-a0db-f5710c4180f1/banner_slide_desk_sptour(1920x600).jpg",
+                "alt": "Sport Tourer"
               },
               {
                 "action": {
-                  "href": "/acessorios"
+                  "href": "/acessoriosfemininos"
                 },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/03c8a77b-c9d4-4ed3-acdf-76d152d94675/Banner_slide_mob_bolsacouro(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/e4739a0a-093c-4b67-947d-dcec53ed0554/banner_slide_desk_bolsacouro(1920x600).jpg",
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/76e8117b-0f6f-4e65-b507-1ac286c97cda/Banner_slide_mob_semijoias(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/a681cc4a-dd61-49c4-beec-4c072d50a18d/banner_slide_desk_semijoias(1920x600).jpg",
                 "alt": "Acessorios"
               }
             ],
@@ -58,8 +58,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2024-10-01T02:55:00.000Z",
-            "start": "2024-09-23T03:00:00.000Z"
+            "end": "2024-10-17T02:55:00.000Z",
+            "start": "2024-10-09T03:00:00.000Z"
           }
         },
         {
