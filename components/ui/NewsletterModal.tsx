@@ -413,7 +413,7 @@ function NewsletterModal(
                       <div
                         class={clx(
                           `popup-custom-text relative top-[19%] !-translate-y-[19%] md:translate-x-[64px] max-md:[&_*]:!text-[1.063rem] max-md:[&_*]:!leading-[19px]
-                           max-md:top-[40px] max-md:text-center md:max-w-[35%] max-md:left-2/4 max-md:!-translate-x-1/2 leading-none`,
+                           max-md:top-[40px] max-md:text-center md:max-w-[40%] max-md:left-2/4 max-md:!-translate-x-1/2 leading-none`,
                         )}
                         style={{
                           color: colorText ||
