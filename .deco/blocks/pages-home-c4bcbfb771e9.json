@@ -25,6 +25,36 @@
         {
           "value": {
             "__resolveType": "site/sections/Images/Carousel.tsx",
+            "images": [
+              {
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/dbc72381-2d34-4367-9869-95fb923efcac/banner_slide_desk_everett(1920x600).jpg",
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/85371a61-f53b-4e08-88ec-e69302a64bcd/Banner_slide_mob_everett(320x380).jpg",
+                "alt": "EVERET",
+                "action": {
+                  "href": "/relogio?sort=release%3Adesc"
+                }
+              },
+              {
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/59dd7e59-d4fe-4b99-a088-a2eb467c5337/banner_slide_desk_neutra(1920x600).jpg",
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/44fce21b-d557-4b8a-8a9f-d809a4563b0e/Banner_slide_mob_neutra(320x380).jpg",
+                "alt": "Masculino",
+                "action": {
+                  "href": "/relogio/masculino?sort=release%3Adesc"
+                }
+              }
+            ],
+            "preload": true,
+            "arrows": true,
+            "dots": true,
+            "interval": 5
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/Images/Carousel.tsx",
             "dots": true,
             "arrows": true,
             "images": [
@@ -58,8 +88,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2024-10-01T02:55:00.000Z",
-            "start": "2024-09-23T03:00:00.000Z"
+            "start": "2024-09-23T03:00:00.000Z",
+            "end": "2024-10-01T02:55:00.000Z"
           }
         },
         {
