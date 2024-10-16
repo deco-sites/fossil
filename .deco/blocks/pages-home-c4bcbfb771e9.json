@@ -108,19 +108,19 @@
             "images": [
               {
                 "action": {
-                  "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
+                  "href": "/s?q=carraway&utmi_pc=search&utmi_cp=carraway"
                 },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/e233e85c-c413-44b0-907e-54e60e54d409/Banner_slide_mob_lancaraquel(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/8496cc86-9686-4f7d-8c56-1fbe97336d9a/banner_slide_desk_lancaraquel(1920x600).jpg",
-                "alt": "Raquel"
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/16c0ba01-abce-457d-9d59-7fd99ee95c5d/Banner_slide_mob_carraway(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/6852bdf1-c684-4234-bd31-fc3b5f80e63c/banner_slide_desk_carraway(1920x600).jpg",
+                "alt": "Carraway"
               },
               {
                 "action": {
-                  "href": "/s?q=breaker&utmi_pc=search&utmi_cp=breaker"
+                  "href": "/s?q=harwell&utmi_pc=search&utmi_cp=harwell"
                 },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/ba690148-946f-41ab-a8e7-d80cbf34cfea/Banner_slide_mob_breaker(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/6620dc21-7727-402d-ab1d-9dfe2e3158e3/banner_slide_desk_breaker(1920x600).jpg",
-                "alt": "Breaker"
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/0d9015fe-f826-4791-a1a6-370a810d3da3/Banner_slide_mob_lancaharwell(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/0c421548-0505-471b-b388-d248145f14c0/banner_slide_desk_lancaharwell(1920x600).jpg",
+                "alt": "Harwell"
               },
               {
                 "action": {
@@ -136,8 +136,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "start": "2024-10-01T03:00:00.000Z",
-            "end": "2024-10-09T02:55:00.000Z"
+            "start": "2024-10-17T03:00:00.000Z",
+            "end": "2024-10-24T02:55:00.000Z"
           }
         }
       ]
