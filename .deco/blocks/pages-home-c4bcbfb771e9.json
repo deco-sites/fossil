@@ -29,7 +29,7 @@
               {
                 "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/a7b0ce46-cebb-419f-b9b7-01432686abec/banner_slide_desk_lancaraquel(1920x600).jpg",
                 "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/1c143a3f-d28b-4bcd-988a-8857de61a6ea/Banner_slide_mob_lancaraquel(320x380).jpg",
-                "alt": "Lançamento Raquel",
+                "alt": "Raquel",
                 "action": {
                   "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
                 }
@@ -48,50 +48,12 @@
                 "action": {
                   "href": "/acessoriosfemininos"
                 },
-                "alt": "Semi jóias"
-              }
-            ],
-            "preload": true,
-            "arrows": true,
-            "dots": true,
-            "interval": 5
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/Images/Carousel.tsx",
-            "dots": true,
-            "arrows": true,
-            "images": [
-              {
-                "action": {
-                  "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
-                },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/1c143a3f-d28b-4bcd-988a-8857de61a6ea/Banner_slide_mob_lancaraquel(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/a7b0ce46-cebb-419f-b9b7-01432686abec/banner_slide_desk_lancaraquel(1920x600).jpg",
-                "alt": "Raquel"
-              },
-              {
-                "action": {
-                  "href": "/s?q=sport%20tourer&utmi_pc=search&utmi_cp=sport%20tourer"
-                },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/ff5f8903-b716-41f6-ad33-c0dfb355a1fe/Banner_slide_mob_sptour(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/836047af-7a94-4bf7-a0db-f5710c4180f1/banner_slide_desk_sptour(1920x600).jpg",
-                "alt": "Sport Tourer"
-              },
-              {
-                "action": {
-                  "href": "/acessoriosfemininos"
-                },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/76e8117b-0f6f-4e65-b507-1ac286c97cda/Banner_slide_mob_semijoias(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/a681cc4a-dd61-49c4-beec-4c072d50a18d/banner_slide_desk_semijoias(1920x600).jpg",
                 "alt": "Acessorios"
               }
             ],
             "preload": true,
+            "arrows": true,
+            "dots": true,
             "interval": 5
           },
           "rule": {
@@ -136,8 +98,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "start": "2024-10-17T03:00:00.000Z",
-            "end": "2024-10-24T02:55:00.000Z"
+            "end": "2024-10-24T02:55:00.000Z",
+            "start": "2024-10-17T03:00:00.000Z"
           }
         }
       ]
