@@ -74,7 +74,7 @@ function Menu({ items }: Props) {
         ))}
         <li>
           <div class="collapse-title !uppercase !px-0 !text-sm flex items-center justify-between ">
-            <a href="/account" alt="account !text-black">MINHA CONTA</a>
+            <a href="/my-account" alt="account !text-black">MINHA CONTA</a>
             <span className="font-bold text-3xl leading-4 text-black">
               &rsaquo;
             </span>
