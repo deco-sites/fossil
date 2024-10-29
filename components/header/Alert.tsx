@@ -6,6 +6,7 @@ import MiniCart from "../../islands/MiniCart.tsx";
 import Button from "../ui/Button.tsx";
 import { usePartialSection } from "deco/hooks/usePartialSection.ts";
 import Icon from "../ui/Icon.tsx";
+import ModalLoginCustom from "../../components/ui/ModalLoginCustom.tsx";
 
 export interface Props {
   alerts?: string[];
@@ -32,7 +33,7 @@ function Alert(
               <a href="/central" class="text-white text-sm font-light">
                 Suporte
               </a>
-              <div class="w-full  max-w-4xl">
+              <div class="w-full max-w-2xl xl:max-w-4xl">
                 <ul class="hidden lg:flex placeholder:flex justify-center">
                   {alerts.map((alert, index) => (
                     <li
@@ -58,6 +59,10 @@ function Alert(
                 >
                   Entrar / Cadastrar
                 </a>
+
+                <div class="n1ag hidden">
+                  <ModalLoginCustom />
+                </div>
                 {/**minicart */}
                 {(device === "desktop" || device === "tablet") && (
                   <>
