@@ -1,4 +1,6 @@
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
+import { useUser } from "apps/vtex/hooks/useUser.ts";
+
 export interface Props {
   items: SiteNavigationElement[];
 }
@@ -64,6 +66,8 @@ function MenuItem(
 }
 
 function Menu({ items }: Props) {
+  const { user } = useUser();
+
   return (
     <div class="flex flex-col h-full">
       <ul class="px-4 flex-grow flex flex-col divide-y divide-base-200 bg-white overflow-y-scroll">
@@ -72,14 +76,25 @@ function Menu({ items }: Props) {
             <MenuItem item={item} isParent={true} />
           </li>
         ))}
-        <li>
-          <div class="collapse-title !uppercase !px-0 !text-sm flex items-center justify-between ">
-            <a href="/my-account" alt="account !text-black">MINHA CONTA</a>
-            <span className="font-bold text-3xl leading-4 text-black">
-              &rsaquo;
-            </span>
-          </div>
-        </li>
+
+        {!user.value?.givenName
+          ? (
+            <li>
+              <div class="collapse-title !uppercase !px-0 !text-sm flex items-center justify-between ">
+                <a href="/my-account" alt="account !text-black">MINHA CONTA</a>
+                <span className="font-bold text-3xl leading-4 text-black">
+                  &rsaquo;
+                </span>
+              </div>
+            </li>
+          )
+          : (
+            <li>
+              <div class="collapse-title !uppercase !px-0 !text-sm flex items-center justify-between ">
+                <a href="/my-account" alt="account !text-black">Sair</a>
+              </div>
+            </li>
+          )}
       </ul>
     </div>
   );
