@@ -37,7 +37,8 @@
                 "mobile": 2,
                 "desktop": 3
               },
-              "variant": "aside"
+              "variant": "aside",
+              "banners": []
             },
             "startingPage": 1,
             "isCollection": false
