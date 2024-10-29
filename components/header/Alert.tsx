@@ -52,17 +52,8 @@ function Alert(
                 </ul>
               </div>
               <div class=" hidden lg:flex gap-5">
-                <a
-                  class="flex items-center text-white text-sm font-thin "
-                  href="/account"
-                  aria-label="Account"
-                >
-                  Entrar / Cadastrar
-                </a>
+                <ModalLoginCustom />
 
-                <div class="n1ag hidden">
-                  <ModalLoginCustom />
-                </div>
                 {/**minicart */}
                 {(device === "desktop" || device === "tablet") && (
                   <>
