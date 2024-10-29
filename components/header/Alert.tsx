@@ -60,9 +60,8 @@ function Alert(
                   Entrar / Cadastrar
                 </a>
 
-                <div class="n1ag hidden">
-                  <ModalLoginCustom />
-                </div>
+                <ModalLoginCustom />
+
                 {/**minicart */}
                 {(device === "desktop" || device === "tablet") && (
                   <>

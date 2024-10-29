@@ -1,5 +1,5 @@
 const storeScope = "fossil";
-const colorSecondary = "#d5934b";
+const colorPrimary = "#000911";
 
 const handleLoadScript = (src: string, onLoadCallback: () => void) => {
     const script = document.createElement("script");
@@ -347,7 +347,7 @@ export const loadVtexIdScripts = (callback: () => void) => {
         .vtexIdUI-confirm-email{position: relative;}
         
         .vtexIdUI-confirm-email .modal-footer .pull-right {           
-            background: ${colorSecondary} !important;
+            background: ${colorPrimary} !important;
             -webkit-border-radius: 5px !important;
             border-radius: 5px !important;
             text-transform: uppercase;
@@ -361,7 +361,7 @@ export const loadVtexIdScripts = (callback: () => void) => {
         }
         
         .vtexIdUI-confirm-email .modal-footer button {
-            background: ${colorSecondary} !important;
+            background: ${colorPrimary} !important;
             -webkit-border-radius: 0px !important;
             border-radius: 0px !important;
             text-transform: uppercase;
@@ -420,7 +420,7 @@ export const loadVtexIdScripts = (callback: () => void) => {
             opacity: 0.77 !important; }
         
         #classicLoginBtn {
-            background: ${colorSecondary} !important;
+            background: ${colorPrimary} !important;
             -webkit-border-radius: 5px !important;
             border-radius: 5px !important;
             text-transform: uppercase;
@@ -458,7 +458,7 @@ export const loadVtexIdScripts = (callback: () => void) => {
             font-weight: bold;
             font-size: 20px !important;
             font-family: var(--fontPrimary) !important;
-            color: ${colorSecondary} !important;
+            color: ${colorPrimary} !important;
             letter-spacing: 1px !important;
             margin-bottom: 20px;
             display: block;
@@ -487,7 +487,7 @@ export const loadVtexIdScripts = (callback: () => void) => {
             margin: 20px 0 !important; }
         
         #confirmLoginAccessKeyBtn {
-            background: ${colorSecondary} !important;
+            background: ${colorPrimary} !important;
             -webkit-border-radius: 5px !important;
             border-radius: 5px !important;
             text-transform: uppercase;
@@ -506,7 +506,7 @@ export const loadVtexIdScripts = (callback: () => void) => {
             font-size: 20px !important;
             font-family: var(--fontPrimary) !important;
             font-weight: bold !important;
-            color: ${colorSecondary} !important;
+            color: ${colorPrimary} !important;
             letter-spacing: 1px !important; }
         
         #vtexIdUI-change-pswd .modal-header .vtexid-icon-user {
@@ -525,7 +525,7 @@ export const loadVtexIdScripts = (callback: () => void) => {
             font-size: 15px !important; }
         
         #tryChangePswdBtn {
-            background: ${colorSecondary} !important;
+            background: ${colorPrimary} !important;
             -webkit-border-radius: 5px !important;
             border-radius: 5px !important;
             text-transform: uppercase;
