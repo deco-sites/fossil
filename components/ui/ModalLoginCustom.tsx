@@ -9,14 +9,6 @@ function ModalLoginCustom() {
     const storeScope = "fossil";
     const { vtexIdScriptsLoaded } = useUI();
 
-    // <a
-    //     class="flex items-center text-white text-sm font-thin "
-    //     href="/account"
-    //     aria-label="Account"
-    // >
-    //     Entrar / Cadastrar
-    // </a>
-
     return (
         <>
             <button
@@ -68,9 +60,7 @@ function ModalLoginCustom() {
                                     "@fossil-session",
                                     "true",
                                 );
-                                console.log(
-                                    "--------------------------------> ",
-                                );
+
                                 sessionFirst.value = true;
                             }}
                             class={clx(
