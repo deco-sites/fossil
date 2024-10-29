@@ -91,7 +91,12 @@ function Menu({ items }: Props) {
           : (
             <li>
               <div class="collapse-title !uppercase !px-0 !text-sm flex items-center justify-between ">
-                <a href="/my-account" alt="account !text-black ">Sair</a>
+                <a
+                  href="/api/vtexid/pub/logout?scope=technos&returnUrl=https://www.fossil.com.br"
+                  alt="account !text-black "
+                >
+                  Sair
+                </a>
               </div>
             </li>
           )}
