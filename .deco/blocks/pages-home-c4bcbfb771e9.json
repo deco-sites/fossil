@@ -27,28 +27,20 @@
             "__resolveType": "site/sections/Images/Carousel.tsx",
             "images": [
               {
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/a7b0ce46-cebb-419f-b9b7-01432686abec/banner_slide_desk_lancaraquel(1920x600).jpg",
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/1c143a3f-d28b-4bcd-988a-8857de61a6ea/Banner_slide_mob_lancaraquel(320x380).jpg",
-                "alt": "Raquel",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/bc328750-ab1b-44d4-87cb-269576df557f/banner_slide_desk_BF_15OFF(1920x600).jpg",
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/626a4b61-d74b-4bfd-ac9e-fa24d0b51f97/Banner_slide_mob_BF_15OFF(320x380).jpg",
+                "alt": "15% OFF",
                 "action": {
-                  "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
+                  "href": "/2503PS=12&map=productClusterIds&sort=discount%3Adesc"
                 }
               },
               {
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/836047af-7a94-4bf7-a0db-f5710c4180f1/banner_slide_desk_sptour(1920x600).jpg",
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/ff5f8903-b716-41f6-ad33-c0dfb355a1fe/Banner_slide_mob_sptour(320x380).jpg",
-                "alt": "Sport Tourer",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/d79b8ed9-43dd-4dca-9472-48dc50dfd359/banner_slide_desk_BF_50OFF(1920x600).jpg",
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/afc2652f-22bc-41b2-a7ed-30d3b52c0ea1/Banner_slide_mob_BF_50OFF(320x380).jpg",
+                "alt": "50% OFF",
                 "action": {
-                  "href": "/s?q=sport%20tourer&utmi_pc=search&utmi_cp=sport%20tourer"
+                  "href": "/2504PS=12&map=productClusterIds&sort=discount%3Adesc"
                 }
-              },
-              {
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/a681cc4a-dd61-49c4-beec-4c072d50a18d/banner_slide_desk_semijoias(1920x600).jpg",
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/76e8117b-0f6f-4e65-b507-1ac286c97cda/Banner_slide_mob_semijoias(320x380).jpg",
-                "action": {
-                  "href": "/acessoriosfemininos"
-                },
-                "alt": "Acessorios"
               }
             ],
             "preload": true,
@@ -58,8 +50,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2024-10-17T02:55:00.000Z",
-            "start": "2024-10-09T03:00:00.000Z"
+            "end": "2024-11-09T02:55:00.000Z",
+            "start": "2024-11-01T13:01:00.000Z"
           }
         },
         {
