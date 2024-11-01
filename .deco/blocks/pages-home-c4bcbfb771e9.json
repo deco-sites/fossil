@@ -110,8 +110,8 @@
       "products": {
         "props": {
           "sort": "",
-          "count": 20,
-          "collection": "2378"
+          "count": 16,
+          "collection": "2516"
         },
         "crossSelling": "similars",
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
@@ -143,7 +143,7 @@
         },
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
-      "title": "Novidades"
+      "title": "Black Friday"
     },
     {
       "__resolveType": "site/sections/Category/CategoryGrid.tsx",
