@@ -31,7 +31,7 @@
                 "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/626a4b61-d74b-4bfd-ac9e-fa24d0b51f97/Banner_slide_mob_BF_15OFF(320x380).jpg",
                 "alt": "15% OFF",
                 "action": {
-                  "href": "/2503PS=12&map=productClusterIds&sort=discount%3Adesc"
+                  "href": "/2503?PS=12&map=productClusterIds&sort=orders%3Adesc"
                 }
               },
               {
@@ -39,7 +39,7 @@
                 "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/afc2652f-22bc-41b2-a7ed-30d3b52c0ea1/Banner_slide_mob_BF_50OFF(320x380).jpg",
                 "alt": "50% OFF",
                 "action": {
-                  "href": "/2504PS=12&map=productClusterIds&sort=discount%3Adesc"
+                  "href": "/2504?PS=12&map=productClusterIds&sort=orders%3Adesc"
                 }
               }
             ],
