@@ -155,27 +155,27 @@
       },
       "list": [
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/f11d5b48-0543-40c3-8693-370469f3aeaa/Banner_secundario_ourubro_relomasc(610x400).png",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/cb3526c6-39bd-49ee-936d-5b41b29dfba3/Banner_secundario_relogiomasc(610x400).png",
           "label": "Masculinos",
           "buttonText": "CONHEÇA",
           "href": "/relogio/masculino"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/bcb99f9f-0673-4449-ae40-747f6a06fa66/Banner_secundario_outubro_relofem(610x400).png",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/8571b1d9-90d1-4e42-8da0-3e5a65ffe290/Banner_secundario_relogiofem(610x400).png",
           "label": "Femininos",
           "buttonText": " ENCANTE-SE",
           "href": "/relogio/feminino"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/201daffc-0d5d-4e9f-a3f0-9a8e971fd249/Banner_secundario_outubro_bolsascouro(610x400).png",
-          "label": "Acessórios",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/ad5f876a-0020-492d-bcd0-6113f512cd9d/Banner_secundario_acessorios(610x400).png",
+          "label": "Relógio Anel",
           "buttonText": " CONHEÇA",
-          "href": "/acessorios"
+          "href": "/relogio-fossil-feminino-watch-ring-dourado---es5343-1di/p?skuId=1000026510"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/f619c1cb-25dd-48c0-a9d5-9827f22e6400/Banner_secundario_setembro_semijoias(610x400).png",
-          "label": "Semijoias",
-          "href": "/acessoriosfemininos",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/557a5573-d2b6-4125-a062-4f74ccba743a/Banner_secundario_novembro_bolsas(610x400).png",
+          "label": "Bolsas em Couro",
+          "href": "/s?q=bolsa&utmi_pc=search&utmi_cp=bolsa",
           "buttonText": "ESCOLHA O SEU"
         }
       ],
