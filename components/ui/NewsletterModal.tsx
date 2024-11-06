@@ -26,6 +26,7 @@ interface ImageGeneric {
    * @title Largura da imagem
    * @description ex: (800)
    */
+
   width?: number;
   /**
    * @title Altura da imagem
