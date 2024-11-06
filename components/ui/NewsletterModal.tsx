@@ -474,6 +474,7 @@ function NewsletterModal(
                           *
                         </span>
                       </div>
+
                       <button
                         type="submit"
                         class={clx(
