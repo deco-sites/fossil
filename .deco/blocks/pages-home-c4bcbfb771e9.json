@@ -13,10 +13,10 @@
     },
     {
       "__resolveType": "site/sections/Content/PromotionalBanner.tsx",
-      "title": "CONFIRA OS ÚLTIMOS LANÇAMENTOS",
+      "title": "BLACK FRIDAY ATÉ 50% OFF*",
       "button": {
         "name": "Compre Agora",
-        "url": "/lancamentos?&utmi_p=_&utmi_pc=Html&utmi_cp=html"
+        "url": "/2503?PS=12&map=productClusterIds&sort=discount%3Adesc"
       }
     },
     {
