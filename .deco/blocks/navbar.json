@@ -378,7 +378,7 @@
       "children": [],
       "image": [],
       "name": "Black Friday",
-      "url": "/2503?PS=12&map=productClusterIds&sort=discount%3Adesc"
+      "url": "/black-friday"
     }
   ],
   "__resolveType": "commerce/loaders/navbar.ts"
