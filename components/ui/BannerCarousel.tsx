@@ -1,3 +1,4 @@
+import { useState } from "https://esm.sh/v128/preact@10.19.6/hooks/src/index.js";
 import {
   SendEventOnClick,
   SendEventOnView,
@@ -9,6 +10,7 @@ import SliderJS from "../../islands/SliderJS.tsx";
 import { useId } from "../../sdk/useId.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
+import { useEffect } from "https://esm.sh/v128/preact@10.19.6/hooks/src/index.js";
 
 /**
  * @titleBy alt
@@ -101,7 +103,13 @@ const DEFAULT_PROPS = {
 };
 
 function BannerItem(
-  { image, lcp, id }: { image: Banner; lcp?: boolean; id: string },
+  { image, lcp, position, id, is_mobile }: {
+    image: Banner;
+    lcp?: boolean;
+    position: number;
+    id: string;
+    is_mobile: boolean;
+  },
 ) {
   const {
     alt,
@@ -110,63 +118,83 @@ function BannerItem(
     action,
   } = image;
 
+  const params = {
+    promotion_name: alt,
+    creative_name: action && action.href ? action.href : "",
+    creative_slot: `Slot ${Number(position) + 1}`,
+    promotion_id: is_mobile ? mobile : desktop,
+  };
+
   return (
-    <a
-      id={id}
-      href={action?.href ?? "#"}
-      aria-label={action?.label}
-      class="relative overflow-y-hidden w-full"
-    >
-      {action && (
-        <div class="absolute top-0 md:bottom-0 bottom-1/2 left-0 right-0 sm:right-auto max-w-[407px] flex flex-col justify-end gap-4 px-8 py-12">
-          {action.title && (
-            <span class="text-2xl  font-light     text-base-100">
-              {action.title}
-            </span>
-          )}
+    <>
+      <a
+        id={id}
+        href={action?.href ?? "#"}
+        aria-label={action?.label}
+        class="relative overflow-y-hidden w-full"
+      >
+        {action && (
+          <div class="absolute top-0 md:bottom-0 bottom-1/2 left-0 right-0 sm:right-auto max-w-[407px] flex flex-col justify-end gap-4 px-8 py-12">
+            {action.title && (
+              <span class="text-2xl  font-light     text-base-100">
+                {action.title}
+              </span>
+            )}
 
-          {action.subTitle && (
-            <span class="font-normal text-4xl text-base-100">
-              {action.subTitle}
-            </span>
-          )}
+            {action.subTitle && (
+              <span class="font-normal text-4xl text-base-100">
+                {action.subTitle}
+              </span>
+            )}
 
-          {action.label && (
-            <Button
-              class="bg-base-100 text-sm  font-light     py-4 px-6 w-fit"
-              aria-label={action.label}
-            >
-              {action.label}
-            </Button>
-          )}
-        </div>
-      )}
-      <Picture preload={lcp}>
-        <Source
-          media="(max-width: 510px)"
-          fetchPriority={lcp ? "high" : "auto"}
-          src={mobile}
-          width={430}
-          height={510}
-        />
-        <Source
-          media="(min-width: 768px)"
-          fetchPriority={lcp ? "high" : "auto"}
-          src={desktop}
-          width={1920}
-          height={600}
-        />
-        <img
-          class="object-cover w-full md:h-auto lg:max-h-[474.69px] 2/1xl:max-h-[600px]  3xl:max-h-[1000px]"
-          loading={lcp ? "eager" : "lazy"}
-          src={desktop}
-          alt={alt}
-          srcset={`${mobile} 480w`}
-        />
-      </Picture>
-    </a>
+            {action.label && (
+              <Button
+                class="bg-base-100 text-sm  font-light     py-4 px-6 w-fit"
+                aria-label={action.label}
+              >
+                {action.label}
+              </Button>
+            )}
+          </div>
+        )}
+        <Picture preload={lcp}>
+          <Source
+            media="(max-width: 510px)"
+            fetchPriority={lcp ? "high" : "auto"}
+            src={mobile}
+            width={430}
+            height={510}
+          />
+          <Source
+            media="(min-width: 768px)"
+            fetchPriority={lcp ? "high" : "auto"}
+            src={desktop}
+            width={1920}
+            height={600}
+          />
+          <img
+            class="object-cover w-full md:h-auto lg:max-h-[474.69px] 2/1xl:max-h-[600px]  3xl:max-h-[1000px]"
+            loading={lcp ? "eager" : "lazy"}
+            src={desktop}
+            alt={alt}
+            srcset={`${mobile} 480w`}
+          />
+        </Picture>
+      </a>
+
+      <SendEventOnClick
+        id={`banner-principal-${id}-${position}`}
+        event={{ name: "select_promotion", params }}
+      />
+
+      <SendEventOnView
+        id={`banner-principal-${id}-${position}`}
+        event={{ name: "view_promotion", params }}
+      />
+    </>
   );
 }
+
 function Dots({ images, interval = 0 }: Props) {
   return (
     <>
@@ -227,7 +255,13 @@ function Buttons() {
 }
 
 function BannerCarousel(props: Props) {
+  const [is_mobile, set_is_mobile] = useState(true);
   const id = useId();
+
+  useEffect(() => {
+    set_is_mobile(globalThis.innerWidth <= 1024);
+  }, []);
+
   const { images, preload, interval } = { ...DEFAULT_PROPS, ...props };
 
   return (
@@ -237,21 +271,14 @@ function BannerCarousel(props: Props) {
     >
       <Slider class="carousel carousel-center w-full col-span-full row-[1/-2] gap-6">
         {images?.map((image, index) => {
-          const params = { promotion_name: image.alt };
           return (
             <Slider.Item index={index} class="carousel-item w-full">
               <BannerItem
+                id={id}
                 image={image}
                 lcp={index === 0 && preload}
-                id={`${id}::${index}`}
-              />
-              <SendEventOnClick
-                id={`${id}::${index}`}
-                event={{ name: "select_promotion", params }}
-              />
-              <SendEventOnView
-                id={`${id}::${index}`}
-                event={{ name: "view_promotion", params }}
+                position={index}
+                is_mobile={is_mobile}
               />
             </Slider.Item>
           );
