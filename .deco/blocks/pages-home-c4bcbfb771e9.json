@@ -320,7 +320,7 @@
       },
       "textFieldCupom": "Use o cupom",
       "textCupom": "10BOASVINDAS",
-      "is_active": true
+      "is_active": false
     },
     {
       "__resolveType": "Footer - 04"
