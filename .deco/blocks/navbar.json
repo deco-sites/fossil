@@ -57,7 +57,7 @@
             }
           ],
           "name": "Mecanismo",
-          "url": "/relogio/masculino?sort=release%3Adesc"
+          "url": "/relogio/masculino?sort=discount%3Adesc"
         },
         {
           "image": [],
@@ -82,7 +82,7 @@
             }
           ],
           "name": "Caixa",
-          "url": "/relogio/masculino?sort=release%3Adesc"
+          "url": "/relogio/masculino?sort=discount%3Adesc"
         },
         {
           "image": [],
@@ -113,7 +113,7 @@
             }
           ],
           "name": "Pulseira",
-          "url": "/relogio/masculino?sort=release%3Adesc"
+          "url": "/relogio/masculino?sort=discount%3Adesc"
         },
         {
           "image": [],
@@ -162,14 +162,14 @@
             }
           ],
           "name": "Cor",
-          "url": "/relogio/masculino?sort=release%3Adesc"
+          "url": "/relogio/masculino?sort=discount%3Adesc"
         }
       ],
       "name": "Relógio Masculino",
-      "url": "/relogio/masculino?sort=release%3Adesc"
+      "url": "/relogio/masculino?sort=discount%3Adesc"
     },
     {
-      "url": "/relogio/feminino?sort=release%3Adesc",
+      "url": "/relogio/feminino?sort=discount%3Adesc",
       "@type": "SiteNavigationElement",
       "image": [
         {
@@ -208,7 +208,7 @@
             }
           ],
           "name": "Mecanismo",
-          "url": "/relogio/feminino?sort=release%3Adesc"
+          "url": "/relogio/feminino?sort=discount%3Adesc"
         },
         {
           "children": [
@@ -230,7 +230,7 @@
             }
           ],
           "name": "Caixa",
-          "url": "/relogio/feminino?sort=release%3Adesc",
+          "url": "/relogio/feminino?sort=discount%3Adesc",
           "@type": "SiteNavigationElement"
         },
         {
@@ -262,7 +262,7 @@
             }
           ],
           "name": "Pulseira",
-          "url": "/relogio/feminino?sort=release%3Adesc"
+          "url": "/relogio/feminino?sort=discount%3Adesc"
         },
         {
           "image": [],
@@ -311,7 +311,7 @@
             }
           ],
           "name": "Cor",
-          "url": "/relogio/feminino?sort=release%3Adesc"
+          "url": "/relogio/feminino?sort=discount%3Adesc"
         }
       ],
       "name": "Relógio Feminino"
