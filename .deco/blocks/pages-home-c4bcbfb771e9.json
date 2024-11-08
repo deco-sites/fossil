@@ -9,7 +9,43 @@
       "__resolveType": "SEOv2-01"
     },
     {
-      "__resolveType": "Header - 01"
+      "__resolveType": "site/sections/Header/Header.tsx",
+      "cart": {
+        "freeShippingObjectiveQuantity": 600
+      },
+      "logo": {
+        "alt": "Glamour logo by deco",
+        "src": "https://www.fossil.com.br/arquivos/fossil-logo.png?v=638295235683070000",
+        "width": 100,
+        "height": 16
+      },
+      "alerts": [
+        "Frete Grátis nas compras acima de R$799",
+        "BLACK FRIDAY com até 50% OFF*"
+      ],
+      "navItems": {
+        "__resolveType": "navbar"
+      },
+      "products": [],
+      "searchbar": {
+        "name": "q",
+        "action": "/s",
+        "loader": {
+          "data": {
+            "count": 4,
+            "__resolveType": "vtex/loaders/intelligentSearch/suggestions.ts"
+          },
+          "__resolveType": "resolved"
+        },
+        "placeholder": "digite sua busca"
+      },
+      "suggestions": {
+        "products": [],
+        "searches": []
+      },
+      "logoPosition": "center",
+      "interval": 4,
+      "isShow": true
     },
     {
       "__resolveType": "site/sections/Content/PromotionalBanner.tsx",
@@ -62,27 +98,19 @@
             "images": [
               {
                 "action": {
-                  "href": "/s?q=carraway&utmi_pc=search&utmi_cp=carraway"
+                  "href": "/2503?PS=12&map=productClusterIds&sort=orders%3Adesc"
                 },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/16c0ba01-abce-457d-9d59-7fd99ee95c5d/Banner_slide_mob_carraway(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/6852bdf1-c684-4234-bd31-fc3b5f80e63c/banner_slide_desk_carraway(1920x600).jpg",
-                "alt": "Carraway"
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/b9744824-1335-4372-b3a4-d729bf855ec8/Banner_slide_mob_BF_15OFF2(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/1bd12ac7-34a8-40c4-a187-93d9f3a7fbba/banner_slide_desk_BF_15OFF2(1920x600).jpg",
+                "alt": "15% OFF"
               },
               {
                 "action": {
-                  "href": "/s?q=harwell&utmi_pc=search&utmi_cp=harwell"
+                  "href": "/2504?PS=12&map=productClusterIds&sort=orders%3Adesc"
                 },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/0d9015fe-f826-4791-a1a6-370a810d3da3/Banner_slide_mob_lancaharwell(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/0c421548-0505-471b-b388-d248145f14c0/banner_slide_desk_lancaharwell(1920x600).jpg",
-                "alt": "Harwell"
-              },
-              {
-                "action": {
-                  "href": "/s?q=blue&utmi_pc=search&utmi_cp=blue"
-                },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/dc591245-d053-48a1-8cfe-bd91c23c08a1/Banner_slide_mob_blue(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/62f2dd9a-c730-4633-94fa-22e08a28b67d/banner_slide_desk_blue(1920x600).jpg",
-                "alt": "Blue"
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/c1c685e0-8fd8-4ebb-bd48-d516a45f9bd5/Banner_slide_mob_BF_50OFF2(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/c1c34733-f344-4a76-8665-40ccc1896cf8/banner_slide_desk_BF_50OFF2(1920x600).jpg",
+                "alt": "50% OFF"
               }
             ],
             "preload": true,
@@ -90,8 +118,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2024-11-01T13:00:00.000Z",
-            "start": "2024-10-17T03:00:00.000Z"
+            "end": "2024-11-16T02:59:00.000Z",
+            "start": "2024-11-09T03:00:00.000Z"
           }
         }
       ]
