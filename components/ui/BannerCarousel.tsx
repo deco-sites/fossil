@@ -1,4 +1,3 @@
-import { useState } from "https://esm.sh/v128/preact@10.19.6/hooks/src/index.js";
 import {
   SendEventOnClick,
   SendEventOnView,
@@ -10,7 +9,7 @@ import SliderJS from "../../islands/SliderJS.tsx";
 import { useId } from "../../sdk/useId.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
-import { useEffect } from "https://esm.sh/v128/preact@10.19.6/hooks/src/index.js";
+import { useDevice } from "deco/hooks/useDevice.ts";
 
 /**
  * @titleBy alt
@@ -128,7 +127,7 @@ function BannerItem(
   return (
     <>
       <a
-        id={id}
+        id={`banner-principal-${id}-${position}`}
         href={action?.href ?? "#"}
         aria-label={action?.label}
         class="relative overflow-y-hidden w-full"
@@ -157,6 +156,7 @@ function BannerItem(
             )}
           </div>
         )}
+
         <Picture preload={lcp}>
           <Source
             media="(max-width: 510px)"
@@ -255,12 +255,9 @@ function Buttons() {
 }
 
 function BannerCarousel(props: Props) {
-  const [is_mobile, set_is_mobile] = useState(true);
   const id = useId();
-
-  useEffect(() => {
-    set_is_mobile(globalThis.innerWidth <= 1024);
-  }, []);
+  const device = useDevice();
+  const is_mobile = device !== "desktop";
 
   const { images, preload, interval } = { ...DEFAULT_PROPS, ...props };
 
