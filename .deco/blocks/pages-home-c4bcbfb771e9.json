@@ -100,16 +100,16 @@
                 "action": {
                   "href": "/2503?PS=12&map=productClusterIds&sort=orders%3Adesc"
                 },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/b9744824-1335-4372-b3a4-d729bf855ec8/Banner_slide_mob_BF_15OFF2(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/1bd12ac7-34a8-40c4-a187-93d9f3a7fbba/banner_slide_desk_BF_15OFF2(1920x600).jpg",
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/2c69b5a2-b520-4639-b88a-7fa15f2be3c4/Banner_slide_mob_BF_15OFF4(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/b928d4f1-af6e-4315-8c31-c752e77d7d56/banner_slide_desk_BF_15OFF4(1920x600).jpg",
                 "alt": "15% OFF"
               },
               {
                 "action": {
                   "href": "/2504?PS=12&map=productClusterIds&sort=orders%3Adesc"
                 },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/c1c685e0-8fd8-4ebb-bd48-d516a45f9bd5/Banner_slide_mob_BF_50OFF2(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/c1c34733-f344-4a76-8665-40ccc1896cf8/banner_slide_desk_BF_50OFF2(1920x600).jpg",
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/f0077295-abef-40f6-962e-95da883e2413/Banner_slide_mob_BF_50OFF4(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/1c3ec669-21cd-41d1-bb9a-0badeafd9cc9/banner_slide_desk_BF_50OFF4(1920x600).jpg",
                 "alt": "50% OFF"
               }
             ],
@@ -118,8 +118,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2024-11-16T02:59:00.000Z",
-            "start": "2024-11-09T03:00:00.000Z"
+            "end": "2024-11-29T02:59:00.000Z",
+            "start": "2024-11-23T03:00:00.000Z"
           }
         }
       ]
