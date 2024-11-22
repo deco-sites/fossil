@@ -8,12 +8,12 @@ export interface Props {
   title: string;
   /**
    * @title Link de script para head
-   * @description <script type="text/javascript" src=""></script> Colocar conteúdo do `src`
+   * @description <script type="text/javascript" src=""></script> Colocar link do `src`
    */
   script_head: string;
   /**
    * @title Link de CSS para head
-   * @description <link type="text/css" rel="stylesheet" href="" /> Colocar conteúdo do `href`
+   * @description <link type="text/css" rel="stylesheet" href="" /> Colocar link do `href`
    */
   css_head: string;
   /**
