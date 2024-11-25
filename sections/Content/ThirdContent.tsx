@@ -19,13 +19,11 @@ export interface Props {
   /**
    * @title Código Javascript para BODY
    * @description Colocar a tag com o conteúdo dentro <script></script>
-   * @format html
    */
   script?: string;
   /**
    * @title Código CSS para BODY
    * @description Colocar a tag com o conteúdo dentro <style></style>
-   * @format html
    */
   css?: string;
   /**
