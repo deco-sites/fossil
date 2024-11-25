@@ -24,7 +24,7 @@ export interface Props {
   script?: string;
   /**
    * @title Código CSS para BODY
-   * @description Colocar a tag com o conteúdo dentro <style></l>
+   * @description Colocar a tag com o conteúdo dentro <style></style>
    * @format html
    */
   css?: string;
@@ -55,8 +55,13 @@ export default function ThirdContent(props: Props) {
         <div dangerouslySetInnerHTML={{ __html: props.html }}></div>
       )}
 
-      {props.css && props.css}
-      {props.script && props.script}
+      {props.css && (
+        <style dangerouslySetInnerHTML={{ __html: props.css }}></style>
+      )}
+
+      {props.script && (
+        <script dangerouslySetInnerHTML={{ __html: props.script }}></script>
+      )}
     </>
   );
 }
