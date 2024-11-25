@@ -1,6 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
 
-/** @titleBy {{title}} */
+/** @titleBy title */
 export interface Props {
   /**
    * @title Título do componente
