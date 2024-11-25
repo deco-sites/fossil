@@ -42,7 +42,10 @@ export default function ThirdContent(props: Props) {
       {props.css_head && <Head>{props.css_head}</Head>}
       {props.script_head && <Head>{props.script_head}</Head>}
 
-      {props.html && props.html}
+      {props.html && (
+        <div dangerouslySetInnerHTML={{ __html: props.html }}></div>
+      )}
+
       {props.css && props.css}
       {props.script && props.script}
     </>
