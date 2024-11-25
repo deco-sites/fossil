@@ -9,27 +9,31 @@ export interface Props {
   /**
    * @title Link de script para head
    * @description <script type="text/javascript" src=""></script> Colocar link do `src`
+   * @format textarea
    */
   script_head?: string;
   /**
    * @title Link de CSS para head
    * @description <link type="text/css" rel="stylesheet" href="" /> Colocar link do `href`
+   * @format textarea
    */
   css_head?: string;
   /**
    * @title Código Javascript para BODY
-   * @description Colocar a tag com o conteúdo dentro <script></script>
+   * @description Colocar o conteúdo dentro <script></script>
+   * @format textarea
    */
   script?: string;
   /**
    * @title Código CSS para BODY
-   * @description Colocar a tag com o conteúdo dentro <style></style>
+   * @description Colocar o conteúdo dentro <style></style>
+   * @format textarea
    */
   css?: string;
   /**
    * @title Código HTML para BODY
-   * @description Colocar a tag com o conteúdo dentro <body></body>
-   * @format html
+   * @description Colocar o conteúdo dentro <body></body>
+   * @format textarea
    */
   html?: string;
 }
