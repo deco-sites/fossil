@@ -1,0 +1,17 @@
+{
+  "name": "Loja",
+  "path": "/loja",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Content/ThirdContent.tsx",
+      "title": "Mais Store - Parceiro",
+      "script_head": "https://bucket-mais.s3.amazonaws.com/private/tf/cdn/maisLoad.js",
+      "css_head": "https://bucket-mais.s3.amazonaws.com/private/tf/cdn/mais.style.css",
+      "html": "<div id=\"maisstore\"></div>"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
