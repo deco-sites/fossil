@@ -3,11 +3,20 @@
   "path": "/loja",
   "sections": [
     {
+      "__resolveType": "SEOv2-01"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
       "__resolveType": "site/sections/Content/ThirdContent.tsx",
       "title": "Mais Store - Parceiro",
       "script_head": "https://bucket-seed.s3.us-east-2.amazonaws.com/fossil.com.br/store/maisLoad.js",
       "css_head": "https://bucket-seed.s3.us-east-2.amazonaws.com/fossil.com.br/store/mais.style.css",
       "html": "<div id=\"maisstore\"></div>"
+    },
+    {
+      "__resolveType": "Footer - 04"
     }
   ],
   "seo": {
