@@ -5,8 +5,8 @@
     {
       "__resolveType": "site/sections/Content/ThirdContent.tsx",
       "title": "Mais Store - Parceiro",
-      "script_head": "https://bucket-mais.s3.amazonaws.com/private/tf/cdn/maisLoad.js",
-      "css_head": "https://bucket-mais.s3.amazonaws.com/private/tf/cdn/mais.style.css",
+      "script_head": "https://bucket-seed.s3.us-east-2.amazonaws.com/fossil.com.br/store/maisLoad.js",
+      "css_head": "https://bucket-seed.s3.us-east-2.amazonaws.com/fossil.com.br/store/mais.style.css",
       "html": "<div id=\"maisstore\"></div>"
     }
   ],
