@@ -41,17 +41,10 @@ export interface Props {
 export default function ThirdContent(props: Props) {
   return (
     <>
-      {props.css_head && (
-        <Head>
-          <link rel="stylesheet" href={props.css_head} />
-        </Head>
-      )}
-
-      {props.script_head && (
-        <Head>
-          <script src={props.script_head}></script>
-        </Head>
-      )}
+      <Head>
+        {props.css_head && <link rel="stylesheet" href={props.css_head} />}
+        {props.script_head && <script defer src={props.script_head}></script>}
+      </Head>
 
       {props.html && (
         <div dangerouslySetInnerHTML={{ __html: props.html }}></div>
@@ -62,7 +55,8 @@ export default function ThirdContent(props: Props) {
       )}
 
       {props.script && (
-        <script dangerouslySetInnerHTML={{ __html: props.script }}></script>
+        <script defer dangerouslySetInnerHTML={{ __html: props.script }}>
+        </script>
       )}
     </>
   );
