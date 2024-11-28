@@ -26,7 +26,7 @@
   "mainColors": {
     "neutral": "#f9f9f9",
     "primary": "#384c53",
-    "warning": "#000000",
+    "warning": "#e08e00",
     "base-100": "#ffffff",
     "tertiary": "#ffeaaf",
     "secondary": "#ffeaaf"
@@ -54,7 +54,7 @@
     "base-200": "#ffffff",
     "base-300": "#ffffff",
     "neutral-content": "#f9f9f9",
-    "warning-content": "#ffffff"
+    "warning-content": "#000000"
   },
   "mode": "dark"
 }
