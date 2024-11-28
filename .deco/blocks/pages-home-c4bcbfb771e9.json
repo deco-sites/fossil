@@ -63,16 +63,16 @@
             "__resolveType": "site/sections/Images/Carousel.tsx",
             "images": [
               {
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/9388cfff-4fb2-4941-b872-c56255428b1d/banner_slide_desk_BF_15OFF3(1920x600).jpg",
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/a77c0efd-1cc6-42ad-a3fb-ee8a7121aa42/Banner_slide_mob_BF_15OFF3(320x380).jpg",
-                "alt": "15% OFF",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/41e5384c-4a37-47d4-983a-967985dd689e/banner_slide_desk_BF_30OFFhoje(1920x600).jpg",
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/74f45147-b4c2-4bfe-8ed5-bb18bbea1b45/Banner_slide_mob_BF_30OFFhoje(320x380).jpg",
+                "alt": "30% OFF",
                 "action": {
                   "href": "/2503?PS=12&map=productClusterIds&sort=orders%3Adesc"
                 }
               },
               {
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/52613b39-104c-4ec8-9db5-aabcc8ed2916/banner_slide_desk_BF_50OFF3(1920x600).jpg",
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/9b610c34-a2d0-46db-b1bc-aeb4f4a64808/Banner_slide_mob_BF_50OFF3(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/cfe0cb1e-0ea0-4053-ab34-f14303982661/banner_slide_desk_BF_50OFFhoje(1920x600).jpg",
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/60ffae33-3e0e-4582-8ff0-849a7923d33c/Banner_slide_mob_BF_50OFFhoje(320x380).jpg",
                 "alt": "50% OFF",
                 "action": {
                   "href": "/2504?PS=12&map=productClusterIds&sort=orders%3Adesc"
@@ -86,8 +86,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2024-11-23T02:59:00.000Z",
-            "start": "2024-11-16T03:00:00.000Z"
+            "end": "2024-11-30T02:59:00.000Z",
+            "start": "2024-11-29T03:00:00.000Z"
           }
         },
         {
