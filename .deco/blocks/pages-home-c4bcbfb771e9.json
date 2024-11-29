@@ -100,16 +100,16 @@
                 "action": {
                   "href": "/2503?PS=12&map=productClusterIds&sort=orders%3Adesc"
                 },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/734e8857-2892-4fb3-8f52-cad25d9a41d4/Banner_slide_mob_cybermonday_20OFF(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/263258c1-07e7-40d4-81aa-d48778bd9df1/banner_slide_desk_cybermonday_20OFF(1920x600).jpg",
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/81211248-49f2-4a8e-8a0f-08d3f4fc5e39/Banner_slide_mob_cyber_20OFF(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/212dfa2b-f1e8-49e9-bcd1-2cf1258878c2/banner_slide_desk_cyber_20OFF(1920x600).jpg",
                 "alt": "20% OFF"
               },
               {
                 "action": {
                   "href": "/2504?PS=12&map=productClusterIds&sort=orders%3Adesc"
                 },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/ccc9010f-ca5f-4191-b34b-a6266e80edd3/Banner_slide_mob_cybermonday_50OFF(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/87e083e5-36f9-46f9-adda-ee5e94c4b88c/banner_slide_desk_cybermonday_50OFF(1920x600).jpg",
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/b1653659-1910-4eeb-a1cf-cfa44b638289/Banner_slide_mob_cyber_50OFF(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/6e29f958-9b0f-423a-b047-d37aa7238420/banner_slide_desk_cyber_50OFF(1920x600).jpg",
                 "alt": "50% OFF"
               }
             ],
