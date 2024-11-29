@@ -139,7 +139,7 @@
         "props": {
           "sort": "",
           "count": 16,
-          "collection": "2516"
+          "collection": "2533"
         },
         "crossSelling": "similars",
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
