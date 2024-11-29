@@ -26,7 +26,7 @@
               "__resolveType": "commerce/loaders/product/extensions/listingPage.ts",
               "data": {
                 "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
-                "sort": "release:desc",
+                "sort": "discount:desc",
                 "fuzzy": "automatic",
                 "selectedFacets": [
                   {
@@ -34,7 +34,7 @@
                     "value": "2146"
                   }
                 ],
-                "count": 17
+                "count": 18
               },
               "extensions": []
             },
