@@ -21,7 +21,7 @@
       },
       "alerts": [
         "Frete Grátis nas compras acima de R$799",
-        "BLACK FRIDAY com até 50% OFF*"
+        "CYBER WEEKEND com até 50% OFF*"
       ],
       "navItems": {
         "__resolveType": "navbar"
@@ -49,7 +49,7 @@
     },
     {
       "__resolveType": "site/sections/Content/PromotionalBanner.tsx",
-      "title": "BLACK FRIDAY ATÉ 50% OFF*",
+      "title": "CYBER WEEKEND ATÉ 50% OFF*",
       "button": {
         "name": "Compre Agora",
         "url": "/2503?PS=12&map=productClusterIds&sort=discount%3Adesc"
@@ -171,7 +171,7 @@
         },
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
-      "title": "Black Friday"
+      "title": "Cyber Weekend"
     },
     {
       "__resolveType": "site/sections/Category/CategoryGrid.tsx",
