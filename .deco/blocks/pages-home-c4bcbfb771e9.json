@@ -63,19 +63,27 @@
             "__resolveType": "site/sections/Images/Carousel.tsx",
             "images": [
               {
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/cfe0cb1e-0ea0-4053-ab34-f14303982661/banner_slide_desk_BF_50OFFhoje(1920x600).jpg",
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/60ffae33-3e0e-4582-8ff0-849a7923d33c/Banner_slide_mob_BF_50OFFhoje(320x380).jpg",
-                "alt": "50% OFF",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/6dd23514-2b5c-4632-863a-b24bb633c56d/banner_slide_desk_carraway(1920x600).jpg",
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/33413754-e6ff-4ca4-922c-d7e25e51dfaa/Banner_slide_mob_carraway(320x380).jpg",
+                "alt": "Carraway",
                 "action": {
-                  "href": "/2504?PS=12&map=productClusterIds&sort=orders%3Adesc"
+                  "href": "/s?q=carrawary&utmi_pc=search&utmi_cp=carraway"
                 }
               },
               {
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/41e5384c-4a37-47d4-983a-967985dd689e/banner_slide_desk_BF_30OFFhoje(1920x600).jpg",
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/74f45147-b4c2-4bfe-8ed5-bb18bbea1b45/Banner_slide_mob_BF_30OFFhoje(320x380).jpg",
-                "alt": "30% OFF",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/9b6d27ad-5d9c-419b-b147-103e29b79086/banner_slide_desk_harlow(1920x600).jpg",
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/cf3001fc-121a-4f01-a7e4-ab796c0db507/Banner_slide_mob_harlow(320x380).jpg",
+                "alt": "Harlow",
                 "action": {
-                  "href": "/2503?PS=12&map=productClusterIds&sort=orders%3Adesc"
+                  "href": "/Harlow"
+                }
+              },
+              {
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/14ab00bf-3f15-469f-a768-f365eaa45deb/banner_slide_desk_bracelete(1920x600).jpg",
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/9e4ebb96-b658-429f-8b0a-88ed9645c1d0/Banner_slide_mob_bracelete(320x380).jpg",
+                "alt": "Bracelete",
+                "action": {
+                  "href": "/2504?PS=12&map=productClusterIds&sort=orders%3Adesc"
                 }
               }
             ],
@@ -86,8 +94,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2024-11-30T02:59:00.000Z",
-            "start": "2024-11-29T03:00:00.000Z"
+            "end": "2024-12-12T02:59:00.000Z",
+            "start": "2024-12-03T03:00:00.000Z"
           }
         },
         {
