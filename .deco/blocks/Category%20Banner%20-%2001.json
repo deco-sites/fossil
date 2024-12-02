@@ -66,8 +66,8 @@
     },
     {
       "image": {
-        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/52ac08ad-e9e3-428d-a758-2d7cb6d5be41/Banner_colecao_desk_llivelo_29a30_11.jpg",
-        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/df56e5ef-6584-4696-955d-d093cf30a311/Banner_colecao_mob_llivelo_29a30_11.jpg",
+        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/1457cb59-210f-4489-9f32-e0f08cc31f84/Banner_desk_fossillivelo_naopromocional.png",
+        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/f3ce1649-3cb5-4526-ad5d-bef46c910a91/Banner_mob_fossillivelo_naopromocional.png",
         "alt": "Banner Livelo"
       },
       "matcher": "/livelo*"
