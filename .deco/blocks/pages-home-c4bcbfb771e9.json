@@ -221,13 +221,13 @@
     },
     {
       "__resolveType": "site/sections/Content/BannerFossil.tsx",
-      "desktopImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/97cbb983-5ee1-4600-a928-08933dd297a1/banner_terc_desk_acessorios(1230x400).jpg",
+      "desktopImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/523b927a-72fb-4b54-8165-b785667a7c7a/banner_terc_desk_relogioanel(1230x400).jpg",
       "desktopImageDimensions": {
         "width": 1230,
         "height": 400
       },
       "alt": "Banner Terciário ",
-      "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/a968a2a9-df61-4a04-9e1d-0d7b00994ceb/banner_terc_mob_acessorios(380x250).jpg",
+      "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/c627782f-9b9a-4224-a09c-e9680c5311e0/banner_terc_mob_relogioanel(380x250).jpg",
       "mobileImageDimensions": {
         "width": 380,
         "height": 250
