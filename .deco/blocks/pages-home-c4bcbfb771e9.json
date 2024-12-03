@@ -21,7 +21,7 @@
       },
       "alerts": [
         "Frete Grátis nas compras acima de R$799",
-        "CYBER WEEKEND com até 50% OFF*"
+        "15% OFF na PRIMEIRA COMPRA com o cupom BOASVINDAS15"
       ],
       "navItems": {
         "__resolveType": "navbar"
@@ -49,10 +49,10 @@
     },
     {
       "__resolveType": "site/sections/Content/PromotionalBanner.tsx",
-      "title": "CYBER WEEKEND ATÉ 50% OFF*",
+      "title": "CONFIRA OS ÚLTIMOS LANÇAMENTOS",
       "button": {
         "name": "Compre Agora",
-        "url": "/2503?PS=12&map=productClusterIds&sort=discount%3Adesc"
+        "url": "/lancamentos"
       }
     },
     {
@@ -145,9 +145,9 @@
       },
       "products": {
         "props": {
-          "sort": "",
+          "sort": "discount:desc",
           "count": 16,
-          "collection": "2533"
+          "collection": "2146"
         },
         "crossSelling": "similars",
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
@@ -179,7 +179,7 @@
         },
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
-      "title": "Cyber Weekend"
+      "title": "NOVIDADES"
     },
     {
       "__resolveType": "site/sections/Category/CategoryGrid.tsx",
