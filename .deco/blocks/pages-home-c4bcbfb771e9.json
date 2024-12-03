@@ -71,14 +71,6 @@
                 }
               },
               {
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/9b6d27ad-5d9c-419b-b147-103e29b79086/banner_slide_desk_harlow(1920x600).jpg",
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/cf3001fc-121a-4f01-a7e4-ab796c0db507/Banner_slide_mob_harlow(320x380).jpg",
-                "alt": "Harlow",
-                "action": {
-                  "href": "/relogio/feminino?sort=discount%3Adesc"
-                }
-              },
-              {
                 "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/14ab00bf-3f15-469f-a768-f365eaa45deb/banner_slide_desk_bracelete(1920x600).jpg",
                 "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/9e4ebb96-b658-429f-8b0a-88ed9645c1d0/Banner_slide_mob_bracelete(320x380).jpg",
                 "alt": "Bracelete",
