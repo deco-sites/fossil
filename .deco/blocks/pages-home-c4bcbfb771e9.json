@@ -21,7 +21,7 @@
       },
       "alerts": [
         "Frete Grátis nas compras acima de R$799",
-        "BLACK FRIDAY com até 50% OFF*"
+        "15% OFF na PRIMEIRA COMPRA com o cupom BEMVINDO15"
       ],
       "navItems": {
         "__resolveType": "navbar"
@@ -49,10 +49,10 @@
     },
     {
       "__resolveType": "site/sections/Content/PromotionalBanner.tsx",
-      "title": "BLACK FRIDAY ATÉ 50% OFF*",
+      "title": "CONFIRA OS ÚLTIMOS LANÇAMENTOS",
       "button": {
         "name": "Compre Agora",
-        "url": "/2503?PS=12&map=productClusterIds&sort=discount%3Adesc"
+        "url": "/lancamentos"
       }
     },
     {
@@ -63,19 +63,19 @@
             "__resolveType": "site/sections/Images/Carousel.tsx",
             "images": [
               {
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/9388cfff-4fb2-4941-b872-c56255428b1d/banner_slide_desk_BF_15OFF3(1920x600).jpg",
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/a77c0efd-1cc6-42ad-a3fb-ee8a7121aa42/Banner_slide_mob_BF_15OFF3(320x380).jpg",
-                "alt": "15% OFF",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/6dd23514-2b5c-4632-863a-b24bb633c56d/banner_slide_desk_carraway(1920x600).jpg",
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/33413754-e6ff-4ca4-922c-d7e25e51dfaa/Banner_slide_mob_carraway(320x380).jpg",
+                "alt": "Carraway",
                 "action": {
-                  "href": "/2503?PS=12&map=productClusterIds&sort=orders%3Adesc"
+                  "href": "/s?q=carrawary&utmi_pc=search&utmi_cp=carraway"
                 }
               },
               {
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/52613b39-104c-4ec8-9db5-aabcc8ed2916/banner_slide_desk_BF_50OFF3(1920x600).jpg",
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/9b610c34-a2d0-46db-b1bc-aeb4f4a64808/Banner_slide_mob_BF_50OFF3(320x380).jpg",
-                "alt": "50% OFF",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/14ab00bf-3f15-469f-a768-f365eaa45deb/banner_slide_desk_bracelete(1920x600).jpg",
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/9e4ebb96-b658-429f-8b0a-88ed9645c1d0/Banner_slide_mob_bracelete(320x380).jpg",
+                "alt": "Bracelete",
                 "action": {
-                  "href": "/2504?PS=12&map=productClusterIds&sort=orders%3Adesc"
+                  "href": "/lancamentos"
                 }
               }
             ],
@@ -86,8 +86,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2024-11-23T02:59:00.000Z",
-            "start": "2024-11-16T03:00:00.000Z"
+            "end": "2024-12-12T02:59:00.000Z",
+            "start": "2024-12-03T03:00:00.000Z"
           }
         },
         {
@@ -100,16 +100,16 @@
                 "action": {
                   "href": "/2503?PS=12&map=productClusterIds&sort=orders%3Adesc"
                 },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/2c69b5a2-b520-4639-b88a-7fa15f2be3c4/Banner_slide_mob_BF_15OFF4(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/b928d4f1-af6e-4315-8c31-c752e77d7d56/banner_slide_desk_BF_15OFF4(1920x600).jpg",
-                "alt": "15% OFF"
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/81211248-49f2-4a8e-8a0f-08d3f4fc5e39/Banner_slide_mob_cyber_20OFF(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/212dfa2b-f1e8-49e9-bcd1-2cf1258878c2/banner_slide_desk_cyber_20OFF(1920x600).jpg",
+                "alt": "20% OFF"
               },
               {
                 "action": {
                   "href": "/2504?PS=12&map=productClusterIds&sort=orders%3Adesc"
                 },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/f0077295-abef-40f6-962e-95da883e2413/Banner_slide_mob_BF_50OFF4(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/1c3ec669-21cd-41d1-bb9a-0badeafd9cc9/banner_slide_desk_BF_50OFF4(1920x600).jpg",
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/b1653659-1910-4eeb-a1cf-cfa44b638289/Banner_slide_mob_cyber_50OFF(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/6e29f958-9b0f-423a-b047-d37aa7238420/banner_slide_desk_cyber_50OFF(1920x600).jpg",
                 "alt": "50% OFF"
               }
             ],
@@ -118,8 +118,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2024-11-29T02:59:00.000Z",
-            "start": "2024-11-23T03:00:00.000Z"
+            "end": "2024-12-03T02:59:00.000Z",
+            "start": "2024-11-30T03:00:00.000Z"
           }
         }
       ]
@@ -137,9 +137,9 @@
       },
       "products": {
         "props": {
-          "sort": "",
+          "sort": "discount:desc",
           "count": 16,
-          "collection": "2516"
+          "collection": "2146"
         },
         "crossSelling": "similars",
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
@@ -171,7 +171,7 @@
         },
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
-      "title": "Black Friday"
+      "title": "NOVIDADES"
     },
     {
       "__resolveType": "site/sections/Category/CategoryGrid.tsx",
@@ -183,7 +183,7 @@
       },
       "list": [
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/cb3526c6-39bd-49ee-936d-5b41b29dfba3/Banner_secundario_relogiomasc(610x400).png",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/ab6b4485-56b3-4122-94c4-e62719dd3827/Banner_secundario_dezembro_relomasc(610x400).png",
           "label": "Masculinos",
           "buttonText": "CONHEÇA",
           "href": "/relogio/masculino"
@@ -195,13 +195,13 @@
           "href": "/relogio/feminino"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/ad5f876a-0020-492d-bcd0-6113f512cd9d/Banner_secundario_acessorios(610x400).png",
-          "label": "Relógio Anel",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/cac7c375-f482-4820-a641-1d0ea28859fb/Design-sem-nome.png",
+          "label": "Acessórios ",
           "buttonText": " CONHEÇA",
-          "href": "/relogio-fossil-feminino-watch-ring-dourado---es5343-1di/p?skuId=1000026510"
+          "href": "/acessoriosfemininos"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/557a5573-d2b6-4125-a062-4f74ccba743a/Banner_secundario_novembro_bolsas(610x400).png",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/e3b0533f-4c4b-48a5-9af6-4beb20d5801a/Banner_secundario_dezembro_bolsasemcoruo(610x400).png",
           "label": "Bolsas em Couro",
           "href": "/s?q=bolsa&utmi_pc=search&utmi_cp=bolsa",
           "buttonText": "ESCOLHA O SEU"
@@ -213,18 +213,18 @@
     },
     {
       "__resolveType": "site/sections/Content/BannerFossil.tsx",
-      "desktopImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/97cbb983-5ee1-4600-a928-08933dd297a1/banner_terc_desk_acessorios(1230x400).jpg",
+      "desktopImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/523b927a-72fb-4b54-8165-b785667a7c7a/banner_terc_desk_relogioanel(1230x400).jpg",
       "desktopImageDimensions": {
         "width": 1230,
         "height": 400
       },
       "alt": "Banner Terciário ",
-      "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/a968a2a9-df61-4a04-9e1d-0d7b00994ceb/banner_terc_mob_acessorios(380x250).jpg",
+      "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/c627782f-9b9a-4224-a09c-e9680c5311e0/banner_terc_mob_relogioanel(380x250).jpg",
       "mobileImageDimensions": {
         "width": 380,
         "height": 250
       },
-      "url": "/acessoriosfemininos",
+      "url": "/s?q=watch&utmi_pc=search&utmi_cp=watch",
       "button": {
         "label": "LANÇAMENTOS",
         "href": "/lancamentos"
@@ -348,7 +348,7 @@
       },
       "textFieldCupom": "Use o cupom",
       "textCupom": "10BOASVINDAS",
-      "is_active": false
+      "is_active": true
     },
     {
       "__resolveType": "Footer - 04"
