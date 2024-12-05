@@ -8,6 +8,9 @@ import type { SectionProps } from "deco/types.ts";
 import Alert from "./Alert.tsx";
 import Navbar from "./Navbar.tsx";
 import { headerHeight, headerHeightMobile } from "./constants.ts";
+import UTMSaveController from "../../islands/UTMSaveController.tsx";
+import { getCookies } from "std/http/cookie.ts";
+import { getMarketingDataByLoader } from "../../sdk/useMarketingData.ts";
 
 export interface Logo {
   src: ImageWidget;
@@ -84,6 +87,7 @@ function Header({
   logoPosition = "center",
   buttons,
   device,
+  marketing_data,
 }: SectionProps<typeof loader>) {
   const platform = usePlatform();
   const items = navItems ?? [];
@@ -100,6 +104,7 @@ function Header({
         }}
         class=""
       >
+        <UTMSaveController marketing_data={marketing_data} />
         <div class="fixed z-[100] w-full">
           {alerts && alerts.length > 0 && (
             <Alert
@@ -132,8 +137,10 @@ function Header({
   );
 }
 
-export const loader = (props: Props, _req: Request, ctx: AppContext) => {
-  return { ...props, device: ctx.device };
+export const loader = (props: Props, req: Request, ctx: AppContext) => {
+  const cookies = getCookies(req.headers);
+  const marketing_data = getMarketingDataByLoader(cookies, req.url);
+  return { ...props, device: ctx.device, marketing_data };
 };
 
 export default Header;
