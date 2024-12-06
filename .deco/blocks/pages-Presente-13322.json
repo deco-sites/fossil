@@ -190,8 +190,8 @@
     {
       "__resolveType": "site/sections/Hotsites/PresenteActionBanner.tsx",
       "banner": {
-        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/65e26edf-3b02-4603-a091-790d56f5e8a5/banner_desk_acessoriosemcouro.jpg",
-        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/d83578a4-1d2b-42e1-91c9-9bc615188921/banner_mob_acessoriosemcouro.jpg"
+        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/4ad6de86-28ad-4055-9b18-536f0f553f73/banner_desk_presente_relogioanel(1366x650).png",
+        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/0864ca4b-755d-4808-8f74-1b57bb3d3f10/banner_mob_presente_relogioanel(375x348).png"
       },
       "action": {
         "description": "O presente perfeito para quem valoriza sofisticação e estilo.",
@@ -208,7 +208,7 @@
       "title": "Para presentear quem você ama!",
       "news": [
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/273eb130-737c-40ab-aafe-34f9627857b5/banner_desk_novidades3.jpg",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/b6c3b9ed-ea89-412c-a2f2-87c71895c521/banner_desk_presente_novidades_carteiras(295x255).png",
           "title": "Breaker Watch",
           "subtitle": "Sofisticação e resistência em cada detalhe.",
           "link": {
@@ -218,7 +218,7 @@
           "label": "Carteira Masculina"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/b8241b86-8f98-43e4-a084-75ce4979e756/banner_desk_novidades2.jpg",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/b8c301e9-390b-4406-b543-59485c8812ce/banner_desk_presente_novidades_relofem(295x255).png",
           "title": "Fossil Blue Dive Watch",
           "subtitle": "Perfeito para qualquer ocasião.",
           "link": {
@@ -229,7 +229,7 @@
         },
         {
           "title": "Harwell Handbag",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/a881bd83-a94a-4ff5-98bf-24ee587b5e9e/banner_desk_novidades4.jpg",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/86ad16f3-e40a-43eb-be4b-f22d6a547b8d/banner_desk_presente_novidades_bolsas(295x255).png",
           "subtitle": "Para encantar e marcar cada momento especial.",
           "link": {
             "label": "Comprar",
@@ -238,7 +238,7 @@
           "label": "Bolsa Feminina"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/a72a89bf-a86e-4fa0-962e-c1b05a87555b/banner_desk_novidades.jpg",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/c21b29ac-c538-4fd2-8ad6-aa58087ff22b/banner_desk_presente_novidades_relomasc(295x255).png",
           "title": "Bold Chains",
           "subtitle": "Para combinações e diferentes estilos.",
           "link": {
