@@ -11,7 +11,7 @@
         "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/4bb8fb6e-5b71-4154-b91e-b04a9fb3e9f6/banner_principal_desk_dezembro(1366x674).png",
         "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/b39bf125-cd4b-447e-91bc-cff375086d21/banner_principal_mob_dezembro(374x220).png"
       },
-      "subtitle": "Encontre o presente perfeito na nossa seleção exclusiva de relógios, carteiras e acessórios!",
+      "subtitle": "Encontre o presente perfeito neste Natal! Nossa seleção exclusiva de relógios, carteiras e acessórios vai surpreender quem você ama.",
       "cta": {
         "label": "Conheça",
         "url": "https://www.fossil.com.br/relogio?sort=release%3Adesc"
@@ -161,29 +161,29 @@
       "cards": [
         {
           "title": "BESTSELLING RAQUEL",
-          "description": "O presente perfeito para mulheres que apreciam estilo e qualidade.",
+          "description": "Escolha presentes que combinam estilo e qualidade.",
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/b20c85b6-3dc2-43d2-be0c-dc9ecae45bb0/banner_secundario_desk_presentes_dezembro_fem(683x467).png",
           "url": "/relogio/feminino?sort=release%3Adesc",
-          "label": "Presentes femininos"
+          "label": "PRESENTES PARA ELA"
         },
         {
           "title": "SPORT TOURER",
-          "description": "Para homens que valorizam design e praticidade.",
+          "description": "Presentes masculinos que refletem design e praticidade.",
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/dc37a5b7-7e9d-436e-a6e0-c0a8e5577958/banner_secundario_desk_presentes_dezembro_masc(683x467).png",
           "url": "https://www.fossil.com.br/relogio/masculino?sort=release%3Adesc",
-          "label": "Presentes masculinos"
+          "label": "PRESENTES PARA ELE"
         }
       ]
     },
     {
       "__resolveType": "site/sections/Hotsites/PresenteShopByGender.tsx",
-      "title": "Semi Joias",
-      "description": "Perfeito para te acompanhar no dia a dia.",
+      "title": "BOLSAS EM COURO",
+      "description": "O presente ideal para quem aprecia design e durabilidade.",
       "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/a584a60b-eded-4ae5-8c6e-16378d17ed20/banner_terciario_desk_presente_dezembro(720x620).png",
       "links": [
         {
           "label": "Presentear",
-          "url": "https://www.fossil.com.br/2462?PS=12&map=productClusterIds&O=OrderByReleaseDateDESC"
+          "url": "https://www.fossil.com.br/s?q=Bolsa%20couro&utmi_pc=search&utmi_cp=Bolsa%20couro"
         }
       ]
     },
@@ -194,13 +194,13 @@
         "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/0864ca4b-755d-4808-8f74-1b57bb3d3f10/banner_mob_presente_relogioanel(375x348).png"
       },
       "action": {
-        "description": "O presente perfeito para quem valoriza sofisticação e estilo.",
+        "description": "Acessório único que une beleza e praticidade.",
         "cta": {
           "label": "Comprar",
-          "url": "https://www.fossil.com.br/acessorios"
+          "url": "https://www.fossil.com.br/s?q=watch%20ring&utmi_pc=search&utmi_cp=watch%20ring"
         },
         "logo": {},
-        "title": "ACESSÓRIOS EM COURO"
+        "title": "RELÓGIO ANEL"
       }
     },
     {
@@ -223,9 +223,9 @@
           "subtitle": "Perfeito para qualquer ocasião.",
           "link": {
             "label": "Comprar",
-            "url": "https://www.fossil.com.br/s?q=harwell&utmi_pc=search&utmi_cp=harwell"
+            "url": "https://www.fossil.com.br/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
           },
-          "label": "Relógio Feminino Harwell"
+          "label": "Relógio Feminino Raquel"
         },
         {
           "title": "Harwell Handbag",
