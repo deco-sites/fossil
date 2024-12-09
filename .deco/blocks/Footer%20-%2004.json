@@ -174,29 +174,10 @@
     {
       "items": [
         {
-          "label": "Cartão Presente",
-          "icon": {
-            "label": "Email"
-          },
-          "href": "https://fossil.todocartoes.com.br/"
-        },
-        {
-          "icon": {
-            "label": "Email"
-          },
-          "label": "Cartão Presente - Corporativo",
-          "href": "https://vendacorporativa.todoincomm.com.br/marca/fossil"
-        }
-      ],
-      "label": "CARTÃO PRESENTE"
-    },
-    {
-      "items": [
-        {
-          "icon": {
-            "label": "Email"
-          },
           "label": "Meu Perfil",
+          "icon": {
+            "label": "Email"
+          },
           "href": "/account"
         }
       ],
