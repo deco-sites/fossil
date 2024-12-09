@@ -61,26 +61,36 @@
       "items": [
         {
           "label": "Política de Segurança",
-          "icon": {},
+          "icon": {
+            "label": "Email"
+          },
           "href": "/institucional/politica-de-seguranca"
         },
         {
           "label": "Política de Privacidade",
           "href": "/institucional/politica-de-privacidade",
-          "icon": {}
+          "icon": {
+            "label": "Email"
+          }
         },
         {
-          "icon": {},
+          "icon": {
+            "label": "Email"
+          },
           "label": "Termos de Uso",
           "href": "/institucional/termos-de-uso"
         },
         {
-          "icon": {},
+          "icon": {
+            "label": "Email"
+          },
           "label": "Formas de Entrega",
           "href": "/institucional/formas-de-entrega"
         },
         {
-          "icon": {},
+          "icon": {
+            "label": "Email"
+          },
           "label": "Formas de Pagamento",
           "href": "/institucional/formas-de-pagamento"
         }
@@ -110,26 +120,36 @@
       "items": [
         {
           "label": "Ajuda",
-          "icon": {},
+          "icon": {
+            "label": "Email"
+          },
           "href": "/ajuda"
         },
         {
           "href": "/institucional/cupons-e-promocoes",
           "label": "Cupons e Promoções",
-          "icon": {}
+          "icon": {
+            "label": "Email"
+          }
         },
         {
           "href": "/institucional/rastreie-seu-pedido",
           "label": "Rastreie seu Pedido",
-          "icon": {}
+          "icon": {
+            "label": "Email"
+          }
         },
         {
           "label": "Trocas e Devoluções",
           "href": "/institucional/trocas-e-devolucoes",
-          "icon": {}
+          "icon": {
+            "label": "Email"
+          }
         },
         {
-          "icon": {},
+          "icon": {
+            "label": "Email"
+          },
           "label": "Assistência Técnica",
           "href": "/ajuda"
         }
@@ -154,8 +174,29 @@
     {
       "items": [
         {
+          "label": "Cartão Presente",
+          "icon": {
+            "label": "Email"
+          },
+          "href": "https://fossil.todocartoes.com.br/"
+        },
+        {
+          "icon": {
+            "label": "Email"
+          },
+          "label": "Cartão Presente - Corporativo",
+          "href": "https://vendacorporativa.todoincomm.com.br/marca/fossil"
+        }
+      ],
+      "label": "CARTÃO PRESENTE"
+    },
+    {
+      "items": [
+        {
+          "icon": {
+            "label": "Email"
+          },
           "label": "Meu Perfil",
-          "icon": {},
           "href": "/account"
         }
       ],
@@ -192,27 +233,37 @@
     },
     "content": [
       {
-        "icon": {},
+        "icon": {
+          "label": "Email"
+        },
         "label": "Política de privacidade",
         "href": "/institucional/politica-de-privacidade"
       },
       {
-        "icon": {},
+        "icon": {
+          "label": "Email"
+        },
         "label": "Politica de Privacidade do App",
         "href": "https://www.fossilgroup.com/compliance/regulatory-compliance/?utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
       },
       {
-        "icon": {},
+        "icon": {
+          "label": "Email"
+        },
         "label": "Termos de Uso",
         "href": "https://www.fossil.com.br/us/en/customer-care/terms-of-use.html?&utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
       },
       {
-        "icon": {},
+        "icon": {
+          "label": "Email"
+        },
         "label": "Causa",
         "href": "/us/en/customer-care/terms-of-use.html?&utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
       },
       {
-        "icon": {},
+        "icon": {
+          "label": "Email"
+        },
         "label": "Lojas",
         "href": "/nossas-lojas"
       }
