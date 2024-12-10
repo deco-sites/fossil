@@ -63,14 +63,6 @@
             "__resolveType": "site/sections/Images/Carousel.tsx",
             "images": [
               {
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/9d8d357a-7b8c-4aa4-ad0c-e5510daf8f99/banner_desk_promo(1920x600).jpg",
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/ca9ac920-d148-41b7-9a8c-325089e6bdd5/Banner_mob_promo(320x380).jpg",
-                "alt": "Promo 10% OFF",
-                "action": {
-                  "href": "/relogio?sort=release%3Adesc"
-                }
-              },
-              {
                 "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/d8223739-439d-40bd-aef2-0cbdba889d1f/banner_slide_desk_carraway(1920x600).jpg",
                 "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/33606f3a-f44f-4c36-9e02-1daf512e3124/Banner_slide_mob_carraway(320x380).jpg",
                 "alt": "Carraway",
