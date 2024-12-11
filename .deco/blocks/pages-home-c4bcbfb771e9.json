@@ -63,27 +63,27 @@
             "__resolveType": "site/sections/Images/Carousel.tsx",
             "images": [
               {
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/d8223739-439d-40bd-aef2-0cbdba889d1f/banner_slide_desk_carraway(1920x600).jpg",
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/33606f3a-f44f-4c36-9e02-1daf512e3124/Banner_slide_mob_carraway(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/ab34845a-9172-4961-9439-fccbbaec0b7f/banner_slide_desk_carraway2(1920x600).jpg",
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/129bda2f-3767-47d9-bf4f-93073a1a3db6/Banner_slide_mob_carraway2(320x380).jpg",
                 "alt": "Carraway",
                 "action": {
                   "href": "/s?q=carraway&utmi_pc=search&utmi_cp=carraway"
                 }
               },
               {
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/9b6d27ad-5d9c-419b-b147-103e29b79086/banner_slide_desk_harlow(1920x600).jpg",
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/cf3001fc-121a-4f01-a7e4-ab796c0db507/Banner_slide_mob_harlow(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/79d1ab7e-08da-42e6-8d3e-9513057cebd6/banner_slide_desk_harlow2(1920x600).jpg",
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/d3607e0a-60e8-43e5-be87-81ad822d7cd6/Banner_slide_mob_harlow2(320x380).jpg",
                 "alt": "Harlow",
                 "action": {
                   "href": "/relogio/feminino?sort=release%3Adesc"
                 }
               },
               {
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/14ab00bf-3f15-469f-a768-f365eaa45deb/banner_slide_desk_bracelete(1920x600).jpg",
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/9e4ebb96-b658-429f-8b0a-88ed9645c1d0/Banner_slide_mob_bracelete(320x380).jpg",
-                "alt": "Bracelete",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/13d93c91-e2eb-454f-b447-dfdd687319e8/banner_slide_desk_relogioanel(1920x600).jpg",
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/109c84b0-58e7-42ec-a725-804c6b203818/Banner_slide_mob_relogioanel(320x380).jpg",
+                "alt": "Relogio Anel",
                 "action": {
-                  "href": "/lancamentos"
+                  "href": "/s?q=watch%20ring&utmi_pc=search&utmi_cp=watch%20ring"
                 }
               }
             ],
@@ -94,7 +94,7 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2024-12-13T02:59:00.000Z",
+            "end": "2024-12-19T02:59:00.000Z",
             "start": "2024-12-03T03:00:00.000Z"
           }
         },
