@@ -61,9 +61,7 @@
       "items": [
         {
           "label": "Política de Segurança",
-          "icon": {
-            "label": "Email"
-          },
+          "icon": {},
           "href": "/institucional/politica-de-seguranca"
         },
         {
