@@ -61,36 +61,26 @@
       "items": [
         {
           "label": "Política de Segurança",
-          "icon": {
-            "label": "Email"
-          },
+          "icon": {},
           "href": "/institucional/politica-de-seguranca"
         },
         {
           "label": "Política de Privacidade",
           "href": "/institucional/politica-de-privacidade",
-          "icon": {
-            "label": "Email"
-          }
+          "icon": {}
         },
         {
-          "icon": {
-            "label": "Email"
-          },
+          "icon": {},
           "label": "Termos de Uso",
           "href": "/institucional/termos-de-uso"
         },
         {
-          "icon": {
-            "label": "Email"
-          },
+          "icon": {},
           "label": "Formas de Entrega",
           "href": "/institucional/formas-de-entrega"
         },
         {
-          "icon": {
-            "label": "Email"
-          },
+          "icon": {},
           "label": "Formas de Pagamento",
           "href": "/institucional/formas-de-pagamento"
         }
@@ -175,7 +165,9 @@
       "items": [
         {
           "label": "Cartão Presente",
-          "icon": {},
+          "icon": {
+            "label": "Email"
+          },
           "href": "https://fossil.todocartoes.com.br/"
         },
         {
