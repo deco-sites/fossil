@@ -61,16 +61,22 @@
       "items": [
         {
           "label": "Política de Segurança",
-          "icon": {},
+          "icon": {
+            "label": "Email"
+          },
           "href": "/institucional/politica-de-seguranca"
         },
         {
           "label": "Política de Privacidade",
           "href": "/institucional/politica-de-privacidade",
-          "icon": {}
+          "icon": {
+            "label": "Email"
+          }
         },
         {
-          "icon": {},
+          "icon": {
+            "label": "Email"
+          },
           "label": "Termos de Uso",
           "href": "/institucional/termos-de-uso"
         },
@@ -168,10 +174,27 @@
     {
       "items": [
         {
-          "label": "Meu Perfil",
+          "label": "Cartão Presente",
+          "icon": {},
+          "href": "https://fossil.todocartoes.com.br/"
+        },
+        {
           "icon": {
             "label": "Email"
           },
+          "label": "Cartão Presente - Corporativo",
+          "href": "https://vendacorporativa.todoincomm.com.br/marca/fossil"
+        }
+      ],
+      "label": "CARTÃO PRESENTE"
+    },
+    {
+      "items": [
+        {
+          "icon": {
+            "label": "Email"
+          },
+          "label": "Meu Perfil",
           "href": "/account"
         }
       ],
