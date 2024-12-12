@@ -10,14 +10,17 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
   const hasSubMenu = children && children.length > 0 ? true : false;
   return (
     <li
-      class={`group flex mb-1 ${hasSubMenu
-        ? "hover:[text-shadow:_0_0_1px_#000]"
-        : "hover:border-primary border-transparent border-solid border-b-4 lg:mt-1"
-        }  items-center`}
+      class={`group flex mb-1 ${
+        hasSubMenu
+          ? "hover:[text-shadow:_0_0_1px_#000]"
+          : "hover:border-primary border-transparent border-solid border-b-4 lg:mt-1"
+      }  items-center`}
     >
       <a href={url} class="py-6 ">
         <span
-          class={`${name?.toLowerCase() === "off" ? "text-[#FF1010]" : "text-black"} uppercase text-sm font-medium`}
+          class={`${
+            name?.toLowerCase() === "off" ? "text-[#FF1010]" : "text-black"
+          } uppercase text-sm font-medium`}
         >
           {name}
         </span>
