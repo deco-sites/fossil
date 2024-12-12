@@ -67,14 +67,10 @@
         {
           "label": "Política de Privacidade",
           "href": "/institucional/politica-de-privacidade",
-          "icon": {
-            "label": "Email"
-          }
+          "icon": {}
         },
         {
-          "icon": {
-            "label": "Email"
-          },
+          "icon": {},
           "label": "Termos de Uso",
           "href": "/institucional/termos-de-uso"
         },
