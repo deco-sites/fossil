@@ -55,9 +55,8 @@ export default function FooterItems(
                             )}
                             <a
                               href={item.href}
-                              class={`block py-1 text-base font-medium text-primary ${
-                                item.icon?.label ? "pointer-events-none" : ""
-                              }`}
+                              // class={`block py-1 text-base font-medium text-primary ${item.icon?.label ? "pointer-events-none" : ""}`}
+                              class={`block py-1 text-base font-medium text-primary`}
                             >
                               {item.label}
                             </a>

@@ -2,35 +2,35 @@ const storeScope = "fossil";
 const colorPrimary = "#000911";
 
 const handleLoadScript = (src: string, onLoadCallback: () => void) => {
-    const script = document.createElement("script");
-    script.src = src;
-    script.async = true;
+  const script = document.createElement("script");
+  script.src = src;
+  script.async = true;
 
-    script.onload = () => {
-        onLoadCallback();
-    };
+  script.onload = () => {
+    onLoadCallback();
+  };
 
-    document.head.appendChild(script);
+  document.head.appendChild(script);
 };
 
 const handleLoadCss = (styles: string) => {
-    const style = document.createElement("style");
-    style.innerHTML = styles;
-    document.head.appendChild(style);
+  const style = document.createElement("style");
+  style.innerHTML = styles;
+  document.head.appendChild(style);
 };
 
 const handleSetScope = () => {
-    // deno-lint-ignore ban-ts-comment
-    // @ts-expect-error
-    window.vtexid.setScope("600bd0e1-0084-40b9-a566-cc962e3f5a12");
-    // deno-lint-ignore ban-ts-comment
-    // @ts-expect-error
-    window.vtexid.setScopeName(storeScope);
+  // deno-lint-ignore ban-ts-comment
+  // @ts-expect-error
+  window.vtexid.setScope("600bd0e1-0084-40b9-a566-cc962e3f5a12");
+  // deno-lint-ignore ban-ts-comment
+  // @ts-expect-error
+  window.vtexid.setScopeName(storeScope);
 };
 
 export const loadVtexIdScripts = (callback: () => void) => {
-    handleLoadCss(
-        `
+  handleLoadCss(
+    `
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
 
         :root{
@@ -609,17 +609,17 @@ export const loadVtexIdScripts = (callback: () => void) => {
         #bannerEbit {
             margin-bottom: 20px; }
         `,
-    );
-    handleLoadScript(
-        "https://io.vtex.com.br/front-libs/jquery/1.8.3/jquery-1.8.3.min.js?v=1.5.87.2539",
+  );
+  handleLoadScript(
+    "https://io.vtex.com.br/front-libs/jquery/1.8.3/jquery-1.8.3.min.js?v=1.5.87.2539",
+    () => {
+      handleLoadScript(
+        "https://io.vtex.com.br/vtex-id-ui/3.27.1/vtexid-jquery.min.js?v=1.5.87.2539",
         () => {
-            handleLoadScript(
-                "https://io.vtex.com.br/vtex-id-ui/3.27.1/vtexid-jquery.min.js?v=1.5.87.2539",
-                () => {
-                    handleSetScope();
-                    callback();
-                },
-            );
+          handleSetScope();
+          callback();
         },
-    );
+      );
+    },
+  );
 };

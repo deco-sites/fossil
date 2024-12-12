@@ -5,6 +5,8 @@ import { headerHeight } from "./constants.ts";
 function NavItem({ item }: { item: SiteNavigationElement }) {
   const { url, name, children } = item;
 
+  console.log("name", name);
+
   const hasSubMenu = children && children.length > 0 ? true : false;
   return (
     <li
@@ -17,8 +19,8 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
       <a href={url} class="py-6 ">
         <span
           class={`${
-            name === "off" ? "text-[#FF1010]" : "text-black"
-          } uppercase text-sm  font-medium`}
+            name?.toLowerCase() === "off" ? "text-[#FF1010]" : "text-black"
+          } uppercase text-sm font-medium`}
         >
           {name}
         </span>
