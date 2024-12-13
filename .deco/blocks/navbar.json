@@ -38,6 +38,11 @@
               "url": "/relogio/masculino/analogico"
             },
             {
+              "name": "Automático",
+              "url": "/relogio/masculino/automatico?sort=release%3Adesc",
+              "@type": "SiteNavigationElement"
+            },
+            {
               "image": [],
               "children": [],
               "name": "Digital",
