@@ -102,7 +102,7 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2024-12-19T02:59:00.000Z",
+            "end": "2024-12-18T02:59:00.000Z",
             "start": "2024-12-03T03:00:00.000Z"
           }
         },
@@ -116,17 +116,33 @@
                 "action": {
                   "href": "/2503?PS=12&map=productClusterIds&sort=orders%3Adesc"
                 },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/81211248-49f2-4a8e-8a0f-08d3f4fc5e39/Banner_slide_mob_cyber_20OFF(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/212dfa2b-f1e8-49e9-bcd1-2cf1258878c2/banner_slide_desk_cyber_20OFF(1920x600).jpg",
-                "alt": "20% OFF"
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/d243d92b-639d-423b-935b-cdbc3655e6f2/Banner_slide_mob_automatico(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/f76e80c5-bf39-4941-b1d3-9091c8c673b8/banner_slide_desk_automatico(1920x600).jpg",
+                "alt": "Automático"
               },
               {
                 "action": {
-                  "href": "/2504?PS=12&map=productClusterIds&sort=orders%3Adesc"
+                  "href": "/relogio/feminino?sort=release%3Adesc"
                 },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/b1653659-1910-4eeb-a1cf-cfa44b638289/Banner_slide_mob_cyber_50OFF(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/6e29f958-9b0f-423a-b047-d37aa7238420/banner_slide_desk_cyber_50OFF(1920x600).jpg",
-                "alt": "50% OFF"
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/bb8bd2c0-d823-4550-b491-fb16dda99334/Banner_slide_mob_raquel(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/70fb59e4-e49f-4dc3-974b-d6e39ae4ca88/banner_slide_desk_raquel(1920x600).jpg",
+                "alt": "Feminino"
+              },
+              {
+                "action": {
+                  "href": "/bolsasfemininas"
+                },
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/d86d8f05-a6de-4520-b62c-f8a90d1548ac/Banner_slide_mob_bolsas(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/67a87a9f-8693-4808-a31f-631de960dd33/banner_slide_desk_bolsas(1920x600).jpg",
+                "alt": "Bolsa"
+              },
+              {
+                "action": {
+                  "href": "/bolsasfemininas"
+                },
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/d86d8f05-a6de-4520-b62c-f8a90d1548ac/Banner_slide_mob_bolsas(320x380).jpg",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/67a87a9f-8693-4808-a31f-631de960dd33/banner_slide_desk_bolsas(1920x600).jpg",
+                "alt": "Bolsa"
               }
             ],
             "preload": true,
@@ -134,8 +150,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2024-12-03T02:59:00.000Z",
-            "start": "2024-11-30T03:00:00.000Z"
+            "end": "2024-12-25T02:59:00.000Z",
+            "start": "2024-12-18T03:00:00.000Z"
           }
         }
       ]

@@ -61,26 +61,36 @@
       "items": [
         {
           "label": "Política de Segurança",
-          "icon": {},
+          "icon": {
+            "label": "Email"
+          },
           "href": "/institucional/politica-de-seguranca"
         },
         {
           "label": "Política de Privacidade",
           "href": "/institucional/politica-de-privacidade",
-          "icon": {}
+          "icon": {
+            "label": "Email"
+          }
         },
         {
-          "icon": {},
+          "icon": {
+            "label": "Email"
+          },
           "label": "Termos de Uso",
           "href": "/institucional/termos-de-uso"
         },
         {
-          "icon": {},
+          "icon": {
+            "label": "Email"
+          },
           "label": "Formas de Entrega",
           "href": "/institucional/formas-de-entrega"
         },
         {
-          "icon": {},
+          "icon": {
+            "label": "Email"
+          },
           "label": "Formas de Pagamento",
           "href": "/institucional/formas-de-pagamento"
         }
