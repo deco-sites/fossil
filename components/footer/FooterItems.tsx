@@ -14,7 +14,7 @@ export type Section = {
 
 export type Icon = {
   /** @title Icon */
-  label?: "Email" | "Phone" | "";
+  label?: "Email" | "Phone";
 };
 
 export default function FooterItems(
@@ -32,7 +32,7 @@ export default function FooterItems(
           {(device === "desktop")
             ? (
               <ul
-                class={`hidden md:flex flex-row gap-6 lg:gap-[40px] ${justify && "lg:justify-between"}`}
+                class={`hidden md:flex flex-row gap-1 lg:gap-3 2xl:gap-10 ${justify && "lg:justify-between"}`}
               >
                 {sections.map((section) => (
                   <li key={section.label}>

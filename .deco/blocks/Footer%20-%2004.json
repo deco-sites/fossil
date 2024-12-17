@@ -111,7 +111,7 @@
         {
           "label": "Ajuda",
           "icon": {
-            "label": "Email"
+  
           },
           "href": "/ajuda"
         },
@@ -119,26 +119,26 @@
           "href": "/institucional/cupons-e-promocoes",
           "label": "Cupons e Promoções",
           "icon": {
-            "label": "Email"
+  
           }
         },
         {
           "href": "/institucional/rastreie-seu-pedido",
           "label": "Rastreie seu Pedido",
           "icon": {
-            "label": "Email"
+  
           }
         },
         {
           "label": "Trocas e Devoluções",
           "href": "/institucional/trocas-e-devolucoes",
           "icon": {
-            "label": "Email"
+  
           }
         },
         {
           "icon": {
-            "label": "Email"
+  
           },
           "label": "Assistência Técnica",
           "href": "/ajuda"
@@ -166,13 +166,13 @@
         {
           "label": "Cartão Presente",
           "icon": {
-            "label": "Email"
+  
           },
           "href": "https://fossil.todocartoes.com.br/"
         },
         {
           "icon": {
-            "label": "Email"
+  
           },
           "label": "Cartão Presente - Corporativo",
           "href": "https://vendacorporativa.todoincomm.com.br/marca/fossil"
@@ -184,7 +184,7 @@
       "items": [
         {
           "icon": {
-            "label": "Email"
+  
           },
           "label": "Meu Perfil",
           "href": "/account"
@@ -224,35 +224,35 @@
     "content": [
       {
         "icon": {
-          "label": "Email"
+
         },
         "label": "Política de privacidade",
         "href": "/institucional/politica-de-privacidade"
       },
       {
         "icon": {
-          "label": "Email"
+
         },
         "label": "Politica de Privacidade do App",
         "href": "https://www.fossilgroup.com/compliance/regulatory-compliance/?utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
       },
       {
         "icon": {
-          "label": "Email"
+
         },
         "label": "Termos de Uso",
         "href": "https://www.fossil.com.br/us/en/customer-care/terms-of-use.html?&utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
       },
       {
         "icon": {
-          "label": "Email"
+
         },
         "label": "Causa",
         "href": "/us/en/customer-care/terms-of-use.html?&utmi_p=_&utmi_pc=Html&utmi_cp=coypright"
       },
       {
         "icon": {
-          "label": "Email"
+
         },
         "label": "Lojas",
         "href": "/nossas-lojas"
