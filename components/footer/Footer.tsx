@@ -230,7 +230,7 @@ function Footer({
                       {_social}
                     </div>
                   </div>
-                  <div class="flex flex-col gap-10 lg:gap-20 lg:w-[70%] lg:items-end">
+                  <div class="flex flex-col gap-10 lg:gap-20 lg:w-[70%] lg:items-center">
                     <div class="flex flex-col md:flex-row gap-10">
                       {_sectionLinks}
                     </div>
