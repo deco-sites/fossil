@@ -66,8 +66,8 @@
     },
     {
       "image": {
-        "desktop": "https://data.decoassets.com/fossil/7e2b63f8-ec85-4279-8e75-6e2e5799d89a/Banner_desk_fossillivelo_naopromocional.png",
-        "mobile": "https://data.decoassets.com/fossil/b4dfecda-4a94-48d7-b9c5-740aac62fb49/Banner_mob_fossillivelo_naopromocional.png",
+        "desktop": "https://data.decoassets.com/fossil/65dc08a7-8c02-4092-b9b8-602d9ac62426/Banner_colecao_desk_llivelo_23_30_12.jpg",
+        "mobile": "https://data.decoassets.com/fossil/8243885e-b9e6-4b21-8830-8988a2fdc5da/Banner_colecao_mob_llivelo_23_30_12.jpg",
         "alt": "Banner Livelo"
       },
       "matcher": "/livelo*"
