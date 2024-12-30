@@ -94,7 +94,7 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2025-01-01T02:59:00.000Z",
+            "end": "2025-01-02T02:59:00.000Z",
             "start": "2024-12-26T03:00:00.000Z"
           }
         },
@@ -106,35 +106,35 @@
             "images": [
               {
                 "action": {
-                  "href": "/2560?PS=12&map=productClusterIds&O=OrderByReleaseDateDESC"
+                  "href": "/relogio-fossil-feminino-harwell-dourado---es5373-1dn/p?skuId=1000026765"
                 },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/d243d92b-639d-423b-935b-cdbc3655e6f2/Banner_slide_mob_automatico(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/f76e80c5-bf39-4941-b1d3-9091c8c673b8/banner_slide_desk_automatico(1920x600).jpg",
-                "alt": "Automático"
+                "mobile": "https://data.decoassets.com/fossil/3098572b-10e3-4855-9188-a826405cafa5/Banner_slide_mob_colarerelogio(320x380).jpg",
+                "desktop": "https://data.decoassets.com/fossil/1a5cc773-345a-4abf-a526-fed11c554239/banner_slide_desk_colarrelogio(1920x600).jpg",
+                "alt": "Colar relógio"
               },
               {
                 "action": {
-                  "href": "/relogio/feminino?sort=release%3Adesc"
+                  "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
                 },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/bb8bd2c0-d823-4550-b491-fb16dda99334/Banner_slide_mob_raquel(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/70fb59e4-e49f-4dc3-974b-d6e39ae4ca88/banner_slide_desk_raquel(1920x600).jpg",
-                "alt": "Feminino"
+                "mobile": "https://data.decoassets.com/fossil/11f94b13-814a-4b71-81a7-b4bc56e5a7b9/Banner_slide_mob_raquel(320x380).jpg",
+                "desktop": "https://data.decoassets.com/fossil/e97eb7af-7d9c-4cc8-9b40-175ef3d080a1/banner_slide_desk_raquel(1920x600).jpg",
+                "alt": "Raquel"
               },
               {
                 "action": {
-                  "href": "/bolsasfemininas"
+                  "href": "/s?q=townsman&utmi_pc=search&utmi_cp=townsman"
                 },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/d86d8f05-a6de-4520-b62c-f8a90d1548ac/Banner_slide_mob_bolsas(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/67a87a9f-8693-4808-a31f-631de960dd33/banner_slide_desk_bolsas(1920x600).jpg",
-                "alt": "Bolsa"
+                "mobile": "https://data.decoassets.com/fossil/3f9ffe00-2d4c-4b25-a816-17b3957afe00/Banner_slide_mob_townsman(320x380).jpg",
+                "desktop": "https://data.decoassets.com/fossil/34b95442-5403-4298-8952-ad9b3cbc011f/banner_slide_desk_townsman(1920x600).jpg",
+                "alt": "Townsman"
               },
               {
                 "action": {
-                  "href": "/s?q=relogio%20carteira&utmi_pc=search&utmi_cp=relogio%20carteira"
+                  "href": "/off"
                 },
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/eaef598b-3f92-41fc-8284-20a112af9579/Banner_slide_mob_promo(320x380).jpg",
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/3383f333-2807-4ad0-9825-9245044accd0/banner_slide_desk_promo(1920x600).jpg",
-                "alt": "Promo"
+                "mobile": "https://data.decoassets.com/fossil/35d3ec6b-fd49-4302-a714-b0cdcab37376/Banner_slide_mob_BAZAR(320x380).jpg",
+                "desktop": "https://data.decoassets.com/fossil/58df5498-0fdf-4e37-9477-73552bbb5fec/banner_slide_desk_bazar(1920x600).jpg",
+                "alt": "Off"
               }
             ],
             "preload": true,
@@ -142,8 +142,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2024-12-26T02:59:00.000Z",
-            "start": "2024-12-18T03:00:00.000Z"
+            "end": "2025-01-09T02:59:00.000Z",
+            "start": "2025-01-02T03:00:00.000Z"
           }
         }
       ]
