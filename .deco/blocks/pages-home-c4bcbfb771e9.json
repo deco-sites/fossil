@@ -207,27 +207,27 @@
       },
       "list": [
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/ab6b4485-56b3-4122-94c4-e62719dd3827/Banner_secundario_dezembro_relomasc(610x400).png",
+          "image": "https://data.decoassets.com/fossil/48d29ef9-59e2-45e7-bd6a-651df9bb3e5b/Banner_secundario_relomasc(610x400).png",
           "label": "Masculinos",
           "buttonText": "CONHEÇA",
           "href": "/relogio/masculino"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/8571b1d9-90d1-4e42-8da0-3e5a65ffe290/Banner_secundario_relogiofem(610x400).png",
+          "image": "https://data.decoassets.com/fossil/e35d53aa-6287-454a-88c9-9453d85f62e1/Banner_secundario_relofem(610x400).png",
           "label": "Femininos",
           "buttonText": " ENCANTE-SE",
           "href": "/relogio/feminino"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/cac7c375-f482-4820-a641-1d0ea28859fb/Design-sem-nome.png",
-          "label": "Acessórios ",
+          "image": "https://data.decoassets.com/fossil/58f110e2-0a59-4e30-b8d1-859355bedea4/Banner_secundario_acessorios(610x400).png",
+          "label": "Relógio Anel",
           "buttonText": " CONHEÇA",
-          "href": "/acessoriosfemininos"
+          "href": "/s?q=Watch%20Ring&utmi_pc=search&utmi_cp=Watch%20Ring"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/e3b0533f-4c4b-48a5-9af6-4beb20d5801a/Banner_secundario_dezembro_bolsasemcoruo(610x400).png",
-          "label": "Bolsas em Couro",
-          "href": "/s?q=bolsa&utmi_pc=search&utmi_cp=bolsa",
+          "image": "https://data.decoassets.com/fossil/759a0b3a-5e2e-48ca-81f7-c24be604b885/Banner_secundario_semijoias(610x400).png",
+          "label": "Bracelete Relógio",
+          "href": "/relogio-fossil-feminino-harwell-dourado---es5372-1dn/p?skuId=1000026714",
           "buttonText": "ESCOLHA O SEU"
         }
       ],
