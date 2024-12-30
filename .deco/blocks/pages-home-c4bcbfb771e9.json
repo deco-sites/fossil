@@ -237,18 +237,18 @@
     },
     {
       "__resolveType": "site/sections/Content/BannerFossil.tsx",
-      "desktopImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/523b927a-72fb-4b54-8165-b785667a7c7a/banner_terc_desk_relogioanel(1230x400).jpg",
+      "desktopImage": "https://data.decoassets.com/fossil/e790a0a8-4bfb-49a6-bb5c-3981b7337320/banner_terc_desk_mochilascouro(1230x400).jpg",
       "desktopImageDimensions": {
         "width": 1230,
         "height": 400
       },
       "alt": "Banner Terciário ",
-      "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/c627782f-9b9a-4224-a09c-e9680c5311e0/banner_terc_mob_relogioanel(380x250).jpg",
+      "mobileImage": "https://data.decoassets.com/fossil/e007649e-01eb-459f-8ce3-85623c3c74c2/banner_terc_mob_mochilascouro(380x250).jpg",
       "mobileImageDimensions": {
         "width": 380,
         "height": 250
       },
-      "url": "/s?q=watch&utmi_pc=search&utmi_cp=watch",
+      "url": "/s?q=mochila&utmi_pc=search&utmi_cp=mochila",
       "button": {
         "label": "LANÇAMENTOS",
         "href": "/lancamentos"
