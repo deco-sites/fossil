@@ -38,7 +38,11 @@
                 "desktop": 3
               },
               "variant": "aside",
-              "banners": []
+              "banners": [
+                {
+                  "img": "https://data.decoassets.com/fossil/5a8e10f2-1475-45c8-9a47-167df29f1ee1/Banner_desk_fossillivelo_naopromocional.png"
+                }
+              ]
             },
             "startingPage": 1,
             "isCollection": false
