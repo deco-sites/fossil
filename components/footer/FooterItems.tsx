@@ -5,6 +5,7 @@ export type Item = {
   label: string;
   href: string;
   icon?: Icon;
+  showIcon?: boolean;
 };
 
 export type Section = {
@@ -45,7 +46,7 @@ export default function FooterItems(
                       <ul class={`flex flex-col flex-wrap text-base`}>
                         {section.items?.map((item, idx) => (
                           <li class="flex items-center gap-1" key={idx}>
-                            {item.icon?.label && (
+                            {item.showIcon && item.icon?.label && (
                               <Icon
                                 id={item.icon.label}
                                 size={16}
@@ -114,7 +115,7 @@ export default function FooterItems(
                                 }`}
                                 key={idx}
                               >
-                                {item.icon?.label && (
+                                {item.showIcon && item.icon?.label && (
                                   <Icon
                                     id={item.icon.label}
                                     size={16}
