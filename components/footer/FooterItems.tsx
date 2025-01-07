@@ -33,8 +33,9 @@ export default function FooterItems(
           {(device === "desktop")
             ? (
               <ul
-                class={`hidden md:flex flex-row gap-1 lg:gap-3 2xl:gap-10 ${justify && "lg:justify-between"
-                  }`}
+                class={`hidden md:flex flex-row gap-1 lg:gap-3 2xl:gap-10 ${
+                  justify && "lg:justify-between"
+                }`}
               >
                 {sections.map((section) => (
                   <li key={section.label}>
@@ -77,10 +78,11 @@ export default function FooterItems(
                         <Divider />
                       </div>
                       <div
-                        class={` ${index === sections.length - 1
-                          ? ""
-                          : "collapse collapse-plus"
-                          } `}
+                        class={` ${
+                          index === sections.length - 1
+                            ? ""
+                            : "collapse collapse-plus"
+                        } `}
                       >
                         {!(index === sections.length - 1) && (
                           <input
@@ -98,17 +100,19 @@ export default function FooterItems(
                           </span>
                         </label>
                         <div
-                          class={`${index === sections.length - 1
-                            ? " "
-                            : "collapse-content"
-                            } !p-0`}
+                          class={`${
+                            index === sections.length - 1
+                              ? " "
+                              : "collapse-content"
+                          } !p-0`}
                         >
                           <ul class={`flex flex-col`}>
                             {section.items?.map((item, idx) => (
                               <li
-                                class={`flex items-center gap-2 ${section.label === "Atendimento" &&
+                                class={`flex items-center gap-2 ${
+                                  section.label === "Atendimento" &&
                                   "first:mt-4"
-                                  }`}
+                                }`}
                                 key={idx}
                               >
                                 {item.showIcon && item.icon?.label && (
@@ -121,10 +125,11 @@ export default function FooterItems(
                                 )}
                                 <a
                                   href={item.href}
-                                  class={`block py-1 text-sm font-medium text-primary ${item.icon?.label
-                                    ? "pointer-events-none"
-                                    : ""
-                                    }`}
+                                  class={`block py-1 text-sm font-medium text-primary ${
+                                    item.icon?.label
+                                      ? "pointer-events-none"
+                                      : ""
+                                  }`}
                                 >
                                   {item.label}
                                 </a>
