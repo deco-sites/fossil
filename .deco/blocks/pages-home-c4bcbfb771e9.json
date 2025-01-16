@@ -63,68 +63,28 @@
             "__resolveType": "site/sections/Images/Carousel.tsx",
             "images": [
               {
-                "desktop": "https://data.decoassets.com/fossil/1901daca-3c72-4a13-b65e-94867905fed6/banner_slide_desk_raquel2(1920x600).jpg",
-                "mobile": "https://data.decoassets.com/fossil/54a44d43-d30a-47c3-bee7-1384fab1e63a/Banner_slide_mob_reaquel2(320x380).jpg",
-                "action": {
-                  "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
-                },
-                "alt": "Raquel"
-              },
-              {
-                "desktop": "https://data.decoassets.com/fossil/a79f89fa-e0f1-4db8-9ea3-23aaeada9b6a/banner_slide_desk_automatico2(1920x600).jpg",
-                "mobile": "https://data.decoassets.com/fossil/842bbb7c-b383-4046-aedc-3ac6259d4682/Banner_slide_mob_automatico2(320x380).jpg",
-                "alt": "Automático",
-                "action": {
-                  "href": "/2560?PS=12&map=productClusterIds&O=OrderByReleaseDateDESC"
-                }
-              },
-              {
-                "desktop": "https://data.decoassets.com/fossil/b5b9a5e5-0876-4606-8b43-cb9f4e57bbae/banner_slide_desk_bracelete(1920x600).jpg",
-                "mobile": "https://data.decoassets.com/fossil/a3c7c2b2-6ea0-407e-a338-eae3aeb96ff9/Banner_slide_mob_bracelete(320x380).jpg",
-                "alt": "Bracelete",
-                "action": {
-                  "href": "/relogio-fossil-feminino-harwell-dourado---es5372-1dn/p?skuId=1000026714"
-                }
-              }
-            ],
-            "preload": true,
-            "arrows": true,
-            "dots": true,
-            "interval": 5
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/Images/Carousel.tsx",
-            "dots": true,
-            "arrows": true,
-            "images": [
-              {
+                "desktop": "https://data.decoassets.com/fossil/7e9a65a3-ad47-40a0-a031-02fc591e2d9d/fossil-4-09.01.jpg",
+                "mobile": "https://data.decoassets.com/fossil/28edbdf9-001c-4253-a9bd-8031cfa656c3/fossil-8-09.01.jpg",
                 "action": {
                   "href": "/relogio-fossil-feminino-harwell-dourado---es5373-1dn/p?skuId=1000026765"
                 },
-                "mobile": "https://data.decoassets.com/fossil/28edbdf9-001c-4253-a9bd-8031cfa656c3/fossil-8-09.01.jpg",
-                "desktop": "https://data.decoassets.com/fossil/7e9a65a3-ad47-40a0-a031-02fc591e2d9d/fossil-4-09.01.jpg",
                 "alt": "Colar relógio"
               },
               {
+                "desktop": "https://data.decoassets.com/fossil/81dfe1e8-65ca-452d-8967-23b4588aec2f/fossil-6-09.01.jpg",
+                "mobile": "https://data.decoassets.com/fossil/66fe46a4-b9af-4561-8917-06e5436433e1/fossil-10-09.01.jpg",
+                "alt": "Townsman",
                 "action": {
                   "href": "/s?q=townsman&utmi_pc=search&utmi_cp=townsman"
-                },
-                "mobile": "https://data.decoassets.com/fossil/66fe46a4-b9af-4561-8917-06e5436433e1/fossil-10-09.01.jpg",
-                "desktop": "https://data.decoassets.com/fossil/81dfe1e8-65ca-452d-8967-23b4588aec2f/fossil-6-09.01.jpg",
-                "alt": "Townsman"
+                }
               },
               {
+                "desktop": "https://data.decoassets.com/fossil/22f38a97-1b2d-4007-9e2e-d2d287e890e4/fossil-5-09.01.jpg",
+                "mobile": "https://data.decoassets.com/fossil/8ac83d0e-5da9-4c11-985e-968352eb3627/fossil-9-09.01.jpg",
+                "alt": "Raquel",
                 "action": {
                   "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
-                },
-                "mobile": "https://data.decoassets.com/fossil/8ac83d0e-5da9-4c11-985e-968352eb3627/fossil-9-09.01.jpg",
-                "desktop": "https://data.decoassets.com/fossil/22f38a97-1b2d-4007-9e2e-d2d287e890e4/fossil-5-09.01.jpg",
-                "alt": "Raquel"
+                }
               },
               {
                 "action": {
@@ -136,12 +96,52 @@
               }
             ],
             "preload": true,
+            "arrows": true,
+            "dots": true,
             "interval": 5
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2025-01-16T02:59:00.000Z",
+            "end": "2025-01-17T02:59:00.000Z",
             "start": "2025-01-02T03:00:00.000Z"
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/Images/Carousel.tsx",
+            "dots": true,
+            "arrows": true,
+            "images": [
+              {
+                "action": {
+                  "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
+                },
+                "mobile": "https://data.decoassets.com/fossil/54a44d43-d30a-47c3-bee7-1384fab1e63a/Banner_slide_mob_reaquel2(320x380).jpg",
+                "desktop": "https://data.decoassets.com/fossil/1901daca-3c72-4a13-b65e-94867905fed6/banner_slide_desk_raquel2(1920x600).jpg",
+                "alt": "Raquel"
+              },
+              {
+                "action": {
+                  "href": "/2560?PS=12&map=productClusterIds&O=OrderByReleaseDateDESC"
+                },
+                "mobile": "https://data.decoassets.com/fossil/842bbb7c-b383-4046-aedc-3ac6259d4682/Banner_slide_mob_automatico2(320x380).jpg",
+                "desktop": "https://data.decoassets.com/fossil/a79f89fa-e0f1-4db8-9ea3-23aaeada9b6a/banner_slide_desk_automatico2(1920x600).jpg",
+                "alt": "Automático"
+              },
+              {
+                "action": {
+                  "href": "/relogio-fossil-feminino-harwell-dourado---es5372-1dn/p?skuId=1000026714"
+                },
+                "mobile": "https://data.decoassets.com/fossil/a3c7c2b2-6ea0-407e-a338-eae3aeb96ff9/Banner_slide_mob_bracelete(320x380).jpg",
+                "desktop": "https://data.decoassets.com/fossil/b5b9a5e5-0876-4606-8b43-cb9f4e57bbae/banner_slide_desk_bracelete(1920x600).jpg",
+                "alt": "Bracelete"
+              }
+            ],
+            "preload": true,
+            "interval": 5
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
           }
         }
       ]
