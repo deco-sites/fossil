@@ -63,36 +63,28 @@
             "__resolveType": "site/sections/Images/Carousel.tsx",
             "images": [
               {
-                "desktop": "https://data.decoassets.com/fossil/7e9a65a3-ad47-40a0-a031-02fc591e2d9d/fossil-4-09.01.jpg",
-                "mobile": "https://data.decoassets.com/fossil/28edbdf9-001c-4253-a9bd-8031cfa656c3/fossil-8-09.01.jpg",
+                "desktop": "https://data.decoassets.com/fossil/725a171e-4d68-44d3-8ed6-66521ef1973b/banner_slide_desk_neutra(1920x600).jpg",
+                "mobile": "https://data.decoassets.com/fossil/43d58e7c-19a0-4cf8-aca7-295e32796994/Banner_slide_mob_neutra(320x380).jpg",
                 "action": {
-                  "href": "/relogio-fossil-feminino-harwell-dourado---es5373-1dn/p?skuId=1000026765"
+                  "href": "/relogio-fossil-masculino-neutra-rose---fs6073-0jn/p?skuId=1000026776"
                 },
-                "alt": "Colar relógio"
+                "alt": "Neutra"
               },
               {
-                "desktop": "https://data.decoassets.com/fossil/81dfe1e8-65ca-452d-8967-23b4588aec2f/fossil-6-09.01.jpg",
-                "mobile": "https://data.decoassets.com/fossil/66fe46a4-b9af-4561-8917-06e5436433e1/fossil-10-09.01.jpg",
-                "alt": "Townsman",
+                "desktop": "https://data.decoassets.com/fossil/41fd3a63-8883-4b67-908b-8140ebf2866d/banner_slide_desk_relogioanel(1920x600).jpg",
+                "mobile": "https://data.decoassets.com/fossil/ab04f21b-8149-4c8f-8820-113ee4bdc012/Banner_slide_mob_relogioanel(320x380).jpg",
+                "alt": "Relógio Anel",
                 "action": {
-                  "href": "/s?q=townsman&utmi_pc=search&utmi_cp=townsman"
+                  "href": "/relogio-fossil-feminino-fossil-fem-dourado---es5319-1di/p?skuId=1000026711"
                 }
               },
               {
-                "desktop": "https://data.decoassets.com/fossil/22f38a97-1b2d-4007-9e2e-d2d287e890e4/fossil-5-09.01.jpg",
-                "mobile": "https://data.decoassets.com/fossil/8ac83d0e-5da9-4c11-985e-968352eb3627/fossil-9-09.01.jpg",
-                "alt": "Raquel",
-                "action": {
-                  "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
-                }
-              },
-              {
+                "desktop": "https://data.decoassets.com/fossil/b229e136-a451-4c45-a582-520bfce46e27/banner_slide_desk_bazar3(1920x600).jpg",
+                "mobile": "https://data.decoassets.com/fossil/747b7474-8756-4242-b19e-af7083f467aa/Banner_slide_mob_bazar3(320x380).jpg",
+                "alt": "Bazar",
                 "action": {
                   "href": "/off"
-                },
-                "mobile": "https://data.decoassets.com/fossil/9db8110e-5f60-429e-8673-1f0da8c52ff8/fossil-7-09.01.jpg",
-                "desktop": "https://data.decoassets.com/fossil/aa1350a4-4fba-491d-8bc1-1cdbb3ac066e/fossil-3-09.01.jpg",
-                "alt": "Off"
+                }
               }
             ],
             "preload": true,
@@ -102,8 +94,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2025-01-22T02:59:00.000Z",
-            "start": "2025-01-02T03:00:00.000Z"
+            "end": "2025-01-24T02:59:00.000Z",
+            "start": "2025-01-17T03:00:00.000Z"
           }
         },
         {
