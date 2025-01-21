@@ -63,12 +63,20 @@
             "__resolveType": "site/sections/Images/Carousel.tsx",
             "images": [
               {
+                "desktop": "https://data.decoassets.com/fossil/442548e3-3d9f-4155-afb8-f0ef2c655489/banner_slide_desk_sloan(1920x600).jpg",
+                "mobile": "https://data.decoassets.com/fossil/44ad694a-e970-453f-be18-40118be73ed4/Banner_slide_mob_sloan(320x380).jpg",
+                "action": {
+                  "href": "/lancamentos"
+                },
+                "alt": "Sloan"
+              },
+              {
                 "desktop": "https://data.decoassets.com/fossil/725a171e-4d68-44d3-8ed6-66521ef1973b/banner_slide_desk_neutra(1920x600).jpg",
                 "mobile": "https://data.decoassets.com/fossil/43d58e7c-19a0-4cf8-aca7-295e32796994/Banner_slide_mob_neutra(320x380).jpg",
+                "alt": "Neutra",
                 "action": {
                   "href": "/relogio-fossil-masculino-neutra-rose---fs6073-0jn/p?skuId=1000026776"
-                },
-                "alt": "Neutra"
+                }
               },
               {
                 "desktop": "https://data.decoassets.com/fossil/41fd3a63-8883-4b67-908b-8140ebf2866d/banner_slide_desk_relogioanel(1920x600).jpg",
