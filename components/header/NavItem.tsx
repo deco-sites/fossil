@@ -5,8 +5,6 @@ import { headerHeight } from "./constants.ts";
 function NavItem({ item }: { item: SiteNavigationElement }) {
   const { url, name, children } = item;
 
-  console.log("name", name);
-
   const hasSubMenu = children && children.length > 0 ? true : false;
   return (
     <li
