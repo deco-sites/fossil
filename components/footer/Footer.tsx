@@ -31,15 +31,15 @@ export type Section = {
 };
 export interface SocialItem {
   label:
-  | "Discord"
-  | "Facebook"
-  | "Instagram"
-  | "Linkedin"
-  | "Tiktok"
-  | "Twitter"
-  | "YouTube"
-  | "Pinterest"
-  | "XMark";
+    | "Discord"
+    | "Facebook"
+    | "Instagram"
+    | "Linkedin"
+    | "Tiktok"
+    | "Twitter"
+    | "YouTube"
+    | "Pinterest"
+    | "XMark";
   link: string;
 }
 
@@ -68,11 +68,11 @@ export interface NewsletterForm {
 
 export interface Layout {
   backgroundColor?:
-  | "Primary"
-  | "Secondary"
-  | "Accent"
-  | "Base 100"
-  | "Base 100 inverted";
+    | "Primary"
+    | "Secondary"
+    | "Accent"
+    | "Base 100"
+    | "Base 100 inverted";
   variation?: "Variation 3";
   hide?: {
     logo?: boolean;
@@ -167,7 +167,7 @@ function Footer({
   mobileApps = { apple: "/", android: "/" },
   extraLinks = { copyright: "2019", content: [] },
   address =
-  "Endereço: Est. Luiz Lopes Neto, 21 - Galpão A - Modulo 4 Do Tenentes - Extrema - MG - Cep: 37.640-000 CNPJ: 28.778.134/0026-05",
+    "Endereço: Est. Luiz Lopes Neto, 21 - Galpão A - Modulo 4 Do Tenentes - Extrema - MG - Cep: 37.640-000 CNPJ: 28.778.134/0026-05",
   layout = {
     backgroundColor: "Primary",
     hide: {
