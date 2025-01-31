@@ -245,18 +245,18 @@
     },
     {
       "__resolveType": "site/sections/Content/BannerFossil.tsx",
-      "desktopImage": "https://data.decoassets.com/fossil/e790a0a8-4bfb-49a6-bb5c-3981b7337320/banner_terc_desk_mochilascouro(1230x400).jpg",
+      "desktopImage": "https://data.decoassets.com/fossil/6257f007-a63f-4e3f-af35-580ad6b54b82/banner_terc_desk_relogioanel(1230x400).jpg",
       "desktopImageDimensions": {
         "width": 1230,
         "height": 400
       },
       "alt": "Banner Terciário ",
-      "mobileImage": "https://data.decoassets.com/fossil/e007649e-01eb-459f-8ce3-85623c3c74c2/banner_terc_mob_mochilascouro(380x250).jpg",
+      "mobileImage": "https://data.decoassets.com/fossil/08cdc765-6705-4017-b2cb-4d1322a8abed/banner_terc_mob_relogioanel(380x250).jpg",
       "mobileImageDimensions": {
         "width": 380,
         "height": 250
       },
-      "url": "/s?q=mochila&utmi_pc=search&utmi_cp=mochila",
+      "url": "/s?q=Watch%20Ring&utmi_pc=search&utmi_cp=Watch%20Ring",
       "button": {
         "label": "LANÇAMENTOS",
         "href": "/lancamentos"
