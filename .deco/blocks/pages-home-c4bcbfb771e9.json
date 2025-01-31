@@ -63,32 +63,32 @@
             "__resolveType": "site/sections/Images/Carousel.tsx",
             "images": [
               {
-                "desktop": "https://data.decoassets.com/fossil/442548e3-3d9f-4155-afb8-f0ef2c655489/banner_slide_desk_sloan(1920x600).jpg",
-                "mobile": "https://data.decoassets.com/fossil/44ad694a-e970-453f-be18-40118be73ed4/Banner_slide_mob_sloan(320x380).jpg",
+                "desktop": "https://data.decoassets.com/fossil/cf3a5433-1609-4002-b332-9b61bf2dc6f4/banner_slide_desk_carraway(1920x600)-(1).jpg",
+                "mobile": "https://data.decoassets.com/fossil/ca25bfc0-3789-4f5f-8c6c-8d0c86657520/Banner_slide_mob_carraway(320x380).jpg",
                 "action": {
-                  "href": "/lancamentos"
+                  "href": "/s?q=carraway&utmi_pc=search&utmi_cp=carraway"
                 },
-                "alt": "Sloan"
+                "alt": "Carraway"
               },
               {
-                "desktop": "https://data.decoassets.com/fossil/725a171e-4d68-44d3-8ed6-66521ef1973b/banner_slide_desk_neutra(1920x600).jpg",
-                "mobile": "https://data.decoassets.com/fossil/43d58e7c-19a0-4cf8-aca7-295e32796994/Banner_slide_mob_neutra(320x380).jpg",
-                "alt": "Neutra",
+                "desktop": "https://data.decoassets.com/fossil/fc323c7e-e229-43d4-8db0-ee22aea85b3f/banner_slide_desk_carlie(1920x600).jpg",
+                "mobile": "https://data.decoassets.com/fossil/aa49b1d2-31d5-44e8-a972-d9044cb77443/Banner_slide_mob_carlie(320x380).jpg",
+                "alt": "Carlie",
                 "action": {
-                  "href": "/relogio-fossil-masculino-neutra-rose---fs6073-0jn/p?skuId=1000026776"
+                  "href": "/s?q=carlie&utmi_pc=search&utmi_cp=carlie"
                 }
               },
               {
-                "desktop": "https://data.decoassets.com/fossil/41fd3a63-8883-4b67-908b-8140ebf2866d/banner_slide_desk_relogioanel(1920x600).jpg",
-                "mobile": "https://data.decoassets.com/fossil/ab04f21b-8149-4c8f-8820-113ee4bdc012/Banner_slide_mob_relogioanel(320x380).jpg",
-                "alt": "Relógio Anel",
+                "desktop": "https://data.decoassets.com/fossil/28bdedef-e868-4380-8979-63d15282823e/banner_slide_desk_bolsas(1920x600)-(1).jpg",
+                "mobile": "https://data.decoassets.com/fossil/22563043-ac5b-4087-9e85-0c43970c6444/Banner_slide_mob_bolsas(320x380)-(1).jpg",
+                "alt": "Bolsas",
                 "action": {
-                  "href": "/relogio-fossil-feminino-fossil-fem-dourado---es5319-1di/p?skuId=1000026711"
+                  "href": "/s?q=bolsa&utmi_pc=search&utmi_cp=bolsa"
                 }
               },
               {
-                "desktop": "https://data.decoassets.com/fossil/b229e136-a451-4c45-a582-520bfce46e27/banner_slide_desk_bazar3(1920x600).jpg",
-                "mobile": "https://data.decoassets.com/fossil/747b7474-8756-4242-b19e-af7083f467aa/Banner_slide_mob_bazar3(320x380).jpg",
+                "desktop": "https://data.decoassets.com/fossil/3449a846-e3a7-4425-8447-06edafcfc425/banner_slide_desk_bazar(1920x600)-(1).jpg",
+                "mobile": "https://data.decoassets.com/fossil/f3071601-9649-4f2d-8219-596fb611171e/Banner_slide_mob_bazar(320x380)-(1).jpg",
                 "alt": "Bazar",
                 "action": {
                   "href": "/off"
@@ -102,8 +102,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2025-01-24T02:59:00.000Z",
-            "start": "2025-01-17T03:00:00.000Z"
+            "end": "2025-02-15T02:59:00.000Z",
+            "start": "2025-02-01T03:00:00.000Z"
           }
         },
         {
