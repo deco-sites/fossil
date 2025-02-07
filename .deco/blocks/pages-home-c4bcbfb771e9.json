@@ -114,34 +114,34 @@
             "images": [
               {
                 "action": {
-                  "href": "/s?q=Sloan&utmi_pc=search&utmi_cp=Sloan"
+                  "href": "/s?q=carlie&utmi_pc=search&utmi_cp=carlie"
                 },
-                "mobile": "https://data.decoassets.com/fossil/a97e5454-7020-408b-a1c1-a06dd0589ef3/Banner_slide_mob_sloan2(320x380).jpg",
-                "desktop": "https://data.decoassets.com/fossil/732a2b1a-b3db-46d2-828e-0bd18cb27d35/banner_slide_desk_sloan2(1920x600).jpg",
-                "alt": "Sloan"
+                "mobile": "https://data.decoassets.com/fossil/86a13aa2-d47a-40a6-a4b1-b1b689e889f2/Banner_slide_mob_carlie2(320x380).jpg",
+                "desktop": "https://data.decoassets.com/fossil/c65ed2f5-b4bf-4bb5-901d-a1e510c2331e/banner_slide_desk_carlie2(1920x600).jpg",
+                "alt": "Carlie"
               },
               {
                 "action": {
-                  "href": "/relogio/masculino?sort=release%3Adesc"
+                  "href": "/s?q=carraway&utmi_pc=search&utmi_cp=carraway"
                 },
-                "mobile": "https://data.decoassets.com/fossil/81361a83-1bb4-4e14-84c5-cb98f706aea2/Banner_slide_mob_neutra2(320x380).jpg",
-                "desktop": "https://data.decoassets.com/fossil/3a812724-c31a-42a2-9073-e0eb1c70b8fd/banner_slide_desk_neutra2(1920x600).jpg",
-                "alt": "Relógios Masculinos"
+                "mobile": "https://data.decoassets.com/fossil/6926432e-f910-48ae-b150-6d3cc81d56b8/Banner_slide_mob_carraway2(320x380).jpg",
+                "desktop": "https://data.decoassets.com/fossil/00ec85d0-679a-4e8d-a7c2-34fcc0df8caa/banner_slide_desk_carraway2(1920x600).jpg",
+                "alt": "Carraway"
               },
               {
                 "action": {
                   "href": "/s?q=watch%20ring"
                 },
-                "mobile": "https://data.decoassets.com/fossil/417a6283-4866-48ff-b059-98b2ce5f389b/Banner_slide_mob_relogioanel2(320x380).jpg",
-                "desktop": "https://data.decoassets.com/fossil/c5648bf9-f901-46ac-86d0-e8db906237e8/banner_slide_desk_relogioanel2(1920x600).jpg",
+                "mobile": "https://data.decoassets.com/fossil/04e58de7-2fd2-4e06-a604-5bd60aa83f69/Banner_slide_mob_reloanel(320x380).jpg",
+                "desktop": "https://data.decoassets.com/fossil/8ada5ca8-a986-42c2-966a-1e29522decf7/banner_slide_desk_reloanel(1920x600).jpg",
                 "alt": "Relógio Anel"
               },
               {
                 "action": {
                   "href": "/off"
                 },
-                "mobile": "https://data.decoassets.com/fossil/662ad210-ca1f-4cef-9d91-c5e6c58b5eac/Banner_slide_mob_bazar4(320x380).jpg",
-                "desktop": "https://data.decoassets.com/fossil/eddd786a-d83d-40ed-93bd-551bf881495b/banner_slide_desk_bazar4(1920x600).jpg",
+                "mobile": "https://data.decoassets.com/fossil/c5c8f6b6-852c-4e86-a255-f4a8928e0e88/Banner_slide_mob_bazar2(320x380).jpg",
+                "desktop": "https://data.decoassets.com/fossil/8dc65972-dc99-4b26-aa71-7013b7eb3b32/banner_slide_desk_bazar2(1920x600).jpg",
                 "alt": "Bazar"
               }
             ],
@@ -150,8 +150,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "start": "2025-01-24T03:00:00.000Z",
-            "end": "2025-02-01T02:59:00.000Z"
+            "start": "2025-02-08T03:00:00.000Z",
+            "end": "2025-02-15T02:59:00.000Z"
           }
         }
       ]
