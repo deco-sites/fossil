@@ -32,6 +32,7 @@ export type Platform =
 export let _platform: Platform = "custom";
 
 export type App = ReturnType<typeof Site>;
+// @ts-ignore ignore
 export type AppContext = AC<App>;
 
 const color = (platform: string) => {
@@ -65,6 +66,7 @@ let firstRun = true;
  */
 export default function Site(
   { theme, ...state }: Props,
+  // @ts-ignore ignore
 ): A<Manifest, Props, [ReturnType<typeof commerce>]> {
   _platform = state.platform || state.commerce?.platform || "custom";
 

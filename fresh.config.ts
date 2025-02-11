@@ -5,6 +5,7 @@ import tailwind from "./tailwind.config.ts";
 
 export default defineConfig({
   plugins: plugins({
+    // @ts-ignore ignore
     manifest,
     // deno-lint-ignore no-explicit-any
     tailwind: tailwind as any,

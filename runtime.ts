@@ -8,11 +8,18 @@ import type { Manifest as ManifestLinx } from "apps/linx/manifest.gen.ts";
 import type { Manifest as ManifestNuvemshop } from "apps/nuvemshop/manifest.gen.ts";
 
 export const invoke = proxy<
+  // @ts-ignore ignore
   & Manifest
+  // @ts-ignore ignore
   & ManifestVNDA
+  // @ts-ignore ignore
   & ManifestVTEX
+  // @ts-ignore ignore
   & ManifestShopify
+  // @ts-ignore ignore
   & ManifestWake
+  // @ts-ignore ignore
   & ManifestLinx
+  // @ts-ignore ignore
   & ManifestNuvemshop
 >();

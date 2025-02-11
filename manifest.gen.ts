@@ -88,10 +88,12 @@ import * as $$$$$$74 from "./sections/Product/SearchResultView.tsx";
 import * as $$$$$$75 from "./sections/Product/ShelfWithImage.tsx";
 import * as $$$$$$76 from "./sections/Product/Wishlist.tsx";
 import * as $$$$$$78 from "./sections/Seo/SeoPdpCustom.tsx";
+import * as $$$$$$79 from "./sections/Seo/SeoPdpCustomV2.tsx";
+import * as $$$$$$80 from "./sections/Seo/SeoPlpCustomV2.tsx";
 import * as $$$$$$77 from "./sections/Seo/SeoPLPV6.tsx";
-import * as $$$$$$79 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$80 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$81 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$81 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$82 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$83 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
@@ -179,10 +181,12 @@ const manifest = {
     "site/sections/Product/ShelfWithImage.tsx": $$$$$$75,
     "site/sections/Product/Wishlist.tsx": $$$$$$76,
     "site/sections/Seo/SeoPdpCustom.tsx": $$$$$$78,
+    "site/sections/Seo/SeoPdpCustomV2.tsx": $$$$$$79,
+    "site/sections/Seo/SeoPlpCustomV2.tsx": $$$$$$80,
     "site/sections/Seo/SeoPLPV6.tsx": $$$$$$77,
-    "site/sections/Social/InstagramPosts.tsx": $$$$$$79,
-    "site/sections/Social/WhatsApp.tsx": $$$$$$80,
-    "site/sections/Theme/Theme.tsx": $$$$$$81,
+    "site/sections/Social/InstagramPosts.tsx": $$$$$$81,
+    "site/sections/Social/WhatsApp.tsx": $$$$$$82,
+    "site/sections/Theme/Theme.tsx": $$$$$$83,
   },
   "matchers": {
     "site/matchers/utm.ts": $$$$$$$0,
