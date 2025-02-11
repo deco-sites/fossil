@@ -168,7 +168,7 @@
       "url": "/relogio/masculino?sort=release%3Adesc"
     },
     {
-      "url": "/relogio/feminino?sort=discount%3Adesc",
+      "url": "/relogio/feminino?sort=release%3Adesc",
       "@type": "SiteNavigationElement",
       "image": [
         {
