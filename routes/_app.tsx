@@ -137,27 +137,33 @@ export default defineApp(async (_req, ctx) => {
             __html: `
             @font-face {
               font-family: "Sacker Gothics";
-              src: url(${asset(
-                "/fonts/SackersGothicStdLight.woff"
-              )}) format('woff');
+              src: url(${
+              asset(
+                "/fonts/SackersGothicStdLight.woff",
+              )
+            }) format('woff');
               font-weight: 400;
               font-display: swap;
               font-style: normal;
             }
             @font-face {
               font-family: "Sacker Gothics";
-              src: url(${asset(
-                "/fonts/SackersGothicStdMedium.woff"
-              )}) format('woff');
+              src: url(${
+              asset(
+                "/fonts/SackersGothicStdMedium.woff",
+              )
+            }) format('woff');
               font-weight: 500;
               font-display: swap;
               font-style: normal;
             }
             @font-face {
               font-family: "Sacker Gothics";
-              src: url(${asset(
-                "/fonts/SackersGothicStdHeavy.woff"
-              )}) format('woff');
+              src: url(${
+              asset(
+                "/fonts/SackersGothicStdHeavy.woff",
+              )
+            }) format('woff');
               font-weight: 700;
               font-display: swap;
               font-style: normal;
@@ -212,9 +218,11 @@ export default defineApp(async (_req, ctx) => {
 
             @font-face {
               font-family: "Roboto Condensed"; 
-              src: url(${asset(
-                "/fonts/RobotoCondensed-Regular.woff"
-              )}) format('woff');
+              src: url(${
+              asset(
+                "/fonts/RobotoCondensed-Regular.woff",
+              )
+            }) format('woff');
               ont-weight: 400; 
               font-display: swap;
               font-style: normal;
@@ -223,9 +231,11 @@ export default defineApp(async (_req, ctx) => {
             
             @font-face {
               font-family: "Roboto Condensed"; 
-              src: url(${asset(
-                "/fonts/RobotoCondensed-Bold.woff"
-              )}) format('woff');
+              src: url(${
+              asset(
+                "/fonts/RobotoCondensed-Bold.woff",
+              )
+            }) format('woff');
               ont-weight: 700; 
               font-display: swap;
               font-style: normal;
@@ -233,9 +243,11 @@ export default defineApp(async (_req, ctx) => {
 
             @font-face {
               font-family: "Roboto Condensed"; 
-              src: url(${asset(
-                "/fonts/RobotoCondensed-Medium.woff"
-              )}) format('woff');
+              src: url(${
+              asset(
+                "/fonts/RobotoCondensed-Medium.woff",
+              )
+            }) format('woff');
               ont-weight: 500; 
               font-display: swap;
               font-style: normal;
@@ -243,9 +255,11 @@ export default defineApp(async (_req, ctx) => {
 
             @font-face {
               font-family: "Montserrat"; 
-              src: url(${asset(
-                "/fonts/Montserrat-Regular.woff"
-              )}) format('woff');
+              src: url(${
+              asset(
+                "/fonts/Montserrat-Regular.woff",
+              )
+            }) format('woff');
               font-weight: 400; 
               font-display: swap;
               font-style: normal;
