@@ -34,8 +34,8 @@
     },
     {
       "image": {
-        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/827ee984-f175-4460-bd0b-3debe0574912",
-        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7424/91d2e193-4c40-45b0-a5f9-8a404c93fcf8",
+        "desktop": "https://data.decoassets.com/fossil/439029be-6712-4a74-8cc2-750c6173a5cc/Banner_colecao_desk_acessorios.jpg",
+        "mobile": "https://data.decoassets.com/fossil/5688646d-b100-4ada-90a1-0dc5dedcd412/Banner_colecao_mob_acessorios.jpg",
         "alt": "Banner Bolsas Masculinas"
       },
       "matcher": "/bolsasmasculinas*"
