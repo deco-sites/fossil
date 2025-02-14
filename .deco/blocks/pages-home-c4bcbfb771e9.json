@@ -63,32 +63,32 @@
             "__resolveType": "site/sections/Images/Carousel.tsx",
             "images": [
               {
-                "desktop": "https://data.decoassets.com/fossil/cf3a5433-1609-4002-b332-9b61bf2dc6f4/banner_slide_desk_carraway(1920x600)-(1).jpg",
-                "mobile": "https://data.decoassets.com/fossil/ca25bfc0-3789-4f5f-8c6c-8d0c86657520/Banner_slide_mob_carraway(320x380).jpg",
+                "desktop": "https://data.decoassets.com/fossil/ca11859a-04c4-4904-be75-ec1f5205734e/banner_slide_desk_harwell(1920x600).jpg",
+                "mobile": "https://data.decoassets.com/fossil/4b67dc5d-33dc-4a93-ba4f-47c6c088c52b/Banner_slide_mob_harwell(320x380).jpg",
                 "action": {
-                  "href": "/s?q=carraway&utmi_pc=search&utmi_cp=carraway"
+                  "href": "/s?q=harwell&utmi_pc=search&utmi_cp=harwell"
                 },
-                "alt": "Carraway"
+                "alt": "Harwell"
               },
               {
-                "desktop": "https://data.decoassets.com/fossil/fc323c7e-e229-43d4-8db0-ee22aea85b3f/banner_slide_desk_carlie(1920x600).jpg",
-                "mobile": "https://data.decoassets.com/fossil/aa49b1d2-31d5-44e8-a972-d9044cb77443/Banner_slide_mob_carlie(320x380).jpg",
-                "alt": "Carlie",
+                "desktop": "https://data.decoassets.com/fossil/528081e3-8bc4-4d41-878b-8acd745f235f/banner_slide_desk_heritage(1920x600).jpg",
+                "mobile": "https://data.decoassets.com/fossil/7b973c1f-e267-4db6-803c-f50bfc4bac31/Banner_slide_mob_heritage(320x380).jpg",
+                "alt": "Heritage",
                 "action": {
-                  "href": "/s?q=carlie&utmi_pc=search&utmi_cp=carlie"
+                  "href": "/s?q=heritage&utmi_pc=search&utmi_cp=heritage"
                 }
               },
               {
-                "desktop": "https://data.decoassets.com/fossil/28bdedef-e868-4380-8979-63d15282823e/banner_slide_desk_bolsas(1920x600)-(1).jpg",
-                "mobile": "https://data.decoassets.com/fossil/22563043-ac5b-4087-9e85-0c43970c6444/Banner_slide_mob_bolsas(320x380)-(1).jpg",
-                "alt": "Bolsas",
+                "desktop": "https://data.decoassets.com/fossil/f24c851d-cc53-4315-a666-8e76432edbbb/banner_slide_desk_carteira(1920x600).jpg",
+                "mobile": "https://data.decoassets.com/fossil/5381a18e-3d25-4c74-9d0f-a245ec5b31f1/Banner_slide_mob_carteira(320x380).jpg",
+                "alt": "Carteira",
                 "action": {
-                  "href": "/s?q=bolsa&utmi_pc=search&utmi_cp=bolsa"
+                  "href": "/s?q=carteira%20masculina&utmi_pc=search&utmi_cp=carteira%20masculina"
                 }
               },
               {
-                "desktop": "https://data.decoassets.com/fossil/3449a846-e3a7-4425-8447-06edafcfc425/banner_slide_desk_bazar(1920x600)-(1).jpg",
-                "mobile": "https://data.decoassets.com/fossil/f3071601-9649-4f2d-8219-596fb611171e/Banner_slide_mob_bazar(320x380)-(1).jpg",
+                "desktop": "https://data.decoassets.com/fossil/74574b05-9e80-40d7-b0a0-c59b29ea8915/banner_slide_desk_bazar3(1920x600).jpg",
+                "mobile": "https://data.decoassets.com/fossil/518cc728-0d79-4673-b637-891b7aa0cea4/Banner_slide_mob_bazar3(320x380).jpg",
                 "alt": "Bazar",
                 "action": {
                   "href": "/off"
@@ -102,8 +102,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2025-02-08T02:59:00.000Z",
-            "start": "2025-02-01T03:00:00.000Z"
+            "end": "2025-02-22T02:59:00.000Z",
+            "start": "2025-02-15T03:00:00.000Z"
           }
         },
         {
