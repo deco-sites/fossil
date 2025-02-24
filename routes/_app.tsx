@@ -21,6 +21,15 @@ export default defineApp(async (_req, ctx) => {
 
       {/* Includ e Icons and manifest */}
       <Head>
+        {/* start SEO */}
+        <link
+          rel="canonical"
+          href={`${
+            ctx.url.origin.replace("http:", "https:")
+          }${ctx.url.pathname}`}
+        />
+        {/* end of SEO */}
+
         {/* Enable View Transitions API */}
         <meta name="view-transition" content="same-origin" />
 
