@@ -33,22 +33,15 @@ export function loader(props: Props, req: Request, ctx: AppContext) {
     ...pdp_seo_deco,
     jsonLDs: pdp_seo_with_pix_discount,
     has_url_query_string,
-    titleTemplate: (ctx.seo && ctx.seo.titleTemplate) || "%s",
-    descriptionTemplate: (ctx.seo && ctx.seo.descriptionTemplate) || "%s",
+    titleTemplate: (ctx.seo && ctx.seo.titleTemplate) || "",
+    descriptionTemplate: (ctx.seo && ctx.seo.descriptionTemplate) || "",
   };
 }
 
 export function LoadingFallback(props: Partial<SectionProps<typeof loader>>) {
   return (
     <SeoBaseCustomV2
-      {...{
-        ...props,
-        has_url_query_string: false,
-        title: "",
-        titleTemplate: "%s",
-        description: "",
-        descriptionTemplate: "%s",
-      }}
+      {...{ ...props, has_url_query_string: !!props.has_url_query_string }}
     />
   );
 }
