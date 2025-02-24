@@ -19,10 +19,10 @@ type Props = Omit<AllProps, 'canonical'>;
 export function loader(props: Props, req: Request, ctx: AppContext) {
   const url_formatted = new URL(req.url);
   const has_url_query_string = url_formatted.search !== '';  
-  const title = (ctx.seo && ctx.seo.title) || props.title || "";
-  const titleTemplate = (ctx.seo && ctx.seo.titleTemplate) || props.titleTemplate || "%s";
-  const description  = (ctx.seo && ctx.seo.description) || props.description || "";
-  const descriptionTemplate = (ctx.seo && ctx.seo.descriptionTemplate) || props.descriptionTemplate || "%s";
+  const title = props.title || (ctx.seo && ctx.seo.title) || "";
+  const titleTemplate = props.titleTemplate || (ctx.seo && ctx.seo.titleTemplate) || "%s";
+  const description  = props.description || (ctx.seo && ctx.seo.description) || "";
+  const descriptionTemplate = props.descriptionTemplate || (ctx.seo && ctx.seo.descriptionTemplate) || "%s";
 
   return {
     ...props,
