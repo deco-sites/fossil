@@ -57,14 +57,7 @@ export function loader(props: Props, req: Request, ctx: AppContext) {
 export function LoadingFallback(props: Partial<SectionProps<typeof loader>>) {
   return (
     <SeoBaseCustomV2
-      {...{
-        ...props,
-        has_url_query_string: false,
-        title: "",
-        titleTemplate: "%s",
-        description: "",
-        descriptionTemplate: "%s",
-      }}
+      {...{ ...props, has_url_query_string: !!props.has_url_query_string }}
     />
   );
 }
@@ -74,6 +67,5 @@ export default function Section(
 ): SEOSection {
   return <SeoBaseCustomV2 {...props} />;
 }
-
 
 export { default as Preview } from "apps/website/components/_seo/Preview.tsx";
