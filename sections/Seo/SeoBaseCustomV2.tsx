@@ -1,4 +1,5 @@
 import { Head } from '$fresh/runtime.ts';
+import type { SectionProps } from "deco/types.ts";
 import { AppContext } from 'apps/commerce/mod.ts';
 import { stripHTML } from 'apps/website/utils/html.ts';
 import {
@@ -9,27 +10,35 @@ import {
 
 export interface AllProps extends SeoDecoProps {
   /** @ignore true */
-  has_url_query_string?: boolean;
+  has_url_query_string: boolean;
 }
 
 type Props = Omit<AllProps, 'canonical'>;
 
 /** @title Base Custom V2 */
-export function loader(props: Props, req: Request, _ctx: AppContext) {
+export function loader(props: Props, req: Request, ctx: AppContext) {
   const url_formatted = new URL(req.url);
-  const has_url_query_string = url_formatted.search !== '';
+  const has_url_query_string = url_formatted.search !== '';  
+  const title = (ctx.seo && ctx.seo.title) || props.title || "";
+  const titleTemplate = (ctx.seo && ctx.seo.titleTemplate) || props.titleTemplate || "%s";
+  const description  = (ctx.seo && ctx.seo.description) || props.description || "";
+  const descriptionTemplate = (ctx.seo && ctx.seo.descriptionTemplate) || props.descriptionTemplate || "%s";
 
   return {
     ...props,
     has_url_query_string,
+    title,
+    titleTemplate,
+    description,
+    descriptionTemplate,
   };
 }
 
 export default function SeoBaseCustomV2({
-  title: t = '',
-  titleTemplate = '%s',
+  title: t,
+  titleTemplate,
   description: desc,
-  descriptionTemplate = '%s',
+  descriptionTemplate,
   type,
   image,
   favicon,
@@ -37,7 +46,7 @@ export default function SeoBaseCustomV2({
   noIndexing,
   has_url_query_string,
   jsonLDs = [],
-}: Props): SEOSection {
+}: SectionProps<typeof loader>): SEOSection {
   const twitterCard = type === 'website' ? 'summary' : 'summary_large_image';
   const description = stripHTML(desc || '');
   const title = stripHTML(t);
