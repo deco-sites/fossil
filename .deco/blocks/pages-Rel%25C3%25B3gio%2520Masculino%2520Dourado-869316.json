@@ -2,12 +2,6 @@
   "name": "Relógio Masculino Dourado",
   "sections": [
     {
-      "type": "website",
-      "__resolveType": "website/sections/Seo/Seo.tsx",
-      "titleTemplate": "%s | Deco.cx",
-      "descriptionTemplate": "%s | Deco.cx"
-    },
-    {
       "__resolveType": "Header - 01"
     },
     {
@@ -24,7 +18,9 @@
     }
   ],
   "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+    "type": "website",
+    "jsonLDs": [],
+    "__resolveType": "site/sections/Seo/SeoBaseCustomV2.tsx"
   },
   "__resolveType": "website/pages/Page.tsx",
   "path": "/relogio/masculino/dourado"

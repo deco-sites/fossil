@@ -40,17 +40,11 @@
     },
     {
       "__resolveType": "Preview /sections/Content/YourViewsIntegration.tsx"
-    },
-    {
-      "__resolveType": "commerce/sections/Seo/SeoPDPV2.tsx",
-      "jsonLD": {
-        "__resolveType": "PDP Loader"
-      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
   "seo": {
-    "__resolveType": "commerce/sections/Seo/SeoPDPV2.tsx",
+    "__resolveType": "site/sections/Seo/SeoPdpCustomV2.tsx",
     "jsonLD": {
       "__resolveType": "PDP Loader"
     }

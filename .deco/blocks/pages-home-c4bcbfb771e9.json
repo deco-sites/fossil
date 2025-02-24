@@ -1,13 +1,16 @@
 {
   "name": "Home",
   "path": "/",
+  "seo": {
+    "type": "website",
+    "jsonLDs": [],
+    "__resolveType": "site/sections/Seo/SeoBaseCustomV2.tsx"
+  },
   "sections": [
     {
       "__resolveType": "Fashion theme"
     },
-    {
-      "__resolveType": "SEOv2-01"
-    },
+    
     {
       "__resolveType": "site/sections/Header/Header.tsx",
       "cart": {
