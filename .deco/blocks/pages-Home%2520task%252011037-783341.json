@@ -5,9 +5,7 @@
     {
       "__resolveType": "Fashion theme"
     },
-    {
-      "__resolveType": "SEOv2-01"
-    },
+    
     {
       "__resolveType": "Header - 01"
     },
@@ -255,7 +253,9 @@
     }
   ],
   "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+    "type": "website",
+    "jsonLDs": [],
+    "__resolveType": "site/sections/Seo/SeoBaseCustomV2.tsx"
   },
   "__resolveType": "website/pages/Page.tsx"
 }
