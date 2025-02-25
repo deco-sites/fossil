@@ -7,7 +7,11 @@
   "seo": {
     "type": "website",
     "jsonLDs": [],
-    "__resolveType": "site/sections/Seo/SeoBaseCustomV2.tsx"
+    "__resolveType": "site/sections/Seo/SeoPlpCustomV2.tsx",
+    "seo_by_url_list": [],
+    "jsonLD": {
+      "__resolveType": "PLP Loader"
+    }
   },
   "sections": [
     {
