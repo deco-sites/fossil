@@ -247,18 +247,18 @@
     },
     {
       "__resolveType": "site/sections/Content/BannerFossil.tsx",
-      "desktopImage": "https://data.decoassets.com/fossil/6257f007-a63f-4e3f-af35-580ad6b54b82/banner_terc_desk_relogioanel(1230x400).jpg",
+      "desktopImage": "https://data.decoassets.com/fossil/986e8924-12a8-4687-b62a-84a92ed72eaf/banner_terc_desk_semulherjoias(1230x400).jpg",
       "desktopImageDimensions": {
         "width": 1230,
         "height": 400
       },
       "alt": "Banner Terciário ",
-      "mobileImage": "https://data.decoassets.com/fossil/08cdc765-6705-4017-b2cb-4d1322a8abed/banner_terc_mob_relogioanel(380x250).jpg",
+      "mobileImage": "https://data.decoassets.com/fossil/37b8d714-183d-4c81-b225-082e4c470606/banner_terc_mob_semulherjoias(380x250).jpg",
       "mobileImageDimensions": {
         "width": 380,
         "height": 250
       },
-      "url": "/s?q=Watch%20Ring&utmi_pc=search&utmi_cp=Watch%20Ring",
+      "url": "/acessoriosfemininos?sort=release%3Adesc",
       "button": {
         "label": "LANÇAMENTOS",
         "href": "/lancamentos"
