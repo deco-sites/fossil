@@ -217,27 +217,27 @@
       },
       "list": [
         {
-          "image": "https://data.decoassets.com/fossil/827d9dc6-5b79-4994-a7f7-22545c647ca1/Banner_secundario_masc(610x400).png",
+          "image": "https://data.decoassets.com/fossil/229cbc90-bd0f-47b1-97c8-b884d9aac893/Banner_secundario_relomasc(610x400).png",
           "label": "Masculinos",
           "buttonText": "CONHEÇA",
           "href": "/relogio/masculino"
         },
         {
-          "image": "https://data.decoassets.com/fossil/553d1ab1-6d1a-44d8-85d3-204f40d2154a/Banner_secundario_fem(610x400).png",
+          "image": "https://data.decoassets.com/fossil/f64e8fbe-9657-4301-a7f2-c7b3f99c6424/Banner_secundario_relofem(610x400).png",
           "label": "Femininos",
           "buttonText": " ENCANTE-SE",
           "href": "/relogio/feminino"
         },
         {
-          "image": "https://data.decoassets.com/fossil/beaaba81-ec4d-4597-bb14-987f0b732807/Banner_secundario_semijoias(610x400)-(1).png",
-          "label": "Semi Joias ",
+          "image": "https://data.decoassets.com/fossil/eb7d0ac9-e4ba-4952-821b-6a2db4ca7e25/Banner_secundario_semijoia(610x400).png",
+          "label": "Relógio Anel",
           "buttonText": " CONHEÇA",
-          "href": "/acessoriosfemininos?sort=release%3Adesc"
+          "href": "/s?q=Watch%20Ring&utmi_pc=search&utmi_cp=Watch%20Ring"
         },
         {
-          "image": "https://data.decoassets.com/fossil/36e3bd57-7d0f-46ff-bdc6-422eac7b3708/Banner_secundario_carteirascouro(610x400).png",
-          "label": "Carteira em Couro",
-          "href": "/s?q=carteira&utmi_pc=search&utmi_cp=carteira",
+          "image": "https://data.decoassets.com/fossil/f7dbd7c2-c7ec-494c-ad44-00364e48dba9/Banner_secundario_bolsas(610x400).png",
+          "label": "Bolsa em Couro",
+          "href": "/s?q=bolsa%20em%20couro&utmi_pc=search&utmi_cp=bolsa%20em%20couro",
           "buttonText": "ESCOLHA O SEU"
         }
       ],
