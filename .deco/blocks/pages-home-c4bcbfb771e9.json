@@ -10,7 +10,6 @@
     {
       "__resolveType": "Fashion theme"
     },
-    
     {
       "__resolveType": "site/sections/Header/Header.tsx",
       "cart": {
@@ -66,27 +65,27 @@
             "__resolveType": "site/sections/Images/Carousel.tsx",
             "images": [
               {
-                "desktop": "https://data.decoassets.com/fossil/ca11859a-04c4-4904-be75-ec1f5205734e/banner_slide_desk_harwell(1920x600).jpg",
-                "mobile": "https://data.decoassets.com/fossil/4b67dc5d-33dc-4a93-ba4f-47c6c088c52b/Banner_slide_mob_harwell(320x380).jpg",
+                "desktop": "https://data.decoassets.com/fossil/98f387d9-cf77-4aac-9c87-d007db740806/banner_slide_desk_semulherelofem(1920x600).jpg",
+                "mobile": "https://data.decoassets.com/fossil/ab37b553-db75-4e3f-80a7-2c0f6e4a750c/Banner_slide_mob_semulherelofem(320x380).jpg",
                 "action": {
-                  "href": "/s?q=harwell&utmi_pc=search&utmi_cp=harwell"
+                  "href": "/relogio/feminino?sort=release%3Adesc"
                 },
-                "alt": "Harwell"
+                "alt": "Feminino"
               },
               {
-                "desktop": "https://data.decoassets.com/fossil/528081e3-8bc4-4d41-878b-8acd745f235f/banner_slide_desk_heritage(1920x600).jpg",
-                "mobile": "https://data.decoassets.com/fossil/7b973c1f-e267-4db6-803c-f50bfc4bac31/Banner_slide_mob_heritage(320x380).jpg",
-                "alt": "Heritage",
+                "desktop": "https://data.decoassets.com/fossil/ab079fc8-1cdf-4859-84b1-30e8320ffc72/banner_slide_desk_semulherelogio(1920x600).jpg",
+                "mobile": "https://data.decoassets.com/fossil/f7e51e94-4cbf-4118-9158-fa18fe87271c/Banner_slide_mob_semulherelogioanel(320x380).jpg",
+                "alt": "Relogio Anel",
                 "action": {
-                  "href": "/s?q=heritage&utmi_pc=search&utmi_cp=heritage"
+                  "href": "/s?q=Watch%20Ring&utmi_pc=search&utmi_cp=Watch%20Ring"
                 }
               },
               {
-                "desktop": "https://data.decoassets.com/fossil/f24c851d-cc53-4315-a666-8e76432edbbb/banner_slide_desk_carteira(1920x600).jpg",
-                "mobile": "https://data.decoassets.com/fossil/5381a18e-3d25-4c74-9d0f-a245ec5b31f1/Banner_slide_mob_carteira(320x380).jpg",
-                "alt": "Carteira",
+                "desktop": "https://data.decoassets.com/fossil/eb036dad-6e11-4745-b38a-abee670aa9b3/banner_slide_desk_semulherbolsas(1920x600).jpg",
+                "mobile": "https://data.decoassets.com/fossil/10da1074-affa-4ec0-ae47-1ab8531e46dd/Banner_slide_mob_semulherbolsas(320x380).jpg",
+                "alt": "Bolsa",
                 "action": {
-                  "href": "/s?q=carteira%20masculina&utmi_pc=search&utmi_cp=carteira%20masculina"
+                  "href": "/s?q=bolsa%20couro&utmi_pc=search&utmi_cp=bolsa%20couro"
                 }
               },
               {
@@ -105,8 +104,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2025-02-22T02:59:00.000Z",
-            "start": "2025-02-15T03:00:00.000Z"
+            "end": "2025-03-10T02:59:00.000Z",
+            "start": "2025-03-01T03:00:00.000Z"
           }
         },
         {
