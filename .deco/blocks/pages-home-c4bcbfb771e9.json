@@ -116,27 +116,27 @@
             "images": [
               {
                 "action": {
-                  "href": "/s?q=harwell&utmi_pc=search&utmi_cp=harwell"
+                  "href": "/2584?PS=12&map=productClusterIds&sort=release%3Adesc"
                 },
-                "mobile": "https://data.decoassets.com/fossil/53fd75f0-dc31-4365-8826-0b2a48c861a9/Banner_slide_mob_harwell2(320x380).jpg",
-                "desktop": "https://data.decoassets.com/fossil/3d931a1e-9a88-46d6-b167-0fc97c9f8af6/banner_slide_desk_harwell2(1920x600).jpg",
-                "alt": "Harwell"
+                "mobile": "https://data.decoassets.com/fossil/3ec7becd-5a62-40ec-96d7-16565b8ba920/Banner_slide_mob_semconsu(320x380).jpg",
+                "desktop": "https://data.decoassets.com/fossil/2f1870c1-1998-4053-bb1d-e106d8b68db4/banner_slide_desk_semconsu(1920x600).jpg",
+                "alt": "sdc"
               },
               {
                 "action": {
-                  "href": "/s?q=heritage&utmi_pc=search&utmi_cp=heritage"
+                  "href": "/relogio/feminino?sort=release%3Adesc"
                 },
-                "mobile": "https://data.decoassets.com/fossil/3767a955-2775-4cb6-9598-c51159c1694c/Banner_slide_mob_heritage2(320x380).jpg",
-                "desktop": "https://data.decoassets.com/fossil/2a00765a-9fa7-4008-8565-38d7f61d32ff/banner_slide_desk_heritage2(1920x600).jpg",
-                "alt": "Heritage"
+                "mobile": "https://data.decoassets.com/fossil/555e5384-6a3a-4929-af52-a409d73a94fe/Banner_slide_mob_selefem(320x380).jpg",
+                "desktop": "https://data.decoassets.com/fossil/4cfc5b3e-96a6-4b65-96b5-24c55376afed/banner_slide_desk_selefem(1920x600).jpg",
+                "alt": "Femininos"
               },
               {
                 "action": {
-                  "href": "/relogio-fossil-feminino-harwell-dourado---es5373-1dn/p?skuId=1000026765"
+                  "href": "/2589?PS=12&map=productClusterIds&sort=release%3Adesc"
                 },
-                "mobile": "https://data.decoassets.com/fossil/38bdbf99-0454-4bc5-834e-8b1c7d34263c/Banner_slide_mob_colarelo(320x380).jpg",
-                "desktop": "https://data.decoassets.com/fossil/ff8bd015-e226-4d88-b85b-5874de190c60/banner_slide_desk_colarelo(1920x600).jpg",
-                "alt": "Colar relógio"
+                "mobile": "https://data.decoassets.com/fossil/511da726-cac8-4a28-ae57-45182a61d067/Banner_slide_mob_auto(320x380).jpg",
+                "desktop": "https://data.decoassets.com/fossil/5d342dc0-13c1-4ab8-ab6e-898560683dfc/banner_slide_desk_auto(1920x600).jpg",
+                "alt": "Automático"
               },
               {
                 "action": {
@@ -152,8 +152,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "start": "2025-02-22T03:00:00.000Z",
-            "end": "2025-03-01T02:59:00.000Z"
+            "start": "2025-03-10T03:00:00.000Z",
+            "end": "2025-03-17T02:59:00.000Z"
           }
         }
       ]
