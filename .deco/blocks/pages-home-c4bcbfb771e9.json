@@ -247,13 +247,13 @@
     },
     {
       "__resolveType": "site/sections/Content/BannerFossil.tsx",
-      "desktopImage": "https://data.decoassets.com/fossil/986e8924-12a8-4687-b62a-84a92ed72eaf/banner_terc_desk_semulherjoias(1230x400).jpg",
+      "desktopImage": "https://data.decoassets.com/fossil/abb9706b-7b90-4c3b-b5ac-5a9911d31c2c/banner_terc_desk_relogioanel(1230x400).jpg",
       "desktopImageDimensions": {
         "width": 1230,
         "height": 400
       },
       "alt": "Banner Terciário ",
-      "mobileImage": "https://data.decoassets.com/fossil/37b8d714-183d-4c81-b225-082e4c470606/banner_terc_mob_semulherjoias(380x250).jpg",
+      "mobileImage": "https://data.decoassets.com/fossil/7601b845-b07e-45a6-9055-72a5ff0934f2/banner_terc_mob_relogioanel(380x250).jpg",
       "mobileImageDimensions": {
         "width": 380,
         "height": 250
