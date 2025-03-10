@@ -173,7 +173,7 @@
         "props": {
           "sort": "discount:desc",
           "count": 16,
-          "collection": "2146"
+          "collection": "2584"
         },
         "crossSelling": "similars",
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
@@ -205,7 +205,7 @@
         },
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
-      "title": "NOVIDADES"
+      "title": "OFF"
     },
     {
       "__resolveType": "site/sections/Category/CategoryGrid.tsx",
