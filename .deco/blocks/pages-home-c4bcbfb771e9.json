@@ -65,35 +65,27 @@
             "__resolveType": "site/sections/Images/Carousel.tsx",
             "images": [
               {
-                "desktop": "https://data.decoassets.com/fossil/98f387d9-cf77-4aac-9c87-d007db740806/banner_slide_desk_semulherelofem(1920x600).jpg",
-                "mobile": "https://data.decoassets.com/fossil/ab37b553-db75-4e3f-80a7-2c0f6e4a750c/Banner_slide_mob_semulherelofem(320x380).jpg",
+                "desktop": "https://data.decoassets.com/fossil/ef36ad16-77df-4208-9be1-73c11301e5ce/banner_slide_desk_harlow(1920x600).jpg",
+                "mobile": "https://data.decoassets.com/fossil/a1b15bb6-cdf2-4b36-b169-ef2c0c218633/Banner_slide_mob_harlow(320x380).jpg",
                 "action": {
-                  "href": "/relogio/feminino?sort=release%3Adesc"
+                  "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
                 },
-                "alt": "Feminino"
+                "alt": "Raquel"
               },
               {
-                "desktop": "https://data.decoassets.com/fossil/ab079fc8-1cdf-4859-84b1-30e8320ffc72/banner_slide_desk_semulherelogio(1920x600).jpg",
-                "mobile": "https://data.decoassets.com/fossil/f7e51e94-4cbf-4118-9158-fa18fe87271c/Banner_slide_mob_semulherelogioanel(320x380).jpg",
-                "alt": "Relogio Anel",
+                "desktop": "https://data.decoassets.com/fossil/d7e4813b-6a12-4ff8-b083-b73a47b99eb3/banner_slide_desk_bracelete(1920x600).jpg",
+                "mobile": "https://data.decoassets.com/fossil/ac48aa13-61b6-40d7-9816-aca461900391/Banner_slide_mob_bracelete(320x380).jpg",
+                "alt": "Bracelete",
                 "action": {
-                  "href": "/s?q=Watch%20Ring&utmi_pc=search&utmi_cp=Watch%20Ring"
+                  "href": "/relogio-fossil-feminino-harwell-dourado---es5372-1dn/p?skuId=1000026714"
                 }
               },
               {
-                "desktop": "https://data.decoassets.com/fossil/eb036dad-6e11-4745-b38a-abee670aa9b3/banner_slide_desk_semulherbolsas(1920x600).jpg",
-                "mobile": "https://data.decoassets.com/fossil/10da1074-affa-4ec0-ae47-1ab8531e46dd/Banner_slide_mob_semulherbolsas(320x380).jpg",
-                "alt": "Bolsa",
+                "desktop": "https://data.decoassets.com/fossil/a7eca175-b384-4e2d-bb81-f4cc8f89ea7a/banner_slide_desk_sportour(1920x600)_sport.jpg",
+                "mobile": "https://data.decoassets.com/fossil/02fb4f6e-e323-4bba-9648-80cf33719d18/Banner_slide_mob_sportour(320x380)-(1)_sport.jpg",
+                "alt": "Sport Tourer",
                 "action": {
-                  "href": "/s?q=bolsa%20couro&utmi_pc=search&utmi_cp=bolsa%20couro"
-                }
-              },
-              {
-                "desktop": "https://data.decoassets.com/fossil/74574b05-9e80-40d7-b0a0-c59b29ea8915/banner_slide_desk_bazar3(1920x600).jpg",
-                "mobile": "https://data.decoassets.com/fossil/518cc728-0d79-4673-b637-891b7aa0cea4/Banner_slide_mob_bazar3(320x380).jpg",
-                "alt": "Bazar",
-                "action": {
-                  "href": "/off"
+                  "href": "/s?q=sport%20tourer&utmi_pc=search&utmi_cp=sport%20tourer"
                 }
               }
             ],
@@ -104,8 +96,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2025-03-10T02:59:00.000Z",
-            "start": "2025-03-01T03:00:00.000Z"
+            "end": "2025-03-24T02:59:00.000Z",
+            "start": "2025-03-17T03:00:00.000Z"
           }
         },
         {
