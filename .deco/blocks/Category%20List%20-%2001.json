@@ -1,1 +1,52 @@
-{"list":[{"href":"/masculino","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/5a8edfec-400f-421f-b436-4ce23d2b13e7","label":"Dresses","description":"Amazing"},{"href":"/feminino","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7363da7a-8530-4e19-8b76-6f92c4da3f1e","label":"Bags","description":"Bags"},{"href":"/","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/33755494-9104-410e-9e48-256aef7fc113","label":"Shoes","description":"New deals"},{"href":"/","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/2d507523-6f5a-4bb5-98d5-d9c944b35845","label":"Jackets","description":"New colors"},{"href":"/","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/907b5510-d4a0-4d75-b2bf-c0c9e9b0ba68","label":"Jeans","description":"Amazing"},{"href":"/","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/40eb7c93-59a7-4963-9917-32508c56e4cc","label":"Shorts","description":"Summer"}],"header":{"title":"Categories","description":"Take a look at our categories"},"layout":{"categoryCard":{"textPosition":"top","textAlignment":"center"},"headerAlignment":"center"},"__resolveType":"site/sections/Category/CategoryList.tsx"}
+{
+  "list": [
+    {
+      "href": "/masculino",
+      "image": "https://data.decoassets.com/fossil/f55584fd-f899-48dd-8445-b48d5be2fee2/1742316765501-5a8edfec-400f-421f-b436-4ce23d2b13e7",
+      "label": "Dresses",
+      "description": "Amazing"
+    },
+    {
+      "href": "/feminino",
+      "image": "https://data.decoassets.com/fossil/df5124c5-ebf7-45e0-a3f8-9c7edf4c9f86/1742316768321-7363da7a-8530-4e19-8b76-6f92c4da3f1e",
+      "label": "Bags",
+      "description": "Bags"
+    },
+    {
+      "href": "/",
+      "image": "https://data.decoassets.com/fossil/2c267df2-e38a-4ce6-a35a-25975656da3b/1742316769978-33755494-9104-410e-9e48-256aef7fc113",
+      "label": "Shoes",
+      "description": "New deals"
+    },
+    {
+      "href": "/",
+      "image": "https://data.decoassets.com/fossil/9dc9233d-7614-4ec1-a776-8ba6cd397397/1742316771368-2d507523-6f5a-4bb5-98d5-d9c944b35845",
+      "label": "Jackets",
+      "description": "New colors"
+    },
+    {
+      "href": "/",
+      "image": "https://data.decoassets.com/fossil/1eada7ac-9ebb-4b58-9459-25d9edb94463/1742316772707-907b5510-d4a0-4d75-b2bf-c0c9e9b0ba68",
+      "label": "Jeans",
+      "description": "Amazing"
+    },
+    {
+      "href": "/",
+      "image": "https://data.decoassets.com/fossil/0eb1f75e-7db7-4d13-8f40-5ac3849ce3d0/1742316774608-40eb7c93-59a7-4963-9917-32508c56e4cc",
+      "label": "Shorts",
+      "description": "Summer"
+    }
+  ],
+  "header": {
+    "title": "Categories",
+    "description": "Take a look at our categories"
+  },
+  "layout": {
+    "categoryCard": {
+      "textPosition": "top",
+      "textAlignment": "center"
+    },
+    "headerAlignment": "center"
+  },
+  "__resolveType": "site/sections/Category/CategoryList.tsx"
+}

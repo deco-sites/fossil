@@ -1,1 +1,26 @@
-{"title":"Summer bags","banners":[{"alt":"a","href":"a","srcMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/82727553-f670-4e7c-b9c2-9452aed1955f","srcDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7b3a9d75-57a5-43cf-a3c5-f689a997f24e"},{"alt":"a","href":"a","srcMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/c5c6bdf6-5555-488c-8b14-719e4158dea6","srcDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/3e2b7824-d75c-4704-8d32-621bfc9b20cf"}],"borderRadius":{"mobile":"3xl","desktop":"3xl"},"itemsPerLine":{"mobile":2,"desktop":2},"__resolveType":"site/sections/Images/BannerGrid.tsx"}
+{
+  "title": "Summer bags",
+  "banners": [
+    {
+      "alt": "a",
+      "href": "a",
+      "srcMobile": "https://data.decoassets.com/fossil/977dd49e-488b-4b5e-9346-bf2bd3245470/1742316832412-82727553-f670-4e7c-b9c2-9452aed1955f",
+      "srcDesktop": "https://data.decoassets.com/fossil/cdcf3be2-1b4e-4362-baa9-b2018cc2fd22/1742316834537-7b3a9d75-57a5-43cf-a3c5-f689a997f24e"
+    },
+    {
+      "alt": "a",
+      "href": "a",
+      "srcMobile": "https://data.decoassets.com/fossil/fbfadc65-fb95-4104-a0cd-01a8db984ab6/1742316837903-c5c6bdf6-5555-488c-8b14-719e4158dea6",
+      "srcDesktop": "https://data.decoassets.com/fossil/5d6f3ddc-6e73-484c-81ec-b14d68c005ae/1742316839886-3e2b7824-d75c-4704-8d32-621bfc9b20cf"
+    }
+  ],
+  "borderRadius": {
+    "mobile": "3xl",
+    "desktop": "3xl"
+  },
+  "itemsPerLine": {
+    "mobile": 2,
+    "desktop": 2
+  },
+  "__resolveType": "site/sections/Images/BannerGrid.tsx"
+}
