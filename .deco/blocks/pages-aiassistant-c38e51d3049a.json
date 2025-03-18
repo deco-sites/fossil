@@ -1,5 +1,387 @@
-{"name":"AI Assistant","path":"/ai-assistant-deco-test","seo": {
+{
+  "name": "AI Assistant",
+  "path": "/ai-assistant-deco-test",
+  "seo": {
     "type": "website",
     "jsonLDs": [],
     "__resolveType": "site/sections/Seo/SeoBaseCustomV2.tsx"
-  },"sections":[{"noIndexing":false,"__resolveType":"website/sections/Seo/Seo.tsx"},{"__resolveType":"Header - 01"},{"variants":[{"rule":{"traffic":0.5,"__resolveType":"website/matchers/random.ts"},"value":{"dots":false,"arrows":true,"images":[{"alt":"Feminino","action":{"href":"/feminino","label":"Explore collection","title":"VTEX Store","subTitle":"You are in A/B test to 50% of users"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/c007e481-b1c6-4122-9761-5c3e554512c1","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/d057fc10-5616-4f12-8d4c-201bb47a81f5"},{"alt":"Masculino","action":{"href":"/masculino","label":"Explore collection","title":"VTEX Store","subTitle":"Visit our site and start building now:"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/c007e481-b1c6-4122-9761-5c3e554512c1","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/d057fc10-5616-4f12-8d4c-201bb47a81f5"},{"alt":"Vestidos","action":{"href":"/feminino/roupas/vestidos","label":"Explore collection","title":"VTEX Store","subTitle":"Visit our site and start building now:"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/c007e481-b1c6-4122-9761-5c3e554512c1","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/d057fc10-5616-4f12-8d4c-201bb47a81f5"}],"preload":true,"__resolveType":"site/sections/Images/Carousel.tsx"}},{"rule":{"__resolveType":"website/matchers/always.ts"},"value":{"dots":false,"arrows":true,"images":[{"alt":"Feminino","action":{"href":"/feminino","label":"Explore collection","title":"VTEX Store","subTitle":"Visit our site and start building now:"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/c007e481-b1c6-4122-9761-5c3e554512c1","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/d057fc10-5616-4f12-8d4c-201bb47a81f5"},{"alt":"Masculino","action":{"href":"/masculino","label":"Explore collection","title":"VTEX Store","subTitle":"Visit our site and start building now:"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/c007e481-b1c6-4122-9761-5c3e554512c1","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/d057fc10-5616-4f12-8d4c-201bb47a81f5"},{"alt":"Vestidos","action":{"href":"/feminino/roupas/vestidos","label":"Explore collection","title":"VTEX Store","subTitle":"Visit our site and start building now:"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/c007e481-b1c6-4122-9761-5c3e554512c1","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/d057fc10-5616-4f12-8d4c-201bb47a81f5"}],"preload":true,"__resolveType":"site/sections/Images/Carousel.tsx"}}],"__resolveType":"website/flags/multivariate/section.ts"},{"content":[{"label":"HOT SALE","repeat":30}],"__resolveType":"site/sections/Miscellaneous/Slide.tsx"},{"link":{"href":"https://github.com/deco-cx","text":"Visit our GitHub"},"text":"<p>Design, develop and deliver complete experiences</p>","labels":{"days":"days","hours":"hours","expired":" Expired!","minutes":"minutes","seconds":"seconds"},"layout":{"textPosition":"After counter"},"expiresAt":"2024-03-15T17:23:00.000Z","__resolveType":"site/sections/Miscellaneous/CampaignTimer.tsx"},{"content":[{"label":"HOT SALE","repeat":30}],"__resolveType":"site/sections/Miscellaneous/Slide.tsx"},{"layout":{"showArrows":true},"products":{"props":{"sort":"price:desc","count":6,"collection":"139"},"crossSelling":"similars","__resolveType":"vtex/loaders/intelligentSearch/productList.ts"},"cardLayout":{"layout":{"hide":{"allPrices":false,"favoriteIcon":true,"installments":false,"productDescription":true},"basics":{"oldPriceSize":"Normal","contentAlignment":"Left"},"onMouseOver":{"card":"None","image":"Change image","showCta":true,"showCardShadow":false,"showSkuSelector":false,"showFavoriteIcon":false},"elementsPositions":{"skuSelector":"Bottom","favoriteIcon":"Top right"}},"__resolveType":"site/loaders/Layouts/ProductCard.tsx"},"__resolveType":"site/sections/Product/ProductShelf.tsx"},{"__resolveType":"Shoppable Banner - 01"},{"list":[{"href":"/","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/01c01ba9-ac16-4371-82ca-b93d17545f9c","label":"Your Collection","buttonText":"Explore collection"},{"href":"/","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/9b80d57d-64b0-4eef-a3cd-fa8daafaae9c","label":"Your Collection","buttonText":"Explore collection"},{"href":"/","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/ed4c0eb3-96ab-484f-b293-e91d196a5063","label":"Your Collection","buttonText":"Explore collection"},{"href":"/","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/b9882ff7-3dbc-43e4-9813-5cec23c012cd","label":"Your Collection","buttonText":"Explore collection"}],"header":{"title":"Explore Our Categories"},"layout":{"categoryCard":{"textPosition":"bottom","textAlignment":"left"}},"__resolveType":"site/sections/Category/CategoryGrid.tsx"},{"behavior":{"type":"intersection","payload":"700px"},"sections":[{"image":{"alt":"Collection Image","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/165c770b-cbbc-48c0-81ad-c732d527c77c","href":"/feminino"},"section":{"title":"Summer Vibes","layout":{"showArrows":true,"headerfontSize":"Normal","headerAlignment":"center","numberOfSliders":{"mobile":1,"desktop":1}},"products":{"props":{"sort":"price:desc","count":3,"query":"camisa"},"__resolveType":"vtex/loaders/intelligentSearch/productList.ts"},"cardLayout":{"layout":{"hide":{"allPrices":false,"favoriteIcon":true,"installments":true,"productDescription":true},"basics":{"oldPriceSize":"Normal","contentAlignment":"Left"},"onMouseOver":{"card":"None","image":"Change image","showCta":true,"showCardShadow":false,"showSkuSelector":true,"showFavoriteIcon":false},"elementsPositions":{"skuSelector":"Bottom","favoriteIcon":"Top right"}},"__resolveType":"site/loaders/Layouts/ProductCard.tsx"},"__resolveType":"site/sections/Product/ProductShelf.tsx"},"__resolveType":"site/sections/Product/ShelfWithImage.tsx"},{"tabs":[{"title":"Woman","products":{"props":{"sort":"price:desc","count":8,"query":"vestido"},"__resolveType":"vtex/loaders/intelligentSearch/productList.ts"}},{"title":"Man","products":{"props":{"sort":"price:desc","count":8,"collection":"140"},"__resolveType":"vtex/loaders/intelligentSearch/productList.ts"}}],"title":"Best Sellers","layout":{"headerfontSize":"Large","headerAlignment":"center"},"cardLayout":{"__resolveType":"Product Card Layout - 01"},"__resolveType":"site/sections/Product/ProductShelfTabbed.tsx"}],"__resolveType":"website/sections/Rendering/Deferred.tsx"},{"posts":[{"alt":"Item of the Summer","date":"January 15, 2024","href":"/","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/7e80b083-d1ff-480d-b3a3-b744b69402b1","label":"Item of the Summer","author":"deco.cx","description":"Lorem ipsum dolor sit amet consectetur. Condimentum dolor ultrices commodo et. Blandit vel est sodales tincidunt aliquam tincidunt. "},{"alt":"Item of the Summer","date":"January 15, 2024","href":"/","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/a3f329d8-795c-4c3b-8049-ede939d599ef","label":"Item of the Summer","author":"deco.cx","description":"Lorem ipsum dolor sit amet consectetur. Condimentum dolor ultrices commodo et. Blandit vel est sodales tincidunt aliquam tincidunt. "},{"alt":"Item of the Summer","date":"January 15, 2024","href":"/","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/7e80b083-d1ff-480d-b3a3-b744b69402b1","label":"Item of the Summer","author":"deco.cx","description":"Lorem ipsum dolor sit amet consectetur.  Condimentum dolor ultrices commodo et. Blandit vel est sodales tincidunt aliquam tincidunt. "}],"title":"Blogposts","__resolveType":"site/sections/Content/BlogPosts.tsx"},{"__resolveType":"Footer - 04"},{"logo":{"alt":"logo","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/f8c6c448-57c5-40bc-b148-b1c82008dc3c"},"openChat":false,"mainColors":{"logo":"#0a3e3d","primary":"#f2f2f2","tertiary":"#000000","secondary":"#ffffff"},"__resolveType":"site/sections/Chat/Chat.tsx"}],"__resolveType":"website/pages/Page.tsx"}
+  },
+  "sections": [
+    {
+      "noIndexing": false,
+      "__resolveType": "website/sections/Seo/Seo.tsx"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "variants": [
+        {
+          "rule": {
+            "traffic": 0.5,
+            "__resolveType": "website/matchers/random.ts"
+          },
+          "value": {
+            "dots": false,
+            "arrows": true,
+            "images": [
+              {
+                "alt": "Feminino",
+                "action": {
+                  "href": "/feminino",
+                  "label": "Explore collection",
+                  "title": "VTEX Store",
+                  "subTitle": "You are in A/B test to 50% of users"
+                },
+                "mobile": "https://data.decoassets.com/fossil/f53b37e6-f02b-4d90-a012-5c99b8eef6cc/1742316816915-c007e481-b1c6-4122-9761-5c3e554512c1",
+                "desktop": "https://data.decoassets.com/fossil/597a8305-dacc-4a15-8266-aac7adf01ba5/1742316818707-d057fc10-5616-4f12-8d4c-201bb47a81f5"
+              },
+              {
+                "alt": "Masculino",
+                "action": {
+                  "href": "/masculino",
+                  "label": "Explore collection",
+                  "title": "VTEX Store",
+                  "subTitle": "Visit our site and start building now:"
+                },
+                "mobile": "https://data.decoassets.com/fossil/f53b37e6-f02b-4d90-a012-5c99b8eef6cc/1742316816915-c007e481-b1c6-4122-9761-5c3e554512c1",
+                "desktop": "https://data.decoassets.com/fossil/597a8305-dacc-4a15-8266-aac7adf01ba5/1742316818707-d057fc10-5616-4f12-8d4c-201bb47a81f5"
+              },
+              {
+                "alt": "Vestidos",
+                "action": {
+                  "href": "/feminino/roupas/vestidos",
+                  "label": "Explore collection",
+                  "title": "VTEX Store",
+                  "subTitle": "Visit our site and start building now:"
+                },
+                "mobile": "https://data.decoassets.com/fossil/f53b37e6-f02b-4d90-a012-5c99b8eef6cc/1742316816915-c007e481-b1c6-4122-9761-5c3e554512c1",
+                "desktop": "https://data.decoassets.com/fossil/597a8305-dacc-4a15-8266-aac7adf01ba5/1742316818707-d057fc10-5616-4f12-8d4c-201bb47a81f5"
+              }
+            ],
+            "preload": true,
+            "__resolveType": "site/sections/Images/Carousel.tsx"
+          }
+        },
+        {
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          },
+          "value": {
+            "dots": false,
+            "arrows": true,
+            "images": [
+              {
+                "alt": "Feminino",
+                "action": {
+                  "href": "/feminino",
+                  "label": "Explore collection",
+                  "title": "VTEX Store",
+                  "subTitle": "Visit our site and start building now:"
+                },
+                "mobile": "https://data.decoassets.com/fossil/f53b37e6-f02b-4d90-a012-5c99b8eef6cc/1742316816915-c007e481-b1c6-4122-9761-5c3e554512c1",
+                "desktop": "https://data.decoassets.com/fossil/597a8305-dacc-4a15-8266-aac7adf01ba5/1742316818707-d057fc10-5616-4f12-8d4c-201bb47a81f5"
+              },
+              {
+                "alt": "Masculino",
+                "action": {
+                  "href": "/masculino",
+                  "label": "Explore collection",
+                  "title": "VTEX Store",
+                  "subTitle": "Visit our site and start building now:"
+                },
+                "mobile": "https://data.decoassets.com/fossil/f53b37e6-f02b-4d90-a012-5c99b8eef6cc/1742316816915-c007e481-b1c6-4122-9761-5c3e554512c1",
+                "desktop": "https://data.decoassets.com/fossil/597a8305-dacc-4a15-8266-aac7adf01ba5/1742316818707-d057fc10-5616-4f12-8d4c-201bb47a81f5"
+              },
+              {
+                "alt": "Vestidos",
+                "action": {
+                  "href": "/feminino/roupas/vestidos",
+                  "label": "Explore collection",
+                  "title": "VTEX Store",
+                  "subTitle": "Visit our site and start building now:"
+                },
+                "mobile": "https://data.decoassets.com/fossil/f53b37e6-f02b-4d90-a012-5c99b8eef6cc/1742316816915-c007e481-b1c6-4122-9761-5c3e554512c1",
+                "desktop": "https://data.decoassets.com/fossil/597a8305-dacc-4a15-8266-aac7adf01ba5/1742316818707-d057fc10-5616-4f12-8d4c-201bb47a81f5"
+              }
+            ],
+            "preload": true,
+            "__resolveType": "site/sections/Images/Carousel.tsx"
+          }
+        }
+      ],
+      "__resolveType": "website/flags/multivariate/section.ts"
+    },
+    {
+      "content": [
+        {
+          "label": "HOT SALE",
+          "repeat": 30
+        }
+      ],
+      "__resolveType": "site/sections/Miscellaneous/Slide.tsx"
+    },
+    {
+      "link": {
+        "href": "https://github.com/deco-cx",
+        "text": "Visit our GitHub"
+      },
+      "text": "<p>Design, develop and deliver complete experiences</p>",
+      "labels": {
+        "days": "days",
+        "hours": "hours",
+        "expired": " Expired!",
+        "minutes": "minutes",
+        "seconds": "seconds"
+      },
+      "layout": {
+        "textPosition": "After counter"
+      },
+      "expiresAt": "2024-03-15T17:23:00.000Z",
+      "__resolveType": "site/sections/Miscellaneous/CampaignTimer.tsx"
+    },
+    {
+      "content": [
+        {
+          "label": "HOT SALE",
+          "repeat": 30
+        }
+      ],
+      "__resolveType": "site/sections/Miscellaneous/Slide.tsx"
+    },
+    {
+      "layout": {
+        "showArrows": true
+      },
+      "products": {
+        "props": {
+          "sort": "price:desc",
+          "count": 6,
+          "collection": "139"
+        },
+        "crossSelling": "similars",
+        "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+      },
+      "cardLayout": {
+        "layout": {
+          "hide": {
+            "allPrices": false,
+            "favoriteIcon": true,
+            "installments": false,
+            "productDescription": true
+          },
+          "basics": {
+            "oldPriceSize": "Normal",
+            "contentAlignment": "Left"
+          },
+          "onMouseOver": {
+            "card": "None",
+            "image": "Change image",
+            "showCta": true,
+            "showCardShadow": false,
+            "showSkuSelector": false,
+            "showFavoriteIcon": false
+          },
+          "elementsPositions": {
+            "skuSelector": "Bottom",
+            "favoriteIcon": "Top right"
+          }
+        },
+        "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
+      },
+      "__resolveType": "site/sections/Product/ProductShelf.tsx"
+    },
+    {
+      "__resolveType": "Shoppable Banner - 01"
+    },
+    {
+      "list": [
+        {
+          "href": "/",
+          "image": "https://data.decoassets.com/fossil/b19e759e-c2f2-47d8-96ff-1026a478cef5/1742316820608-01c01ba9-ac16-4371-82ca-b93d17545f9c",
+          "label": "Your Collection",
+          "buttonText": "Explore collection"
+        },
+        {
+          "href": "/",
+          "image": "https://data.decoassets.com/fossil/5a3129c5-7ab7-4388-9c5a-68af81a355fc/1742316821971-9b80d57d-64b0-4eef-a3cd-fa8daafaae9c",
+          "label": "Your Collection",
+          "buttonText": "Explore collection"
+        },
+        {
+          "href": "/",
+          "image": "https://data.decoassets.com/fossil/65521f61-6a1a-4632-83e0-b62829d52aae/1742316823261-ed4c0eb3-96ab-484f-b293-e91d196a5063",
+          "label": "Your Collection",
+          "buttonText": "Explore collection"
+        },
+        {
+          "href": "/",
+          "image": "https://data.decoassets.com/fossil/e8027c98-40c3-4eae-bc4e-b53ff943b707/1742316824550-b9882ff7-3dbc-43e4-9813-5cec23c012cd",
+          "label": "Your Collection",
+          "buttonText": "Explore collection"
+        }
+      ],
+      "header": {
+        "title": "Explore Our Categories"
+      },
+      "layout": {
+        "categoryCard": {
+          "textPosition": "bottom",
+          "textAlignment": "left"
+        }
+      },
+      "__resolveType": "site/sections/Category/CategoryGrid.tsx"
+    },
+    {
+      "behavior": {
+        "type": "intersection",
+        "payload": "700px"
+      },
+      "sections": [
+        {
+          "image": {
+            "alt": "Collection Image",
+            "src": "https://data.decoassets.com/fossil/f11cd9cf-c6ee-46f4-837a-f41e8ef1cf83/1742316826159-165c770b-cbbc-48c0-81ad-c732d527c77c",
+            "href": "/feminino"
+          },
+          "section": {
+            "title": "Summer Vibes",
+            "layout": {
+              "showArrows": true,
+              "headerfontSize": "Normal",
+              "headerAlignment": "center",
+              "numberOfSliders": {
+                "mobile": 1,
+                "desktop": 1
+              }
+            },
+            "products": {
+              "props": {
+                "sort": "price:desc",
+                "count": 3,
+                "query": "camisa"
+              },
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+            },
+            "cardLayout": {
+              "layout": {
+                "hide": {
+                  "allPrices": false,
+                  "favoriteIcon": true,
+                  "installments": true,
+                  "productDescription": true
+                },
+                "basics": {
+                  "oldPriceSize": "Normal",
+                  "contentAlignment": "Left"
+                },
+                "onMouseOver": {
+                  "card": "None",
+                  "image": "Change image",
+                  "showCta": true,
+                  "showCardShadow": false,
+                  "showSkuSelector": true,
+                  "showFavoriteIcon": false
+                },
+                "elementsPositions": {
+                  "skuSelector": "Bottom",
+                  "favoriteIcon": "Top right"
+                }
+              },
+              "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
+            },
+            "__resolveType": "site/sections/Product/ProductShelf.tsx"
+          },
+          "__resolveType": "site/sections/Product/ShelfWithImage.tsx"
+        },
+        {
+          "tabs": [
+            {
+              "title": "Woman",
+              "products": {
+                "props": {
+                  "sort": "price:desc",
+                  "count": 8,
+                  "query": "vestido"
+                },
+                "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+              }
+            },
+            {
+              "title": "Man",
+              "products": {
+                "props": {
+                  "sort": "price:desc",
+                  "count": 8,
+                  "collection": "140"
+                },
+                "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+              }
+            }
+          ],
+          "title": "Best Sellers",
+          "layout": {
+            "headerfontSize": "Large",
+            "headerAlignment": "center"
+          },
+          "cardLayout": {
+            "__resolveType": "Product Card Layout - 01"
+          },
+          "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx"
+        }
+      ],
+      "__resolveType": "website/sections/Rendering/Deferred.tsx"
+    },
+    {
+      "posts": [
+        {
+          "alt": "Item of the Summer",
+          "date": "January 15, 2024",
+          "href": "/",
+          "image": "https://data.decoassets.com/fossil/a23cb14f-9f12-43fc-8327-040c006dddb3/1742316827872-7e80b083-d1ff-480d-b3a3-b744b69402b1",
+          "label": "Item of the Summer",
+          "author": "deco.cx",
+          "description": "Lorem ipsum dolor sit amet consectetur. Condimentum dolor ultrices commodo et. Blandit vel est sodales tincidunt aliquam tincidunt. "
+        },
+        {
+          "alt": "Item of the Summer",
+          "date": "January 15, 2024",
+          "href": "/",
+          "image": "https://data.decoassets.com/fossil/5644b2f0-3eaa-4da0-8888-4692448c78f4/1742316829579-a3f329d8-795c-4c3b-8049-ede939d599ef",
+          "label": "Item of the Summer",
+          "author": "deco.cx",
+          "description": "Lorem ipsum dolor sit amet consectetur. Condimentum dolor ultrices commodo et. Blandit vel est sodales tincidunt aliquam tincidunt. "
+        },
+        {
+          "alt": "Item of the Summer",
+          "date": "January 15, 2024",
+          "href": "/",
+          "image": "https://data.decoassets.com/fossil/a23cb14f-9f12-43fc-8327-040c006dddb3/1742316827872-7e80b083-d1ff-480d-b3a3-b744b69402b1",
+          "label": "Item of the Summer",
+          "author": "deco.cx",
+          "description": "Lorem ipsum dolor sit amet consectetur.  Condimentum dolor ultrices commodo et. Blandit vel est sodales tincidunt aliquam tincidunt. "
+        }
+      ],
+      "title": "Blogposts",
+      "__resolveType": "site/sections/Content/BlogPosts.tsx"
+    },
+    {
+      "__resolveType": "Footer - 04"
+    },
+    {
+      "logo": {
+        "alt": "logo",
+        "src": "https://data.decoassets.com/fossil/c9e9eb56-0299-4be7-9610-5f521e59495a/1742316831334-f8c6c448-57c5-40bc-b148-b1c82008dc3c"
+      },
+      "openChat": false,
+      "mainColors": {
+        "logo": "#0a3e3d",
+        "primary": "#f2f2f2",
+        "tertiary": "#000000",
+        "secondary": "#ffffff"
+      },
+      "__resolveType": "site/sections/Chat/Chat.tsx"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}

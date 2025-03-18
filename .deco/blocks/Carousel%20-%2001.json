@@ -1,1 +1,39 @@
-{"images":[{"alt":"/feminino","action":{"href":"https://www.deco.cx/","label":"deco.cx","title":"VTEX Store","subTitle":"Visit our site and start building now:"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/24278f9e-412d-4a8a-b2d3-57353bb1b368","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/96e58473-71aa-4419-af42-7d1a3d66b1ae"},{"alt":"/feminino","action":{"href":"https://www.deco.cx/","label":"deco.cx","title":"VTEX Store","subTitle":"Visit our site and start building now:"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/eeaa624c-a3e1-45e8-a6fe-034233cfbcd0","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7949d031-9a79-4639-b85e-62fd90af85a9"},{"alt":"/feminino","action":{"href":"https://www.deco.cx/","label":"deco.cx","title":"VTEX Store","subTitle":"Visit our site and start building now:"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/ae89571c-4a7c-44bf-9aeb-a341fd049d19","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7ec121e4-5cfe-4b7b-b942-d1ed4493803d"}],"preload":true,"__resolveType":"site/sections/Images/Carousel.tsx"}
+{
+  "images": [
+    {
+      "alt": "/feminino",
+      "action": {
+        "href": "https://www.deco.cx/",
+        "label": "deco.cx",
+        "title": "VTEX Store",
+        "subTitle": "Visit our site and start building now:"
+      },
+      "mobile": "https://data.decoassets.com/fossil/b81ec254-33dc-4392-9125-c0c50fd03d2f/1742316841915-24278f9e-412d-4a8a-b2d3-57353bb1b368",
+      "desktop": "https://data.decoassets.com/fossil/de38f2fd-24f2-4aa5-bb48-39cfb34159d7/1742316843254-96e58473-71aa-4419-af42-7d1a3d66b1ae"
+    },
+    {
+      "alt": "/feminino",
+      "action": {
+        "href": "https://www.deco.cx/",
+        "label": "deco.cx",
+        "title": "VTEX Store",
+        "subTitle": "Visit our site and start building now:"
+      },
+      "mobile": "https://data.decoassets.com/fossil/b8efbc03-af88-4179-9265-0a366bd1e407/1742316844845-eeaa624c-a3e1-45e8-a6fe-034233cfbcd0",
+      "desktop": "https://data.decoassets.com/fossil/ff952f6c-1b47-4ffc-af9e-376e5f712018/1742316846164-7949d031-9a79-4639-b85e-62fd90af85a9"
+    },
+    {
+      "alt": "/feminino",
+      "action": {
+        "href": "https://www.deco.cx/",
+        "label": "deco.cx",
+        "title": "VTEX Store",
+        "subTitle": "Visit our site and start building now:"
+      },
+      "mobile": "https://data.decoassets.com/fossil/905237bb-5537-4210-8193-fc425d5ba00f/1742316847598-ae89571c-4a7c-44bf-9aeb-a341fd049d19",
+      "desktop": "https://data.decoassets.com/fossil/5993f220-f626-4e26-a68f-90997e48ac3b/1742316849093-7ec121e4-5cfe-4b7b-b942-d1ed4493803d"
+    }
+  ],
+  "preload": true,
+  "__resolveType": "site/sections/Images/Carousel.tsx"
+}
