@@ -65,8 +65,8 @@
             "__resolveType": "site/sections/Images/Carousel.tsx",
             "images": [
               {
-                "desktop": "https://data.decoassets.com/fossil/ef36ad16-77df-4208-9be1-73c11301e5ce/banner_slide_desk_harlow(1920x600).jpg",
-                "mobile": "https://data.decoassets.com/fossil/a1b15bb6-cdf2-4b36-b169-ef2c0c218633/Banner_slide_mob_harlow(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/2b046132-c86e-4555-9ff0-650ce5216b6f/banner_slide_desk_harlow(1920x600).jpg",
+                "mobile": "https://assets.decocache.com/fossil/8bab23ee-b1c8-480d-ad61-73623fd0d11a/Banner_slide_mob_harlow(320x380).jpg",
                 "action": {
                   "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
                 },
