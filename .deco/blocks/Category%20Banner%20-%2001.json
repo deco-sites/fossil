@@ -66,8 +66,8 @@
     },
     {
       "image": {
-        "desktop": "https://assets.decocache.com/fossil/6257e68c-5617-4a64-90e0-4ef537907aeb/livelo_19.jpg",
-        "mobile": "https://assets.decocache.com/fossil/ad01d0ac-95c2-4b9b-a8d1-10a4b7c20ef5/livelo_19_mobile.jpg",
+        "desktop": "https://assets.decocache.com/fossil/727ed9cc-8799-482e-aa4c-3369c09e53f1/livelo_19_banner)30_desktop.jpg",
+        "mobile": "https://assets.decocache.com/fossil/bb3af90b-c912-49fe-a38f-456d5533985d/livelo_19_banner_30.jpg",
         "alt": "Banner Livelo"
       },
       "matcher": "/livelo*"
