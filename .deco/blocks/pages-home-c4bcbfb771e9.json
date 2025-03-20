@@ -108,35 +108,27 @@
             "images": [
               {
                 "action": {
-                  "href": "/2584?PS=12&map=productClusterIds&sort=release%3Adesc"
+                  "href": "/s?q=sloan&utmi_pc=search&utmi_cp=sloan"
                 },
-                "mobile": "https://data.decoassets.com/fossil/3ec7becd-5a62-40ec-96d7-16565b8ba920/Banner_slide_mob_semconsu(320x380).jpg",
-                "desktop": "https://data.decoassets.com/fossil/2f1870c1-1998-4053-bb1d-e106d8b68db4/banner_slide_desk_semconsu(1920x600).jpg",
-                "alt": "sdc"
+                "mobile": "https://assets.decocache.com/fossil/c01d8f6f-339b-4eab-a035-49b8e8710da2/Banner_slide_mob_sloan(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/2fc7234a-c52c-4cc7-92a0-66a3d2680fc5/banner_slide_desk_sloan(1920x600).jpg",
+                "alt": "SLOAN"
               },
               {
                 "action": {
-                  "href": "/relogio/feminino?sort=release%3Adesc"
+                  "href": "/s?q=sport%20tourer&utmi_pc=search&utmi_cp=sport%20tourer"
                 },
-                "mobile": "https://data.decoassets.com/fossil/555e5384-6a3a-4929-af52-a409d73a94fe/Banner_slide_mob_selefem(320x380).jpg",
-                "desktop": "https://data.decoassets.com/fossil/4cfc5b3e-96a6-4b65-96b5-24c55376afed/banner_slide_desk_selefem(1920x600).jpg",
-                "alt": "Femininos"
+                "mobile": "https://assets.decocache.com/fossil/543d2bc7-1f0f-4009-a230-31d32624ade8/Banner_slide_mob_sportour2(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/9129cd8d-286b-4627-976d-f6e967ed650b/banner_slide_desk_sportour2(1920x600).jpg",
+                "alt": "Sport Tourer"
               },
               {
                 "action": {
-                  "href": "/2589?PS=12&map=productClusterIds&sort=release%3Adesc"
+                  "href": "/bolsasfemininas?sort=release%3Adesc"
                 },
-                "mobile": "https://data.decoassets.com/fossil/511da726-cac8-4a28-ae57-45182a61d067/Banner_slide_mob_auto(320x380).jpg",
-                "desktop": "https://data.decoassets.com/fossil/5d342dc0-13c1-4ab8-ab6e-898560683dfc/banner_slide_desk_auto(1920x600).jpg",
-                "alt": "Automático"
-              },
-              {
-                "action": {
-                  "href": "/off"
-                },
-                "mobile": "https://data.decoassets.com/fossil/26ec440e-c934-48dd-8819-56f9e8296407/Banner_slide_mob_bazar4(320x380).jpg",
-                "desktop": "https://data.decoassets.com/fossil/7d3439f2-519a-4dc9-854c-832fe2387f2e/banner_slide_desk_bazar4(1920x600).jpg",
-                "alt": "Bazar"
+                "mobile": "https://assets.decocache.com/fossil/1ea2c24d-de08-438a-b941-8e2b3e021a5b/Banner_slide_mob_bolsas(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/a1d6e5b7-1509-4d70-8e6a-d003956904d5/banner_slide_desk_bolsas(1920x600).jpg",
+                "alt": "Bolsas"
               }
             ],
             "preload": true,
@@ -144,8 +136,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "start": "2025-03-10T03:00:00.000Z",
-            "end": "2025-03-17T02:59:00.000Z"
+            "start": "2025-03-24T03:00:00.000Z",
+            "end": "2025-04-01T02:59:00.000Z"
           }
         }
       ]
