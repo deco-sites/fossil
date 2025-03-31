@@ -65,27 +65,27 @@
             "__resolveType": "site/sections/Images/Carousel.tsx",
             "images": [
               {
-                "desktop": "https://assets.decocache.com/fossil/2b046132-c86e-4555-9ff0-650ce5216b6f/banner_slide_desk_harlow(1920x600).jpg",
-                "mobile": "https://assets.decocache.com/fossil/8bab23ee-b1c8-480d-ad61-73623fd0d11a/Banner_slide_mob_harlow(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/ab63eace-f5ba-436c-88ee-6e980f0d12d3/banner_slide_desk_maesraquel(1920x600).jpg",
+                "mobile": "https://assets.decocache.com/fossil/3399b1aa-6063-46b4-b502-d5e81db4f24b/Banner_slide_mob_maesraquel(320x380).jpg",
                 "action": {
                   "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
                 },
                 "alt": "Raquel"
               },
               {
-                "desktop": "https://data.decoassets.com/fossil/d7e4813b-6a12-4ff8-b083-b73a47b99eb3/banner_slide_desk_bracelete(1920x600).jpg",
-                "mobile": "https://data.decoassets.com/fossil/ac48aa13-61b6-40d7-9816-aca461900391/Banner_slide_mob_bracelete(320x380).jpg",
-                "alt": "Bracelete",
+                "desktop": "https://assets.decocache.com/fossil/01583c6d-eaeb-42a4-9692-25a47520c3b3/banner_slide_desk_maesreloanel(1920x600).jpg",
+                "mobile": "https://assets.decocache.com/fossil/773f5c4f-2dce-4cdf-a182-ea1124244a05/Banner_slide_mob_maesreloanel(320x380).jpg",
+                "alt": "Relogio Anel",
                 "action": {
-                  "href": "/relogio-fossil-feminino-harwell-dourado---es5372-1dn/p?skuId=1000026714"
+                  "href": "/s?q=Watch%20Ring&utmi_pc=search&utmi_cp=Watch%20Ring"
                 }
               },
               {
-                "desktop": "https://data.decoassets.com/fossil/a7eca175-b384-4e2d-bb81-f4cc8f89ea7a/banner_slide_desk_sportour(1920x600)_sport.jpg",
-                "mobile": "https://data.decoassets.com/fossil/02fb4f6e-e323-4bba-9648-80cf33719d18/Banner_slide_mob_sportour(320x380)-(1)_sport.jpg",
-                "alt": "Sport Tourer",
+                "desktop": "https://assets.decocache.com/fossil/062e6503-9b8b-41b8-a4cb-0bd66b64eca0/banner_slide_desk_machine(1920x600).jpg",
+                "mobile": "https://assets.decocache.com/fossil/78e8535a-1f98-43b1-bd16-13694f4f8468/Banner_slide_mob_machine(320x380).jpg",
+                "alt": "Machine",
                 "action": {
-                  "href": "/s?q=sport%20tourer&utmi_pc=search&utmi_cp=sport%20tourer"
+                  "href": "/s?q=machine&utmi_pc=search&utmi_cp=machine"
                 }
               }
             ],
@@ -96,8 +96,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2025-03-24T02:59:00.000Z",
-            "start": "2025-03-17T03:00:00.000Z"
+            "end": "2025-04-09T02:59:00.000Z",
+            "start": "2025-04-01T03:00:00.000Z"
           }
         },
         {
