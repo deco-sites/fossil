@@ -231,18 +231,18 @@
     },
     {
       "__resolveType": "site/sections/Content/BannerFossil.tsx",
-      "desktopImage": "https://data.decoassets.com/fossil/abb9706b-7b90-4c3b-b5ac-5a9911d31c2c/banner_terc_desk_relogioanel(1230x400).jpg",
+      "desktopImage": "https://assets.decocache.com/fossil/8d0ad93e-ec16-4865-a31d-6947b58de0fa/banner_terc_desk_braceleterelo(1230x400).jpg",
       "desktopImageDimensions": {
         "width": 1230,
         "height": 400
       },
       "alt": "Banner Terciário ",
-      "mobileImage": "https://data.decoassets.com/fossil/7601b845-b07e-45a6-9055-72a5ff0934f2/banner_terc_mob_relogioanel(380x250).jpg",
+      "mobileImage": "https://assets.decocache.com/fossil/71df59b6-925d-4f6b-89ec-e8ed806cf36f/banner_terc_mob_braceleterelogio(380x250).jpg",
       "mobileImageDimensions": {
         "width": 380,
         "height": 250
       },
-      "url": "/acessoriosfemininos?sort=release%3Adesc",
+      "url": "/relogio-fossil-feminino-harwell-dourado---es5372-1dn/p?skuId=1000026714",
       "button": {
         "label": "LANÇAMENTOS",
         "href": "/lancamentos"
