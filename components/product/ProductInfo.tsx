@@ -8,6 +8,7 @@ import { usePlatform } from "../../sdk/usePlatform.tsx";
 import { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductInfoPriceModel from "./ProductInfoPriceModel.tsx";
+import { useCheckCluster } from "../../util/useCheckCluster.ts";
 
 interface Props {
   page: ProductDetailsPage | null;
@@ -42,7 +43,7 @@ function ProductInfo(
   const {
     productID,
     offers,
-    //name = "",
+    additionalProperty,
     isVariantOf,
   } = product;
   const {
@@ -53,8 +54,9 @@ function ProductInfo(
     availability,
     priceWithPixDiscount,
     pixPercentDiscountByDiferenceSellerPrice,
-    has_discount,
   } = useOffer(offers);
+
+  console.log(offers);
 
   let stock;
   let qtdText;
@@ -86,6 +88,8 @@ function ProductInfo(
     product.additionalProperty?.find(({ valueReference }) =>
       valueReference == "ReferenceID"
     )?.value ?? product.gtin;
+
+  const hasDiscount = useCheckCluster(additionalProperty || [], "2166");
 
   return (
     <div
@@ -150,7 +154,7 @@ function ProductInfo(
           priceCurrency={offers?.priceCurrency}
           priceWithPixDiscount={priceWithPixDiscount}
           sellerPrice={price}
-          hasDiscount={has_discount}
+          hasDiscount={hasDiscount}
           listPrice={listPrice}
           pixPercentDiscountByDiferenceSellerPrice={pixPercentDiscountByDiferenceSellerPrice}
         />
