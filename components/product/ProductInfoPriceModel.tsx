@@ -22,12 +22,10 @@ export default function ProductInfoPriceModel(props: Props) {
 
       <p class="w-full block text-left text-black leading-none">
         <span class="text-3xl lg:text-2xl font-bold font-scoutCond">
-          {props.hasDiscount
-            ? formatPrice(
-              props.priceWithPixDiscount,
-              props.priceCurrency || "BRL",
-            )
-            : formatPrice(props.listPrice, props.priceCurrency)}
+          {formatPrice(
+            props.priceWithPixDiscount,
+            props.priceCurrency || "BRL",
+          )}
         </span>
         <span class="text-xs lg:text-[13px] font-arial">{" "}com{" "}</span>
         <span class="text-xs lg:text-[13px] font-bold font-arial">

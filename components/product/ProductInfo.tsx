@@ -56,8 +56,6 @@ function ProductInfo(
     pixPercentDiscountByDiferenceSellerPrice,
   } = useOffer(offers);
 
-  console.log(offers);
-
   let stock;
   let qtdText;
 
