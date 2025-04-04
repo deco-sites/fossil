@@ -8,7 +8,6 @@ import { usePlatform } from "../../sdk/usePlatform.tsx";
 import { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductInfoPriceModel from "./ProductInfoPriceModel.tsx";
-import { useCheckCluster } from "../../util/useCheckCluster.ts";
 
 interface Props {
   page: ProductDetailsPage | null;
@@ -43,7 +42,6 @@ function ProductInfo(
   const {
     productID,
     offers,
-    additionalProperty,
     isVariantOf,
   } = product;
   const {
@@ -86,8 +84,6 @@ function ProductInfo(
     product.additionalProperty?.find(({ valueReference }) =>
       valueReference == "ReferenceID"
     )?.value ?? product.gtin;
-
-  const hasDiscount = useCheckCluster(additionalProperty || [], "2166");
 
   return (
     <div
@@ -152,7 +148,6 @@ function ProductInfo(
           priceCurrency={offers?.priceCurrency}
           priceWithPixDiscount={priceWithPixDiscount}
           sellerPrice={price}
-          hasDiscount={hasDiscount}
           listPrice={listPrice}
           pixPercentDiscountByDiferenceSellerPrice={pixPercentDiscountByDiferenceSellerPrice}
         />
