@@ -65,16 +65,16 @@
             "__resolveType": "site/sections/Images/Carousel.tsx",
             "images": [
               {
-                "desktop": "https://assets.decocache.com/fossil/ab63eace-f5ba-436c-88ee-6e980f0d12d3/banner_slide_desk_maesraquel(1920x600).jpg",
-                "mobile": "https://assets.decocache.com/fossil/3399b1aa-6063-46b4-b502-d5e81db4f24b/Banner_slide_mob_maesraquel(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/0f501657-dab5-41bc-a2f6-761565abccd5/banner_slide_desk_maesraquel(1920x600).jpg",
+                "mobile": "https://assets.decocache.com/fossil/6502dbfb-d5bd-4370-b4f4-23d72454c5a3/Banner_slide_mob_maesraquel(320x380).jpg",
                 "action": {
                   "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
                 },
                 "alt": "Raquel"
               },
               {
-                "desktop": "https://assets.decocache.com/fossil/01583c6d-eaeb-42a4-9692-25a47520c3b3/banner_slide_desk_maesreloanel(1920x600).jpg",
-                "mobile": "https://assets.decocache.com/fossil/773f5c4f-2dce-4cdf-a182-ea1124244a05/Banner_slide_mob_maesreloanel(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/46b6798c-bc6c-48ea-97b1-45174355b1a3/banner_slide_desk_maesreloanel(1920x600).jpg",
+                "mobile": "https://assets.decocache.com/fossil/4eb94d71-9a96-4f76-bdfb-f405f03d5d98/Banner_slide_mob_maesreloanel(320x380).jpg",
                 "alt": "Relogio Anel",
                 "action": {
                   "href": "/s?q=Watch%20Ring&utmi_pc=search&utmi_cp=Watch%20Ring"
