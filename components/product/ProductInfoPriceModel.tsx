@@ -5,7 +5,6 @@ export interface Props {
   priceCurrency?: string;
   sellerPrice: number;
   listPrice: number;
-  hasDiscount: boolean;
   pixPercentDiscountByDiferenceSellerPrice: number;
   installmentBillingDuration?: number;
   installmentBillingIncrement?: number;
@@ -14,11 +13,9 @@ export interface Props {
 export default function ProductInfoPriceModel(props: Props) {
   return (
     <div class="">
-      {props.hasDiscount && (
-        <p class="w-full text-left text-[#89A290] text-sm font-scoutCond font-normal line-through">
-          {formatPrice(props.listPrice, props.priceCurrency)}
-        </p>
-      )}
+      <p class="w-full text-left text-[#89A290] text-sm font-scoutCond font-normal line-through">
+        {formatPrice(props.listPrice, props.priceCurrency)}
+      </p>
 
       <p class="w-full block text-left text-black leading-none">
         <span class="text-3xl lg:text-2xl font-bold font-scoutCond">

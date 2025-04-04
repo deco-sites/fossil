@@ -46,7 +46,7 @@ export const useOffer = (aggregateOffer?: AggregateOffer) => {
   );
 
   const sellerPrice = offer?.priceSpecification.find(
-    ({ priceType }) => priceType === "https://schema.org/SalePrice",
+    ({ priceType }) => priceType === "https://schema.org/SRP",
   );
 
   const priceWithPixPayment = offer?.priceSpecification.find(
@@ -57,11 +57,8 @@ export const useOffer = (aggregateOffer?: AggregateOffer) => {
   const seller = offer?.seller;
   const price = sellerPrice?.price || 0;
   const availability = (offer?.inventoryLevel.value || 0) > 0;
-  const manualPixPercentDiscount = 5;
 
-  const priceWithPixDiscount = (priceWithPixPayment?.price || price) < price
-    ? priceWithPixPayment?.price || price
-    : price * ((100 - manualPixPercentDiscount) / 100);
+  const priceWithPixDiscount = priceWithPixPayment?.price || price;
 
   const pixPercentDiscountByDiferenceSellerPrice = Math.round(
     100 - (priceWithPixDiscount * 100) / price,

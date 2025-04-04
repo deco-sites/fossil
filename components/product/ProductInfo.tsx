@@ -42,7 +42,6 @@ function ProductInfo(
   const {
     productID,
     offers,
-    //name = "",
     isVariantOf,
   } = product;
   const {
@@ -53,7 +52,6 @@ function ProductInfo(
     availability,
     priceWithPixDiscount,
     pixPercentDiscountByDiferenceSellerPrice,
-    has_discount,
   } = useOffer(offers);
 
   let stock;
@@ -150,7 +148,6 @@ function ProductInfo(
           priceCurrency={offers?.priceCurrency}
           priceWithPixDiscount={priceWithPixDiscount}
           sellerPrice={price}
-          hasDiscount={has_discount}
           listPrice={listPrice}
           pixPercentDiscountByDiferenceSellerPrice={pixPercentDiscountByDiferenceSellerPrice}
         />
