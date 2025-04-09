@@ -65,16 +65,16 @@
             "__resolveType": "site/sections/Images/Carousel.tsx",
             "images": [
               {
-                "desktop": "https://assets.decocache.com/fossil/ab63eace-f5ba-436c-88ee-6e980f0d12d3/banner_slide_desk_maesraquel(1920x600).jpg",
-                "mobile": "https://assets.decocache.com/fossil/3399b1aa-6063-46b4-b502-d5e81db4f24b/Banner_slide_mob_maesraquel(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/0f501657-dab5-41bc-a2f6-761565abccd5/banner_slide_desk_maesraquel(1920x600).jpg",
+                "mobile": "https://assets.decocache.com/fossil/6502dbfb-d5bd-4370-b4f4-23d72454c5a3/Banner_slide_mob_maesraquel(320x380).jpg",
                 "action": {
                   "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
                 },
                 "alt": "Raquel"
               },
               {
-                "desktop": "https://assets.decocache.com/fossil/01583c6d-eaeb-42a4-9692-25a47520c3b3/banner_slide_desk_maesreloanel(1920x600).jpg",
-                "mobile": "https://assets.decocache.com/fossil/773f5c4f-2dce-4cdf-a182-ea1124244a05/Banner_slide_mob_maesreloanel(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/46b6798c-bc6c-48ea-97b1-45174355b1a3/banner_slide_desk_maesreloanel(1920x600).jpg",
+                "mobile": "https://assets.decocache.com/fossil/4eb94d71-9a96-4f76-bdfb-f405f03d5d98/Banner_slide_mob_maesreloanel(320x380).jpg",
                 "alt": "Relogio Anel",
                 "action": {
                   "href": "/s?q=Watch%20Ring&utmi_pc=search&utmi_cp=Watch%20Ring"
@@ -108,27 +108,27 @@
             "images": [
               {
                 "action": {
-                  "href": "/s?q=sloan&utmi_pc=search&utmi_cp=sloan"
+                  "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
                 },
-                "mobile": "https://assets.decocache.com/fossil/c01d8f6f-339b-4eab-a035-49b8e8710da2/Banner_slide_mob_sloan(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/2fc7234a-c52c-4cc7-92a0-66a3d2680fc5/banner_slide_desk_sloan(1920x600).jpg",
-                "alt": "SLOAN"
+                "mobile": "https://assets.decocache.com/fossil/8128cb07-d9be-456b-9fbf-4e85ff312d1c/Banner_slide_mob_maesraquel2(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/3caa5c04-4efe-4eac-88d0-fdd7b66bb102/banner_slide_desk_maesraquel2(1920x600).jpg",
+                "alt": "Raquel"
               },
               {
                 "action": {
-                  "href": "/s?q=sport%20tourer&utmi_pc=search&utmi_cp=sport%20tourer"
+                  "href": "/s?q=machine&utmi_pc=search&utmi_cp=machine"
                 },
-                "mobile": "https://assets.decocache.com/fossil/543d2bc7-1f0f-4009-a230-31d32624ade8/Banner_slide_mob_sportour2(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/9129cd8d-286b-4627-976d-f6e967ed650b/banner_slide_desk_sportour2(1920x600).jpg",
-                "alt": "Sport Tourer"
+                "mobile": "https://assets.decocache.com/fossil/113dc20f-e796-4a56-80cc-aaf9c5208fb9/Banner_slide_mob_machine2(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/6c9f15e4-d3a3-4ca5-8191-028b2f78a8d5/banner_slide_desk_machine2(1920x600).jpg",
+                "alt": "Machine"
               },
               {
                 "action": {
-                  "href": "/bolsasfemininas?sort=release%3Adesc"
+                  "href": "/s?q=Watch%20Ring&utmi_pc=search&utmi_cp=Watch%20Ring"
                 },
-                "mobile": "https://assets.decocache.com/fossil/1ea2c24d-de08-438a-b941-8e2b3e021a5b/Banner_slide_mob_bolsas(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/a1d6e5b7-1509-4d70-8e6a-d003956904d5/banner_slide_desk_bolsas(1920x600).jpg",
-                "alt": "Bolsas"
+                "mobile": "https://assets.decocache.com/fossil/276ec7ad-44ea-4999-877e-643f8f8c6044/Banner_slide_mob_maesreloanel2(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/b2844162-8e02-4e77-aa68-25234b9ab73c/banner_slide_desk_maesreloanel2(1920x600).jpg",
+                "alt": "Relógio Anel"
               }
             ],
             "preload": true,
@@ -136,8 +136,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "start": "2025-03-24T03:00:00.000Z",
-            "end": "2025-04-01T02:59:00.000Z"
+            "start": "2025-04-09T03:00:00.000Z",
+            "end": "2025-04-16T02:59:00.000Z"
           }
         }
       ]
