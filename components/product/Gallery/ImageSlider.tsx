@@ -5,9 +5,9 @@ import ProductSliderDotsHandler from "../../../islands/ProductSliderDotsHandler.
 import { ProductDetailsPage } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import { HighLight } from "../ProductHighlights.tsx";
-import { useOffer } from "../../../util/useOffer.ts";
 import { useId } from "../../../sdk/useId.ts";
 import Button from "../../ui/Button.tsx";
+import { useCheckCluster } from "../../../util/useCheckCluster.ts";
 
 export interface Props {
   /** @title Integration */
@@ -36,13 +36,13 @@ export default function GallerySlider(props: Props) {
     page: { product },
   } = props;
   const aspectRatio = `${width} / ${height}`;
-  const { image: images = [], offers } = product;
+  const { image: images = [], additionalProperty } = product;
 
-  const { has_discount } = useOffer(offers);
+  const isOffCluster = useCheckCluster(additionalProperty || [], "2166");
 
   return (
     <div class="float-left w-[48%] relative max-sm:w-auto max-lg:flex max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:w-full">
-      {has_discount && (
+      {isOffCluster && (
         <span class="w-10 h-10 flex absolute top-0 right-0 font-scoutCond z-20 items-center group-hover/discount:z-0 justify-center text-center text-2xl font-medium bg-[#d20d17] text-white rounded-[100px]">
           OFF
         </span>
