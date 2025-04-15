@@ -66,24 +66,22 @@ export default function BannerFossilCoousel({
               : "text-center"
           }`}
         >
-          {title &&
-            (
-              <h2
-                class={clx(
-                  "text-3xl  lg:text-4xl font-bold  text-primary pb-8",
-                )}
-              >
-                {title}
-              </h2>
-            )}
+          {title && (
+            <h2
+              class={clx("text-3xl  lg:text-4xl font-bold  text-primary pb-8")}
+            >
+              {title}
+            </h2>
+          )}
         </div>
         <div
           id={id}
           class={clx(
             "grid ",
-            (layout?.showArrows && device === "desktop") &&
+            layout?.showArrows &&
+              device === "desktop" &&
               "grid-cols-[48px_1fr_48px] sm:grid-cols-[70px_1fr_70px] grid-rows-[1fr_48px_1fr_64px]",
-            "px-0 w-full",
+            "px-0 w-full"
           )}
         >
           <Slider class="carousel sm:carousel-end col-span-full row-span-full">
@@ -93,7 +91,7 @@ export default function BannerFossilCoousel({
                 class={clx(
                   "carousel-item lg:flex lg:justify-center",
                   slideDesktop[layout?.numberOfSliders?.desktop ?? 3],
-                  slideMobile[layout?.numberOfSliders?.mobile ?? 1],
+                  slideMobile[layout?.numberOfSliders?.mobile ?? 1]
                 )}
               >
                 <a
@@ -136,7 +134,7 @@ export default function BannerFossilCoousel({
             }}
           />
 
-          {(layout?.showArrows && device === "desktop") && (
+          {layout?.showArrows && device === "desktop" && (
             <>
               <div class="hidden md:flex items-center justify-center z-10 col-start-1 row-start-2">
                 <Slider.PrevButton class="absolute w-12 h-12 flex justify-center items-center">
