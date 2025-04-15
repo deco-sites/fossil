@@ -65,27 +65,27 @@
             "__resolveType": "site/sections/Images/Carousel.tsx",
             "images": [
               {
-                "desktop": "https://assets.decocache.com/fossil/0f501657-dab5-41bc-a2f6-761565abccd5/banner_slide_desk_maesraquel(1920x600).jpg",
-                "mobile": "https://assets.decocache.com/fossil/6502dbfb-d5bd-4370-b4f4-23d72454c5a3/Banner_slide_mob_maesraquel(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/f8c00a47-0c7b-47f2-be62-fff76e5b655e/banner_slide_desk_gilmore(1920x600).jpg",
+                "mobile": "https://assets.decocache.com/fossil/4ad47256-6fb1-4629-81f7-6d5a80f26ef9/Banner_slide_mob_gilmore(320x380).jpg",
                 "action": {
-                  "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
+                  "href": "/feminino?sort=release%3Adesc"
                 },
-                "alt": "Raquel"
+                "alt": "Gilmore"
               },
               {
-                "desktop": "https://assets.decocache.com/fossil/46b6798c-bc6c-48ea-97b1-45174355b1a3/banner_slide_desk_maesreloanel(1920x600).jpg",
-                "mobile": "https://assets.decocache.com/fossil/4eb94d71-9a96-4f76-bdfb-f405f03d5d98/Banner_slide_mob_maesreloanel(320x380).jpg",
-                "alt": "Relogio Anel",
+                "desktop": "https://assets.decocache.com/fossil/5e529695-04b5-4355-8068-de29581b3e3d/banner_slide_desk_neutra(1920x600).jpg",
+                "mobile": "https://assets.decocache.com/fossil/5053486f-fa1a-4f40-965f-2ee6c49cff7a/Banner_slide_mob_neutra(320x380).jpg",
+                "alt": "Neutra",
                 "action": {
-                  "href": "/s?q=Watch%20Ring&utmi_pc=search&utmi_cp=Watch%20Ring"
+                  "href": "/s?q=neutra%20feminino&utmi_pc=search&utmi_cp=neutra%20feminino"
                 }
               },
               {
-                "desktop": "https://assets.decocache.com/fossil/062e6503-9b8b-41b8-a4cb-0bd66b64eca0/banner_slide_desk_machine(1920x600).jpg",
-                "mobile": "https://assets.decocache.com/fossil/78e8535a-1f98-43b1-bd16-13694f4f8468/Banner_slide_mob_machine(320x380).jpg",
-                "alt": "Machine",
+                "desktop": "https://assets.decocache.com/fossil/301a8c99-20bc-4cc2-9e0e-ac87b7c6e94b/banner_slide_desk_bolsas(1920x600).jpg",
+                "mobile": "https://assets.decocache.com/fossil/14312284-7791-46c3-bd97-3a9de6b92db5/Banner_slide_mob_bolsas(320x380).jpg",
+                "alt": "Bolsas",
                 "action": {
-                  "href": "/s?q=machine&utmi_pc=search&utmi_cp=machine"
+                  "href": "/bolsasfemininas?sort=release%3Adesc"
                 }
               }
             ],
@@ -96,8 +96,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2025-04-09T02:59:00.000Z",
-            "start": "2025-04-01T03:00:00.000Z"
+            "end": "2025-04-23T02:59:00.000Z",
+            "start": "2025-04-16T03:00:00.000Z"
           }
         },
         {
