@@ -21,18 +21,19 @@ export interface Props {
   device?: string;
 }
 
-const Aside = (
-  { onClose, children, className, type }: {
-    title: string;
-    onClose?: () => void;
-    children: ComponentChildren;
-    className?: string;
-    type: "menu" | "minicart" | "searchbar";
-  },
-) => (
-  <div
-    class={`${className} !transition-none`}
-  >
+const Aside = ({
+  onClose,
+  children,
+  className,
+  type,
+}: {
+  title: string;
+  onClose?: () => void;
+  children: ComponentChildren;
+  className?: string;
+  type: "menu" | "minicart" | "searchbar";
+}) => (
+  <div class={`${className} !transition-none`}>
     {type === "menu" && (
       <>
         <div class="flex flex-col">
@@ -53,9 +54,7 @@ const Aside = (
       <>
         <div class="flex justify-between items-center bg-primary text-white z-10">
           <h3 class=" pl-6 md:px-4 py-1 md:py-3">
-            <span class="font-medium text-2xl uppercase ">
-              Meu Carrinho
-            </span>
+            <span class="font-medium text-2xl uppercase ">Meu Carrinho</span>
           </h3>
           {onClose && (
             <Button aria-label="X" class="btn btn-ghost" onClick={onClose}>
@@ -78,70 +77,70 @@ const Aside = (
   </div>
 );
 
-function Drawers(
-  { menu, searchbar, children, platform, device }: Props & { device?: string },
-) {
+function Drawers({
+  menu,
+  searchbar,
+  children,
+  platform,
+  device,
+}: Props & { device?: string }) {
   const { displayCart, displayMenu, displaySearchDrawer } = useUI();
 
   return (
     <>
-      {/** Mobile / Tablet */}
-      {device !== "desktop"
-        ? (
-          <>
-            <Drawer // left drawer
-              open={displayMenu.value || displaySearchDrawer.value}
+      <div class="ld:hidden">
+        <Drawer // left drawer
+          open={displayMenu.value || displaySearchDrawer.value}
+          onClose={() => {
+            displayMenu.value = false;
+            displaySearchDrawer.value = false;
+          }}
+          class={displayMenu.value ? "" : "mt-24"}
+          aside={
+            <Aside
               onClose={() => {
                 displayMenu.value = false;
                 displaySearchDrawer.value = false;
               }}
-              class={displayMenu.value ? "" : "mt-24"}
-              aside={
-                <Aside
-                  onClose={() => {
-                    displayMenu.value = false;
-                    displaySearchDrawer.value = false;
-                  }}
-                  title={displayMenu.value ? "Menu" : "Buscar"}
-                  className={`${
-                    displayMenu.value
-                      ? "h-full max-w-[100vw] bg-base-100"
-                      : "bg-transparent absolute top-24 w-full"
-                  }`}
-                  type={`${displayMenu.value ? "menu" : "searchbar"}`}
-                >
-                  {displayMenu.value && <Menu {...menu} />}
-                  {searchbar && displaySearchDrawer.value && (
-                    <div class="">
-                      <Searchbar {...searchbar} device={device} />
-                    </div>
-                  )}
-                </Aside>
-              }
+              title={displayMenu.value ? "Menu" : "Buscar"}
+              className={`${
+                displayMenu.value
+                  ? "h-full max-w-[100vw] bg-base-100"
+                  : "bg-transparent absolute top-24 w-full"
+              }`}
+              type={`${displayMenu.value ? "menu" : "searchbar"}`}
             >
-              {children}
-            </Drawer>
-            <Drawer // right drawer
-              class="mt-24 "
-              open={displayCart.value !== false}
-              onClose={() => displayCart.value = false}
-              aside={
-                <Aside
-                  title="Minha sacola"
-                  onClose={() => displayCart.value = false}
-                  className={`w-[97%] absolute top-24 bg-white
+              {displayMenu.value && <Menu {...menu} />}
+              {searchbar && displaySearchDrawer.value && (
+                <div class="">
+                  <Searchbar {...searchbar} device={device} />
+                </div>
+              )}
+            </Aside>
+          }
+        >
+          {children}
+        </Drawer>
+        <Drawer // right drawer
+          class="mt-24 "
+          open={displayCart.value !== false}
+          onClose={() => (displayCart.value = false)}
+          aside={
+            <Aside
+              title="Minha sacola"
+              onClose={() => (displayCart.value = false)}
+              className={`w-[97%] absolute top-24 bg-white
                   } `}
-                  type="minicart"
-                >
-                  <Cart platform={platform} />
-                </Aside>
-              }
+              type="minicart"
             >
-              {children}
-            </Drawer>
-          </>
-        )
-        : <>{children}</>}
+              <Cart platform={platform} />
+            </Aside>
+          }
+        >
+          {children}
+        </Drawer>
+      </div>
+      <div class="max-lg:hidden">{children}</div>
     </>
   );
 }

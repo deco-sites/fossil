@@ -159,6 +159,94 @@
       right: -30px;
     }
   }
+
+  @media (min-width: 768px) and (max-width: 1130px) {
+    .is-menu--link {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      margin-right: 0 !important;
+    }
+
+    #search-input {
+      width: 10rem !important;
+    }
+
+    [aria-label="Store logo"] {
+      width: 7rem !important;
+    }
+
+    .n1-custom-style-navbar--button,
+    .n1-custom-style-navbar {
+      font-size: 12px !important;
+    }
+
+    .n1-custom-style-navbar--text {
+      font-size: 10px !important;
+    }
+
+    .n1-menu {
+      gap: 1.25rem !important;
+    }
+
+    .n1-menu--submenu {
+      margin-top: 115px !important;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1319px) {
+    .is-menu--text {
+      font-size: 10px !important;
+      line-height: 10px !important;
+    }
+
+    .n1-custom-style-navbar--button,
+    .n1-custom-style-navbar {
+      font-size: 12px !important;
+    }
+
+    .n1-custom-style-navbar--text {
+      font-size: 10px !important;
+    }
+  }
+
+  @media (min-width: 1321px) and (max-width: 1445px) {
+    .is-menu--text {
+      font-size: 12px !important;
+      line-height: 12px !important;
+    }
+
+    #search-input {
+      width: 13rem !important;
+    }
+
+    .n1-custom-style-navbar {
+      font-size: 14px !important;
+    }
+
+    .n1-custom-style-navbar--text {
+      font-size: 12px !important;
+    }
+  }
+
+  @media (min-width: 1446px) and (max-width: 1919px) {
+    .n1-custom-style-navbar {
+      font-size: 14px !important;
+    }
+
+    .n1-custom-style-navbar--text {
+      font-size: 12px !important;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    .n1-custom-style-navbar {
+      font-size: 16px !important;
+    }
+
+    .n1-custom-style-navbar--text {
+      font-size: 14px !important;
+    }
+  }
 }
 
 .group:disabled .group-disabled\:animate-progress {
