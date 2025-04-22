@@ -108,11 +108,11 @@
             "images": [
               {
                 "action": {
-                  "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
+                  "href": "/relogio/feminino?sort=release%3Adesc"
                 },
-                "mobile": "https://assets.decocache.com/fossil/8128cb07-d9be-456b-9fbf-4e85ff312d1c/Banner_slide_mob_maesraquel2(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/3caa5c04-4efe-4eac-88d0-fdd7b66bb102/banner_slide_desk_maesraquel2(1920x600).jpg",
-                "alt": "Raquel"
+                "mobile": "https://assets.decocache.com/fossil/5ae8f72e-cd80-4be7-add4-5d4fd9b5ed93/Banner_slide_mob_gilmore2(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/560ac91a-6154-4559-b18a-1d0d0ea53fcf/banner_slide_desk_gilmore2(1920x600).jpg",
+                "alt": "Gilmore"
               },
               {
                 "action": {
@@ -124,11 +124,11 @@
               },
               {
                 "action": {
-                  "href": "/s?q=Watch%20Ring&utmi_pc=search&utmi_cp=Watch%20Ring"
+                  "href": "/bolsasfemininas?sort=release%3Adesc"
                 },
-                "mobile": "https://assets.decocache.com/fossil/276ec7ad-44ea-4999-877e-643f8f8c6044/Banner_slide_mob_maesreloanel2(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/b2844162-8e02-4e77-aa68-25234b9ab73c/banner_slide_desk_maesreloanel2(1920x600).jpg",
-                "alt": "Relógio Anel"
+                "mobile": "https://assets.decocache.com/fossil/83d24951-1058-4cb8-8278-e9109663b985/Banner_slide_mob_bolsas2(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/97ee2c3d-52c7-42a1-bc33-40bd37027fed/banner_slide_desk_bolsas2(1920x600).jpg",
+                "alt": "Bolsas"
               }
             ],
             "preload": true,
@@ -136,8 +136,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "start": "2025-04-09T03:00:00.000Z",
-            "end": "2025-04-16T02:59:00.000Z"
+            "start": "2025-04-23T03:00:00.000Z",
+            "end": "2025-05-01T02:59:00.000Z"
           }
         }
       ]
