@@ -2,16 +2,16 @@
   "banners": [
     {
       "image": {
-        "mobile": "https://data.decoassets.com/fossil/1e9f8ce8-3f1a-48b3-94f8-edc66b6bcb92/1742316864856-b599c83c-d78f-4d4c-bdcc-168a261a9f90",
-        "desktop": "https://data.decoassets.com/fossil/fa7e2c5a-775b-432d-9b59-d9cbde661a0d/1742316866312-a536c58e-9a52-48d9-aa54-656b516c7285",
+        "mobile": "https://assets.decocache.com/fossil/711c6af1-94c6-4303-a485-a480448419b2/Bannerdepagina_colecoes_mob2.jpg",
+        "desktop": "https://assets.decocache.com/fossil/287aa20e-df6d-4e46-a562-986bd3888673/Bannerdepaugina_colecoes_desk2.jpg",
         "alt": "Banner Relógio Masculino"
       },
       "matcher": "/relogio/masculino*"
     },
     {
       "image": {
-        "desktop": "https://data.decoassets.com/fossil/d4560624-34d8-4f16-af95-32d495a9d799/1742316868462-2e6a4809-ee3e-4877-b495-7f7e0a722e21",
-        "mobile": "https://data.decoassets.com/fossil/3e6b0a01-01ea-4550-9a25-f71dc0644412/1742316869869-7fae8c74-ff40-4e2e-bdea-d16212c1b22a",
+        "desktop": "https://assets.decocache.com/fossil/deaa3314-f773-48af-a54a-d690059e4630/Bannerdepaugina_colecoes_desk3.jpg",
+        "mobile": "https://assets.decocache.com/fossil/243cc07c-88ae-45cb-b78f-7efd5671b356/Bannerdepagina_colecoes_mob3.jpg",
         "alt": "Banner Relógios Femininos"
       },
       "matcher": "/relogio/feminino*"
@@ -26,40 +26,40 @@
     },
     {
       "image": {
-        "desktop": "https://data.decoassets.com/fossil/631e2ee5-af6c-4279-8c09-14b3104f5fad/1742316874633-e1df9e9d-1379-47d0-898d-61bfec379fcf",
-        "mobile": "https://data.decoassets.com/fossil/6b287bcc-e87b-46ba-9d17-20641edde0ec/1742316876512-4cb1d2a6-ca6f-4ca0-8695-2d72433fd518",
+        "desktop": "https://assets.decocache.com/fossil/303b4409-90a1-4708-9604-12ac1282b191/Bannerdepaugina_colecoes_desk8.jpg",
+        "mobile": "https://assets.decocache.com/fossil/49a47e09-aec2-4ea7-b4e3-bbf800757351/Bannerdepagina_colecoes_mob8.jpg",
         "alt": "Banner Off "
       },
       "matcher": "/off*"
     },
     {
       "image": {
-        "desktop": "https://data.decoassets.com/fossil/439029be-6712-4a74-8cc2-750c6173a5cc/Banner_colecao_desk_acessorios.jpg",
-        "mobile": "https://data.decoassets.com/fossil/5688646d-b100-4ada-90a1-0dc5dedcd412/Banner_colecao_mob_acessorios.jpg",
+        "desktop": "https://assets.decocache.com/fossil/d3d163ee-d44b-4935-a884-a1375e2c1ac7/Bannerdepaugina_colecoes_desk6.jpg",
+        "mobile": "https://assets.decocache.com/fossil/5f73716c-60ee-4da0-8e1f-ae266c13aa99/Bannerdepagina_colecoes_mob6.jpg",
         "alt": "Banner Bolsas Masculinas"
       },
       "matcher": "/bolsasmasculinas*"
     },
     {
       "image": {
-        "desktop": "https://data.decoassets.com/fossil/0b9840a4-de9c-4132-bc1c-58e19109c699/1742316877845-0658f091-8bd5-458d-8f32-a934b9011a35",
-        "mobile": "https://data.decoassets.com/fossil/b28eab75-4b20-403f-a34e-083531072f2a/1742316879159-d173ffe4-a223-4913-b411-858f66dd781e",
+        "desktop": "https://assets.decocache.com/fossil/d25ecf4e-d4d9-4257-a7ea-44005ccf2de0/Bannerdepaugina_colecoes_desk4.jpg",
+        "mobile": "https://assets.decocache.com/fossil/0403a7a8-fd47-492b-9ea6-9a81a24f43bf/Bannerdepagina_colecoes_mob4.jpg",
         "alt": "Banner Bolsas femininas"
       },
       "matcher": "/bolsasfemininas*"
     },
     {
       "image": {
-        "mobile": "https://data.decoassets.com/fossil/d3f2a617-3288-44d7-96b2-1cfe6b948b3b/1742316880525-11c08773-0ecc-41da-8f86-b5a8660b4f81",
-        "desktop": "https://data.decoassets.com/fossil/eff063f4-a0fd-4fef-8390-51f9bdcf5468/1742316882046-61cc77d8-5c29-4321-9738-3ec4486ca74e",
+        "mobile": "https://assets.decocache.com/fossil/6f993d36-ad32-4261-a374-2b0c9741c638/Bannerdepagina_colecoes_mob5.jpg",
+        "desktop": "https://assets.decocache.com/fossil/3f6e0e35-f703-4311-a735-5dbf9df9b7c8/Bannerdepaugina_colecoes_desk5.jpg",
         "alt": "Banner Semi Joias"
       },
       "matcher": "/acessoriosfemininos*"
     },
     {
       "image": {
-        "desktop": "https://data.decoassets.com/fossil/86cd075b-fe7d-4232-8f1a-6ee5bff4ae56/1742316883690-b5825658-9725-46ec-838f-35d833731774",
-        "mobile": "https://data.decoassets.com/fossil/a6f6e1c4-5b13-4e9e-a385-ace4f0523387/1742316885413-cb6ddb03-2d8d-470e-8163-70637817cb7d",
+        "desktop": "https://assets.decocache.com/fossil/b2cd60a9-6c12-42b7-80d5-b79aca6327e3/Bannerdepaugina_colecoes_desk7.jpg",
+        "mobile": "https://assets.decocache.com/fossil/7a53efc2-adf1-4339-9f0b-3f7f7adb4333/Bannerdepagina_colecoes_mob7.jpg",
         "alt": "Banner acessorios masculinos"
       },
       "matcher": "/acessoriosmasculinos*"
