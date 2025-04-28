@@ -8,13 +8,13 @@
     {
       "__resolveType": "site/sections/Hotsites/PresenteBanner.tsx",
       "banner": {
-        "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/4bb8fb6e-5b71-4154-b91e-b04a9fb3e9f6/banner_principal_desk_dezembro(1366x674).png",
-        "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/b39bf125-cd4b-447e-91bc-cff375086d21/banner_principal_mob_dezembro(374x220).png"
+        "imageDesktop": "https://assets.decocache.com/fossil/893c8f64-e638-42bb-a085-0c5b3b94da80/LPpresentes_bannerprincipal_desk_diadasmaes.jpg",
+        "imageMobile": "https://assets.decocache.com/fossil/ef929b9e-e6c6-412f-81c5-622dc7249b3b/LPpresentes_bannerprincipal_mob_diadasmaes.jpg"
       },
-      "subtitle": "Encontre o seu presente perfeito! Nossa seleção exclusiva de relógios, carteiras e acessórios vai surpreender quem você ama.",
+      "subtitle": "Celebre o Dia das Mães com escolhas Fossil: relógios, bolsas e acessórios que carregam amor, estilo e significado.",
       "cta": {
         "label": "Conheça",
-        "url": "https://www.fossil.com.br/relogio?sort=release%3Adesc"
+        "url": "https://www.fossil.com.br/relogio/feminino?sort=release%3Adesc"
       },
       "logo": {
         "0": "h",
@@ -161,40 +161,40 @@
       "cards": [
         {
           "title": "BESTSELLING RAQUEL",
-          "description": "Escolha presentes que combinam estilo e qualidade.",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/b20c85b6-3dc2-43d2-be0c-dc9ecae45bb0/banner_secundario_desk_presentes_dezembro_fem(683x467).png",
-          "url": "/relogio/feminino?sort=release%3Adesc",
+          "description": "Celebre com o cordão Harwell da Fossil. Um símbolo de elegância e amor que ela vai levar para a vida toda.",
+          "image": "https://assets.decocache.com/fossil/460fcb42-3999-4e5c-99ca-125965093920/LPpresentes_bannersecundario_desk_diadasmaes1.jpg",
+          "url": "/relogio-fossil-feminino-harwell-dourado---es5373-1dn/p?skuId=1000026765",
           "label": "PRESENTES PARA ELA"
         },
         {
           "title": "SPORT TOURER",
-          "description": "Presentes masculinos que refletem design e praticidade.",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/dc37a5b7-7e9d-436e-a6e0-c0a8e5577958/banner_secundario_desk_presentes_dezembro_masc(683x467).png",
-          "url": "https://www.fossil.com.br/relogio/masculino?sort=release%3Adesc",
-          "label": "PRESENTES PARA ELE"
+          "description": "Escolha um relógio da coleção Raquel, um símbolo de amor, estilo e momentos inesquecíveis.",
+          "image": "https://assets.decocache.com/fossil/d48a1ede-a040-4cea-abd9-99414be9cb93/LPpresentes_bannersecundario_desk_diadasmaes2.jpg",
+          "url": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel",
+          "label": "PRESENTES PARA ELA"
         }
       ]
     },
     {
       "__resolveType": "site/sections/Hotsites/PresenteShopByGender.tsx",
       "title": "BOLSAS EM COURO",
-      "description": "O presente ideal para quem aprecia design e durabilidade.",
-      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/a584a60b-eded-4ae5-8c6e-16378d17ed20/banner_terciario_desk_presente_dezembro(720x620).png",
+      "description": "Para sua mãe que merece o melhor, presenteie com Fossil.",
+      "image": "https://assets.decocache.com/fossil/b8e36c2f-f031-4e29-a9bf-acf9167489bc/LPpresentes_bannerterciario_desk_diadasmaes.jpg",
       "links": [
         {
           "label": "Presentear",
-          "url": "https://www.fossil.com.br/s?q=Bolsa%20couro&utmi_pc=search&utmi_cp=Bolsa%20couro"
+          "url": "https://www.fossil.com.br/bolsasfemininas?sort=release%3Adesc"
         }
       ]
     },
     {
       "__resolveType": "site/sections/Hotsites/PresenteActionBanner.tsx",
       "banner": {
-        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/4ad6de86-28ad-4055-9b18-536f0f553f73/banner_desk_presente_relogioanel(1366x650).png",
-        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/0864ca4b-755d-4808-8f74-1b57bb3d3f10/banner_mob_presente_relogioanel(375x348).png"
+        "desktop": "https://assets.decocache.com/fossil/af08a6fa-9103-4777-a01a-e9e43ebb7310/LPpresentes_bannerreloanel_desk_diadasmaes.jpg",
+        "mobile": "https://assets.decocache.com/fossil/a07d417d-0ae2-4305-853e-7c136460f511/LPpresentes_bannerreloanel_mob_diadasmaes.jpg"
       },
       "action": {
-        "description": "Acessório único que une beleza e praticidade.",
+        "description": "Um presente único que combina elegância e inovação.",
         "cta": {
           "label": "Comprar",
           "url": "https://www.fossil.com.br/s?q=watch%20ring&utmi_pc=search&utmi_cp=watch%20ring"
