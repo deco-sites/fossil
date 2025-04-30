@@ -65,27 +65,27 @@
             "__resolveType": "site/sections/Images/Carousel.tsx",
             "images": [
               {
-                "desktop": "https://assets.decocache.com/fossil/f8c00a47-0c7b-47f2-be62-fff76e5b655e/banner_slide_desk_gilmore(1920x600).jpg",
-                "mobile": "https://assets.decocache.com/fossil/4ad47256-6fb1-4629-81f7-6d5a80f26ef9/Banner_slide_mob_gilmore(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/918267f7-f6ec-40c8-864d-3d807a475c57/banner_slide_desk_raquel(1920x600).jpg",
+                "mobile": "https://assets.decocache.com/fossil/3cb30d82-5428-4eb7-b3af-74b01ad0e082/Banner_slide_mob_raquel(320x380).jpg",
                 "action": {
-                  "href": "/feminino?sort=release%3Adesc"
+                  "href": "/relogio/feminino?sort=release%3Adesc"
                 },
-                "alt": "Gilmore"
+                "alt": "Raquel"
               },
               {
-                "desktop": "https://assets.decocache.com/fossil/5e529695-04b5-4355-8068-de29581b3e3d/banner_slide_desk_neutra(1920x600).jpg",
-                "mobile": "https://assets.decocache.com/fossil/5053486f-fa1a-4f40-965f-2ee6c49cff7a/Banner_slide_mob_neutra(320x380).jpg",
-                "alt": "Neutra",
-                "action": {
-                  "href": "/s?q=neutra%20feminino&utmi_pc=search&utmi_cp=neutra%20feminino"
-                }
-              },
-              {
-                "desktop": "https://assets.decocache.com/fossil/301a8c99-20bc-4cc2-9e0e-ac87b7c6e94b/banner_slide_desk_bolsas(1920x600).jpg",
-                "mobile": "https://assets.decocache.com/fossil/14312284-7791-46c3-bd97-3a9de6b92db5/Banner_slide_mob_bolsas(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/d7e2f66b-3911-4dee-b04e-cce25ab1a1d1/banner_slide_desk_acessorios(1920x600).jpg",
+                "mobile": "https://assets.decocache.com/fossil/c3424d4c-8e4d-4c38-a2f1-63188cd27764/Banner_slide_mob_acesssorios(320x380).jpg",
                 "alt": "Bolsas",
                 "action": {
                   "href": "/bolsasfemininas?sort=release%3Adesc"
+                }
+              },
+              {
+                "desktop": "https://assets.decocache.com/fossil/e5dfef1d-fe64-41c5-b36c-7f463535e63a/banner_slide_desk_harwell(1920x600).jpg",
+                "mobile": "https://assets.decocache.com/fossil/aff047d2-efc7-4216-a425-4aa5ff32f044/Banner_slide_mob_harwell(320x380).jpg",
+                "alt": "Brinde",
+                "action": {
+                  "href": "/s?q=relogios&utmi_pc=search&utmi_cp=relogios&sort=release%3Adesc"
                 }
               }
             ],
@@ -96,8 +96,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2025-04-23T02:59:00.000Z",
-            "start": "2025-04-16T03:00:00.000Z"
+            "end": "2025-05-12T02:59:00.000Z",
+            "start": "2025-05-01T03:00:00.000Z"
           }
         },
         {
