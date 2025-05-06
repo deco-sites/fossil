@@ -7,8 +7,8 @@ import { SEOSection } from "apps/website/components/Seo.tsx";
 import { fix_data_struct_by_pix_payment } from "../../sdk/useSchema.ts";
 import SeoBaseCustomV2 from "./SeoBaseCustomV2.tsx";
 import { type SectionProps } from "@deco/deco";
-export interface Props extends SeoPdpV2Props {
-}
+
+export interface Props extends SeoPdpV2Props {}
 /** @title PDP Custom V2 */
 export function loader(props: Props, req: Request, ctx: AppContext) {
   const pdp_seo_deco = seoPdpV2Loader(props, req, ctx);
@@ -41,7 +41,7 @@ export function LoadingFallback(props: Partial<SectionProps<typeof loader>>) {
   );
 }
 export default function Section(
-  props: SectionProps<typeof loader>,
+  props: SectionProps<typeof loader>
 ): SEOSection {
   return <SeoBaseCustomV2 {...props} />;
 }
