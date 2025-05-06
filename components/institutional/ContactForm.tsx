@@ -2,9 +2,8 @@ import { ImageWidget } from "apps/admin/widgets.ts";
 import { Head } from "$fresh/runtime.ts";
 import type { JSX } from "preact";
 import { useSignal } from "@preact/signals";
-import { FnContext, SectionProps } from "deco/mod.ts";
 import { invoke } from "../../runtime.ts";
-
+import { type FnContext, type SectionProps } from "@deco/deco";
 export interface InputTextarea {
   id?: string;
   label?: string;
@@ -13,7 +12,6 @@ export interface InputTextarea {
   rows?: number;
   required?: boolean;
 }
-
 export interface InputText {
   id?: string;
   type: "text" | "tel" | "hidden" | "email";
@@ -22,7 +20,6 @@ export interface InputText {
   value?: string;
   required?: boolean;
 }
-
 export interface InputSelect {
   id?: string;
   label?: string;
@@ -34,13 +31,10 @@ export interface InputSelect {
     label?: string;
   }[];
 }
-
 /** @title {{field.label}} */
-
 export interface Field {
   field: InputText | InputSelect | InputTextarea;
 }
-
 export interface Props {
   title?: string;
   /**
@@ -54,51 +48,41 @@ export interface Props {
   subtitle?: string;
   fields: Field[];
 }
-
 export function loader(props: Props, req: Request, ctx: FnContext) {
   const url = new URL(req.url);
   const { pathname } = url;
-
   return {
     ...props,
     pathname,
     device: ctx.device,
   };
 }
-
-function ContactForm({
-  backgroundImage,
-  fields,
-  subtitle = "",
-  title = "",
-  acronym,
-  device,
-}: SectionProps<typeof loader>) {
+function ContactForm(
+  { backgroundImage, fields, subtitle = "", title = "", acronym, device }:
+    SectionProps<typeof loader>,
+) {
   const loading = useSignal(false);
   const succeeded = useSignal(false);
-
   const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
-
-    if (!acronym) return;
-
+    if (!acronym) {
+      return;
+    }
     try {
       loading.value = true;
-
       const elements = e.currentTarget.elements;
       // deno-lint-ignore no-explicit-any
       const data: any = {};
-
       for (const field of fields) {
         const element = elements.namedItem(field?.field?.name) as RadioNodeList;
-        if (element) data[`${field?.field?.name}`] = element.value;
+        if (element) {
+          data[`${field?.field?.name}`] = element.value;
+        }
       }
-
       // const res = await invoke.vtex.actions.masterdata.createDocument({
       //   data,
       //   acronym,
       // });
-
       await invoke.vtex.actions.masterdata.createDocument({
         data,
         acronym,
@@ -108,21 +92,22 @@ function ContactForm({
       loading.value = false;
     }
   };
-
   const handleBlur: JSX.FocusEventHandler<
     HTMLInputElement | HTMLTextAreaElement
   > = (e) => {
     const value = e.currentTarget.value;
     const name = e.currentTarget.name;
     const parent = document.getElementById(`ContactForm__field-${name}`);
-
     if (value != "") {
-      if (parent) parent.classList.add("is-valid");
+      if (parent) {
+        parent.classList.add("is-valid");
+      }
     } else {
-      if (parent) parent.classList.remove("is-valid");
+      if (parent) {
+        parent.classList.remove("is-valid");
+      }
     }
   };
-
   return (
     <>
       <Head>
@@ -190,7 +175,6 @@ function ContactForm({
           background: device == "mobile"
             ? `#000 url("${backgroundImage}") 100% no-repeat`
             : `#000 url("${backgroundImage}") top no-repeat`,
-
           backgroundSize: "cover",
         }}
       >
@@ -210,10 +194,12 @@ function ContactForm({
                 </p>
                 <div className="ContactForm__fieldset md:flex md:flex-1 flex-row flex-wrap gap-x-4">
                   {fields?.map(
-                    ({
-                      field,
-                      field: { id, name, label, required, value = undefined },
-                    }) => {
+                    (
+                      {
+                        field,
+                        field: { id, name, label, required, value = undefined },
+                      },
+                    ) => {
                       if (instanceOfInput(field)) {
                         return (
                           <div
@@ -238,7 +224,6 @@ function ContactForm({
                           </div>
                         );
                       }
-
                       if (instanceOfSelect(field)) {
                         return (
                           <div class="ContactForm__field relative mt-4  pt-4 flex-1 border-b-[1px] border-b-[#fff] basis-[100%] max-w-[100%] md:basis-[30%] md:max-w-[30%]">
@@ -260,7 +245,6 @@ function ContactForm({
                           </div>
                         );
                       }
-
                       if (instanceOfTextarea(field)) {
                         return (
                           <div
@@ -373,23 +357,19 @@ function ContactForm({
     </>
   );
 }
-
 export function instanceOfSelect(
   data: InputText | InputSelect | InputTextarea,
 ): data is InputSelect {
   return "options" in data;
 }
-
 export function instanceOfInput(
   data: InputText | InputSelect | InputTextarea,
 ): data is InputText {
   return "type" in data;
 }
-
 export function instanceOfTextarea(
   data: InputText | InputSelect | InputTextarea,
 ): data is InputTextarea {
   return "rows" in data;
 }
-
 export default ContactForm;

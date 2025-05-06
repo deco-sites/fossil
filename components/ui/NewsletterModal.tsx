@@ -1,6 +1,5 @@
 import Icon from "./Icon.tsx";
 import { useSignal } from "@preact/signals";
-import { SectionProps } from "deco/types.ts";
 import type { JSX } from "preact";
 import { useEffect, useRef } from "preact/compat";
 import { getCookies } from "std/http/mod.ts";
@@ -8,7 +7,7 @@ import { clx } from "../../sdk/clx.ts";
 import InputCustom from "./InputCustom.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
-
+import { type SectionProps } from "@deco/deco";
 export interface INewsletterInputProps {
   /**
    * @title Hide input?
@@ -19,14 +18,12 @@ export interface INewsletterInputProps {
    */
   placeholder?: string;
 }
-
 interface ImageGeneric {
   src?: ImageWidget;
   /**
    * @title Largura da imagem
    * @description ex: (800)
    */
-
   width?: number;
   /**
    * @title Altura da imagem
@@ -34,14 +31,12 @@ interface ImageGeneric {
    */
   height?: number;
 }
-
 interface Device {
   /**@title Desktop*/
   desktop?: ImageGeneric;
   /**@title Mobile*/
   mobile?: ImageGeneric;
 }
-
 export interface INewsletterFormProps {
   email: INewsletterInputProps;
   name: INewsletterInputProps;
@@ -53,14 +48,12 @@ export interface INewsletterFormProps {
     label?: string;
   };
 }
-
 export interface Props {
   /**
    * @title Ativar?
    * @default true
    */
   is_active?: boolean;
-
   /**
    * @title Imagem
    */
@@ -96,28 +89,23 @@ export interface Props {
    * @title Days to reopen modal if it is registered
    */
   modalSignExpiredDate: number;
-
   /**
    * @title Days to reopen moda if it is closed
    */
   modalCloseExpiredDate: number;
 }
-
 interface InputNewletterProps {
   name: string;
   placeholder: string;
   type: string;
   required: boolean;
 }
-
 export const loader = (props: Props, req: Request) => {
   const cookies = getCookies(req.headers);
   const cookieEmpty = req.method === "POST";
   const isOpen = cookieEmpty ? false : Boolean(!cookies["DecoNewsletterModal"]);
-
   return { ...props, isOpen };
 };
-
 function InputNewsletter(
   { name, placeholder, required, type }: InputNewletterProps,
 ) {
@@ -133,49 +121,38 @@ function InputNewsletter(
     />
   );
 }
-
-function NewsletterModal(
-  {
-    textFieldCupom,
-    textCupom,
-    textSendSucess,
-    isOpen,
-    form,
-    text,
-    modalSignExpiredDate,
-    modalCloseExpiredDate,
-    colorText,
-    image,
-    is_active,
-  }: SectionProps<
-    ReturnType<typeof loader>
-  >,
-) {
-  if (!is_active) return null;
-
+function NewsletterModal({
+  textFieldCupom,
+  textCupom,
+  textSendSucess,
+  isOpen,
+  form,
+  text,
+  modalSignExpiredDate,
+  modalCloseExpiredDate,
+  colorText,
+  image,
+  is_active,
+}: SectionProps<ReturnType<typeof loader>>) {
+  if (!is_active) {
+    return null;
+  }
   const modalRef = useRef<HTMLDialogElement>(null);
   const loading = useSignal(false);
   const success = useSignal(false);
-
   useEffect(() => {
     if (isOpen) {
       modalRef.current?.showModal();
     }
   }, [isOpen]);
-
-  const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = async (
-    e,
-  ) => {
+  const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
-
     try {
       const formData = new FormData(e.currentTarget);
       const formProps = Object.fromEntries(formData);
       const Newsletter = Boolean(formProps.newsletter);
-
       const { name, email, telephone, dateOfBirth } = formProps;
       const data = { Newsletter, name, email, telephone, dateOfBirth };
-
       await fetch("/api/optin", {
         method: "POST",
         body: JSON.stringify(data),
@@ -187,55 +164,45 @@ function NewsletterModal(
     } finally {
       loading.value = false;
       success.value = true;
-
       setCookieOnCloseModal("registered", modalSignExpiredDate);
     }
   };
-
   const setCookieOnCloseModal = (
     cookieValue: string,
     expirationSeconds: number,
   ) => {
     // deno-lint-ignore no-var
     var date = new Date();
-
-    date.setTime(
-      date.getTime() + (expirationSeconds * 24 * 60 * 60 * 1000),
-    );
+    date.setTime(date.getTime() + (expirationSeconds * 24 * 60 * 60 * 1000));
     // deno-lint-ignore no-var
     var expires = "expires=" + date.toUTCString();
-
     document.cookie = "DecoNewsletterModal" + "=" + cookieValue + ";" +
       expires + ";path=/";
   };
-
   const refCupom = useRef<HTMLInputElement>(null);
-
   function handleClickCopy() {
     const elementTextCupom = refCupom.current;
-    if (!elementTextCupom) return null;
-
+    if (!elementTextCupom) {
+      return null;
+    }
     const cupomText = elementTextCupom?.querySelector<HTMLParagraphElement>(
       ".popup-custom-text",
     );
-
-    if (!cupomText) return null;
-
+    if (!cupomText) {
+      return null;
+    }
     const elementSpan = document.createElement("span");
-
-    if (!elementSpan) return null;
-
+    if (!elementSpan) {
+      return null;
+    }
     navigator.clipboard.writeText(cupomText.innerText);
-
     elementSpan?.classList.add("popup-copied");
     elementSpan.innerText = "Copiado";
     elementTextCupom.append(elementSpan);
-
     setTimeout(() => {
       elementSpan.remove();
     }, 2500);
   }
-
   const emailInput = !form?.email?.show
     ? (
       <InputNewsletter
@@ -246,7 +213,6 @@ function NewsletterModal(
       />
     )
     : null;
-
   const nameInput = !form?.name?.show
     ? (
       <InputNewsletter
@@ -257,7 +223,6 @@ function NewsletterModal(
       />
     )
     : null;
-
   return (
     <>
       <dialog
@@ -275,10 +240,7 @@ function NewsletterModal(
             <button
               class="absolute -top-[11px] right-0 translate-x-1/2 bg-[#333333] border-none rounded-full p-[0.2rem] cursor-pointer text-white"
               onClick={() =>
-                setCookieOnCloseModal(
-                  "closed",
-                  modalCloseExpiredDate,
-                )}
+                setCookieOnCloseModal("closed", modalCloseExpiredDate)}
               aria-label="Fechar"
             >
               <Icon id="CloseNewsletter" width={22} height={22} />
@@ -515,10 +477,7 @@ function NewsletterModal(
           <form method="dialog" className="modal-backdrop">
             <button
               onClick={() =>
-                setCookieOnCloseModal(
-                  "closed",
-                  modalCloseExpiredDate,
-                )}
+                setCookieOnCloseModal("closed", modalCloseExpiredDate)}
             >
               fechar
             </button>
@@ -528,5 +487,4 @@ function NewsletterModal(
     </>
   );
 }
-
 export default NewsletterModal;

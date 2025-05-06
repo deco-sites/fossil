@@ -45,9 +45,12 @@ export function loader(props: Props, req: Request, ctx: AppContext) {
   const url_formatted = new URL(req.url);
   const has_url_query_string = url_formatted.search !== "";
   const title = props.title || (ctx.seo && ctx.seo.title) || "";
-  const titleTemplate = props.title ? props.titleTemplate ||
-    (ctx.seo && ctx.seo.titleTemplate) || "" : "%s";
-  const description = props.description || (ctx.seo && ctx.seo.description) || "";
+  const titleTemplate = props.title
+    ? props.titleTemplate ||
+      (ctx.seo && ctx.seo.titleTemplate) || ""
+    : "%s";
+  const description = props.description || (ctx.seo && ctx.seo.description) ||
+    "";
   const descriptionTemplate = props.descriptionTemplate ||
     (ctx.seo && ctx.seo.descriptionTemplate) || "";
   const type = props.type || (ctx.seo && ctx.seo.description) || "website";

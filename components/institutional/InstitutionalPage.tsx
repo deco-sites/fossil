@@ -1,27 +1,23 @@
 import { Head } from "$fresh/runtime.ts";
-import { FnContext, SectionProps } from "deco/mod.ts";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import { HTML } from "./types.ts";
 import { useId } from "../../sdk/useId.ts";
 import Slider from "../ui/Slider.tsx";
 import SliderJS from "../../islands/SliderJS.tsx";
-
+import { type FnContext, type SectionProps } from "@deco/deco";
 interface Block {
   backgroundImage?: ImageWidget;
   text?: HTML;
 }
-
 interface Timeline {
   image?: ImageWidget;
   text?: HTML;
 }
-
 interface DotsProps {
   images?: Timeline[];
   interval?: number;
   className: string;
 }
-
 export interface Hide {
   /** @default false */
   block1?: boolean;
@@ -32,7 +28,6 @@ export interface Hide {
   /** @default false */
   timeline?: boolean;
 }
-
 export interface Props {
   title?: HTML;
   backgroundImage: ImageWidget;
@@ -43,18 +38,15 @@ export interface Props {
   timeline?: Timeline[];
   hide?: Hide;
 }
-
 export function loader(props: Props, req: Request, ctx: FnContext) {
   const url = new URL(req.url);
   const { pathname } = url;
-
   return {
     ...props,
     pathname,
     device: ctx.device,
   };
 }
-
 function InstitutionalPage(props: SectionProps<typeof loader>) {
   const {
     backgroundImage,
@@ -73,7 +65,6 @@ function InstitutionalPage(props: SectionProps<typeof loader>) {
     },
   } = props;
   const id = useId();
-
   return (
     <>
       <Head>
@@ -665,7 +656,6 @@ function InstitutionalPage(props: SectionProps<typeof loader>) {
     </>
   );
 }
-
 function Buttons() {
   return (
     <>
@@ -679,7 +669,6 @@ function Buttons() {
     </>
   );
 }
-
 function Dots({ images, interval = 0, className }: DotsProps) {
   return (
     <>
@@ -687,9 +676,7 @@ function Dots({ images, interval = 0, className }: DotsProps) {
         class={`carousel slick-dots relative justify-center col-span-full gap-2 z-10 order-3 mt-10 ${className}`}
       >
         {images?.map((_, index) => (
-          <li
-            class={`carousel-item`}
-          >
+          <li class={`carousel-item`}>
             <Slider.Dot index={index}>
               <div>
                 <div
@@ -704,5 +691,4 @@ function Dots({ images, interval = 0, className }: DotsProps) {
     </>
   );
 }
-
 export default InstitutionalPage;

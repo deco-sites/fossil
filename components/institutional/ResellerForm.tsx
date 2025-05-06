@@ -2,11 +2,9 @@ import { ImageWidget } from "apps/admin/widgets.ts";
 import { Head } from "$fresh/runtime.ts";
 import type { JSX } from "preact";
 import { useSignal } from "@preact/signals";
-
-import { FnContext, SectionProps } from "deco/mod.ts";
 import { cnpjCpfMask, phoneMask, zipCodeMask } from "./utils/mask.ts";
 import { invoke } from "../../runtime.ts";
-
+import { type FnContext, type SectionProps } from "@deco/deco";
 export interface Props {
   title?: string;
   /**
@@ -18,39 +16,30 @@ export interface Props {
    */
   backgroundImage: ImageWidget;
 }
-
 export function loader(props: Props, req: Request, ctx: FnContext) {
   const url = new URL(req.url);
   const { pathname } = url;
-
   return {
     ...props,
     pathname,
     device: ctx.device,
   };
 }
-
-function ResellerForm({
-  backgroundImage,
-  title = "",
-  acronym,
-  device,
-}: SectionProps<typeof loader>) {
+function ResellerForm(
+  { backgroundImage, title = "", acronym, device }: SectionProps<typeof loader>,
+) {
   const loading = useSignal(false);
   const succeeded = useSignal(false);
-
   const getElement = (name: string): Element | null => {
     return document.getElementById(`ResellerForm__field-${name}`);
   };
-
   const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
-
-    if (!acronym) return;
-
+    if (!acronym) {
+      return;
+    }
     try {
       loading.value = true;
-
       const elements = e.currentTarget.elements;
       // deno-lint-ignore no-explicit-any
       const data: any = {
@@ -79,7 +68,6 @@ function ResellerForm({
         hasShop: (elements.namedItem("hasShop") as RadioNodeList)?.value,
         tipoLoja: (elements.namedItem("tipoLoja") as RadioNodeList)?.value,
       };
-
       const wrongMsg =
         "<span class='wrongField'>*Favor conferir as informações no campo</span>";
       const wrongMsg2 = "<span class='wrongField'>*Campo Obrigatório</span>";
@@ -99,10 +87,8 @@ function ResellerForm({
         "city",
       ];
       let validate = false;
-
       for (const key in data) {
         const value = data[key];
-
         if (
           ("" == value || "undefined" == typeof value) && fields.includes(key)
         ) {
@@ -115,7 +101,6 @@ function ResellerForm({
           validate = false;
           break;
         }
-
         if ("corporateDocument" == key && value.length < 18) {
           data[key] = "";
           const el = getElement(key);
@@ -146,17 +131,21 @@ function ResellerForm({
           validate = true;
         }
       }
-
-      if (!validate) return;
-
+      if (!validate) {
+        return;
+      }
       const resp = await invoke.vtex.actions.masterdata
         .createDocument({
           data,
           acronym,
-        }) as { DocumentId: string } & { Message: string };
-
-      if (resp?.DocumentId) succeeded.value = true;
-
+        }) as {
+          DocumentId: string;
+        } & {
+          Message: string;
+        };
+      if (resp?.DocumentId) {
+        succeeded.value = true;
+      }
       if (resp?.Message) {
         const field = resp?.Message?.split("to the field '")[1].split(
           "' is ",
@@ -170,27 +159,27 @@ function ResellerForm({
       loading.value = false;
     }
   };
-
   const handleBlur: JSX.FocusEventHandler<
     HTMLInputElement | HTMLTextAreaElement
   > = (e) => {
     const value = e.currentTarget.value;
     const name = e.currentTarget.name;
     const parent = document.getElementById(`ResellerForm__field-${name}`);
-
     if (parent) {
       parent.querySelectorAll(".emptyField,.wrongField").forEach((el) =>
         el.remove()
       );
     }
-
     if (value != "") {
-      if (parent) parent.classList.add("is-valid");
+      if (parent) {
+        parent.classList.add("is-valid");
+      }
     } else {
-      if (parent) parent.classList.remove("is-valid");
+      if (parent) {
+        parent.classList.remove("is-valid");
+      }
     }
   };
-
   return (
     <>
       <Head>
@@ -460,7 +449,6 @@ function ResellerForm({
             background: device == "mobile"
               ? `url("http://technos.vteximg.com.br/arquivos/reseller-form-bg.jpg") top no-repeat`
               : `url("http://technos.vteximg.com.br/arquivos/reseller-form-bg-desktop.jpg") 50% no-repeat`,
-
             backgroundSize: "cover",
           }}
         >
@@ -949,5 +937,4 @@ function ResellerForm({
     </>
   );
 }
-
 export default ResellerForm;

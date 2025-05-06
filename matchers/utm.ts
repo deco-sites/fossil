@@ -1,12 +1,10 @@
-import { MatchContext } from "deco/blocks/matcher.ts";
-
+import { type MatchContext } from "@deco/deco/blocks";
 interface UtmProps {
   /**
-      @description The name of the campaign
-     **/
+        @description The name of the campaign
+       **/
   campaignName?: string;
 }
-
 /**
  * Checks if the campaign name matches the utm_campaign parameter in the URL
  */
