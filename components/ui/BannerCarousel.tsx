@@ -9,8 +9,7 @@ import SliderJS from "../../islands/SliderJS.tsx";
 import { useId } from "../../sdk/useId.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
-import { useDevice } from "deco/hooks/useDevice.ts";
-
+import { useDevice } from "@deco/deco/hooks";
 /**
  * @titleBy alt
  */
@@ -32,7 +31,6 @@ export interface Banner {
     label?: string;
   };
 }
-
 export interface Props {
   images?: Banner[];
   /**
@@ -55,7 +53,6 @@ export interface Props {
    */
   interval?: number;
 }
-
 const DEFAULT_PROPS = {
   images: [
     {
@@ -100,30 +97,20 @@ const DEFAULT_PROPS = {
   ],
   preload: true,
 };
-
-function BannerItem(
-  { image, lcp, position, id, is_mobile }: {
-    image: Banner;
-    lcp?: boolean;
-    position: number;
-    id: string;
-    is_mobile: boolean;
-  },
-) {
-  const {
-    alt,
-    mobile,
-    desktop,
-    action,
-  } = image;
-
+function BannerItem({ image, lcp, position, id, is_mobile }: {
+  image: Banner;
+  lcp?: boolean;
+  position: number;
+  id: string;
+  is_mobile: boolean;
+}) {
+  const { alt, mobile, desktop, action } = image;
   const params = {
     promotion_name: alt,
     creative_name: action && action.href ? action.href : "",
     creative_slot: `Slot ${Number(position) + 1}`,
     promotion_id: is_mobile ? mobile : desktop,
   };
-
   return (
     <>
       <a
@@ -194,7 +181,6 @@ function BannerItem(
     </>
   );
 }
-
 function Dots({ images, interval = 0 }: Props) {
   return (
     <>
@@ -226,7 +212,6 @@ function Dots({ images, interval = 0 }: Props) {
     </>
   );
 }
-
 function Buttons() {
   return (
     <>
@@ -253,14 +238,11 @@ function Buttons() {
     </>
   );
 }
-
 function BannerCarousel(props: Props) {
   const id = useId();
   const device = useDevice();
   const is_mobile = device !== "desktop";
-
   const { images, preload, interval } = { ...DEFAULT_PROPS, ...props };
-
   return (
     <div
       id={id}
@@ -290,5 +272,4 @@ function BannerCarousel(props: Props) {
     </div>
   );
 }
-
 export default BannerCarousel;

@@ -6,16 +6,14 @@ import { useId } from "../../sdk/useId.ts";
 import { useOffer } from "../../util/useOffer.ts";
 import ProductGallery, { Columns } from "../product/ProductGallery.tsx";
 import NotFound from "./NotFound.tsx";
-import { redirect } from "deco/mod.ts";
 import { AppContext } from "../../apps/site.ts";
 import Pagination from "../../islands/Pagination.tsx";
 import Sort from "../../islands/sort.tsx";
 import Breadcrumb from "../ui/Breadcrumb.tsx";
 import { getSearchTerm } from "../../util/getSearchTerm.ts";
 import { GetSearchQueryParameter } from "../../util/getSearchQueryParameter.ts";
-
+import { redirect } from "@deco/deco";
 export type Format = "Show More" | "Pagination";
-
 export interface Layout {
   /**
    * @description Use drawer for mobile like behavior on desktop. Aside for rendering the filters alongside the products
@@ -30,58 +28,42 @@ export interface Layout {
    */
   format?: Format;
 }
-
 export interface Props {
   /** @title Integration */
   page: ProductListingPage | null;
   layout?: Layout;
-
   /** @hide */
   isCollection?: boolean;
-
   /** @description 0 for ?page=0 as your first page */
   startingPage?: 0 | 1;
 }
-
 type FilterDrawerProps = {
   searchParams: string;
   quantityProduct: number;
   searchTerm: string;
 };
-
-function Result({
-  page,
-  layout,
-  startingPage = 0,
-  url: _url,
-  device,
-}: Omit<Props, "page"> & {
-  page: ProductListingPage;
-  url: string;
-  device?: string;
-}) {
+function Result(
+  { page, layout, startingPage = 0, url: _url, device }: Omit<Props, "page"> & {
+    page: ProductListingPage;
+    url: string;
+    device?: string;
+  },
+) {
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
   const { recordPerPage, nextPage, previousPage, currentPage } = pageInfo;
   const perPage = recordPerPage || products.length;
-
   const url = new URL(_url);
-
   const id = useId();
-
   const { format = "Show More" } = layout ?? {};
-
   const zeroIndexedOffsetPage = currentPage - startingPage;
   const offset = zeroIndexedOffsetPage * perPage;
-
   const searchParams = url.search;
-
   const searchTerm = getSearchTerm(searchParams);
   const productsFound = (
     <h6 class="text-primary uppercase font-medium">
       {pageInfo.records} Produtos encontrados
     </h6>
   );
-
   const filterDrawerProps = {
     searchParams,
     quantityProduct: pageInfo.records || 0,
@@ -189,31 +171,25 @@ function Result({
     </>
   );
 }
-
 function SearchResult(
   { page, device, url, ...props }: ReturnType<typeof loader>,
 ) {
   if (!page || page.products.length <= 0 || !page.products) {
     return <NotFound />;
   }
-
   return <Result {...props} page={page} device={device} url={url} />;
 }
-
 export const loader = (props: Props, req: Request, ctx: AppContext) => {
   const { page } = props;
-
   if (!page || !page.products || page.products.length === 0) {
     const url = new URL(req.url);
     url.pathname = "Sistema/buscavazia";
     redirect(url.toString(), 301);
   }
-
   return {
     ...props,
     url: req.url,
     device: ctx.device,
   };
 };
-
 export default SearchResult;

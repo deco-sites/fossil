@@ -8,20 +8,18 @@
  * Note that this is the most performatic way to perform a search, since
  * no JavaScript is shipped to the browser!
  */
-
 import Icon from "../../components/ui/Icon.tsx";
 import { sendEvent } from "../../sdk/analytics.tsx";
 import { useId } from "../../sdk/useId.ts";
 import { useSuggestions } from "../../sdk/useSuggestions.ts";
 import { useUI } from "../../sdk/useUI.ts";
 import { Suggestion } from "apps/commerce/types.ts";
-import { Resolved } from "deco/engine/core/resolver.ts";
 import { useEffect, useRef } from "preact/compat";
 import type { Platform } from "../../apps/site.ts";
 import { formatPrice } from "../../sdk/format.ts";
 import { useOffer } from "../../util/useOffer.ts";
 import Image from "apps/website/components/Image.tsx";
-
+import { type Resolved } from "@deco/deco";
 // Editable props
 export interface Props {
   /**
@@ -42,16 +40,13 @@ export interface Props {
    * @default q
    */
   name?: string;
-
   /**
    * @title Suggestions Integration
    * @todo: improve this typings ({query: string, count: number}) => Suggestions
    */
   loader: Resolved<Suggestion | null>;
-
   platform?: Platform;
 }
-
 // Editable props
 export interface Props {
   /**
@@ -72,22 +67,19 @@ export interface Props {
    * @default q
    */
   name?: string;
-
   /**
    * @title Suggestions Integration
    * @todo: improve this typings ({query: string, count: number}) => Suggestions
    */
   loader: Resolved<Suggestion | null>;
-
   platform?: Platform;
 }
-
-function Searchbar({
-  action = "/s",
-  name = "&utm_p=",
-  loader,
-  device,
-}: Props & { variant?: string; device?: string }) {
+function Searchbar(
+  { action = "/s", name = "&utm_p=", loader, device }: Props & {
+    variant?: string;
+    device?: string;
+  },
+) {
   const id = useId();
   const { displaySearchPopup } = useUI();
   const searchInputRef = useRef<HTMLInputElement>(null);
@@ -125,13 +117,11 @@ function Searchbar({
       url: "/relogio/feminino?&utmi_pc=Html&utmi_cp=Popular",
     },
   ];
-
   useEffect(() => {
     if (displaySearchPopup.value === false && !hasTerms && !hasProducts) {
       setQuery("");
     }
   }, [displaySearchPopup.value]);
-
   const handleSearch = (event: Event) => {
     event.preventDefault();
     const value = searchInputRef?.current?.value.trim();
@@ -142,7 +132,6 @@ function Searchbar({
       window.location.href = searchURL;
     }
   };
-
   return (
     <div class="max-md:flex itens-center justify-center w-full relative ">
       <form
@@ -246,50 +235,48 @@ function Searchbar({
                     <span class=" font-bold uppercas w-[80%] text-left border-b-2 border-solid border-black max-md:hidden box-border text-black text-[18px] leading-[18px]  flex pt-4 pb-5">
                       Nossas sugestões
                     </span>
-                    {products.map((
-                      { image, isVariantOf, offers, url },
-                      index,
-                    ) => {
-                      const { has_discount, listPrice, price } = useOffer(
-                        offers,
-                      );
+                    {products.map(
+                      ({ image, isVariantOf, offers, url }, index) => {
+                        const { has_discount, listPrice, price } = useOffer(
+                          offers,
+                        );
+                        return (
+                          <>
+                            {index < 2 && (
+                              <li class="inline-block float-left w-1/2 pt-4 px-4">
+                                <a
+                                  class="text-[10px] leading-none text-center text-black"
+                                  href={url}
+                                >
+                                  <Image
+                                    src={image![0].url! || ""}
+                                    width={240}
+                                    height={240}
+                                    class="w-4/5 h-auto block mb-4 p-2 mx-auto"
+                                  />
 
-                      return (
-                        <>
-                          {index < 2 && (
-                            <li class="inline-block float-left w-1/2 pt-4 px-4">
-                              <a
-                                class="text-[10px] leading-none text-center text-black"
-                                href={url}
-                              >
-                                <Image
-                                  src={image![0].url! || ""}
-                                  width={240}
-                                  height={240}
-                                  class="w-4/5 h-auto block mb-4 p-2 mx-auto"
-                                />
+                                  {isVariantOf!.name}
 
-                                {isVariantOf!.name}
+                                  {has_discount && (
+                                    <span class="table max-md:hidden relative top-3 w-full text-[13px] font-bold text-[#5e5e5e] leading-[14px] uppercase text-center mt-[10px]">
+                                      De: {formatPrice(
+                                        listPrice,
+                                        offers?.priceCurrency,
+                                      )}
+                                    </span>
+                                  )}
 
-                                {has_discount && (
                                   <span class="table max-md:hidden relative top-3 w-full text-[13px] font-bold text-[#5e5e5e] leading-[14px] uppercase text-center mt-[10px]">
-                                    De: {formatPrice(
-                                      listPrice,
-                                      offers?.priceCurrency,
-                                    )}
+                                    Por:{" "}
+                                    {formatPrice(price, offers?.priceCurrency)}
                                   </span>
-                                )}
-
-                                <span class="table max-md:hidden relative top-3 w-full text-[13px] font-bold text-[#5e5e5e] leading-[14px] uppercase text-center mt-[10px]">
-                                  Por:{" "}
-                                  {formatPrice(price, offers?.priceCurrency)}
-                                </span>
-                              </a>
-                            </li>
-                          )}
-                        </>
-                      );
-                    })}
+                                </a>
+                              </li>
+                            )}
+                          </>
+                        );
+                      },
+                    )}
                   </ul>
                 )}
             </>
@@ -338,50 +325,48 @@ function Searchbar({
                     <span class=" font-bold uppercas w-[80%] text-left border-b-2 border-solid border-black max-md:hidden box-border text-primary leading-[18px]  flex pt-4 pb-5">
                       Nossas sugestões
                     </span>
-                    {products.map((
-                      { image, isVariantOf, offers, url },
-                      index,
-                    ) => {
-                      const { has_discount, listPrice, price } = useOffer(
-                        offers,
-                      );
+                    {products.map(
+                      ({ image, isVariantOf, offers, url }, index) => {
+                        const { has_discount, listPrice, price } = useOffer(
+                          offers,
+                        );
+                        return (
+                          <>
+                            {index < 2 && (
+                              <li class="inline-block float-left w-1/2 px-2">
+                                <a
+                                  class="text-[10px] leading-none text-center text-black"
+                                  href={url}
+                                >
+                                  <Image
+                                    src={image![0].url! || ""}
+                                    width={240}
+                                    height={240}
+                                    class="w-4/5 h-auto block mb-4 p-2 mx-auto"
+                                  />
 
-                      return (
-                        <>
-                          {index < 2 && (
-                            <li class="inline-block float-left w-1/2 px-2">
-                              <a
-                                class="text-[10px] leading-none text-center text-black"
-                                href={url}
-                              >
-                                <Image
-                                  src={image![0].url! || ""}
-                                  width={240}
-                                  height={240}
-                                  class="w-4/5 h-auto block mb-4 p-2 mx-auto"
-                                />
+                                  {isVariantOf!.name}
 
-                                {isVariantOf!.name}
+                                  {has_discount && (
+                                    <span class="table max-md:hidden relative top-3 w-full text-[13px] font-bold text-[#5e5e5e] leading-[14px] uppercase text-center mt-[10px]">
+                                      De: {formatPrice(
+                                        listPrice,
+                                        offers?.priceCurrency,
+                                      )}
+                                    </span>
+                                  )}
 
-                                {has_discount && (
                                   <span class="table max-md:hidden relative top-3 w-full text-[13px] font-bold text-[#5e5e5e] leading-[14px] uppercase text-center mt-[10px]">
-                                    De: {formatPrice(
-                                      listPrice,
-                                      offers?.priceCurrency,
-                                    )}
+                                    Por:{" "}
+                                    {formatPrice(price, offers?.priceCurrency)}
                                   </span>
-                                )}
-
-                                <span class="table max-md:hidden relative top-3 w-full text-[13px] font-bold text-[#5e5e5e] leading-[14px] uppercase text-center mt-[10px]">
-                                  Por:{" "}
-                                  {formatPrice(price, offers?.priceCurrency)}
-                                </span>
-                              </a>
-                            </li>
-                          )}
-                        </>
-                      );
-                    })}
+                                </a>
+                              </li>
+                            )}
+                          </>
+                        );
+                      },
+                    )}
                   </ul>
                 )}
             </>
@@ -390,5 +375,4 @@ function Searchbar({
     </div>
   );
 }
-
 export default Searchbar;

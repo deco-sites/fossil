@@ -1,15 +1,13 @@
 import { Head } from "$fresh/runtime.ts";
-import { Section } from "deco/blocks/section.ts";
-
+import { type Section } from "@deco/deco/blocks";
 export interface Props {
   title: string;
   content: Section;
 }
-
-function LegalsPage({
-  content: { Component: ContentComponent, props: contentProps },
-  title,
-}: Props) {
+function LegalsPage(
+  { content: { Component: ContentComponent, props: contentProps }, title }:
+    Props,
+) {
   return (
     <>
       <Head>
@@ -59,5 +57,4 @@ function LegalsPage({
     </>
   );
 }
-
 export default LegalsPage;

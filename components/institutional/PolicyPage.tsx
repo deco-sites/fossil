@@ -1,25 +1,21 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import { Head } from "$fresh/runtime.ts";
 import type { HTML } from "./types.ts";
-import { FnContext, SectionProps } from "deco/mod.ts";
-
+import { type FnContext, type SectionProps } from "@deco/deco";
 export interface Props {
   backgroundImage?: ImageWidget;
   backgroundImageMobile?: ImageWidget;
   text?: HTML;
 }
-
 export function loader(props: Props, req: Request, ctx: FnContext) {
   const url = new URL(req.url);
   const { pathname } = url;
-
   return {
     ...props,
     pathname,
     device: ctx.device,
   };
 }
-
 function PolicyPage(props: SectionProps<typeof loader>) {
   const { backgroundImage, backgroundImageMobile, text, device } = props;
   return (
@@ -135,5 +131,4 @@ function PolicyPage(props: SectionProps<typeof loader>) {
     </>
   );
 }
-
 export default PolicyPage;

@@ -1,8 +1,7 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
-import { FnContext, SectionProps } from "deco/mod.ts";
 import { Head } from "$fresh/runtime.ts";
 import { HTML } from "./types.ts";
-
+import { type FnContext, type SectionProps } from "@deco/deco";
 export interface Props {
   /** @description Tipo que pagina será montada */
   pageType?: "Vertical" | "Horizontal";
@@ -16,10 +15,8 @@ export interface Props {
    */
   content: HTML;
 }
-
 function PageContent(props: SectionProps<ReturnType<typeof loader>>) {
   const { device, content, desktop, mobile, pageType = "Horizontal" } = props;
-
   return (
     <>
       <Head>
@@ -219,7 +216,6 @@ function PageContent(props: SectionProps<ReturnType<typeof loader>>) {
     </>
   );
 }
-
 export const loader = (props: Props, req: Request, ctx: FnContext) => {
   const url = new URL(req.url).pathname;
   return {
@@ -228,5 +224,4 @@ export const loader = (props: Props, req: Request, ctx: FnContext) => {
     path: url,
   };
 };
-
 export default PageContent;

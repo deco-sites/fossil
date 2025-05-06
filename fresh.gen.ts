@@ -39,7 +39,7 @@ import * as $YourQA from "./islands/YourQA.tsx";
 import * as $YourReviews from "./islands/YourReviews.tsx";
 import * as $Zendesk from "./islands/Zendesk.tsx";
 import * as $sort from "./islands/sort.tsx";
-import { type Manifest } from "$fresh/server.ts";
+import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {

@@ -1,8 +1,6 @@
-import { Section } from "deco/blocks/section.ts";
-
 import { Head } from "$fresh/runtime.ts";
 import Icon, { AvailableIcons } from "../ui/Icon.tsx";
-
+import { type Section } from "@deco/deco/blocks";
 export interface Props {
   title: string;
   /**
@@ -20,13 +18,14 @@ export interface Props {
    */
   content: Section;
 }
-
-function HelpPage({
-  asideMenu: { Component: AsideComponent, props: asideProps },
-  content: { Component: ContentComponent, props: contentProps },
-  title,
-  icon,
-}: Props) {
+function HelpPage(
+  {
+    asideMenu: { Component: AsideComponent, props: asideProps },
+    content: { Component: ContentComponent, props: contentProps },
+    title,
+    icon,
+  }: Props,
+) {
   return (
     <>
       <Head>
@@ -366,5 +365,4 @@ function HelpPage({
     </>
   );
 }
-
 export default HelpPage;

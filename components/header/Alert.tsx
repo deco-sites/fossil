@@ -4,25 +4,18 @@ import { useId } from "../../sdk/useId.ts";
 import CartButtonVTEX from "../../islands/Header/Cart/vtex.tsx";
 import MiniCart from "../../islands/MiniCart.tsx";
 import Button from "../ui/Button.tsx";
-import { usePartialSection } from "deco/hooks/usePartialSection.ts";
 import Icon from "../ui/Icon.tsx";
 import ModalLoginCustom from "../../components/ui/ModalLoginCustom.tsx";
-
+import { usePartialSection } from "@deco/deco/hooks";
 export interface Props {
   alerts?: string[];
   /** @description slider mobile */
   interval?: number;
-
   device?: string;
-
   isShow?: boolean;
 }
-
-function Alert(
-  { alerts = [], interval = 2, device, isShow }: Props,
-) {
+function Alert({ alerts = [], interval = 2, device, isShow }: Props) {
   const id = useId();
-
   return (
     <>
       {/** Desktop */}
@@ -36,10 +29,7 @@ function Alert(
               <div class="w-full max-w-2xl xl:max-w-4xl">
                 <ul class="hidden lg:flex placeholder:flex justify-center">
                   {alerts.map((alert, index) => (
-                    <li
-                      key={index}
-                      class="flex items-center"
-                    >
+                    <li key={index} class="flex items-center">
                       <span class="text-[.7rem] uppercase text-white h-[38px] flex items-center  font-light">
                         {alert}
                       </span>
@@ -110,5 +100,4 @@ function Alert(
     </>
   );
 }
-
 export default Alert;
