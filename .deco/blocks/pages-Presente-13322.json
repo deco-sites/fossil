@@ -177,15 +177,15 @@
     },
     {
       "__resolveType": "site/sections/Hotsites/PresenteShopByGender.tsx",
-      "title": "BOLSAS EM COURO",
-      "description": "Para sua mãe que merece o melhor, presenteie com Fossil.",
-      "image": "https://assets.decocache.com/fossil/b8e36c2f-f031-4e29-a9bf-acf9167489bc/LPpresentes_bannerterciario_desk_diadasmaes.jpg",
+      "title": "CARTÃO PRESENTE",
+      "image": "https://assets.decocache.com/fossil/2ed71a01-bc2a-4e5e-ab60-b6da6f0c64e1/LPpresentes_bannerterciario_desk_cartaopresente.jpg",
       "links": [
         {
           "label": "Presentear",
-          "url": "https://www.fossil.com.br/bolsasfemininas?sort=release%3Adesc"
+          "url": "https://fossil.todocartoes.com.br/#/purchase"
         }
-      ]
+      ],
+      "description": "Para presentear quem você ama."
     },
     {
       "__resolveType": "site/sections/Hotsites/PresenteActionBanner.tsx",
