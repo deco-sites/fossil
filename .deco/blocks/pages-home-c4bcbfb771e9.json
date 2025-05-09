@@ -108,27 +108,27 @@
             "images": [
               {
                 "action": {
-                  "href": "/relogio/feminino?sort=release%3Adesc"
+                  "href": "/s?q=neutra&utmi_pc=search&utmi_cp=neutra"
                 },
-                "mobile": "https://assets.decocache.com/fossil/5ae8f72e-cd80-4be7-add4-5d4fd9b5ed93/Banner_slide_mob_gilmore2(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/560ac91a-6154-4559-b18a-1d0d0ea53fcf/banner_slide_desk_gilmore2(1920x600).jpg",
-                "alt": "Gilmore"
+                "mobile": "https://assets.decocache.com/fossil/d98c0bb5-ab5c-4298-ab55-d97fc31d9a2f/Banner_slide_mob_neutra(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/202686b4-a789-4760-94a2-f1d09973f082/banner_slide_desk_neutra(1920x600).jpg",
+                "alt": "Neutra"
               },
               {
                 "action": {
                   "href": "/s?q=machine&utmi_pc=search&utmi_cp=machine"
                 },
-                "mobile": "https://assets.decocache.com/fossil/113dc20f-e796-4a56-80cc-aaf9c5208fb9/Banner_slide_mob_machine2(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/6c9f15e4-d3a3-4ca5-8191-028b2f78a8d5/banner_slide_desk_machine2(1920x600).jpg",
+                "mobile": "https://assets.decocache.com/fossil/c8d8be62-4a42-49f2-9d6a-2458a8a79f9e/Banner_slide_mob_machine(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/342237e1-b146-455f-b61d-56eb586f0b0a/banner_slide_desk_machine(1920x600).jpg",
                 "alt": "Machine"
               },
               {
                 "action": {
-                  "href": "/bolsasfemininas?sort=release%3Adesc"
+                  "href": "/s?q=carlie&utmi_pc=search&utmi_cp=carlie"
                 },
-                "mobile": "https://assets.decocache.com/fossil/83d24951-1058-4cb8-8278-e9109663b985/Banner_slide_mob_bolsas2(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/97ee2c3d-52c7-42a1-bc33-40bd37027fed/banner_slide_desk_bolsas2(1920x600).jpg",
-                "alt": "Bolsas"
+                "mobile": "https://assets.decocache.com/fossil/d65f63c0-bbc2-492c-a596-6d3bad801a68/Banner_slide_mob_carlie(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/4a440140-59c6-4713-810f-2bf39f8a7c89/banner_slide_desk_carlie(1920x600).jpg",
+                "alt": "Carlie"
               }
             ],
             "preload": true,
@@ -136,8 +136,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "start": "2025-04-23T03:00:00.000Z",
-            "end": "2025-04-28T02:59:00.000Z"
+            "start": "2025-05-12T03:00:00.000Z",
+            "end": "2025-05-19T02:59:00.000Z"
           }
         },
         {
