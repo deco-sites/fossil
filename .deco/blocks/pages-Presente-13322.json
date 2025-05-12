@@ -8,10 +8,10 @@
     {
       "__resolveType": "site/sections/Hotsites/PresenteBanner.tsx",
       "banner": {
-        "imageDesktop": "https://assets.decocache.com/fossil/893c8f64-e638-42bb-a085-0c5b3b94da80/LPpresentes_bannerprincipal_desk_diadasmaes.jpg",
-        "imageMobile": "https://assets.decocache.com/fossil/ef929b9e-e6c6-412f-81c5-622dc7249b3b/LPpresentes_bannerprincipal_mob_diadasmaes.jpg"
+        "imageDesktop": "https://assets.decocache.com/fossil/32ad265c-9675-4465-a067-e5198a2e75c6/LPpresentes_bannerprincipal_desk.jpg",
+        "imageMobile": "https://assets.decocache.com/fossil/c5f4fa3f-70ab-40d5-b740-fae03c28ea81/LPpresentes_bannerprincipal_mob.jpg"
       },
-      "subtitle": "Celebre o Dia das Mães com escolhas Fossil: relógios, bolsas e acessórios que carregam amor, estilo e significado.",
+      "subtitle": "Presentes que carregam estilo e significado. Surpreenda com relógios, bolsas e acessórios Fossil.",
       "cta": {
         "label": "Conheça",
         "url": "https://www.fossil.com.br/relogio/feminino?sort=release%3Adesc"
@@ -161,28 +161,28 @@
       "cards": [
         {
           "title": "BESTSELLING RAQUEL",
-          "description": "Celebre com o cordão Harwell da Fossil. Um símbolo de elegância e amor que ela vai levar para a vida toda.",
-          "image": "https://assets.decocache.com/fossil/460fcb42-3999-4e5c-99ca-125965093920/LPpresentes_bannersecundario_desk_diadasmaes1.jpg",
-          "url": "/relogio-fossil-feminino-harwell-dourado---es5373-1dn/p?skuId=1000026765",
+          "description": "Presentes com os Relógio Feminino. Símbolos de elegância, personalidade e estilo atemporal.",
+          "image": "https://assets.decocache.com/fossil/8b0ff676-62b2-4610-8050-f30823220325/LPpresentes_bannersecundario_desk_1.jpg",
+          "url": "/relogio/feminino?sort=release%3Adesc",
           "label": "PRESENTES PARA ELA"
         },
         {
           "title": "SPORT TOURER",
-          "description": "Escolha um relógio da coleção Raquel, um símbolo de amor, estilo e momentos inesquecíveis.",
-          "image": "https://assets.decocache.com/fossil/d48a1ede-a040-4cea-abd9-99414be9cb93/LPpresentes_bannersecundario_desk_diadasmaes2.jpg",
-          "url": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel",
-          "label": "PRESENTES PARA ELA"
+          "description": "Presenteie com os Relógios Masculinos Fossil. Cada modelo traz design original, materiais de qualidade e aquele toque de personalidade",
+          "image": "https://assets.decocache.com/fossil/9dcdaacc-7747-4175-b739-7583f6840955/LPpresentes_bannersecundario_desk_2.jpg",
+          "url": "/relogio/masculino?sort=release%3Adesc",
+          "label": "PRESENTES PARA ELE"
         }
       ]
     },
     {
       "__resolveType": "site/sections/Hotsites/PresenteShopByGender.tsx",
-      "title": "CARTÃO PRESENTE",
-      "image": "https://assets.decocache.com/fossil/2ed71a01-bc2a-4e5e-ab60-b6da6f0c64e1/LPpresentes_bannerterciario_desk_cartaopresente.jpg",
+      "title": "CARTEIRAS EM COURO",
+      "image": "https://assets.decocache.com/fossil/ca515711-6407-4076-a191-931824f24ce4/LPpresentes_bannerterciario_desk.jpg",
       "links": [
         {
           "label": "Presentear",
-          "url": "https://fossil.todocartoes.com.br/#/purchase"
+          "url": "/s?q=carteira+couro&utmi_pc=search&utmi_cp=carteira+couro&sort=release%3Adesc"
         }
       ],
       "description": "Para presentear quem você ama."
@@ -190,8 +190,8 @@
     {
       "__resolveType": "site/sections/Hotsites/PresenteActionBanner.tsx",
       "banner": {
-        "desktop": "https://assets.decocache.com/fossil/af08a6fa-9103-4777-a01a-e9e43ebb7310/LPpresentes_bannerreloanel_desk_diadasmaes.jpg",
-        "mobile": "https://assets.decocache.com/fossil/a07d417d-0ae2-4305-853e-7c136460f511/LPpresentes_bannerreloanel_mob_diadasmaes.jpg"
+        "desktop": "https://assets.decocache.com/fossil/380125bf-01da-4b27-aeee-84432b03df44/LPpresentes_bannerreloanel_desk.jpg",
+        "mobile": "https://assets.decocache.com/fossil/5cc36c98-73f2-4a53-b476-108ce6266ade/LPpresentes_bannerreloanel_mob.jpg"
       },
       "action": {
         "description": "Um presente único que combina elegância e inovação.",
@@ -208,14 +208,14 @@
       "title": "Para presentear quem você ama!",
       "news": [
         {
-          "image": "https://assets.decocache.com/fossil/2f772954-15da-4faa-965d-bc4cac6211fb/LPpresentes_bannerdepartamento_desk_diadasmaaes4.jpg",
+          "image": "https://assets.decocache.com/fossil/5f5e0f33-0405-4ee5-b10b-714443981e6c/LPpresentes_bannerdepartamento_desk.jpg",
           "title": "Breaker Watch",
           "subtitle": "Sofisticação e resistência em cada detalhe.",
           "link": {
             "label": "Comprar",
-            "url": "https://www.fossil.com.br/acessoriosfemininos?sort=release%3Adesc"
+            "url": "https://www.fossil.com.br/relogio/masculino?sort=release%3Adesc"
           },
-          "label": "Carteira Feminina"
+          "label": "Relógio Masculino"
         },
         {
           "image": "https://assets.decocache.com/fossil/66f9476a-9098-4dfc-b81f-ade6b47cbe02/LPpresentes_bannerdepartamento_desk_diadasmaaes3.jpg",
@@ -223,9 +223,9 @@
           "subtitle": "Perfeito para qualquer ocasião.",
           "link": {
             "label": "Comprar",
-            "url": "https://www.fossil.com.br/s?q=raquel&utmi_pc=search&utmi_cp=raquel"
+            "url": "https://www.fossil.com.br/relogio/feminino?sort=release%3Adesc"
           },
-          "label": "Relógio Feminino Harwell"
+          "label": "Relógio Feminino"
         },
         {
           "title": "Harwell Handbag",
@@ -233,9 +233,9 @@
           "subtitle": "Para encantar e marcar cada momento especial.",
           "link": {
             "label": "Comprar",
-            "url": "https://www.fossil.com.br/bolsasfemininas"
+            "url": "https://www.fossil.com.br/s?q=bolsa+em+couro&utmi_pc=search&utmi_cp=bolsa+em+couro&sort=release%3Adesc"
           },
-          "label": "Bolsa Feminina"
+          "label": "Bolsas em Couro"
         },
         {
           "image": "https://assets.decocache.com/fossil/9a6eb29f-9028-4de1-9de8-c101b6363357/LPpresentes_bannerdepartamento_desk_diadasmaaes2.jpg",
