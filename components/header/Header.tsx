@@ -11,6 +11,7 @@ import UTMSaveController from "../../islands/UTMSaveController.tsx";
 import { getCookies } from "std/http/cookie.ts";
 import { getMarketingDataByLoader } from "../../sdk/useMarketingData.ts";
 import { type SectionProps } from "@deco/deco";
+import { UserObject } from "../../islands/Partner/Insider/UserObject.tsx";
 export interface Logo {
   src: ImageWidget;
   alt: string;
@@ -94,6 +95,7 @@ function Header({
         }}
         class=""
       >
+        <UserObject />
         <UTMSaveController marketing_data={marketing_data} />
         <div class="fixed z-[100] w-full">
           {alerts && alerts.length > 0 && (
