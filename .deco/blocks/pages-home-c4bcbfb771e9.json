@@ -319,13 +319,13 @@
     },
     {
       "__resolveType": "site/sections/Content/BannerFossil.tsx",
-      "desktopImage": "https://assets.decocache.com/fossil/791499c9-d873-4131-b706-afa96b8438eb/banner_terc_desk_cartaopresente(1230x400).jpg",
+      "desktopImage": "https://assets.decocache.com/fossil/915d72b2-7be8-41f9-a599-361a58ebd2c8/banner_terc_desk_cartaopresente2(1230x400).jpg",
       "desktopImageDimensions": {
         "width": 1230,
         "height": 400
       },
       "alt": "Cartão presente",
-      "mobileImage": "https://assets.decocache.com/fossil/4f3f9350-346b-4802-96a6-2b0cd1f60353/banner_terc_mob_cartaopresente(380x250).jpg",
+      "mobileImage": "https://assets.decocache.com/fossil/f3cd8d86-9089-4e53-b29a-089bd0a7e39d/banner_terc_mob_cartaopresente2(380x250).jpg",
       "mobileImageDimensions": {
         "width": 380,
         "height": 250
