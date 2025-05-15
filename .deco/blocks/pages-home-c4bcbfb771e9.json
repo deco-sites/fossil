@@ -196,26 +196,26 @@
             "images": [
               {
                 "action": {
-                  "href": "/relogio/feminino?sort=release%3Adesc"
+                  "href": "/s?q=machine&utmi_pc=search&utmi_cp=machine&sort=release%3Adesc"
                 },
-                "mobile": "https://assets.decocache.com/fossil/5ae8f72e-cd80-4be7-add4-5d4fd9b5ed93/Banner_slide_mob_gilmore2(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/560ac91a-6154-4559-b18a-1d0d0ea53fcf/banner_slide_desk_gilmore2(1920x600).jpg",
-                "alt": "Gilmore"
-              },
-              {
-                "action": {
-                  "href": "/s?q=machine&utmi_pc=search&utmi_cp=machine"
-                },
-                "mobile": "https://assets.decocache.com/fossil/113dc20f-e796-4a56-80cc-aaf9c5208fb9/Banner_slide_mob_machine2(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/6c9f15e4-d3a3-4ca5-8191-028b2f78a8d5/banner_slide_desk_machine2(1920x600).jpg",
+                "mobile": "https://assets.decocache.com/fossil/27731887-d578-46e1-87ad-1c90a4d85482/Banner_slide_mob_lancamachine(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/33628656-32cf-4e1e-a646-26d512c08176/banner_slide_desk_lancamachine(1920x600).jpg",
                 "alt": "Machine"
               },
               {
                 "action": {
-                  "href": "/bolsasfemininas?sort=release%3Adesc"
+                  "href": "/s?q=sloan&utmi_pc=search&utmi_cp=sloan"
                 },
-                "mobile": "https://assets.decocache.com/fossil/83d24951-1058-4cb8-8278-e9109663b985/Banner_slide_mob_bolsas2(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/97ee2c3d-52c7-42a1-bc33-40bd37027fed/banner_slide_desk_bolsas2(1920x600).jpg",
+                "mobile": "https://assets.decocache.com/fossil/4ac3463b-5dc8-4bf8-a327-e5e7422e35b5/Banner_slide_mob_sloan(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/695141f6-fd5e-4f44-b468-914c31dbc6ee/banner_slide_desk_sloan(1920x600).jpg",
+                "alt": "Sloan"
+              },
+              {
+                "action": {
+                  "href": "/acessoriosmasculinos?sort=release%3Adesc"
+                },
+                "mobile": "https://assets.decocache.com/fossil/9f49a125-dd16-41b1-b159-238efd005f71/Banner_slide_mob_bolsasmasc(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/321e3e9a-2bf9-4536-b219-4d29443012a9/banner_slide_desk_bolsasmasc(1920x600).jpg",
                 "alt": "Bolsas"
               }
             ],
@@ -224,8 +224,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "start": "2025-04-29T03:00:00.000Z",
-            "end": "2025-05-01T02:59:00.000Z"
+            "start": "2025-05-19T03:00:00.000Z",
+            "end": "2025-05-26T02:59:00.000Z"
           }
         }
       ]
