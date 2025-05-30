@@ -196,27 +196,19 @@
             "images": [
               {
                 "action": {
-                  "href": "/s?q=machine&utmi_pc=search&utmi_cp=machine&sort=release%3Adesc"
+                  "href": "/lancamentos"
                 },
-                "mobile": "https://assets.decocache.com/fossil/27731887-d578-46e1-87ad-1c90a4d85482/Banner_slide_mob_lancamachine(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/33628656-32cf-4e1e-a646-26d512c08176/banner_slide_desk_lancamachine(1920x600).jpg",
-                "alt": "Machine"
+                "mobile": "https://assets.decocache.com/fossil/fb0be779-74b1-4f08-8039-9b5d541f2a85/Banner_slide_mob_machine(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/d9d2a271-d6df-4dbe-9a67-8cefbe080bc2/banner_slide_desk_machine(1920x600).jpg",
+                "alt": "Fem/Masc"
               },
               {
                 "action": {
-                  "href": "/s?q=sloan&utmi_pc=search&utmi_cp=sloan"
+                  "href": "/acessorios?sort=release%3Adesc"
                 },
-                "mobile": "https://assets.decocache.com/fossil/4ac3463b-5dc8-4bf8-a327-e5e7422e35b5/Banner_slide_mob_sloan(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/695141f6-fd5e-4f44-b468-914c31dbc6ee/banner_slide_desk_sloan(1920x600).jpg",
-                "alt": "Sloan"
-              },
-              {
-                "action": {
-                  "href": "/acessoriosmasculinos?sort=release%3Adesc"
-                },
-                "mobile": "https://assets.decocache.com/fossil/9f49a125-dd16-41b1-b159-238efd005f71/Banner_slide_mob_bolsasmasc(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/321e3e9a-2bf9-4536-b219-4d29443012a9/banner_slide_desk_bolsasmasc(1920x600).jpg",
-                "alt": "Bolsas"
+                "mobile": "https://assets.decocache.com/fossil/4df62068-0703-45a6-95b3-ef62a6b78e86/Banner_slide_mob_raquel(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/ce68302b-5ca0-4a15-baa3-33fc9a518b63/banner_slide_desk_raquel(1920x600).jpg",
+                "alt": "Acessorios"
               }
             ],
             "preload": true,
@@ -224,8 +216,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "start": "2025-05-19T03:00:00.000Z",
-            "end": "2025-05-26T02:59:00.000Z"
+            "start": "2025-06-01T03:00:00.000Z",
+            "end": "2025-06-13T02:59:00.000Z"
           }
         }
       ]
