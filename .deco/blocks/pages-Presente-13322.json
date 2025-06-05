@@ -8,14 +8,10 @@
     {
       "__resolveType": "site/sections/Hotsites/PresenteBanner.tsx",
       "banner": {
-        "imageDesktop": "https://assets.decocache.com/fossil/32ad265c-9675-4465-a067-e5198a2e75c6/LPpresentes_bannerprincipal_desk.jpg",
-        "imageMobile": "https://assets.decocache.com/fossil/c5f4fa3f-70ab-40d5-b740-fae03c28ea81/LPpresentes_bannerprincipal_mob.jpg"
+        "imageDesktop": "https://assets.decocache.com/fossil/9ddc33ef-fcc6-48d3-b067-15a541174a5b/LPpresentes_bannerprincipal_desk_namorados.jpg",
+        "imageMobile": "https://assets.decocache.com/fossil/1d88d215-562c-4447-aab5-b1cdb5ee9359/LPpresentes_bannerprincipal_mob_namorados.jpg"
       },
-      "subtitle": "Presentes que carregam estilo e significado. Surpreenda com relógios, bolsas e acessórios Fossil.",
-      "cta": {
-        "label": "Conheça",
-        "url": "https://www.fossil.com.br/relogio/feminino?sort=release%3Adesc"
-      },
+      "cta": {},
       "logo": {
         "0": "h",
         "1": "t",
@@ -131,8 +127,28 @@
         "111": "a",
         "112": "1",
         "113": "0",
-        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/53fc51b2-f84b-438d-8690-83a788f4367a/2023_FOSSIL-LOGO_white.png",
-        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/d397b25e-20ac-4934-ab00-e980fcab69d3/2023_FOSSIL-LOGO-(1).png"
+        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/d397b25e-20ac-4934-ab00-e980fcab69d3/2023_FOSSIL-LOGO-(1).png",
+        "desktop": {
+          "__resolveType": "website/flags/multivariate/image.ts",
+          "variants": [
+            {
+              "value": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/53fc51b2-f84b-438d-8690-83a788f4367a/2023_FOSSIL-LOGO_white.png",
+              "rule": {
+                "__resolveType": "website/matchers/date.ts",
+                "start": "2025-06-13T15:00:00.000Z",
+                "end": "2025-07-31T15:00:00.000Z"
+              }
+            },
+            {
+              "value": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/53fc51b2-f84b-438d-8690-83a788f4367a/2023_FOSSIL-LOGO_white.png",
+              "rule": {
+                "__resolveType": "website/matchers/date.ts",
+                "start": "2025-06-13T15:00:00.000Z",
+                "end": "2025-07-31T15:00:00.000Z"
+              }
+            }
+          ]
+        }
       }
     },
     {
@@ -162,14 +178,14 @@
         {
           "title": "BESTSELLING RAQUEL",
           "description": "Presentes com os Relógio Feminino. Símbolos de elegância, personalidade e estilo atemporal.",
-          "image": "https://assets.decocache.com/fossil/8b0ff676-62b2-4610-8050-f30823220325/LPpresentes_bannersecundario_desk_1.jpg",
+          "image": "https://assets.decocache.com/fossil/19367452-b7ef-4357-bbe0-af23ca7910c1/LPpresentes_bannersecundario_desk_namorados2.jpg",
           "url": "/relogio/feminino?sort=release%3Adesc",
           "label": "PRESENTES PARA ELA"
         },
         {
           "title": "SPORT TOURER",
           "description": "Presenteie com os Relógios Masculinos Fossil. Cada modelo traz design original, materiais de qualidade e aquele toque de personalidade",
-          "image": "https://assets.decocache.com/fossil/9dcdaacc-7747-4175-b739-7583f6840955/LPpresentes_bannersecundario_desk_2.jpg",
+          "image": "https://assets.decocache.com/fossil/8df11906-df1b-4485-be01-7b4e5e4ed823/LPpresentes_bannersecundario_desk_namorados1.jpg",
           "url": "/relogio/masculino?sort=release%3Adesc",
           "label": "PRESENTES PARA ELE"
         }
