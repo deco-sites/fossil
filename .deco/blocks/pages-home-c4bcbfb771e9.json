@@ -108,27 +108,27 @@
             "images": [
               {
                 "action": {
-                  "href": "/s?q=neutra&utmi_pc=search&utmi_cp=neutra"
+                  "href": "/s?q=carlie&utmi_pc=search&utmi_cp=carlie&sort=release%3Adesc"
                 },
-                "mobile": "https://assets.decocache.com/fossil/d98c0bb5-ab5c-4298-ab55-d97fc31d9a2f/Banner_slide_mob_neutra(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/202686b4-a789-4760-94a2-f1d09973f082/banner_slide_desk_neutra(1920x600).jpg",
+                "mobile": "https://assets.decocache.com/fossil/21d41972-b353-4c77-acf0-5e606fbc4a13/Banner_slide_mob_carlie(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/25ea050c-2fe8-45d5-b3d0-50546448a5cc/banner_slide_desk_carlie(1920x600).jpg",
+                "alt": "Carlie"
+              },
+              {
+                "action": {
+                  "href": "/s?q=neutra&utmi_pc=search&utmi_cp=neutra&sort=release%3Adesc"
+                },
+                "mobile": "https://assets.decocache.com/fossil/4d4d1699-8d41-4217-82e6-4000085bdcd2/Banner_slide_mob_neutramasc(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/ce32f397-ee12-477e-81d9-347c4987e949/banner_slide_desk_neutramasc(1920x600).jpg",
                 "alt": "Neutra"
               },
               {
                 "action": {
-                  "href": "/s?q=machine&utmi_pc=search&utmi_cp=machine"
+                  "href": "/acessoriosfemininos?sort=release%3Adesc"
                 },
-                "mobile": "https://assets.decocache.com/fossil/c8d8be62-4a42-49f2-9d6a-2458a8a79f9e/Banner_slide_mob_machine(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/342237e1-b146-455f-b61d-56eb586f0b0a/banner_slide_desk_machine(1920x600).jpg",
-                "alt": "Machine"
-              },
-              {
-                "action": {
-                  "href": "/s?q=carlie&utmi_pc=search&utmi_cp=carlie"
-                },
-                "mobile": "https://assets.decocache.com/fossil/d65f63c0-bbc2-492c-a596-6d3bad801a68/Banner_slide_mob_carlie(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/4a440140-59c6-4713-810f-2bf39f8a7c89/banner_slide_desk_carlie(1920x600).jpg",
-                "alt": "Carlie"
+                "mobile": "https://assets.decocache.com/fossil/374fb35f-40e6-4ee6-8041-6cb09cb6acd6/Banner_slide_mob_semijoias(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/efe5db13-9bb3-4266-a684-77261b859e70/banner_slide_desk_semijoias(1920x600).jpg",
+                "alt": "Acessórios"
               }
             ],
             "preload": true,
@@ -136,8 +136,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "start": "2025-05-12T03:00:00.000Z",
-            "end": "2025-05-19T02:59:00.000Z"
+            "start": "2025-05-26T03:00:00.000Z",
+            "end": "2025-06-01T02:59:00.000Z"
           }
         },
         {
@@ -196,27 +196,19 @@
             "images": [
               {
                 "action": {
-                  "href": "/relogio/feminino?sort=release%3Adesc"
+                  "href": "/lancamentos"
                 },
-                "mobile": "https://assets.decocache.com/fossil/5ae8f72e-cd80-4be7-add4-5d4fd9b5ed93/Banner_slide_mob_gilmore2(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/560ac91a-6154-4559-b18a-1d0d0ea53fcf/banner_slide_desk_gilmore2(1920x600).jpg",
-                "alt": "Gilmore"
+                "mobile": "https://assets.decocache.com/fossil/fb0be779-74b1-4f08-8039-9b5d541f2a85/Banner_slide_mob_machine(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/d9d2a271-d6df-4dbe-9a67-8cefbe080bc2/banner_slide_desk_machine(1920x600).jpg",
+                "alt": "Fem/Masc"
               },
               {
                 "action": {
-                  "href": "/s?q=machine&utmi_pc=search&utmi_cp=machine"
+                  "href": "/acessorios?sort=release%3Adesc"
                 },
-                "mobile": "https://assets.decocache.com/fossil/113dc20f-e796-4a56-80cc-aaf9c5208fb9/Banner_slide_mob_machine2(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/6c9f15e4-d3a3-4ca5-8191-028b2f78a8d5/banner_slide_desk_machine2(1920x600).jpg",
-                "alt": "Machine"
-              },
-              {
-                "action": {
-                  "href": "/bolsasfemininas?sort=release%3Adesc"
-                },
-                "mobile": "https://assets.decocache.com/fossil/83d24951-1058-4cb8-8278-e9109663b985/Banner_slide_mob_bolsas2(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/97ee2c3d-52c7-42a1-bc33-40bd37027fed/banner_slide_desk_bolsas2(1920x600).jpg",
-                "alt": "Bolsas"
+                "mobile": "https://assets.decocache.com/fossil/4df62068-0703-45a6-95b3-ef62a6b78e86/Banner_slide_mob_raquel(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/ce68302b-5ca0-4a15-baa3-33fc9a518b63/banner_slide_desk_raquel(1920x600).jpg",
+                "alt": "Acessorios"
               }
             ],
             "preload": true,
@@ -224,8 +216,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "start": "2025-04-29T03:00:00.000Z",
-            "end": "2025-05-01T02:59:00.000Z"
+            "start": "2025-06-01T03:00:00.000Z",
+            "end": "2025-06-13T02:59:00.000Z"
           }
         }
       ]
@@ -289,19 +281,19 @@
       },
       "list": [
         {
-          "image": "https://assets.decocache.com/fossil/362dbaf4-d4b9-4edb-95b7-70b752906646/Banner_secundario_relomasc(610x400).jpg",
+          "image": "https://assets.decocache.com/fossil/337a5c34-c41a-49e8-96fb-811291c856de/Banner_secundario_relomasc(610x400)-(1).jpg",
           "label": "Masculinos",
           "buttonText": "CONHEÇA",
           "href": "/relogio/masculino"
         },
         {
-          "image": "https://assets.decocache.com/fossil/e12d23ed-9797-4efb-8246-bac319bd2cf5/Banner_secundario_relofem(610x400).jpg",
+          "image": "https://assets.decocache.com/fossil/d36b4522-95b8-4609-9bfb-9d7417f01f62/Banner_secundario_relofem(610x400)-(1).jpg",
           "label": "Femininos",
           "buttonText": " ENCANTE-SE",
           "href": "/relogio/feminino"
         },
         {
-          "image": "https://assets.decocache.com/fossil/8788b7cb-e355-4d59-90b9-df43a43cb83f/Banner_secundario_bolsas(610x400).jpg",
+          "image": "https://assets.decocache.com/fossil/41d8c9f5-e01f-48c4-b353-71a88b4694b0/Banner_secundario_bolsas(610x400)-(1).jpg",
           "label": "Bolsas em Couro",
           "buttonText": " CONHEÇA",
           "href": "/s?q=bolsa&utmi_pc=search&utmi_cp=bolsa"
