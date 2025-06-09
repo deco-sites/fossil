@@ -23,13 +23,37 @@ export interface Props {
   };
 }
 
+const add_email_optin_inside_user_object = (
+  { email_optin, email }: {
+    email: string;
+    email_optin: boolean;
+  },
+) => {
+  let user_formatted = { email_optin };
+  
+  // deno-lint-ignore ban-ts-comment
+  // @ts-ignore
+  globalThis.window.insider_object = JSON.parse(sessionStorage.getItem('user_object')) || globalThis.window.insider_object || { user: user_formatted };
+
+  if (email) {
+    user_formatted = Object.assign(user_formatted, {email});
+  }
+
+  // deno-lint-ignore ban-ts-comment
+  // @ts-ignore
+  globalThis.window.insider_object.user = { ...globalThis.window.insider_object.user, ...user_formatted};
+  // deno-lint-ignore ban-ts-comment
+  // @ts-ignore
+  sessionStorage.setItem('user_object', JSON.stringify(globalThis.window.insider_object));
+}
+
 function Newsletter(
   { content, layout = {} }: Props,
 ) {
   const { tiled = false } = layout;
   const loading = useSignal(false);
 
-  const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = async (e) => {
+  const handleSubmit: JSX.SubmitEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
 
     try {
@@ -40,6 +64,7 @@ function Newsletter(
 
       if (email) {
         await invoke.vtex.actions.newsletter.subscribe({ email });
+        add_email_optin_inside_user_object({ email_optin: true, email });
       } else {
         alert("Erro! Preencha o campo de email.");
       }
