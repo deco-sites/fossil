@@ -108,27 +108,27 @@
             "images": [
               {
                 "action": {
+                  "href": "/s?q=townsman&utmi_pc=search&utmi_cp=townsman&sort=release%3Adesc"
+                },
+                "mobile": "https://assets.decocache.com/fossil/3a454c1f-3cc5-4880-9dd1-635929df83b7/Banner_slide_mob_townsman(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/17394e34-4797-4872-9d57-46bf9286eed6/banner_slide_desk_townsman(1920x600).jpg",
+                "alt": "Townsman"
+              },
+              {
+                "action": {
                   "href": "/s?q=carlie&utmi_pc=search&utmi_cp=carlie&sort=release%3Adesc"
                 },
-                "mobile": "https://assets.decocache.com/fossil/21d41972-b353-4c77-acf0-5e606fbc4a13/Banner_slide_mob_carlie(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/25ea050c-2fe8-45d5-b3d0-50546448a5cc/banner_slide_desk_carlie(1920x600).jpg",
+                "mobile": "https://assets.decocache.com/fossil/6600e424-98ce-40d3-893f-27514c2fc77b/Banner_slide_mob_carlie(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/c8c4b5ae-ab95-42cd-a87b-380e5870b0ae/banner_slide_desk_carlie(1920x600).jpg",
                 "alt": "Carlie"
               },
               {
                 "action": {
-                  "href": "/s?q=neutra&utmi_pc=search&utmi_cp=neutra&sort=release%3Adesc"
+                  "href": "/acessorios"
                 },
-                "mobile": "https://assets.decocache.com/fossil/4d4d1699-8d41-4217-82e6-4000085bdcd2/Banner_slide_mob_neutramasc(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/ce32f397-ee12-477e-81d9-347c4987e949/banner_slide_desk_neutramasc(1920x600).jpg",
-                "alt": "Neutra"
-              },
-              {
-                "action": {
-                  "href": "/acessoriosfemininos?sort=release%3Adesc"
-                },
-                "mobile": "https://assets.decocache.com/fossil/374fb35f-40e6-4ee6-8041-6cb09cb6acd6/Banner_slide_mob_semijoias(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/efe5db13-9bb3-4266-a684-77261b859e70/banner_slide_desk_semijoias(1920x600).jpg",
-                "alt": "Acessórios"
+                "mobile": "https://assets.decocache.com/fossil/79ec3cc4-ec44-4712-95c8-aa10a4f3c4a0/Banner_slide_mob_bolsas(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/38f1a4c6-4445-4c58-a4a8-7f911d4701e3/banner_slide_desk_bolsas(1920x600).jpg",
+                "alt": "Acessórios em couro"
               }
             ],
             "preload": true,
@@ -136,8 +136,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "start": "2025-05-26T03:00:00.000Z",
-            "end": "2025-06-01T02:59:00.000Z"
+            "start": "2025-06-13T03:00:00.000Z",
+            "end": "2025-06-22T02:59:00.000Z"
           }
         },
         {
