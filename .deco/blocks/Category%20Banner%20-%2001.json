@@ -66,8 +66,8 @@
     },
     {
       "image": {
-        "desktop": "https://assets.decocache.com/fossil/ca9159ce-7752-4fe3-96eb-1fdd8e408327/Banner_desk_fossillivelo_naopromocional-(2).png",
-        "mobile": "https://assets.decocache.com/fossil/82e8b3d5-eeb7-405d-9621-3b0d8cbc36b3/Banner_mob_fossillivelo_naopromocional.png",
+        "desktop": "https://assets.decocache.com/fossil/29b654c8-242f-4ba3-8d9a-223b640b621f/Banner_colecao_desk_llivelo_24_25_06.jpg",
+        "mobile": "https://assets.decocache.com/fossil/223cd952-54a8-49ea-96da-ec9cb001cb7e/Banner_colecao_mob_llivelo_24_25_06.jpg",
         "alt": "Banner Livelo"
       },
       "matcher": "/livelo*"
