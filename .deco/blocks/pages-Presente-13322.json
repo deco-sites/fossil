@@ -149,7 +149,9 @@
             }
           ]
         }
-      }
+      },
+      "subtitle": "Presentes que carregam estilo e significado. Surpreenda com relógios, bolsas e acessórios Fossil.",
+      "title": "Para presentear quem você ama."
     },
     {
       "__resolveType": "site/sections/Product/ProductShelf.tsx",
