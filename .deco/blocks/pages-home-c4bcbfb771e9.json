@@ -108,6 +108,14 @@
             "images": [
               {
                 "action": {
+                  "href": "/s?q=machine&utmi_pc=search&utmi_cp=machine&sort=release%3Adesc"
+                },
+                "mobile": "https://assets.decocache.com/fossil/ab41b4ac-a8d7-4c23-a385-cf9976804ef7/Banner_slide_mob_paismachine(320x380).gif",
+                "desktop": "https://assets.decocache.com/fossil/6d4b74a7-e142-49bc-978d-851ada5efb3d/banner_slide_desk_paismachine(1920x600).gif",
+                "alt": "Machine"
+              },
+              {
+                "action": {
                   "href": "/relogio/masculino?sort=release%3Adesc"
                 },
                 "mobile": "https://assets.decocache.com/fossil/6f1b951b-6043-4933-8cdf-4d578afbf35b/Banner_slide_mob_paisdalton(320x380).jpg",
