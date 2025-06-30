@@ -281,27 +281,27 @@
       },
       "list": [
         {
-          "image": "https://assets.decocache.com/fossil/337a5c34-c41a-49e8-96fb-811291c856de/Banner_secundario_relomasc(610x400)-(1).jpg",
+          "image": "https://assets.decocache.com/fossil/ebfdadbd-8c87-49a8-9f78-e46b90778e3f/Banner_secundario_relomasc(610x400).jpg",
           "label": "Masculinos",
           "buttonText": "CONHEÇA",
           "href": "/relogio/masculino"
         },
         {
-          "image": "https://assets.decocache.com/fossil/d36b4522-95b8-4609-9bfb-9d7417f01f62/Banner_secundario_relofem(610x400)-(1).jpg",
+          "image": "https://assets.decocache.com/fossil/c8acec1b-7c43-4c39-9539-b67fe7cacb05/Banner_secundario_relofem(610x400).jpg",
           "label": "Femininos",
           "buttonText": " ENCANTE-SE",
           "href": "/relogio/feminino"
         },
         {
-          "image": "https://assets.decocache.com/fossil/41d8c9f5-e01f-48c4-b353-71a88b4694b0/Banner_secundario_bolsas(610x400)-(1).jpg",
+          "image": "https://assets.decocache.com/fossil/b53eba86-fd89-49d6-a2a1-1c7b377f8ba4/Banner_secundario_bolsas(610x400).jpg",
           "label": "Bolsas em Couro",
           "buttonText": " CONHEÇA",
-          "href": "/s?q=bolsa&utmi_pc=search&utmi_cp=bolsa"
+          "href": "/bolsasmasculinas?sort=release%3Adesc"
         },
         {
-          "image": "https://assets.decocache.com/fossil/4a78a430-9cbf-4473-b9ef-50d576b24547/Banner_secundario_semijoia(610x400).jpg",
-          "label": "Acessórios",
-          "href": "/acessoriosfemininos?sort=release%3Adesc",
+          "image": "https://assets.decocache.com/fossil/d0bf7557-1db2-4df6-b1f9-1bf1029e6c80/Banner_secundario_acess(610x400).jpg",
+          "label": "Acessórios em Couro",
+          "href": "/acessoriosmasculinos?sort=release%3Adesc",
           "buttonText": "ESCOLHA O SEU"
         }
       ],
