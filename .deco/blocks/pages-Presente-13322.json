@@ -156,11 +156,11 @@
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
           "sort": "release:desc",
-          "collection": "2608",
-          "count": 20
+          "count": 20,
+          "collection": "2416"
         }
       },
-      "title": "Novidades",
+      "title": "LANÇAMENTOS",
       "layout": {
         "numberOfSliders": {
           "mobile": 2,
