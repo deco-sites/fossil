@@ -8,8 +8,8 @@
     {
       "__resolveType": "site/sections/Hotsites/PresenteBanner.tsx",
       "banner": {
-        "imageDesktop": "https://assets.decocache.com/fossil/2337d7a5-9a2c-4a6f-8feb-6541488d6126/LPpresentes_bannerprincipal_desk-(1).jpg",
-        "imageMobile": "https://assets.decocache.com/fossil/03477cc2-cb55-4981-8b82-254ddee1df30/LPpresentes_bannerprincipal_mob-(1).jpg"
+        "imageDesktop": "https://assets.decocache.com/fossil/cbb36954-952b-4417-8376-5fa69c8b2f12/LPpresentes_bannerprincipal_desk_pais-(3).jpg",
+        "imageMobile": "https://assets.decocache.com/fossil/e1c31e19-6749-4c64-8b9b-c4863a0d7d2f/LPpresentes_bannerprincipal_mob_pais-(3).jpg"
       },
       "cta": {},
       "logo": {
@@ -148,9 +148,7 @@
             }
           ]
         }
-      },
-      "subtitle": "Presentes que carregam estilo e significado. Surpreenda com relógios, bolsas e acessórios Fossil.",
-      "title": "Para presentear quem você ama."
+      }
     },
     {
       "__resolveType": "site/sections/Product/ProductShelf.tsx",
@@ -178,15 +176,15 @@
       "cards": [
         {
           "title": "BESTSELLING RAQUEL",
-          "description": "Presentes com os Relógio Feminino. Símbolos de elegância, personalidade e estilo atemporal.",
-          "image": "https://assets.decocache.com/fossil/19367452-b7ef-4357-bbe0-af23ca7910c1/LPpresentes_bannersecundario_desk_namorados2.jpg",
-          "url": "/relogio/feminino?sort=release%3Adesc",
-          "label": "PRESENTES PARA ELA"
+          "description": "A coleção Machine é o presente ideal para pais que não abrem mão de estilo e atitude.",
+          "image": "https://assets.decocache.com/fossil/c8f2ab94-548b-44f1-a5f0-986fc166b7ee/LPpresentes_bannersecundario_mob_pais2.jpg",
+          "url": "/s?q=machine&utmi_pc=search&utmi_cp=machine&sort=release%3Adesc",
+          "label": "PRESENTES PARA ELE"
         },
         {
           "title": "SPORT TOURER",
-          "description": "Presenteie com os Relógios Masculinos Fossil. Cada modelo traz design original, materiais de qualidade e aquele toque de personalidade",
-          "image": "https://assets.decocache.com/fossil/8df11906-df1b-4485-be01-7b4e5e4ed823/LPpresentes_bannersecundario_desk_namorados1.jpg",
+          "description": "Encontre o modelo perfeito para marcar momentos com quem sempre esteve ao seu lado.",
+          "image": "https://assets.decocache.com/fossil/e4615c28-7e90-44b9-bcce-9333e236dc3e/LPpresentes_bannersecundario_mob_pais1.jpg",
           "url": "/relogio/masculino?sort=release%3Adesc",
           "label": "PRESENTES PARA ELE"
         }
@@ -207,17 +205,17 @@
     {
       "__resolveType": "site/sections/Hotsites/PresenteActionBanner.tsx",
       "banner": {
-        "desktop": "https://assets.decocache.com/fossil/380125bf-01da-4b27-aeee-84432b03df44/LPpresentes_bannerreloanel_desk.jpg",
-        "mobile": "https://assets.decocache.com/fossil/5cc36c98-73f2-4a53-b476-108ce6266ade/LPpresentes_bannerreloanel_mob.jpg"
+        "desktop": "https://assets.decocache.com/fossil/1d6c2cc4-2f53-499e-ab25-ed9b66c23fc2/LPpresentes_bannerbolsas_desk_pais.jpg",
+        "mobile": "https://assets.decocache.com/fossil/5d45113e-9fa1-4d92-9e89-ec3d9e727d0c/LPpresentes_bannerbolsas_mob_pais.jpg"
       },
       "action": {
-        "description": "Um presente único que combina elegância e inovação.",
         "cta": {
           "label": "Comprar",
-          "url": "https://www.fossil.com.br/s?q=watch%20ring&utmi_pc=search&utmi_cp=watch%20ring"
+          "url": "/s?q=mochila+masculina&utmi_pc=search&utmi_cp=mochila+masculina&sort=release%3Adesc"
         },
         "logo": {},
-        "title": "RELÓGIO ANEL"
+        "title": "MOCHILAS EM COURO ",
+        "description": "Design clássico, couro legítimo e praticidade no dia a dia."
       }
     },
     {
