@@ -9,7 +9,7 @@
       "__resolveType": "site/sections/Hotsites/PresenteBanner.tsx",
       "banner": {
         "imageDesktop": "https://assets.decocache.com/fossil/87e7b649-ba5a-4e28-8ffb-af7a1a05801a/LPpresentes_bannerprincipal_desk_pais-(2).jpg",
-        "imageMobile": "https://assets.decocache.com/fossil/f6dade1e-61f6-494c-b8ab-471a1db70390/LPpresentes_bannerprincipal_mob_pais-(3).jpg"
+        "imageMobile": "https://assets.decocache.com/fossil/6ec65b9a-44d0-4f26-a35a-4990934f9b7f/LPpresentes_bannerprincipal_mob_pais-(4).jpg"
       },
       "cta": {},
       "logo": {
@@ -278,7 +278,7 @@
           "subtitle": "Para combinações e diferentes estilos.",
           "link": {
             "label": "Comprar",
-            "url": "https://www.fossil.com.br/s?q=Watch&utmi_pc=search&utmi_cp=Watch"
+            "url": "/lancamentos?sort=release%3Adesc&filter.productClusterIds=2146&filter.genero=masculino"
           },
           "label": "Lançamentos"
         }
