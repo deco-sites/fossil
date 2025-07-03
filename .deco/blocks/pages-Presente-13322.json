@@ -127,7 +127,6 @@
         "111": "a",
         "112": "1",
         "113": "0",
-        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/d397b25e-20ac-4934-ab00-e980fcab69d3/2023_FOSSIL-LOGO-(1).png",
         "desktop": {
           "__resolveType": "website/flags/multivariate/image.ts",
           "variants": [
