@@ -147,7 +147,8 @@
               }
             }
           ]
-        }
+        },
+        "mobile": "https://assets.decocache.com/fossil/5da8f2a3-473f-48b8-a2d0-6b783fa0d76b/2023_FOSSIL-LOGO-(1).png"
       }
     },
     {
@@ -196,14 +197,14 @@
         {
           "title": "BESTSELLING RAQUEL",
           "description": "A coleção Machine é o presente ideal para pais que não abrem mão de estilo e atitude.",
-          "image": "https://assets.decocache.com/fossil/c8f2ab94-548b-44f1-a5f0-986fc166b7ee/LPpresentes_bannersecundario_mob_pais2.jpg",
+          "image": "https://assets.decocache.com/fossil/eeb65625-75d5-438e-ae9e-1c5d0746c2ba/LPpresentes_bannersecundario_desk_pais2.jpg",
           "url": "/s?q=machine&utmi_pc=search&utmi_cp=machine&sort=release%3Adesc",
           "label": "PRESENTES PARA ELE"
         },
         {
           "title": "SPORT TOURER",
           "description": "Encontre o modelo perfeito para marcar momentos com quem sempre esteve ao seu lado.",
-          "image": "https://assets.decocache.com/fossil/e4615c28-7e90-44b9-bcce-9333e236dc3e/LPpresentes_bannersecundario_mob_pais1.jpg",
+          "image": "https://assets.decocache.com/fossil/a1b97a1e-43ac-4ea1-8c4c-c72cb258bd44/LPpresentes_bannersecundario_desk_pais1.jpg",
           "url": "/relogio/masculino?sort=release%3Adesc",
           "label": "PRESENTES PARA ELE"
         }
@@ -224,8 +225,8 @@
     {
       "__resolveType": "site/sections/Hotsites/PresenteActionBanner.tsx",
       "banner": {
-        "desktop": "https://assets.decocache.com/fossil/1d6c2cc4-2f53-499e-ab25-ed9b66c23fc2/LPpresentes_bannerbolsas_desk_pais.jpg",
-        "mobile": "https://assets.decocache.com/fossil/5d45113e-9fa1-4d92-9e89-ec3d9e727d0c/LPpresentes_bannerbolsas_mob_pais.jpg"
+        "desktop": "https://assets.decocache.com/fossil/9034c3b7-7a19-421a-b252-2e40c0cefd2b/LPpresentes_bannerbolsas_desk_pais-(2).jpg",
+        "mobile": "https://assets.decocache.com/fossil/6c6a4c18-fea2-47f9-9270-5089f229c491/LPpresentes_bannerbolsas_mob_pais-(2).jpg"
       },
       "action": {
         "cta": {
