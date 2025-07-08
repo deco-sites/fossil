@@ -156,7 +156,9 @@
       "products": {
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
-          "collection": "26"
+          "count": 14,
+          "sort": "release:desc",
+          "collection": "2416"
         }
       },
       "title": "LANÇAMENTOS",
