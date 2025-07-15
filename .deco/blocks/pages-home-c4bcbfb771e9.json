@@ -188,27 +188,11 @@
             "images": [
               {
                 "action": {
-                  "href": "/s?q=nate&utmi_pc=search&utmi_cp=nate"
+                  "href": "/relogio/masculino?sort=release%3Adesc"
                 },
-                "mobile": "https://assets.decocache.com/fossil/d8e30d7b-2a56-4ca8-ab0a-9aab87e53c9a/Banner_slide_mob_nate(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/34281414-419d-477f-ad9c-35526c5b60ce/banner_slide_desk_nate(1920x600).jpg",
-                "alt": "Nate"
-              },
-              {
-                "action": {
-                  "href": "/s?q=scarlett&utmi_pc=search&utmi_cp=scarlett"
-                },
-                "mobile": "https://assets.decocache.com/fossil/f70cc43e-7d7f-44c5-9c09-80242cd761b1/Banner_slide_mob_scarlett(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/6070bf8a-47b3-49d2-a7e8-5abd6e9f04e7/banner_slide_desk_scarlett(1920x600).jpg",
-                "alt": "Scarlett"
-              },
-              {
-                "action": {
-                  "href": "/s?q=Watch%20Ring&utmi_pc=search&utmi_cp=Watch%20Ring"
-                },
-                "mobile": "https://assets.decocache.com/fossil/71cdf57b-ff34-40c5-a84c-e8cd3ae2d34a/Banner_slide_mob_reloanel(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/ad78399e-b829-4de0-92ac-07a46cd284b3/banner_slide_desk_reloanel(1920x600).jpg",
-                "alt": "Relógio Anel"
+                "mobile": "https://assets.decocache.com/fossil/43d4d4a1-481c-4848-875c-a33887861347/Banner_slide_mob_paiscrosby(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/8558e019-543a-4f2d-bede-cf53ed62a108/banner_slide_desk_paiscrosby(1920x600).jpg",
+                "alt": "Crosby"
               }
             ],
             "preload": true,
@@ -216,8 +200,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "start": "2025-06-22T03:00:00.000Z",
-            "end": "2025-07-01T02:59:00.000Z"
+            "start": "2025-07-16T03:00:00.000Z",
+            "end": "2025-08-01T02:59:00.000Z"
           }
         }
       ]
