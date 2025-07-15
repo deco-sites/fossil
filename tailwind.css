@@ -32,6 +32,11 @@
 }
 
 @layer components {
+  #logoFossil img {
+    width: 205px;
+    height: auto;
+  }
+
   .features {
     @apply flex items-center justify-center gap-6 flex-wrap;
     @apply relative max-w-[1280px] mx-auto;
@@ -245,6 +250,12 @@
 
     .n1-custom-style-navbar--text {
       font-size: 14px !important;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    #logoFossil img {
+      width: 130px;
     }
   }
 }
