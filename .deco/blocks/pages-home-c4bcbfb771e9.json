@@ -193,6 +193,14 @@
                 "mobile": "https://assets.decocache.com/fossil/43d4d4a1-481c-4848-875c-a33887861347/Banner_slide_mob_paiscrosby(320x380).jpg",
                 "desktop": "https://assets.decocache.com/fossil/8558e019-543a-4f2d-bede-cf53ed62a108/banner_slide_desk_paiscrosby(1920x600).jpg",
                 "alt": "Crosby"
+              },
+              {
+                "action": {
+                  "href": "/s?q=relogio&utmi_pc=search&utmi_cp=relogio&sort=release%3Adesc"
+                },
+                "mobile": "https://assets.decocache.com/fossil/c3f9c111-614d-4eae-9a88-f861d951976c/Banner_slide_mob_paisbrinde(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/a6053baa-7e0f-4339-bc55-5c0a1be1e701/banner_slide_desk_paisbrinde(1920x600).jpg",
+                "alt": "Brinde"
               }
             ],
             "preload": true,
