@@ -4504,6 +4504,10 @@ details.collapse summary::-webkit-details-marker {
   right: auto;
   bottom: auto;
 }
+#logoFossil img {
+    width: 205px;
+    height: auto;
+  }
 .features {
   display: flex;
   flex-wrap: wrap;
@@ -4734,6 +4738,11 @@ details.collapse summary::-webkit-details-marker {
 
     .n1-custom-style-navbar--text {
       font-size: 14px !important;
+    }
+  }
+@media (max-width: 1024px) {
+    #logoFossil img {
+      width: 130px;
     }
   }
 .sr-only {
