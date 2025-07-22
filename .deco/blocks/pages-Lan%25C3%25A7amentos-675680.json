@@ -34,7 +34,8 @@
                 "desktop": 3
               },
               "variant": "aside",
-              "isCollection": true
+              "isCollection": true,
+              "banners": []
             },
             "__resolveType": "site/sections/Product/SearchResult.tsx",
             "startingPage": 1,
