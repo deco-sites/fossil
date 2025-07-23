@@ -50,12 +50,22 @@
       "isShow": true
     },
     {
-      "__resolveType": "site/sections/Content/PromotionalBanner.tsx",
-      "title": "CONFIRA OS ÚLTIMOS LANÇAMENTOS",
-      "button": {
-        "name": "Compre Agora",
-        "url": "/lancamentos"
-      }
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Content/PromotionalBanner.tsx",
+            "title": "Ganhe garrafa térmica a partir de R$1899",
+            "button": {
+              "name": "Compre Agora",
+              "url": "/lancamentos"
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
