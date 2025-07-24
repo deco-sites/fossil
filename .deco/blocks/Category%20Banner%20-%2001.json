@@ -70,12 +70,9 @@
           "__resolveType": "website/flags/multivariate/image.ts",
           "variants": [
             {
-              "value": "https://assets.decocache.com/fossil/20257054-19c7-4c47-a54b-f58b188fe0b0/Banner_colecao_desk_llivelo_22_23_07.jpg"
-            },
-            {
-              "value": "https://assets.decocache.com/fossil/20257054-19c7-4c47-a54b-f58b188fe0b0/Banner_colecao_desk_llivelo_22_23_07.jpg",
+              "value": "https://assets.decocache.com/fossil/1d3350dc-fd9f-47f1-864e-38000f265051/Euro-banner-livelo-desk.png",
               "rule": {
-                "__resolveType": "website/matchers/never.ts"
+                "__resolveType": "website/matchers/always.ts"
               }
             }
           ]
@@ -84,12 +81,9 @@
           "__resolveType": "website/flags/multivariate/image.ts",
           "variants": [
             {
-              "value": "https://assets.decocache.com/fossil/ffd668b2-53ec-48d7-af96-c3140000581b/Banner_colecao_mob_llivelo_22_23_07.jpg"
-            },
-            {
-              "value": "https://assets.decocache.com/fossil/ffd668b2-53ec-48d7-af96-c3140000581b/Banner_colecao_mob_llivelo_22_23_07.jpg",
+              "value": "https://assets.decocache.com/fossil/1054226f-1e1f-432e-a5f2-628592a593e5/EURO-banner-livelo.png",
               "rule": {
-                "__resolveType": "website/matchers/never.ts"
+                "__resolveType": "website/matchers/always.ts"
               }
             }
           ]
