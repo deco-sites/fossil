@@ -198,18 +198,18 @@
             "images": [
               {
                 "action": {
-                  "href": "/off"
+                  "href": "https://www.fossil.com.br/relogio/masculino?sort=release%3Adesc"
                 },
-                "mobile": "https://assets.decocache.com/fossil/b8215135-1a1d-4972-99ed-b01982fb2dbd/Banner-slide-640-x-760-px.png",
-                "desktop": "https://assets.decocache.com/fossil/c84745e1-e22b-4c4e-95d8-89e7acb119f6/SALE---FOSSIL-Banner-slide-1920x600px--(1).png",
+                "mobile": "https://assets.decocache.com/fossil/43d4d4a1-481c-4848-875c-a33887861347/Banner_slide_mob_paiscrosby(320x380).jpg",
+                "desktop": "https://assets.decocache.com/fossil/8558e019-543a-4f2d-bede-cf53ed62a108/banner_slide_desk_paiscrosby(1920x600).jpg",
                 "alt": "Crosby"
               },
               {
                 "action": {
-                  "href": "/relogio/masculino?sort=release%3Adesc"
+                  "href": "/off"
                 },
-                "mobile": "https://assets.decocache.com/fossil/43d4d4a1-481c-4848-875c-a33887861347/Banner_slide_mob_paiscrosby(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/8558e019-543a-4f2d-bede-cf53ed62a108/banner_slide_desk_paiscrosby(1920x600).jpg",
+                "mobile": "https://assets.decocache.com/fossil/b8215135-1a1d-4972-99ed-b01982fb2dbd/Banner-slide-640-x-760-px.png",
+                "desktop": "https://assets.decocache.com/fossil/c84745e1-e22b-4c4e-95d8-89e7acb119f6/SALE---FOSSIL-Banner-slide-1920x600px--(1).png",
                 "alt": "Crosby"
               }
             ],
