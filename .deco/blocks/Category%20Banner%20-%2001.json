@@ -26,8 +26,8 @@
     },
     {
       "image": {
-        "desktop": "https://assets.decocache.com/fossil/303b4409-90a1-4708-9604-12ac1282b191/Bannerdepaugina_colecoes_desk8.jpg",
-        "mobile": "https://assets.decocache.com/fossil/49a47e09-aec2-4ea7-b4e3-bbf800757351/Bannerdepagina_colecoes_mob8.jpg",
+        "desktop": "https://assets.decocache.com/fossil/fa538bab-940c-4a2f-b5d6-0fc33cb72c7e/Sale---FOSSIL-desktop-1440x220-(1).png",
+        "mobile": "https://assets.decocache.com/fossil/024bd781-ae49-4ccf-a686-1af8167c198b/SALE--FOSSIL-mobile-390x160-(1).png",
         "alt": "Banner Off "
       },
       "matcher": "/off*"
