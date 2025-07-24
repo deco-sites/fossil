@@ -93,8 +93,7 @@
               }
             }
           ]
-        },
-        "alt": "Banner Livelo"
+        }
       },
       "matcher": "/livelo*"
     }
