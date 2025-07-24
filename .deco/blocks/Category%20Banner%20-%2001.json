@@ -75,7 +75,7 @@
             {
               "value": "https://assets.decocache.com/fossil/20257054-19c7-4c47-a54b-f58b188fe0b0/Banner_colecao_desk_llivelo_22_23_07.jpg",
               "rule": {
-                "__resolveType": "website/matchers/always.ts"
+                "__resolveType": "website/matchers/never.ts"
               }
             }
           ]
