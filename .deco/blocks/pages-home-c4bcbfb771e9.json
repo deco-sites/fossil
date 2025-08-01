@@ -198,7 +198,7 @@
             "images": [
               {
                 "action": {
-                  "href": "/masculino?sort=release%3Adesc"
+                  "href": "/relogio/masculino?sort=release%3Adesc"
                 },
                 "mobile": "https://assets.decocache.com/fossil/cdfa6bfd-3cf7-4c69-962e-7bd4309846ad/BANNER-SLIDE---MACHINE-640X760.png",
                 "desktop": "https://assets.decocache.com/fossil/d0bf5a2d-3ff2-40ed-a0b0-f9cc770b3042/Banner-SLIDE---MACHINE-1920X600-(4).png",
