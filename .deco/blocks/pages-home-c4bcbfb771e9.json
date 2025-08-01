@@ -324,11 +324,11 @@
         "width": 380,
         "height": 250
       },
-      "url": "/s?q=machine&utmi_pc=search&utmi_cp=machine&sort=release%3Adesc",
       "button": {
         "label": "LANÇAMENTOS",
         "href": "/lancamentos"
-      }
+      },
+      "url": "/lancamentos"
     },
     {
       "__resolveType": "site/sections/Content/BannerFossilCarousel.tsx",
