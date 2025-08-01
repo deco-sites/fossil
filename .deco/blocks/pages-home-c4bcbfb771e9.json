@@ -118,19 +118,19 @@
             "images": [
               {
                 "action": {
-                  "href": "/s?q=machine&utmi_pc=search&utmi_cp=machine&sort=release%3Adesc"
+                  "href": "/masculino?sort=release%3Adesc"
                 },
-                "mobile": "https://assets.decocache.com/fossil/ab41b4ac-a8d7-4c23-a385-cf9976804ef7/Banner_slide_mob_paismachine(320x380).gif",
-                "desktop": "https://assets.decocache.com/fossil/6d4b74a7-e142-49bc-978d-851ada5efb3d/banner_slide_desk_paismachine(1920x600).gif",
-                "alt": "Machine"
+                "mobile": "https://assets.decocache.com/fossil/cdfa6bfd-3cf7-4c69-962e-7bd4309846ad/BANNER-SLIDE---MACHINE-640X760.png",
+                "desktop": "https://assets.decocache.com/fossil/d0bf5a2d-3ff2-40ed-a0b0-f9cc770b3042/Banner-SLIDE---MACHINE-1920X600-(4).png",
+                "alt": "Masculino"
               },
               {
                 "action": {
-                  "href": "/relogio/masculino?sort=release%3Adesc"
+                  "href": "/off?sort=orders%3Adesc"
                 },
-                "mobile": "https://assets.decocache.com/fossil/6f1b951b-6043-4933-8cdf-4d578afbf35b/Banner_slide_mob_paisdalton(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/9287b21d-af67-4c9f-a2af-ae5521546717/banner_slide_desk_paisdalton(1920x600).jpg",
-                "alt": "Masculino"
+                "mobile": "https://assets.decocache.com/fossil/950cd049-8006-46b3-9644-0469f6429cc3/Banner-slide-640-x-760-px.png",
+                "desktop": "https://assets.decocache.com/fossil/f6f9add2-7679-4b6d-8bd9-61fae3696d7e/SALE---FOSSIL-Banner-slide-1920x600px-.png",
+                "alt": "ATE40OFF"
               }
             ],
             "preload": true,
@@ -138,8 +138,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "start": "2025-07-01T03:00:00.000Z",
-            "end": "2025-07-16T02:59:00.000Z"
+            "start": "2025-08-01T03:00:00.000Z",
+            "end": "2025-08-11T02:59:00.000Z"
           }
         },
         {
