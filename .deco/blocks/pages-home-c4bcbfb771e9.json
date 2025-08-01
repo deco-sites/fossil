@@ -234,27 +234,27 @@
       },
       "list": [
         {
-          "image": "https://assets.decocache.com/fossil/ebfdadbd-8c87-49a8-9f78-e46b90778e3f/Banner_secundario_relomasc(610x400).jpg",
-          "label": "Masculinos",
-          "buttonText": "CONHEÇA",
-          "href": "/relogio/masculino"
-        },
-        {
-          "image": "https://assets.decocache.com/fossil/c8acec1b-7c43-4c39-9539-b67fe7cacb05/Banner_secundario_relofem(610x400).jpg",
+          "image": "https://assets.decocache.com/fossil/bba617f9-8a00-4d10-90c9-2875fbe45f51/Banner-Secundario---Fem.---Masc.---Bolsa---Carteira-(2).png",
           "label": "Femininos",
+          "buttonText": "CONHEÇA",
+          "href": "/relogio/feminino?sort=release%3Adesc"
+        },
+        {
+          "image": "https://assets.decocache.com/fossil/021d78c2-c9bf-4b6a-a7f7-a3bfbbeb6563/Banner-Secundario---Fem.---Masc.---Bolsa---Carteira-(3).png",
+          "label": "Masculinos",
           "buttonText": " ENCANTE-SE",
-          "href": "/relogio/feminino"
+          "href": "/relogio/masculino?sort=release%3Adesc"
         },
         {
-          "image": "https://assets.decocache.com/fossil/b53eba86-fd89-49d6-a2a1-1c7b377f8ba4/Banner_secundario_bolsas(610x400).jpg",
-          "label": "Bolsas em Couro",
+          "image": "https://assets.decocache.com/fossil/5e544836-54ca-441a-baee-39212bd4e687/Banner-Secundario---Fem.---Masc.---Bolsa---Carteira.png",
+          "label": "Bolsas",
           "buttonText": " CONHEÇA",
-          "href": "/bolsasmasculinas?sort=release%3Adesc"
+          "href": "/s?q=bolsas&utmi_pc=search&utmi_cp=bolsas&sort=orders%3Adesc"
         },
         {
-          "image": "https://assets.decocache.com/fossil/d0bf7557-1db2-4df6-b1f9-1bf1029e6c80/Banner_secundario_acess(610x400).jpg",
-          "label": "Acessórios em Couro",
-          "href": "/acessoriosmasculinos?sort=release%3Adesc",
+          "image": "https://assets.decocache.com/fossil/5e8436e1-7ecf-4272-a956-a10b52fabb2e/Banner-Secundario---Fem.---Masc.---Bolsa---Carteira-(1).png",
+          "label": "Carteiras",
+          "href": "/s?q=carteira&utmi_pc=search&utmi_cp=carteira&sort=price%3Adesc",
           "buttonText": "ESCOLHA O SEU"
         }
       ],
