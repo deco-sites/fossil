@@ -118,38 +118,6 @@
             "images": [
               {
                 "action": {
-                  "href": "/masculino?sort=release%3Adesc"
-                },
-                "mobile": "https://assets.decocache.com/fossil/cdfa6bfd-3cf7-4c69-962e-7bd4309846ad/BANNER-SLIDE---MACHINE-640X760.png",
-                "desktop": "https://assets.decocache.com/fossil/d0bf5a2d-3ff2-40ed-a0b0-f9cc770b3042/Banner-SLIDE---MACHINE-1920X600-(4).png",
-                "alt": "Masculino"
-              },
-              {
-                "action": {
-                  "href": "/off?sort=orders%3Adesc"
-                },
-                "mobile": "https://assets.decocache.com/fossil/950cd049-8006-46b3-9644-0469f6429cc3/Banner-slide-640-x-760-px.png",
-                "desktop": "https://assets.decocache.com/fossil/f6f9add2-7679-4b6d-8bd9-61fae3696d7e/SALE---FOSSIL-Banner-slide-1920x600px-.png",
-                "alt": "ATE40OFF"
-              }
-            ],
-            "preload": true,
-            "interval": 5
-          },
-          "rule": {
-            "__resolveType": "website/matchers/date.ts",
-            "start": "2025-08-01T03:00:00.000Z",
-            "end": "2025-08-11T02:59:00.000Z"
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/Images/Carousel.tsx",
-            "dots": true,
-            "arrows": true,
-            "images": [
-              {
-                "action": {
                   "href": "/s?q=relogio&utmi_pc=search&utmi_cp=relogio&sort=release%3Adesc"
                 },
                 "mobile": "https://assets.decocache.com/fossil/edb336ee-63ef-4bf7-a3bc-e8600dfe1f0f/Banner_slide_mob_fretegratis(320x380).jpg",
@@ -220,6 +188,38 @@
             "__resolveType": "website/matchers/date.ts",
             "start": "2025-07-16T03:00:00.000Z",
             "end": "2025-08-01T02:59:00.000Z"
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/Images/Carousel.tsx",
+            "dots": true,
+            "arrows": true,
+            "images": [
+              {
+                "action": {
+                  "href": "/masculino?sort=release%3Adesc"
+                },
+                "mobile": "https://assets.decocache.com/fossil/cdfa6bfd-3cf7-4c69-962e-7bd4309846ad/BANNER-SLIDE---MACHINE-640X760.png",
+                "desktop": "https://assets.decocache.com/fossil/d0bf5a2d-3ff2-40ed-a0b0-f9cc770b3042/Banner-SLIDE---MACHINE-1920X600-(4).png",
+                "alt": "Masculino"
+              },
+              {
+                "action": {
+                  "href": "/off?sort=orders%3Adesc"
+                },
+                "mobile": "https://assets.decocache.com/fossil/950cd049-8006-46b3-9644-0469f6429cc3/Banner-slide-640-x-760-px.png",
+                "desktop": "https://assets.decocache.com/fossil/f6f9add2-7679-4b6d-8bd9-61fae3696d7e/SALE---FOSSIL-Banner-slide-1920x600px-.png",
+                "alt": "ATE40OFF"
+              }
+            ],
+            "preload": true,
+            "interval": 5
+          },
+          "rule": {
+            "__resolveType": "website/matchers/date.ts",
+            "start": "2025-08-01T03:00:00.000Z",
+            "end": "2025-08-11T02:59:00.000Z"
           }
         }
       ]
