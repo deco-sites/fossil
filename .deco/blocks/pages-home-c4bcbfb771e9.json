@@ -313,13 +313,13 @@
     },
     {
       "__resolveType": "site/sections/Content/BannerFossil.tsx",
-      "desktopImage": "https://assets.decocache.com/fossil/ccc5d1d2-ab37-408c-a86f-3f033587efdc/banner_terc_desk_paismachine(1230x400).jpg",
+      "desktopImage": "https://assets.decocache.com/fossil/02be0e9f-56f1-4aa0-951b-b2d31d017ec8/Banner-Terciario---Crosby-2460x800-(1).png",
       "desktopImageDimensions": {
         "width": 1230,
         "height": 400
       },
-      "alt": "Machine",
-      "mobileImage": "https://assets.decocache.com/fossil/4c9d2bb9-9322-4389-9ad0-be688a00988e/banner_terc_mob_paismachine(380x250).jpg",
+      "alt": "Lançamentos",
+      "mobileImage": "https://assets.decocache.com/fossil/d7c348c0-3cc1-417d-82bb-a5b6f5013e7e/Banner-Terciario---Crosby---Mobile.png",
       "mobileImageDimensions": {
         "width": 380,
         "height": 250
