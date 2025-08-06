@@ -70,7 +70,7 @@
           "__resolveType": "website/flags/multivariate/image.ts",
           "variants": [
             {
-              "value": "https://assets.decocache.com/fossil/a0ec2607-d2ed-48ef-9f02-92812368c21f/Euro_banner_livelo_0707_desk.psd-(2880-x-400-px)-(1).png",
+              "value": "https://assets.decocache.com/fossil/155634c8-c703-47b5-bd33-702c87659d9c/Euro_banner_livelo_0707_desk.psd-(2880-x-400-px)-(1)-(2).png",
               "rule": {
                 "__resolveType": "website/matchers/always.ts"
               }
