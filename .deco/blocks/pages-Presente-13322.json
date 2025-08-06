@@ -152,25 +152,58 @@
       }
     },
     {
-      "__resolveType": "site/sections/Product/ProductShelf.tsx",
-      "products": {
-        "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-        "props": {
-          "count": 14,
-          "sort": "release:desc",
-          "collection": "2416"
-        }
-      },
-      "title": "LANÇAMENTOS",
-      "layout": {
-        "numberOfSliders": {
-          "mobile": 2,
-          "desktop": 4
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Product/ProductShelf.tsx",
+            "products": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+              "props": {
+                "count": 14,
+                "sort": "release:desc",
+                "collection": "2416"
+              }
+            },
+            "title": "LANÇAMENTOS",
+            "layout": {
+              "numberOfSliders": {
+                "mobile": 2,
+                "desktop": 4
+              },
+              "headerAlignment": "left",
+              "headerfontSize": "Small",
+              "showArrows": true
+            }
+          }
         },
-        "headerAlignment": "left",
-        "headerfontSize": "Small",
-        "showArrows": true
-      }
+        {
+          "value": {
+            "__resolveType": "site/sections/Product/ProductShelf.tsx",
+            "products": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+              "props": {
+                "count": 14,
+                "sort": "release:desc",
+                "collection": "2416"
+              }
+            },
+            "title": "LANÇAMENTOS",
+            "layout": {
+              "numberOfSliders": {
+                "mobile": 2,
+                "desktop": 4
+              },
+              "headerAlignment": "left",
+              "headerfontSize": "Small",
+              "showArrows": true
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/Hotsites/PresenteInfoCard.tsx",
