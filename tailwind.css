@@ -33,7 +33,7 @@
 
 @layer components {
   #logoFossil img {
-    width: 205px;
+    width: 130px;
     height: auto;
   }
 
@@ -255,7 +255,7 @@
 
   @media (max-width: 1024px) {
     #logoFossil img {
-      width: 130px;
+      width: 65px;
     }
   }
 }

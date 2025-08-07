@@ -4505,7 +4505,7 @@ details.collapse summary::-webkit-details-marker {
   bottom: auto;
 }
 #logoFossil img {
-    width: 205px;
+    width: 130px;
     height: auto;
   }
 .features {
@@ -4742,7 +4742,7 @@ details.collapse summary::-webkit-details-marker {
   }
 @media (max-width: 1024px) {
     #logoFossil img {
-      width: 130px;
+      width: 65px;
     }
   }
 .sr-only {
