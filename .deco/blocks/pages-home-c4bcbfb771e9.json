@@ -233,44 +233,6 @@
       ]
     },
     {
-      "__resolveType": "site/sections/Category/CategoryGrid.tsx",
-      "layout": {
-        "categoryCard": {
-          "textPosition": "bottom",
-          "textAlignment": "left"
-        }
-      },
-      "list": [
-        {
-          "image": "https://assets.decocache.com/fossil/bba617f9-8a00-4d10-90c9-2875fbe45f51/Banner-Secundario---Fem.---Masc.---Bolsa---Carteira-(2).png",
-          "label": "Femininos",
-          "buttonText": "CONHEÇA",
-          "href": "/relogio/feminino?sort=release%3Adesc"
-        },
-        {
-          "image": "https://assets.decocache.com/fossil/021d78c2-c9bf-4b6a-a7f7-a3bfbbeb6563/Banner-Secundario---Fem.---Masc.---Bolsa---Carteira-(3).png",
-          "label": "Masculinos",
-          "buttonText": " ENCANTE-SE",
-          "href": "/relogio/masculino?sort=release%3Adesc"
-        },
-        {
-          "image": "https://assets.decocache.com/fossil/5e544836-54ca-441a-baee-39212bd4e687/Banner-Secundario---Fem.---Masc.---Bolsa---Carteira.png",
-          "label": "Bolsas",
-          "buttonText": " CONHEÇA",
-          "href": "/s?q=Bolsa&utmi_pc=search&utmi_cp=Bolsa&sort=orders%3Adesc"
-        },
-        {
-          "image": "https://assets.decocache.com/fossil/5e8436e1-7ecf-4272-a956-a10b52fabb2e/Banner-Secundario---Fem.---Masc.---Bolsa---Carteira-(1).png",
-          "label": "Carteiras",
-          "href": "/s?q=carteira&utmi_pc=search&utmi_cp=carteira&sort=price%3Adesc",
-          "buttonText": "ESCOLHA A SUA"
-        }
-      ],
-      "header": {
-        "title": "Comprar Relógios Por Tipo"
-      }
-    },
-    {
       "__resolveType": "site/sections/Product/ProductShelf.tsx",
       "layout": {
         "showArrows": true,
@@ -318,6 +280,44 @@
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
       "title": "LANÇAMENTOS"
+    },
+    {
+      "__resolveType": "site/sections/Category/CategoryGrid.tsx",
+      "layout": {
+        "categoryCard": {
+          "textPosition": "bottom",
+          "textAlignment": "left"
+        }
+      },
+      "list": [
+        {
+          "image": "https://assets.decocache.com/fossil/bba617f9-8a00-4d10-90c9-2875fbe45f51/Banner-Secundario---Fem.---Masc.---Bolsa---Carteira-(2).png",
+          "label": "Femininos",
+          "buttonText": "CONHEÇA",
+          "href": "/relogio/feminino?sort=release%3Adesc"
+        },
+        {
+          "image": "https://assets.decocache.com/fossil/021d78c2-c9bf-4b6a-a7f7-a3bfbbeb6563/Banner-Secundario---Fem.---Masc.---Bolsa---Carteira-(3).png",
+          "label": "Masculinos",
+          "buttonText": " ENCANTE-SE",
+          "href": "/relogio/masculino?sort=release%3Adesc"
+        },
+        {
+          "image": "https://assets.decocache.com/fossil/5e544836-54ca-441a-baee-39212bd4e687/Banner-Secundario---Fem.---Masc.---Bolsa---Carteira.png",
+          "label": "Bolsas",
+          "buttonText": " CONHEÇA",
+          "href": "/s?q=Bolsa&utmi_pc=search&utmi_cp=Bolsa&sort=orders%3Adesc"
+        },
+        {
+          "image": "https://assets.decocache.com/fossil/5e8436e1-7ecf-4272-a956-a10b52fabb2e/Banner-Secundario---Fem.---Masc.---Bolsa---Carteira-(1).png",
+          "label": "Carteiras",
+          "href": "/s?q=carteira&utmi_pc=search&utmi_cp=carteira&sort=price%3Adesc",
+          "buttonText": "ESCOLHA A SUA"
+        }
+      ],
+      "header": {
+        "title": "Comprar Relógios Por Tipo"
+      }
     },
     {
       "__resolveType": "site/sections/Content/BannerFossil.tsx",
