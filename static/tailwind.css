@@ -4505,8 +4505,9 @@ details.collapse summary::-webkit-details-marker {
   bottom: auto;
 }
 #logoFossil img {
-    width: 120px;
-    height: auto;
+    width: 163px;
+    height: 106px;
+    aspect-ratio: auto 163 / 106;
   }
 .features {
   display: flex;
@@ -4743,6 +4744,8 @@ details.collapse summary::-webkit-details-marker {
 @media (max-width: 1024px) {
     #logoFossil img {
       width: 65px;
+      height: 37px;
+      aspect-ratio: auto 65 / 37;
     }
   }
 .sr-only {
