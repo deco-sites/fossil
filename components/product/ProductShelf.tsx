@@ -6,9 +6,10 @@ import { useId } from "../../sdk/useId.ts";
 import { useOffer } from "../../util/useOffer.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import type { Product } from "apps/commerce/types.ts";
-import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
+// import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import { clx } from "../../sdk/clx.ts";
 import { AppContext } from "../../apps/site.ts";
+import { mapProductToAnalyticsItem } from "../../util/formatToAnalytics.ts";
 
 export interface Props {
   products: Product[] | null;

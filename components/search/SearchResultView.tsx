@@ -1,5 +1,5 @@
 import type { ProductListingPage } from "apps/commerce/types.ts";
-import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
+// import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import { SendEventOnView } from "../../components/Analytics.tsx";
 import SearchControls from "../../islands/SearchControls.tsx";
 import { useId } from "../../sdk/useId.ts";
@@ -13,6 +13,7 @@ import Breadcrumb from "../ui/Breadcrumb.tsx";
 import { getSearchTerm } from "../../util/getSearchTerm.ts";
 import { GetSearchQueryParameter } from "../../util/getSearchQueryParameter.ts";
 import { redirect } from "@deco/deco";
+import { mapProductToAnalyticsItem } from "../../util/formatToAnalytics.ts";
 export type Format = "Show More" | "Pagination";
 export interface Layout {
   /**
@@ -42,13 +43,17 @@ type FilterDrawerProps = {
   quantityProduct: number;
   searchTerm: string;
 };
-function Result(
-  { page, layout, startingPage = 0, url: _url, device }: Omit<Props, "page"> & {
-    page: ProductListingPage;
-    url: string;
-    device?: string;
-  },
-) {
+function Result({
+  page,
+  layout,
+  startingPage = 0,
+  url: _url,
+  device,
+}: Omit<Props, "page"> & {
+  page: ProductListingPage;
+  url: string;
+  device?: string;
+}) {
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
   const { recordPerPage, nextPage, previousPage, currentPage } = pageInfo;
   const perPage = recordPerPage || products.length;
@@ -80,56 +85,50 @@ function Result(
         <div class="flex flex-row">
           {device === "desktop" && (
             <>
-              {layout?.variant === "aside" && filters.length > 0 &&
-                (
-                  <aside class="hidden sm:block w-min min-w-[250px]">
-                    <div class="h-[52px] flex items-center mb-5">
-                      <span class="font-bold text-2xl text-black font-scout uppercase">
-                        FILTRA POR:
-                      </span>
-                    </div>
-                    <div class="lg:py-6">
-                      <a
-                        href={`s?q=${GetSearchQueryParameter(searchParams)}`}
-                        arial-label="link de pesquisa de produto"
-                        class="font-arial text-base text-primary uppercase lg:px-6 lg:mb-4"
-                      >
-                        {searchTerm == "relogio" ? "Relógios" : searchTerm}
-                        {"  "}({pageInfo.records})
-                      </a>
-                    </div>
-                  </aside>
-                )}
+              {layout?.variant === "aside" && filters.length > 0 && (
+                <aside class="hidden sm:block w-min min-w-[250px]">
+                  <div class="h-[52px] flex items-center mb-5">
+                    <span class="font-bold text-2xl text-black font-scout uppercase">
+                      FILTRA POR:
+                    </span>
+                  </div>
+                  <div class="lg:py-6">
+                    <a
+                      href={`s?q=${GetSearchQueryParameter(searchParams)}`}
+                      arial-label="link de pesquisa de produto"
+                      class="font-arial text-base text-primary uppercase lg:px-6 lg:mb-4"
+                    >
+                      {searchTerm == "relogio" ? "Relógios" : searchTerm}
+                      {"  "}({pageInfo.records})
+                    </a>
+                  </div>
+                </aside>
+              )}
             </>
           )}
           <div class="flex-grow" id={id}>
-            {device !== "desktop"
-              ? (
-                <SearchControls
-                  sortOptions={sortOptions}
-                  filters={filters}
-                  breadcrumb={breadcrumb}
-                  displayFilter={layout?.variant === "drawer"}
-                  quantityProduct={pageInfo.records}
-                  type="searchView"
-                  filterDrawerProps={filterDrawerProps}
-                  device={device}
-                  url={_url}
-                >
-                </SearchControls>
-              )
-              : (
-                <div class=" flex justify-between items-center gap-2.5">
-                  <div class="hidden lg:block text-primary text-base  tracking-[.0625rem] uppercase font-scout">
-                    {productsFound}
-                  </div>
-                  <div class="flex flex-row items-center justify-between border-b border-base-200 sm:border-none">
-                    {sortOptions.length > 0 && (
-                      <Sort sortOptions={sortOptions} />
-                    )}
-                  </div>
+            {device !== "desktop" ? (
+              <SearchControls
+                sortOptions={sortOptions}
+                filters={filters}
+                breadcrumb={breadcrumb}
+                displayFilter={layout?.variant === "drawer"}
+                quantityProduct={pageInfo.records}
+                type="searchView"
+                filterDrawerProps={filterDrawerProps}
+                device={device}
+                url={_url}
+              ></SearchControls>
+            ) : (
+              <div class=" flex justify-between items-center gap-2.5">
+                <div class="hidden lg:block text-primary text-base  tracking-[.0625rem] uppercase font-scout">
+                  {productsFound}
                 </div>
-              )}
+                <div class="flex flex-row items-center justify-between border-b border-base-200 sm:border-none">
+                  {sortOptions.length > 0 && <Sort sortOptions={sortOptions} />}
+                </div>
+              </div>
+            )}
 
             <ProductGallery
               products={products}
@@ -159,7 +158,7 @@ function Result(
             item_list_id: breadcrumb.itemListElement?.at(-1)?.item,
             items: page.products?.map((product, index) =>
               mapProductToAnalyticsItem({
-                ...(useOffer(product.offers)),
+                ...useOffer(product.offers),
                 index: offset + index,
                 product,
                 breadcrumbList: page.breadcrumb,
@@ -171,9 +170,12 @@ function Result(
     </>
   );
 }
-function SearchResult(
-  { page, device, url, ...props }: ReturnType<typeof loader>,
-) {
+function SearchResult({
+  page,
+  device,
+  url,
+  ...props
+}: ReturnType<typeof loader>) {
   if (!page || page.products.length <= 0 || !page.products) {
     return <NotFound />;
   }
