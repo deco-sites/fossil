@@ -13,6 +13,7 @@ import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import NavItem from "./NavItem.tsx";
 import { Buttons, Logo } from "../../components/header/Header.tsx";
+import { headerHeight } from "./constants.ts";
 
 // Make it sure to render it on the server only. DO NOT render it on an island
 function Navbar({
@@ -35,7 +36,11 @@ function Navbar({
     <>
       {device === "desktop" ? (
         // Header desktop
-        <div class="hidden sm:flex items-center justify-between border-base-200 w-full bg-white  m-auto px-6 relative font-soleil">
+        <div
+          class={`hidden sm:flex items-center justify-between border-base-200 w-full bg-white  m-auto px-6 relative font-soleil ${
+            headerHeight >= "125px" ? "md:mt-[7px]" : ""
+          } `}
+        >
           <div
             class={`flex ${
               logoPosition === "left"
