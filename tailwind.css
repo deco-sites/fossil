@@ -33,9 +33,9 @@
 
 @layer components {
   #logoFossil img {
-    width: 143px;
-    height: 86px;
-    aspect-ratio: auto 143 / 86;
+    width: 80px;
+    height: 48px;
+    aspect-ratio: auto 80 / 48;
   }
 
   .features {

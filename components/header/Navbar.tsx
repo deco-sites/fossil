@@ -37,9 +37,7 @@ function Navbar({
       {device === "desktop" ? (
         // Header desktop
         <div
-          class={`hidden sm:flex items-center justify-between border-base-200 w-full bg-white  m-auto px-6 relative font-soleil ${
-            headerHeight >= "125px" ? "md:mt-[7px]" : ""
-          } `}
+          class={`hidden sm:flex items-center justify-between border-base-200 w-full bg-white  m-auto px-6 relative font-soleil`}
         >
           <div
             class={`flex ${

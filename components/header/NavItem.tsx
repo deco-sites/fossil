@@ -32,7 +32,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
           style={{
             top: "0px",
             left: "0px",
-            marginTop: headerHeight >= "125px" ? 125 + 7 + "px" : "",
+            marginTop: headerHeight,
           }}
         >
           <div class=" w-full   max-w-6xl flex items-start  justify-between ">
