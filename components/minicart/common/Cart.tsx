@@ -1,6 +1,6 @@
 import { AnalyticsItem } from "apps/commerce/types.ts";
 import Button from "../../../components/ui/Button.tsx";
-import { sendEvent } from "../../../sdk/analytics.tsx";
+// import { sendEvent } from "../../../sdk/analytics.tsx";
 import { formatPrice } from "../../../sdk/format.ts";
 import { useUI } from "../../../sdk/useUI.ts";
 import CartItem, { Item, Props as ItemProps } from "./CartItem.tsx";
@@ -27,7 +27,7 @@ function Cart({
   total,
   subtotal,
   locale,
-  coupon,
+  // coupon,
   loading,
   currency,
   discounts,
@@ -40,112 +40,108 @@ function Cart({
 
   return (
     <div class="flex flex-col justify-center items-center overflow-hidden max-h-[508px] w-full m-auto md:w-4/5  lg:w-[344px] ">
-      {isEmtpy
-        ? (
-          <div class="flex flex-col gap-6">
-            <span class="text-base text-primary pt-5 pb-6 text-center">
-              Seu carrinho está vazio
-            </span>
-          </div>
-        )
-        : (
-          <>
-            {/* Cart Items */}
-            <ul
-              role="list"
-              class="mt-4 md:mt-6 px-4 flex-grow overflow-y-auto flex flex-col gap-6 w-full pb-2 md:pb-4"
-            >
-              {items.map((item, index) => (
-                <li key={index}>
-                  <CartItem
-                    item={item}
-                    index={index}
-                    locale={locale}
-                    currency={currency}
-                    onUpdateQuantity={onUpdateQuantity}
-                    itemToAnalyticsItem={itemToAnalyticsItem}
-                  />
-                </li>
-              ))}
-            </ul>
+      {isEmtpy ? (
+        <div class="flex flex-col gap-6">
+          <span class="text-base text-primary pt-5 pb-6 text-center">
+            Seu carrinho está vazio
+          </span>
+        </div>
+      ) : (
+        <>
+          {/* Cart Items */}
+          <ul
+            role="list"
+            class="mt-4 md:mt-6 px-4 flex-grow overflow-y-auto flex flex-col gap-6 w-full pb-2 md:pb-4"
+          >
+            {items.map((item, index) => (
+              <li key={index}>
+                <CartItem
+                  item={item}
+                  index={index}
+                  locale={locale}
+                  currency={currency}
+                  onUpdateQuantity={onUpdateQuantity}
+                  itemToAnalyticsItem={itemToAnalyticsItem}
+                />
+              </li>
+            ))}
+          </ul>
 
-            {/* Cart Footer */}
-            <footer class="w-full">
-              {/* Subtotal */}
-              <div class="py-2 flex flex-col">
-                {discounts > 0 && (
-                  <div class="flex justify-between items-center px-4">
-                    <span class="text-sm">Descontos</span>
-                    <span class="text-sm">
-                      {formatPrice(discounts, currency, locale)}
-                    </span>
-                  </div>
-                )}
-                <div class="w-full flex justify-end px-6 md:px-4  text-[18px] uppercase font-medium text-primary tracking-[1px]">
-                  <span class="flex items-center pt-[2px]">Subtotal:</span>
-                  <span class="font-bold text-xl pl-2">
-                    {formatPrice(subtotal, currency, locale)}
+          {/* Cart Footer */}
+          <footer class="w-full">
+            {/* Subtotal */}
+            <div class="py-2 flex flex-col">
+              {discounts > 0 && (
+                <div class="flex justify-between items-center px-4">
+                  <span class="text-sm">Descontos</span>
+                  <span class="text-sm">
+                    {formatPrice(discounts, currency, locale)}
                   </span>
                 </div>
-              </div>
-
-              {/* Total */}
-              <div class="hidden border-t border-base-200 pt-4 flex-col justify-end items-end gap-2 mx-4">
-                <div class="flex justify-between items-center w-full">
-                  <span>Total</span>
-                  <span class="font-medium text-xl">
-                    {formatPrice(total, currency, locale)}
-                  </span>
-                </div>
-                <span class="text-sm text-base-300">
-                  Taxas e fretes serão calculados no checkout
+              )}
+              <div class="w-full flex justify-end px-6 md:px-4  text-[18px] uppercase font-medium text-primary tracking-[1px]">
+                <span class="flex items-center pt-[2px]">Subtotal:</span>
+                <span class="font-bold text-xl pl-2">
+                  {formatPrice(subtotal, currency, locale)}
                 </span>
               </div>
+            </div>
 
-              <div class="px-4 pb-1 pt-4">
-                <a class="inline-block w-full">
-                  <Button
-                    data-deco="buy-button"
-                    class=" w-full h-10 underline md:no-underline m-auto text-[18px] tracking-[1px] uppercase  text-black text-center font-medium bg-transparent color-white border-[1px] border-solid  border-black hover:brightness-90"
-                    disabled={loading || isEmtpy}
-                    onClick={() => {
-                      displayCart.value = false;
-                    }}
-                  >
-                    Continuar comprando
-                  </Button>
-                </a>
+            {/* Total */}
+            <div class="hidden border-t border-base-200 pt-4 flex-col justify-end items-end gap-2 mx-4">
+              <div class="flex justify-between items-center w-full">
+                <span>Total</span>
+                <span class="font-medium text-xl">
+                  {formatPrice(total, currency, locale)}
+                </span>
               </div>
+              <span class="text-sm text-base-300">
+                Taxas e fretes serão calculados no checkout
+              </span>
+            </div>
 
-              <div class="px-4 pb-5">
-                <a class="inline-block w-full" href={checkoutHref}>
-                  <Button
-                    data-deco="buy-button"
-                    class=" w-full h-10 m-auto underline md:no-underline text-[18px] tracking-[1px] uppercase  text-white text-center font-medium bg-warning color-white border-[1px] border-solid  border-warning hover:brightness-90"
-                    disabled={loading || isEmtpy}
-                    onClick={() => {
-                      sendEvent({
-                        name: "begin_checkout",
-                        params: {
-                          coupon,
-                          currency,
-                          value: total,
-                          items: items
-                            .map((_, index) => itemToAnalyticsItem(index))
-                            .filter((x): x is AnalyticsItem =>
-                              Boolean(x)
-                            ),
-                        },
-                      });
-                    }}
-                  >
-                    Finalizar Compra
-                  </Button>
-                </a>
-              </div>
-            </footer>
-          </>
-        )}
+            <div class="px-4 pb-1 pt-4">
+              <a class="inline-block w-full">
+                <Button
+                  data-deco="buy-button"
+                  class=" w-full h-10 underline md:no-underline m-auto text-[18px] tracking-[1px] uppercase  text-black text-center font-medium bg-transparent color-white border-[1px] border-solid  border-black hover:brightness-90"
+                  disabled={loading || isEmtpy}
+                  onClick={() => {
+                    displayCart.value = false;
+                  }}
+                >
+                  Continuar comprando
+                </Button>
+              </a>
+            </div>
+
+            <div class="px-4 pb-5">
+              <a class="inline-block w-full" href={checkoutHref}>
+                <Button
+                  data-deco="buy-button"
+                  class=" w-full h-10 m-auto underline md:no-underline text-[18px] tracking-[1px] uppercase  text-white text-center font-medium bg-warning color-white border-[1px] border-solid  border-warning hover:brightness-90"
+                  disabled={loading || isEmtpy}
+                  onClick={() => {
+                    // sendEvent({
+                    //   name: "begin_checkout",
+                    //   params: {
+                    //     coupon,
+                    //     currency,
+                    //     value: total,
+                    //     items: items
+                    //       .map((_, index) => itemToAnalyticsItem(index))
+                    //       .filter((x): x is AnalyticsItem => Boolean(x)),
+                    //   },
+                    // });
+                  }}
+                >
+                  Finalizar Compra
+                </Button>
+              </a>
+            </div>
+          </footer>
+        </>
+      )}
     </div>
   );
 }

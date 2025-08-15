@@ -6,8 +6,9 @@ import { useId } from "../../sdk/useId.ts";
 import { useOffer } from "../../util/useOffer.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import { ProductDetailsPage } from "apps/commerce/types.ts";
-import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
+// import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductInfoPriceModel from "./ProductInfoPriceModel.tsx";
+import { mapProductToAnalyticsItem } from "../../util/formatToAnalytics.ts";
 
 interface Props {
   page: ProductDetailsPage | null;
@@ -26,11 +27,13 @@ interface Props {
   };
 }
 
-function ProductInfo(
-  { page, sizeChartLink, device }: Props & {
-    device?: string;
-  },
-) {
+function ProductInfo({
+  page,
+  sizeChartLink,
+  device,
+}: Props & {
+  device?: string;
+}) {
   const platform = usePlatform();
   const id = useId();
 
@@ -39,11 +42,7 @@ function ProductInfo(
   }
 
   const { breadcrumbList, product } = page;
-  const {
-    productID,
-    offers,
-    isVariantOf,
-  } = product;
+  const { productID, offers, isVariantOf } = product;
   const {
     price,
     listPrice,
@@ -81,8 +80,8 @@ function ProductInfo(
   });
 
   const referenceID =
-    product.additionalProperty?.find(({ valueReference }) =>
-      valueReference == "ReferenceID"
+    product.additionalProperty?.find(
+      ({ valueReference }) => valueReference == "ReferenceID"
     )?.value ?? product.gtin;
 
   return (
@@ -93,19 +92,19 @@ function ProductInfo(
       {/* Add to Cart and Favorites button Mobile */}
       {device !== "desktop" && (
         <div class="flex justify-center w-full m-auto">
-          {availability
-            ? (
-              <>
-                {platform === "vtex" && (
-                  <AddToCartButtonVTEX
-                    eventParams={{ items: [eventItem] }}
-                    productID={productID}
-                    seller={seller}
-                  />
-                )}
-              </>
-            )
-            : <OutOfStock productID={productID} />}
+          {availability ? (
+            <>
+              {platform === "vtex" && (
+                <AddToCartButtonVTEX
+                  eventParams={{ items: [eventItem] }}
+                  productID={productID}
+                  seller={seller}
+                />
+              )}
+            </>
+          ) : (
+            <OutOfStock productID={productID} />
+          )}
         </div>
       )}
 
@@ -149,7 +148,9 @@ function ProductInfo(
           priceWithPixDiscount={priceWithPixDiscount}
           sellerPrice={price}
           listPrice={listPrice}
-          pixPercentDiscountByDiferenceSellerPrice={pixPercentDiscountByDiferenceSellerPrice}
+          pixPercentDiscountByDiferenceSellerPrice={
+            pixPercentDiscountByDiferenceSellerPrice
+          }
         />
       )}
 
@@ -157,21 +158,21 @@ function ProductInfo(
       <div class="flex flex-col gap-2">
         {device === "desktop" && (
           <>
-            {availability
-              ? (
-                <>
-                  {platform === "vtex" && (
-                    <>
-                      <AddToCartButtonVTEX
-                        eventParams={{ items: [eventItem] }}
-                        productID={productID}
-                        seller={seller}
-                      />
-                    </>
-                  )}
-                </>
-              )
-              : <OutOfStock productID={productID} />}
+            {availability ? (
+              <>
+                {platform === "vtex" && (
+                  <>
+                    <AddToCartButtonVTEX
+                      eventParams={{ items: [eventItem] }}
+                      productID={productID}
+                      seller={seller}
+                    />
+                  </>
+                )}
+              </>
+            ) : (
+              <OutOfStock productID={productID} />
+            )}
           </>
         )}
 
