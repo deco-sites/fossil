@@ -1,13 +1,9 @@
-import type {
-    OrderForm,
-    OrderFormItem,
-    Product,
-} from "apps/vtex/utils/types.ts";
+import type { OrderForm, OrderFormItem } from "apps/vtex/utils/types.ts";
 import {
     mapCategoriesToAnalyticsCategories,
     mapProductCategoryToAnalyticsCategories,
 } from "apps/commerce/utils/productToAnalyticsItem.ts";
-import { AnalyticsItem, BreadcrumbList } from "apps/commerce/types.ts";
+import { AnalyticsItem, BreadcrumbList, Product } from "apps/commerce/types.ts";
 
 const mapItemCategoriesToAnalyticsCategories = (
     item: OrderFormItem,
@@ -60,8 +56,7 @@ export const mapProductToAnalyticsItem = (
         coupon?: string;
     },
 ): AnalyticsItem => {
-    const { name, productID, inProductGroupWithID, isVariantOf, url, sku } =
-        product;
+    const { name, inProductGroupWithID, isVariantOf, url, sku } = product;
     const categories = breadcrumbList?.itemListElement
         ? mapCategoriesToAnalyticsCategories(
             breadcrumbList?.itemListElement.map(({ name: _name }) =>
