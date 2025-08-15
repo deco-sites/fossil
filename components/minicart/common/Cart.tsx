@@ -1,6 +1,6 @@
 import { AnalyticsItem } from "apps/commerce/types.ts";
 import Button from "../../../components/ui/Button.tsx";
-import { sendEvent } from "../../../sdk/analytics.tsx";
+// import { sendEvent } from "../../../sdk/analytics.tsx";
 import { formatPrice } from "../../../sdk/format.ts";
 import { useUI } from "../../../sdk/useUI.ts";
 import CartItem, { Item, Props as ItemProps } from "./CartItem.tsx";
@@ -27,7 +27,7 @@ function Cart({
   total,
   subtotal,
   locale,
-  coupon,
+  // coupon,
   loading,
   currency,
   discounts,
@@ -37,8 +37,6 @@ function Cart({
 }: Props) {
   const { displayCart } = useUI();
   const isEmtpy = items.length === 0;
-
-  console.log(items.map((_, index) => itemToAnalyticsItem(index)));
 
   return (
     <div class="flex flex-col justify-center items-center overflow-hidden max-h-[508px] w-full m-auto md:w-4/5  lg:w-[344px] ">

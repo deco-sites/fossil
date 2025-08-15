@@ -135,7 +135,7 @@
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
                 "start": "2025-06-13T15:00:00.000Z",
-                "end": "2025-07-31T15:00:00.000Z"
+                "end": "2025-12-31T15:00:00.000Z"
               }
             },
             {
@@ -143,33 +143,12 @@
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
                 "start": "2025-06-13T15:00:00.000Z",
-                "end": "2025-07-31T15:00:00.000Z"
+                "end": "2025-12-31T15:00:00.000Z"
               }
             }
           ]
         },
         "mobile": "https://assets.decocache.com/fossil/e0c4bcf1-4ab7-413f-a5f6-13b0c68ab94b/2023_FOSSIL-LOGO-(1)-preto.png"
-      }
-    },
-    {
-      "__resolveType": "site/sections/Product/ProductShelf.tsx",
-      "products": {
-        "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-        "props": {
-          "count": 14,
-          "sort": "release:desc",
-          "collection": "2416"
-        }
-      },
-      "title": "LANÇAMENTOS",
-      "layout": {
-        "numberOfSliders": {
-          "mobile": 2,
-          "desktop": 4
-        },
-        "headerAlignment": "left",
-        "headerfontSize": "Small",
-        "showArrows": true
       }
     },
     {
@@ -218,6 +197,37 @@
         "title": "MOCHILAS EM COURO ",
         "description": "Design clássico, couro legítimo e praticidade no dia a dia."
       }
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Product/ProductShelf.tsx",
+            "products": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+              "props": {
+                "count": 14,
+                "sort": "release:desc",
+                "collection": "2416"
+              }
+            },
+            "title": "LANÇAMENTOS",
+            "layout": {
+              "numberOfSliders": {
+                "mobile": 2,
+                "desktop": 4
+              },
+              "headerAlignment": "left",
+              "headerfontSize": "Small",
+              "showArrows": true
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/Hotsites/PresenteWhatNews.tsx",

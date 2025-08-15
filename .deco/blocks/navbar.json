@@ -17,7 +17,9 @@
       "image": [
         {
           "url": "https://data.decoassets.com/fossil/d2da93ea-e38e-43a5-918c-163eb7612600/1742316898262-c5eac8cf-96b6-4a00-9975-f96aebe00dfe",
-          "@type": "ImageObject"
+          "@type": "ImageObject",
+          "video": null,
+          "image": null
         },
         {
           "url": "https://data.decoassets.com/fossil/7fbc515b-2829-4c76-842e-44a92b19a159/1742316899631-a8495e6e-044b-419e-aaea-09f45d2ab01d"
@@ -62,7 +64,8 @@
             }
           ],
           "name": "Mecanismo",
-          "url": "/relogio/masculino?sort=release%3Adesc"
+          "url": "/relogio/masculino?sort=release%3Adesc",
+          "image": null
         },
         {
           "image": [],
@@ -103,12 +106,6 @@
               "children": [],
               "name": "Silicone",
               "url": "/relogio/masculino/silicone?sort=release%3Adesc"
-            },
-            {
-              "image": [],
-              "children": [],
-              "name": "Cerâmica",
-              "url": "/relogio/masculino/ceramica?sort=release%3Adesc"
             },
             {
               "image": [],
@@ -184,30 +181,20 @@
           "@type": "SiteNavigationElement",
           "children": [
             {
-              "url": "/relogio/feminino/anadigi",
+              "url": "/relogio/feminino/analogico",
               "@type": "SiteNavigationElement",
-              "name": "Anadigi"
+              "name": "Analógico"
             },
             {
-              "@type": "SiteNavigationElement",
-              "name": "Analógico",
-              "url": "/relogio/feminino/analogico"
-            },
-            {
-              "image": [],
-              "children": [],
-              "name": "Digital",
-              "url": "/relogio/feminino/digital"
-            },
-            {
-              "image": [],
-              "children": [],
               "name": "Multifunção",
-              "url": "/relogio/feminino/multifuncao"
+              "url": "/relogio/feminino/multifuncao",
+              "image": [],
+              "children": []
             }
           ],
           "name": "Mecanismo",
-          "url": "/relogio/feminino?sort=release%3Adesc"
+          "url": "/relogio/feminino?sort=release%3Adesc",
+          "image": null
         },
         {
           "children": [
@@ -230,7 +217,8 @@
           ],
           "name": "Caixa",
           "url": "/relogio/feminino?sort=release%3Adesc",
-          "@type": "SiteNavigationElement"
+          "@type": "SiteNavigationElement",
+          "image": null
         },
         {
           "image": [],
@@ -240,18 +228,6 @@
               "children": [],
               "name": "Aço",
               "url": "/relogio/feminino/aco"
-            },
-            {
-              "image": [],
-              "children": [],
-              "name": "Silicone",
-              "url": "/relogio/feminino/silicone"
-            },
-            {
-              "image": [],
-              "children": [],
-              "name": "Cerâmica",
-              "url": "/relogio/feminino/ceramica"
             },
             {
               "image": [],
