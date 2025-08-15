@@ -152,37 +152,6 @@
       }
     },
     {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/Product/ProductShelf.tsx",
-            "products": {
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-              "props": {
-                "count": 14,
-                "sort": "release:desc",
-                "collection": "2416"
-              }
-            },
-            "title": "LANÇAMENTOS",
-            "layout": {
-              "numberOfSliders": {
-                "mobile": 2,
-                "desktop": 4
-              },
-              "headerAlignment": "left",
-              "headerfontSize": "Small",
-              "showArrows": true
-            }
-          },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          }
-        }
-      ]
-    },
-    {
       "__resolveType": "site/sections/Hotsites/PresenteInfoCard.tsx",
       "cards": [
         {
@@ -228,6 +197,37 @@
         "title": "MOCHILAS EM COURO ",
         "description": "Design clássico, couro legítimo e praticidade no dia a dia."
       }
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Product/ProductShelf.tsx",
+            "products": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+              "props": {
+                "count": 14,
+                "sort": "release:desc",
+                "collection": "2416"
+              }
+            },
+            "title": "LANÇAMENTOS",
+            "layout": {
+              "numberOfSliders": {
+                "mobile": 2,
+                "desktop": 4
+              },
+              "headerAlignment": "left",
+              "headerfontSize": "Small",
+              "showArrows": true
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/Hotsites/PresenteWhatNews.tsx",

@@ -55,7 +55,7 @@
         {
           "value": {
             "__resolveType": "site/sections/Content/PromotionalBanner.tsx",
-            "title": "Ganhe garrafa térmica a partir de R$1899",
+            "title": "CONFIRA NOSSOS LANÇAMENTOS",
             "button": {
               "name": "Compre Agora",
               "url": "/lancamentos"
@@ -166,18 +166,26 @@
             "images": [
               {
                 "action": {
-                  "href": "https://www.fossil.com.br/relogio/masculino?sort=release%3Adesc"
+                  "href": "/s?q=harlow&utmi_pc=search&utmi_cp=harlow"
                 },
-                "mobile": "https://assets.decocache.com/fossil/43d4d4a1-481c-4848-875c-a33887861347/Banner_slide_mob_paiscrosby(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/8558e019-543a-4f2d-bede-cf53ed62a108/banner_slide_desk_paiscrosby(1920x600).jpg",
-                "alt": "Dias dos Pais"
+                "mobile": "https://assets.decocache.com/fossil/707aaaf2-19cd-482d-aa19-e5a859f57678/Banner-Slide---Machine---Sale---Carlie-640x760-(1)-(1).png",
+                "desktop": "https://assets.decocache.com/fossil/fba010dd-28ef-4901-a82b-b26a1942e27e/Banner-Slide---Machine---Sale---Carlie-1920x600.png",
+                "alt": "Femininos"
+              },
+              {
+                "action": {
+                  "href": "/relogio/masculino?sort=release%3Adesc"
+                },
+                "mobile": "https://assets.decocache.com/fossil/0ead4826-7688-4d81-97bf-fb05172b0a96/WhatsApp-Image-2025-08-07-at-15.53.42-(2).jpeg",
+                "desktop": "https://assets.decocache.com/fossil/971145f3-4253-4287-9cd0-0e7dfaad5f3a/WhatsApp-Image-2025-08-07-at-15.53.41-(1).jpeg",
+                "alt": "Masculinos"
               },
               {
                 "action": {
                   "href": "/off"
                 },
-                "mobile": "https://assets.decocache.com/fossil/b8215135-1a1d-4972-99ed-b01982fb2dbd/Banner-slide-640-x-760-px.png",
-                "desktop": "https://assets.decocache.com/fossil/c84745e1-e22b-4c4e-95d8-89e7acb119f6/SALE---FOSSIL-Banner-slide-1920x600px--(1).png",
+                "mobile": "https://assets.decocache.com/fossil/9b09cba8-d593-491a-a40e-d7f7bb87b561/WhatsApp-Image-2025-08-06-at-17.58.48-(1).jpeg",
+                "desktop": "https://assets.decocache.com/fossil/cf847d9b-4506-4a47-b6c1-65385f287568/WhatsApp-Image-2025-08-06-at-17.58.46-(3).jpeg",
                 "alt": "ate4OFF"
               }
             ],
@@ -186,8 +194,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "start": "2025-07-16T03:00:00.000Z",
-            "end": "2025-08-01T02:59:00.000Z"
+            "start": "2025-08-11T03:00:00.000Z",
+            "end": "2025-08-18T02:59:00.000Z"
           }
         },
         {
@@ -223,44 +231,6 @@
           }
         }
       ]
-    },
-    {
-      "__resolveType": "site/sections/Category/CategoryGrid.tsx",
-      "layout": {
-        "categoryCard": {
-          "textPosition": "bottom",
-          "textAlignment": "left"
-        }
-      },
-      "list": [
-        {
-          "image": "https://assets.decocache.com/fossil/bba617f9-8a00-4d10-90c9-2875fbe45f51/Banner-Secundario---Fem.---Masc.---Bolsa---Carteira-(2).png",
-          "label": "Femininos",
-          "buttonText": "CONHEÇA",
-          "href": "/relogio/feminino?sort=release%3Adesc"
-        },
-        {
-          "image": "https://assets.decocache.com/fossil/021d78c2-c9bf-4b6a-a7f7-a3bfbbeb6563/Banner-Secundario---Fem.---Masc.---Bolsa---Carteira-(3).png",
-          "label": "Masculinos",
-          "buttonText": " ENCANTE-SE",
-          "href": "/relogio/masculino?sort=release%3Adesc"
-        },
-        {
-          "image": "https://assets.decocache.com/fossil/5e544836-54ca-441a-baee-39212bd4e687/Banner-Secundario---Fem.---Masc.---Bolsa---Carteira.png",
-          "label": "Bolsas",
-          "buttonText": " CONHEÇA",
-          "href": "/s?q=Bolsa&utmi_pc=search&utmi_cp=Bolsa&sort=orders%3Adesc"
-        },
-        {
-          "image": "https://assets.decocache.com/fossil/5e8436e1-7ecf-4272-a956-a10b52fabb2e/Banner-Secundario---Fem.---Masc.---Bolsa---Carteira-(1).png",
-          "label": "Carteiras",
-          "href": "/s?q=carteira&utmi_pc=search&utmi_cp=carteira&sort=price%3Adesc",
-          "buttonText": "ESCOLHA A SUA"
-        }
-      ],
-      "header": {
-        "title": "Comprar Relógios Por Tipo"
-      }
     },
     {
       "__resolveType": "site/sections/Product/ProductShelf.tsx",
@@ -310,6 +280,44 @@
         "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
       },
       "title": "LANÇAMENTOS"
+    },
+    {
+      "__resolveType": "site/sections/Category/CategoryGrid.tsx",
+      "layout": {
+        "categoryCard": {
+          "textPosition": "bottom",
+          "textAlignment": "left"
+        }
+      },
+      "list": [
+        {
+          "image": "https://assets.decocache.com/fossil/bba617f9-8a00-4d10-90c9-2875fbe45f51/Banner-Secundario---Fem.---Masc.---Bolsa---Carteira-(2).png",
+          "label": "Femininos",
+          "buttonText": "CONHEÇA",
+          "href": "/relogio/feminino?sort=release%3Adesc"
+        },
+        {
+          "image": "https://assets.decocache.com/fossil/021d78c2-c9bf-4b6a-a7f7-a3bfbbeb6563/Banner-Secundario---Fem.---Masc.---Bolsa---Carteira-(3).png",
+          "label": "Masculinos",
+          "buttonText": " ENCANTE-SE",
+          "href": "/relogio/masculino?sort=release%3Adesc"
+        },
+        {
+          "image": "https://assets.decocache.com/fossil/5e544836-54ca-441a-baee-39212bd4e687/Banner-Secundario---Fem.---Masc.---Bolsa---Carteira.png",
+          "label": "Bolsas",
+          "buttonText": " CONHEÇA",
+          "href": "/s?q=Bolsa&utmi_pc=search&utmi_cp=Bolsa&sort=orders%3Adesc"
+        },
+        {
+          "image": "https://assets.decocache.com/fossil/5e8436e1-7ecf-4272-a956-a10b52fabb2e/Banner-Secundario---Fem.---Masc.---Bolsa---Carteira-(1).png",
+          "label": "Carteiras",
+          "href": "/s?q=carteira&utmi_pc=search&utmi_cp=carteira&sort=price%3Adesc",
+          "buttonText": "ESCOLHA A SUA"
+        }
+      ],
+      "header": {
+        "title": "Comprar Relógios Por Tipo"
+      }
     },
     {
       "__resolveType": "site/sections/Content/BannerFossil.tsx",
