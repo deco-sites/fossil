@@ -176,16 +176,16 @@
                 "action": {
                   "href": "/relogio/masculino?sort=release%3Adesc"
                 },
-                "mobile": "https://assets.decocache.com/fossil/0ead4826-7688-4d81-97bf-fb05172b0a96/WhatsApp-Image-2025-08-07-at-15.53.42-(2).jpeg",
-                "desktop": "https://assets.decocache.com/fossil/971145f3-4253-4287-9cd0-0e7dfaad5f3a/WhatsApp-Image-2025-08-07-at-15.53.41-(1).jpeg",
+                "mobile": "https://assets.decocache.com/fossil/5581b7c5-71f2-42f1-8ce7-445b11a14774/Banner-Slide---Everett---Harlow---Sale-40-OFF-640x760.png",
+                "desktop": "https://assets.decocache.com/fossil/c089f1eb-9bc2-41fc-b91b-54efa1df1781/Banner-Slide---Everett---Harlow---Sale-40-OFF---1920x600.png",
                 "alt": "Masculinos"
               },
               {
                 "action": {
                   "href": "/off"
                 },
-                "mobile": "https://assets.decocache.com/fossil/9b09cba8-d593-491a-a40e-d7f7bb87b561/WhatsApp-Image-2025-08-06-at-17.58.48-(1).jpeg",
-                "desktop": "https://assets.decocache.com/fossil/cf847d9b-4506-4a47-b6c1-65385f287568/WhatsApp-Image-2025-08-06-at-17.58.46-(3).jpeg",
+                "mobile": "https://assets.decocache.com/fossil/58e7dea7-6d01-4869-8aa6-78e95c9e80f6/Banner-Slide---Everett---Harlow---Sale-40-OFF-640x760-(1).png",
+                "desktop": "https://assets.decocache.com/fossil/83f79247-7129-45d9-ac67-00b7df329411/Banner-Slide---Everett---Harlow---Sale-40-OFF---1920x600-(1).png",
                 "alt": "ate4OFF"
               }
             ],
@@ -195,7 +195,7 @@
           "rule": {
             "__resolveType": "website/matchers/date.ts",
             "start": "2025-08-11T03:00:00.000Z",
-            "end": "2025-08-20T02:59:00.000Z"
+            "end": "2025-08-25T02:59:00.000Z"
           }
         },
         {
