@@ -241,6 +241,55 @@
       ]
     },
     {
+      "__resolveType": "site/sections/Product/ProductShelf.tsx",
+      "layout": {
+        "showArrows": true,
+        "numberOfSliders": {
+          "desktop": 4,
+          "mobile": 2
+        },
+        "headerAlignment": "left",
+        "headerfontSize": "Small"
+      },
+      "products": {
+        "props": {
+          "sort": "discount:desc",
+          "count": 16,
+          "collection": "2146"
+        },
+        "crossSelling": "similars",
+        "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+      },
+      "cardLayout": {
+        "layout": {
+          "hide": {
+            "allPrices": false,
+            "favoriteIcon": true,
+            "installments": false,
+            "productDescription": true
+          },
+          "basics": {
+            "oldPriceSize": "Normal",
+            "contentAlignment": "Left"
+          },
+          "onMouseOver": {
+            "card": "None",
+            "image": "Change image",
+            "showCta": true,
+            "showCardShadow": false,
+            "showSkuSelector": false,
+            "showFavoriteIcon": false
+          },
+          "elementsPositions": {
+            "skuSelector": "Bottom",
+            "favoriteIcon": "Top right"
+          }
+        },
+        "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
+      },
+      "title": "LANÇAMENTOS"
+    },
+    {
       "__resolveType": "site/sections/Category/CategoryGrid.tsx",
       "layout": {
         "categoryCard": {
@@ -293,55 +342,6 @@
       },
       "button": {},
       "url": "/lancamentos"
-    },
-    {
-      "__resolveType": "site/sections/Product/ProductShelf.tsx",
-      "layout": {
-        "showArrows": true,
-        "numberOfSliders": {
-          "desktop": 4,
-          "mobile": 2
-        },
-        "headerAlignment": "left",
-        "headerfontSize": "Small"
-      },
-      "products": {
-        "props": {
-          "sort": "discount:desc",
-          "count": 16,
-          "collection": "2146"
-        },
-        "crossSelling": "similars",
-        "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-      },
-      "cardLayout": {
-        "layout": {
-          "hide": {
-            "allPrices": false,
-            "favoriteIcon": true,
-            "installments": false,
-            "productDescription": true
-          },
-          "basics": {
-            "oldPriceSize": "Normal",
-            "contentAlignment": "Left"
-          },
-          "onMouseOver": {
-            "card": "None",
-            "image": "Change image",
-            "showCta": true,
-            "showCardShadow": false,
-            "showSkuSelector": false,
-            "showFavoriteIcon": false
-          },
-          "elementsPositions": {
-            "skuSelector": "Bottom",
-            "favoriteIcon": "Top right"
-          }
-        },
-        "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
-      },
-      "title": "LANÇAMENTOS"
     },
     {
       "__resolveType": "site/sections/Content/BannerFossilCarousel.tsx",
