@@ -29,7 +29,11 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
       {children && children.length > 0 && (
         <div
           class="n1-menu--submenu fixed hidden hover:flex group-hover:flex bg-base-100 z-50 items-start  justify-center gap-6  w-screen border-t-4 border-solid border-primary"
-          style={{ top: "0px", left: "0px", marginTop: headerHeight }}
+          style={{
+            top: "0px",
+            left: "0px",
+            marginTop: headerHeight,
+          }}
         >
           <div class=" w-full   max-w-6xl flex items-start  justify-between ">
             <ul class="flex items-start justify-center pr-4">
@@ -79,7 +83,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
                         height={236}
                         loading="lazy"
                       />
-                    ),
+                    )
                 )}
             </div>
           </div>
