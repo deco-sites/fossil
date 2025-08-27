@@ -6,9 +6,10 @@ import { useId } from "../../sdk/useId.ts";
 import { useOffer } from "../../util/useOffer.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import type { Product } from "apps/commerce/types.ts";
-import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
+// import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import { clx } from "../../sdk/clx.ts";
 import { AppContext } from "../../apps/site.ts";
+import { mapProductToAnalyticsItem } from "../../util/formatToAnalytics.ts";
 
 export interface Props {
   products: Product[] | null;
@@ -70,24 +71,22 @@ function ProductShelf({
               : "text-center"
           }`}
         >
-          {title &&
-            (
-              <h2
-                class={clx(
-                  `${styleTitle[layout?.headerStyle ?? "variante1"]}`,
-                )}
-              >
-                {title}
-              </h2>
-            )}
+          {title && (
+            <h2
+              class={clx(`${styleTitle[layout?.headerStyle ?? "variante1"]}`)}
+            >
+              {title}
+            </h2>
+          )}
         </div>
         <div
           id={id}
           class={clx(
             "grid relative  ",
-            (layout?.showArrows && device === "desktop") &&
+            layout?.showArrows &&
+              device === "desktop" &&
               "grid-cols-[48px_1fr_48px] sm:grid-cols-[70px_1fr_70px] grid-rows-[1fr_48px_1fr_64px]",
-            "px-0 w-full",
+            "px-0 w-full"
           )}
         >
           <Slider class="carousel sm:carousel-end row-[1/-2] ">
@@ -97,7 +96,7 @@ function ProductShelf({
                 class={clx(
                   "carousel-item",
                   slideDesktop[layout?.numberOfSliders?.desktop ?? 3],
-                  slideMobile[layout?.numberOfSliders?.mobile ?? 1],
+                  slideMobile[layout?.numberOfSliders?.mobile ?? 1]
                 )}
               >
                 <ProductCard
@@ -127,8 +126,8 @@ function ProductShelf({
             {products?.map((_, index) => (
               <li
                 class={`carousel-item   md:${
-                  ((index === 0) || (index % 4 === 0)) ? "" : "hidden"
-                } ${((index === 0) || (index % 2 === 0)) ? "" : "hidden"}`}
+                  index === 0 || index % 4 === 0 ? "" : "hidden"
+                } ${index === 0 || index % 2 === 0 ? "" : "hidden"}`}
               >
                 <Slider.Dot index={index}>
                   <div class="py-5">
@@ -139,18 +138,16 @@ function ProductShelf({
             ))}
           </ul>
 
-          {(layout?.showArrows && device === "desktop") && (
+          {layout?.showArrows && device === "desktop" && (
             <>
               <div class="hidden md:flex items-center justify-center z-10 col-start-1 row-start-2">
                 <Slider.PrevButton class="absolute w-12 h-12 flex justify-center items-center">
-                  <div class="text-base hidden md:flex items-center justify-center gap-1 text-primary font-medium before:bg-arrow-left before:bg-no-repeat before:bg-center before:bg-14 before:w-6 before:h-6 before:block after:mb-2px">
-                  </div>
+                  <div class="text-base hidden md:flex items-center justify-center gap-1 text-primary font-medium before:bg-arrow-left before:bg-no-repeat before:bg-center before:bg-14 before:w-6 before:h-6 before:block after:mb-2px"></div>
                 </Slider.PrevButton>
               </div>
               <div class="flex items-center justify-center z-10 col-start-3 row-start-2">
                 <Slider.NextButton class="absolute w-12 h-12 flex justify-center items-center">
-                  <div class=" hidden md:flex items-center justify-center ga-1 text-base text-primary font-medium after:bg-arrow-right after:bg-no-repeat after:bg-center after:bg-14 after:w-6 after:h-6 after:block after:mb-2px">
-                  </div>
+                  <div class=" hidden md:flex items-center justify-center ga-1 text-base text-primary font-medium after:bg-arrow-right after:bg-no-repeat after:bg-center after:bg-14 after:w-6 after:h-6 after:block after:mb-2px"></div>
                 </Slider.NextButton>
               </div>
             </>
@@ -186,7 +183,7 @@ function ProductShelf({
                   mapProductToAnalyticsItem({
                     index,
                     product,
-                    ...(useOffer(product.offers)),
+                    ...useOffer(product.offers),
                   })
                 ),
               },

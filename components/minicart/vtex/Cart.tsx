@@ -1,4 +1,5 @@
-import { itemToAnalyticsItem, useCart } from "apps/vtex/hooks/useCart.ts";
+import { useCart } from "apps/vtex/hooks/useCart.ts";
+import { itemToAnalyticsItem } from "../../../util/formatToAnalytics.ts";
 import BaseCart from "../common/Cart.tsx";
 
 function Cart() {
@@ -32,7 +33,8 @@ function Cart() {
       coupon={coupon}
       onAddCoupon={(text) => addCouponsToCart({ text })}
       onUpdateQuantity={(quantity, index) =>
-        updateItems({ orderItems: [{ index, quantity }] })}
+        updateItems({ orderItems: [{ index, quantity }] })
+      }
       itemToAnalyticsItem={(index) => {
         const item = items[index];
 
