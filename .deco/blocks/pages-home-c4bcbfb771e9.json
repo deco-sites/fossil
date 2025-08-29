@@ -219,14 +219,6 @@
                 "mobile": "https://assets.decocache.com/fossil/18e17794-1546-4840-b6f1-f526edc2d28b/Banner-Slide-Townsman---Carlie---Sale-40-OFF--640x760-(3).png",
                 "desktop": "https://assets.decocache.com/fossil/5cb2845f-0544-4994-8717-4b01a588fe0c/Banner-Slide-Townsman---Carlie---Sale-40-OFF-1920x600-(3).png",
                 "alt": "Carlie"
-              },
-              {
-                "desktop": "https://assets.decocache.com/fossil/326215bb-9d0e-4850-94bc-3b13e85f0bb2/Banner-Slide-Townsman---Carlie---Sale-40-OFF-1920x600-(4).png",
-                "mobile": "https://assets.decocache.com/fossil/60fee30b-e4b7-4ead-b36a-161a86c09ca5/Banner-Slide-Townsman---Carlie---Sale-40-OFF--640x760-(4).png",
-                "alt": "Sale_40",
-                "action": {
-                  "href": "/off?sort=discount%3Adesc"
-                }
               }
             ],
             "preload": true,
