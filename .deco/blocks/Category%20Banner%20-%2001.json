@@ -90,6 +90,13 @@
         }
       },
       "matcher": "/livelo*"
+    },
+    {
+      "image": {
+        "desktop": "https://assets.decocache.com/fossil/304b62a5-7adf-41a4-a654-a7d95c868c12/desktop-(8).png",
+        "mobile": "https://assets.decocache.com/fossil/2847d0a5-3a47-480f-ae6d-f56d1e96a229/mobile-(9).png"
+      },
+      "matcher": "/acessorios"
     }
   ],
   "__resolveType": "site/sections/Category/CategoryBanner.tsx"
