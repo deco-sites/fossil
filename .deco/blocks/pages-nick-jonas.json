@@ -1,0 +1,52 @@
+{
+  "name": "Nick Jonas",
+  "path": "/nick-jonas",
+  "seo": {
+    "type": "website",
+    "jsonLDs": [],
+    "__resolveType": "site/sections/Seo/SeoBaseCustomV2.tsx"
+  },
+  "sections": [
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "site/sections/NickJonasHero.tsx",
+      "topBarText": "THE NICK JONAS COLLECTION: GET IT FIRST AT FOSSIL",
+      "backgroundImage": "https://assets.decocache.com/fossil/38b7f127-2b11-458d-a5d9-b27c63ae7fa8/nick-jonas-hero-bg.jpg",
+      "buttonText": "Shop All",
+      "buttonLink": "/nick-jonas-collection",
+      "logo": "https://assets.decocache.com/fossil/87b73f6f-3479-41d2-99da-a84fc15b880d/NJxFossil_Vertical_W.png"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/NickJonasProductShelf.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "query": " ",
+            "sort": "",
+            "count": 4,
+            "fuzzy": "automatic"
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "site/sections/NickJonasCollection.tsx",
+      "title": "Valeu Valls!!!"
+    },
+    {
+      "__resolveType": "site/sections/HeroQuote.tsx",
+      "quote": "\"Wearing watches should be fun. It's an expression of who you are.\"",
+      "backgroundImage": "https://assets.decocache.com/fossil/cd51e430-dfac-45eb-ada1-929d310b148f/hero-quote-background.jpg",
+      "buttonText": "Shop All",
+      "buttonLink": "/products"
+    },
+    {
+      "__resolveType": "Footer - 04"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}
