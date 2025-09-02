@@ -13,7 +13,8 @@
     "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
     "@deco/deco": "jsr:@deco/deco@1.115.7",
     "@deco/durable": "jsr:@deco/durable@0.5.3",
-    "@deco/dev": "jsr:@deco/dev@1.115.7"
+    "@deco/dev": "jsr:@deco/dev@1.115.7",
+    "@deco/mcp": "jsr:@deco/mcp@0.7.3"
   },
   "tasks": {
     "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",
