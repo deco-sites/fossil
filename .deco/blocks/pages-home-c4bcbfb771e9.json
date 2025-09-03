@@ -166,27 +166,19 @@
             "images": [
               {
                 "action": {
-                  "href": "/s?q=harlow&utmi_pc=search&utmi_cp=harlow"
+                  "href": "/s?q=machine&utmi_pc=search&utmi_cp=machine"
                 },
-                "mobile": "https://assets.decocache.com/fossil/707aaaf2-19cd-482d-aa19-e5a859f57678/Banner-Slide---Machine---Sale---Carlie-640x760-(1)-(1).png",
-                "desktop": "https://assets.decocache.com/fossil/fba010dd-28ef-4901-a82b-b26a1942e27e/Banner-Slide---Machine---Sale---Carlie-1920x600.png",
-                "alt": "Femininos"
+                "mobile": "https://assets.decocache.com/fossil/ad44a3b1-01a5-4d73-8934-cfc301e26578/Prancheta-2-(3).png",
+                "desktop": "https://assets.decocache.com/fossil/8269aa94-a73c-471d-aae5-7cadbbafa580/Prancheta-1.png",
+                "alt": "Machine"
               },
               {
                 "action": {
                   "href": "/relogio/masculino?sort=release%3Adesc"
                 },
-                "mobile": "https://assets.decocache.com/fossil/5581b7c5-71f2-42f1-8ce7-445b11a14774/Banner-Slide---Everett---Harlow---Sale-40-OFF-640x760.png",
-                "desktop": "https://assets.decocache.com/fossil/c089f1eb-9bc2-41fc-b91b-54efa1df1781/Banner-Slide---Everett---Harlow---Sale-40-OFF---1920x600.png",
-                "alt": "Masculinos"
-              },
-              {
-                "action": {
-                  "href": "/off"
-                },
-                "mobile": "https://assets.decocache.com/fossil/58e7dea7-6d01-4869-8aa6-78e95c9e80f6/Banner-Slide---Everett---Harlow---Sale-40-OFF-640x760-(1).png",
-                "desktop": "https://assets.decocache.com/fossil/83f79247-7129-45d9-ac67-00b7df329411/Banner-Slide---Everett---Harlow---Sale-40-OFF---1920x600-(1).png",
-                "alt": "ate4OFF"
+                "mobile": "https://assets.decocache.com/fossil/c090122b-23f1-4b65-a11b-d53917c44f06/mobile.jpg",
+                "desktop": "https://assets.decocache.com/fossil/34df500e-9f9c-489f-be9c-a290130e7553/desktoo.jpg",
+                "alt": "/relogio/feminino?sort=release%3Adesc"
               }
             ],
             "preload": true,
@@ -194,8 +186,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "start": "2025-08-11T03:00:00.000Z",
-            "end": "2025-08-25T02:59:00.000Z"
+            "start": "2025-09-03T03:00:00.000Z",
+            "end": "2025-09-08T02:59:00.000Z"
           }
         },
         {
@@ -227,7 +219,7 @@
           "rule": {
             "__resolveType": "website/matchers/date.ts",
             "start": "2025-08-25T03:00:00.000Z",
-            "end": "2025-09-06T02:59:00.000Z"
+            "end": "2025-09-03T02:59:00.000Z"
           }
         }
       ]
