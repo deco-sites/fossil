@@ -33,8 +33,7 @@ function Cart() {
       coupon={coupon}
       onAddCoupon={(text) => addCouponsToCart({ text })}
       onUpdateQuantity={(quantity, index) =>
-        updateItems({ orderItems: [{ index, quantity }] })
-      }
+        updateItems({ orderItems: [{ index, quantity }] })}
       itemToAnalyticsItem={(index) => {
         const item = items[index];
 

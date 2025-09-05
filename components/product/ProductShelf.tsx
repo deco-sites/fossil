@@ -86,7 +86,7 @@ function ProductShelf({
             layout?.showArrows &&
               device === "desktop" &&
               "grid-cols-[48px_1fr_48px] sm:grid-cols-[70px_1fr_70px] grid-rows-[1fr_48px_1fr_64px]",
-            "px-0 w-full"
+            "px-0 w-full",
           )}
         >
           <Slider class="carousel sm:carousel-end row-[1/-2] ">
@@ -96,7 +96,7 @@ function ProductShelf({
                 class={clx(
                   "carousel-item",
                   slideDesktop[layout?.numberOfSliders?.desktop ?? 3],
-                  slideMobile[layout?.numberOfSliders?.mobile ?? 1]
+                  slideMobile[layout?.numberOfSliders?.mobile ?? 1],
                 )}
               >
                 <ProductCard
@@ -112,6 +112,7 @@ function ProductShelf({
 
           {/** Dots */}
           <style
+            // deno-lint-ignore react-no-danger
             dangerouslySetInnerHTML={{
               __html: `
           @property --dot-progress {
@@ -142,12 +143,14 @@ function ProductShelf({
             <>
               <div class="hidden md:flex items-center justify-center z-10 col-start-1 row-start-2">
                 <Slider.PrevButton class="absolute w-12 h-12 flex justify-center items-center">
-                  <div class="text-base hidden md:flex items-center justify-center gap-1 text-primary font-medium before:bg-arrow-left before:bg-no-repeat before:bg-center before:bg-14 before:w-6 before:h-6 before:block after:mb-2px"></div>
+                  <div class="text-base hidden md:flex items-center justify-center gap-1 text-primary font-medium before:bg-arrow-left before:bg-no-repeat before:bg-center before:bg-14 before:w-6 before:h-6 before:block after:mb-2px">
+                  </div>
                 </Slider.PrevButton>
               </div>
               <div class="flex items-center justify-center z-10 col-start-3 row-start-2">
                 <Slider.NextButton class="absolute w-12 h-12 flex justify-center items-center">
-                  <div class=" hidden md:flex items-center justify-center ga-1 text-base text-primary font-medium after:bg-arrow-right after:bg-no-repeat after:bg-center after:bg-14 after:w-6 after:h-6 after:block after:mb-2px"></div>
+                  <div class=" hidden md:flex items-center justify-center ga-1 text-base text-primary font-medium after:bg-arrow-right after:bg-no-repeat after:bg-center after:bg-14 after:w-6 after:h-6 after:block after:mb-2px">
+                  </div>
                 </Slider.NextButton>
               </div>
             </>

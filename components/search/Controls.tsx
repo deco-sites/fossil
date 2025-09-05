@@ -39,7 +39,7 @@ function SearchControls(
   }: Props,
 ) {
   const open = useSignal(false);
-  const url = new URL(_url, window.location.origin);
+  const url = new URL(_url, globalThis.window.location.origin);
   const searchParams = url.search;
   const urlSearchCustom = `s?q=${GetSearchQueryParameter(searchParams)}`;
 

@@ -55,6 +55,7 @@ export function loader(props: Props, _req: Request, ctx: AppContext) {
     jsonLD.product.isVariantOf.hasVariant = [];
   }
 
+  // deno-lint-ignore react-rules-of-hooks
   const { listPrice, priceWithPixDiscount } = useOffer(jsonLD?.product.offers);
 
   if (jsonLD?.product.offers?.highPrice) {

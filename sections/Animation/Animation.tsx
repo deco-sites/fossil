@@ -33,6 +33,7 @@ function Animation(
   return (
     <>
       <style
+        // deno-lint-ignore react-no-danger
         dangerouslySetInnerHTML={{ __html: animationByType[animationType] }}
       >
       </style>
@@ -44,7 +45,8 @@ function Animation(
         <Component {...props} />
       </div>
       <script
-        async={true}
+        async
+        // deno-lint-ignore react-no-danger
         dangerouslySetInnerHTML={{
           __html: `
                 var observer = new IntersectionObserver(function(entries) {
@@ -148,6 +150,7 @@ export function Preview() {
   return (
     <div>
       <style
+        // deno-lint-ignore react-no-danger
         dangerouslySetInnerHTML={{ __html: animationByType["slide-left"] }}
       >
       </style>

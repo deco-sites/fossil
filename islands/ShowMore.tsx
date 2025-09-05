@@ -34,6 +34,7 @@ export default function ShowMore(
     >
       {children}
       <button
+        type="button"
         class={`btn cursor-pointer absolute ${loading.value ? "hidden" : ""}`}
         onClick={() => {
           loading.value = true;
@@ -44,9 +45,12 @@ export default function ShowMore(
             element.click();
           }
           if (pageInfo.nextPage) {
-            const url = new URL(pageInfo.nextPage, window.location.href);
+            const url = new URL(
+              pageInfo.nextPage,
+              globalThis.window.location.href,
+            );
             url.searchParams.delete("partial");
-            window.history.replaceState({}, "", url.toString());
+            globalThis.window.history.replaceState({}, "", url.toString());
           }
         }}
       >

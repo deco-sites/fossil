@@ -41,7 +41,7 @@ export default function PresenteShopByGender(
           <div class="w-full max-h-[620px]">
             <Image
               src={image}
-              loading={"lazy"}
+              loading="lazy"
               width={720}
               class="h-full object-contain relative"
             />

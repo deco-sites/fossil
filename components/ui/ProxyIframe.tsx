@@ -17,7 +17,10 @@ const runOnMount = () => {
 export default function ProxyIframe({ src }: Props) {
   return (
     <>
-      <script dangerouslySetInnerHTML={{ __html: `(${runOnMount})();` }}>
+      <script
+        // deno-lint-ignore react-no-danger
+        dangerouslySetInnerHTML={{ __html: `(${runOnMount})();` }}
+      >
       </script>
       <iframe
         id="proxy-loader"

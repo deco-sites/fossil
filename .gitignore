@@ -83,3 +83,11 @@ _docker_deps.ts
 .metadata/changeset.json
 
 *.tmp
+
+# AI assistants
+.claude/
+.codex/
+.gemini/
+**/CLAUDE.md
+**/AGENTS.md
+**/GEMINI.md

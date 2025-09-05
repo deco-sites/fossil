@@ -37,7 +37,7 @@ export default function PresenteInfoCard({ cards }: Props) {
               <div class="w-full">
                 <Image
                   src={image}
-                  loading={"lazy"}
+                  loading="lazy"
                   width={500}
                   class="w-full h-full"
                 />

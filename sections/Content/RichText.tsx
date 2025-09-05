@@ -13,6 +13,7 @@ export default function RichText(
 ) {
   return (
     <div
+      // deno-lint-ignore react-no-danger
       dangerouslySetInnerHTML={{ __html: text }}
       style={{
         maxWidth: containerWidth ? containerWidth : 1440,

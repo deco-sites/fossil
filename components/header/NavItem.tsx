@@ -61,7 +61,10 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
 
                   {index === 0 && (
                     <a href={url} class="pt-20">
-                      <button class="n1-custom-style-navbar--button border-[1px] border-solid border-[#7F7F7F]  hover:bg-warning hover:border-none  font-medium text-primary hover:text-white w-[150px] h-11 text-[18px] leading-6 uppercase grid place-content-center">
+                      <button
+                        type="button"
+                        class="n1-custom-style-navbar--button border-[1px] border-solid border-[#7F7F7F]  hover:bg-warning hover:border-none  font-medium text-primary hover:text-white w-[150px] h-11 text-[18px] leading-6 uppercase grid place-content-center"
+                      >
                         Ver todos
                       </button>
                     </a>
@@ -83,7 +86,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
                         height={236}
                         loading="lazy"
                       />
-                    )
+                    ),
                 )}
             </div>
           </div>

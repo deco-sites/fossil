@@ -45,6 +45,7 @@ export default {
         "Helvetica Neue",
         "Helvetica",
       ],
+      benton: ["Benton Modern Display", "sans-serif"],
     },
     extend: {
       animation: {
@@ -61,6 +62,8 @@ export default {
         "primary-content": "#282828",
         "warning": "#9D6E2D",
         "gray61": "#618175",
+        "nj-primary": "#F5F1E9",
+        "nj-secondary": "#287851",
       },
       letterSpacing: {
         "one": "1px",

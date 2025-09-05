@@ -91,6 +91,7 @@ export default function Newsletter(props: Props) {
       {form.helpText && (
         <div
           class="text-sm"
+          // deno-lint-ignore react-no-danger
           dangerouslySetInnerHTML={{ __html: form.helpText }}
         />
       )}

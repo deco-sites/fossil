@@ -23,7 +23,9 @@ export default function RegionSelector(
                 id="currency"
                 class="select select-bordered select-sm h-10"
               >
-                {content.currency.map((crr) => <option>{crr.label}</option>)}
+                {content.currency.map((crr) => (
+                  <option key={crr.label}>{crr.label}</option>
+                ))}
               </select>
             </>
           )}
@@ -34,7 +36,9 @@ export default function RegionSelector(
                 id="language"
                 class="select select-bordered select-sm h-10"
               >
-                {content.language.map((lng) => <option>{lng.label}</option>)}
+                {content.language.map((lng) => (
+                  <option key={lng.label}>{lng.label}</option>
+                ))}
               </select>
             </>
           )}

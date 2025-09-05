@@ -15,10 +15,14 @@ export default function Section({ placeholderItems, items, slider }: Props) {
 
   return (
     <div class="py-6">
-      <Carousel
-        {...slider}
-        children={allItems.map((item) => <Card {...item} />)}
-      />
+      <Carousel {...slider}>
+        {allItems.map((item, idx) => (
+          <Card
+            key={item?.title ?? idx}
+            {...item}
+          />
+        ))}
+      </Carousel>
     </div>
   );
 }

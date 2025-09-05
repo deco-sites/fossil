@@ -40,7 +40,7 @@ function Coupon({ coupon, onAddCoupon }: Props) {
               class="input join-item"
               type="text"
               value={coupon ?? ""}
-              placeholder={"Cupom"}
+              placeholder="Cupom"
             />
             <Button
               class="join-item"

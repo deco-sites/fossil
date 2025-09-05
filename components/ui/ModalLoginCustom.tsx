@@ -12,15 +12,16 @@ function ModalLoginCustom() {
   return (
     <>
       <button
+        type="button"
         class={`group peer cursor-pointer duration-150 text-white`}
         onClick={async () => {
-          const currentPathname = window.location.pathname;
+          const currentPathname = globalThis.window.location.pathname;
 
           if (user.value?.email) {
             if (currentPathname !== "/my-account") {
-              window.location.pathname = "/my-account";
+              globalThis.window.location.pathname = "/my-account";
             } else {
-              window.location.href =
+              globalThis.window.location.href =
                 `/api/vtexid/pub/logout?scope=${storeScope}&returnUrl=https://www.${storeScope}.com.br`;
             }
           } else {
@@ -28,7 +29,7 @@ function ModalLoginCustom() {
               vtexIdScriptsLoaded.value = true;
               // deno-lint-ignore ban-ts-comment
               // @ts-expect-error
-              window.vtexid.start({
+              globalThis.window.vtexid.start({
                 userEmail: "",
                 locale: "pt-BR",
                 forceReload: true,
