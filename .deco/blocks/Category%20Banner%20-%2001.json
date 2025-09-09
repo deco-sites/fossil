@@ -70,7 +70,7 @@
           "__resolveType": "website/flags/multivariate/image.ts",
           "variants": [
             {
-              "value": "https://assets.decocache.com/fossil/e13b0e45-cfd8-4633-8deb-0573d7a4b0dc/Euro_banner_livelo_0707-(2)-(1).png",
+              "value": "https://assets.decocache.com/fossil/a83894ed-1cb8-41d6-9bdc-6510d5fb392a/fossil-DeSK-connect-livelo-(3).jpg",
               "rule": {
                 "__resolveType": "website/matchers/always.ts"
               }
@@ -81,7 +81,7 @@
           "__resolveType": "website/flags/multivariate/image.ts",
           "variants": [
             {
-              "value": "https://assets.decocache.com/fossil/f14b0378-b06a-4ec5-b73f-be2294a40178/Euro_banner_livelo_0707_desk.psd-(3)-(2).png",
+              "value": "https://assets.decocache.com/fossil/07e9c913-322e-49d5-85af-b7ef47ff978a/Principal-(6).png",
               "rule": {
                 "__resolveType": "website/matchers/always.ts"
               }
