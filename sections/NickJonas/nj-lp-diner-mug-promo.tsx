@@ -202,7 +202,7 @@ function DesktopLayout({
 function NJLPDinerMugPromo(props: Props) {
   return (
     <div class="relative w-full px-4 lg:px-0 bg-nj-primary">
-      <div class="container pt-[75px] max-lg:pt-[50px]">
+      <div class="container max-w-7xl pt-[75px] max-lg:pt-[50px]">
         <MobileLayout {...props} />
 
         <div class="relative">

@@ -172,8 +172,8 @@ function SecondaryCardContent({
   card: SecondaryCard;
   isDesktop?: boolean;
 }) {
-  const imageWidth = isDesktop ? 475 : 330;
-  const imageHeight = isDesktop ? 300 : 235;
+  const imageWidth = isDesktop ? 505 : 330;
+  const imageHeight = isDesktop ? 580 : 235;
   const mascotSize = isDesktop ? "size-[135px]" : "size-20";
   const mascotPosition = isDesktop ? "-bottom-10 left-0" : "-bottom-8 left-2";
 
@@ -187,7 +187,7 @@ function SecondaryCardContent({
             alt={card.title || ""}
             width={imageWidth}
             height={imageHeight}
-            class="w-full h-auto"
+            class="w-full h-auto max-w-full"
             classImage="rounded-3xl"
           />
           <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -329,48 +329,46 @@ function DesktopLayout({
 }: Props) {
   return (
     <div className="hidden lg:block relative px-8 py-16 container">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex gap-6 justify-between items-start">
-          <div className="w-[475px] max-w-[475px] flex-shrink-0 space-y-8 flex flex-col gap-16">
-            <div className="relative flex flex-col gap-4">
-              <div className="hidden lg:block absolute -top-12 -left-12">
-                <NJStars variant="desktop-1" class="text-primary" />
-              </div>
-              <div className="hidden lg:block absolute bottom-0 right-12">
-                <NJStars variant="desktop-2" class="text-primary" />
-              </div>
-
-              <HeaderSection
-                topLabel={topLabel}
-                title={title}
-                description={description}
-                cta={cta}
-                className="flex flex-col gap-4"
-              />
+      <div className="flex gap-5 justify-center items-start">
+        <div className="max-w-[515px] flex-shrink-0 space-y-8 flex flex-col gap-16">
+          <div className="relative flex flex-col gap-4">
+            <div className="hidden lg:block absolute -top-12 -left-12">
+              <NJStars variant="desktop-1" class="text-primary" />
+            </div>
+            <div className="hidden lg:block absolute bottom-0 right-12">
+              <NJStars variant="desktop-2" class="text-primary" />
             </div>
 
-            {secondaryCard && (
-              <SecondaryCardContent card={secondaryCard} isDesktop />
-            )}
+            <HeaderSection
+              topLabel={topLabel}
+              title={title}
+              description={description}
+              cta={cta}
+              className="flex flex-col gap-4"
+            />
           </div>
 
-          <div className="flex-1 max-w-[670px] min-w-0 relative">
-            <div className="relative">
-              <NJPicture
-                desktop={heroDesktopImage}
-                mobile={heroMobileImage}
-                alt={title}
-                width={670}
-                height={750}
-                class="overflow-hidden w-full h-auto max-w-full"
-                classImage="rounded-3xl"
-              />
-              <div className="absolute -top-20 -left-20">
-                <NJOrderTicket />
-              </div>
-              <div className="absolute -bottom-10 left-0">
-                <NJEggMascot class="size-[135px]" />
-              </div>
+          {secondaryCard && (
+            <SecondaryCardContent card={secondaryCard} isDesktop />
+          )}
+        </div>
+
+        <div className="flex-1 max-w-[715px] min-w-0 relative">
+          <div className="relative">
+            <NJPicture
+              desktop={heroDesktopImage}
+              mobile={heroMobileImage}
+              alt={title}
+              width={715}
+              height={800}
+              class="overflow-hidden w-full h-auto max-w-full"
+              classImage="rounded-3xl"
+            />
+            <div className="absolute -top-20 -left-20">
+              <NJOrderTicket />
+            </div>
+            <div className="absolute -bottom-10 left-0">
+              <NJEggMascot class="size-[135px]" />
             </div>
           </div>
         </div>
@@ -382,8 +380,10 @@ function DesktopLayout({
 function NJCollectionHighlight(props: Props) {
   return (
     <div className="relative w-full overflow-hidden bg-nj-primary">
-      <MobileLayout {...props} />
-      <DesktopLayout {...props} />
+      <div className="container max-w-7xl">
+        <MobileLayout {...props} />
+        <DesktopLayout {...props} />
+      </div>
     </div>
   );
 }

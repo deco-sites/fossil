@@ -1,7 +1,7 @@
 export { default as LoadingFallback } from "../../components/LoadingFallback.tsx";
-import type { ImageWidget } from "apps/admin/widgets.ts";
-import NJPicture from "../../components/nick-jonas/NJPicture.tsx";
 import CTAButton from "../../components/nick-jonas/CTAButton.tsx";
+import ScrollTriggeredCarousel from "../../islands/NickJonas/ScrollTriggeredCarousel.tsx";
+import type { CarouselImage } from "../../components/nick-jonas/ScrollTriggeredCarousel.tsx";
 
 export interface Button {
   /** @title Texto do Botão */
@@ -24,22 +24,14 @@ export interface Props {
   cta?: Button;
 
   /**
-   * @title Imagem Desktop
-   * @description 410x538 renderizado
+   * @title Imagens do Carrossel
+   * @description Adicione de 1 a 3 imagens. Com 1 imagem, será renderizada estaticamente. Com 2-3 imagens, será ativado o carrossel com scroll.
+   * @maxItems 3
+   * @minItems 1
    */
-  desktopImage?: ImageWidget;
-
-  /**
-   * @title Imagem Mobile
-   * @description 335x414 renderizado
-   */
-  mobileImage?: ImageWidget;
-
-  /** @title Texto Alternativo da Imagem */
-  alt?: string;
+  images?: CarouselImage[];
 }
 
-// Reusable text components with responsive variants
 function Title({
   title,
   isMobile = false,
@@ -109,73 +101,31 @@ function CTA({ cta, isMobile = false }: { cta: Button; isMobile?: boolean }) {
   );
 }
 
-function ResponsiveImage({
-  desktopImage,
-  mobileImage,
-  alt,
+function ResponsiveImageComponent({
+  images,
   isMobile = false,
 }: {
-  desktopImage?: ImageWidget;
-  mobileImage?: ImageWidget;
-  alt: string | undefined;
+  images?: CarouselImage[];
   isMobile?: boolean;
 }) {
-  if (!desktopImage && !mobileImage) return null;
+  if (!images || images.length === 0) return null;
 
-  if (isMobile) {
-    return (
-      <div class="w-full flex justify-center">
-        <div class="aspect-[335/414] max-w-[335px] w-full">
-          <NJPicture
-            desktop={desktopImage}
-            mobile={mobileImage}
-            alt={alt || ""}
-            width={335}
-            height={414}
-            class="w-full h-full object-cover"
-            classImage="rounded-2xl"
-          />
-        </div>
-      </div>
-    );
-  }
+  const processedImages = images.map((image) => ({
+    ...image,
+    mobileImage: image.mobileImage || image.desktopImage,
+  }));
 
   return (
-    <div class="flex items-center">
-      <div class="aspect-[410/538] w-full max-w-[410px] ml-auto">
-        <NJPicture
-          desktop={desktopImage}
-          mobile={mobileImage}
-          alt={alt || ""}
-          width={410}
-          height={538}
-          class="w-full h-full object-cover"
-          classImage="rounded-3xl"
-        />
-      </div>
-    </div>
+    <ScrollTriggeredCarousel images={processedImages} isMobile={isMobile} />
   );
 }
 
-function MobileLayout({
-  title,
-  description,
-  emphasis,
-  cta,
-  desktopImage,
-  mobileImage,
-  alt,
-}: Props) {
+function MobileLayout({ title, description, emphasis, cta, images }: Props) {
   return (
     <div class="lg:hidden space-y-6">
       {title && <Title title={title} isMobile />}
 
-      <ResponsiveImage
-        desktopImage={desktopImage}
-        mobileImage={mobileImage}
-        alt={alt}
-        isMobile
-      />
+      <ResponsiveImageComponent images={images} isMobile />
 
       <Description description={description} isMobile />
 
@@ -186,33 +136,21 @@ function MobileLayout({
   );
 }
 
-function DesktopLayout({
-  title,
-  description,
-  emphasis,
-  cta,
-  desktopImage,
-  mobileImage,
-  alt,
-}: Props) {
+function DesktopLayout({ title, description, emphasis, cta, images }: Props) {
   return (
     <div class="hidden lg:grid lg:grid-cols-12 lg:gap-x-12 lg:gap-y-8">
       <div class="lg:col-span-7 flex flex-col space-y-6">
         {title && <Title title={title} />}
 
-        <div class="lg:ml-[25%] space-y-6">
+        <div class="lg:ml-[25%] space-y-6 !mt-10">
           <Description description={description} />
           <Emphasis emphasis={emphasis} />
           {cta?.name && <CTA cta={cta} />}
         </div>
       </div>
 
-      <div class="lg:col-span-5">
-        <ResponsiveImage
-          desktopImage={desktopImage}
-          mobileImage={mobileImage}
-          alt={alt}
-        />
+      <div class="lg:col-span-4">
+        <ResponsiveImageComponent images={images} />
       </div>
     </div>
   );
@@ -221,7 +159,7 @@ function DesktopLayout({
 function NJLPCoreClassics(props: Props) {
   return (
     <div class="bg-nj-primary w-full pt-8 lg:pt-16 px-5 pb-10 lg:pb-5">
-      <div class="container">
+      <div class="container max-w-7xl">
         <MobileLayout {...props} />
         <DesktopLayout {...props} />
       </div>

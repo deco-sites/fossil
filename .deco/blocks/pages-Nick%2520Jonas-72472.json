@@ -46,7 +46,27 @@
               "url": "#"
             },
             "desktopImage": "https://assets.decocache.com/fossil/bff6b28e-8194-4cd0-a246-1ca13b5c7351/NJ-LP-Module1-Img1-D.jpg",
-            "mobileImage": "https://assets.decocache.com/fossil/e7639eaa-a0c1-4b25-9287-c6d60a23338b/NJ-LP-Module1-Img1-M.jpg"
+            "mobileImage": "https://assets.decocache.com/fossil/e7639eaa-a0c1-4b25-9287-c6d60a23338b/NJ-LP-Module1-Img1-M.jpg",
+            "images": [
+              {
+                "loading": "lazy",
+                "fetchPriority": "auto",
+                "desktopImage": "https://assets.decocache.com/fossil/09f6100f-2773-492d-b3ad-8cb02f058c43/NJ-LP-Module1-Autoscroller1-Img1-D.jpg",
+                "mobileImage": "https://assets.decocache.com/fossil/b911952c-99a3-4be2-9b4b-48c541bc9c68/NJ-LP-Module1-Autoscroller1-Img1-M.jpg"
+              },
+              {
+                "loading": "lazy",
+                "fetchPriority": "auto",
+                "desktopImage": "https://assets.decocache.com/fossil/cc7be54e-07f6-4417-8cf2-db70421c592a/NJ-LP-Module1-Autoscroller1-Img2-D.jpg",
+                "mobileImage": "https://assets.decocache.com/fossil/1492a8dd-80d6-4406-9102-ac4a36fe66b4/NJ-LP-Module1-Autoscroller1-Img2-M.jpg"
+              },
+              {
+                "loading": "lazy",
+                "fetchPriority": "auto",
+                "desktopImage": "https://assets.decocache.com/fossil/04aa5046-13db-4fa0-b676-bea8c1218cae/NJ-LP-Module1-Autoscroller1-Img3-D.jpg",
+                "mobileImage": "https://assets.decocache.com/fossil/993eb703-5541-469e-bdd9-1fdd41a1f2d1/NJ-LP-Module1-Autoscroller1-Img3-M.jpg"
+              }
+            ]
           },
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -79,7 +99,27 @@
                 "height": 246,
                 "position": "right",
                 "offsetY": -210
-              }
+              },
+              "productImages": [
+                {
+                  "loading": "lazy",
+                  "fetchPriority": "auto",
+                  "desktopImage": "https://assets.decocache.com/fossil/6150d091-c5b7-4925-a77b-cd041ba19c66/NJ-LP-Module2-Autoscroller1-Img1-D.jpg",
+                  "alt": "1"
+                },
+                {
+                  "loading": "lazy",
+                  "fetchPriority": "auto",
+                  "desktopImage": "https://assets.decocache.com/fossil/d6d592af-4bc0-4f94-950d-d7df21672b41/NJ-LP-Module2-Autoscroller1-Img2-D.jpg",
+                  "alt": "2"
+                },
+                {
+                  "loading": "eager",
+                  "fetchPriority": "high",
+                  "desktopImage": "https://assets.decocache.com/fossil/94ea8d5e-afd9-403d-ab3d-27b5d3de8273/NJ-LP-Module2-Autoscroller1-Img3-D.webp",
+                  "alt": "3"
+                }
+              ]
             }
           },
           {
@@ -157,7 +197,27 @@
                 "height": 277,
                 "position": "right",
                 "offsetY": -210
-              }
+              },
+              "productImages": [
+                {
+                  "loading": "lazy",
+                  "fetchPriority": "low",
+                  "desktopImage": "https://assets.decocache.com/fossil/7a059a51-e78a-4082-b79f-ca53c9b4383c/NJ-LP-Module3-Autoscroller1-Img1-D.webp",
+                  "alt": "1"
+                },
+                {
+                  "loading": "lazy",
+                  "fetchPriority": "auto",
+                  "alt": "2",
+                  "desktopImage": "https://assets.decocache.com/fossil/0f7a3c12-e6b2-44ba-b1fe-344150f331da/NJ-LP-Module3-Autoscroller1-Img2-D.webp"
+                },
+                {
+                  "loading": "lazy",
+                  "fetchPriority": "auto",
+                  "desktopImage": "https://assets.decocache.com/fossil/f3e42d3e-d5a5-4ff4-8476-a424a9f91f01/NJ-LP-Module3-Autoscroller1-Img3-D_ALT.webp",
+                  "alt": "3"
+                }
+              ]
             }
           },
           {
@@ -234,7 +294,27 @@
                 "height": 277,
                 "position": "right",
                 "offsetY": -210
-              }
+              },
+              "productImages": [
+                {
+                  "loading": "lazy",
+                  "fetchPriority": "auto",
+                  "desktopImage": "https://assets.decocache.com/fossil/60cbf9e6-a00f-4c16-a294-8ed42dd29054/NJ-LP-Module4-Autoscroller1-Img1-D.jpg",
+                  "alt": "1"
+                },
+                {
+                  "loading": "lazy",
+                  "fetchPriority": "auto",
+                  "desktopImage": "https://assets.decocache.com/fossil/4530ca03-0f98-4765-a57f-ea61a4385a7b/NJ-LP-Module4-Autoscroller1-Img2-D.jpg",
+                  "alt": "2"
+                },
+                {
+                  "loading": "lazy",
+                  "fetchPriority": "auto",
+                  "alt": "3",
+                  "desktopImage": "https://assets.decocache.com/fossil/f15589e7-55cb-4e16-8d27-6607638986a4/NJ-LP-Module4-Autoscroller1-Img3-D.jpg"
+                }
+              ]
             }
           },
           {

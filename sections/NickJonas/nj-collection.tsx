@@ -45,7 +45,7 @@ function NJCollection({
 
   return (
     <div class="w-full bg-nj-primary pt-6 lg:pt-16 pb-3 px-5">
-      <div class="container">
+      <div class="container max-w-7xl">
         <NJProductCarousel
           products={products ?? []}
           title={title}

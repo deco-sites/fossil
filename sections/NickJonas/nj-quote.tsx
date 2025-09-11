@@ -210,17 +210,14 @@ function DesktopLayout({
 
 function NJQuote(props: Props) {
   return (
-    <section
-      className="relative w-full overflow-hidden"
-      aria-labelledby="quote-heading"
-    >
+    <div className="relative w-full overflow-hidden">
       <div className="sr-only" id="quote-heading">
         Nick Jonas Quote Section
       </div>
 
       <MobileLayout {...props} />
       <DesktopLayout {...props} />
-    </section>
+    </div>
   );
 }
 

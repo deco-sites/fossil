@@ -1,3 +1,4 @@
+export { default as LoadingFallback } from "../../components/LoadingFallback.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import NJPicture from "../../components/nick-jonas/NJPicture.tsx";
 import NJYouTubeModal from "../../islands/NJYouTubeModal.tsx";
@@ -142,38 +143,37 @@ function NJLPQuote({
   const hasVideoContent = videoUrl && linkText;
 
   return (
-    <section
-      class="bg-nj-primary relative w-full overflow-hidden"
-      aria-labelledby="quote-heading"
-    >
-      <div class="sr-only" id="quote-heading">
-        Seção de Citação Nick Jonas
-      </div>
+    <div class="bg-nj-primary relative w-full overflow-hidden">
+      <div class="container max-w-7xl">
+        <div class="sr-only" id="quote-heading">
+          Seção de Citação Nick Jonas
+        </div>
 
-      {/* Background Image Container with responsive aspect ratios */}
-      <div
-        class={`relative ${LAYOUT.aspectRatio.mobile} ${LAYOUT.aspectRatio.desktop} container overflow-hidden ${LAYOUT.borderRadius.mobile} ${LAYOUT.borderRadius.desktop}`}
-      >
-        <BackgroundContainer
-          desktopImage={desktopImage}
-          mobileImage={mobileImage}
-        />
-
-        {/* Content */}
+        {/* Background Image Container with responsive aspect ratios */}
         <div
-          class={`relative z-10 flex flex-col items-center justify-center h-full ${LAYOUT.contentPadding} text-center`}
+          class={`relative ${LAYOUT.aspectRatio.mobile} ${LAYOUT.aspectRatio.desktop} container overflow-hidden ${LAYOUT.borderRadius.mobile} ${LAYOUT.borderRadius.desktop}`}
         >
-          <QuoteContent quote={quote} author={author} />
+          <BackgroundContainer
+            desktopImage={desktopImage}
+            mobileImage={mobileImage}
+          />
 
-          {/* YouTube Link */}
-          {hasVideoContent && (
-            <div class="mt-4 lg:mt-6">
-              <NJYouTubeModal videoUrl={videoUrl} linkText={linkText} />
-            </div>
-          )}
+          {/* Content */}
+          <div
+            class={`relative z-10 flex flex-col items-center justify-center h-full ${LAYOUT.contentPadding} text-center`}
+          >
+            <QuoteContent quote={quote} author={author} />
+
+            {/* YouTube Link */}
+            {hasVideoContent && (
+              <div class="mt-4 lg:mt-6">
+                <NJYouTubeModal videoUrl={videoUrl} linkText={linkText} />
+              </div>
+            )}
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

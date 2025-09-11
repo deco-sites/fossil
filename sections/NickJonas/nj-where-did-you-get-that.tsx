@@ -33,7 +33,7 @@ function NJWhereDidYouGetThat({
   if (!items?.length) return null;
 
   return (
-    <div class="w-full bg-nj-primary pt-16 pb-8 lg:pb-12">
+    <div class="w-full bg-nj-primary pt-16">
       {/* Header */}
       <div class="text-center mb-6 lg:mb-8 px-5">
         <h2 class="font-benton italic text-4xl lg:text-6xl text-primary mb-4 leading-none">

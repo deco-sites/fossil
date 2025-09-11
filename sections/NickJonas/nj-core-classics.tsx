@@ -194,15 +194,22 @@ function DesktopCard({ card }: { card: Card }) {
 function NJCoreClassics({ cards = [] }: Props) {
   return (
     <div class="w-full bg-nj-primary pt-6 lg:pt-16 px-5">
-      {/* Mobile Layout */}
-      <div class="lg:hidden space-y-10">
-        {cards.map((card, index) => <MobileCard key={index} card={card} />)}
-      </div>
+      <div class="container max-w-7xl">
+        {/* Mobile Layout */}
+        <div class="lg:hidden space-y-10">
+          {cards.map((card, index) => <MobileCard key={index} card={card} />)}
+        </div>
 
-      {/* Desktop Layout */}
-      <div class="hidden lg:block">
-        <div class="max-w-7xl mx-auto flex flex-col gap-7">
-          {cards.map((card, index) => <DesktopCard key={index} card={card} />)}
+        {/* Desktop Layout */}
+        <div class="hidden lg:block">
+          <div class="max-w-7xl mx-auto flex flex-col gap-7">
+            {cards.map((card, index) => (
+              <DesktopCard
+                key={index}
+                card={card}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

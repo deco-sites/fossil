@@ -68,7 +68,7 @@ function NJLPCollection({ title, products = [] }: Props) {
 
   return (
     <div class="w-full bg-nj-primary pt-5 lg:pt-16 lg:px-8 overflow-x-hidden">
-      <div class="container">
+      <div class="container max-w-7xl">
         {title && <h2 class="sr-only">{title}</h2>}
 
         {/* Carousel */}

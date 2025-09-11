@@ -28,6 +28,7 @@ import * as $NewsletterModal from "./islands/NewsletterModal.tsx";
 import * as $NickJonas_NJLPCarousel from "./islands/NickJonas/NJLPCarousel.tsx";
 import * as $NickJonas_NJProductCarousel from "./islands/NickJonas/NJProductCarousel.tsx";
 import * as $NickJonas_NJSimpleCarousel from "./islands/NickJonas/NJSimpleCarousel.tsx";
+import * as $NickJonas_ScrollTriggeredCarousel from "./islands/NickJonas/ScrollTriggeredCarousel.tsx";
 import * as $OutOfStock from "./islands/OutOfStock.tsx";
 import * as $Pagination from "./islands/Pagination.tsx";
 import * as $Partner_Insider_UserObject from "./islands/Partner/Insider/UserObject.tsx";
@@ -76,6 +77,8 @@ const manifest = {
     "./islands/NickJonas/NJLPCarousel.tsx": $NickJonas_NJLPCarousel,
     "./islands/NickJonas/NJProductCarousel.tsx": $NickJonas_NJProductCarousel,
     "./islands/NickJonas/NJSimpleCarousel.tsx": $NickJonas_NJSimpleCarousel,
+    "./islands/NickJonas/ScrollTriggeredCarousel.tsx":
+      $NickJonas_ScrollTriggeredCarousel,
     "./islands/OutOfStock.tsx": $OutOfStock,
     "./islands/Pagination.tsx": $Pagination,
     "./islands/Partner/Insider/UserObject.tsx": $Partner_Insider_UserObject,

@@ -75,7 +75,7 @@ export function NJCarouselItem({
           class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-all duration-300 bg-black/60 backdrop-blur-sm"
           aria-hidden="true"
         >
-          <p class="font-benton text-white text-2xl p-4 text-center transform translate-y-8 group-hover:translate-y-0 transition-all duration-300 tracking-wider">
+          <p class="font-benton text-white text-3xl p-4 text-center transform translate-y-8 group-hover:translate-y-0 transition-all duration-300 tracking-wider">
             {item.caption}
           </p>
         </div>

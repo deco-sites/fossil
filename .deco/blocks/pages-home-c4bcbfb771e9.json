@@ -62,8 +62,7 @@
                 "slidesPerView": 4,
                 "slidesPerViewMobile": 1,
                 "spaceBetween": 20
-              },
-              "promotionalText": "Ganhe um brinde na compra"
+              }
             }
           },
           {
@@ -144,7 +143,7 @@
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
               "__resolveType": "site/sections/NickJonas/nj-where-did-you-get-that.tsx",
-              "title": "“Onde Você Comprou Isso?\"",
+              "title": "“Onde Você Comprou Isso?”",
               "description": "Acabou de chegar — nossos lançadores de conversa mais recentes.",
               "autoplaySeconds": 2,
               "items": [
@@ -175,6 +174,35 @@
                   "alt": "4",
                   "href": "#",
                   "caption": "Comprar Gilmore"
+                }
+              ]
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/NickJonas/nj-shop-by-categories.tsx",
+              "title": "Compre por Categoria",
+              "categories": [
+                {
+                  "name": "Masculino",
+                  "url": "#"
+                },
+                {
+                  "name": "Feminino",
+                  "url": "#"
+                },
+                {
+                  "name": "Relógios",
+                  "url": "#"
+                },
+                {
+                  "name": "Novidades",
+                  "url": "#"
+                },
+                {
+                  "name": "Outlet",
+                  "url": "#"
                 }
               ]
             }

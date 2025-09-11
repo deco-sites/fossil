@@ -4,15 +4,8 @@
 
 @font-face {
   font-family: "Benton Modern Display";
-  src: url("/fonts/BentonModDisp-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Benton Modern Display";
-  src: url("/fonts/BentonModDisp-RegularIt.woff2") format("woff2");
+  src: url("/fonts/BentonModernDisplayCompressedItalic_italic_extra-condensed.woff2")
+    format("woff2");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -21,6 +14,7 @@
 @layer base {
   /* Allow changing font family via CMS */
   html {
+    scroll-behavior: smooth;
     font-family: "soleil", "sans-serif";
   }
 

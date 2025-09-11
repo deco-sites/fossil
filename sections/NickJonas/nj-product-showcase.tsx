@@ -2,6 +2,8 @@ export { default as LoadingFallback } from "../../components/LoadingFallback.tsx
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import CTAButton from "../../components/nick-jonas/CTAButton.tsx";
 import NJPicture from "../../components/nick-jonas/NJPicture.tsx";
+import ScrollTriggeredCarousel from "../../islands/NickJonas/ScrollTriggeredCarousel.tsx";
+import type { CarouselImage } from "../../components/nick-jonas/ScrollTriggeredCarousel.tsx";
 
 export interface Button {
   /** @title Texto do Botão */
@@ -109,10 +111,12 @@ export interface Props {
   secondaryImageMobileConfig?: SecondaryImageConfig;
 
   /**
-   * @title Imagem do Produto
-   * @description Imagem do produto (visível apenas no desktop)
+   * @title Imagens do Produto
+   * @description Adicione de 1 a 3 imagens do produto. Com 1 imagem, será renderizada estaticamente. Com 2-3 imagens, será ativado o carrossel com scroll.
+   * @maxItems 3
+   * @minItems 1
    */
-  productImage?: ImageWidget;
+  productImages?: CarouselImage[];
 }
 
 function getSecondaryImageStyles(
@@ -366,20 +370,17 @@ function DesktopHeroImage({
   );
 }
 
-function ProductImage({ productImage }: { productImage?: ImageWidget }) {
-  if (!productImage) return null;
+function ProductImage({ productImages }: { productImages?: CarouselImage[] }) {
+  if (!productImages || productImages.length === 0) return null;
+
+  const processedImages = productImages.map((image) => ({
+    ...image,
+    mobileImage: image.mobileImage || image.desktopImage,
+  }));
 
   return (
-    <div class="flex justify-center lg:justify-start mt-[75px] max-w-[410px] max-h-[538px]">
-      <NJPicture
-        desktop={productImage}
-        mobile={productImage}
-        alt="Imagem do produto"
-        width={410}
-        height={538}
-        class="max-w-full"
-        classImage="rounded-3xl"
-      />
+    <div class="w-full mt-[75px]">
+      <ScrollTriggeredCarousel images={processedImages} isMobile={false} />
     </div>
   );
 }
@@ -428,11 +429,11 @@ function DesktopLayout({
   secondaryImageDesktop,
   secondaryImageMobile,
   secondaryImageDesktopConfig,
-  productImage,
+  productImages,
 }: Props) {
   return (
     <div class="hidden lg:block relative px-8 py-16">
-      <div class="max-w-7xl mx-auto overflow-visible">
+      <div class="container max-w-7xl mx-auto overflow-visible">
         <div class="grid grid-cols-12 gap-5 items-stretch">
           {/* Left Column - Images */}
           <div class="col-span-7 space-y-6">
@@ -456,7 +457,7 @@ function DesktopLayout({
               cta={cta}
             />
 
-            <ProductImage productImage={productImage} />
+            <ProductImage productImages={productImages} />
           </div>
         </div>
       </div>
