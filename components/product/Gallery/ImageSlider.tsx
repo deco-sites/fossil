@@ -93,6 +93,7 @@ export default function GallerySlider(props: Props) {
             <>
               {/* Dots Mobile */}
               <style
+                // deno-lint-ignore react-no-danger
                 dangerouslySetInnerHTML={{
                   __html: `
                   @property --dot-progress {

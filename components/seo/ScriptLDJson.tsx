@@ -10,6 +10,7 @@ function ScriptLDJson<T extends Record<string, unknown>>(props: T) {
     <Head>
       <script
         type="application/ld+json"
+        // deno-lint-ignore react-no-danger
         dangerouslySetInnerHTML={{
           __html: innerHtml,
         }}

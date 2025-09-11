@@ -27,9 +27,7 @@ export default function ProductCardPriceModel(props: Props) {
             props.priceCurrency || "BRL",
           )}
         </span>
-        <span class="text-[10px] lg:text-xs font-normal">
-          {" "}no PIX
-        </span>
+        <span class="text-[10px] lg:text-xs font-normal">no PIX</span>
       </p>
 
       {props.installmentBillingDuration &&
@@ -38,9 +36,9 @@ export default function ProductCardPriceModel(props: Props) {
           <span class="">
             {formatPrice(props.sellerPrice, props.priceCurrency || "BRL")}
           </span>
-          <span class="">{" "}em até{" "}</span>
+          <span class="">em até</span>
           <span class="">{props.installmentBillingDuration}x</span>
-          <span class="">{" "}de{" "}</span>
+          <span class="">de</span>
           <span class="">
             {formatPrice(
               props.installmentBillingIncrement,

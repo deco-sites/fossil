@@ -5,6 +5,7 @@ export type VNode = any;
 export const grid = {
   gap: {
     mobile: {
+      "0": "gap-0",
       "1": "gap-1",
       "2": "gap-2",
       "4": "gap-4",
@@ -13,6 +14,7 @@ export const grid = {
       "16": "gap-16",
     },
     desktop: {
+      "0": "lg:gap-0",
       "1": "lg:gap-1",
       "2": "lg:gap-2",
       "4": "lg:gap-4",

@@ -8,6 +8,7 @@ export default function Markdown({ text }: Props) {
   return (
     <div
       class="markdown-body prose"
+      // deno-lint-ignore react-no-danger
       dangerouslySetInnerHTML={{ __html: body }}
     />
   );

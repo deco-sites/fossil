@@ -30,22 +30,30 @@ const add_email_optin_inside_user_object = (
   },
 ) => {
   let user_formatted = { email_optin };
-  
+
   // deno-lint-ignore ban-ts-comment
   // @ts-ignore
-  globalThis.window.insider_object = JSON.parse(sessionStorage.getItem('user_object')) || globalThis.window.insider_object || { user: user_formatted };
+  globalThis.window.insider_object =
+    JSON.parse(sessionStorage.getItem("user_object")) ||
+    globalThis.window.insider_object || { user: user_formatted };
 
   if (email) {
-    user_formatted = Object.assign(user_formatted, {email});
+    user_formatted = Object.assign(user_formatted, { email });
   }
 
   // deno-lint-ignore ban-ts-comment
   // @ts-ignore
-  globalThis.window.insider_object.user = { ...globalThis.window.insider_object.user, ...user_formatted};
+  globalThis.window.insider_object.user = {
+    ...globalThis.window.insider_object.user,
+    ...user_formatted,
+  };
   // deno-lint-ignore ban-ts-comment
   // @ts-ignore
-  sessionStorage.setItem('user_object', JSON.stringify(globalThis.window.insider_object));
-}
+  sessionStorage.setItem(
+    "user_object",
+    JSON.stringify(globalThis.window.insider_object),
+  );
+};
 
 function Newsletter(
   { content, layout = {} }: Props,
@@ -82,9 +90,7 @@ function Newsletter(
     >
       <div class="flex">
         {content?.title && (
-          <h3
-            class={"text-2xl tracking-[1px] text-primary font-bold leading-none uppercase"}
-          >
+          <h3 class="text-2xl tracking-[1px] text-primary font-bold leading-none uppercase">
             {content?.title}
           </h3>
         )}

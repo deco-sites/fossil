@@ -47,15 +47,27 @@ export default function ThirdContent(props: Props) {
       </Head>
 
       {props.html && (
-        <div dangerouslySetInnerHTML={{ __html: props.html }}></div>
+        <div
+          // deno-lint-ignore react-no-danger
+          dangerouslySetInnerHTML={{ __html: props.html }}
+        >
+        </div>
       )}
 
       {props.css && (
-        <style dangerouslySetInnerHTML={{ __html: props.css }}></style>
+        <style
+          // deno-lint-ignore react-no-danger
+          dangerouslySetInnerHTML={{ __html: props.css }}
+        >
+        </style>
       )}
 
       {props.script && (
-        <script defer dangerouslySetInnerHTML={{ __html: props.script }}>
+        <script
+          defer
+          // deno-lint-ignore react-no-danger
+          dangerouslySetInnerHTML={{ __html: props.script }}
+        >
         </script>
       )}
     </>

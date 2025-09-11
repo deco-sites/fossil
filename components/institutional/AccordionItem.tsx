@@ -29,7 +29,11 @@ export function AccordionItem({ title, content, index = 0 }: PropsCurrent) {
         </span>
       </div>
       <div class="collapse-content px-0 !pb-0">
-        <div className="pt-5" dangerouslySetInnerHTML={{ __html: content }} />
+        <div
+          className="pt-5"
+          // deno-lint-ignore react-no-danger
+          dangerouslySetInnerHTML={{ __html: content }}
+        />
       </div>
     </div>
   );

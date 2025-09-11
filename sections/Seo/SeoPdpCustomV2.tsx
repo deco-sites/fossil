@@ -41,7 +41,7 @@ export function LoadingFallback(props: Partial<SectionProps<typeof loader>>) {
   );
 }
 export default function Section(
-  props: SectionProps<typeof loader>
+  props: SectionProps<typeof loader>,
 ): SEOSection {
   return <SeoBaseCustomV2 {...props} />;
 }

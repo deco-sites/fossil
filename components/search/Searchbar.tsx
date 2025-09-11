@@ -129,7 +129,7 @@ function Searchbar(
       const searchURL = `${action}?${name}=${
         encodeURIComponent(value)
       }&utmi_pc=search&utmi_cp=${encodeURIComponent(value)}`;
-      window.location.href = searchURL;
+      globalThis.window.location.href = searchURL;
     }
   };
   return (

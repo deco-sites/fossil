@@ -30,6 +30,7 @@ function HelpPage(
     <>
       <Head>
         <style
+          // deno-lint-ignore react-no-danger
           dangerouslySetInnerHTML={{
             __html: `
             .institucional-content__header-title {

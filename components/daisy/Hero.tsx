@@ -32,7 +32,9 @@ export default function Hero(props: Props) {
           <p className="py-6">{description}</p>
           {cta && (
             <a href={cta.href}>
-              <button className="btn btn-primary">{cta.text}</button>
+              <button type="button" className="btn btn-primary">
+                {cta.text}
+              </button>
             </a>
           )}
         </div>

@@ -35,10 +35,9 @@ function TabbedProductShelf({
 }: Props) {
   const id = useId();
   const platform = usePlatform();
-  const ti =
-    typeof tabIndex === "number"
-      ? Math.min(Math.max(tabIndex, 0), tabs.length)
-      : 0;
+  const ti = typeof tabIndex === "number"
+    ? Math.min(Math.max(tabIndex, 0), tabs.length)
+    : 0;
   const { products } = tabs[ti];
   if (!products || products.length === 0) {
     return null;
@@ -85,18 +84,16 @@ function TabbedProductShelf({
           ))}
         </Slider>
 
-        <>
-          <div class="hidden relative sm:block z-10 col-start-1 row-start-3">
-            <Slider.PrevButton class="btn btn-circle btn-outline absolute right-1/2 bg-base-100">
-              <Icon size={24} id="ChevronLeft" strokeWidth={3} />
-            </Slider.PrevButton>
-          </div>
-          <div class="hidden relative sm:block z-10 col-start-3 row-start-3">
-            <Slider.NextButton class="btn btn-circle btn-outline absolute left-1/2 bg-base-100">
-              <Icon size={24} id="ChevronRight" strokeWidth={3} />
-            </Slider.NextButton>
-          </div>
-        </>
+        <div class="hidden relative sm:block z-10 col-start-1 row-start-3">
+          <Slider.PrevButton class="btn btn-circle btn-outline absolute right-1/2 bg-base-100">
+            <Icon size={24} id="ChevronLeft" strokeWidth={3} />
+          </Slider.PrevButton>
+        </div>
+        <div class="hidden relative sm:block z-10 col-start-3 row-start-3">
+          <Slider.NextButton class="btn btn-circle btn-outline absolute left-1/2 bg-base-100">
+            <Icon size={24} id="ChevronRight" strokeWidth={3} />
+          </Slider.NextButton>
+        </div>
         <SliderJS rootId={id} />
         <SendEventOnView
           id={id}

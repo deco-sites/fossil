@@ -55,6 +55,7 @@ export default function Services({
             </p>
             <p
               class="text-base-content text-[16px] md:text-[18px]"
+              // deno-lint-ignore react-no-danger
               dangerouslySetInnerHTML={{ __html: service.description || "" }}
             >
             </p>

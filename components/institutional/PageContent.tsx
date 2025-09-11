@@ -21,6 +21,7 @@ function PageContent(props: SectionProps<ReturnType<typeof loader>>) {
     <>
       <Head>
         <style
+          // deno-lint-ignore react-no-danger
           dangerouslySetInnerHTML={{
             __html: `
             .linha-divs {
@@ -208,6 +209,7 @@ function PageContent(props: SectionProps<ReturnType<typeof loader>>) {
           <div className="conteiner-paragraph-intitucional mx-[5%] sm:mx-[10%]">
             <div
               className="element-text-institucional"
+              // deno-lint-ignore react-no-danger
               dangerouslySetInnerHTML={{ __html: content }}
             />
           </div>

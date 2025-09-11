@@ -2,6 +2,7 @@ import { Product } from "apps/commerce/types.ts";
 import { useOffer } from "../util/useOffer.ts";
 
 export function fix_data_struct_by_pix_payment(product: Product) {
+  // deno-lint-ignore react-rules-of-hooks
   const { listPrice, priceWithPixDiscount } = useOffer(product.offers);
 
   if (product.offers?.highPrice) {

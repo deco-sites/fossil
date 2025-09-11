@@ -52,7 +52,10 @@ function Notify({ productID }: Props) {
                   class="input input-bordered rounded-none !outline-none inline-block w-full max-w-80 h-10 font-arial px-2 !border !border-solid !border-primary"
                   name="email"
                 />
-                <button class="rounded-none disabled:loading uppercase w-[120px] !outline-none   text-white !h-10 inline-block font-scoutCond text-18 font-bold tracking-one  bg-warning border border-warning hover:brightness-90">
+                <button
+                  type="submit"
+                  class="rounded-none disabled:loading uppercase w-[120px] !outline-none   text-white !h-10 inline-block font-scoutCond text-18 font-bold tracking-one  bg-warning border border-warning hover:brightness-90"
+                >
                   Avisa-me
                 </button>
               </div>

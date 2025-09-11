@@ -42,7 +42,7 @@ export default function PresenteWhatNews({ title, news }: Props) {
                       src={image}
                       width={300}
                       class="relative transition-all hover:opacity-35"
-                      loading={"lazy"}
+                      loading="lazy"
                     />
                   </div>
                 )

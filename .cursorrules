@@ -1,0 +1,4 @@
+## Commits (Conventional Commits)
+
+- `feat:`, `fix:`, `docs:`, `refactor:`, `test:`, `chore:`, `perf:`
+- Scope optional but encouraged: `feat(cart): add coupon stacking`

@@ -13,7 +13,6 @@ import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import NavItem from "./NavItem.tsx";
 import { Buttons, Logo } from "../../components/header/Header.tsx";
-import { headerHeight } from "./constants.ts";
 
 // Make it sure to render it on the server only. DO NOT render it on an island
 function Navbar({
@@ -34,97 +33,105 @@ function Navbar({
   const platform = usePlatform();
   return (
     <>
-      {device === "desktop" ? (
-        // Header desktop
-        <div
-          class={`hidden sm:flex items-center justify-between border-base-200 w-full bg-white  m-auto px-6 relative font-soleil`}
-        >
+      {device === "desktop"
+        ? (
+          // Header desktop
           <div
-            class={`flex ${
-              logoPosition === "left"
-                ? "justify-start -order-1"
-                : "justify-center"
-            }`}
+            class={`hidden sm:flex items-center justify-between border-base-200 w-full bg-white  m-auto px-6 relative font-soleil`}
           >
+            <div
+              class={`flex ${
+                logoPosition === "left"
+                  ? "justify-start -order-1"
+                  : "justify-center"
+              }`}
+            >
+              {logo && (
+                <a
+                  href="/"
+                  aria-label="Store logo"
+                  class="block"
+                  id="logoFossil"
+                >
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={logo.width || 190}
+                    height={logo.height || 37}
+                    class={`w-48`}
+                    loading="eager"
+                    fetchPriority="high"
+                  />
+                </a>
+              )}
+            </div>
+            <div class="flex justify-between items-center">
+              <ul
+                class={`flex items-center gap-9 col-span-1   2xl:pl-0 ${
+                  logoPosition === "left" ? "justify-center" : "justify-start"
+                }`}
+              >
+                {items.map((item, idx) => (
+                  <NavItem key={item?.name ?? idx} item={item} />
+                ))}
+              </ul>
+            </div>
+            <div class="flex-none grid n1-custom-grid-navbar items-center justif-end w-auto font-medium">
+              <Searchbar searchbar={searchbar} device="desktop" />
+
+              {!buttons?.hideWishlistButton && (
+                <a
+                  class="items-center text-xs font-thin hidden"
+                  href="/wishlist"
+                  aria-label="Wishlist"
+                >
+                  <button
+                    type="button"
+                    class="flex btn btn-circle btn-sm btn-ghost gap-1"
+                    aria-label="Wishlist"
+                  >
+                    <Icon id="Heart" size={24} strokeWidth={0.4} />
+                  </button>
+                  WISHLIST
+                </a>
+              )}
+            </div>
+          </div>
+        )
+        : (
+          //Header Mobile
+          <div class="lg:hidden flex  justify-between items-center w-full  px-4  py-[0.72rem] gap-2">
             {logo && (
-              <a href="/" aria-label="Store logo" class="block" id="logoFossil">
+              <a
+                href="/"
+                class="flex-grow inline-flex items-center md:justify-center"
+                aria-label="Store logo"
+                id="logoFossil"
+              >
                 <Image
                   src={logo.src}
                   alt={logo.alt}
-                  width={logo.width || 190}
-                  height={logo.height || 37}
-                  class={`w-48`}
+                  width={logo.width || 100}
+                  height={logo.height || 13}
                   loading="eager"
                   fetchPriority="high"
                 />
               </a>
             )}
-          </div>
-          <div class="flex justify-between items-center">
-            <ul
-              class={`flex items-center gap-9 col-span-1   2xl:pl-0 ${
-                logoPosition === "left" ? "justify-center" : "justify-start"
-              }`}
-            >
-              {items.map((item) => (
-                <NavItem item={item} />
-              ))}
-            </ul>
-          </div>
-          <div class="flex-none grid n1-custom-grid-navbar items-center justif-end w-auto font-medium">
-            <Searchbar searchbar={searchbar} device={"desktop"} />
 
-            {!buttons?.hideWishlistButton && (
-              <a
-                class="items-center text-xs font-thin hidden"
-                href="/wishlist"
-                aria-label="Wishlist"
-              >
-                <button
-                  class="flex btn btn-circle btn-sm btn-ghost gap-1"
-                  aria-label="Wishlist"
-                >
-                  <Icon id="Heart" size={24} strokeWidth={0.4} />
-                </button>
-                WISHLIST
-              </a>
-            )}
-          </div>
-        </div>
-      ) : (
-        //Header Mobile
-        <div class="lg:hidden flex  justify-between items-center w-full  px-4  py-[0.72rem] gap-2">
-          {logo && (
-            <a
-              href="/"
-              class="flex-grow inline-flex items-center md:justify-center"
-              aria-label="Store logo"
-              id="logoFossil"
-            >
-              <Image
-                src={logo.src}
-                alt={logo.alt}
-                width={logo.width || 100}
-                height={logo.height || 13}
-                loading="eager"
-                fetchPriority="high"
-              />
-            </a>
-          )}
+            <div class="flex  items-center justify-center  gap-1">
+              <SearchButton />
+              {platform === "vtex" && <CartButtonVTEX />}
+              {platform === "vnda" && <CartButtonVDNA />}
+              {platform === "wake" && <CartButtonWake />}
+              {platform === "linx" && <CartButtonLinx />}
+              {platform === "shopify" && <CartButtonShopify />}
+              {platform === "nuvemshop" && <CartButtonNuvemshop />}
 
-          <div class="flex  items-center justify-center  gap-1">
-            <SearchButton />
-            {platform === "vtex" && <CartButtonVTEX />}
-            {platform === "vnda" && <CartButtonVDNA />}
-            {platform === "wake" && <CartButtonWake />}
-            {platform === "linx" && <CartButtonLinx />}
-            {platform === "shopify" && <CartButtonShopify />}
-            {platform === "nuvemshop" && <CartButtonNuvemshop />}
-
-            <MenuButton />
+              <MenuButton />
+            </div>
           </div>
-        </div>
-      )}
+        )}
     </>
   );
 }

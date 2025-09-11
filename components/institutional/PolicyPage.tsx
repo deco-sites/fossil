@@ -22,6 +22,7 @@ function PolicyPage(props: SectionProps<typeof loader>) {
     <>
       <Head>
         <style
+          // deno-lint-ignore react-no-danger
           dangerouslySetInnerHTML={{
             __html: `
 
@@ -122,6 +123,7 @@ function PolicyPage(props: SectionProps<typeof loader>) {
           <div className="content__institucional--right-texto">
             <div
               className="containerInfo text-sm w-[75%] h-[70vh] mx-auto my-[30px] pr-[15%] pb-[5%] overflow-y-auto overflow-x-hidden"
+              // deno-lint-ignore react-no-danger
               dangerouslySetInnerHTML={{ __html: text || "" }}
             >
             </div>

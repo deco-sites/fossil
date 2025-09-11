@@ -80,16 +80,19 @@ function Alert({ alerts = [], interval = 2, device, isShow }: Props) {
                   infinite
                 />
                 <Button
-                  {...usePartialSection<typeof Alert>({
-                    props: { isShow: false },
-                  })}
-                  aria-label={"close alert"}
+                  {
+                    // deno-lint-ignore react-rules-of-hooks
+                    ...usePartialSection<typeof Alert>({
+                      props: { isShow: false },
+                    })
+                  }
+                  aria-label="close alert"
                   class="h-full w-8 text-left absolute transform -translate-y-1/2 top-1/2 right-0 text-white rounded-none bg-primary"
                 >
                   <Icon
                     id="XAlert"
                     size={16}
-                    aria-label={"close"}
+                    aria-label="close"
                     class="z-0 pointer-events-none"
                   />
                 </Button>

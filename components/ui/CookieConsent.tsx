@@ -111,6 +111,7 @@ function CookieConsent(props: Props) {
             {text && (
               <div
                 class="text-base"
+                // deno-lint-ignore react-no-danger
                 dangerouslySetInnerHTML={{ __html: text }}
               />
             )}
@@ -127,10 +128,10 @@ function CookieConsent(props: Props) {
                 : ""
             }`}
           >
-            <button class="btn" data-button-cc-accept>
+            <button type="button" class="btn" data-button-cc-accept>
               {buttons.allowText}
             </button>
-            <button class="btn btn-outline" data-button-cc-close>
+            <button type="button" class="btn btn-outline" data-button-cc-close>
               {buttons.cancelText}
             </button>
           </div>
@@ -138,6 +139,7 @@ function CookieConsent(props: Props) {
       </div>
       <script
         type="module"
+        // deno-lint-ignore react-no-danger
         dangerouslySetInnerHTML={{ __html: `(${script})("${id}");` }}
       />
     </>

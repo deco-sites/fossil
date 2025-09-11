@@ -50,6 +50,7 @@ function Question({ question, answer }: Question) {
       </summary>
       <div
         class="collapse-content section_content"
+        // deno-lint-ignore react-no-danger
         dangerouslySetInnerHTML={{ __html: answer }}
       />
     </details>
@@ -68,6 +69,7 @@ export default function FAQ(props: Props) {
       <Head>
         <style
           type="text/css"
+          // deno-lint-ignore react-no-danger
           dangerouslySetInnerHTML={{
             __html: `
              .collapse-content p {
@@ -128,7 +130,9 @@ export default function FAQ(props: Props) {
               </div>
             </aside>
             <div class="join join-vertical w-full">
-              {questions.map((question) => <Question {...question} />)}
+              {questions.map((question, idx) => (
+                <Question key={question.question ?? idx} {...question} />
+              ))}
             </div>
           </div>
         </div>

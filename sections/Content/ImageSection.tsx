@@ -71,7 +71,7 @@ export default function ImageSection({
                 id="ChevronRight"
                 width={24}
                 height={24}
-                strokeWidth={"2"}
+                strokeWidth="2"
                 class="text-secondary"
               />
             </a>

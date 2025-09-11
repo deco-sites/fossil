@@ -12,6 +12,7 @@ function LegalsPage(
     <>
       <Head>
         <style
+          // deno-lint-ignore react-no-danger
           dangerouslySetInnerHTML={{
             __html: `
             .markdown-body h2 {

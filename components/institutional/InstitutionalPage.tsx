@@ -69,6 +69,7 @@ function InstitutionalPage(props: SectionProps<typeof loader>) {
     <>
       <Head>
         <style
+          // deno-lint-ignore react-no-danger
           dangerouslySetInnerHTML={{
             __html: `
                 .institucionalBanner>.content {
@@ -445,7 +446,10 @@ function InstitutionalPage(props: SectionProps<typeof loader>) {
             >
               <div class="content font-Gotham w-full max-w-[1150px] pt-[100px] pr-0 pb-[72px] pl-0 mr-auto ml-auto table rounded-none font-[Gotham] text-white ">
                 <span class="institucionalBanner__texts float-left w-2/4">
-                  <div dangerouslySetInnerHTML={{ __html: title || "" }} />
+                  <div
+                    // deno-lint-ignore react-no-danger
+                    dangerouslySetInnerHTML={{ __html: title || "" }}
+                  />
                 </span>
                 <span class="institucionalBanner__video">
                   <span class="institucionalBanner__video-id"></span>
@@ -460,6 +464,7 @@ function InstitutionalPage(props: SectionProps<typeof loader>) {
                 <span class="institucionalInfo__1-texts w-[calc(100%-680px)] float-right mt-[74px] text-black">
                   {block1 && (
                     <div
+                      // deno-lint-ignore react-no-danger
                       dangerouslySetInnerHTML={{ __html: block1?.text || "" }}
                     />
                   )}
@@ -475,6 +480,7 @@ function InstitutionalPage(props: SectionProps<typeof loader>) {
                   <span class="institucionalInfo__2-texts float-left text-black mt-[94px] w-[calc(100%-660px)]">
                     {block2 && (
                       <div
+                        // deno-lint-ignore react-no-danger
                         dangerouslySetInnerHTML={{ __html: block2?.text || "" }}
                       />
                     )}
@@ -495,6 +501,7 @@ function InstitutionalPage(props: SectionProps<typeof loader>) {
                 <div class="content block w-full max-w-[1150px] ml-auto mr-auto">
                   {block3 && (
                     <div
+                      // deno-lint-ignore react-no-danger
                       dangerouslySetInnerHTML={{ __html: block3?.text || "" }}
                     />
                   )}
@@ -505,6 +512,7 @@ function InstitutionalPage(props: SectionProps<typeof loader>) {
               <div className="institucionaltimeline">
                 <div
                   class="content"
+                  // deno-lint-ignore react-no-danger
                   dangerouslySetInnerHTML={{ __html: timelineTitle || "" }}
                 />
                 <div className="institucionaltimeline__slide">
@@ -527,6 +535,7 @@ function InstitutionalPage(props: SectionProps<typeof loader>) {
                           >
                             <span
                               class="institucionaltimeline__slide-content--texts"
+                              // deno-lint-ignore react-no-danger
                               dangerouslySetInnerHTML={{ __html: text || "" }}
                             />
                             <span class="institucionaltimeline__slide-content--img">
@@ -557,7 +566,10 @@ function InstitutionalPage(props: SectionProps<typeof loader>) {
             >
               <div class="content font-Gotham w-full max-w-[1150px] pt-[100px] pr-0 pb-[72px] pl-0 mr-auto ml-auto table rounded-none font-[Gotham] text-white ">
                 <span class="institucionalBanner__texts float-left w-2/4">
-                  <div dangerouslySetInnerHTML={{ __html: title || "" }} />
+                  <div
+                    // deno-lint-ignore react-no-danger
+                    dangerouslySetInnerHTML={{ __html: title || "" }}
+                  />
                 </span>
                 <span class="institucionalBanner__video">
                   <span class="institucionalBanner__video-id"></span>
@@ -572,6 +584,7 @@ function InstitutionalPage(props: SectionProps<typeof loader>) {
                 <span class="institucionalInfo__1-texts w-[calc(100%-680px)] float-right mt-[74px] text-black">
                   {block1 && (
                     <div
+                      // deno-lint-ignore react-no-danger
                       dangerouslySetInnerHTML={{ __html: block1?.text || "" }}
                     />
                   )}
@@ -587,6 +600,7 @@ function InstitutionalPage(props: SectionProps<typeof loader>) {
                   <span class="institucionalInfo__2-texts float-left text-black mt-[94px] w-[calc(100%-660px)]">
                     {block2 && (
                       <div
+                        // deno-lint-ignore react-no-danger
                         dangerouslySetInnerHTML={{ __html: block2?.text || "" }}
                       />
                     )}
@@ -607,6 +621,7 @@ function InstitutionalPage(props: SectionProps<typeof loader>) {
                 <div class="content block w-full max-w-[1150px] ml-auto mr-auto">
                   {block3 && (
                     <div
+                      // deno-lint-ignore react-no-danger
                       dangerouslySetInnerHTML={{ __html: block3?.text || "" }}
                     />
                   )}
@@ -638,6 +653,7 @@ function InstitutionalPage(props: SectionProps<typeof loader>) {
                             </span>
                             <span
                               class="institucionaltimeline__slide-content--texts"
+                              // deno-lint-ignore react-no-danger
                               dangerouslySetInnerHTML={{ __html: text || "" }}
                             />
                           </div>

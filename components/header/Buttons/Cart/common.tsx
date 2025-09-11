@@ -1,7 +1,7 @@
 import { AnalyticsItem } from "apps/commerce/types.ts";
 import Button from "../../../../components/ui/Button.tsx";
 import Icon from "../../../../components/ui/Icon.tsx";
-import { sendEvent } from "../../../../sdk/analytics.tsx";
+import { sendEvent as _sendEvent } from "../../../../sdk/analytics.tsx";
 import { useUI } from "../../../../sdk/useUI.ts";
 
 interface Props {
@@ -11,7 +11,9 @@ interface Props {
   items: AnalyticsItem[];
 }
 
-function CartButton({ loading, currency, total, items }: Props) {
+function CartButton(
+  { loading, currency: _currency, total: _total, items }: Props,
+) {
   const { displayCart } = useUI();
   const totalItems = items.length;
 

@@ -48,7 +48,7 @@ export default function PresenteActionBanner({ banner, action }: Props) {
               src={banner.desktop}
               class="w-full object-cover"
               width={2000}
-              loading={"lazy"}
+              loading="lazy"
             />
           </Picture>
         )}

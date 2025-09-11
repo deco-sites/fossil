@@ -29,10 +29,15 @@ function FeatureCard({ icon, title, text }: Card) {
         {title && (
           <div
             class="text-2xl font-semibold leading-[110%]"
+            // deno-lint-ignore react-no-danger
             dangerouslySetInnerHTML={{ __html: title }}
           />
         )}
-        <p class="leading-[120%]" dangerouslySetInnerHTML={{ __html: text }} />
+        <p
+          class="leading-[120%]"
+          // deno-lint-ignore react-no-danger
+          dangerouslySetInnerHTML={{ __html: text }}
+        />
       </div>
     </div>
   );
@@ -68,7 +73,9 @@ export default function Features(
           </h2>
         )}
         <div class="features">
-          {cards?.map((card) => <FeatureCard {...card} />)}
+          {cards?.map((card, idx) => (
+            <FeatureCard key={card.title ?? idx} {...card} />
+          ))}
         </div>
       </div>
     </section>

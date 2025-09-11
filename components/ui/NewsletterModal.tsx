@@ -134,9 +134,6 @@ function NewsletterModal({
   image,
   is_active,
 }: SectionProps<ReturnType<typeof loader>>) {
-  if (!is_active) {
-    return null;
-  }
   const modalRef = useRef<HTMLDialogElement>(null);
   const loading = useSignal(false);
   const success = useSignal(false);
@@ -145,6 +142,10 @@ function NewsletterModal({
       modalRef.current?.showModal();
     }
   }, [isOpen]);
+  const refCupom = useRef<HTMLInputElement>(null);
+  if (!is_active) {
+    return null;
+  }
   const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
     try {
@@ -179,7 +180,6 @@ function NewsletterModal({
     document.cookie = "DecoNewsletterModal" + "=" + cookieValue + ";" +
       expires + ";path=/";
   };
-  const refCupom = useRef<HTMLInputElement>(null);
   function handleClickCopy() {
     const elementTextCupom = refCupom.current;
     if (!elementTextCupom) {
@@ -238,6 +238,7 @@ function NewsletterModal({
         >
           <form method="dialog">
             <button
+              type="button"
               class="absolute -top-[11px] right-0 translate-x-1/2 bg-[#333333] border-none rounded-full p-[0.2rem] cursor-pointer text-white"
               onClick={() =>
                 setCookieOnCloseModal("closed", modalCloseExpiredDate)}
@@ -259,6 +260,7 @@ function NewsletterModal({
                           color: colorText ||
                             "#ffffff",
                         }}
+                        // deno-lint-ignore react-no-danger
                         dangerouslySetInnerHTML={{
                           __html: textSendSucess,
                         }}
@@ -277,6 +279,7 @@ function NewsletterModal({
                           color: colorText ||
                             "#ffffff",
                         }}
+                        // deno-lint-ignore react-no-danger
                         dangerouslySetInnerHTML={{
                           __html: textFieldCupom,
                         }}
@@ -303,6 +306,7 @@ function NewsletterModal({
                             color: colorText ||
                               "#ffffff",
                           }}
+                          // deno-lint-ignore react-no-danger
                           dangerouslySetInnerHTML={{
                             __html: textCupom,
                           }}
@@ -391,6 +395,7 @@ function NewsletterModal({
                           color: colorText ||
                             "#ffffff",
                         }}
+                        // deno-lint-ignore react-no-danger
                         dangerouslySetInnerHTML={{
                           __html: text,
                         }}
@@ -412,7 +417,7 @@ function NewsletterModal({
                           _name="telephone"
                           _placeholder="(xx) 999999999"
                           _maxLength={15}
-                          _required={true}
+                          _required
                           _class={clx(
                             `px-[15px] font-gotham py-[5px] h-8 w-[70%] font-arial text-[.688rem] rounded-[3px] leading-10 focus:outline-none border border-[#969696]`,
                           )}
@@ -423,7 +428,7 @@ function NewsletterModal({
                           _name="dateOfBirth"
                           _placeholder="DD/MM/AAAA"
                           _maxLength={10}
-                          _required={true}
+                          _required
                           _class="px-[15px] font-gotham py-[5px] h-8 w-[50%] font-arial text-[.688rem] rounded-[3px] leading-10 focus:outline-none  border border-[#969696]"
                         />
                       </div>
@@ -476,6 +481,7 @@ function NewsletterModal({
           </form>
           <form method="dialog" className="modal-backdrop">
             <button
+              type="button"
               onClick={() =>
                 setCookieOnCloseModal("closed", modalCloseExpiredDate)}
             >

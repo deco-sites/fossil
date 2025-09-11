@@ -184,28 +184,28 @@ function Footer({
   },
   device,
 }: Props & { device?: string }) {
-  const _logo = layout?.hide?.logo ? <></> : <Logo logo={logo} />;
-  const _newsletter = layout?.hide?.newsletter ? <></> : (
+  const _logo = layout?.hide?.logo ? null : <Logo logo={logo} />;
+  const _newsletter = layout?.hide?.newsletter ? null : (
     <Newsletter
       content={newsletter}
     />
   );
-  const _sectionLinks = layout?.hide?.sectionLinks ? <></> : (
+  const _sectionLinks = layout?.hide?.sectionLinks ? null : (
     <FooterItems
       sections={sections}
       device={device}
     />
   );
   const _social = layout?.hide?.socialLinks
-    ? <></>
+    ? null
     : <Social content={social} />;
   const _payments = layout?.hide?.paymentMethods
-    ? <></>
+    ? null
     : <PaymentMethods content={payments} />;
   const _apps = layout?.hide?.mobileApps
-    ? <></>
+    ? null
     : <MobileApps content={mobileApps} />;
-  const _links = layout?.hide?.extraLinks ? <></> : (
+  const _links = layout?.hide?.extraLinks ? null : (
     <ExtraLinks
       content={extraLinks.content}
       copyright={extraLinks.copyright}

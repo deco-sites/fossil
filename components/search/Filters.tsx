@@ -84,6 +84,7 @@ function FilterValues({ key, values }: FilterToggle) {
 
               return range && (
                 <ValueItem
+                  key={item.value}
                   {...item}
                   label={`${formatPrice(range.from)} - ${
                     formatPrice(range.to)
@@ -92,7 +93,7 @@ function FilterValues({ key, values }: FilterToggle) {
               );
             }
 
-            return <ValueItem {...item} />;
+            return <ValueItem key={item.value} {...item} />;
           })
         )}
     </>

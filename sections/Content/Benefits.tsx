@@ -73,7 +73,7 @@ export default function Benefits(
         <div class="flex-none">
           <Icon
             id={benefit.icon}
-            class={"text-base-content"}
+            class="text-base-content"
             width={36}
             height={36}
             strokeWidth={0.01}
