@@ -75,119 +75,31 @@
             "__resolveType": "site/sections/Images/Carousel.tsx",
             "images": [
               {
-                "desktop": "https://assets.decocache.com/fossil/918267f7-f6ec-40c8-864d-3d807a475c57/banner_slide_desk_raquel(1920x600).jpg",
-                "mobile": "https://assets.decocache.com/fossil/3cb30d82-5428-4eb7-b3af-74b01ad0e082/Banner_slide_mob_raquel(320x380).jpg",
-                "action": {
-                  "href": "/relogio/feminino?sort=release%3Adesc"
-                },
-                "alt": "Raquel"
-              },
-              {
-                "desktop": "https://assets.decocache.com/fossil/d7e2f66b-3911-4dee-b04e-cce25ab1a1d1/banner_slide_desk_acessorios(1920x600).jpg",
-                "mobile": "https://assets.decocache.com/fossil/c3424d4c-8e4d-4c38-a2f1-63188cd27764/Banner_slide_mob_acesssorios(320x380).jpg",
-                "alt": "Bolsas",
-                "action": {
-                  "href": "/bolsasfemininas?sort=release%3Adesc"
-                }
-              },
-              {
-                "desktop": "https://assets.decocache.com/fossil/e5dfef1d-fe64-41c5-b36c-7f463535e63a/banner_slide_desk_harwell(1920x600).jpg",
-                "mobile": "https://assets.decocache.com/fossil/aff047d2-efc7-4216-a425-4aa5ff32f044/Banner_slide_mob_harwell(320x380).jpg",
-                "alt": "Brinde",
-                "action": {
-                  "href": "/s?q=relogios&utmi_pc=search&utmi_cp=relogios&sort=release%3Adesc"
-                }
-              }
-            ],
-            "preload": true,
-            "arrows": true,
-            "dots": true,
-            "interval": 5
-          },
-          "rule": {
-            "__resolveType": "website/matchers/date.ts",
-            "end": "2025-05-12T02:59:00.000Z",
-            "start": "2025-05-01T03:00:00.000Z"
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/Images/Carousel.tsx",
-            "dots": true,
-            "arrows": true,
-            "images": [
-              {
-                "action": {
-                  "href": "/s?q=relogio&utmi_pc=search&utmi_cp=relogio&sort=release%3Adesc"
-                },
-                "mobile": "https://assets.decocache.com/fossil/edb336ee-63ef-4bf7-a3bc-e8600dfe1f0f/Banner_slide_mob_fretegratis(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/7456272a-e696-47ae-a11a-c61c44899c5f/banner_slide_desk_fretegratis(1920x600).jpg",
-                "alt": "Frete Grátis"
-              },
-              {
-                "action": {
-                  "href": "/relogio/feminino?sort=release%3Adesc"
-                },
-                "mobile": "https://assets.decocache.com/fossil/5ae8f72e-cd80-4be7-add4-5d4fd9b5ed93/Banner_slide_mob_gilmore2(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/560ac91a-6154-4559-b18a-1d0d0ea53fcf/banner_slide_desk_gilmore2(1920x600).jpg",
-                "alt": "Gilmore"
-              },
-              {
-                "action": {
-                  "href": "/s?q=machine&utmi_pc=search&utmi_cp=machine"
-                },
-                "mobile": "https://assets.decocache.com/fossil/113dc20f-e796-4a56-80cc-aaf9c5208fb9/Banner_slide_mob_machine2(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/6c9f15e4-d3a3-4ca5-8191-028b2f78a8d5/banner_slide_desk_machine2(1920x600).jpg",
-                "alt": "Machine"
-              },
-              {
-                "action": {
-                  "href": "/bolsasfemininas?sort=release%3Adesc"
-                },
-                "mobile": "https://assets.decocache.com/fossil/83d24951-1058-4cb8-8278-e9109663b985/Banner_slide_mob_bolsas2(320x380).jpg",
-                "desktop": "https://assets.decocache.com/fossil/97ee2c3d-52c7-42a1-bc33-40bd37027fed/banner_slide_desk_bolsas2(1920x600).jpg",
-                "alt": "Bolsas"
-              }
-            ],
-            "preload": true,
-            "interval": 5
-          },
-          "rule": {
-            "__resolveType": "website/matchers/date.ts",
-            "start": "2025-04-28T03:00:00.000Z",
-            "end": "2025-04-29T02:59:00.000Z"
-          }
-        },
-        {
-          "value": {
-            "__resolveType": "site/sections/Images/Carousel.tsx",
-            "dots": true,
-            "arrows": true,
-            "images": [
-              {
-                "action": {
-                  "href": "/s?q=machine&utmi_pc=search&utmi_cp=machine"
-                },
-                "mobile": "https://assets.decocache.com/fossil/ad44a3b1-01a5-4d73-8934-cfc301e26578/Prancheta-2-(3).png",
                 "desktop": "https://assets.decocache.com/fossil/8269aa94-a73c-471d-aae5-7cadbbafa580/Prancheta-1.png",
+                "mobile": "https://assets.decocache.com/fossil/ad44a3b1-01a5-4d73-8934-cfc301e26578/Prancheta-2-(3).png",
+                "action": {
+                  "href": "/s?q=machine&utmi_pc=search&utmi_cp=machine"
+                },
                 "alt": "Machine"
               },
               {
+                "desktop": "https://assets.decocache.com/fossil/34df500e-9f9c-489f-be9c-a290130e7553/desktoo.jpg",
+                "mobile": "https://assets.decocache.com/fossil/c090122b-23f1-4b65-a11b-d53917c44f06/mobile.jpg",
+                "alt": "/relogio/feminino?sort=release%3Adesc",
                 "action": {
                   "href": "/relogio/masculino?sort=release%3Adesc"
-                },
-                "mobile": "https://assets.decocache.com/fossil/c090122b-23f1-4b65-a11b-d53917c44f06/mobile.jpg",
-                "desktop": "https://assets.decocache.com/fossil/34df500e-9f9c-489f-be9c-a290130e7553/desktoo.jpg",
-                "alt": "/relogio/feminino?sort=release%3Adesc"
+                }
               }
             ],
             "preload": true,
+            "arrows": true,
+            "dots": true,
             "interval": 5
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "start": "2025-09-03T03:00:00.000Z",
-            "end": "2025-09-15T02:59:00.000Z"
+            "end": "2025-09-15T02:59:00.000Z",
+            "start": "2025-09-03T03:00:00.000Z"
           }
         },
         {
@@ -198,19 +110,11 @@
             "images": [
               {
                 "action": {
-                  "href": "/s?q=townsman&utmi_pc=search&utmi_cp=townsman&sort=release%3Adesc"
+                  "href": "/off"
                 },
-                "mobile": "https://assets.decocache.com/fossil/9cd910bc-9e75-41f7-95b5-1ea867e8195f/Banner-Slide-Townsman---Carlie---Sale-40-OFF--640x760-(2).png",
-                "desktop": "https://assets.decocache.com/fossil/f599fe0f-0999-4b1b-84f9-4414b527e125/Banner-Slide-Townsman---Carlie---Sale-40-OFF-1920x600-(2).png",
-                "alt": "Townsman"
-              },
-              {
-                "action": {
-                  "href": "/s?q=Carlie&utmi_pc=search&utmi_cp=Carlie&sort=price%3Adesc"
-                },
-                "mobile": "https://assets.decocache.com/fossil/18e17794-1546-4840-b6f1-f526edc2d28b/Banner-Slide-Townsman---Carlie---Sale-40-OFF--640x760-(3).png",
-                "desktop": "https://assets.decocache.com/fossil/5cb2845f-0544-4994-8717-4b01a588fe0c/Banner-Slide-Townsman---Carlie---Sale-40-OFF-1920x600-(3).png",
-                "alt": "Carlie"
+                "mobile": "https://assets.decocache.com/fossil/9dccdf8b-f1bb-4032-8bea-d532f108a5ee/mobile-(18).png",
+                "desktop": "https://assets.decocache.com/fossil/d523c33a-6570-4637-bbc4-a0a25e1e01fc/desktop-(21).png",
+                "alt": "Semana_cliente"
               }
             ],
             "preload": true,
@@ -218,8 +122,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "start": "2025-08-25T03:00:00.000Z",
-            "end": "2025-09-03T02:59:00.000Z"
+            "start": "2025-09-15T03:00:00.000Z",
+            "end": "2025-09-22T02:59:00.000Z"
           }
         }
       ]
