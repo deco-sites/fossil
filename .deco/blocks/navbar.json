@@ -358,8 +358,8 @@
     {
       "children": [],
       "image": [],
-      "name": "OFF",
-      "url": "/off"
+      "url": "/semana-do-cliente",
+      "name": "Semana do Cliente"
     }
   ],
   "__resolveType": "commerce/loaders/navbar.ts"
