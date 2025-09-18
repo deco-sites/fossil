@@ -156,10 +156,10 @@
       "cards": [
         {
           "title": "BESTSELLING RAQUEL",
-          "description": "A coleção Machine é o presente ideal para pais que não abrem mão de estilo e atitude.",
+          "description": "Encontre modelos femininos para presentear quem ama.",
           "image": "https://assets.decocache.com/fossil/eeb65625-75d5-438e-ae9e-1c5d0746c2ba/LPpresentes_bannersecundario_desk_pais2.jpg",
-          "url": "/s?q=machine&utmi_pc=search&utmi_cp=machine&sort=release%3Adesc",
-          "label": "PRESENTES PARA ELE"
+          "url": "/relogio/feminino?sort=release%3Adesc",
+          "label": "PRESENTES PARA ELA"
         },
         {
           "title": "SPORT TOURER",
@@ -241,7 +241,7 @@
             "label": "Comprar",
             "url": "https://www.fossil.com.br/relogio/masculino?sort=release%3Adesc"
           },
-          "label": "Relógio Masculino"
+          "label": "Relógio"
         },
         {
           "image": "https://assets.decocache.com/fossil/c3c001c3-fb6f-4997-802c-4fb2c114efa0/LPpresentes_bannerdepartamento_desk_pais3.jpg",
@@ -251,7 +251,7 @@
             "label": "Comprar",
             "url": "/s?q=carteira%20masculina&utmi_pc=search&utmi_cp=carteira%20masculina"
           },
-          "label": "Carteira Masculina"
+          "label": "Carteira"
         },
         {
           "title": "Harwell Handbag",
