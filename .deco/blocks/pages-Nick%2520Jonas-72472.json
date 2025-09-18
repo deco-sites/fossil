@@ -359,18 +359,28 @@
             }
           },
           {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "site/sections/NickJonas/nj-lp-diner-mug-promo.tsx",
-              "desktopImage": "https://assets.decocache.com/fossil/a944d146-a914-4807-9109-f8cee1d975b2/NJ-LP-GWP-D.jpg",
-              "mobileImage": "https://assets.decocache.com/fossil/b0376616-0d3e-4c16-ae1f-7dba12591d49/NJ-LP-GWP-M.webp",
-              "label": "Novidades!",
-              "title": "Caneca Fossil Diner",
-              "description": "Incluído com cada compra Nick Jonas x Fossil (enquanto durarem os estoques).",
-              "targetUrl": "#",
-              "termsUrl": "#",
-              "termsText": "*Aplicam-se termos e condições."
-            }
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
+              {
+                "value": {
+                  "__resolveType": "website/sections/Rendering/Lazy.tsx",
+                  "section": {
+                    "__resolveType": "site/sections/NickJonas/nj-lp-diner-mug-promo.tsx",
+                    "desktopImage": "https://assets.decocache.com/fossil/a944d146-a914-4807-9109-f8cee1d975b2/NJ-LP-GWP-D.jpg",
+                    "mobileImage": "https://assets.decocache.com/fossil/b0376616-0d3e-4c16-ae1f-7dba12591d49/NJ-LP-GWP-M.webp",
+                    "label": "Novidades!",
+                    "title": "Caneca Fossil Diner",
+                    "description": "Incluído com cada compra Nick Jonas x Fossil (enquanto durarem os estoques).",
+                    "targetUrl": "#",
+                    "termsUrl": "#",
+                    "termsText": "*Aplicam-se termos e condições."
+                  }
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/never.ts"
+                }
+              }
+            ]
           },
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
