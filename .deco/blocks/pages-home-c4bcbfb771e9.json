@@ -48,9 +48,9 @@
                 "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
                 "props": {
                   "sort": "discount:desc",
-                  "count": 8,
                   "hideUnavailableItems": true,
-                  "collection": "2638"
+                  "collection": "2638",
+                  "count": 9
                 }
               },
               "shopAllButton": {
