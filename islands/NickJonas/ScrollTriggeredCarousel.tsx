@@ -35,10 +35,10 @@ export default function ScrollTriggeredCarousel({
   const scrollConfig = useMemo(() => {
     const prefersReducedMotion = typeof matchMedia !== "undefined" &&
       matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const stepCount = prefersReducedMotion ? 24 : 64;
+    const stepCount = prefersReducedMotion ? 24 : 256;
     const stepSize = 1 / stepCount;
-    const initialKick = prefersReducedMotion ? stepSize : stepSize * 1.25;
-    const fixedHeaderHeight = 125;
+    const initialKick = prefersReducedMotion ? stepSize : stepSize * 0.6;
+    const fixedHeaderHeight = 135;
 
     return {
       prefersReducedMotion,
@@ -46,9 +46,8 @@ export default function ScrollTriggeredCarousel({
       stepSize,
       initialKick,
       fixedHeaderHeight,
-      transformTransition: prefersReducedMotion
-        ? "none"
-        : "transform 220ms cubic-bezier(0.16, 1, 0.3, 1)",
+      transformTransition: "none",
+      smoothingTimeConstantMs: prefersReducedMotion ? 0 : 450,
     };
   }, []);
 
@@ -165,7 +164,9 @@ export default function ScrollTriggeredCarousel({
       if (Math.abs(nextProgress - state.progress) > epsilon) {
         state.progress = nextProgress;
         state.lastUpdateTime = now;
-        setScrollProgress(nextProgress);
+        if (scrollConfig.prefersReducedMotion) {
+          setScrollProgress(nextProgress);
+        }
       }
     };
 
@@ -237,6 +238,37 @@ export default function ScrollTriggeredCarousel({
       clearTimeout(resizeTimeout);
     };
   }, [imageCount, scrollConfig]);
+
+  useEffect(() => {
+    if (scrollConfig.prefersReducedMotion || imageCount <= 1) return;
+
+    let rafId = 0;
+    let last = performance.now();
+    const tau = scrollConfig.smoothingTimeConstantMs;
+
+    const tick = () => {
+      const now = performance.now();
+      const dt = Math.min(100, now - last);
+      last = now;
+      const target = scrollStateRef.current.progress;
+
+      setScrollProgress((prev) => {
+        const diff = target - prev;
+        if (Math.abs(diff) < 0.00005) return target;
+        const alpha = 1 - Math.exp(-dt / tau);
+        return prev + diff * alpha;
+      });
+
+      rafId = requestAnimationFrame(tick);
+    };
+
+    rafId = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(rafId);
+  }, [
+    imageCount,
+    scrollConfig.prefersReducedMotion,
+    scrollConfig.smoothingTimeConstantMs,
+  ]);
 
   if (!images || images.length === 0) {
     return null;
