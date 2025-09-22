@@ -144,34 +144,59 @@ function NJLPQuote({
 
   return (
     <div class="bg-nj-primary relative w-full overflow-hidden">
-      <div class="container max-w-7xl">
+      <div class="lg:container lg:max-w-7xl">
         <div class="sr-only" id="quote-heading">
           Seção de Citação Nick Jonas
         </div>
 
         {/* Background Image Container with responsive aspect ratios */}
-        <div
-          class={`relative ${LAYOUT.aspectRatio.mobile} ${LAYOUT.aspectRatio.desktop} container overflow-hidden ${LAYOUT.borderRadius.mobile} ${LAYOUT.borderRadius.desktop}`}
-        >
-          <BackgroundContainer
-            desktopImage={desktopImage}
-            mobileImage={mobileImage}
-          />
+        {hasVideoContent
+          ? (
+            <NJYouTubeModal videoUrl={videoUrl} linkText={linkText!}>
+              <div
+                class={`relative ${LAYOUT.aspectRatio.mobile} ${LAYOUT.aspectRatio.desktop} overflow-hidden ${LAYOUT.borderRadius.mobile} ${LAYOUT.borderRadius.desktop}`}
+              >
+                <BackgroundContainer
+                  desktopImage={desktopImage}
+                  mobileImage={mobileImage}
+                />
 
-          {/* Content */}
-          <div
-            class={`relative z-10 flex flex-col items-center justify-center h-full ${LAYOUT.contentPadding} text-center`}
-          >
-            <QuoteContent quote={quote} author={author} />
+                {/* Content */}
+                <div
+                  class={`relative z-10 flex flex-col items-center justify-center h-full ${LAYOUT.contentPadding} text-center`}
+                >
+                  <QuoteContent quote={quote} author={author} />
 
-            {/* YouTube Link */}
-            {hasVideoContent && (
-              <div class="mt-4 lg:mt-6">
-                <NJYouTubeModal videoUrl={videoUrl} linkText={linkText} />
+                  {/* YouTube Link */}
+                  <div class="mt-4 lg:mt-6">
+                    <button
+                      type="button"
+                      class="text-white text-xs font-soleil underline hover:no-underline transition-all duration-200 bg-transparent border-none cursor-pointer uppercase"
+                    >
+                      {linkText}
+                    </button>
+                  </div>
+                </div>
               </div>
-            )}
-          </div>
-        </div>
+            </NJYouTubeModal>
+          )
+          : (
+            <div
+              class={`relative ${LAYOUT.aspectRatio.mobile} ${LAYOUT.aspectRatio.desktop} overflow-hidden ${LAYOUT.borderRadius.mobile} ${LAYOUT.borderRadius.desktop}`}
+            >
+              <BackgroundContainer
+                desktopImage={desktopImage}
+                mobileImage={mobileImage}
+              />
+
+              {/* Content */}
+              <div
+                class={`relative z-10 flex flex-col items-center justify-center h-full ${LAYOUT.contentPadding} text-center`}
+              >
+                <QuoteContent quote={quote} author={author} />
+              </div>
+            </div>
+          )}
       </div>
     </div>
   );

@@ -25,10 +25,7 @@
               "focus": "100%",
               "zoom": 1.3
             },
-            "cta": {
-              "name": "Ver Todos",
-              "url": "/nick-jonas"
-            },
+            "cta": {},
             "mainTitle": "Nick Jonas | Fossil",
             "showScrollIndicator": true,
             "posterImage": "https://assets.decocache.com/fossil/beb44a69-1d57-46c6-aefe-b319691fad27/NJ-LP-Hero-Video-D-Placeholder.jpg"
@@ -43,7 +40,7 @@
             "emphasis": "Tudo pelo amor aos fãs.",
             "cta": {
               "name": "Ver Todos",
-              "url": "https://www.fossil.com.br/colecao/nick-jonas"
+              "url": "/colecao/nick-jonas"
             },
             "desktopImage": "https://assets.decocache.com/fossil/bff6b28e-8194-4cd0-a246-1ca13b5c7351/NJ-LP-Module1-Img1-D.jpg",
             "mobileImage": "https://assets.decocache.com/fossil/e7639eaa-a0c1-4b25-9287-c6d60a23338b/NJ-LP-Module1-Img1-M.jpg",
@@ -66,7 +63,8 @@
                 "desktopImage": "https://assets.decocache.com/fossil/04aa5046-13db-4fa0-b676-bea8c1218cae/NJ-LP-Module1-Autoscroller1-Img3-D.jpg",
                 "mobileImage": "https://assets.decocache.com/fossil/993eb703-5541-469e-bdd9-1fdd41a1f2d1/NJ-LP-Module1-Autoscroller1-Img3-M.jpg"
               }
-            ]
+            ],
+            "imageUrl": "/colecao/nick-jonas"
           },
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -82,7 +80,7 @@
               },
               "cta": {
                 "name": "Comprar Agora",
-                "url": "https://www.fossil.com.br/relogio-fossil-masculino-nick-jonas-dourado---le1217-1vi/p?skuId=1000027964"
+                "url": "/relogio-fossil-masculino-nick-jonas-dourado---le1217-1vi/p"
               },
               "title": "Mostradores de Pedra",
               "description": "Pedras genuínas como malaquita verde, aventurina e mármore preto trazem um toque moderno ao clássico relógio social, com uma moldura texturizada exclusiva que se estende até a pulseira.",
@@ -119,7 +117,9 @@
                   "desktopImage": "https://assets.decocache.com/fossil/94ea8d5e-afd9-403d-ab3d-27b5d3de8273/NJ-LP-Module2-Autoscroller1-Img3-D.webp",
                   "alt": "3"
                 }
-              ]
+              ],
+              "heroImageUrl": "/relogio-fossil-masculino-nick-jonas-dourado---le1217-1vi/p",
+              "productImagesUrl": "/relogio-fossil-masculino-nick-jonas-dourado---le1217-1vi/p"
             }
           },
           {
@@ -175,7 +175,7 @@
               "description": "Linhas finamente gravadas criam acabamentos radiantes nos mostradores de dois estilos de destaque — nosso mais recente anel de relógio e uma caixa em formato especial com pulseiras de couro com relevo de crocodilo. O relógio azul é um dos favoritos de Nick, inspirado em sua apreciação pelos detalhes refinados.",
               "cta": {
                 "name": "Comprar Agora",
-                "url": "https://www.fossil.com.br/relogio-fossil-masculino-nick-jonas-dourado---le1215-0ai/p?skuId=1000027962"
+                "url": "/relogio-fossil-masculino-nick-jonas-dourado---le1215-0ai/p"
               },
               "overlayText": {
                 "timeText": "Hora: 20h15",
@@ -217,7 +217,9 @@
                   "desktopImage": "https://assets.decocache.com/fossil/f3e42d3e-d5a5-4ff4-8476-a424a9f91f01/NJ-LP-Module3-Autoscroller1-Img3-D_ALT.webp",
                   "alt": "3"
                 }
-              ]
+              ],
+              "heroImageUrl": "/relogio-fossil-masculino-nick-jonas-dourado---le1215-0ai/p",
+              "productImagesUrl": "/relogio-fossil-masculino-nick-jonas-dourado---le1215-0ai/p"
             }
           },
           {
@@ -277,7 +279,7 @@
               "description": "Feitos com mais de 100 peças montadas à mão, com o impressionante movimento automático japonês em plena exibição graças ao mostrador skeletonizado. Um relógio movido pelo próprio movimento — sem necessidade de bateria.",
               "cta": {
                 "name": "Comprar Agora",
-                "url": "https://www.fossil.com.br/relogio-fossil-masculino-nick-jonas-preto---le1219-1pi/p?skuId=1000027966"
+                "url": "/relogio-fossil-masculino-nick-jonas-preto---le1219-1pi/p"
               },
               "overlayText": {
                 "timeText": "Hora: 13h40",
@@ -314,7 +316,9 @@
                   "alt": "3",
                   "desktopImage": "https://assets.decocache.com/fossil/f15589e7-55cb-4e16-8d27-6607638986a4/NJ-LP-Module4-Autoscroller1-Img3-D.jpg"
                 }
-              ]
+              ],
+              "heroImageUrl": "/relogio-fossil-masculino-nick-jonas-preto---le1219-1pi/p",
+              "productImagesUrl": "/relogio-fossil-masculino-nick-jonas-preto---le1219-1pi/p"
             }
           },
           {
@@ -410,462 +414,6 @@
         ],
         "rule": {
           "__resolveType": "Nick Jonas"
-        }
-      },
-      {
-        "value": [
-          {
-            "__resolveType": "Fashion theme"
-          },
-          {
-            "__resolveType": "site/sections/Header/Header.tsx",
-            "cart": {
-              "freeShippingObjectiveQuantity": 600
-            },
-            "logo": {
-              "alt": "Glamour logo by deco",
-              "src": "https://assets.decocache.com/fossil/240eaac5-6c7f-4b2f-9a1e-772845e3cf18/fossil-logo-site.svg",
-              "width": 80,
-              "height": 48
-            },
-            "alerts": [
-              "Frete Grátis nas compras acima de R$799",
-              "15% OFF na PRIMEIRA COMPRA com o cupom BEMVINDO15"
-            ],
-            "navItems": {
-              "__resolveType": "navbar"
-            },
-            "products": [],
-            "searchbar": {
-              "name": "q",
-              "action": "/s",
-              "loader": {
-                "data": {
-                  "count": 4,
-                  "__resolveType": "vtex/loaders/intelligentSearch/suggestions.ts"
-                },
-                "__resolveType": "resolved"
-              },
-              "placeholder": "digite sua busca"
-            },
-            "suggestions": {
-              "products": [],
-              "searches": []
-            },
-            "logoPosition": "center",
-            "interval": 4,
-            "isShow": true
-          },
-          {
-            "__resolveType": "website/flags/multivariate/section.ts",
-            "variants": [
-              {
-                "value": {
-                  "__resolveType": "site/sections/Content/PromotionalBanner.tsx",
-                  "title": "CONFIRA NOSSOS LANÇAMENTOS",
-                  "button": {
-                    "name": "Compre Agora",
-                    "url": "/lancamentos"
-                  }
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/always.ts"
-                }
-              }
-            ]
-          },
-          {
-            "__resolveType": "website/flags/multivariate/section.ts",
-            "variants": [
-              {
-                "value": {
-                  "__resolveType": "site/sections/Images/Carousel.tsx",
-                  "images": [
-                    {
-                      "desktop": "https://assets.decocache.com/fossil/918267f7-f6ec-40c8-864d-3d807a475c57/banner_slide_desk_raquel(1920x600).jpg",
-                      "mobile": "https://assets.decocache.com/fossil/3cb30d82-5428-4eb7-b3af-74b01ad0e082/Banner_slide_mob_raquel(320x380).jpg",
-                      "action": {
-                        "href": "/relogio/feminino?sort=release%3Adesc"
-                      },
-                      "alt": "Raquel"
-                    },
-                    {
-                      "desktop": "https://assets.decocache.com/fossil/d7e2f66b-3911-4dee-b04e-cce25ab1a1d1/banner_slide_desk_acessorios(1920x600).jpg",
-                      "mobile": "https://assets.decocache.com/fossil/c3424d4c-8e4d-4c38-a2f1-63188cd27764/Banner_slide_mob_acesssorios(320x380).jpg",
-                      "alt": "Bolsas",
-                      "action": {
-                        "href": "/bolsasfemininas?sort=release%3Adesc"
-                      }
-                    },
-                    {
-                      "desktop": "https://assets.decocache.com/fossil/e5dfef1d-fe64-41c5-b36c-7f463535e63a/banner_slide_desk_harwell(1920x600).jpg",
-                      "mobile": "https://assets.decocache.com/fossil/aff047d2-efc7-4216-a425-4aa5ff32f044/Banner_slide_mob_harwell(320x380).jpg",
-                      "alt": "Brinde",
-                      "action": {
-                        "href": "/s?q=relogios&utmi_pc=search&utmi_cp=relogios&sort=release%3Adesc"
-                      }
-                    }
-                  ],
-                  "preload": true,
-                  "arrows": true,
-                  "dots": true,
-                  "interval": 5
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/date.ts",
-                  "end": "2025-05-12T02:59:00.000Z",
-                  "start": "2025-05-01T03:00:00.000Z"
-                }
-              },
-              {
-                "value": {
-                  "__resolveType": "site/sections/Images/Carousel.tsx",
-                  "dots": true,
-                  "arrows": true,
-                  "images": [
-                    {
-                      "action": {
-                        "href": "/s?q=relogio&utmi_pc=search&utmi_cp=relogio&sort=release%3Adesc"
-                      },
-                      "mobile": "https://assets.decocache.com/fossil/edb336ee-63ef-4bf7-a3bc-e8600dfe1f0f/Banner_slide_mob_fretegratis(320x380).jpg",
-                      "desktop": "https://assets.decocache.com/fossil/7456272a-e696-47ae-a11a-c61c44899c5f/banner_slide_desk_fretegratis(1920x600).jpg",
-                      "alt": "Frete Grátis"
-                    },
-                    {
-                      "action": {
-                        "href": "/relogio/feminino?sort=release%3Adesc"
-                      },
-                      "mobile": "https://assets.decocache.com/fossil/5ae8f72e-cd80-4be7-add4-5d4fd9b5ed93/Banner_slide_mob_gilmore2(320x380).jpg",
-                      "desktop": "https://assets.decocache.com/fossil/560ac91a-6154-4559-b18a-1d0d0ea53fcf/banner_slide_desk_gilmore2(1920x600).jpg",
-                      "alt": "Gilmore"
-                    },
-                    {
-                      "action": {
-                        "href": "/s?q=machine&utmi_pc=search&utmi_cp=machine"
-                      },
-                      "mobile": "https://assets.decocache.com/fossil/113dc20f-e796-4a56-80cc-aaf9c5208fb9/Banner_slide_mob_machine2(320x380).jpg",
-                      "desktop": "https://assets.decocache.com/fossil/6c9f15e4-d3a3-4ca5-8191-028b2f78a8d5/banner_slide_desk_machine2(1920x600).jpg",
-                      "alt": "Machine"
-                    },
-                    {
-                      "action": {
-                        "href": "/bolsasfemininas?sort=release%3Adesc"
-                      },
-                      "mobile": "https://assets.decocache.com/fossil/83d24951-1058-4cb8-8278-e9109663b985/Banner_slide_mob_bolsas2(320x380).jpg",
-                      "desktop": "https://assets.decocache.com/fossil/97ee2c3d-52c7-42a1-bc33-40bd37027fed/banner_slide_desk_bolsas2(1920x600).jpg",
-                      "alt": "Bolsas"
-                    }
-                  ],
-                  "preload": true,
-                  "interval": 5
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/date.ts",
-                  "start": "2025-04-28T03:00:00.000Z",
-                  "end": "2025-04-29T02:59:00.000Z"
-                }
-              },
-              {
-                "value": {
-                  "__resolveType": "site/sections/Images/Carousel.tsx",
-                  "dots": true,
-                  "arrows": true,
-                  "images": [
-                    {
-                      "action": {
-                        "href": "/s?q=machine&utmi_pc=search&utmi_cp=machine"
-                      },
-                      "mobile": "https://assets.decocache.com/fossil/ad44a3b1-01a5-4d73-8934-cfc301e26578/Prancheta-2-(3).png",
-                      "desktop": "https://assets.decocache.com/fossil/8269aa94-a73c-471d-aae5-7cadbbafa580/Prancheta-1.png",
-                      "alt": "Machine"
-                    },
-                    {
-                      "action": {
-                        "href": "/relogio/masculino?sort=release%3Adesc"
-                      },
-                      "mobile": "https://assets.decocache.com/fossil/c090122b-23f1-4b65-a11b-d53917c44f06/mobile.jpg",
-                      "desktop": "https://assets.decocache.com/fossil/34df500e-9f9c-489f-be9c-a290130e7553/desktoo.jpg",
-                      "alt": "/relogio/feminino?sort=release%3Adesc"
-                    }
-                  ],
-                  "preload": true,
-                  "interval": 5
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/date.ts",
-                  "start": "2025-09-03T03:00:00.000Z",
-                  "end": "2025-09-08T02:59:00.000Z"
-                }
-              },
-              {
-                "value": {
-                  "__resolveType": "site/sections/Images/Carousel.tsx",
-                  "dots": true,
-                  "arrows": true,
-                  "images": [
-                    {
-                      "action": {
-                        "href": "/s?q=townsman&utmi_pc=search&utmi_cp=townsman&sort=release%3Adesc"
-                      },
-                      "mobile": "https://assets.decocache.com/fossil/9cd910bc-9e75-41f7-95b5-1ea867e8195f/Banner-Slide-Townsman---Carlie---Sale-40-OFF--640x760-(2).png",
-                      "desktop": "https://assets.decocache.com/fossil/f599fe0f-0999-4b1b-84f9-4414b527e125/Banner-Slide-Townsman---Carlie---Sale-40-OFF-1920x600-(2).png",
-                      "alt": "Townsman"
-                    },
-                    {
-                      "action": {
-                        "href": "/s?q=Carlie&utmi_pc=search&utmi_cp=Carlie&sort=price%3Adesc"
-                      },
-                      "mobile": "https://assets.decocache.com/fossil/18e17794-1546-4840-b6f1-f526edc2d28b/Banner-Slide-Townsman---Carlie---Sale-40-OFF--640x760-(3).png",
-                      "desktop": "https://assets.decocache.com/fossil/5cb2845f-0544-4994-8717-4b01a588fe0c/Banner-Slide-Townsman---Carlie---Sale-40-OFF-1920x600-(3).png",
-                      "alt": "Carlie"
-                    }
-                  ],
-                  "preload": true,
-                  "interval": 5
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/date.ts",
-                  "start": "2025-08-25T03:00:00.000Z",
-                  "end": "2025-09-03T02:59:00.000Z"
-                }
-              }
-            ]
-          },
-          {
-            "__resolveType": "site/sections/Category/CategoryGrid.tsx",
-            "layout": {
-              "categoryCard": {
-                "textPosition": "bottom",
-                "textAlignment": "left"
-              }
-            },
-            "list": [
-              {
-                "image": "https://assets.decocache.com/fossil/b1a3658f-fcbd-4b19-aea1-c7676e8a911b/1.png",
-                "label": "Femininos",
-                "buttonText": "CONHEÇA",
-                "href": "/relogio/feminino?sort=release%3Adesc"
-              },
-              {
-                "image": "https://assets.decocache.com/fossil/15b94b85-6008-412a-80ea-8ff8ed906d45/2.png",
-                "label": "Masculinos",
-                "buttonText": " ENCANTE-SE",
-                "href": "/relogio/masculino?sort=release%3Adesc"
-              },
-              {
-                "image": "https://assets.decocache.com/fossil/18846491-3caf-4cda-8954-c956f32dcbec/3.png",
-                "buttonText": " CONHEÇA",
-                "href": "/acessoriosfemininos?sort=release%3Adesc",
-                "label": "Acessórios"
-              },
-              {
-                "image": "https://assets.decocache.com/fossil/09e561c5-d418-4e49-aabd-d1c33a46309c/4.png",
-                "label": "Carteiras",
-                "href": "/acessoriosmasculinos?sort=release%3Adesc",
-                "buttonText": "ESCOLHA A SUA"
-              }
-            ],
-            "header": {
-              "title": "Comprar Relógios Por Tipo"
-            }
-          },
-          {
-            "__resolveType": "site/sections/Content/BannerFossil.tsx",
-            "desktopImage": "https://assets.decocache.com/fossil/57032af6-1edf-4781-92af-e38056380f11/desktoo-(1).png",
-            "desktopImageDimensions": {
-              "width": 1230,
-              "height": 400
-            },
-            "alt": "Lançamentos",
-            "mobileImage": "https://assets.decocache.com/fossil/1f27ff76-abb5-46d2-b241-179ccf34bf01/mobile-(11).png",
-            "mobileImageDimensions": {
-              "width": 380,
-              "height": 250
-            },
-            "button": {},
-            "url": "/relogio/masculino?sort=release%3Adesc"
-          },
-          {
-            "__resolveType": "site/sections/Product/ProductShelf.tsx",
-            "layout": {
-              "showArrows": true,
-              "numberOfSliders": {
-                "desktop": 4,
-                "mobile": 2
-              },
-              "headerAlignment": "left",
-              "headerfontSize": "Small"
-            },
-            "products": {
-              "props": {
-                "sort": "discount:desc",
-                "count": 16,
-                "collection": "2146"
-              },
-              "crossSelling": "similars",
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-            },
-            "cardLayout": {
-              "layout": {
-                "hide": {
-                  "allPrices": false,
-                  "favoriteIcon": true,
-                  "installments": false,
-                  "productDescription": true
-                },
-                "basics": {
-                  "oldPriceSize": "Normal",
-                  "contentAlignment": "Left"
-                },
-                "onMouseOver": {
-                  "card": "None",
-                  "image": "Change image",
-                  "showCta": true,
-                  "showCardShadow": false,
-                  "showSkuSelector": false,
-                  "showFavoriteIcon": false
-                },
-                "elementsPositions": {
-                  "skuSelector": "Bottom",
-                  "favoriteIcon": "Top right"
-                }
-              },
-              "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
-            },
-            "title": "LANÇAMENTOS"
-          },
-          {
-            "__resolveType": "site/sections/Content/BannerFossilCarousel.tsx",
-            "title": "Veja Também",
-            "layout": {
-              "numberOfSliders": {
-                "mobile": 3,
-                "desktop": 6
-              },
-              "headerAlignment": "center",
-              "headerfontSize": "Small",
-              "showArrows": false
-            },
-            "cards": [
-              {
-                "Image": "https://www.fossil.com.br/arquivos/men-gold-tone-watch.jpg?v=638253915301130000",
-                "alt": "Relógio de Ouro para  Homens",
-                "action": {
-                  "href": "/relogio/masculino/dourado",
-                  "title": "Relógios Masculinos Dourados",
-                  "label": "Relógios Masculinos Dourados"
-                }
-              },
-              {
-                "Image": "https://www.fossil.com.br/arquivos/men-black-tone-watch.jpg?v=638253915297830000",
-                "action": {
-                  "title": "Relógios Masculinos Pretos",
-                  "href": "/relogio/masculino/preto",
-                  "label": "Relógios Masculinos Pretos"
-                },
-                "alt": "Relógio preto para homem "
-              },
-              {
-                "action": {
-                  "title": "Relógios Masculinos Prateados",
-                  "label": "Relógios Masculinos Prateados",
-                  "href": "/relogio/masculino/prata"
-                },
-                "Image": "https://www.fossil.com.br/arquivos/men-silver-tone-watch.jpg?v=638253915307570000",
-                "alt": "Relógio Prata para homem"
-              },
-              {
-                "Image": "https://fossil.vteximg.com.br/arquivos/women-gold-tone-watch.jpg?v=638253915310530000",
-                "action": {
-                  "title": "Relógios Femininos Dourados",
-                  "label": "Relógios Femininos Dourados",
-                  "href": "/relogio/feminino/dourado"
-                },
-                "alt": "Relógio de Ouro feminino"
-              },
-              {
-                "action": {
-                  "title": "Relógios Femininos Bicolores",
-                  "label": "Relógios Femininos Bicolores",
-                  "href": "/relogio/feminino/bicolor"
-                },
-                "Image": "https://www.fossil.com.br/arquivos/women-black-tone-watch.jpg?v=638253915308570000",
-                "alt": "Relógio Preto  para as mulheres"
-              },
-              {
-                "Image": "https://fossil.vteximg.com.br/arquivos/men-rosegold-tone-watch.jpg?v=638253915305200000",
-                "action": {
-                  "title": "Relógios Femininos Rosés",
-                  "label": "Relógios Femininos Rosés",
-                  "href": "/relogio/feminino/rose"
-                },
-                "alt": "Relógio  Rose Gold para as mulheres"
-              }
-            ]
-          },
-          {
-            "__resolveType": "site/sections/Content/YourViewstestimonial.tsx"
-          },
-          {
-            "__resolveType": "site/sections/Newsletter/NewsletterModal.tsx",
-            "textSendSucess": "<p><strong><span style=\"font-size: 31.5pt\">Ganhe 10% off</span></strong></p><p><span style=\"font-size: 19.5pt\">na primeira compra!</span></p>",
-            "text": "<p><span style=\"font-size: 19.5pt\">Cadastre-se no site</span></p><p><strong><span style=\"font-size: 30pt\">e receba promoções exclusivas</span></strong></p>",
-            "colorText": "#000000",
-            "backgrounds": {
-              "desktop": {
-                "initial": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/af17e03d-5d4c-49cb-91a0-3c7d93a6bb1a/banner.png",
-                "width": 932,
-                "height": 687,
-                "success": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/ebd4b476-498b-40b9-aaed-507a5e2dce25/banner.png"
-              },
-              "mobile": {
-                "initial": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/910a99f9-2d55-4262-93de-fcd129f74d71/banner-mobile.png",
-                "success": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/9c3276a1-0691-4f66-959d-b5469736820f/banner-mobile.png",
-                "width": 393,
-                "height": 555
-              }
-            },
-            "modalSignExpiredDate": 360,
-            "modalCloseExpiredDate": 10,
-            "image": {
-              "desktop": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/b804a45b-2346-4491-9e97-e2b0213b2763/banner.png",
-                "width": 932,
-                "height": 687
-              },
-              "mobile": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/de80bf78-255f-4cdf-8e0b-79c1e900ecd8/banner-mobile.png",
-                "width": 393,
-                "height": 555
-              }
-            },
-            "form": {
-              "email": {
-                "placeholder": "Seu e-mail"
-              },
-              "name": {
-                "placeholder": "Seu nome"
-              },
-              "button": {
-                "label": "Inscreva-se"
-              }
-            },
-            "textFieldCupom": "Use o cupom",
-            "textCupom": "10BOASVINDAS",
-            "is_active": true
-          },
-          {
-            "__resolveType": "Footer - 04"
-          },
-          {
-            "__resolveType": "My Theme"
-          },
-          {
-            "__resolveType": "Preview /sections/Content/YourViewsIntegration.tsx"
-          }
-        ],
-        "rule": {
-          "__resolveType": "website/matchers/always.ts"
         }
       }
     ]

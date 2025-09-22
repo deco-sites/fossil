@@ -45,6 +45,12 @@ export interface SecondaryCard {
   mobileImage?: ImageWidget;
 
   /**
+   * @title URL da Imagem
+   * @description Link para onde a imagem deve direcionar (URL relativa)
+   */
+  imageUrl?: string;
+
+  /**
    * @title URL dos Termos
    * @description Link para a página de termos e condições
    */
@@ -93,6 +99,12 @@ export interface Props {
    * @description 660x800
    */
   heroMobileImage?: ImageWidget;
+
+  /**
+   * @title URL da Imagem Principal
+   * @description Link para onde a imagem principal deve direcionar (URL relativa)
+   */
+  heroImageUrl?: string;
 
   /**
    * @title Card Secundário
@@ -179,18 +191,34 @@ function SecondaryCardContent({
 
   if (isDesktop) {
     return (
-      <div className="bg-white/95 rounded-2xl relative w-full overflow-hidden">
+      <div className="rounded-2xl relative w-full overflow-hidden">
         <div className="relative">
-          <NJPicture
-            desktop={card.desktopImage}
-            mobile={card.mobileImage}
-            alt={card.title || ""}
-            width={imageWidth}
-            height={imageHeight}
-            class="w-full h-auto max-w-full"
-            classImage="rounded-3xl"
-          />
-          <div className="absolute bottom-0 left-0 right-0 p-6">
+          {card.imageUrl
+            ? (
+              <a href={card.imageUrl} className="block">
+                <NJPicture
+                  desktop={card.desktopImage}
+                  mobile={card.mobileImage}
+                  alt={card.title || ""}
+                  width={imageWidth}
+                  height={imageHeight}
+                  class="w-full h-auto max-w-full"
+                  classImage="rounded-3xl"
+                />
+              </a>
+            )
+            : (
+              <NJPicture
+                desktop={card.desktopImage}
+                mobile={card.mobileImage}
+                alt={card.title || ""}
+                width={imageWidth}
+                height={imageHeight}
+                class="w-full h-auto max-w-full"
+                classImage="rounded-3xl"
+              />
+            )}
+          <div className="absolute bottom-0 left-0 right-0 p-6 pointer-events-none">
             <div className="space-y-1">
               {card.label && (
                 <span className="text-xs font-soleil tracking-wider text-primary uppercase block">
@@ -218,16 +246,32 @@ function SecondaryCardContent({
   return (
     <div className="rounded-2xl space-y-3 !mt-12">
       <div className="w-full relative">
-        <NJPicture
-          desktop={card.desktopImage}
-          mobile={card.mobileImage}
-          alt={card.title || ""}
-          width={imageWidth}
-          height={imageHeight}
-          class="w-full h-auto"
-          classImage="rounded-3xl"
-        />
-        <div className={`absolute ${mascotPosition}`}>
+        {card.imageUrl
+          ? (
+            <a href={card.imageUrl} className="block">
+              <NJPicture
+                desktop={card.desktopImage}
+                mobile={card.mobileImage}
+                alt={card.title || ""}
+                width={imageWidth}
+                height={imageHeight}
+                class="w-full h-auto"
+                classImage="rounded-3xl"
+              />
+            </a>
+          )
+          : (
+            <NJPicture
+              desktop={card.desktopImage}
+              mobile={card.mobileImage}
+              alt={card.title || ""}
+              width={imageWidth}
+              height={imageHeight}
+              class="w-full h-auto"
+              classImage="rounded-3xl"
+            />
+          )}
+        <div className={`absolute ${mascotPosition} pointer-events-none`}>
           <NJEggMascot class={mascotSize} />
         </div>
       </div>
@@ -260,6 +304,7 @@ function MobileLayout({
   cta,
   heroDesktopImage,
   heroMobileImage,
+  heroImageUrl,
   secondaryCard,
 }: Props) {
   return (
@@ -282,15 +327,31 @@ function MobileLayout({
       </div>
 
       <div className="relative !mt-8">
-        <NJPicture
-          desktop={heroDesktopImage}
-          mobile={heroMobileImage}
-          alt={title}
-          width={330}
-          height={400}
-          class="overflow-hidden"
-          classImage="rounded-3xl"
-        />
+        {heroImageUrl
+          ? (
+            <a href={heroImageUrl} className="block">
+              <NJPicture
+                desktop={heroDesktopImage}
+                mobile={heroMobileImage}
+                alt={title}
+                width={330}
+                height={400}
+                class="overflow-hidden"
+                classImage="rounded-3xl"
+              />
+            </a>
+          )
+          : (
+            <NJPicture
+              desktop={heroDesktopImage}
+              mobile={heroMobileImage}
+              alt={title}
+              width={330}
+              height={400}
+              class="overflow-hidden"
+              classImage="rounded-3xl"
+            />
+          )}
       </div>
 
       <div className="text-center">
@@ -325,6 +386,7 @@ function DesktopLayout({
   cta,
   heroDesktopImage,
   heroMobileImage,
+  heroImageUrl,
   secondaryCard,
 }: Props) {
   return (
@@ -355,19 +417,35 @@ function DesktopLayout({
 
         <div className="flex-1 max-w-[715px] min-w-0 relative">
           <div className="relative">
-            <NJPicture
-              desktop={heroDesktopImage}
-              mobile={heroMobileImage}
-              alt={title}
-              width={715}
-              height={800}
-              class="overflow-hidden w-full h-auto max-w-full"
-              classImage="rounded-3xl"
-            />
-            <div className="absolute -top-20 -left-20">
+            {heroImageUrl
+              ? (
+                <a href={heroImageUrl} className="block">
+                  <NJPicture
+                    desktop={heroDesktopImage}
+                    mobile={heroMobileImage}
+                    alt={title}
+                    width={715}
+                    height={800}
+                    class="overflow-hidden w-full h-auto max-w-full"
+                    classImage="rounded-3xl"
+                  />
+                </a>
+              )
+              : (
+                <NJPicture
+                  desktop={heroDesktopImage}
+                  mobile={heroMobileImage}
+                  alt={title}
+                  width={715}
+                  height={800}
+                  class="overflow-hidden w-full h-auto max-w-full"
+                  classImage="rounded-3xl"
+                />
+              )}
+            <div className="absolute -top-20 -left-20 pointer-events-none">
               <NJOrderTicket />
             </div>
-            <div className="absolute -bottom-10 left-0">
+            <div className="absolute -bottom-10 left-0 pointer-events-none">
               <NJEggMascot class="size-[135px]" />
             </div>
           </div>

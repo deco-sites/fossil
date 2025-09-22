@@ -117,6 +117,18 @@ export interface Props {
    * @minItems 1
    */
   productImages?: CarouselImage[];
+
+  /**
+   * @title URL da Imagem Principal
+   * @description Link para onde a imagem principal deve direcionar (URL relativa)
+   */
+  heroImageUrl?: string;
+
+  /**
+   * @title URL das Imagens do Produto
+   * @description Link para onde as imagens do produto devem direcionar (URL relativa)
+   */
+  productImagesUrl?: string;
 }
 
 function getSecondaryImageStyles(
@@ -253,7 +265,7 @@ function OverlayTextComponent({ overlayText }: { overlayText?: OverlayText }) {
   }
 
   return (
-    <div class="absolute top-8 left-8 space-y-2">
+    <div class="absolute top-8 left-8 space-y-2 pointer-events-none">
       {overlayText?.timeText && (
         <p class="text-sm font-soleil text-white">{overlayText.timeText}</p>
       )}
@@ -271,6 +283,7 @@ function MobileHeroImage({
   secondaryImageMobile,
   secondaryImageMobileConfig,
   title,
+  heroImageUrl,
 }: {
   heroImageDesktop?: ImageWidget;
   heroImageMobile?: ImageWidget;
@@ -278,8 +291,9 @@ function MobileHeroImage({
   secondaryImageMobile?: ImageWidget;
   secondaryImageMobileConfig?: SecondaryImageConfig;
   title?: string;
+  heroImageUrl?: string;
 }) {
-  return (
+  const heroContent = (
     <div class="relative">
       <NJPicture
         desktop={heroImageDesktop}
@@ -313,6 +327,14 @@ function MobileHeroImage({
         })()}
     </div>
   );
+
+  return heroImageUrl
+    ? (
+      <a href={heroImageUrl} className="block">
+        {heroContent}
+      </a>
+    )
+    : heroContent;
 }
 
 function DesktopHeroImage({
@@ -323,6 +345,7 @@ function DesktopHeroImage({
   secondaryImageDesktopConfig,
   title,
   overlayText,
+  heroImageUrl,
 }: {
   heroImageDesktop?: ImageWidget;
   heroImageMobile?: ImageWidget;
@@ -331,8 +354,9 @@ function DesktopHeroImage({
   secondaryImageDesktopConfig?: SecondaryImageConfig;
   title?: string;
   overlayText?: OverlayText;
+  heroImageUrl?: string;
 }) {
-  return (
+  const heroContent = (
     <div class="relative overflow-visible">
       <NJPicture
         desktop={heroImageDesktop}
@@ -368,9 +392,20 @@ function DesktopHeroImage({
         })()}
     </div>
   );
+
+  return heroImageUrl
+    ? (
+      <a href={heroImageUrl} className="block">
+        {heroContent}
+      </a>
+    )
+    : heroContent;
 }
 
-function ProductImage({ productImages }: { productImages?: CarouselImage[] }) {
+function ProductImage({ productImages, productImagesUrl }: {
+  productImages?: CarouselImage[];
+  productImagesUrl?: string;
+}) {
   if (!productImages || productImages.length === 0) return null;
 
   const processedImages = productImages.map((image) => ({
@@ -378,9 +413,19 @@ function ProductImage({ productImages }: { productImages?: CarouselImage[] }) {
     mobileImage: image.mobileImage || image.desktopImage,
   }));
 
+  const carouselElement = (
+    <ScrollTriggeredCarousel images={processedImages} isMobile={false} />
+  );
+
   return (
     <div class="w-full mt-[75px]">
-      <ScrollTriggeredCarousel images={processedImages} isMobile={false} />
+      {productImagesUrl
+        ? (
+          <a href={productImagesUrl} className="block">
+            {carouselElement}
+          </a>
+        )
+        : carouselElement}
     </div>
   );
 }
@@ -395,6 +440,7 @@ function MobileLayout({
   secondaryImageDesktop,
   secondaryImageMobile,
   secondaryImageMobileConfig,
+  heroImageUrl,
 }: Props) {
   return (
     <div class="lg:hidden lg:px-5 py-8">
@@ -405,6 +451,7 @@ function MobileLayout({
         secondaryImageMobile={secondaryImageMobile}
         secondaryImageMobileConfig={secondaryImageMobileConfig}
         title={title}
+        heroImageUrl={heroImageUrl}
       />
 
       <ContentSection
@@ -430,6 +477,8 @@ function DesktopLayout({
   secondaryImageMobile,
   secondaryImageDesktopConfig,
   productImages,
+  heroImageUrl,
+  productImagesUrl,
 }: Props) {
   return (
     <div class="hidden lg:block relative px-8 py-16">
@@ -445,6 +494,7 @@ function DesktopLayout({
               secondaryImageDesktopConfig={secondaryImageDesktopConfig}
               title={title}
               overlayText={overlayText}
+              heroImageUrl={heroImageUrl}
             />
           </div>
 
@@ -457,7 +507,10 @@ function DesktopLayout({
               cta={cta}
             />
 
-            <ProductImage productImages={productImages} />
+            <ProductImage
+              productImages={productImages}
+              productImagesUrl={productImagesUrl}
+            />
           </div>
         </div>
       </div>

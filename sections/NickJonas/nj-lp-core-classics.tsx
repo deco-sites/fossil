@@ -30,6 +30,12 @@ export interface Props {
    * @minItems 1
    */
   images?: CarouselImage[];
+
+  /**
+   * @title URL das Imagens
+   * @description Link para onde as imagens devem direcionar (URL relativa)
+   */
+  imageUrl?: string;
 }
 
 function Title({
@@ -103,9 +109,11 @@ function CTA({ cta, isMobile = false }: { cta: Button; isMobile?: boolean }) {
 
 function ResponsiveImageComponent({
   images,
+  imageUrl,
   isMobile = false,
 }: {
   images?: CarouselImage[];
+  imageUrl?: string;
   isMobile?: boolean;
 }) {
   if (!images || images.length === 0) return null;
@@ -115,17 +123,27 @@ function ResponsiveImageComponent({
     mobileImage: image.mobileImage || image.desktopImage,
   }));
 
-  return (
+  const carouselElement = (
     <ScrollTriggeredCarousel images={processedImages} isMobile={isMobile} />
   );
+
+  return imageUrl
+    ? (
+      <a href={imageUrl} className="block">
+        {carouselElement}
+      </a>
+    )
+    : carouselElement;
 }
 
-function MobileLayout({ title, description, emphasis, cta, images }: Props) {
+function MobileLayout(
+  { title, description, emphasis, cta, images, imageUrl }: Props,
+) {
   return (
     <div class="lg:hidden space-y-6">
       {title && <Title title={title} isMobile />}
 
-      <ResponsiveImageComponent images={images} isMobile />
+      <ResponsiveImageComponent images={images} imageUrl={imageUrl} isMobile />
 
       <Description description={description} isMobile />
 
@@ -136,7 +154,9 @@ function MobileLayout({ title, description, emphasis, cta, images }: Props) {
   );
 }
 
-function DesktopLayout({ title, description, emphasis, cta, images }: Props) {
+function DesktopLayout(
+  { title, description, emphasis, cta, images, imageUrl }: Props,
+) {
   return (
     <div class="hidden lg:grid lg:grid-cols-12 lg:gap-x-12 lg:gap-y-8">
       <div class="lg:col-span-7 flex flex-col space-y-6">
@@ -150,7 +170,7 @@ function DesktopLayout({ title, description, emphasis, cta, images }: Props) {
       </div>
 
       <div class="lg:col-span-4">
-        <ResponsiveImageComponent images={images} />
+        <ResponsiveImageComponent images={images} imageUrl={imageUrl} />
       </div>
     </div>
   );

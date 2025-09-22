@@ -78,7 +78,7 @@ function NJProductCard({
               height={HEIGHT}
               style={{ aspectRatio }}
               class={clx(
-                "object-cover w-full h-full",
+                "object-cover w-full h-full bg-white",
                 "transition-transform duration-300",
                 "group-hover:scale-105",
                 // fade image once ready
@@ -100,7 +100,7 @@ function NJProductCard({
                   height={HEIGHT}
                   style={{ aspectRatio }}
                   class={clx(
-                    "absolute top-0 left-0 object-cover w-full h-full",
+                    "absolute top-0 left-0 object-cover w-full h-full bg-white",
                     "transition-opacity duration-300",
                     hideImage
                       ? "opacity-0"

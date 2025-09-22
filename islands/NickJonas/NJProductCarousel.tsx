@@ -238,7 +238,6 @@ export default function NJProductCarousel({
     null,
   );
 
-  // Custom hooks for different concerns
   const getSlidesPerView = useSlidesPerView();
   const { updateButtonStates } = useButtonState(id, getSlidesPerView);
   const { updatePagination } = usePagination(id);
@@ -252,7 +251,6 @@ export default function NJProductCarousel({
 
   const fallbackSlideWidth = useMemo(() => `${100 / 1}%`, []);
 
-  // Initialize swiper
   useEffect(() => {
     if (!isSwiperReady || !swiperRef.current || swiperInstance) return;
 
@@ -293,17 +291,14 @@ export default function NJProductCarousel({
     updateButtonStates,
   ]);
 
-  // Setup navigation event listeners
   useEffect(() => {
     if (!swiperInstance) return;
 
     const nextButtons = document.querySelectorAll(`#${id}-next`);
     const prevButtons = document.querySelectorAll(`#${id}-prev`);
 
-    // Initialize button states
     updateButtonStates(swiperInstance);
 
-    // Add event listeners
     nextButtons.forEach((button) =>
       button.addEventListener("click", handleNext)
     );
@@ -311,7 +306,6 @@ export default function NJProductCarousel({
       button.addEventListener("click", handlePrev)
     );
 
-    // Handle window resize
     const handleResize = () => {
       setTimeout(() => updateButtonStates(swiperInstance), 100);
     };

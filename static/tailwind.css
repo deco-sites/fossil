@@ -7455,9 +7455,6 @@ details.collapse summary::-webkit-details-marker {
 .bg-white\/40 {
   background-color: rgb(255 255 255 / 0.4);
 }
-.bg-white\/95 {
-  background-color: rgb(255 255 255 / 0.95);
-}
 .bg-opacity-70 {
   --tw-bg-opacity: 0.7;
 }
@@ -11476,6 +11473,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:max-w-6xl {
     max-width: 72rem;
+  }
+
+  .lg\:max-w-7xl {
+    max-width: 80rem;
   }
 
   .lg\:max-w-\[25\%\] {
