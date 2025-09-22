@@ -117,7 +117,7 @@
                 "description": "Projetados para o seu dia a dia e feitos para durar, estes relógios acertam em cheio todos os dias.",
                 "cta": {
                   "name": "Ver Mais",
-                  "url": "/nick-jonas"
+                  "url": "/relogio/masculino?sort=release%3Adesc"
                 },
                 "desktopImage": "https://assets.decocache.com/fossil/ebd14f0a-0039-41b1-9aff-d232dd9c71ac/nj-core-classics-1.jpg",
                 "mobileImage": "https://assets.decocache.com/fossil/6c847d74-3840-4c8a-8134-5c53e2979003/nj-core-classics-1-mobile.jpg"
@@ -128,7 +128,7 @@
                 "description": "Eternizando a elegância, esses designs exclusivos combinam perfeitamente com cada um dos seus movimentos.",
                 "cta": {
                   "name": "Ver Mais",
-                  "url": "/nick-jonas"
+                  "url": "/relogio/feminino?sort=release%3Adesc"
                 },
                 "desktopImage": "https://assets.decocache.com/fossil/a0f5d8f7-b366-44ca-ac8f-bcc3c6389b62/nj-core-classics-2.jpg",
                 "mobileImage": "https://assets.decocache.com/fossil/6e25e098-5706-4490-990a-dc2939fd7def/nj-core-classics-2-mobile.jpg",
@@ -148,28 +148,28 @@
                   "desktopImage": "https://assets.decocache.com/fossil/a0aac48c-2028-4b05-9f64-4176ebce22d6/1-NJ-HP-WDYGT-Neutra.jpg",
                   "mobileImage": "https://assets.decocache.com/fossil/a0aac48c-2028-4b05-9f64-4176ebce22d6/1-NJ-HP-WDYGT-Neutra.jpg",
                   "alt": "1",
-                  "href": "#",
+                  "href": "/s?q=neutra&utmi_pc=search&utmi_cp=neutra",
                   "caption": "Comprar Neutra Chronograph"
                 },
                 {
                   "desktopImage": "https://assets.decocache.com/fossil/c123ea75-3ebd-4fb0-a8a7-e6bbb41fbe8c/2-NJ-HP-WDYGT-Everett.jpg",
                   "mobileImage": "https://assets.decocache.com/fossil/c123ea75-3ebd-4fb0-a8a7-e6bbb41fbe8c/2-NJ-HP-WDYGT-Everett.jpg",
                   "alt": "2",
-                  "href": "#",
+                  "href": "/s?q=everett&utmi_pc=search&utmi_cp=everett",
                   "caption": "Comprar Everett"
                 },
                 {
                   "desktopImage": "https://assets.decocache.com/fossil/c89ffa8e-fac8-4bb5-8029-eddbcc5bc92d/3-NJ-HP-WDYGT-Img3_ES5432.jpg",
                   "mobileImage": "https://assets.decocache.com/fossil/c89ffa8e-fac8-4bb5-8029-eddbcc5bc92d/3-NJ-HP-WDYGT-Img3_ES5432.jpg",
                   "alt": "3",
-                  "href": "#",
+                  "href": "/s?q=watch&utmi_pc=search&utmi_cp=watch",
                   "caption": "Comprar Anel-Relógio Raquel"
                 },
                 {
                   "desktopImage": "https://assets.decocache.com/fossil/7aacf1bd-2fa2-41a3-b5e3-b587830a3629/4-NJ-HP-WDYGT-Img4_ES5422.jpg",
                   "mobileImage": "https://assets.decocache.com/fossil/7aacf1bd-2fa2-41a3-b5e3-b587830a3629/4-NJ-HP-WDYGT-Img4_ES5422.jpg",
                   "alt": "4",
-                  "href": "#",
+                  "href": "/s?q=gilmore&utmi_pc=search&utmi_cp=gilmore",
                   "caption": "Comprar Gilmore"
                 }
               ]
@@ -183,23 +183,23 @@
               "categories": [
                 {
                   "name": "Masculino",
-                  "url": "#"
+                  "url": "/relogio/masculino?sort=release%3Adesc"
                 },
                 {
                   "name": "Feminino",
-                  "url": "#"
+                  "url": "/relogio/feminino?sort=release%3Adesc"
                 },
                 {
                   "name": "Relógios",
-                  "url": "#"
+                  "url": "/relogio"
                 },
                 {
                   "name": "Novidades",
-                  "url": "#"
+                  "url": "/lancamentos"
                 },
                 {
                   "name": "Outlet",
-                  "url": "#"
+                  "url": "/off"
                 }
               ]
             }
