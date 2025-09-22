@@ -49,7 +49,7 @@ function NJShopByCategories({ title, categories }: Props) {
                     </span>
                   </div>
                 </a>
-              )
+              ),
           )}
         </div>
       </div>

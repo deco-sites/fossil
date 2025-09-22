@@ -358,8 +358,8 @@
     {
       "children": [],
       "image": [],
-      "name": "OFF",
-      "url": "/off"
+      "url": "/off",
+      "name": "Off"
     }
   ],
   "__resolveType": "commerce/loaders/navbar.ts"
