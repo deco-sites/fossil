@@ -8,8 +8,8 @@
     {
       "__resolveType": "site/sections/Hotsites/PresenteBanner.tsx",
       "banner": {
-        "imageDesktop": "https://assets.decocache.com/fossil/87e7b649-ba5a-4e28-8ffb-af7a1a05801a/LPpresentes_bannerprincipal_desk_pais-(2).jpg",
-        "imageMobile": "https://assets.decocache.com/fossil/6ec65b9a-44d0-4f26-a35a-4990934f9b7f/LPpresentes_bannerprincipal_mob_pais-(4).jpg"
+        "imageDesktop": "https://assets.decocache.com/fossil/ab7fc212-dadc-47ed-996f-7d4350fe58eb/fossil_banner_presente_header_desktop.png",
+        "imageMobile": "https://assets.decocache.com/fossil/8c51a069-5c19-4f20-9e06-02c81b703cd0/fossil_banner_presente_header_mobile-(1).png"
       },
       "cta": {},
       "logo": {
@@ -157,7 +157,7 @@
         {
           "title": "BESTSELLING RAQUEL",
           "description": "Encontre modelos femininos para presentear quem ama.",
-          "image": "https://assets.decocache.com/fossil/eeb65625-75d5-438e-ae9e-1c5d0746c2ba/LPpresentes_bannersecundario_desk_pais2.jpg",
+          "image": "https://assets.decocache.com/fossil/12a0b6b0-7d20-4262-9afc-a9b7e4bb8b25/fossil_presente_desktop_secao.png",
           "url": "/relogio/feminino?sort=release%3Adesc",
           "label": "PRESENTES PARA ELA"
         },
