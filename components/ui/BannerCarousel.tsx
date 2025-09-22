@@ -185,6 +185,7 @@ function Dots({ images, interval = 0 }: Props) {
   return (
     <>
       <style
+        // deno-lint-ignore react-no-danger
         dangerouslySetInnerHTML={{
           __html: `
           @property --dot-progress {

@@ -11,6 +11,7 @@ function HtmlContent({ content }: Props) {
   return (
     <div
       className="htmlContent"
+      // deno-lint-ignore react-no-danger
       dangerouslySetInnerHTML={{ __html: content }}
     />
   );

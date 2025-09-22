@@ -22,10 +22,10 @@ const handleLoadCss = (styles: string) => {
 const handleSetScope = () => {
   // deno-lint-ignore ban-ts-comment
   // @ts-expect-error
-  window.vtexid.setScope("600bd0e1-0084-40b9-a566-cc962e3f5a12");
+  globalThis.window.vtexid.setScope("600bd0e1-0084-40b9-a566-cc962e3f5a12");
   // deno-lint-ignore ban-ts-comment
   // @ts-expect-error
-  window.vtexid.setScopeName(storeScope);
+  globalThis.window.vtexid.setScopeName(storeScope);
 };
 
 export const loadVtexIdScripts = (callback: () => void) => {

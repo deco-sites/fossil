@@ -22,6 +22,7 @@ export default function Section({ name = "It Works!", count = 0 }: Props) {
     >
       <div
         class="leading-10 text-6xl"
+        // deno-lint-ignore react-no-danger
         dangerouslySetInnerHTML={{
           __html: name,
         }}
@@ -30,6 +31,7 @@ export default function Section({ name = "It Works!", count = 0 }: Props) {
       <div class="flex flex-col items-center justify-center gap-2">
         <div class="flex items-center gap-4">
           <button
+            type="button"
             hx-target="#it-works"
             hx-swap="outerHTML"
             hx-get={downLink["f-partial"]} // htmx link for this section with the down vote props
@@ -42,6 +44,7 @@ export default function Section({ name = "It Works!", count = 0 }: Props) {
           </button>
           <span>{count}</span>
           <button
+            type="button"
             hx-target="#it-works"
             hx-swap="outerHTML"
             hx-get={upLink["f-partial"]} // htmx link for this section with the up vote props

@@ -18,6 +18,7 @@ function HelpHomePage({ title, cards }: Props) {
     <>
       <Head>
         <style
+          // deno-lint-ignore react-no-danger
           dangerouslySetInnerHTML={{
             __html: `
 
@@ -64,9 +65,9 @@ function HelpHomePage({ title, cards }: Props) {
                   <span
                     class="assistencia-tecnica__span uppercase text-xs xl:text-base xl:hover:text-[22px] text-white font-light mt-3 transition-all duration-[.3s]"
                     data-page="ordem-de-servico"
+                    // deno-lint-ignore react-no-danger
                     dangerouslySetInnerHTML={{ __html: card?.label }}
                   >
-                    {card?.label}
                   </span>
                 </a>
               </li>

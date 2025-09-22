@@ -110,7 +110,7 @@ export default function BannerFossilCoousel({
                       alt={card.alt}
                       class="w-full max-w-48 h-full max-h-48 object-cover"
                       fetchPriority="auto"
-                      loading={`lazy`}
+                      loading="lazy"
                     />
                   </div>
                   <div class="w-full">
@@ -125,6 +125,7 @@ export default function BannerFossilCoousel({
 
           {/** Dots */}
           <style
+            // deno-lint-ignore react-no-danger
             dangerouslySetInnerHTML={{
               __html: `
             @property --dot-progress {

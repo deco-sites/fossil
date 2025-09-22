@@ -35,7 +35,9 @@ export default function Card(props: Props) {
         {callToAction && (
           <div className="card-actions justify-end">
             <a href={callToAction.href}>
-              <button className="btn btn-primary">{callToAction.title}</button>
+              <button type="button" className="btn btn-primary">
+                {callToAction.title}
+              </button>
             </a>
           </div>
         )}

@@ -77,24 +77,39 @@ import * as $$$$$$63 from "./sections/Miscellaneous/ProxyIframe.tsx";
 import * as $$$$$$64 from "./sections/Miscellaneous/Slide.tsx";
 import * as $$$$$$65 from "./sections/Newsletter/Newsletter.tsx";
 import * as $$$$$$66 from "./sections/Newsletter/NewsletterModal.tsx";
-import * as $$$$$$67 from "./sections/Product/ImageGalleryFrontBack.tsx";
-import * as $$$$$$68 from "./sections/Product/NotFound.tsx";
-import * as $$$$$$69 from "./sections/Product/NotFoundChallenge.tsx";
-import * as $$$$$$70 from "./sections/Product/ProductDetails.tsx";
-import * as $$$$$$71 from "./sections/Product/ProductShelf.tsx";
-import * as $$$$$$72 from "./sections/Product/ProductShelfTabbed.tsx";
-import * as $$$$$$73 from "./sections/Product/SearchResult.tsx";
-import * as $$$$$$74 from "./sections/Product/SearchResultView.tsx";
-import * as $$$$$$75 from "./sections/Product/ShelfWithImage.tsx";
-import * as $$$$$$76 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$77 from "./sections/Seo/SeoBaseCustomV2.tsx";
-import * as $$$$$$79 from "./sections/Seo/SeoPdpCustom.tsx";
-import * as $$$$$$80 from "./sections/Seo/SeoPdpCustomV2.tsx";
-import * as $$$$$$81 from "./sections/Seo/SeoPlpCustomV2.tsx";
-import * as $$$$$$78 from "./sections/Seo/SeoPLPV6.tsx";
-import * as $$$$$$82 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$83 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$84 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$67 from "./sections/NickJonas/nj-checkerboard.tsx";
+import * as $$$$$$68 from "./sections/NickJonas/nj-collection-highlight.tsx";
+import * as $$$$$$69 from "./sections/NickJonas/nj-collection.tsx";
+import * as $$$$$$70 from "./sections/NickJonas/nj-core-classics.tsx";
+import * as $$$$$$71 from "./sections/NickJonas/nj-hero.tsx";
+import * as $$$$$$72 from "./sections/NickJonas/nj-lp-collection.tsx";
+import * as $$$$$$73 from "./sections/NickJonas/nj-lp-core-classics.tsx";
+import * as $$$$$$74 from "./sections/NickJonas/nj-lp-diner-mug-promo.tsx";
+import * as $$$$$$75 from "./sections/NickJonas/nj-lp-quote.tsx";
+import * as $$$$$$76 from "./sections/NickJonas/nj-product-showcase.tsx";
+import * as $$$$$$77 from "./sections/NickJonas/nj-promotional-bar.tsx";
+import * as $$$$$$78 from "./sections/NickJonas/nj-quote.tsx";
+import * as $$$$$$79 from "./sections/NickJonas/nj-shop-by-categories.tsx";
+import * as $$$$$$80 from "./sections/NickJonas/nj-where-did-you-get-that.tsx";
+import * as $$$$$$81 from "./sections/NickJonas/nj-with-nick-jonas.tsx";
+import * as $$$$$$82 from "./sections/Product/ImageGalleryFrontBack.tsx";
+import * as $$$$$$83 from "./sections/Product/NotFound.tsx";
+import * as $$$$$$84 from "./sections/Product/NotFoundChallenge.tsx";
+import * as $$$$$$85 from "./sections/Product/ProductDetails.tsx";
+import * as $$$$$$86 from "./sections/Product/ProductShelf.tsx";
+import * as $$$$$$87 from "./sections/Product/ProductShelfTabbed.tsx";
+import * as $$$$$$88 from "./sections/Product/SearchResult.tsx";
+import * as $$$$$$89 from "./sections/Product/SearchResultView.tsx";
+import * as $$$$$$90 from "./sections/Product/ShelfWithImage.tsx";
+import * as $$$$$$91 from "./sections/Product/Wishlist.tsx";
+import * as $$$$$$92 from "./sections/Seo/SeoBaseCustomV2.tsx";
+import * as $$$$$$94 from "./sections/Seo/SeoPdpCustom.tsx";
+import * as $$$$$$95 from "./sections/Seo/SeoPdpCustomV2.tsx";
+import * as $$$$$$96 from "./sections/Seo/SeoPlpCustomV2.tsx";
+import * as $$$$$$93 from "./sections/Seo/SeoPLPV6.tsx";
+import * as $$$$$$97 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$98 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$99 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
@@ -171,24 +186,39 @@ const manifest = {
     "site/sections/Miscellaneous/Slide.tsx": $$$$$$64,
     "site/sections/Newsletter/Newsletter.tsx": $$$$$$65,
     "site/sections/Newsletter/NewsletterModal.tsx": $$$$$$66,
-    "site/sections/Product/ImageGalleryFrontBack.tsx": $$$$$$67,
-    "site/sections/Product/NotFound.tsx": $$$$$$68,
-    "site/sections/Product/NotFoundChallenge.tsx": $$$$$$69,
-    "site/sections/Product/ProductDetails.tsx": $$$$$$70,
-    "site/sections/Product/ProductShelf.tsx": $$$$$$71,
-    "site/sections/Product/ProductShelfTabbed.tsx": $$$$$$72,
-    "site/sections/Product/SearchResult.tsx": $$$$$$73,
-    "site/sections/Product/SearchResultView.tsx": $$$$$$74,
-    "site/sections/Product/ShelfWithImage.tsx": $$$$$$75,
-    "site/sections/Product/Wishlist.tsx": $$$$$$76,
-    "site/sections/Seo/SeoBaseCustomV2.tsx": $$$$$$77,
-    "site/sections/Seo/SeoPdpCustom.tsx": $$$$$$79,
-    "site/sections/Seo/SeoPdpCustomV2.tsx": $$$$$$80,
-    "site/sections/Seo/SeoPlpCustomV2.tsx": $$$$$$81,
-    "site/sections/Seo/SeoPLPV6.tsx": $$$$$$78,
-    "site/sections/Social/InstagramPosts.tsx": $$$$$$82,
-    "site/sections/Social/WhatsApp.tsx": $$$$$$83,
-    "site/sections/Theme/Theme.tsx": $$$$$$84,
+    "site/sections/NickJonas/nj-checkerboard.tsx": $$$$$$67,
+    "site/sections/NickJonas/nj-collection-highlight.tsx": $$$$$$68,
+    "site/sections/NickJonas/nj-collection.tsx": $$$$$$69,
+    "site/sections/NickJonas/nj-core-classics.tsx": $$$$$$70,
+    "site/sections/NickJonas/nj-hero.tsx": $$$$$$71,
+    "site/sections/NickJonas/nj-lp-collection.tsx": $$$$$$72,
+    "site/sections/NickJonas/nj-lp-core-classics.tsx": $$$$$$73,
+    "site/sections/NickJonas/nj-lp-diner-mug-promo.tsx": $$$$$$74,
+    "site/sections/NickJonas/nj-lp-quote.tsx": $$$$$$75,
+    "site/sections/NickJonas/nj-product-showcase.tsx": $$$$$$76,
+    "site/sections/NickJonas/nj-promotional-bar.tsx": $$$$$$77,
+    "site/sections/NickJonas/nj-quote.tsx": $$$$$$78,
+    "site/sections/NickJonas/nj-shop-by-categories.tsx": $$$$$$79,
+    "site/sections/NickJonas/nj-where-did-you-get-that.tsx": $$$$$$80,
+    "site/sections/NickJonas/nj-with-nick-jonas.tsx": $$$$$$81,
+    "site/sections/Product/ImageGalleryFrontBack.tsx": $$$$$$82,
+    "site/sections/Product/NotFound.tsx": $$$$$$83,
+    "site/sections/Product/NotFoundChallenge.tsx": $$$$$$84,
+    "site/sections/Product/ProductDetails.tsx": $$$$$$85,
+    "site/sections/Product/ProductShelf.tsx": $$$$$$86,
+    "site/sections/Product/ProductShelfTabbed.tsx": $$$$$$87,
+    "site/sections/Product/SearchResult.tsx": $$$$$$88,
+    "site/sections/Product/SearchResultView.tsx": $$$$$$89,
+    "site/sections/Product/ShelfWithImage.tsx": $$$$$$90,
+    "site/sections/Product/Wishlist.tsx": $$$$$$91,
+    "site/sections/Seo/SeoBaseCustomV2.tsx": $$$$$$92,
+    "site/sections/Seo/SeoPdpCustom.tsx": $$$$$$94,
+    "site/sections/Seo/SeoPdpCustomV2.tsx": $$$$$$95,
+    "site/sections/Seo/SeoPlpCustomV2.tsx": $$$$$$96,
+    "site/sections/Seo/SeoPLPV6.tsx": $$$$$$93,
+    "site/sections/Social/InstagramPosts.tsx": $$$$$$97,
+    "site/sections/Social/WhatsApp.tsx": $$$$$$98,
+    "site/sections/Theme/Theme.tsx": $$$$$$99,
   },
   "matchers": {
     "site/matchers/utm.ts": $$$$$$$0,

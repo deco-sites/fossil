@@ -139,6 +139,7 @@ export default defineApp(async (_req, ctx) => {
 
         <style
           type="text/css"
+          // deno-lint-ignore react-no-danger
           dangerouslySetInnerHTML={{
             __html: `
             @font-face {
@@ -468,6 +469,7 @@ export default defineApp(async (_req, ctx) => {
       {/* Include service worker */}
       <script
         type="module"
+        // deno-lint-ignore react-no-danger
         dangerouslySetInnerHTML={{ __html: `(${sw})();` }}
       />
     </>

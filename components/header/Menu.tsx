@@ -73,7 +73,7 @@ function Menu({ items }: Props) {
       <ul class="px-4 flex-grow flex flex-col divide-y divide-base-200 bg-white overflow-y-scroll">
         {items.map((item) => (
           <li>
-            <MenuItem item={item} isParent={true} />
+            <MenuItem item={item} isParent />
           </li>
         ))}
 

@@ -101,6 +101,7 @@ export function cleanMarketingData() {
 }
 
 export async function sendMarketingData(marketingData: MarketingData) {
+  // deno-lint-ignore react-rules-of-hooks
   const { sendAttachment } = useCart();
 
   if (marketingData) {

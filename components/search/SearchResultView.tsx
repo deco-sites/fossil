@@ -98,8 +98,8 @@ function Result({
                       arial-label="link de pesquisa de produto"
                       class="font-arial text-base text-primary uppercase lg:px-6 lg:mb-4"
                     >
-                      {searchTerm == "relogio" ? "Relógios" : searchTerm}
-                      {"  "}({pageInfo.records})
+                      {searchTerm == "relogio" ? "Relógios" : searchTerm}{"  "}
+                      ({pageInfo.records})
                     </a>
                   </div>
                 </aside>
@@ -107,28 +107,33 @@ function Result({
             </>
           )}
           <div class="flex-grow" id={id}>
-            {device !== "desktop" ? (
-              <SearchControls
-                sortOptions={sortOptions}
-                filters={filters}
-                breadcrumb={breadcrumb}
-                displayFilter={layout?.variant === "drawer"}
-                quantityProduct={pageInfo.records}
-                type="searchView"
-                filterDrawerProps={filterDrawerProps}
-                device={device}
-                url={_url}
-              ></SearchControls>
-            ) : (
-              <div class=" flex justify-between items-center gap-2.5">
-                <div class="hidden lg:block text-primary text-base  tracking-[.0625rem] uppercase font-scout">
-                  {productsFound}
+            {device !== "desktop"
+              ? (
+                <SearchControls
+                  sortOptions={sortOptions}
+                  filters={filters}
+                  breadcrumb={breadcrumb}
+                  displayFilter={layout?.variant === "drawer"}
+                  quantityProduct={pageInfo.records}
+                  type="searchView"
+                  filterDrawerProps={filterDrawerProps}
+                  device={device}
+                  url={_url}
+                >
+                </SearchControls>
+              )
+              : (
+                <div class=" flex justify-between items-center gap-2.5">
+                  <div class="hidden lg:block text-primary text-base  tracking-[.0625rem] uppercase font-scout">
+                    {productsFound}
+                  </div>
+                  <div class="flex flex-row items-center justify-between border-b border-base-200 sm:border-none">
+                    {sortOptions.length > 0 && (
+                      <Sort sortOptions={sortOptions} />
+                    )}
+                  </div>
                 </div>
-                <div class="flex flex-row items-center justify-between border-b border-base-200 sm:border-none">
-                  {sortOptions.length > 0 && <Sort sortOptions={sortOptions} />}
-                </div>
-              </div>
-            )}
+              )}
 
             <ProductGallery
               products={products}

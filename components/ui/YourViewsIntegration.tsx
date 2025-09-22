@@ -1,4 +1,6 @@
 const loadJQuery = () => {
+  if (typeof document === "undefined") return;
+
   const script = document.createElement("script");
   script.src =
     "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js";
@@ -37,6 +39,7 @@ function YourViewsIntegration() {
     <>
       <script
         type="text/javascript"
+        // deno-lint-ignore react-no-danger
         dangerouslySetInnerHTML={{ __html: `(${loadJQuery})()` }}
       />
     </>

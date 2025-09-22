@@ -41,6 +41,10 @@ export interface Props {
   logo?: Logo;
   logoPosition?: "left" | "center";
   buttons?: Buttons;
+  header?: {
+    height?: number;
+    heightMobile?: number;
+  };
 }
 function Header({
   alerts,
@@ -80,6 +84,7 @@ function Header({
   buttons,
   device,
   marketing_data,
+  header,
 }: SectionProps<typeof loader>) {
   const platform = usePlatform();
   const items = navItems ?? [];
@@ -88,9 +93,9 @@ function Header({
       <header
         style={{
           height: device === "desktop"
-            ? headerHeight
+            ? header?.height || headerHeight
             : isShow
-            ? headerHeightMobile
+            ? header?.heightMobile || headerHeightMobile
             : 64,
         }}
         class=""

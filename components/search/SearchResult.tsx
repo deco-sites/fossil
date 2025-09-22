@@ -62,7 +62,7 @@ function Result({
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
   const { nextPage, previousPage } = pageInfo;
   const perPage = pageInfo?.recordPerPage || products.length;
-  const url = new URL(_url, window.location.origin);
+  const url = new URL(_url, globalThis.window.location.origin);
   const { format = "Show More" } = layout ?? {};
   const id = useId();
   const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;
@@ -87,64 +87,74 @@ function Result({
         )}
         <div class="flex flex-row gap-7">
           {filters.length > 0 &&
-          (!isCollection || hasParams) &&
-          (isFirstPage || !isPartial) ? (
-            <aside class="hidden sm:block w-min min-w-[300px]">
-              <Filters filters={filters} device={device} />
-              <div class="grid grid-cols-2 gap-6">
-                <a
-                  href={`${
-                    url.pathname === "/s" ? urlSearchCustom : url.pathname
-                  }`}
-                  class="inline-block cursor-pointer  h-11 font-scoutCond text-2xl tracking-one text-center leading-[44px] border border-black text-primary"
-                >
-                  Limpar
-                </a>
-              </div>
-            </aside>
-          ) : (
-            <aside class="hidden sm:block w-min min-w-[300px]">
-              <div class="h-[52px] flex items-center mb-5">
-                <span class="lg:font-bold text-2xl text-black font-scout uppercase">
-                  FILTRA POR:
-                </span>
-              </div>
-              <div class="lg:pt-6">
-                <div class="grid grid-cols-2 gap-4">
-                  <Button
-                    {...usePartialSection<typeof Result>({
-                      props: { isCollection: false },
-                    })}
+              (!isCollection || hasParams) &&
+              (isFirstPage || !isPartial)
+            ? (
+              <aside class="hidden sm:block w-min min-w-[300px]">
+                <Filters filters={filters} device={device} />
+                <div class="grid grid-cols-2 gap-6">
+                  <a
+                    href={`${
+                      url.pathname === "/s" ? urlSearchCustom : url.pathname
+                    }`}
                     class="inline-block cursor-pointer  h-11 font-scoutCond text-2xl tracking-one text-center leading-[44px] border border-black text-primary"
                   >
                     Limpar
-                  </Button>
+                  </a>
                 </div>
-              </div>
-            </aside>
-          )}
-          <div class="flex-grow" id={id}>
-            {device !== "desktop" ? (
-              <SearchControls
-                sortOptions={sortOptions}
-                filters={filters}
-                breadcrumb={breadcrumb}
-                displayFilter={layout?.variant === "drawer"}
-                quantityProduct={pageInfo.records}
-                type="searchResult"
-                url={url.toString()}
-                device={device}
-              ></SearchControls>
-            ) : (
-              <div class=" flex justify-between items-center gap-2.5">
-                <div class="hidden lg:block text-primary text-base  tracking-[.0625rem] uppercase font-scout">
-                  {productsFound}
+              </aside>
+            )
+            : (
+              <aside class="hidden sm:block w-min min-w-[300px]">
+                <div class="h-[52px] flex items-center mb-5">
+                  <span class="lg:font-bold text-2xl text-black font-scout uppercase">
+                    FILTRA POR:
+                  </span>
                 </div>
-                <div class="flex flex-row items-center justify-between border-b border-base-200 sm:border-none">
-                  {sortOptions.length > 0 && <Sort sortOptions={sortOptions} />}
+                <div class="lg:pt-6">
+                  <div class="grid grid-cols-2 gap-4">
+                    <Button
+                      {
+                        // deno-lint-ignore react-rules-of-hooks
+                        ...usePartialSection<typeof Result>({
+                          props: { isCollection: false },
+                        })
+                      }
+                      class="inline-block cursor-pointer  h-11 font-scoutCond text-2xl tracking-one text-center leading-[44px] border border-black text-primary"
+                    >
+                      Limpar
+                    </Button>
+                  </div>
                 </div>
-              </div>
+              </aside>
             )}
+          <div class="flex-grow" id={id}>
+            {device !== "desktop"
+              ? (
+                <SearchControls
+                  sortOptions={sortOptions}
+                  filters={filters}
+                  breadcrumb={breadcrumb}
+                  displayFilter={layout?.variant === "drawer"}
+                  quantityProduct={pageInfo.records}
+                  type="searchResult"
+                  url={url.toString()}
+                  device={device}
+                >
+                </SearchControls>
+              )
+              : (
+                <div class=" flex justify-between items-center gap-2.5">
+                  <div class="hidden lg:block text-primary text-base  tracking-[.0625rem] uppercase font-scout">
+                    {productsFound}
+                  </div>
+                  <div class="flex flex-row items-center justify-between border-b border-base-200 sm:border-none">
+                    {sortOptions.length > 0 && (
+                      <Sort sortOptions={sortOptions} />
+                    )}
+                  </div>
+                </div>
+              )}
 
             <ProductGallery
               products={products}
