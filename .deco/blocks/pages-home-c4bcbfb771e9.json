@@ -75,19 +75,19 @@
             "__resolveType": "site/sections/Images/Carousel.tsx",
             "images": [
               {
-                "desktop": "https://assets.decocache.com/fossil/8269aa94-a73c-471d-aae5-7cadbbafa580/Prancheta-1.png",
-                "mobile": "https://assets.decocache.com/fossil/ad44a3b1-01a5-4d73-8934-cfc301e26578/Prancheta-2-(3).png",
+                "desktop": "https://assets.decocache.com/fossil/c1899a03-3c02-4837-92d8-9b35fd436011/Prancheta-1-(1).png",
+                "mobile": "https://assets.decocache.com/fossil/ecdcb084-1a2c-4be5-88e2-7ec08817e43c/Prancheta-2-(4).png",
                 "action": {
-                  "href": "/s?q=machine&utmi_pc=search&utmi_cp=machine"
+                  "href": "/lancamentos"
                 },
-                "alt": "Machine"
+                "alt": "Nick_jonas"
               },
               {
-                "desktop": "https://assets.decocache.com/fossil/34df500e-9f9c-489f-be9c-a290130e7553/desktoo.jpg",
-                "mobile": "https://assets.decocache.com/fossil/c090122b-23f1-4b65-a11b-d53917c44f06/mobile.jpg",
-                "alt": "/relogio/feminino?sort=release%3Adesc",
+                "desktop": "https://assets.decocache.com/fossil/1f777595-ce7b-4d20-872f-f8d80e532688/desktoo-(2).png",
+                "mobile": "https://assets.decocache.com/fossil/d87ecbcc-aa9f-4de1-a07e-1254df51265e/mobile-(24).png",
+                "alt": "Classicos",
                 "action": {
-                  "href": "/relogio/masculino?sort=release%3Adesc"
+                  "href": "/feminino?sort=release%3Adesc"
                 }
               }
             ],
@@ -98,8 +98,8 @@
           },
           "rule": {
             "__resolveType": "website/matchers/date.ts",
-            "end": "2025-09-15T02:59:00.000Z",
-            "start": "2025-09-03T03:00:00.000Z"
+            "end": "2025-10-01T02:59:00.000Z",
+            "start": "2025-09-22T03:00:00.000Z"
           }
         },
         {
