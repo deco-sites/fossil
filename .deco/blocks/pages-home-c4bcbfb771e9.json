@@ -299,9 +299,16 @@
                   },
                   "tailwind": "font-normal",
                   "mobile": {
-                    "margin": "22px 0px 0 0"
+                    "margin": "117px 0px 0px",
+                    "fontSize": "1.0rem"
                   }
                 }
+              },
+              "modal": {
+                "maxWidthDesktop": "90%",
+                "maxWidthMobile": "90%",
+                "maxHeightMobile": "350px",
+                "maxHeight": "555px"
               }
             },
             "imageSuccess": {

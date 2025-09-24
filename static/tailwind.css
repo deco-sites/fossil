@@ -7355,10 +7355,6 @@ details.collapse summary::-webkit-details-marker {
 .bg-\[\#ffffff99\] {
   background-color: #ffffff99;
 }
-.bg-\[\#ffffff\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
 .bg-\[\] {
   background-color: ;
 }

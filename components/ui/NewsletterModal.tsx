@@ -292,9 +292,10 @@ function NewsletterModal({
             <button
               type="button"
               class="absolute -top-[11px] right-0 translate-x-1/2 bg-[#333333] border-none rounded-full p-[0.2rem] cursor-pointer text-white"
-              onClick={() =>
-                setCookieOnCloseModal("closed", modalCloseExpiredDate)
-              }
+              onClick={() => {
+                setCookieOnCloseModal("closed", modalCloseExpiredDate);
+                modalRef.current?.close();
+              }}
               aria-label="Fechar"
             >
               <Icon id="CloseNewsletter" width={22} height={22} />
@@ -351,7 +352,8 @@ function NewsletterModal({
                       <p
                         class={clx(
                           `popup-custom-text is-no-select max-md:!text-[1.063rem] max-md:!leading-[19px] text-[1.75rem] uppercase max-md:text-center 
-                            md:max-w-full max-md:left-0 leading-none z-10 w-[254px] h-[39px] rounded-[3px] bg-[#ffffff] 
+                            md:max-w-full max-md:left-0 leading-none z-10 w-[254px] h-[39px] rounded-[3px] 
+                     
                             flex items-center justify-center absolute top-[0]`
                         )}
                         style={{
@@ -531,9 +533,10 @@ function NewsletterModal({
           <form method="dialog" className="modal-backdrop">
             <button
               type="button"
-              onClick={() =>
-                setCookieOnCloseModal("closed", modalCloseExpiredDate)
-              }
+              onClick={() => {
+                setCookieOnCloseModal("closed", modalCloseExpiredDate);
+                modalRef.current?.close();
+              }}
             >
               fechar
             </button>
