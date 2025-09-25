@@ -4,6 +4,7 @@ import type { JSX } from "preact";
 import { useEffect, useRef } from "preact/compat";
 import { getCookies } from "std/http/mod.ts";
 import { clx } from "../../sdk/clx.ts";
+import { AppContext } from "../../apps/site.ts";
 import InputCustom from "./InputCustom.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
@@ -59,6 +60,10 @@ export interface Props {
    */
   image?: Device;
   /**
+   * @title Imagem de sucesso
+   */
+  imageSuccess?: Device;
+  /**
    * @title Newsletter Form
    */
   form: INewsletterFormProps;
@@ -93,6 +98,48 @@ export interface Props {
    * @title Days to reopen moda if it is closed
    */
   modalCloseExpiredDate: number;
+  /**
+   * @title Layout form
+   */
+  layout?: {
+    /**
+     * @title Form
+     * @description Setting the styles for the form
+     */
+    form?: {
+      desktop?: {
+        top?: string;
+        left?: string;
+      };
+      mobile?: {
+        top?: string;
+        left?: string;
+      };
+      tailwind?: string;
+    };
+    button?: {
+      desktop?: {
+        margin?: string;
+      };
+      mobile?: {
+        margin?: string;
+      };
+      tailwind?: string;
+    };
+    text?: {
+      successCouponField?: {
+        desktop?: {
+          margin?: string;
+          fontSize?: string;
+        };
+        mobile?: {
+          margin?: string;
+          fontSize?: string;
+        };
+        tailwind?: string;
+      };
+    };
+  };
 }
 interface InputNewletterProps {
   name: string;
@@ -100,21 +147,24 @@ interface InputNewletterProps {
   type: string;
   required: boolean;
 }
-export const loader = (props: Props, req: Request) => {
+export const loader = (props: Props, req: Request, ctx: AppContext) => {
   const cookies = getCookies(req.headers);
   const cookieEmpty = req.method === "POST";
   const isOpen = cookieEmpty ? false : Boolean(!cookies["DecoNewsletterModal"]);
-  return { ...props, isOpen };
+  return { ...props, isOpen, device: ctx.device };
 };
-function InputNewsletter(
-  { name, placeholder, required, type }: InputNewletterProps,
-) {
+function InputNewsletter({
+  name,
+  placeholder,
+  required,
+  type,
+}: InputNewletterProps) {
   return (
     <input
       name={name}
       type={type}
       class={clx(
-        `px-[15px] font-gotham py-[5px] h-8 w-full max-w-[276px] text-[.688rem] rounded-[3px] leading-10 focus:outline-none border border-[#969696]`,
+        `px-[15px] font-gotham py-[5px] h-8 w-full max-w-[276px] text-[.688rem] rounded-[3px] leading-10 focus:outline-none border border-[#969696]`
       )}
       placeholder={placeholder}
       required={required}
@@ -132,7 +182,10 @@ function NewsletterModal({
   modalCloseExpiredDate,
   colorText,
   image,
+  imageSuccess,
   is_active,
+  layout,
+  device,
 }: SectionProps<ReturnType<typeof loader>>) {
   const modalRef = useRef<HTMLDialogElement>(null);
   const loading = useSignal(false);
@@ -146,20 +199,22 @@ function NewsletterModal({
   if (!is_active) {
     return null;
   }
-  const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = async (e) => {
+  const handleSubmit = async (e: JSX.TargetedEvent<HTMLFormElement, Event>) => {
     e.preventDefault();
     try {
       const formData = new FormData(e.currentTarget);
-      const formProps = Object.fromEntries(formData);
-      const Newsletter = Boolean(formProps.newsletter);
-      const { name, email, telephone, dateOfBirth } = formProps;
+      const Newsletter = Boolean(formData.get("newsletter"));
+      const name = formData.get("name");
+      const email = formData.get("email");
+      const telephone = formData.get("telephone");
+      const dateOfBirth = formData.get("dateOfBirth");
       const data = { Newsletter, name, email, telephone, dateOfBirth };
       await fetch("/api/optin", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
           "content-type": "application/json",
-          "accept": "application/json",
+          accept: "application/json",
         },
       });
     } finally {
@@ -170,24 +225,25 @@ function NewsletterModal({
   };
   const setCookieOnCloseModal = (
     cookieValue: string,
-    expirationSeconds: number,
+    expirationSeconds: number
   ) => {
     // deno-lint-ignore no-var
     var date = new Date();
-    date.setTime(date.getTime() + (expirationSeconds * 24 * 60 * 60 * 1000));
+    date.setTime(date.getTime() + expirationSeconds * 24 * 60 * 60 * 1000);
     // deno-lint-ignore no-var
     var expires = "expires=" + date.toUTCString();
-    document.cookie = "DecoNewsletterModal" + "=" + cookieValue + ";" +
-      expires + ";path=/";
+    document.cookie =
+      "DecoNewsletterModal" + "=" + cookieValue + ";" + expires + ";path=/";
   };
   function handleClickCopy() {
     const elementTextCupom = refCupom.current;
     if (!elementTextCupom) {
       return null;
     }
-    const cupomText = elementTextCupom?.querySelector<HTMLParagraphElement>(
-      ".popup-custom-text",
-    );
+    const cupomText =
+      elementTextCupom?.querySelector<HTMLParagraphElement>(
+        ".popup-custom-text"
+      );
     if (!cupomText) {
       return null;
     }
@@ -203,26 +259,22 @@ function NewsletterModal({
       elementSpan.remove();
     }, 2500);
   }
-  const emailInput = !form?.email?.show
-    ? (
-      <InputNewsletter
-        name="email"
-        required
-        type="email"
-        placeholder={form?.email?.placeholder || "E-mail"}
-      />
-    )
-    : null;
-  const nameInput = !form?.name?.show
-    ? (
-      <InputNewsletter
-        name="name"
-        type="text"
-        placeholder={form?.name?.placeholder || "Nome"}
-        required
-      />
-    )
-    : null;
+  const emailInput = !form?.email?.show ? (
+    <InputNewsletter
+      name="email"
+      required
+      type="email"
+      placeholder={form?.email?.placeholder || "E-mail"}
+    />
+  ) : null;
+  const nameInput = !form?.name?.show ? (
+    <InputNewsletter
+      name="name"
+      type="text"
+      placeholder={form?.name?.placeholder || "Nome"}
+      required
+    />
+  ) : null;
   return (
     <>
       <dialog
@@ -232,7 +284,7 @@ function NewsletterModal({
         <div
           class={clx(
             `fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full sm:max-w-[80%] max-h-[555px] lg:max-w-[745px]
-            z-[101] max-md:w-[90%] max-md:max-w-[350px]`,
+            z-[101] max-md:w-[90%] max-md:max-w-[350px]`
           )}
           id="newsletterModal"
         >
@@ -240,250 +292,251 @@ function NewsletterModal({
             <button
               type="button"
               class="absolute -top-[11px] right-0 translate-x-1/2 bg-[#333333] border-none rounded-full p-[0.2rem] cursor-pointer text-white"
-              onClick={() =>
-                setCookieOnCloseModal("closed", modalCloseExpiredDate)}
+              onClick={() => {
+                setCookieOnCloseModal("closed", modalCloseExpiredDate);
+                modalRef.current?.close();
+              }}
               aria-label="Fechar"
             >
               <Icon id="CloseNewsletter" width={22} height={22} />
             </button>
             <div class="w-full h-full absolute -z-[1]">
-              {success.value
-                ? (
-                  <>
-                    {textSendSucess && (
-                      <div
-                        class={clx(
-                          `popup-custom-text is-title-cupom relative top-[35%] !-translate-y-[35%] md:translate-x-[34px] max-md:[&_*]:!text-[37px] 
-                          max-md:[&_*]:!leading-[25px] max-md:top-[70px] max-md:text-center max-md:left-2/4 max-md:!-translate-x-1/2 leading-none z-10`,
-                        )}
-                        style={{
-                          color: colorText ||
-                            "#ffffff",
-                        }}
-                        // deno-lint-ignore react-no-danger
-                        dangerouslySetInnerHTML={{
-                          __html: textSendSucess,
-                        }}
-                      >
-                      </div>
-                    )}
+              {success.value ? (
+                <>
+                  {textSendSucess && (
+                    <div
+                      class={clx(
+                        `popup-custom-text is-title-cupom relative top-[35%] !-translate-y-[35%] md:translate-x-[34px] max-md:[&_*]:!text-[37px] 
+                          max-md:[&_*]:!leading-[25px] max-md:top-[70px] max-md:text-center max-md:left-2/4 max-md:!-translate-x-1/2 leading-none z-10`
+                      )}
+                      style={{
+                        color: colorText || "#ffffff",
+                      }}
+                      // deno-lint-ignore react-no-danger
+                      dangerouslySetInnerHTML={{
+                        __html: textSendSucess,
+                      }}
+                    ></div>
+                  )}
 
-                    {textFieldCupom && (
+                  {textFieldCupom && (
+                    <p
+                      class={clx(
+                        `popup-custom-text relative top-[40%] !-translate-y-[40%] md:translate-x-[90px] text-[1.75rem] md:max-w-[35%] 
+                          leading-none z-10 max-md:top-[15%]  max-md:text-center max-md:!text-[25px] max-md:!leading-[19px] max-md:-translate-y-[15%] 
+                          max-md:left-2/4 max-md:!-translate-x-1/2 `,
+                        layout?.text?.successCouponField?.tailwind
+                      )}
+                      style={{
+                        color: colorText || "#ffffff",
+                        ...(device === "desktop"
+                          ? layout?.text?.successCouponField?.desktop
+                          : layout?.text?.successCouponField?.mobile),
+                      }}
+                      // deno-lint-ignore react-no-danger
+                      dangerouslySetInnerHTML={{
+                        __html: textFieldCupom,
+                      }}
+                    ></p>
+                  )}
+
+                  {textCupom && (
+                    <div
+                      onClick={handleClickCopy}
+                      ref={refCupom}
+                      class={clx(
+                        `relative md:top-[42%] md:-translate-y-[42%] z-10 w-[254px] h-[40px] cursor-pointer md:left-10
+                          left-2/4 max-md:-translate-x-1/2 top-[16%] -translate-y-[16%]`
+                      )}
+                    >
                       <p
                         class={clx(
-                          `popup-custom-text relative top-[40%] !-translate-y-[40%] md:translate-x-[90px] text-[1.75rem] md:max-w-[35%] 
-                          leading-none z-10 max-md:top-[15%]  max-md:text-center max-md:!text-[25px] max-md:!leading-[19px] max-md:-translate-y-[15%] 
-                          max-md:left-2/4 max-md:!-translate-x-1/2`,
+                          `popup-custom-text is-no-select max-md:!text-[1.063rem] max-md:!leading-[19px] text-[1.75rem] uppercase max-md:text-center 
+                            md:max-w-full max-md:left-0 leading-none z-10 w-[254px] h-[39px] rounded-[3px] 
+                     
+                            flex items-center justify-center absolute top-[0]`
                         )}
                         style={{
-                          color: colorText ||
-                            "#ffffff",
+                          color: colorText || "#ffffff",
                         }}
                         // deno-lint-ignore react-no-danger
                         dangerouslySetInnerHTML={{
-                          __html: textFieldCupom,
+                          __html: textCupom,
                         }}
-                      >
-                      </p>
-                    )}
-
-                    {textCupom && (
-                      <div
-                        onClick={handleClickCopy}
-                        ref={refCupom}
-                        class={clx(
-                          `relative md:top-[42%] md:-translate-y-[42%] z-10 w-[254px] h-[40px] cursor-pointer md:left-10
-                          left-2/4 max-md:-translate-x-1/2 top-[16%] -translate-y-[16%]`,
-                        )}
-                      >
-                        <p
-                          class={clx(
-                            `popup-custom-text is-no-select max-md:!text-[1.063rem] max-md:!leading-[19px] text-[1.75rem] uppercase max-md:text-center 
-                            md:max-w-full max-md:left-0 leading-none z-10 w-[254px] h-[39px] rounded-[3px] bg-[#ffffff] 
-                            flex items-center justify-center absolute top-[0]`,
-                          )}
-                          style={{
-                            color: colorText ||
-                              "#ffffff",
-                          }}
-                          // deno-lint-ignore react-no-danger
-                          dangerouslySetInnerHTML={{
-                            __html: textCupom,
-                          }}
-                        >
-                        </p>
-                        <Icon
-                          id="Copy"
-                          width={22}
-                          height={28}
-                          strokeWidth={1}
-                          class="text-primary-content absolute top-[5px] left-[260px] cursor-pointer"
-                        />
-                      </div>
-                    )}
-
-                    {image?.desktop?.src &&
-                      image.mobile?.src && (
-                      <Picture>
-                        <Source
-                          media="(max-width: 767px)"
-                          src={image.mobile?.src}
-                          width={image?.mobile
-                            ?.width || 393}
-                          height={image?.mobile
-                            ?.height || 555}
-                        />
-                        <Source
-                          media="(min-width: 768px)"
-                          src={image.desktop.src}
-                          width={image.desktop
-                            .width || 745}
-                          height={image.desktop
-                            .height || 550}
-                        />
-                        <img
-                          class="w-full h-full object-cover absolute inset-0 filter"
-                          sizes="(max-width: 640px) 100vw, 30vw"
-                          src={image.mobile.src}
-                          alt="Imagem de fundo do modal de newsletter"
-                          decoding="async"
-                          loading="lazy"
-                        />
-                      </Picture>
-                    )}
-                  </>
-                )
-                : (
-                  <>
-                    {image?.desktop?.src &&
-                      image?.mobile?.src && (
-                      <Picture>
-                        <Source
-                          media="(max-width: 768px)"
-                          src={image?.mobile?.src}
-                          width={image?.mobile
-                            ?.width || 393}
-                          height={image?.mobile
-                            ?.height || 555}
-                        />
-                        <Source
-                          media="(min-width: 769px)"
-                          src={image?.desktop?.src}
-                          width={image?.desktop
-                            ?.width || 745}
-                          height={image?.desktop
-                            ?.height || 550}
-                        />
-                        <img
-                          class="w-full h-full object-cover absolute inset-0"
-                          sizes="(max-width: 640px) 100vw, 30vw"
-                          src={image?.mobile?.src}
-                          alt="Imagem de fundo do modal de newsletter"
-                          decoding="async"
-                          loading="lazy"
-                        />
-                      </Picture>
-                    )}
-
-                    {text && (
-                      <div
-                        class={clx(
-                          `popup-custom-text relative top-[19%] !-translate-y-[19%] md:translate-x-[64px] max-md:[&_*]:!text-[1.063rem] max-md:[&_*]:!leading-[19px]
-                           max-md:top-[40px] max-md:text-center md:max-w-[40%] max-md:left-2/4 max-md:!-translate-x-1/2 leading-none`,
-                        )}
-                        style={{
-                          color: colorText ||
-                            "#ffffff",
-                        }}
-                        // deno-lint-ignore react-no-danger
-                        dangerouslySetInnerHTML={{
-                          __html: text,
-                        }}
+                      ></p>
+                      <Icon
+                        id="Copy"
+                        width={22}
+                        height={28}
+                        strokeWidth={1}
+                        class="text-primary-content absolute top-[5px] left-[260px] cursor-pointer"
                       />
-                    )}
-                    <form
+                    </div>
+                  )}
+
+                  {imageSuccess?.desktop?.src && imageSuccess.mobile?.src && (
+                    <Picture>
+                      <Source
+                        media="(max-width: 767px)"
+                        src={imageSuccess.mobile?.src}
+                        width={image?.mobile?.width || 393}
+                        height={image?.mobile?.height || 555}
+                      />
+                      <Source
+                        media="(min-width: 768px)"
+                        src={imageSuccess.desktop.src}
+                        width={imageSuccess.desktop.width || 745}
+                        height={imageSuccess.desktop.height || 550}
+                      />
+                      <img
+                        class="w-full h-full object-cover absolute inset-0 filter"
+                        sizes="(max-width: 640px) 100vw, 30vw"
+                        src={imageSuccess.mobile.src}
+                        alt="Imagem de fundo do modal de newsletter"
+                        decoding="async"
+                        loading="eager"
+                      />
+                    </Picture>
+                  )}
+                </>
+              ) : (
+                <>
+                  {image?.desktop?.src && image?.mobile?.src && (
+                    <Picture>
+                      <Source
+                        media="(max-width: 768px)"
+                        src={image?.mobile?.src}
+                        width={image?.mobile?.width || 393}
+                        height={image?.mobile?.height || 555}
+                      />
+                      <Source
+                        media="(min-width: 769px)"
+                        src={image?.desktop?.src}
+                        width={image?.desktop?.width || 745}
+                        height={image?.desktop?.height || 550}
+                      />
+                      <img
+                        class="w-full h-full object-cover absolute inset-0"
+                        sizes="(max-width: 640px) 100vw, 30vw"
+                        src={image?.mobile?.src}
+                        alt="Imagem de fundo do modal de newsletter"
+                        decoding="async"
+                        loading="lazy"
+                      />
+                    </Picture>
+                  )}
+
+                  {text && (
+                    <div
                       class={clx(
-                        `flex flex-col items-start justify-center gap-[.875rem] relative top-[31%] -translate-y-[31%] md:left-[62px] 
-                                                max-md:items-center max-md:gap-[0.8rem] max-md:-translate-x-1/2 max-md:top-[23%] max-md:left-1/2`,
+                        `popup-custom-text relative top-[19%] !-translate-y-[19%] md:translate-x-[64px] max-md:[&_*]:!text-[1.063rem] max-md:[&_*]:!leading-[19px]
+                           max-md:top-[40px] max-md:text-center md:max-w-[40%] max-md:left-2/4 max-md:!-translate-x-1/2 leading-none`
                       )}
-                      onSubmit={handleSubmit}
+                      style={{
+                        color: colorText || "#ffffff",
+                      }}
+                      // deno-lint-ignore react-no-danger
+                      dangerouslySetInnerHTML={{
+                        __html: text,
+                      }}
+                    />
+                  )}
+                  <form
+                    class={clx(
+                      `flex flex-col items-start justify-center gap-[.875rem] relative top-[31%] -translate-y-[31%] md:left-[62px] 
+                                                max-md:items-center max-md:gap-[0.8rem] max-md:-translate-x-1/2 max-md:top-[23%] max-md:left-1/2`,
+                      layout?.form?.tailwind
+                    )}
+                    style={{
+                      ...(device === "desktop"
+                        ? layout?.form?.desktop
+                        : layout?.form?.mobile),
+                    }}
+                    onSubmit={handleSubmit}
+                  >
+                    {nameInput}
+                    {emailInput}
+
+                    <div class="flex max-w-[276px] gap-x-[10px]">
+                      <InputCustom
+                        _type="text"
+                        _name="telephone"
+                        _placeholder="(xx) 999999999"
+                        _maxLength={15}
+                        _required
+                        _class={clx(
+                          `px-[15px] font-gotham py-[5px] h-8 w-[70%] font-arial text-[.688rem] rounded-[3px] leading-10 focus:outline-none border border-[#969696]`
+                        )}
+                      />
+
+                      <InputCustom
+                        _type="text"
+                        _name="dateOfBirth"
+                        _placeholder="DD/MM/AAAA"
+                        _maxLength={10}
+                        _required
+                        _class="px-[15px] font-gotham py-[5px] h-8 w-[50%] font-arial text-[.688rem] rounded-[3px] leading-10 focus:outline-none  border border-[#969696]"
+                      />
+                    </div>
+
+                    <div class="relative w-[276px]">
+                      <span
+                        class={clx(
+                          `absolute -bottom-[30px] right-0 md:-right-[15px] text-white`
+                        )}
+                      >
+                        *
+                      </span>
+                    </div>
+
+                    <button
+                      type="submit"
+                      class={clx(
+                        `border-none py-[10px] rounded-[3px] max-h-8 flex items-center justify-center text-white cursor-pointer 
+                           font-soleil text-[1rem] leading-8 min-w-[128px] focus:outline-none duration-150 font-normal bg-[#969696]`,
+                        layout?.button?.tailwind
+                      )}
+                      style={{
+                        ...(device === "desktop"
+                          ? { ...layout?.button?.desktop }
+                          : { ...layout?.button?.mobile }),
+                      }}
+                      disabled={loading}
                     >
-                      {nameInput}
-                      {emailInput}
+                      {form?.button?.label || "Inscreva-se"}
+                    </button>
 
-                      <div class="flex max-w-[276px] gap-x-[10px]">
-                        <InputCustom
-                          _type="text"
-                          _name="telephone"
-                          _placeholder="(xx) 999999999"
-                          _maxLength={15}
-                          _required
-                          _class={clx(
-                            `px-[15px] font-gotham py-[5px] h-8 w-[70%] font-arial text-[.688rem] rounded-[3px] leading-10 focus:outline-none border border-[#969696]`,
-                          )}
-                        />
-
-                        <InputCustom
-                          _type="text"
-                          _name="dateOfBirth"
-                          _placeholder="DD/MM/AAAA"
-                          _maxLength={10}
-                          _required
-                          _class="px-[15px] font-gotham py-[5px] h-8 w-[50%] font-arial text-[.688rem] rounded-[3px] leading-10 focus:outline-none  border border-[#969696]"
-                        />
-                      </div>
-
-                      <div class="relative w-[276px]">
-                        <span
-                          class={clx(
-                            `absolute -bottom-[30px] right-0 md:-right-[15px] text-white`,
-                          )}
-                        >
-                          *
-                        </span>
-                      </div>
-
-                      <button
-                        type="submit"
-                        class={clx(
-                          `border-none py-[10px] rounded-[3px] max-h-8 flex items-center justify-center text-white cursor-pointer 
-                           font-arial text-[1rem] leading-8 min-w-[128px] focus:outline-none duration-150 font-light bg-[#969696]`,
-                        )}
-                        disabled={loading}
+                    <div
+                      class={clx(
+                        `max-md:flex max-md:justify-center max-md:w-full popup-custom-check flex md:absolute md:translate-y-[25%] md:-bottom-[25%] 
+                          items-center gap-[1ch] text-white focus:outline-none`
+                      )}
+                    >
+                      <input
+                        class="w-auto p-[5px] max-w-[250px] text-sm focus:outline-none"
+                        type="checkbox"
+                        id="newsletter"
+                        name="newsletter"
+                      />
+                      <label
+                        for="newsletter"
+                        class="text-[.688rem] text-black leading-10 mt-[2px] ml-[5px]"
                       >
-                        {form?.button?.label ||
-                          "Inscreva-se"}
-                      </button>
-
-                      <div
-                        class={clx(
-                          `max-md:flex max-md:justify-center max-md:w-full popup-custom-check flex md:absolute md:translate-y-[25%] md:-bottom-[25%] 
-                          items-center gap-[1ch] text-white focus:outline-none`,
-                        )}
-                      >
-                        <input
-                          class="w-auto p-[5px] max-w-[250px] text-sm focus:outline-none"
-                          type="checkbox"
-                          id="newsletter"
-                          name="newsletter"
-                        />
-                        <label
-                          for="newsletter"
-                          class="text-[.688rem] text-black leading-10 mt-[2px] ml-[5px]"
-                        >
-                          Aceito receber ofertas e novidades do grupo Technos
-                        </label>
-                      </div>
-                    </form>
-                  </>
-                )}
+                        Aceito receber ofertas e novidades do grupo Technos
+                      </label>
+                    </div>
+                  </form>
+                </>
+              )}
             </div>
           </form>
           <form method="dialog" className="modal-backdrop">
             <button
               type="button"
-              onClick={() =>
-                setCookieOnCloseModal("closed", modalCloseExpiredDate)}
+              onClick={() => {
+                setCookieOnCloseModal("closed", modalCloseExpiredDate);
+                modalRef.current?.close();
+              }}
             >
               fechar
             </button>
