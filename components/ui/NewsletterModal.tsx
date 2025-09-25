@@ -493,7 +493,7 @@ function NewsletterModal({
                       type="submit"
                       class={clx(
                         `border-none py-[10px] rounded-[3px] max-h-8 flex items-center justify-center text-white cursor-pointer 
-                           font-arial text-[1rem] leading-8 min-w-[128px] focus:outline-none duration-150 font-light bg-[#969696]`,
+                           font-soleil text-[1rem] leading-8 min-w-[128px] focus:outline-none duration-150 font-normal bg-[#969696]`,
                         layout?.button?.tailwind
                       )}
                       style={{
