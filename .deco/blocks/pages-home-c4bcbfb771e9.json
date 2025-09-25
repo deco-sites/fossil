@@ -220,119 +220,109 @@
             ]
           },
           {
-            "__resolveType": "website/flags/multivariate/section.ts",
-            "variants": [
-              {
-                "value": {
-                  "__resolveType": "site/sections/Newsletter/NewsletterModal.tsx",
-                  "textSendSucess": "<p></p>",
-                  "text": "<p></p>",
-                  "colorText": "#000000",
-                  "backgrounds": {
-                    "desktop": {
-                      "initial": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/af17e03d-5d4c-49cb-91a0-3c7d93a6bb1a/banner.png",
-                      "width": 932,
-                      "height": 687,
-                      "success": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/ebd4b476-498b-40b9-aaed-507a5e2dce25/banner.png"
-                    },
-                    "mobile": {
-                      "initial": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/910a99f9-2d55-4262-93de-fcd129f74d71/banner-mobile.png",
-                      "success": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/9c3276a1-0691-4f66-959d-b5469736820f/banner-mobile.png",
-                      "width": 393,
-                      "height": 555
-                    }
-                  },
-                  "modalSignExpiredDate": 360,
-                  "modalCloseExpiredDate": 10,
-                  "image": {
-                    "desktop": {
-                      "src": "https://assets.decocache.com/fossil/ae49855a-adff-4016-b9ba-3ae54a0f711c/Prancheta-1---2025-09-18T144528.409.png",
-                      "width": 932,
-                      "height": 687
-                    },
-                    "mobile": {
-                      "src": "https://assets.decocache.com/fossil/d30b47ca-524c-4b2d-9cd7-610085a1e4e3/Prancheta-4-(1).png",
-                      "width": 393,
-                      "height": 555
-                    }
-                  },
-                  "form": {
-                    "email": {
-                      "placeholder": "Seu e-mail"
-                    },
-                    "name": {
-                      "placeholder": "Seu nome"
-                    },
-                    "button": {
-                      "label": "Inscreva-se"
-                    }
-                  },
-                  "textFieldCupom": "Use o cupom",
-                  "textCupom": "BEMVINDO15",
-                  "is_active": true,
-                  "layout": {
-                    "form": {
-                      "0": "t",
-                      "1": "o",
-                      "2": "p",
-                      "3": "-",
-                      "4": "[",
-                      "5": "5",
-                      "6": "0",
-                      "7": "%",
-                      "8": "]",
-                      "desktop": {
-                        "top": "60%",
-                        "left": "39px"
-                      },
-                      "mobile": {
-                        "top": "28%"
-                      }
-                    },
-                    "button": {
-                      "tailwind": "bg-primary text-white border border-primary hover:bg-primary/90",
-                      "desktop": {
-                        "margin": "0px 0px 0px 70px"
-                      }
-                    },
-                    "text": {
-                      "successCouponField": {
-                        "desktop": {
-                          "margin": "81px 0px 8px 16px",
-                          "fontSize": "1.25rem"
-                        },
-                        "tailwind": "font-normal",
-                        "mobile": {
-                          "margin": "117px 0px 0px",
-                          "fontSize": "1.0rem"
-                        }
-                      }
-                    },
-                    "modal": {
-                      "maxWidthDesktop": "90%",
-                      "maxWidthMobile": "90%",
-                      "maxHeightMobile": "350px",
-                      "maxHeight": "555px"
-                    }
-                  },
-                  "imageSuccess": {
-                    "desktop": {
-                      "src": "https://assets.decocache.com/fossil/bafdfafc-3b63-48f9-ae74-643e727edb58/Prancheta-1---2025-09-18T144522.343(1).png",
-                      "width": 932,
-                      "height": 687
-                    },
-                    "mobile": {
-                      "width": 393,
-                      "height": 555,
-                      "src": "https://assets.decocache.com/fossil/ff11a13d-a2a9-4825-a65b-b7d7e8af090e/Prancheta-4-1.png"
-                    }
-                  }
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/never.ts"
-                }
+            "__resolveType": "site/sections/Newsletter/NewsletterModal.tsx",
+            "textSendSucess": "<p></p>",
+            "text": "<p></p>",
+            "colorText": "#000000",
+            "backgrounds": {
+              "desktop": {
+                "initial": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/af17e03d-5d4c-49cb-91a0-3c7d93a6bb1a/banner.png",
+                "width": 932,
+                "height": 687,
+                "success": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/ebd4b476-498b-40b9-aaed-507a5e2dce25/banner.png"
+              },
+              "mobile": {
+                "initial": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/910a99f9-2d55-4262-93de-fcd129f74d71/banner-mobile.png",
+                "success": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/9c3276a1-0691-4f66-959d-b5469736820f/banner-mobile.png",
+                "width": 393,
+                "height": 555
               }
-            ]
+            },
+            "modalSignExpiredDate": 360,
+            "modalCloseExpiredDate": 10,
+            "image": {
+              "desktop": {
+                "src": "https://assets.decocache.com/fossil/ae49855a-adff-4016-b9ba-3ae54a0f711c/Prancheta-1---2025-09-18T144528.409.png",
+                "width": 932,
+                "height": 687
+              },
+              "mobile": {
+                "src": "https://assets.decocache.com/fossil/d30b47ca-524c-4b2d-9cd7-610085a1e4e3/Prancheta-4-(1).png",
+                "width": 393,
+                "height": 555
+              }
+            },
+            "form": {
+              "email": {
+                "placeholder": "Seu e-mail"
+              },
+              "name": {
+                "placeholder": "Seu nome"
+              },
+              "button": {
+                "label": "Inscreva-se"
+              }
+            },
+            "textFieldCupom": "Use o cupom",
+            "textCupom": "BEMVINDO15",
+            "is_active": true,
+            "layout": {
+              "form": {
+                "0": "t",
+                "1": "o",
+                "2": "p",
+                "3": "-",
+                "4": "[",
+                "5": "5",
+                "6": "0",
+                "7": "%",
+                "8": "]",
+                "desktop": {
+                  "top": "60%",
+                  "left": "39px"
+                },
+                "mobile": {
+                  "top": "28%"
+                }
+              },
+              "button": {
+                "tailwind": "bg-primary text-white border border-primary hover:bg-primary/90",
+                "desktop": {
+                  "margin": "0px 0px 0px 70px"
+                }
+              },
+              "text": {
+                "successCouponField": {
+                  "desktop": {
+                    "margin": "81px 0px 8px 16px",
+                    "fontSize": "1.25rem"
+                  },
+                  "tailwind": "font-normal",
+                  "mobile": {
+                    "margin": "117px 0px 0px",
+                    "fontSize": "1.0rem"
+                  }
+                }
+              },
+              "modal": {
+                "maxWidthDesktop": "90%",
+                "maxWidthMobile": "90%",
+                "maxHeightMobile": "350px",
+                "maxHeight": "555px"
+              }
+            },
+            "imageSuccess": {
+              "desktop": {
+                "src": "https://assets.decocache.com/fossil/bafdfafc-3b63-48f9-ae74-643e727edb58/Prancheta-1---2025-09-18T144522.343(1).png",
+                "width": 932,
+                "height": 687
+              },
+              "mobile": {
+                "width": 393,
+                "height": 555,
+                "src": "https://assets.decocache.com/fossil/ff11a13d-a2a9-4825-a65b-b7d7e8af090e/Prancheta-4-1.png"
+              }
+            }
           },
           {
             "__resolveType": "Footer - 04"
