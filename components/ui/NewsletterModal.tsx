@@ -41,6 +41,8 @@ interface Device {
 export interface INewsletterFormProps {
   email: INewsletterInputProps;
   name: INewsletterInputProps;
+  phone: INewsletterInputProps;
+  dateOfBirth: INewsletterInputProps;
   button: {
     /**
      * @title button label?
@@ -208,7 +210,16 @@ function NewsletterModal({
       const email = formData.get("email");
       const telephone = formData.get("telephone");
       const dateOfBirth = formData.get("dateOfBirth");
-      const data = { Newsletter, name, email, telephone, dateOfBirth };
+
+      const data = {
+        Newsletter,
+        name: name || "",
+        email: email || "",
+        telephone: telephone || "",
+        dateOfBirth: dateOfBirth || "",
+      };
+
+      // const data = { Newsletter, name, email, telephone, dateOfBirth };
       await fetch("/api/optin", {
         method: "POST",
         body: JSON.stringify(data),
@@ -273,6 +284,28 @@ function NewsletterModal({
       type="text"
       placeholder={form?.name?.placeholder || "Nome"}
       required
+    />
+  ) : null;
+  const phoneInput = !form?.phone?.show ? (
+    <InputCustom
+      _type="text"
+      _name="telephone"
+      _placeholder={form?.phone?.placeholder || "(xx) 999999999"}
+      _maxLength={15}
+      _required
+      _class={clx(
+        `px-[15px] font-gotham py-[5px] h-8 w-[100%] font-arial text-[.688rem] rounded-[3px] leading-10 focus:outline-none border border-[#969696]`
+      )}
+    />
+  ) : null;
+  const dateOfBirthInput = !form?.dateOfBirth?.show ? (
+    <InputCustom
+      _type="text"
+      _name="dateOfBirth"
+      _placeholder={form?.dateOfBirth?.placeholder || "DD/MM/AAAA"}
+      _maxLength={10}
+      _required
+      _class="px-[15px] font-gotham py-[5px] h-8 w-[100%] font-arial text-[.688rem] rounded-[3px] leading-10 focus:outline-none  border border-[#969696]"
     />
   ) : null;
   return (
@@ -458,25 +491,8 @@ function NewsletterModal({
                     {emailInput}
 
                     <div class="flex max-w-[276px] gap-x-[10px]">
-                      <InputCustom
-                        _type="text"
-                        _name="telephone"
-                        _placeholder="(xx) 999999999"
-                        _maxLength={15}
-                        _required
-                        _class={clx(
-                          `px-[15px] font-gotham py-[5px] h-8 w-[70%] font-arial text-[.688rem] rounded-[3px] leading-10 focus:outline-none border border-[#969696]`
-                        )}
-                      />
-
-                      <InputCustom
-                        _type="text"
-                        _name="dateOfBirth"
-                        _placeholder="DD/MM/AAAA"
-                        _maxLength={10}
-                        _required
-                        _class="px-[15px] font-gotham py-[5px] h-8 w-[50%] font-arial text-[.688rem] rounded-[3px] leading-10 focus:outline-none  border border-[#969696]"
-                      />
+                      {phoneInput}
+                      {dateOfBirthInput}
                     </div>
 
                     <div class="relative w-[276px]">

@@ -261,6 +261,12 @@
               },
               "button": {
                 "label": "Inscreva-se"
+              },
+              "phone": {
+                "show": true
+              },
+              "dateOfBirth": {
+                "placeholder": "DD/MM/AAAA"
               }
             },
             "textFieldCupom": "Use o cupom",
