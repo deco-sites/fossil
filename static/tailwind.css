@@ -6050,6 +6050,9 @@ details.collapse summary::-webkit-details-marker {
 .w-96 {
   width: 24rem;
 }
+.w-\[100\%\] {
+  width: 100%;
+}
 .w-\[100px\] {
   width: 100px;
 }
@@ -6137,9 +6140,6 @@ details.collapse summary::-webkit-details-marker {
 .w-\[4px\] {
   width: 4px;
 }
-.w-\[50\%\] {
-  width: 50%;
-}
 .w-\[50px\] {
   width: 50px;
 }
@@ -6154,9 +6154,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-\[60px\] {
   width: 60px;
-}
-.w-\[70\%\] {
-  width: 70%;
 }
 .w-\[75\%\] {
   width: 75%;
