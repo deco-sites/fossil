@@ -70,7 +70,7 @@
           "__resolveType": "website/flags/multivariate/image.ts",
           "variants": [
             {
-              "value": "https://assets.decocache.com/fossil/d17eb445-8273-429e-88a9-254f3cbb032a/fossil-DeSK-connect-livelo-(5).jpg",
+              "value": "https://assets.decocache.com/fossil/e13b0e45-cfd8-4633-8deb-0573d7a4b0dc/Euro_banner_livelo_0707-(2)-(1).png",
               "rule": {
                 "__resolveType": "website/matchers/always.ts"
               }
