@@ -70,7 +70,7 @@
           "__resolveType": "website/flags/multivariate/image.ts",
           "variants": [
             {
-              "value": "https://assets.decocache.com/fossil/99709744-42af-4b7c-87d1-7c293c1353f0/fossil-DeSK-connect-livelo-(8).jpg",
+              "value": "https://assets.decocache.com/fossil/4bbbf307-cf7d-498b-aee2-c41012d1a4c4/fossil-DeSK-connect-livelo-(14).jpg",
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
                 "start": "2025-09-28T15:00:00.000Z",
