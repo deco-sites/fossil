@@ -24,6 +24,7 @@ import * as $ImageZoom from "./islands/ImageZoom.tsx";
 import * as $MiniCart from "./islands/MiniCart.tsx";
 import * as $NJYouTubeModal from "./islands/NJYouTubeModal.tsx";
 import * as $Newsletter from "./islands/Newsletter.tsx";
+import * as $NewsletterFooter from "./islands/NewsletterFooter.tsx";
 import * as $NewsletterModal from "./islands/NewsletterModal.tsx";
 import * as $NickJonas_NJLPCarousel from "./islands/NickJonas/NJLPCarousel.tsx";
 import * as $NickJonas_NJProductCarousel from "./islands/NickJonas/NJProductCarousel.tsx";
@@ -73,6 +74,7 @@ const manifest = {
     "./islands/MiniCart.tsx": $MiniCart,
     "./islands/NJYouTubeModal.tsx": $NJYouTubeModal,
     "./islands/Newsletter.tsx": $Newsletter,
+    "./islands/NewsletterFooter.tsx": $NewsletterFooter,
     "./islands/NewsletterModal.tsx": $NewsletterModal,
     "./islands/NickJonas/NJLPCarousel.tsx": $NickJonas_NJLPCarousel,
     "./islands/NickJonas/NJProductCarousel.tsx": $NickJonas_NJProductCarousel,
