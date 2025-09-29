@@ -28,7 +28,6 @@ export default function NewsletterFooter({ newsletter, layout = {} }: Props) {
       const formData = new FormData(e.currentTarget);
       const email = formData.get("email");
       const Newsletter = true;
-
       const data = { email, Newsletter };
 
       await fetch("/api/optin", {
