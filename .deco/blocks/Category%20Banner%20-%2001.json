@@ -72,7 +72,7 @@
             {
               "value": "https://assets.decocache.com/fossil/99709744-42af-4b7c-87d1-7c293c1353f0/fossil-DeSK-connect-livelo-(8).jpg",
               "rule": {
-                "__resolveType": "website/matchers/always.ts"
+                "__resolveType": "website/matchers/date.ts"
               }
             }
           ]
