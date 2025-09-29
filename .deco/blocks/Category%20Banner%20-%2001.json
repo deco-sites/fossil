@@ -97,6 +97,13 @@
         "mobile": "https://assets.decocache.com/fossil/2847d0a5-3a47-480f-ae6d-f56d1e96a229/mobile-(9).png"
       },
       "matcher": "/acessorios"
+    },
+    {
+      "image": {
+        "desktop": "https://assets.decocache.com/fossil/3df0214b-3e2e-464a-9128-4c35ff6d5505/desktop-(27).png",
+        "mobile": "https://assets.decocache.com/fossil/9f5813b7-799e-4f04-8ec9-d88dd348609c/mobile-(25).png"
+      },
+      "matcher": "/colecao/nick-jonas"
     }
   ],
   "__resolveType": "site/sections/Category/CategoryBanner.tsx"
