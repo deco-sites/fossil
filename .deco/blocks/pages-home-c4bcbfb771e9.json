@@ -121,8 +121,8 @@
                   "name": "Ver Mais",
                   "url": "/relogio/masculino?sort=release%3Adesc"
                 },
-                "desktopImage": "https://assets.decocache.com/fossil/ebd14f0a-0039-41b1-9aff-d232dd9c71ac/nj-core-classics-1.jpg",
-                "mobileImage": "https://assets.decocache.com/fossil/6c847d74-3840-4c8a-8134-5c53e2979003/nj-core-classics-1-mobile.jpg"
+                "desktopImage": "https://assets.decocache.com/fossil/bc732cf1-9b49-494c-a06b-772e9e058464/machine.png",
+                "mobileImage": "https://assets.decocache.com/fossil/11b79cd5-51dc-4199-b0a6-057df77b4a19/machine-(1).png"
               },
               {
                 "label": "Para Ela",
@@ -132,9 +132,9 @@
                   "name": "Ver Mais",
                   "url": "/relogio/feminino?sort=release%3Adesc"
                 },
-                "desktopImage": "https://assets.decocache.com/fossil/a0f5d8f7-b366-44ca-ac8f-bcc3c6389b62/nj-core-classics-2.jpg",
-                "mobileImage": "https://assets.decocache.com/fossil/6e25e098-5706-4490-990a-dc2939fd7def/nj-core-classics-2-mobile.jpg",
-                "contentPosition": "direita"
+                "desktopImage": "https://assets.decocache.com/fossil/f3462b9f-9632-45c4-a72b-fac8b09416e4/harlow.png",
+                "mobileImage": "https://assets.decocache.com/fossil/6d80ab13-db86-4d54-9de6-da88ffd91020/harlow-(1).png",
+                "contentPosition": "esquerda"
               }
             ]
           },
