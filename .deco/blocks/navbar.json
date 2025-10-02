@@ -190,6 +190,12 @@
               "url": "/relogio/feminino/multifuncao",
               "image": [],
               "children": []
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "cronogra",
+              "url": "/relogio/feminino/cronografo"
             }
           ],
           "name": "Mecanismo",
