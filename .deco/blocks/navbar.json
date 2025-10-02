@@ -345,21 +345,9 @@
     },
     {
       "children": [],
-      "image": [
-        {
-          "url": "https://data.decoassets.com/fossil/e3e240b1-b54a-4f53-8ead-a8baeaa1ada3/1742316896335-7733d479-0fd1-4f33-bed9-6f9e170655d6",
-          "@type": "ImageObject"
-        }
-      ],
-      "name": "Cartão Presente",
-      "url": "https://fossil.todocartoes.com.br/",
-      "@type": "SiteNavigationElement"
-    },
-    {
-      "children": [],
       "image": [],
-      "url": "/off",
-      "name": "Off"
+      "name": "Off",
+      "url": "/off"
     }
   ],
   "__resolveType": "commerce/loaders/navbar.ts"
