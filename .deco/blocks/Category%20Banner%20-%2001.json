@@ -99,7 +99,7 @@
               }
             },
             {
-              "value": "https://assets.decocache.com/fossil/fdad26cd-ba64-4125-b85e-e096af969caf/Principal-(2).jpg",
+              "value": "https://assets.decocache.com/fossil/fbf4b09e-b696-4a48-bbc3-c08e2f097a81/Principal-(2).jpg",
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
                 "start": "2025-10-10T03:00:00.000Z",
