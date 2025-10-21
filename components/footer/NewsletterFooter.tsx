@@ -49,7 +49,7 @@ export default function NewsletterFooter({ newsletter, layout = {} }: Props) {
       <div
         class={clx(
           "flex flex-col gap-4 w-full md:w-full",
-          tiled && "flex-col lg:justify-between"
+          tiled && "flex-col lg:justify-between",
         )}
       >
         <div class="flex flex-col gap-4">
@@ -77,7 +77,7 @@ export default function NewsletterFooter({ newsletter, layout = {} }: Props) {
     <div
       class={clx(
         "flex flex-col gap-4 w-full md:w-full",
-        tiled && "flex-col lg:justify-between"
+        tiled && "flex-col lg:justify-between",
       )}
     >
       <div class="flex flex-col gap-4">

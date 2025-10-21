@@ -6,8 +6,6 @@ import Logo from "../../components/footer/Logo.tsx";
 import MobileApps from "../../components/footer/MobileApps.tsx";
 import PaymentMethods from "../../components/footer/PaymentMethods.tsx";
 import Social from "../../components/footer/Social.tsx";
-// import Newsletter from "../../islands/Newsletter.tsx";
-import { clx } from "../../sdk/clx.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { AppContext } from "../../apps/site.ts";
 import NewsletterFooter from "../../islands/NewsletterFooter.tsx";
@@ -173,7 +171,8 @@ function Footer({
   },
   mobileApps = { apple: "/", android: "/" },
   extraLinks = { copyright: "2019", content: [] },
-  address = "Endereço: Est. Luiz Lopes Neto, 21 - Galpão A - Modulo 4 Do Tenentes - Extrema - MG - Cep: 37.640-000 CNPJ: 28.778.134/0026-05",
+  address =
+    "Endereço: Est. Luiz Lopes Neto, 21 - Galpão A - Modulo 4 Do Tenentes - Extrema - MG - Cep: 37.640-000 CNPJ: 28.778.134/0026-05",
   layout = {
     backgroundColor: "Primary",
     hide: {
@@ -191,71 +190,76 @@ function Footer({
   device,
 }: Props & { device?: string }) {
   const _logo = layout?.hide?.logo ? null : <Logo logo={logo} />;
-  const _newsletter = layout?.hide?.newsletter ? null : (
-    <NewsletterFooter newsletter={newsletter} />
-  );
-  const _sectionLinks = layout?.hide?.sectionLinks ? null : (
-    <FooterItems sections={sections} device={device} />
-  );
-  const _social = layout?.hide?.socialLinks ? null : (
-    <Social content={social} />
-  );
-  const _payments = layout?.hide?.paymentMethods ? null : (
-    <PaymentMethods content={payments} />
-  );
-  const _apps = layout?.hide?.mobileApps ? null : (
-    <MobileApps content={mobileApps} />
-  );
+  const _newsletter = layout?.hide?.newsletter
+    ? null
+    : <NewsletterFooter newsletter={newsletter} />;
+  const _sectionLinks = layout?.hide?.sectionLinks
+    ? null
+    : <FooterItems sections={sections} device={device} />;
+  const _social = layout?.hide?.socialLinks
+    ? null
+    : <Social content={social} />;
+  const _payments = layout?.hide?.paymentMethods
+    ? null
+    : <PaymentMethods content={payments} />;
+  const _apps = layout?.hide?.mobileApps
+    ? null
+    : <MobileApps content={mobileApps} />;
   const _links = layout?.hide?.extraLinks ? null : (
-    <ExtraLinks content={extraLinks.content} copyright={extraLinks.copyright} />
+    <ExtraLinks
+      content={extraLinks.content}
+      copyright={extraLinks.copyright}
+    />
   );
   return (
-    <footer class={clx("w-full flex flex-col gap-10")}>
+    <footer class="w-full flex flex-col gap-10 bg-white">
       {/** Desktop */}
-      {device === "desktop" ? (
-        <>
-          <div class="  w-full hidden md:block px-16 lg:mx-auto">
-            <Divider />
-            <div class="flex flex-col gap-10 pt-4">
-              <div class="flex flex-col lg:flex-row gap-14">
-                <div class="flex flex-col md:flex-row lg:flex-col md:justify-between lg:justify-normal gap-10 lg:w-[30%]">
-                  {_newsletter}
-                  <div class="flex flex-col gap-10">{_social}</div>
-                </div>
-                <div class="flex flex-col gap-10 lg:gap-20 lg:w-[70%] lg:items-center">
-                  <div class="flex flex-col md:flex-row gap-10">
-                    {_sectionLinks}
+      {device === "desktop"
+        ? (
+          <>
+            <div class="  w-full hidden md:block px-16 lg:mx-auto">
+              <Divider />
+              <div class="flex flex-col gap-10 pt-4">
+                <div class="flex flex-col lg:flex-row gap-14">
+                  <div class="flex flex-col md:flex-row lg:flex-col md:justify-between lg:justify-normal gap-10 lg:w-[30%]">
+                    {_newsletter}
+                    <div class="flex flex-col gap-10">{_social}</div>
+                  </div>
+                  <div class="flex flex-col gap-10 lg:gap-20 lg:w-[70%] lg:items-center">
+                    <div class="flex flex-col md:flex-row gap-10">
+                      {_sectionLinks}
+                    </div>
                   </div>
                 </div>
               </div>
+              <address class="w-full  font-light    not-italic pt-8">
+                {address}
+              </address>
+              <BackToTop />
             </div>
-            <address class="w-full  font-light    not-italic pt-8">
-              {address}
-            </address>
-            <BackToTop />
-          </div>
-          <div class="hidden md:flex flex-col items-center md:flex-row md:justify-between gap-10 bg-[#FAF8F6]">
-            <div class="w-full flex items-center">{_links}</div>
-          </div>
-        </>
-      ) : (
-        <>
-          {/* Mobile */}
-          <div class="container block px-4 lg:mx-auto">
-            <Divider />
-            <div class="flex flex-col pt-4">{_newsletter}</div>
-            <div class="flex flex-col gap-6  pt-12">{_social}</div>
-            <div class="w-full">{_sectionLinks}</div>
-            <address class="w-56 m-auto  font-light     not-italic py-8">
-              {address}
-            </address>
-            <BackToTop />
-            <div class="w-full flex flex-wrap justify-between bg-[#FAF8F6]">
-              {_links}
+            <div class="hidden md:flex flex-col items-center md:flex-row md:justify-between gap-10 bg-[#FAF8F6]">
+              <div class="w-full flex items-center">{_links}</div>
             </div>
-          </div>
-        </>
-      )}
+          </>
+        )
+        : (
+          <>
+            {/* Mobile */}
+            <div class="container block px-4 lg:mx-auto">
+              <Divider />
+              <div class="flex flex-col pt-4">{_newsletter}</div>
+              <div class="flex flex-col gap-6  pt-12">{_social}</div>
+              <div class="w-full">{_sectionLinks}</div>
+              <address class="w-56 m-auto  font-light     not-italic py-8">
+                {address}
+              </address>
+              <BackToTop />
+              <div class="w-full flex flex-wrap justify-between bg-[#FAF8F6]">
+                {_links}
+              </div>
+            </div>
+          </>
+        )}
     </footer>
   );
 }

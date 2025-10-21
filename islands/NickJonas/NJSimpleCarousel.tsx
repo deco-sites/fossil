@@ -13,33 +13,102 @@ import { flattenChildren } from "../../util/preact.ts";
  * @titleBy alt
  */
 export interface Item {
+  /**
+   * @title Imagem Desktop
+   * @description Imagem exibida em dispositivos desktop
+   */
   desktopImage?: ImageWidget;
+
+  /**
+   * @title Imagem Mobile
+   * @description Imagem exibida em dispositivos móveis
+   */
   mobileImage?: ImageWidget;
+
+  /**
+   * @title Texto Alternativo
+   * @description Descrição da imagem para acessibilidade
+   */
   alt?: string;
+
+  /**
+   * @title Link
+   * @description URL para onde o item deve redirecionar ao clicar
+   */
   href?: string;
+
+  /**
+   * @title Legenda
+   * @description Texto exibido ao passar o mouse sobre o item
+   */
   caption?: string;
-  /** @title Loading priority */
+
+  /** @ignore true */
   loading?: "eager" | "lazy";
-  /** @title Fetch priority */
+
+  /** @ignore true */
   fetchPriority?: "high" | "low" | "auto";
 }
 
+/**
+ * @title Carrossel Simples
+ * @description Carrossel responsivo com autoplay e navegação por toque
+ */
 export interface Props {
+  /** @ignore true */
   children?: ComponentChildren;
+
+  /** @ignore true */
   slides?: VNode[];
+
+  /**
+   * @title Itens do Carrossel
+   * @description Lista de itens que serão exibidos no carrossel
+   */
   items?: Item[];
+
+  /**
+   * @title Itens por Página (Desktop)
+   * @description Número de itens visíveis simultaneamente em desktop
+   */
   perPage: number;
+
+  /**
+   * @title Itens por Página (Mobile)
+   * @description Número de itens visíveis simultaneamente em dispositivos móveis
+   */
   perPageMobile?: number;
+
+  /**
+   * @title Autoplay (segundos)
+   * @description Tempo em segundos entre as transições automáticas. Use 0 para desativar
+   */
   autoplaySeconds?: number;
+
+  /** @ignore true */
   totalItems?: number;
-  /** @title Enable autoplay pause on hover */
+
+  /**
+   * @title Pausar ao Passar o Mouse
+   * @description Pausa o autoplay quando o usuário passa o mouse sobre o carrossel
+   */
   pauseOnHover?: boolean;
-  /** @title Custom slide width */
+
+  /** @ignore true */
   slideWidth?: string;
-  /** @title Space between slides */
+
+  /**
+   * @title Espaçamento entre Itens
+   * @description Espaço em pixels entre cada item do carrossel
+   */
   spaceBetween?: number;
 }
 
+/**
+ * @title Item do Carrossel
+ * @description Componente interno que renderiza um item individual do carrossel
+ * @ignore true
+ */
 export function NJCarouselItem({
   item,
   index,

@@ -119,6 +119,7 @@ export function useSwiperCarousel() {
   const initSwiper = (
     element: HTMLElement,
     options: SwiperOptions,
+    createOptions?: (options: SwiperOptions) => SwiperOptions,
   ): SwiperInstance | null => {
     if (
       !isSwiperReady ||
@@ -127,26 +128,28 @@ export function useSwiperCarousel() {
     ) return null;
 
     try {
+      const baseOptions = createOptions ? createOptions(options) : options;
+
       const enhancedOptions: SwiperOptions = {
-        ...options,
+        ...baseOptions,
         touchEventsTarget: "container",
-        touchStartPreventDefault: options.touchStartPreventDefault ?? false,
-        touchMoveStopPropagation: options.touchMoveStopPropagation ?? false,
+        touchStartPreventDefault: baseOptions.touchStartPreventDefault ?? false,
+        touchMoveStopPropagation: baseOptions.touchMoveStopPropagation ?? false,
         simulateTouch: true,
         touchAngle: 45,
         resistanceRatio: 0.85,
         threshold: 5,
         on: {
-          ...options.on,
+          ...baseOptions.on,
           init: function (this: SwiperInstance) {
             element.classList.add("swiper-initialized");
             setTimeout(() => {
               this.update();
             }, 100);
-            options.on?.init?.call(this);
+            baseOptions.on?.init?.call(this);
           },
           slideChange: function (this: SwiperInstance) {
-            options.on?.slideChange?.call(this);
+            baseOptions.on?.slideChange?.call(this);
           },
         },
       };

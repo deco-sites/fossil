@@ -53,15 +53,15 @@ export default function GallerySlider(props: Props) {
       >
         {/* Image Slider */}
         <Slider class="carousel carousel-center max-lg:col-span-full max-lg:row-[1/-2] lg:gap-6 order-1 sm:order-2 max-lg:w-full image-hero max-lg:mb-5">
-          {images.map((img, index) => (
+          {(images ?? []).map((img, index) => (
             <Slider.Item
               index={index}
               class="carousel-item w-full relative max-lg:items-center max-lg:justify-center"
             >
               <ImageZoom
                 aspectRatio={aspectRatio}
-                src={img.url || ""}
-                alt={img.alternateName || ""}
+                src={img?.url || ""}
+                alt={img?.alternateName || ""}
                 width={width}
                 height={height}
                 index={index}
@@ -124,7 +124,7 @@ export default function GallerySlider(props: Props) {
                 id="product-slider-dots"
                 class="carousel hidden lg:flex snap-both relative col-span-full gap-1 sm:flex-col order-3 sm:order-1 max-h-[455px] max-2xl:max-h-[455px] max-lg:max-w-[270px] max-lg:mx-auto max-lg:my-[10px]"
               >
-                {images.map((img, index) => (
+                {(images ?? []).map((img, index) => (
                   <li class="carousel-item sm:min-w-[110px]">
                     <Slider.Dot index={index}>
                       <Image
@@ -132,8 +132,8 @@ export default function GallerySlider(props: Props) {
                         style={{ aspectRatio }}
                         width={110}
                         height={110}
-                        src={img.url!}
-                        alt={img.alternateName}
+                        src={img?.url || ""}
+                        alt={img?.alternateName || ""}
                         fetchPriority="high"
                       />
                     </Slider.Dot>

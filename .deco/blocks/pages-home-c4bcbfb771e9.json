@@ -18,6 +18,500 @@
             "__resolveType": "header"
           },
           {
+            "__resolveType": "site/sections/Christmas/cr-background.tsx",
+            "desktopPattern": "https://assets.decocache.com/fossil/d9180596-83d4-45a7-959f-e118fb471138/cr-background.png",
+            "mobilePattern": "https://assets.decocache.com/fossil/74361c23-db23-4bf7-8e33-63b820406499/cr-background-mobile.png",
+            "backgroundColor": "#182D16"
+          },
+          {
+            "__resolveType": "site/sections/Christmas/cr-hero.tsx",
+            "backgroundMedia": {
+              "type": "Vídeo"
+            },
+            "title": "Festively Fossil",
+            "subtitle": "Surpresas perfeitas para todos os momentos de presentear.",
+            "leftButton": {
+              "url": "#",
+              "name": "Comprar para Ele"
+            },
+            "rightButton": {
+              "url": "#",
+              "name": "Comprar para Ela"
+            },
+            "titleImage": "https://assets.decocache.com/fossil/bfcce85f-fd80-4a21-914e-e3e7b3b27322/cr-hero-title.png",
+            "titleImageWidth": 302,
+            "titleImageHeight": 146,
+            "titleText": "Festively Fossil",
+            "contentBackground": {
+              "imageDesktop": "https://assets.decocache.com/fossil/aa5f3ca0-9176-4719-9803-f3fa277b4c0d/cr-banner.png",
+              "type": "Imagem",
+              "imageMobile": "https://assets.decocache.com/fossil/721b2c46-b5ac-4f68-ace1-d49e4df0b330/cr-banner-mobile.png"
+            },
+            "bottomCenterImage": "https://assets.decocache.com/fossil/d1b05e3d-77ab-47c3-806c-7ba5b1715121/ornaments.png",
+            "bottomCenterImageWidth": 336,
+            "bottomCenterImageHeight": 167,
+            "snowFooterDesktop": "https://assets.decocache.com/fossil/92902b5c-2105-4f1f-9ae6-1628f8600289/cr-snow-footer.png",
+            "snowFooterMobile": "https://assets.decocache.com/fossil/79a069c3-5640-48be-9461-bcba70fc2188/cr-snow-footer-mobile.png",
+            "snowFooterDesktopWidth": 1280,
+            "snowFooterDesktopHeight": 175,
+            "snowFooterMobileWidth": 375,
+            "snowFooterMobileHeight": 81,
+            "products": null
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Christmas/cr-collection.tsx",
+              "title": "Edição de Fim de Ano",
+              "products": {
+                "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+                "props": {
+                  "sort": "discount:desc",
+                  "collection": "2638",
+                  "count": 8,
+                  "hideUnavailableItems": false
+                }
+              },
+              "iconTextList": [
+                {
+                  "image": "https://assets.decocache.com/fossil/8a7849bf-df99-4d88-acae-c69ec9044731/cr-engraving-icon.png",
+                  "alt": "Ícone de gravação e relevo gratuitos da Fossil",
+                  "text": "Gravação e Relevo Gratuitos"
+                },
+                {
+                  "image": "https://assets.decocache.com/fossil/82fdec15-a6be-4ee6-9388-a0fdd4b169f3/cr-bag-icon.png",
+                  "alt": "Ícone de sacola representando compre online e retire na loja",
+                  "text": "Compre Online, Retire na Loja"
+                },
+                {
+                  "image": "https://assets.decocache.com/fossil/a15c5a2b-125a-401a-93f0-5968a78aba86/cr-tin-icon.png",
+                  "alt": "Ícone de lata especial para relógios Fossil",
+                  "text": "Latas Exclusivas para Relógios"
+                },
+                {
+                  "image": "https://assets.decocache.com/fossil/85b80409-efe0-43ed-ae51-8dd4d3a336ab/cr-gift-card-icon.png",
+                  "alt": "Ícone de cartão-presente Fossil",
+                  "text": "Presenteie com um Cartão-Presente"
+                },
+                {
+                  "image": "https://assets.decocache.com/fossil/a9c1ab8f-d446-43cc-92e0-0f13e0422202/cr-phone-icon.png",
+                  "alt": "Ícone de smartphone simbolizando mais formas de pagamento",
+                  "text": "Mais Formas de Pagar"
+                }
+              ]
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Christmas/cr-nick-list.tsx",
+              "title": "A Lista do Nick",
+              "description": "Peças marcantes da sua própria coleção de edição limitada e alguns dos estilos mais icônicos da Fossil — são seus presentes Fossil favoritos, escolhidos pessoalmente por Nick Jonas.",
+              "button": {
+                "name": "Compre Agora",
+                "url": "#"
+              },
+              "mainImageDesktop": "https://assets.decocache.com/fossil/687ab41e-8616-4e33-9fbd-a29c8f98ff8b/HO25_NickList_D.jpg",
+              "mainImageMobile": "https://assets.decocache.com/fossil/f79b6886-5472-4c4c-8fca-27610f57093c/HO25_NickList_M.jpg",
+              "mainImageDesktopWidth": 574,
+              "mainImageDesktopHeight": 448,
+              "mainImageMobileWidth": 312,
+              "mainImageMobileHeight": 319,
+              "snowmanImage": "https://assets.decocache.com/fossil/e1c6ca89-fd47-47a3-9f01-7e703abde1b6/cr-snowman.png",
+              "snowFooterDesktop": "https://assets.decocache.com/fossil/92902b5c-2105-4f1f-9ae6-1628f8600289/cr-snow-footer.png",
+              "snowFooterDesktopWidth": 1280,
+              "snowFooterDesktopHeight": 175,
+              "snowmanWidth": 136,
+              "snowmanHeight": 152,
+              "snowFooterMobile": "https://assets.decocache.com/fossil/b598b551-2fc8-48b2-ad32-9b084d2ac9a1/cr-snow-mobile-2.png",
+              "snowFooterMobileWidth": 380,
+              "snowFooterMobileHeight": 52,
+              "stars": {
+                "image": "https://assets.decocache.com/fossil/4fbb02f8-2749-4e14-ad48-a5813d7a2a0a/cr-double-stars.png",
+                "width": 70,
+                "height": 70
+              }
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Christmas/cr-watch-guide.tsx",
+              "title": "O Guia dos Relógios",
+              "cards": [
+                {
+                  "url": "#",
+                  "name": "Clássicos Essenciais Para Ele",
+                  "image": "https://assets.decocache.com/fossil/bb4db164-5982-483b-a11a-b9e0790b1bf8/cr-carousel-1-1.png",
+                  "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
+                  "defaultImage": "https://assets.decocache.com/fossil/146a3033-ab82-4309-9c64-6a5382aad4b5/cr-carousel-1-1.png",
+                  "openImage": "https://assets.decocache.com/fossil/8a490919-7fc3-42dd-b1fe-f58c868e581b/cr-carouse-1-1-2.png",
+                  "defaultImageWidth": 355,
+                  "defaultImageHeight": 456,
+                  "openImageWidth": 307,
+                  "openImageHeight": 352
+                },
+                {
+                  "url": "#",
+                  "name": "Clássicos Essenciais Para Ela",
+                  "image": "https://assets.decocache.com/fossil/f28c7247-4741-4041-be0a-87b322181a35/cr-carousel-1-2.png",
+                  "defaultImage": "https://assets.decocache.com/fossil/64ac6991-3f34-40d6-bcef-07adb6dcc183/cr-carousel-1-2.png",
+                  "openImage": "https://assets.decocache.com/fossil/3a09387c-c743-42d1-9323-6fee3f0e70a0/cr-carousel-1-2-2.png",
+                  "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
+                  "defaultImageWidth": 355,
+                  "defaultImageHeight": 456,
+                  "openImageWidth": 307,
+                  "openImageHeight": 352
+                },
+                {
+                  "name": "Dourado & Verde",
+                  "image": "https://assets.decocache.com/fossil/6e18e4b0-e167-4892-9938-73628fd91afa/cr-carousel-1-3.png",
+                  "url": "#",
+                  "defaultImage": "https://assets.decocache.com/fossil/b249db17-3901-42e3-9001-805125235b0c/cr-carousel-1-3.png",
+                  "openImage": "https://assets.decocache.com/fossil/79d60c37-b278-4982-8cf2-53c767481305/cr-carousel-1-3-2.png",
+                  "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
+                  "defaultImageWidth": 355,
+                  "defaultImageHeight": 456,
+                  "openImageWidth": 307,
+                  "openImageHeight": 352
+                },
+                {
+                  "url": "#",
+                  "name": "Nick Jonas x Fossil",
+                  "image": "https://assets.decocache.com/fossil/bb4db164-5982-483b-a11a-b9e0790b1bf8/cr-carousel-1-1.png",
+                  "defaultImage": "https://assets.decocache.com/fossil/0cda7fe0-739d-45d9-ada0-4b87913a79ac/cr-carousel-1-4.png",
+                  "openImage": "https://assets.decocache.com/fossil/25051056-52ee-4578-9817-47585b0a4bc7/cr-carousel-1-4-2.png",
+                  "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
+                  "defaultImageWidth": 355,
+                  "defaultImageHeight": 456,
+                  "openImageWidth": 307,
+                  "openImageHeight": 352
+                },
+                {
+                  "name": "Inspirado em Joias",
+                  "defaultImage": "https://assets.decocache.com/fossil/3e5cacc4-3766-4801-b338-0393ba79c4bb/cr-carousel-1-5.png",
+                  "openImage": "https://assets.decocache.com/fossil/834b5224-941c-4c54-99c2-3c6ec5d33abb/cr-carousel-1-5-2.png",
+                  "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
+                  "url": "#",
+                  "defaultImageWidth": 355,
+                  "defaultImageHeight": 456,
+                  "openImageWidth": 307,
+                  "openImageHeight": 352
+                }
+              ],
+              "products": null,
+              "subtitle": "Desejos e Necessidades",
+              "starLeft": {
+                "image": "https://assets.decocache.com/fossil/0d4292cd-3613-4213-abc1-4c8d7dbf859b/cr-star.png",
+                "width": 27,
+                "height": 37
+              },
+              "starRight": {
+                "image": "https://assets.decocache.com/fossil/4fbb02f8-2749-4e14-ad48-a5813d7a2a0a/cr-double-stars.png",
+                "width": 70,
+                "height": 70
+              },
+              "dividerImage": "https://assets.decocache.com/fossil/a7cc40ba-6a6c-4390-8cf2-46bcdd3197cc/cr-sweater-divider.png",
+              "dividerImageWidth": 1280,
+              "dividerImageHeight": 54
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Christmas/cr-gifts-by-price.tsx",
+              "cards": [
+                {
+                  "label": "Presentes até",
+                  "url": "#",
+                  "value": "R$ 500"
+                },
+                {
+                  "url": "#",
+                  "label": "Presentes até",
+                  "value": "R$ 750"
+                },
+                {
+                  "label": "Presentes até",
+                  "value": "R$ 1.000"
+                },
+                {
+                  "url": "#",
+                  "label": "Presentes que",
+                  "value": "WOW"
+                }
+              ]
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Christmas/cr-watch-guide.tsx",
+              "title": "Guia da Presentes de Natal",
+              "subtitle": "Compre um, Compre todos",
+              "cards": [
+                {
+                  "name": "Presentes para Ele",
+                  "label": "TOP 10",
+                  "defaultImage": "https://assets.decocache.com/fossil/cc278d39-f482-4650-b3d0-bcceb9cab55d/cr-carousel-2-1.png",
+                  "openImage": "https://assets.decocache.com/fossil/fae5f27d-fcaa-4aa3-b3ec-fea2d1506eb1/cr-carousel-2-1-2.png",
+                  "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
+                  "url": "#",
+                  "defaultImageWidth": 355,
+                  "defaultImageHeight": 456,
+                  "openImageHeight": 352
+                },
+                {
+                  "defaultImage": "https://assets.decocache.com/fossil/bf1fbf2b-a9ef-4f74-82b0-a3c5014e7586/cr-carousel-2-2.png",
+                  "openImage": "https://assets.decocache.com/fossil/f76ccdbb-9e40-4e43-b5d7-694705b48d0f/cr-carousel-2-2-2.png",
+                  "name": "O Guia Definitivo de Presentes",
+                  "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
+                  "url": "#",
+                  "defaultImageWidth": 355,
+                  "defaultImageHeight": 456,
+                  "openImageWidth": 307,
+                  "openImageHeight": 352
+                },
+                {
+                  "name": "Presentes para Ela",
+                  "label": "TOP 10",
+                  "defaultImage": "https://assets.decocache.com/fossil/f404414d-b553-40c8-8e01-5783a4e6afc8/cr-carousel-2-3.png",
+                  "openImage": "https://assets.decocache.com/fossil/d79acaa0-d0ab-44e8-9e11-c35e755ed85c/cr-carousel-2-3-2.png",
+                  "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
+                  "url": "#",
+                  "defaultImageWidth": 355,
+                  "defaultImageHeight": 456,
+                  "openImageWidth": 307,
+                  "openImageHeight": 352
+                },
+                {
+                  "name": "Estilos para Festas",
+                  "defaultImage": "https://assets.decocache.com/fossil/e5be9641-3343-474c-93ac-cf6d209e07e6/cr-carousel-2-4.png",
+                  "openImage": "https://assets.decocache.com/fossil/dca7500e-1161-4eb1-a6bd-43dcd3ce48b6/cr-carousel-2-4-2.png",
+                  "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
+                  "defaultImageWidth": 355,
+                  "defaultImageHeight": 456,
+                  "openImageWidth": 307,
+                  "openImageHeight": 352,
+                  "url": "#"
+                }
+              ],
+              "starLeft": {
+                "image": "https://assets.decocache.com/fossil/797a23ae-f770-443e-95ce-77fc6d423adb/HO25_stars_paired_wide.png",
+                "width": 70,
+                "height": 70
+              },
+              "starRight": {
+                "image": "https://assets.decocache.com/fossil/a2d7c7b7-bee1-4ce6-928f-aab2c19cdb3a/HO25_star_single.png",
+                "width": 27,
+                "height": 37
+              }
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Christmas/cr-custom.tsx",
+              "title": "Fossil Personalizados",
+              "description": "Por trás de todo grande presente há quem saiba escolher bem. Esse alguém é você — com gravação e relevo gratuitos.",
+              "button": {
+                "name": "Comprar Presentes Personalizados",
+                "url": "#"
+              },
+              "imageDesktop": "https://assets.decocache.com/fossil/e3bc0e67-cb94-4776-a833-a45f29789b44/cr-custom.png",
+              "imageMobile": "https://assets.decocache.com/fossil/a08f1381-7afc-4b74-8de0-d59529e8fb34/cr-custom-mobile.png",
+              "snowFooterDesktop": "https://assets.decocache.com/fossil/92902b5c-2105-4f1f-9ae6-1628f8600289/cr-snow-footer.png",
+              "snowFooterMobile": "https://assets.decocache.com/fossil/79a069c3-5640-48be-9461-bcba70fc2188/cr-snow-footer-mobile.png",
+              "snowFooterMobileWidth": 375,
+              "snowFooterMobileHeight": 92,
+              "snowFooterDesktopWidth": 1280,
+              "snowFooterDesktopHeight": 175,
+              "snowmanImage": "https://assets.decocache.com/fossil/06069609-69fa-4f09-b9c1-3b43ada6f367/cr-snowman-cup.png",
+              "snowmanWidth": 160,
+              "snowmanHeight": 173
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Christmas/cr-where-did-you-get-that.tsx",
+              "title": "“Onde Você Comprou Isso?”",
+              "description": "Acabou de chegar — nossos lançadores de conversa mais recentes.",
+              "autoplaySeconds": 2,
+              "items": [
+                {
+                  "desktopImage": "https://assets.decocache.com/fossil/a0aac48c-2028-4b05-9f64-4176ebce22d6/1-NJ-HP-WDYGT-Neutra.jpg",
+                  "alt": "Relógio Neutra Chronograph",
+                  "href": "/s?q=neutra&utmi_pc=search&utmi_cp=neutra",
+                  "caption": "Comprar Neutra Chronograph",
+                  "loading": "eager",
+                  "fetchPriority": "high"
+                },
+                {
+                  "desktopImage": "https://assets.decocache.com/fossil/c123ea75-3ebd-4fb0-a8a7-e6bbb41fbe8c/2-NJ-HP-WDYGT-Everett.jpg",
+                  "alt": "Relógio Everett",
+                  "href": "/s?q=everett&utmi_pc=search&utmi_cp=everett",
+                  "caption": "Comprar Everett"
+                },
+                {
+                  "desktopImage": "https://assets.decocache.com/fossil/c89ffa8e-fac8-4bb5-8029-eddbcc5bc92d/3-NJ-HP-WDYGT-Img3_ES5432.jpg",
+                  "alt": "Anel-Relógio Raquel",
+                  "href": "/s?q=watch&utmi_pc=search&utmi_cp=watch",
+                  "caption": "Comprar Anel-Relógio Raquel"
+                },
+                {
+                  "desktopImage": "https://assets.decocache.com/fossil/7aacf1bd-2fa2-41a3-b5e3-b587830a3629/4-NJ-HP-WDYGT-Img4_ES5422.jpg",
+                  "alt": "Relógio Gilmore",
+                  "href": "/s?q=gilmore&utmi_pc=search&utmi_cp=gilmore",
+                  "caption": "Comprar Gilmore"
+                }
+              ]
+            }
+          },
+          {
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
+              {
+                "value": {
+                  "__resolveType": "site/sections/Content/YourViewstestimonial.tsx"
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/never.ts"
+                }
+              }
+            ]
+          },
+          {
+            "__resolveType": "site/sections/Newsletter/NewsletterModal.tsx",
+            "textSendSucess": "<p></p>",
+            "text": "<p></p>",
+            "colorText": "#000000",
+            "backgrounds": {
+              "desktop": {
+                "initial": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/af17e03d-5d4c-49cb-91a0-3c7d93a6bb1a/banner.png",
+                "width": 932,
+                "height": 687,
+                "success": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/ebd4b476-498b-40b9-aaed-507a5e2dce25/banner.png"
+              },
+              "mobile": {
+                "initial": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/910a99f9-2d55-4262-93de-fcd129f74d71/banner-mobile.png",
+                "success": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/9c3276a1-0691-4f66-959d-b5469736820f/banner-mobile.png",
+                "width": 393,
+                "height": 555
+              }
+            },
+            "modalSignExpiredDate": 360,
+            "modalCloseExpiredDate": 10,
+            "image": {
+              "desktop": {
+                "src": "https://assets.decocache.com/fossil/ae49855a-adff-4016-b9ba-3ae54a0f711c/Prancheta-1---2025-09-18T144528.409.png",
+                "width": 932,
+                "height": 687
+              },
+              "mobile": {
+                "src": "https://assets.decocache.com/fossil/d30b47ca-524c-4b2d-9cd7-610085a1e4e3/Prancheta-4-(1).png",
+                "width": 393,
+                "height": 555
+              }
+            },
+            "form": {
+              "email": {
+                "placeholder": "Seu e-mail"
+              },
+              "name": {
+                "placeholder": "Seu nome"
+              },
+              "button": {
+                "label": "Inscreva-se"
+              },
+              "phone": {
+                "show": true
+              },
+              "dateOfBirth": {
+                "placeholder": "DD/MM/AAAA"
+              }
+            },
+            "textFieldCupom": "Use o cupom",
+            "textCupom": "BEMVINDO15",
+            "is_active": true,
+            "layout": {
+              "form": {
+                "0": "t",
+                "1": "o",
+                "2": "p",
+                "3": "-",
+                "4": "[",
+                "5": "5",
+                "6": "0",
+                "7": "%",
+                "8": "]",
+                "desktop": {
+                  "top": "60%",
+                  "left": "39px"
+                },
+                "mobile": {
+                  "top": "28%"
+                }
+              },
+              "button": {
+                "tailwind": "bg-primary text-white border border-primary hover:bg-primary/90",
+                "desktop": {
+                  "margin": "0px 0px 0px 70px"
+                }
+              },
+              "text": {
+                "successCouponField": {
+                  "desktop": {
+                    "margin": "81px 0px 8px 16px",
+                    "fontSize": "1.25rem"
+                  },
+                  "tailwind": "font-normal",
+                  "mobile": {
+                    "margin": "117px 0px 0px",
+                    "fontSize": "1.0rem"
+                  }
+                }
+              },
+              "modal": {
+                "maxWidthDesktop": "90%",
+                "maxWidthMobile": "90%",
+                "maxHeightMobile": "350px",
+                "maxHeight": "555px"
+              }
+            },
+            "imageSuccess": {
+              "desktop": {
+                "src": "https://assets.decocache.com/fossil/bafdfafc-3b63-48f9-ae74-643e727edb58/Prancheta-1---2025-09-18T144522.343(1).png",
+                "width": 932,
+                "height": 687
+              },
+              "mobile": {
+                "width": 393,
+                "height": 555,
+                "src": "https://assets.decocache.com/fossil/ff11a13d-a2a9-4825-a65b-b7d7e8af090e/Prancheta-4-1.png"
+              }
+            }
+          },
+          {
+            "__resolveType": "Footer - 04"
+          },
+          {
+            "__resolveType": "My Theme"
+          }
+        ],
+        "rule": {
+          "__resolveType": "Natal"
+        }
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "Fashion theme"
+          },
+          {
+            "__resolveType": "header"
+          },
+          {
             "__resolveType": "site/sections/NickJonas/nj-promotional-bar.tsx",
             "text": "COLEÇÃO NICK JONAS X FOSSIL: EDIÇÃO LIMITADA ",
             "url": "/nick-jonas"
@@ -44,6 +538,7 @@
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
               "__resolveType": "site/sections/NickJonas/nj-collection.tsx",
+              "title": "A Coleção Nick Jonas",
               "products": {
                 "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
                 "props": {
@@ -57,7 +552,6 @@
                 "name": "Ver Todos",
                 "url": "/colecao/nick-jonas"
               },
-              "title": "A Coleção Nick Jonas",
               "carousel": {
                 "slidesPerView": 4,
                 "slidesPerViewMobile": 1,
@@ -69,6 +563,7 @@
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
               "__resolveType": "site/sections/NickJonas/nj-collection-highlight.tsx",
+              "title": "A coleção Nick Jonas",
               "heroDesktopImage": "https://assets.decocache.com/fossil/e36c682b-754c-46fa-88e7-15725d7399b4/image-1-resized.jpg",
               "heroMobileImage": "https://assets.decocache.com/fossil/a591d277-b4cf-4ee1-b22d-0b01465edbd5/image-1-mobile-resized.jpg",
               "secondaryCard": {
@@ -79,7 +574,6 @@
                 "imageUrl": "/relogio-fossil-feminino-nick-jonas-dourado---le1213-1vi/p?skuId=1000027960"
               },
               "topLabel": "Apresentando",
-              "title": "A coleção Nick Jonas",
               "description": "Descubra peças icônicas do ícone cultural. Relógios e anéis de declaração, completos com uma dose de detalhes de design arrojados.",
               "cta": {
                 "name": "Explorar Mais",
@@ -148,31 +642,31 @@
               "items": [
                 {
                   "desktopImage": "https://assets.decocache.com/fossil/a0aac48c-2028-4b05-9f64-4176ebce22d6/1-NJ-HP-WDYGT-Neutra.jpg",
-                  "mobileImage": "https://assets.decocache.com/fossil/a0aac48c-2028-4b05-9f64-4176ebce22d6/1-NJ-HP-WDYGT-Neutra.jpg",
                   "alt": "1",
                   "href": "/s?q=neutra&utmi_pc=search&utmi_cp=neutra",
-                  "caption": "Comprar Neutra Chronograph"
+                  "caption": "Comprar Neutra Chronograph",
+                  "mobileImage": "https://assets.decocache.com/fossil/a0aac48c-2028-4b05-9f64-4176ebce22d6/1-NJ-HP-WDYGT-Neutra.jpg"
                 },
                 {
                   "desktopImage": "https://assets.decocache.com/fossil/c123ea75-3ebd-4fb0-a8a7-e6bbb41fbe8c/2-NJ-HP-WDYGT-Everett.jpg",
-                  "mobileImage": "https://assets.decocache.com/fossil/c123ea75-3ebd-4fb0-a8a7-e6bbb41fbe8c/2-NJ-HP-WDYGT-Everett.jpg",
                   "alt": "2",
                   "href": "/s?q=everett&utmi_pc=search&utmi_cp=everett",
-                  "caption": "Comprar Everett"
+                  "caption": "Comprar Everett",
+                  "mobileImage": "https://assets.decocache.com/fossil/c123ea75-3ebd-4fb0-a8a7-e6bbb41fbe8c/2-NJ-HP-WDYGT-Everett.jpg"
                 },
                 {
                   "desktopImage": "https://assets.decocache.com/fossil/c89ffa8e-fac8-4bb5-8029-eddbcc5bc92d/3-NJ-HP-WDYGT-Img3_ES5432.jpg",
-                  "mobileImage": "https://assets.decocache.com/fossil/c89ffa8e-fac8-4bb5-8029-eddbcc5bc92d/3-NJ-HP-WDYGT-Img3_ES5432.jpg",
                   "alt": "3",
                   "href": "/s?q=watch&utmi_pc=search&utmi_cp=watch",
-                  "caption": "Comprar Anel-Relógio Raquel"
+                  "caption": "Comprar Anel-Relógio Raquel",
+                  "mobileImage": "https://assets.decocache.com/fossil/c89ffa8e-fac8-4bb5-8029-eddbcc5bc92d/3-NJ-HP-WDYGT-Img3_ES5432.jpg"
                 },
                 {
                   "desktopImage": "https://assets.decocache.com/fossil/7aacf1bd-2fa2-41a3-b5e3-b587830a3629/4-NJ-HP-WDYGT-Img4_ES5422.jpg",
-                  "mobileImage": "https://assets.decocache.com/fossil/7aacf1bd-2fa2-41a3-b5e3-b587830a3629/4-NJ-HP-WDYGT-Img4_ES5422.jpg",
                   "alt": "4",
                   "href": "/s?q=gilmore&utmi_pc=search&utmi_cp=gilmore",
-                  "caption": "Comprar Gilmore"
+                  "caption": "Comprar Gilmore",
+                  "mobileImage": "https://assets.decocache.com/fossil/7aacf1bd-2fa2-41a3-b5e3-b587830a3629/4-NJ-HP-WDYGT-Img4_ES5422.jpg"
                 }
               ]
             }

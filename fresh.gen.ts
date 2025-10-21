@@ -45,6 +45,7 @@ import * as $WishlistButton_wake from "./islands/WishlistButton/wake.tsx";
 import * as $YourQA from "./islands/YourQA.tsx";
 import * as $YourReviews from "./islands/YourReviews.tsx";
 import * as $Zendesk from "./islands/Zendesk.tsx";
+import * as $christmas_ProductCarousel from "./islands/christmas/ProductCarousel.tsx";
 import * as $sort from "./islands/sort.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
@@ -96,6 +97,7 @@ const manifest = {
     "./islands/YourQA.tsx": $YourQA,
     "./islands/YourReviews.tsx": $YourReviews,
     "./islands/Zendesk.tsx": $Zendesk,
+    "./islands/christmas/ProductCarousel.tsx": $christmas_ProductCarousel,
     "./islands/sort.tsx": $sort,
   },
   baseUrl: import.meta.url,

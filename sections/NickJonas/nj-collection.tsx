@@ -1,6 +1,7 @@
 export { default as LoadingFallback } from "../../components/LoadingFallback.tsx";
 import type { Product } from "apps/commerce/types.ts";
 import NJProductCarousel from "../../islands/NickJonas/NJProductCarousel.tsx";
+import { useId } from "../../sdk/useId.ts";
 
 export interface Button {
   /** @title Texto do Botão */
@@ -41,6 +42,8 @@ function NJCollection({
   shopAllButton,
   promotionalText,
 }: Props) {
+  const id = useId();
+
   if (!products || products.length === 0) return null;
 
   return (
@@ -51,6 +54,7 @@ function NJCollection({
           title={title}
           shopAllButton={shopAllButton}
           promotionalText={promotionalText}
+          carouselId={id}
         />
       </div>
     </div>
