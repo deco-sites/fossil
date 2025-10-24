@@ -141,13 +141,22 @@ export default function NJProductCarousel({
   }, [swiperInstance, swiperInstanceRef]);
 
   useEffect(() => {
-    if (!swiperInstance) {
+    if (!swiperInstance || !isSwiperReady) {
       return;
     }
 
+    swiperInstance.updateSlides();
+    swiperInstance.updateProgress();
+    swiperInstance.updateSlidesClasses();
     updatePagination(swiperInstance);
     updateButtonStates(swiperInstance);
-  }, [swiperInstance, products.length, updatePagination, updateButtonStates]);
+  }, [
+    swiperInstance,
+    isSwiperReady,
+    products.length,
+    updatePagination,
+    updateButtonStates,
+  ]);
 
   if (!products.length) {
     return (
