@@ -62,7 +62,10 @@ function Result({
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
   const { nextPage, previousPage } = pageInfo;
   const perPage = pageInfo?.recordPerPage || products.length;
-  const url = new URL(_url, globalThis.window.location.origin);
+  const url = new URL(
+    _url,
+    globalThis.window?.location?.origin || "http://localhost:8000",
+  );
   const { format = "Show More" } = layout ?? {};
   const id = useId();
   const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;

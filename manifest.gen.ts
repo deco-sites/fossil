@@ -18,98 +18,106 @@ import * as $$$$$$4 from "./sections/Cards/ImageCardsCarouselWithImage.tsx";
 import * as $$$$$$5 from "./sections/Category/CategoryBanner.tsx";
 import * as $$$$$$6 from "./sections/Category/CategoryGrid.tsx";
 import * as $$$$$$7 from "./sections/Category/CategoryList.tsx";
-import * as $$$$$$8 from "./sections/Content/BannerFossil.tsx";
-import * as $$$$$$9 from "./sections/Content/BannerFossilCarousel.tsx";
-import * as $$$$$$10 from "./sections/Content/Benefits.tsx";
-import * as $$$$$$11 from "./sections/Content/BlogPosts.tsx";
-import * as $$$$$$12 from "./sections/Content/CallToAction.tsx";
-import * as $$$$$$13 from "./sections/Content/Faq.tsx";
-import * as $$$$$$14 from "./sections/Content/Features.tsx";
-import * as $$$$$$15 from "./sections/Content/Hero.tsx";
-import * as $$$$$$16 from "./sections/Content/IframeMaps.tsx";
-import * as $$$$$$17 from "./sections/Content/ImageSection.tsx";
-import * as $$$$$$18 from "./sections/Content/Intro.tsx";
-import * as $$$$$$19 from "./sections/Content/Logos.tsx";
-import * as $$$$$$20 from "./sections/Content/Partners.tsx";
-import * as $$$$$$21 from "./sections/Content/PromotionalBanner.tsx";
-import * as $$$$$$22 from "./sections/Content/Reviews.tsx";
-import * as $$$$$$23 from "./sections/Content/RichText.tsx";
-import * as $$$$$$24 from "./sections/Content/Table.tsx";
-import * as $$$$$$25 from "./sections/Content/Testimonials.tsx";
-import * as $$$$$$26 from "./sections/Content/TextWithImage.tsx";
-import * as $$$$$$27 from "./sections/Content/ThirdContent.tsx";
-import * as $$$$$$28 from "./sections/Content/YourViewsIntegration.tsx";
-import * as $$$$$$29 from "./sections/Content/YourViewstestimonial.tsx";
-import * as $$$$$$30 from "./sections/Footer.tsx";
-import * as $$$$$$31 from "./sections/Footer/Footer.tsx";
-import * as $$$$$$32 from "./sections/Gallery.tsx";
-import * as $$$$$$33 from "./sections/Header/Header.tsx";
-import * as $$$$$$34 from "./sections/Hotsites/PresenteActionBanner.tsx";
-import * as $$$$$$35 from "./sections/Hotsites/PresenteBanner.tsx";
-import * as $$$$$$36 from "./sections/Hotsites/PresenteInfoCard.tsx";
-import * as $$$$$$37 from "./sections/Hotsites/PresenteShopByCategory.tsx";
-import * as $$$$$$38 from "./sections/Hotsites/PresenteShopByGender.tsx";
-import * as $$$$$$39 from "./sections/Hotsites/PresenteWhatNews.tsx";
-import * as $$$$$$40 from "./sections/Images/BannerGrid.tsx";
-import * as $$$$$$41 from "./sections/Images/Carousel.tsx";
-import * as $$$$$$42 from "./sections/Images/ImageGallery.tsx";
-import * as $$$$$$43 from "./sections/Images/ShoppableBanner.tsx";
-import * as $$$$$$44 from "./sections/Institutional/AccordionsContent.tsx";
-import * as $$$$$$45 from "./sections/Institutional/AsideMenu.tsx";
-import * as $$$$$$46 from "./sections/Institutional/CardsContent.tsx";
-import * as $$$$$$47 from "./sections/Institutional/ContactForm.tsx";
-import * as $$$$$$48 from "./sections/Institutional/HelpHomePage.tsx";
-import * as $$$$$$49 from "./sections/Institutional/HelpPage.tsx";
-import * as $$$$$$50 from "./sections/Institutional/HtmlContent.tsx";
-import * as $$$$$$51 from "./sections/Institutional/InstitutionalPage.tsx";
-import * as $$$$$$52 from "./sections/Institutional/LegalsPage.tsx";
-import * as $$$$$$53 from "./sections/Institutional/PageContent.tsx";
-import * as $$$$$$54 from "./sections/Institutional/PolicyPage.tsx";
-import * as $$$$$$55 from "./sections/Institutional/ResellerForm.tsx";
-import * as $$$$$$56 from "./sections/Institutional/TextContent.tsx";
-import * as $$$$$$57 from "./sections/Integrations/Zendesk.tsx";
-import * as $$$$$$58 from "./sections/ItWorks.tsx";
-import * as $$$$$$59 from "./sections/Links/LinkTree.tsx";
-import * as $$$$$$60 from "./sections/Links/Shortcuts.tsx";
-import * as $$$$$$61 from "./sections/Miscellaneous/CampaignTimer.tsx";
-import * as $$$$$$62 from "./sections/Miscellaneous/CookieConsent.tsx";
-import * as $$$$$$63 from "./sections/Miscellaneous/ProxyIframe.tsx";
-import * as $$$$$$64 from "./sections/Miscellaneous/Slide.tsx";
-import * as $$$$$$65 from "./sections/Newsletter/Newsletter.tsx";
-import * as $$$$$$66 from "./sections/Newsletter/NewsletterModal.tsx";
-import * as $$$$$$67 from "./sections/NickJonas/nj-checkerboard.tsx";
-import * as $$$$$$68 from "./sections/NickJonas/nj-collection-highlight.tsx";
-import * as $$$$$$69 from "./sections/NickJonas/nj-collection.tsx";
-import * as $$$$$$70 from "./sections/NickJonas/nj-core-classics.tsx";
-import * as $$$$$$71 from "./sections/NickJonas/nj-hero.tsx";
-import * as $$$$$$72 from "./sections/NickJonas/nj-lp-collection.tsx";
-import * as $$$$$$73 from "./sections/NickJonas/nj-lp-core-classics.tsx";
-import * as $$$$$$74 from "./sections/NickJonas/nj-lp-diner-mug-promo.tsx";
-import * as $$$$$$75 from "./sections/NickJonas/nj-lp-quote.tsx";
-import * as $$$$$$76 from "./sections/NickJonas/nj-product-showcase.tsx";
-import * as $$$$$$77 from "./sections/NickJonas/nj-promotional-bar.tsx";
-import * as $$$$$$78 from "./sections/NickJonas/nj-quote.tsx";
-import * as $$$$$$79 from "./sections/NickJonas/nj-shop-by-categories.tsx";
-import * as $$$$$$80 from "./sections/NickJonas/nj-where-did-you-get-that.tsx";
-import * as $$$$$$81 from "./sections/NickJonas/nj-with-nick-jonas.tsx";
-import * as $$$$$$82 from "./sections/Product/ImageGalleryFrontBack.tsx";
-import * as $$$$$$83 from "./sections/Product/NotFound.tsx";
-import * as $$$$$$84 from "./sections/Product/NotFoundChallenge.tsx";
-import * as $$$$$$85 from "./sections/Product/ProductDetails.tsx";
-import * as $$$$$$86 from "./sections/Product/ProductShelf.tsx";
-import * as $$$$$$87 from "./sections/Product/ProductShelfTabbed.tsx";
-import * as $$$$$$88 from "./sections/Product/SearchResult.tsx";
-import * as $$$$$$89 from "./sections/Product/SearchResultView.tsx";
-import * as $$$$$$90 from "./sections/Product/ShelfWithImage.tsx";
-import * as $$$$$$91 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$92 from "./sections/Seo/SeoBaseCustomV2.tsx";
-import * as $$$$$$94 from "./sections/Seo/SeoPdpCustom.tsx";
-import * as $$$$$$95 from "./sections/Seo/SeoPdpCustomV2.tsx";
-import * as $$$$$$96 from "./sections/Seo/SeoPlpCustomV2.tsx";
-import * as $$$$$$93 from "./sections/Seo/SeoPLPV6.tsx";
-import * as $$$$$$97 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$98 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$99 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$8 from "./sections/Christmas/cr-background.tsx";
+import * as $$$$$$9 from "./sections/Christmas/cr-collection.tsx";
+import * as $$$$$$10 from "./sections/Christmas/cr-custom.tsx";
+import * as $$$$$$11 from "./sections/Christmas/cr-gifts-by-price.tsx";
+import * as $$$$$$12 from "./sections/Christmas/cr-hero.tsx";
+import * as $$$$$$13 from "./sections/Christmas/cr-nick-list.tsx";
+import * as $$$$$$14 from "./sections/Christmas/cr-watch-guide.tsx";
+import * as $$$$$$15 from "./sections/Christmas/cr-where-did-you-get-that.tsx";
+import * as $$$$$$16 from "./sections/Content/BannerFossil.tsx";
+import * as $$$$$$17 from "./sections/Content/BannerFossilCarousel.tsx";
+import * as $$$$$$18 from "./sections/Content/Benefits.tsx";
+import * as $$$$$$19 from "./sections/Content/BlogPosts.tsx";
+import * as $$$$$$20 from "./sections/Content/CallToAction.tsx";
+import * as $$$$$$21 from "./sections/Content/Faq.tsx";
+import * as $$$$$$22 from "./sections/Content/Features.tsx";
+import * as $$$$$$23 from "./sections/Content/Hero.tsx";
+import * as $$$$$$24 from "./sections/Content/IframeMaps.tsx";
+import * as $$$$$$25 from "./sections/Content/ImageSection.tsx";
+import * as $$$$$$26 from "./sections/Content/Intro.tsx";
+import * as $$$$$$27 from "./sections/Content/Logos.tsx";
+import * as $$$$$$28 from "./sections/Content/Partners.tsx";
+import * as $$$$$$29 from "./sections/Content/PromotionalBanner.tsx";
+import * as $$$$$$30 from "./sections/Content/Reviews.tsx";
+import * as $$$$$$31 from "./sections/Content/RichText.tsx";
+import * as $$$$$$32 from "./sections/Content/Table.tsx";
+import * as $$$$$$33 from "./sections/Content/Testimonials.tsx";
+import * as $$$$$$34 from "./sections/Content/TextWithImage.tsx";
+import * as $$$$$$35 from "./sections/Content/ThirdContent.tsx";
+import * as $$$$$$36 from "./sections/Content/YourViewsIntegration.tsx";
+import * as $$$$$$37 from "./sections/Content/YourViewstestimonial.tsx";
+import * as $$$$$$38 from "./sections/Footer.tsx";
+import * as $$$$$$39 from "./sections/Footer/Footer.tsx";
+import * as $$$$$$40 from "./sections/Gallery.tsx";
+import * as $$$$$$41 from "./sections/Header/Header.tsx";
+import * as $$$$$$42 from "./sections/Hotsites/PresenteActionBanner.tsx";
+import * as $$$$$$43 from "./sections/Hotsites/PresenteBanner.tsx";
+import * as $$$$$$44 from "./sections/Hotsites/PresenteInfoCard.tsx";
+import * as $$$$$$45 from "./sections/Hotsites/PresenteShopByCategory.tsx";
+import * as $$$$$$46 from "./sections/Hotsites/PresenteShopByGender.tsx";
+import * as $$$$$$47 from "./sections/Hotsites/PresenteWhatNews.tsx";
+import * as $$$$$$48 from "./sections/Images/BannerGrid.tsx";
+import * as $$$$$$49 from "./sections/Images/Carousel.tsx";
+import * as $$$$$$50 from "./sections/Images/ImageGallery.tsx";
+import * as $$$$$$51 from "./sections/Images/ShoppableBanner.tsx";
+import * as $$$$$$52 from "./sections/Institutional/AccordionsContent.tsx";
+import * as $$$$$$53 from "./sections/Institutional/AsideMenu.tsx";
+import * as $$$$$$54 from "./sections/Institutional/CardsContent.tsx";
+import * as $$$$$$55 from "./sections/Institutional/ContactForm.tsx";
+import * as $$$$$$56 from "./sections/Institutional/HelpHomePage.tsx";
+import * as $$$$$$57 from "./sections/Institutional/HelpPage.tsx";
+import * as $$$$$$58 from "./sections/Institutional/HtmlContent.tsx";
+import * as $$$$$$59 from "./sections/Institutional/InstitutionalPage.tsx";
+import * as $$$$$$60 from "./sections/Institutional/LegalsPage.tsx";
+import * as $$$$$$61 from "./sections/Institutional/PageContent.tsx";
+import * as $$$$$$62 from "./sections/Institutional/PolicyPage.tsx";
+import * as $$$$$$63 from "./sections/Institutional/ResellerForm.tsx";
+import * as $$$$$$64 from "./sections/Institutional/TextContent.tsx";
+import * as $$$$$$65 from "./sections/Integrations/Zendesk.tsx";
+import * as $$$$$$66 from "./sections/ItWorks.tsx";
+import * as $$$$$$67 from "./sections/Links/LinkTree.tsx";
+import * as $$$$$$68 from "./sections/Links/Shortcuts.tsx";
+import * as $$$$$$69 from "./sections/Miscellaneous/CampaignTimer.tsx";
+import * as $$$$$$70 from "./sections/Miscellaneous/CookieConsent.tsx";
+import * as $$$$$$71 from "./sections/Miscellaneous/ProxyIframe.tsx";
+import * as $$$$$$72 from "./sections/Miscellaneous/Slide.tsx";
+import * as $$$$$$73 from "./sections/Newsletter/Newsletter.tsx";
+import * as $$$$$$74 from "./sections/Newsletter/NewsletterModal.tsx";
+import * as $$$$$$75 from "./sections/NickJonas/nj-checkerboard.tsx";
+import * as $$$$$$76 from "./sections/NickJonas/nj-collection-highlight.tsx";
+import * as $$$$$$77 from "./sections/NickJonas/nj-collection.tsx";
+import * as $$$$$$78 from "./sections/NickJonas/nj-core-classics.tsx";
+import * as $$$$$$79 from "./sections/NickJonas/nj-hero.tsx";
+import * as $$$$$$80 from "./sections/NickJonas/nj-lp-collection.tsx";
+import * as $$$$$$81 from "./sections/NickJonas/nj-lp-core-classics.tsx";
+import * as $$$$$$82 from "./sections/NickJonas/nj-lp-diner-mug-promo.tsx";
+import * as $$$$$$83 from "./sections/NickJonas/nj-lp-quote.tsx";
+import * as $$$$$$84 from "./sections/NickJonas/nj-product-showcase.tsx";
+import * as $$$$$$85 from "./sections/NickJonas/nj-promotional-bar.tsx";
+import * as $$$$$$86 from "./sections/NickJonas/nj-quote.tsx";
+import * as $$$$$$87 from "./sections/NickJonas/nj-shop-by-categories.tsx";
+import * as $$$$$$88 from "./sections/NickJonas/nj-where-did-you-get-that.tsx";
+import * as $$$$$$89 from "./sections/NickJonas/nj-with-nick-jonas.tsx";
+import * as $$$$$$90 from "./sections/Product/ImageGalleryFrontBack.tsx";
+import * as $$$$$$91 from "./sections/Product/NotFound.tsx";
+import * as $$$$$$92 from "./sections/Product/NotFoundChallenge.tsx";
+import * as $$$$$$93 from "./sections/Product/ProductDetails.tsx";
+import * as $$$$$$94 from "./sections/Product/ProductShelf.tsx";
+import * as $$$$$$95 from "./sections/Product/ProductShelfTabbed.tsx";
+import * as $$$$$$96 from "./sections/Product/SearchResult.tsx";
+import * as $$$$$$97 from "./sections/Product/SearchResultView.tsx";
+import * as $$$$$$98 from "./sections/Product/ShelfWithImage.tsx";
+import * as $$$$$$99 from "./sections/Product/Wishlist.tsx";
+import * as $$$$$$100 from "./sections/Seo/SeoBaseCustomV2.tsx";
+import * as $$$$$$102 from "./sections/Seo/SeoPdpCustom.tsx";
+import * as $$$$$$103 from "./sections/Seo/SeoPdpCustomV2.tsx";
+import * as $$$$$$104 from "./sections/Seo/SeoPlpCustomV2.tsx";
+import * as $$$$$$101 from "./sections/Seo/SeoPLPV6.tsx";
+import * as $$$$$$105 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$106 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$107 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
@@ -127,98 +135,106 @@ const manifest = {
     "site/sections/Category/CategoryBanner.tsx": $$$$$$5,
     "site/sections/Category/CategoryGrid.tsx": $$$$$$6,
     "site/sections/Category/CategoryList.tsx": $$$$$$7,
-    "site/sections/Content/BannerFossil.tsx": $$$$$$8,
-    "site/sections/Content/BannerFossilCarousel.tsx": $$$$$$9,
-    "site/sections/Content/Benefits.tsx": $$$$$$10,
-    "site/sections/Content/BlogPosts.tsx": $$$$$$11,
-    "site/sections/Content/CallToAction.tsx": $$$$$$12,
-    "site/sections/Content/Faq.tsx": $$$$$$13,
-    "site/sections/Content/Features.tsx": $$$$$$14,
-    "site/sections/Content/Hero.tsx": $$$$$$15,
-    "site/sections/Content/IframeMaps.tsx": $$$$$$16,
-    "site/sections/Content/ImageSection.tsx": $$$$$$17,
-    "site/sections/Content/Intro.tsx": $$$$$$18,
-    "site/sections/Content/Logos.tsx": $$$$$$19,
-    "site/sections/Content/Partners.tsx": $$$$$$20,
-    "site/sections/Content/PromotionalBanner.tsx": $$$$$$21,
-    "site/sections/Content/Reviews.tsx": $$$$$$22,
-    "site/sections/Content/RichText.tsx": $$$$$$23,
-    "site/sections/Content/Table.tsx": $$$$$$24,
-    "site/sections/Content/Testimonials.tsx": $$$$$$25,
-    "site/sections/Content/TextWithImage.tsx": $$$$$$26,
-    "site/sections/Content/ThirdContent.tsx": $$$$$$27,
-    "site/sections/Content/YourViewsIntegration.tsx": $$$$$$28,
-    "site/sections/Content/YourViewstestimonial.tsx": $$$$$$29,
-    "site/sections/Footer.tsx": $$$$$$30,
-    "site/sections/Footer/Footer.tsx": $$$$$$31,
-    "site/sections/Gallery.tsx": $$$$$$32,
-    "site/sections/Header/Header.tsx": $$$$$$33,
-    "site/sections/Hotsites/PresenteActionBanner.tsx": $$$$$$34,
-    "site/sections/Hotsites/PresenteBanner.tsx": $$$$$$35,
-    "site/sections/Hotsites/PresenteInfoCard.tsx": $$$$$$36,
-    "site/sections/Hotsites/PresenteShopByCategory.tsx": $$$$$$37,
-    "site/sections/Hotsites/PresenteShopByGender.tsx": $$$$$$38,
-    "site/sections/Hotsites/PresenteWhatNews.tsx": $$$$$$39,
-    "site/sections/Images/BannerGrid.tsx": $$$$$$40,
-    "site/sections/Images/Carousel.tsx": $$$$$$41,
-    "site/sections/Images/ImageGallery.tsx": $$$$$$42,
-    "site/sections/Images/ShoppableBanner.tsx": $$$$$$43,
-    "site/sections/Institutional/AccordionsContent.tsx": $$$$$$44,
-    "site/sections/Institutional/AsideMenu.tsx": $$$$$$45,
-    "site/sections/Institutional/CardsContent.tsx": $$$$$$46,
-    "site/sections/Institutional/ContactForm.tsx": $$$$$$47,
-    "site/sections/Institutional/HelpHomePage.tsx": $$$$$$48,
-    "site/sections/Institutional/HelpPage.tsx": $$$$$$49,
-    "site/sections/Institutional/HtmlContent.tsx": $$$$$$50,
-    "site/sections/Institutional/InstitutionalPage.tsx": $$$$$$51,
-    "site/sections/Institutional/LegalsPage.tsx": $$$$$$52,
-    "site/sections/Institutional/PageContent.tsx": $$$$$$53,
-    "site/sections/Institutional/PolicyPage.tsx": $$$$$$54,
-    "site/sections/Institutional/ResellerForm.tsx": $$$$$$55,
-    "site/sections/Institutional/TextContent.tsx": $$$$$$56,
-    "site/sections/Integrations/Zendesk.tsx": $$$$$$57,
-    "site/sections/ItWorks.tsx": $$$$$$58,
-    "site/sections/Links/LinkTree.tsx": $$$$$$59,
-    "site/sections/Links/Shortcuts.tsx": $$$$$$60,
-    "site/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$61,
-    "site/sections/Miscellaneous/CookieConsent.tsx": $$$$$$62,
-    "site/sections/Miscellaneous/ProxyIframe.tsx": $$$$$$63,
-    "site/sections/Miscellaneous/Slide.tsx": $$$$$$64,
-    "site/sections/Newsletter/Newsletter.tsx": $$$$$$65,
-    "site/sections/Newsletter/NewsletterModal.tsx": $$$$$$66,
-    "site/sections/NickJonas/nj-checkerboard.tsx": $$$$$$67,
-    "site/sections/NickJonas/nj-collection-highlight.tsx": $$$$$$68,
-    "site/sections/NickJonas/nj-collection.tsx": $$$$$$69,
-    "site/sections/NickJonas/nj-core-classics.tsx": $$$$$$70,
-    "site/sections/NickJonas/nj-hero.tsx": $$$$$$71,
-    "site/sections/NickJonas/nj-lp-collection.tsx": $$$$$$72,
-    "site/sections/NickJonas/nj-lp-core-classics.tsx": $$$$$$73,
-    "site/sections/NickJonas/nj-lp-diner-mug-promo.tsx": $$$$$$74,
-    "site/sections/NickJonas/nj-lp-quote.tsx": $$$$$$75,
-    "site/sections/NickJonas/nj-product-showcase.tsx": $$$$$$76,
-    "site/sections/NickJonas/nj-promotional-bar.tsx": $$$$$$77,
-    "site/sections/NickJonas/nj-quote.tsx": $$$$$$78,
-    "site/sections/NickJonas/nj-shop-by-categories.tsx": $$$$$$79,
-    "site/sections/NickJonas/nj-where-did-you-get-that.tsx": $$$$$$80,
-    "site/sections/NickJonas/nj-with-nick-jonas.tsx": $$$$$$81,
-    "site/sections/Product/ImageGalleryFrontBack.tsx": $$$$$$82,
-    "site/sections/Product/NotFound.tsx": $$$$$$83,
-    "site/sections/Product/NotFoundChallenge.tsx": $$$$$$84,
-    "site/sections/Product/ProductDetails.tsx": $$$$$$85,
-    "site/sections/Product/ProductShelf.tsx": $$$$$$86,
-    "site/sections/Product/ProductShelfTabbed.tsx": $$$$$$87,
-    "site/sections/Product/SearchResult.tsx": $$$$$$88,
-    "site/sections/Product/SearchResultView.tsx": $$$$$$89,
-    "site/sections/Product/ShelfWithImage.tsx": $$$$$$90,
-    "site/sections/Product/Wishlist.tsx": $$$$$$91,
-    "site/sections/Seo/SeoBaseCustomV2.tsx": $$$$$$92,
-    "site/sections/Seo/SeoPdpCustom.tsx": $$$$$$94,
-    "site/sections/Seo/SeoPdpCustomV2.tsx": $$$$$$95,
-    "site/sections/Seo/SeoPlpCustomV2.tsx": $$$$$$96,
-    "site/sections/Seo/SeoPLPV6.tsx": $$$$$$93,
-    "site/sections/Social/InstagramPosts.tsx": $$$$$$97,
-    "site/sections/Social/WhatsApp.tsx": $$$$$$98,
-    "site/sections/Theme/Theme.tsx": $$$$$$99,
+    "site/sections/Christmas/cr-background.tsx": $$$$$$8,
+    "site/sections/Christmas/cr-collection.tsx": $$$$$$9,
+    "site/sections/Christmas/cr-custom.tsx": $$$$$$10,
+    "site/sections/Christmas/cr-gifts-by-price.tsx": $$$$$$11,
+    "site/sections/Christmas/cr-hero.tsx": $$$$$$12,
+    "site/sections/Christmas/cr-nick-list.tsx": $$$$$$13,
+    "site/sections/Christmas/cr-watch-guide.tsx": $$$$$$14,
+    "site/sections/Christmas/cr-where-did-you-get-that.tsx": $$$$$$15,
+    "site/sections/Content/BannerFossil.tsx": $$$$$$16,
+    "site/sections/Content/BannerFossilCarousel.tsx": $$$$$$17,
+    "site/sections/Content/Benefits.tsx": $$$$$$18,
+    "site/sections/Content/BlogPosts.tsx": $$$$$$19,
+    "site/sections/Content/CallToAction.tsx": $$$$$$20,
+    "site/sections/Content/Faq.tsx": $$$$$$21,
+    "site/sections/Content/Features.tsx": $$$$$$22,
+    "site/sections/Content/Hero.tsx": $$$$$$23,
+    "site/sections/Content/IframeMaps.tsx": $$$$$$24,
+    "site/sections/Content/ImageSection.tsx": $$$$$$25,
+    "site/sections/Content/Intro.tsx": $$$$$$26,
+    "site/sections/Content/Logos.tsx": $$$$$$27,
+    "site/sections/Content/Partners.tsx": $$$$$$28,
+    "site/sections/Content/PromotionalBanner.tsx": $$$$$$29,
+    "site/sections/Content/Reviews.tsx": $$$$$$30,
+    "site/sections/Content/RichText.tsx": $$$$$$31,
+    "site/sections/Content/Table.tsx": $$$$$$32,
+    "site/sections/Content/Testimonials.tsx": $$$$$$33,
+    "site/sections/Content/TextWithImage.tsx": $$$$$$34,
+    "site/sections/Content/ThirdContent.tsx": $$$$$$35,
+    "site/sections/Content/YourViewsIntegration.tsx": $$$$$$36,
+    "site/sections/Content/YourViewstestimonial.tsx": $$$$$$37,
+    "site/sections/Footer.tsx": $$$$$$38,
+    "site/sections/Footer/Footer.tsx": $$$$$$39,
+    "site/sections/Gallery.tsx": $$$$$$40,
+    "site/sections/Header/Header.tsx": $$$$$$41,
+    "site/sections/Hotsites/PresenteActionBanner.tsx": $$$$$$42,
+    "site/sections/Hotsites/PresenteBanner.tsx": $$$$$$43,
+    "site/sections/Hotsites/PresenteInfoCard.tsx": $$$$$$44,
+    "site/sections/Hotsites/PresenteShopByCategory.tsx": $$$$$$45,
+    "site/sections/Hotsites/PresenteShopByGender.tsx": $$$$$$46,
+    "site/sections/Hotsites/PresenteWhatNews.tsx": $$$$$$47,
+    "site/sections/Images/BannerGrid.tsx": $$$$$$48,
+    "site/sections/Images/Carousel.tsx": $$$$$$49,
+    "site/sections/Images/ImageGallery.tsx": $$$$$$50,
+    "site/sections/Images/ShoppableBanner.tsx": $$$$$$51,
+    "site/sections/Institutional/AccordionsContent.tsx": $$$$$$52,
+    "site/sections/Institutional/AsideMenu.tsx": $$$$$$53,
+    "site/sections/Institutional/CardsContent.tsx": $$$$$$54,
+    "site/sections/Institutional/ContactForm.tsx": $$$$$$55,
+    "site/sections/Institutional/HelpHomePage.tsx": $$$$$$56,
+    "site/sections/Institutional/HelpPage.tsx": $$$$$$57,
+    "site/sections/Institutional/HtmlContent.tsx": $$$$$$58,
+    "site/sections/Institutional/InstitutionalPage.tsx": $$$$$$59,
+    "site/sections/Institutional/LegalsPage.tsx": $$$$$$60,
+    "site/sections/Institutional/PageContent.tsx": $$$$$$61,
+    "site/sections/Institutional/PolicyPage.tsx": $$$$$$62,
+    "site/sections/Institutional/ResellerForm.tsx": $$$$$$63,
+    "site/sections/Institutional/TextContent.tsx": $$$$$$64,
+    "site/sections/Integrations/Zendesk.tsx": $$$$$$65,
+    "site/sections/ItWorks.tsx": $$$$$$66,
+    "site/sections/Links/LinkTree.tsx": $$$$$$67,
+    "site/sections/Links/Shortcuts.tsx": $$$$$$68,
+    "site/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$69,
+    "site/sections/Miscellaneous/CookieConsent.tsx": $$$$$$70,
+    "site/sections/Miscellaneous/ProxyIframe.tsx": $$$$$$71,
+    "site/sections/Miscellaneous/Slide.tsx": $$$$$$72,
+    "site/sections/Newsletter/Newsletter.tsx": $$$$$$73,
+    "site/sections/Newsletter/NewsletterModal.tsx": $$$$$$74,
+    "site/sections/NickJonas/nj-checkerboard.tsx": $$$$$$75,
+    "site/sections/NickJonas/nj-collection-highlight.tsx": $$$$$$76,
+    "site/sections/NickJonas/nj-collection.tsx": $$$$$$77,
+    "site/sections/NickJonas/nj-core-classics.tsx": $$$$$$78,
+    "site/sections/NickJonas/nj-hero.tsx": $$$$$$79,
+    "site/sections/NickJonas/nj-lp-collection.tsx": $$$$$$80,
+    "site/sections/NickJonas/nj-lp-core-classics.tsx": $$$$$$81,
+    "site/sections/NickJonas/nj-lp-diner-mug-promo.tsx": $$$$$$82,
+    "site/sections/NickJonas/nj-lp-quote.tsx": $$$$$$83,
+    "site/sections/NickJonas/nj-product-showcase.tsx": $$$$$$84,
+    "site/sections/NickJonas/nj-promotional-bar.tsx": $$$$$$85,
+    "site/sections/NickJonas/nj-quote.tsx": $$$$$$86,
+    "site/sections/NickJonas/nj-shop-by-categories.tsx": $$$$$$87,
+    "site/sections/NickJonas/nj-where-did-you-get-that.tsx": $$$$$$88,
+    "site/sections/NickJonas/nj-with-nick-jonas.tsx": $$$$$$89,
+    "site/sections/Product/ImageGalleryFrontBack.tsx": $$$$$$90,
+    "site/sections/Product/NotFound.tsx": $$$$$$91,
+    "site/sections/Product/NotFoundChallenge.tsx": $$$$$$92,
+    "site/sections/Product/ProductDetails.tsx": $$$$$$93,
+    "site/sections/Product/ProductShelf.tsx": $$$$$$94,
+    "site/sections/Product/ProductShelfTabbed.tsx": $$$$$$95,
+    "site/sections/Product/SearchResult.tsx": $$$$$$96,
+    "site/sections/Product/SearchResultView.tsx": $$$$$$97,
+    "site/sections/Product/ShelfWithImage.tsx": $$$$$$98,
+    "site/sections/Product/Wishlist.tsx": $$$$$$99,
+    "site/sections/Seo/SeoBaseCustomV2.tsx": $$$$$$100,
+    "site/sections/Seo/SeoPdpCustom.tsx": $$$$$$102,
+    "site/sections/Seo/SeoPdpCustomV2.tsx": $$$$$$103,
+    "site/sections/Seo/SeoPlpCustomV2.tsx": $$$$$$104,
+    "site/sections/Seo/SeoPLPV6.tsx": $$$$$$101,
+    "site/sections/Social/InstagramPosts.tsx": $$$$$$105,
+    "site/sections/Social/WhatsApp.tsx": $$$$$$106,
+    "site/sections/Theme/Theme.tsx": $$$$$$107,
   },
   "matchers": {
     "site/matchers/utm.ts": $$$$$$$0,

@@ -26,16 +26,21 @@ function GalleryFrontBack(props: Props) {
   } = props;
   const aspectRatio = `${width} / ${height}`;
 
+  // Ensure we always have at least one image to display
+  const imagesToShow = images && images.length > 0
+    ? [images[0], images[1] ?? images[0]]
+    : [];
+
   return (
     <ul class="carousel carousel-center gap-6">
-      {[images[0], images[1] ?? images[0]].map((img, index) => (
+      {imagesToShow.map((img, index) => (
         <li class="carousel-item">
           <Image
             class="w-screen sm:w-[24vw]"
             sizes="(max-width: 640px) 100vw, 24vw"
             style={{ aspectRatio }}
-            src={img.url!}
-            alt={img.alternateName}
+            src={img?.url || ""}
+            alt={img?.alternateName || ""}
             width={width}
             height={height}
             // Preload LCP image for better web vitals

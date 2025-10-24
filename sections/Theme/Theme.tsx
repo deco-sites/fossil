@@ -5,7 +5,7 @@
  * https://github.com/saadeghi/daisyui/blob/37bca23444bc9e4d304362c14b7088f9a08f1c74/src/docs/src/routes/theme-generator.svelte
  */
 import SiteTheme, { Font } from "apps/website/components/Theme.tsx";
-import Color from "npm:colorjs.io";
+import Color from "npm:colorjs.io@0.5.2";
 import type { ComponentChildren } from "preact";
 import { clx } from "../../sdk/clx.ts";
 
@@ -16,23 +16,23 @@ export interface ThemeColors {
    */
   "base-100"?: string;
   /** @format color-input */
-  "primary"?: string;
+  primary?: string;
   /** @format color-input */
-  "secondary"?: string;
+  secondary?: string;
   /**
    * @title Accent
    * @format color-input */
-  "tertiary"?: string;
+  tertiary?: string;
   /** @format color-input */
-  "neutral"?: string;
+  neutral?: string;
   /** @format color-input */
-  "success"?: string;
+  success?: string;
   /** @format color-input */
-  "warning"?: string;
+  warning?: string;
   /** @format color-input */
-  "error"?: string;
+  error?: string;
   /** @format color-input */
-  "info"?: string;
+  info?: string;
 }
 
 export interface ComplementaryColors {
@@ -138,11 +138,7 @@ export interface Props {
   mode?: "dark" | "light";
 }
 
-type Theme =
-  & ThemeColors
-  & ComplementaryColors
-  & Button
-  & Miscellaneous;
+type Theme = ThemeColors & ComplementaryColors & Button & Miscellaneous;
 
 const darken = (color: string, percentage: number) =>
   new Color(color).darken(percentage);
@@ -156,9 +152,7 @@ const contrasted = (color: string, percentage = 0.8) => {
   return isDark(c) ? c.mix("white", percentage) : c.mix("black", percentage);
 };
 
-const toVariables = (
-  t: Theme & Required<ThemeColors>,
-): [string, string][] => {
+const toVariables = (t: Theme & Required<ThemeColors>): [string, string][] => {
   const toValue = (color: string | ReturnType<typeof darken>) => {
     const [l, c, h] = new Color(color).oklch;
 
@@ -212,15 +206,15 @@ const toVariables = (
 };
 
 const defaultTheme = {
-  "primary": "oklch(1 0 0)",
-  "secondary": "oklch(1 0 0)",
-  "tertiary": "oklch(1 0 0)",
-  "neutral": "oklch(1 0 0)",
+  primary: "oklch(1 0 0)",
+  secondary: "oklch(1 0 0)",
+  tertiary: "oklch(1 0 0)",
+  neutral: "oklch(1 0 0)",
   "base-100": "oklch(1 0 0)",
-  "info": "oklch(1 0 0)",
-  "success": "oklch(0.9054 0.1546 194.7689)",
-  "warning": "oklch(1 0 0)",
-  "error": "oklch(1 0 0)",
+  info: "oklch(1 0 0)",
+  success: "oklch(0.9054 0.1546 194.7689)",
+  warning: "oklch(1 0 0)",
+  error: "oklch(1 0 0)",
 
   "--rounded-box": "1rem", // border radius rounded-box utility class, used in card and other large boxes
   "--rounded-btn": "0.2rem" as const, // border radius rounded-btn utility class, used in buttons and similar element
@@ -265,8 +259,7 @@ function Section({
       font?.family ||
       "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
     ],
-  ]
-    .map(([name, value]) => ({ name, value }));
+  ].map(([name, value]) => ({ name, value }));
 
   return (
     <SiteTheme
@@ -283,8 +276,8 @@ export function Preview(props: Props) {
     <>
       {
         /* This stylesheet is used to simulate the colors from the admin's color schema (admin's light or dark mode), which are not accessible in the site's color schema.
-        * This is a temporary solution until the admin's color schema is accessible.
-        * TODO(@carol): Change this temporary solution.
+       * This is a temporary solution until the admin's color schema is accessible.
+       * TODO(@carol): Change this temporary solution.
        */
       }
       <style>
@@ -396,9 +389,7 @@ export function Preview(props: Props) {
         </div>
       </div>
       {props.font?.family && (
-        <div class="text-center py-2">
-          Font: {props.font.family}
-        </div>
+        <div class="text-center py-2">Font: {props.font.family}</div>
       )}
     </>
   );
@@ -501,14 +492,17 @@ const TextColorsPreview = () => {
   );
 };
 
-const PreviewContainer = (
-  { mode, title, children, codeString }: {
-    mode: string;
-    title: string;
-    children: ComponentChildren;
-    codeString: string;
-  },
-) => {
+const PreviewContainer = ({
+  mode,
+  title,
+  children,
+  codeString,
+}: {
+  mode: string;
+  title: string;
+  children: ComponentChildren;
+  codeString: string;
+}) => {
   const borderClass = mode === "dark"
     ? "border-color-dark"
     : "border-color-light";

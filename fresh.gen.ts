@@ -45,6 +45,13 @@ import * as $WishlistButton_wake from "./islands/WishlistButton/wake.tsx";
 import * as $YourQA from "./islands/YourQA.tsx";
 import * as $YourReviews from "./islands/YourReviews.tsx";
 import * as $Zendesk from "./islands/Zendesk.tsx";
+import * as $christmas_HeroCarousel from "./islands/christmas/HeroCarousel.tsx";
+import * as $christmas_ProductCarousel from "./islands/christmas/ProductCarousel.tsx";
+import * as $christmas_carousel_CarouselContainer from "./islands/christmas/carousel/CarouselContainer.tsx";
+import * as $christmas_carousel_CarouselSlide from "./islands/christmas/carousel/CarouselSlide.tsx";
+import * as $christmas_carousel_GoldFrame from "./islands/christmas/carousel/GoldFrame.tsx";
+import * as $christmas_carousel_constants from "./islands/christmas/carousel/constants.ts";
+import * as $christmas_carousel_useCarouselLogic from "./islands/christmas/carousel/useCarouselLogic.ts";
 import * as $sort from "./islands/sort.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
@@ -96,6 +103,16 @@ const manifest = {
     "./islands/YourQA.tsx": $YourQA,
     "./islands/YourReviews.tsx": $YourReviews,
     "./islands/Zendesk.tsx": $Zendesk,
+    "./islands/christmas/HeroCarousel.tsx": $christmas_HeroCarousel,
+    "./islands/christmas/ProductCarousel.tsx": $christmas_ProductCarousel,
+    "./islands/christmas/carousel/CarouselContainer.tsx":
+      $christmas_carousel_CarouselContainer,
+    "./islands/christmas/carousel/CarouselSlide.tsx":
+      $christmas_carousel_CarouselSlide,
+    "./islands/christmas/carousel/GoldFrame.tsx": $christmas_carousel_GoldFrame,
+    "./islands/christmas/carousel/constants.ts": $christmas_carousel_constants,
+    "./islands/christmas/carousel/useCarouselLogic.ts":
+      $christmas_carousel_useCarouselLogic,
     "./islands/sort.tsx": $sort,
   },
   baseUrl: import.meta.url,

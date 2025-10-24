@@ -17,14 +17,14 @@ export default function ProductInfoPriceModel(props: Props) {
         {formatPrice(props.listPrice, props.priceCurrency)}
       </p>
 
-      <p class="w-full block text-left text-black leading-none">
+      <p class="flex items-center w-full text-left text-black leading-none gap-[3px]">
         <span class="text-3xl lg:text-2xl font-bold font-scoutCond">
           {formatPrice(
             props.priceWithPixDiscount,
-            props.priceCurrency || "BRL"
+            props.priceCurrency || "BRL",
           )}
         </span>
-        <span class="text-xs lg:text-[13px] font-arial"> com </span>
+        <span class="text-xs lg:text-[13px] font-arial">com</span>
         <span class="text-xs lg:text-[13px] font-bold font-arial">
           {props.pixPercentDiscountByDiferenceSellerPrice}% de desconto
         </span>
@@ -33,21 +33,21 @@ export default function ProductInfoPriceModel(props: Props) {
 
       {props.installmentBillingDuration &&
         props.installmentBillingIncrement && (
-          <p class="text-xs leading-none mt-1">
-            <span class="font-bold">
-              {formatPrice(props.sellerPrice, props.priceCurrency || "BRL")}
-            </span>
-            <span class="font-normal"> em até </span>
-            <span class="font-bold">{props.installmentBillingDuration}x</span>
-            <span class="font-normal"> de </span>
-            <span class="font-bold">
-              {formatPrice(
-                props.installmentBillingIncrement,
-                props.priceCurrency || "BRL"
-              )}
-            </span>
-          </p>
-        )}
+        <p class="flex items-center text-xs leading-none mt-1 gap-[3px]">
+          <span class="font-bold">
+            {formatPrice(props.sellerPrice, props.priceCurrency || "BRL")}
+          </span>
+          <span class="font-normal">em até</span>
+          <span class="font-bold">{props.installmentBillingDuration}x</span>
+          <span class="font-normal">de</span>
+          <span class="font-bold">
+            {formatPrice(
+              props.installmentBillingIncrement,
+              props.priceCurrency || "BRL",
+            )}
+          </span>
+        </p>
+      )}
     </div>
   );
 }
