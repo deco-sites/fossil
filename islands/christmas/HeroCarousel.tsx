@@ -128,7 +128,9 @@ export default function HeroCarousel({
         return (
           <div
             key={`content-${index}`}
-            class={`absolute inset-0 ${useGoldBorder ? "z-30" : "z-10"}`}
+            class={`absolute inset-0 pointer-events-none ${
+              useGoldBorder ? "z-30" : "z-10"
+            }`}
           >
             <HeroSlideContent
               title={item.title}

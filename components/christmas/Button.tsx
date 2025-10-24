@@ -26,7 +26,19 @@ export default function Button({
   return (
     <a
       href={url}
-      class={`${baseClasses} leading-none text-xs bg-cr-primary text-primary hover:bg-cr-primary/90 ${className}`}
+      class={`${baseClasses} leading-none text-xs bg-cr-primary text-primary hover:bg-cr-primary/90 cursor-pointer ${className}`}
+      onMouseEnter={() => {
+        const swiperContainer = document.querySelector(".swiper");
+        if (swiperContainer) {
+          swiperContainer.dispatchEvent(new Event("mouseenter"));
+        }
+      }}
+      onMouseLeave={() => {
+        const swiperContainer = document.querySelector(".swiper");
+        if (swiperContainer) {
+          swiperContainer.dispatchEvent(new Event("mouseleave"));
+        }
+      }}
     >
       {name}
     </a>
