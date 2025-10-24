@@ -96,8 +96,12 @@ export const useCarouselControls = ({
 
   const updateButtonStates = useCallback((swiper: SwiperInstance) => {
     const currentSlidesPerView = getSlidesPerView();
-    const maxIndex = swiper.slides.length - currentSlidesPerView;
-    const currentIndex = swiper.activeIndex;
+    const slideCount = swiper.slides?.length ?? 0;
+    const maxIndex = Math.max(0, slideCount - currentSlidesPerView);
+    const currentIndex = Math.max(
+      0,
+      Math.min(swiper.activeIndex ?? 0, maxIndex),
+    );
 
     const nextButtons = document.querySelectorAll(`#${id}-next`);
     const prevButtons = document.querySelectorAll(`#${id}-prev`);
@@ -118,15 +122,17 @@ export const useCarouselControls = ({
     const currentView = swiper.params?.slidesPerView ??
       slidesConfig.base.slidesPerView;
     const realSlidesPerView = Math.max(1, Math.floor(Number(currentView) || 1));
+    const slideCount = swiper.slides?.length ?? 0;
+    const currentIndex = swiper.activeIndex ?? 0;
     const end = Math.min(
-      swiper.activeIndex + realSlidesPerView,
-      swiper.slides.length,
+      currentIndex + realSlidesPerView,
+      slideCount,
     );
     const paginationEl = document.getElementById(`${id}-pagination`);
     if (paginationEl) {
       paginationEl.textContent = paginationFormatter
-        ? paginationFormatter({ end, total: swiper.slides.length })
-        : `${end} de ${swiper.slides.length}`;
+        ? paginationFormatter({ end, total: slideCount })
+        : `${end} de ${slideCount}`;
     }
   }, [id, paginationFormatter, slidesConfig.base.slidesPerView]);
 
@@ -150,11 +156,11 @@ export const useCarouselControls = ({
       on: {
         ...options.on,
         slideChange(this: SwiperInstance) {
-          options.on?.slideChange?.call(this);
+          options.on?.slideChange?.call(this, this);
           updatePagination(this);
         },
         init(this: SwiperInstance) {
-          options.on?.init?.call(this);
+          options.on?.init?.call(this, this);
           updatePagination(this);
           updateButtonStates(this);
         },
@@ -189,9 +195,11 @@ export const useNavigationHandlers = (
     if (!swiperInstance) return;
 
     const slidesToMove = getSlidesPerView();
+    const slideCount = swiperInstance.slides?.length ?? 0;
+    if (slideCount === 0) return;
     const targetIndex = Math.min(
-      swiperInstance.activeIndex + slidesToMove,
-      swiperInstance.slides.length - getSlidesPerView(),
+      (swiperInstance.activeIndex ?? 0) + slidesToMove,
+      Math.max(0, slideCount - slidesToMove),
     );
     swiperInstance.slideTo(targetIndex);
 
@@ -202,7 +210,8 @@ export const useNavigationHandlers = (
     if (!swiperInstance) return;
 
     const slidesToMove = getSlidesPerView();
-    const targetIndex = Math.max(swiperInstance.activeIndex - slidesToMove, 0);
+    const currentIndex = swiperInstance.activeIndex ?? 0;
+    const targetIndex = Math.max(currentIndex - slidesToMove, 0);
     swiperInstance.slideTo(targetIndex);
 
     setTimeout(() => updateButtonStates(swiperInstance), 100);

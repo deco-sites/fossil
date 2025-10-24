@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "preact/hooks";
+import { useEffect, useMemo, useState } from "preact/hooks";
 import ProductCard, {
   type Card,
 } from "../../components/christmas/ProductCard.tsx";
@@ -46,8 +46,6 @@ export default function ProductCarousel({
   carouselId,
 }: CRProductCarouselProps) {
   const id = carouselId;
-  const swiperRef = useRef<HTMLDivElement>(null);
-  const { isSwiperReady, initSwiper } = useSwiperCarousel();
   const [swiperInstance, setSwiperInstance] = useState<SwiperInstance | null>(
     null,
   );
@@ -66,6 +64,21 @@ export default function ProductCarousel({
         draggable: true,
       },
     },
+  });
+
+  const {
+    containerRef: swiperContainerRef,
+    swiperRef: swiperInstanceRef,
+    isReady: isSwiperReady,
+  } = useSwiperCarousel({
+    enabled: cards.length > 0,
+    options: swiperOptions,
+    onInit: (instance) => {
+      setSwiperInstance(instance);
+      updatePagination(instance);
+      updateButtonStates(instance);
+    },
+    deps: [cards.length],
   });
 
   const { handleNext, handlePrev } = useNavigationHandlers(
@@ -88,19 +101,16 @@ export default function ProductCarousel({
   );
 
   useEffect(() => {
-    if (!isSwiperReady || !swiperRef.current || swiperInstance) {
-      return;
+    if (!isSwiperReady) {
+      setSwiperInstance(null);
     }
+  }, [isSwiperReady]);
 
-    try {
-      const instance = initSwiper(swiperRef.current, swiperOptions);
-      if (instance) {
-        setSwiperInstance(instance);
-      }
-    } catch (error) {
-      console.error("Failed to initialize Swiper:", error);
+  useEffect(() => {
+    if (!swiperInstance && swiperInstanceRef.current) {
+      setSwiperInstance(swiperInstanceRef.current);
     }
-  }, [isSwiperReady, swiperInstance, swiperOptions, initSwiper]);
+  }, [swiperInstance, swiperInstanceRef]);
 
   useEffect(() => {
     if (!swiperInstance) {
@@ -129,7 +139,10 @@ export default function ProductCarousel({
       </style>
       <div class="w-full">
         <div class="relative">
-          <div ref={swiperRef} class={clx("swiper", "w-full overflow-hidden")}>
+          <div
+            ref={swiperContainerRef}
+            class={clx("swiper", "w-full overflow-hidden")}
+          >
             <div
               class={clx(
                 "swiper-wrapper",

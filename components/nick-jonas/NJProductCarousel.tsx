@@ -1,15 +1,13 @@
-import { useEffect, useId, useRef, useState } from "preact/hooks";
+import { useCallback, useId, useMemo } from "preact/hooks";
 import type { Product } from "apps/commerce/types.ts";
 import ProductCard from "../../components/product/ProductCard.tsx";
 import { clx } from "../../sdk/clx.ts";
 import CTAButton from "./CTAButton.tsx";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
-import { useSwiperCarousel } from "../../sdk/useSwiperCarousel.ts";
-
-interface SwiperInstance {
-  activeIndex: number;
-  slides: HTMLElement[];
-}
+import {
+  type SwiperInstance,
+  useSwiperCarousel,
+} from "../../sdk/useSwiperCarousel.ts";
 
 export interface NJProductCarouselProps {
   /** @title Produtos da Coleção */
@@ -48,28 +46,20 @@ function NJProductCarousel({
   },
 }: NJProductCarouselProps) {
   const id = useId();
-  const swiperRef = useRef<HTMLDivElement>(null);
   const platform = usePlatform();
-  const { isSwiperReady, initSwiper } = useSwiperCarousel();
-  const [swiperInstance, setSwiperInstance] = useState<SwiperInstance | null>(
-    null,
-  );
+  const updatePagination = useCallback((swiper: SwiperInstance) => {
+    const currentSlide = swiper.activeIndex + 1;
+    const totalSlides = swiper.slides.length;
+    const paginationEl = document.getElementById(`${id}-pagination`);
+    if (paginationEl) {
+      paginationEl.textContent = `${currentSlide} de ${totalSlides}`;
+    }
+  }, [id]);
 
-  useEffect(() => {
-    if (!isSwiperReady || !swiperRef.current || swiperInstance) return;
-
-    const updatePagination = (swiper: SwiperInstance) => {
-      const currentSlide = swiper.activeIndex + 1;
-      const totalSlides = swiper.slides.length;
-      const paginationEl = document.getElementById(`${id}-pagination`);
-      if (paginationEl) {
-        paginationEl.textContent = `${currentSlide} de ${totalSlides}`;
-      }
-    };
-
-    const instance = initSwiper(swiperRef.current, {
-      slidesPerView: carousel.slidesPerView || 4,
-      spaceBetween: carousel.spaceBetween || 20,
+  const swiperOptions = useMemo(
+    () => ({
+      slidesPerView: carousel.slidesPerView ?? 4,
+      spaceBetween: carousel.spaceBetween ?? 20,
       slidesOffsetAfter: 50,
       navigation: {
         nextEl: `#${id}-next`,
@@ -89,31 +79,33 @@ function NJProductCarousel({
           spaceBetween: 20,
         },
         1024: {
-          slidesPerView: carousel.slidesPerView || 4,
-          spaceBetween: carousel.spaceBetween || 20,
+          slidesPerView: carousel.slidesPerView ?? 4,
+          spaceBetween: carousel.spaceBetween ?? 20,
         },
       },
       on: {
-        slideChange: function () {
+        slideChange(this: SwiperInstance) {
           updatePagination(this);
         },
-        init: function () {
+        init(this: SwiperInstance) {
           updatePagination(this);
         },
       },
-    });
+    }),
+    [
+      carousel.slidesPerView,
+      carousel.spaceBetween,
+      id,
+      updatePagination,
+    ],
+  );
 
-    if (instance) {
-      setSwiperInstance(instance);
-    }
-  }, [
-    isSwiperReady,
-    swiperInstance,
-    id,
-    carousel,
-    products.length,
-    initSwiper,
-  ]);
+  const { containerRef: swiperContainerRef } = useSwiperCarousel({
+    enabled: products.length > 0,
+    options: swiperOptions,
+    onInit: updatePagination,
+    deps: [products.length],
+  });
 
   if (!products.length) {
     return (
@@ -206,7 +198,10 @@ function NJProductCarousel({
 
         {/* Swiper Carousel */}
         <div class="relative">
-          <div ref={swiperRef} class={clx("swiper", "w-full overflow-hidden")}>
+          <div
+            ref={swiperContainerRef}
+            class={clx("swiper", "w-full overflow-hidden")}
+          >
             <div class="swiper-wrapper">
               {products.map((product, index) => (
                 <div key={product.productID} class="swiper-slide">

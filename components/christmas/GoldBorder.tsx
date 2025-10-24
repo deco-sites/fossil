@@ -53,6 +53,9 @@ export interface GoldBorderProps {
 
   /** @ignore true */
   borderPosition?: "top" | "bottom" | "both";
+
+  /** @ignore true */
+  noPadding?: boolean;
 }
 
 export default function GoldBorder({
@@ -67,6 +70,7 @@ export default function GoldBorder({
   onClipIdReady,
   variant = "desktop",
   borderPosition = "both",
+  noPadding = false,
 }: GoldBorderProps) {
   const clipId = `goldBorderClip-${Math.random().toString(36).substr(2, 9)}`;
 
@@ -138,7 +142,13 @@ export default function GoldBorder({
               />
             )
           )}
-        {children}
+        <div
+          class={`relative z-10 h-full ${
+            !noPadding ? "px-8 py-6 lg:px-12 lg:py-10" : ""
+          }`}
+        >
+          {children}
+        </div>
       </div>
     );
   }
@@ -257,7 +267,12 @@ export default function GoldBorder({
         />
       </svg>
 
-      <div class="relative z-10 px-8 py-6 lg:px-12 lg:py-10 h-full">
+      <div
+        class={`relative z-10 h-full ${
+          !noPadding ? "px-8 py-6 lg:px-12 lg:py-10" : ""
+        }`}
+        style={{ clipPath: `url(#${clipId})` }}
+      >
         {children}
       </div>
     </div>

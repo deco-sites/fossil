@@ -25,27 +25,49 @@
           },
           {
             "__resolveType": "site/sections/Christmas/cr-hero.tsx",
-            "backgroundMedia": {
-              "type": "Vídeo"
-            },
-            "title": "Festively Fossil",
-            "subtitle": "Surpresas perfeitas para todos os momentos de presentear.",
-            "leftButton": {
-              "url": "#",
-              "name": "Comprar para Ele"
-            },
-            "rightButton": {
-              "url": "#",
-              "name": "Comprar para Ela"
-            },
-            "titleImage": "https://assets.decocache.com/fossil/bfcce85f-fd80-4a21-914e-e3e7b3b27322/cr-hero-title.png",
-            "titleImageWidth": 302,
-            "titleImageHeight": 146,
-            "titleText": "Festively Fossil",
-            "contentBackground": {
-              "imageDesktop": "https://assets.decocache.com/fossil/aa5f3ca0-9176-4719-9803-f3fa277b4c0d/cr-banner.png",
-              "type": "Imagem",
-              "imageMobile": "https://assets.decocache.com/fossil/721b2c46-b5ac-4f68-ace1-d49e4df0b330/cr-banner-mobile.png"
+            "titleText": "Fossil - Black Friday",
+            "banners": [
+              {
+                "desktop": "https://assets.decocache.com/fossil/449a3a96-d3a4-4076-8c8c-666a95629347/50.png",
+                "mobile": "https://assets.decocache.com/fossil/936da347-cce4-4752-ad21-f95ac6479dff/50-off-mobile.png",
+                "title": "Black Friday",
+                "description": "Descontos de até **50%**",
+                "cta": {
+                  "label": "Comprar",
+                  "href": "#"
+                },
+                "alt": "Relógio de pulso prateado com pulseira de metal de elos e mostrador branco em pulso de modelo com roupa preta."
+              },
+              {
+                "title": "Black Friday",
+                "description": "Seleção com **15% OFF** + Brinde exclusivo nas compras acima de R$1.500",
+                "cta": {
+                  "label": "Aproveitar",
+                  "href": "#"
+                },
+                "desktop": "https://assets.decocache.com/fossil/dc257929-8d9b-4f23-b3f2-d8e42e687145/15-off.png",
+                "mobile": "https://assets.decocache.com/fossil/7b6e531e-6cd6-4dc3-9329-8d5d3e2bb8c3/15-off-mobile.png",
+                "alt": "Relógio de pulso feminino com caixa redonda e pulseira de elos cor rosé gold em braço bronzeado."
+              },
+              {
+                "desktop": "https://assets.decocache.com/fossil/54f3b2c5-0986-4b6d-9599-aeb9dbd122ca/Best-Sellers_.png",
+                "mobile": "https://assets.decocache.com/fossil/53fa4ed2-844c-486e-8f76-84cff1e8d27a/best-sellers.png",
+                "alt": "Relógio de pulso masculino com caixa prateada, bezel e mostrador na cor verde esmeralda em pulso de modelo com suéter preto.",
+                "title": "Best Sellers",
+                "description": "Por até **R$ 1.399**",
+                "cta": {
+                  "label": "Aproveitar",
+                  "href": "#"
+                }
+              }
+            ],
+            "carousel": {
+              "autoplay": true,
+              "pauseOnHover": true,
+              "delaySeconds": 5,
+              "speedMs": 500,
+              "showArrows": false,
+              "showDots": false
             },
             "bottomCenterImage": "https://assets.decocache.com/fossil/d1b05e3d-77ab-47c3-806c-7ba5b1715121/ornaments.png",
             "bottomCenterImageWidth": 336,
@@ -55,58 +77,54 @@
             "snowFooterDesktopWidth": 1280,
             "snowFooterDesktopHeight": 175,
             "snowFooterMobileWidth": 375,
-            "snowFooterMobileHeight": 81,
-            "products": null
+            "snowFooterMobileHeight": 81
           },
           {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "site/sections/Christmas/cr-collection.tsx",
-              "title": "Edição de Fim de Ano",
-              "products": {
-                "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-                "props": {
-                  "sort": "discount:desc",
-                  "collection": "2638",
-                  "count": 8,
-                  "hideUnavailableItems": false
-                }
+            "__resolveType": "site/sections/Christmas/cr-collection.tsx",
+            "title": "Edição de Fim de Ano",
+            "products": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+              "props": {
+                "sort": "discount:desc",
+                "collection": "2638",
+                "count": 8,
+                "hideUnavailableItems": false
+              }
+            },
+            "iconTextList": [
+              {
+                "image": "https://assets.decocache.com/fossil/8a7849bf-df99-4d88-acae-c69ec9044731/cr-engraving-icon.png",
+                "alt": "Ícone de gravação e relevo gratuitos da Fossil",
+                "text": "Gravação e Relevo Gratuitos"
               },
-              "iconTextList": [
-                {
-                  "image": "https://assets.decocache.com/fossil/8a7849bf-df99-4d88-acae-c69ec9044731/cr-engraving-icon.png",
-                  "alt": "Ícone de gravação e relevo gratuitos da Fossil",
-                  "text": "Gravação e Relevo Gratuitos"
-                },
-                {
-                  "image": "https://assets.decocache.com/fossil/82fdec15-a6be-4ee6-9388-a0fdd4b169f3/cr-bag-icon.png",
-                  "alt": "Ícone de sacola representando compre online e retire na loja",
-                  "text": "Compre Online, Retire na Loja"
-                },
-                {
-                  "image": "https://assets.decocache.com/fossil/a15c5a2b-125a-401a-93f0-5968a78aba86/cr-tin-icon.png",
-                  "alt": "Ícone de lata especial para relógios Fossil",
-                  "text": "Latas Exclusivas para Relógios"
-                },
-                {
-                  "image": "https://assets.decocache.com/fossil/85b80409-efe0-43ed-ae51-8dd4d3a336ab/cr-gift-card-icon.png",
-                  "alt": "Ícone de cartão-presente Fossil",
-                  "text": "Presenteie com um Cartão-Presente"
-                },
-                {
-                  "image": "https://assets.decocache.com/fossil/a9c1ab8f-d446-43cc-92e0-0f13e0422202/cr-phone-icon.png",
-                  "alt": "Ícone de smartphone simbolizando mais formas de pagamento",
-                  "text": "Mais Formas de Pagar"
-                }
-              ]
-            }
+              {
+                "image": "https://assets.decocache.com/fossil/82fdec15-a6be-4ee6-9388-a0fdd4b169f3/cr-bag-icon.png",
+                "alt": "Ícone de sacola representando compre online e retire na loja",
+                "text": "Compre Online, Retire na Loja"
+              },
+              {
+                "image": "https://assets.decocache.com/fossil/a15c5a2b-125a-401a-93f0-5968a78aba86/cr-tin-icon.png",
+                "alt": "Ícone de lata especial para relógios Fossil",
+                "text": "Latas Exclusivas para Relógios"
+              },
+              {
+                "image": "https://assets.decocache.com/fossil/85b80409-efe0-43ed-ae51-8dd4d3a336ab/cr-gift-card-icon.png",
+                "alt": "Ícone de cartão-presente Fossil",
+                "text": "Presenteie com um Cartão-Presente"
+              },
+              {
+                "image": "https://assets.decocache.com/fossil/a9c1ab8f-d446-43cc-92e0-0f13e0422202/cr-phone-icon.png",
+                "alt": "Ícone de smartphone simbolizando mais formas de pagamento",
+                "text": "Mais Formas de Pagar"
+              }
+            ]
           },
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
               "__resolveType": "site/sections/Christmas/cr-nick-list.tsx",
-              "title": "A Lista do Nick",
-              "description": "Peças marcantes da sua própria coleção de edição limitada e alguns dos estilos mais icônicos da Fossil — são seus presentes Fossil favoritos, escolhidos pessoalmente por Nick Jonas.",
+              "title": "Os clássicos da Fossil a partir de R$ 799",
+              "description": "Designs atemporais com preços especiais",
               "button": {
                 "name": "Compre Agora",
                 "url": "#"
@@ -117,15 +135,6 @@
               "mainImageDesktopHeight": 448,
               "mainImageMobileWidth": 312,
               "mainImageMobileHeight": 319,
-              "snowmanImage": "https://assets.decocache.com/fossil/e1c6ca89-fd47-47a3-9f01-7e703abde1b6/cr-snowman.png",
-              "snowFooterDesktop": "https://assets.decocache.com/fossil/92902b5c-2105-4f1f-9ae6-1628f8600289/cr-snow-footer.png",
-              "snowFooterDesktopWidth": 1280,
-              "snowFooterDesktopHeight": 175,
-              "snowmanWidth": 136,
-              "snowmanHeight": 152,
-              "snowFooterMobile": "https://assets.decocache.com/fossil/b598b551-2fc8-48b2-ad32-9b084d2ac9a1/cr-snow-mobile-2.png",
-              "snowFooterMobileWidth": 380,
-              "snowFooterMobileHeight": 52,
               "stars": {
                 "image": "https://assets.decocache.com/fossil/4fbb02f8-2749-4e14-ad48-a5813d7a2a0a/cr-double-stars.png",
                 "width": 70,
@@ -137,26 +146,26 @@
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
               "__resolveType": "site/sections/Christmas/cr-watch-guide.tsx",
-              "title": "O Guia dos Relógios",
+              "title": "Seleção couro e acessórios com até 35% OFF",
               "cards": [
-                {
-                  "url": "#",
-                  "name": "Clássicos Essenciais Para Ele",
-                  "image": "https://assets.decocache.com/fossil/bb4db164-5982-483b-a11a-b9e0790b1bf8/cr-carousel-1-1.png",
-                  "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
-                  "defaultImage": "https://assets.decocache.com/fossil/146a3033-ab82-4309-9c64-6a5382aad4b5/cr-carousel-1-1.png",
-                  "openImage": "https://assets.decocache.com/fossil/8a490919-7fc3-42dd-b1fe-f58c868e581b/cr-carouse-1-1-2.png",
-                  "defaultImageWidth": 355,
-                  "defaultImageHeight": 456,
-                  "openImageWidth": 307,
-                  "openImageHeight": 352
-                },
                 {
                   "url": "#",
                   "name": "Clássicos Essenciais Para Ela",
                   "image": "https://assets.decocache.com/fossil/f28c7247-4741-4041-be0a-87b322181a35/cr-carousel-1-2.png",
-                  "defaultImage": "https://assets.decocache.com/fossil/64ac6991-3f34-40d6-bcef-07adb6dcc183/cr-carousel-1-2.png",
-                  "openImage": "https://assets.decocache.com/fossil/3a09387c-c743-42d1-9323-6fee3f0e70a0/cr-carousel-1-2-2.png",
+                  "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
+                  "defaultImage": "https://assets.decocache.com/fossil/7886dca3-6fc6-4b6e-b64c-917fa7267b51/Secao3_Posicao1_JF04616710_onmodel-desktop.png",
+                  "openImage": "https://assets.decocache.com/fossil/ccb9ef6a-4155-457e-911c-26667fc68417/Secao3_Posicao1_JF04616710_onmodel-mobile.png",
+                  "defaultImageWidth": 355,
+                  "defaultImageHeight": 456,
+                  "openImageWidth": 307,
+                  "openImageHeight": 352
+                },
+                {
+                  "url": "#",
+                  "name": "Dourado & Verde",
+                  "image": "https://assets.decocache.com/fossil/6e18e4b0-e167-4892-9938-73628fd91afa/cr-carousel-1-3.png",
+                  "defaultImage": "https://assets.decocache.com/fossil/b7706d3b-82de-430d-bee4-ee6fffe40f01/fossil-banner-secundario-desktop.png",
+                  "openImage": "https://assets.decocache.com/fossil/92af7583-8a99-4aba-aaa1-49d974ec92e1/fossil-banner-secundario--mobile.png",
                   "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
                   "defaultImageWidth": 355,
                   "defaultImageHeight": 456,
@@ -164,11 +173,11 @@
                   "openImageHeight": 352
                 },
                 {
-                  "name": "Dourado & Verde",
-                  "image": "https://assets.decocache.com/fossil/6e18e4b0-e167-4892-9938-73628fd91afa/cr-carousel-1-3.png",
+                  "name": "Clássicos Essenciais Para Ele",
+                  "image": "https://assets.decocache.com/fossil/bb4db164-5982-483b-a11a-b9e0790b1bf8/cr-carousel-1-1.png",
                   "url": "#",
-                  "defaultImage": "https://assets.decocache.com/fossil/b249db17-3901-42e3-9001-805125235b0c/cr-carousel-1-3.png",
-                  "openImage": "https://assets.decocache.com/fossil/79d60c37-b278-4982-8cf2-53c767481305/cr-carousel-1-3-2.png",
+                  "defaultImage": "https://assets.decocache.com/fossil/dbff602b-6b73-4713-b28a-7041b83a6e73/Secao-3_Posicao3_MBG9630400_onmodel1-desktop.png",
+                  "openImage": "https://assets.decocache.com/fossil/9e633b9e-3d06-4255-b260-6803a28b72ac/Secao3_Posicao3_MBG9630400_onmodel1-mobile.png",
                   "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
                   "defaultImageWidth": 355,
                   "defaultImageHeight": 456,
@@ -186,21 +195,9 @@
                   "defaultImageHeight": 456,
                   "openImageWidth": 307,
                   "openImageHeight": 352
-                },
-                {
-                  "name": "Inspirado em Joias",
-                  "defaultImage": "https://assets.decocache.com/fossil/3e5cacc4-3766-4801-b338-0393ba79c4bb/cr-carousel-1-5.png",
-                  "openImage": "https://assets.decocache.com/fossil/834b5224-941c-4c54-99c2-3c6ec5d33abb/cr-carousel-1-5-2.png",
-                  "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
-                  "url": "#",
-                  "defaultImageWidth": 355,
-                  "defaultImageHeight": 456,
-                  "openImageWidth": 307,
-                  "openImageHeight": 352
                 }
               ],
               "products": null,
-              "subtitle": "Desejos e Necessidades",
               "starLeft": {
                 "image": "https://assets.decocache.com/fossil/0d4292cd-3613-4213-abc1-4c8d7dbf859b/cr-star.png",
                 "width": 27,
@@ -213,7 +210,8 @@
               },
               "dividerImage": "https://assets.decocache.com/fossil/a7cc40ba-6a6c-4390-8cf2-46bcdd3197cc/cr-sweater-divider.png",
               "dividerImageWidth": 1280,
-              "dividerImageHeight": 54
+              "dividerImageHeight": 54,
+              "subtitle": "Desejos e Necessidades"
             }
           },
           {
@@ -222,23 +220,23 @@
               "__resolveType": "site/sections/Christmas/cr-gifts-by-price.tsx",
               "cards": [
                 {
-                  "label": "Presentes até",
+                  "label": "Masculinos com até",
                   "url": "#",
-                  "value": "R$ 500"
+                  "value": "40% OFF"
                 },
                 {
                   "url": "#",
-                  "label": "Presentes até",
-                  "value": "R$ 750"
+                  "label": "Femininos com até",
+                  "value": "40% OFF"
                 },
                 {
-                  "label": "Presentes até",
-                  "value": "R$ 1.000"
+                  "label": "Carteiras e bolsas com até",
+                  "value": "30% OFF"
                 },
                 {
                   "url": "#",
-                  "label": "Presentes que",
-                  "value": "WOW"
+                  "label": "Relógio Anel com",
+                  "value": "20% OFF"
                 }
               ]
             }

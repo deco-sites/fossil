@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "preact/hooks";
+import { useEffect, useState } from "preact/hooks";
 import type { Button } from "../../sections/NickJonas/nj-collection.tsx";
 import type { Product } from "apps/commerce/types.ts";
 import NJProductCard from "../../components/nick-jonas/NJProductCard.tsx";
@@ -49,6 +49,28 @@ export interface NJProductCarouselProps {
   carouselId: string;
 }
 
+// Skeleton card component for loading state
+function SkeletonCard() {
+  return (
+    <div class="flex flex-col font-soleil space-y-1">
+      <div
+        class="relative overflow-hidden bg-white"
+        style={{ aspectRatio: "1" }}
+      >
+        <div class="absolute inset-0 bg-gray-200 animate-pulse" />
+        <div class="absolute bottom-2 left-2 right-2">
+          <div class="h-3 bg-gray-200 animate-pulse rounded w-3/4 mb-2" />
+          <div class="h-3 bg-gray-200 animate-pulse rounded w-1/2" />
+        </div>
+      </div>
+      <div class="text-left space-y-1">
+        <div class="h-4 bg-gray-200 animate-pulse rounded w-full" />
+        <div class="h-4 bg-gray-200 animate-pulse rounded w-2/3" />
+      </div>
+    </div>
+  );
+}
+
 export default function NJProductCarousel({
   products = [],
   title,
@@ -57,8 +79,6 @@ export default function NJProductCarousel({
   carouselId,
 }: NJProductCarouselProps) {
   const id = useCarouselId(carouselId);
-  const swiperRef = useRef<HTMLDivElement>(null);
-  const { isSwiperReady, isLoading, initSwiper } = useSwiperCarousel();
   const [swiperInstance, setSwiperInstance] = useState<SwiperInstance | null>(
     null,
   );
@@ -79,6 +99,21 @@ export default function NJProductCarousel({
     },
   });
 
+  const {
+    containerRef: swiperContainerRef,
+    swiperRef: swiperInstanceRef,
+    isReady: isSwiperReady,
+  } = useSwiperCarousel({
+    enabled: products.length > 0,
+    options: swiperOptions,
+    onInit: (instance) => {
+      setSwiperInstance(instance);
+      updatePagination(instance);
+      updateButtonStates(instance);
+    },
+    deps: [products.length],
+  });
+
   const { handleNext, handlePrev } = useNavigationHandlers(
     swiperInstance,
     getSlidesPerView,
@@ -93,25 +128,17 @@ export default function NJProductCarousel({
     updateButtonStates,
   });
 
-  const fallbackSlideWidth = useMemo(
-    () => `${100 / NICK_SLIDES_CONFIG.base.slidesPerView}%`,
-    [],
-  );
+  useEffect(() => {
+    if (!isSwiperReady) {
+      setSwiperInstance(null);
+    }
+  }, [isSwiperReady]);
 
   useEffect(() => {
-    if (!isSwiperReady || !swiperRef.current || swiperInstance) {
-      return;
+    if (!swiperInstance && swiperInstanceRef.current) {
+      setSwiperInstance(swiperInstanceRef.current);
     }
-
-    try {
-      const instance = initSwiper(swiperRef.current, swiperOptions);
-      if (instance) {
-        setSwiperInstance(instance);
-      }
-    } catch (error) {
-      console.error("Failed to initialize Swiper:", error);
-    }
-  }, [isSwiperReady, swiperInstance, swiperOptions, initSwiper]);
+  }, [swiperInstance, swiperInstanceRef]);
 
   useEffect(() => {
     if (!swiperInstance) {
@@ -133,8 +160,6 @@ export default function NJProductCarousel({
       </div>
     );
   }
-
-  const skeletonGap = NICK_SLIDES_CONFIG.base.spaceBetween ?? 20;
 
   return (
     <>
@@ -158,12 +183,16 @@ export default function NJProductCarousel({
                   direction="prev"
                   label="Produto anterior"
                   variant="nick-jonas"
+                  class={!isSwiperReady ? "pointer-events-none opacity-50" : ""}
+                  disabled={!isSwiperReady}
                 />
                 <CarouselNavButton
                   id={id}
                   direction="next"
                   label="Próximo produto"
                   variant="nick-jonas"
+                  class={!isSwiperReady ? "pointer-events-none opacity-50" : ""}
+                  disabled={!isSwiperReady}
                 />
               </div>
             </div>
@@ -181,48 +210,71 @@ export default function NJProductCarousel({
                   direction="prev"
                   label="Produto anterior"
                   variant="nick-jonas"
+                  class={!isSwiperReady ? "pointer-events-none opacity-50" : ""}
+                  disabled={!isSwiperReady}
                 />
                 <CarouselNavButton
                   id={id}
                   direction="next"
                   label="Próximo produto"
                   variant="nick-jonas"
+                  class={!isSwiperReady ? "pointer-events-none opacity-50" : ""}
+                  disabled={!isSwiperReady}
                 />
               </div>
             </div>
           </div>
           <div class="relative">
             <div
-              ref={swiperRef}
+              ref={swiperContainerRef}
               class={clx("swiper", "w-full overflow-hidden")}
             >
               <div
                 class={clx(
                   "swiper-wrapper",
-                  !isSwiperReady && "flex justify-center sm:justify-start",
+                  !isSwiperReady &&
+                    "flex justify-center sm:justify-start gap-5 sm:gap-[15px] lg:gap-5",
                 )}
-                style={!isSwiperReady ? { gap: `${skeletonGap}px` } : undefined}
               >
-                {products.map((product, index) => (
-                  <div
-                    key={product.productID}
-                    class={clx(
-                      "swiper-slide",
-                      !isSwiperReady && "flex-shrink-0",
-                    )}
-                    style={!isSwiperReady
-                      ? { width: fallbackSlideWidth }
-                      : undefined}
-                  >
-                    <NJProductCard
-                      product={product}
-                      itemListName={title}
-                      index={index}
-                      hideImage={!isSwiperReady || isLoading}
-                      promotionalText={promotionalText}
-                    />
-                  </div>
-                ))}
+                {!isSwiperReady
+                  // Render skeleton cards matching the responsive layout exactly
+                  ? <>
+                    {/* Mobile: 1 centered skeleton */}
+                    <div class="flex-shrink-0 w-full sm:hidden lg:hidden">
+                      <SkeletonCard />
+                    </div>
+                    {/* Tablet: 2 skeletons side by side */}
+                    <div class="hidden sm:flex-shrink-0 sm:block lg:hidden sm:w-[calc(50%-7.5px)]">
+                      <SkeletonCard />
+                    </div>
+                    <div class="hidden sm:flex-shrink-0 sm:block lg:hidden sm:w-[calc(50%-7.5px)]">
+                      <SkeletonCard />
+                    </div>
+                    {/* Desktop: 4 skeletons side by side */}
+                    <div class="hidden lg:flex-shrink-0 lg:block lg:w-[calc(25%-15px)]">
+                      <SkeletonCard />
+                    </div>
+                    <div class="hidden lg:flex-shrink-0 lg:block lg:w-[calc(25%-15px)]">
+                      <SkeletonCard />
+                    </div>
+                    <div class="hidden lg:flex-shrink-0 lg:block lg:w-[calc(25%-15px)]">
+                      <SkeletonCard />
+                    </div>
+                    <div class="hidden lg:flex-shrink-0 lg:block lg:w-[calc(25%-15px)]">
+                      <SkeletonCard />
+                    </div>
+                  </>
+                  // Render actual product cards
+                  : products.map((product, index) => (
+                    <div key={product.productID} class="swiper-slide">
+                      <NJProductCard
+                        product={product}
+                        itemListName={title}
+                        index={index}
+                        promotionalText={promotionalText}
+                      />
+                    </div>
+                  ))}
               </div>
             </div>
             <CarouselControls

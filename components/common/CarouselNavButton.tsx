@@ -14,6 +14,7 @@ interface CarouselNavButtonProps {
   variant?: CarouselNavButtonVariant;
   /** @ignore true */
   class?: string;
+  disabled?: boolean;
 }
 
 const VARIANT_CLASSES: Record<CarouselNavButtonVariant, string> = {
@@ -34,6 +35,7 @@ export default function CarouselNavButton({
   label,
   variant = "neutral",
   class: className = "",
+  disabled = false,
 }: CarouselNavButtonProps) {
   const buttonId = `${id}-${direction}`;
 
@@ -47,6 +49,7 @@ export default function CarouselNavButton({
         className,
       )}
       aria-label={label}
+      disabled={disabled}
     >
       <svg
         class="w-5 h-5"

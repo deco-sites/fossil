@@ -97,13 +97,13 @@ function CRWatchGuide({
       >
         <div class="w-fit mx-auto flex flex-col items-center relative lg:mb-8">
           {subtitle && (
-            <p class="font-soleil text-xs text-cr-primary text-center uppercase tracking-wide lg:mb-2">
+            <p class="font-soleil text-xs text-cr-primary text-center uppercase tracking-wide">
               {subtitle}
             </p>
           )}
 
           {title && (
-            <h2 class="font-benton italic text-5xl lg:text-6xl xl:text-7xl text-white text-center leading-tight tracking-tight">
+            <h2 class="font-benton italic text-5xl lg:text-6xl xl:text-7xl text-white text-center leading-none tracking-tight">
               {title}
             </h2>
           )}
