@@ -41,6 +41,12 @@ export interface Card {
   url?: string;
 
   /**
+   * @title Texto do Botão
+   * @description Texto exibido no botão de ação (padrão: "Shop Now")
+   */
+  buttonText?: string;
+
+  /**
    * @title Texto Alternativo
    * @description Descrição da imagem para acessibilidade
    */
@@ -78,6 +84,7 @@ export default function ProductCard({
   openImage,
   hoverBackgroundImage,
   url = "#",
+  buttonText = "Shop Now",
   alt,
   defaultImageWidth = 355,
   defaultImageHeight = 456,
@@ -172,9 +179,9 @@ export default function ProductCard({
             <button
               type="button"
               class="order-3 bg-primary hover:bg-primary/90 transition-colors duration-200 text-white font-soleil text-xs px-4 py-3 rounded-full whitespace-nowrap tracking-wide h-8 flex items-center justify-center shrink-0 self-center md:order-none md:row-start-2 md:col-start-2 md:justify-self-end"
-              aria-label={`Shop ${name}`}
+              aria-label={`${buttonText} ${name}`}
             >
-              Shop Now
+              {buttonText}
             </button>
           </div>
         </figure>

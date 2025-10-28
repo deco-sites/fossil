@@ -99,7 +99,7 @@ function CRNickList({
   return (
     <div class="relative w-full bg-cr-bg-secondary">
       <div class="container mx-auto px-8 lg:px-16 py-8 lg:pt-20 lg:pb-28 relative z-10">
-        <div class="flex flex-col lg:flex-row justify-end items-center gap-5 lg:gap-10 xl:justify-center">
+        <div class="flex flex-col lg:flex-row justify-end items-center gap-5 lg:gap-10 xl:justify-start">
           <div class="relative">
             <div class="relative">
               {(mainImageDesktop || mainImageMobile) && (
@@ -117,10 +117,12 @@ function CRNickList({
                     height={mainImageDesktopHeight || 600}
                   />
                   <img
-                    class="max-w-full rounded-xl"
+                    class="max-w-full rounded-xl lg:max-w-[520px]"
                     src={mainImageDesktop || mainImageMobile}
                     alt={title || "The Nick List"}
-                    style={{ aspectRatio }}
+                    style={{
+                      aspectRatio,
+                    }}
                   />
                 </Picture>
               )}
@@ -142,9 +144,11 @@ function CRNickList({
           <div class="flex flex-col gap-5 lg:gap-8 text-center lg:text-left items-center lg:items-start max-w-72 lg:max-w-none">
             <div>
               {title && (
-                <h2 class="font-benton italic text-4xl lg:text-5xl xl:text-6xl text-white leading-none mb-1">
-                  {title}
-                </h2>
+                <h2
+                  class="font-benton italic text-4xl lg:text-5xl xl:text-6xl text-white leading-none mb-1"
+                  // deno-lint-ignore react-no-danger
+                  dangerouslySetInnerHTML={{ __html: title }}
+                />
               )}
 
               {description && (

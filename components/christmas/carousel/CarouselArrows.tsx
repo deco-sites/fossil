@@ -78,19 +78,19 @@ export default function CarouselArrows({
 
   return (
     <div
-      class={`pointer-events-none absolute inset-0 flex items-center justify-between px-4 ${className}`}
+      class={`pointer-events-none absolute inset-0 flex items-center justify-between xl:px-4 z-[1] ${className}`}
     >
       <button
         id={prevId}
         type="button"
         aria-label="Banner anterior"
-        class="pointer-events-auto inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/50 bg-white/20 text-white transition hover:bg-white/40"
+        class="pointer-events-auto inline-flex size-8 xl:size-10 items-center justify-center rounded-full text-white transition hover:text-white/80"
         onClick={handlePrevClick}
       >
         <span class="sr-only">Anterior</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
+          class="size-7 xl:size-10"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -108,13 +108,13 @@ export default function CarouselArrows({
         id={nextId}
         type="button"
         aria-label="Próximo banner"
-        class="pointer-events-auto inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/50 bg-white/20 text-white transition hover:bg-white/40"
+        class="pointer-events-auto inline-flex size-8 xl:size-10 items-center justify-center rounded-full text-white transition hover:text-white/80"
         onClick={handleNextClick}
       >
         <span class="sr-only">Próximo</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
+          class="size-7 xl:size-10"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"

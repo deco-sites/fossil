@@ -66,12 +66,10 @@ interface CarouselConfig {
 
   /** @title Mostrar setas */
   /** @description Exibe botões de navegação anterior/próximo */
-  /** @ignore true */
   showArrows?: boolean;
 
   /** @title Mostrar pontos */
   /** @description Exibe indicadores (bolinhas) de navegação */
-  /** @ignore true */
   showDots?: boolean;
 }
 

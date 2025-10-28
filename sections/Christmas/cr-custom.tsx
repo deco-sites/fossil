@@ -153,13 +153,13 @@ function CRCustom({
   const renderContent = () => (
     <div class="flex flex-col gap-5 items-start">
       {title && (
-        <h2 class="font-benton italic text-5xl lg:text-6xl text-white leading-tight">
+        <h2 class="font-benton italic text-5xl lg:text-6xl text-white leading-tight [text-shadow:_2px_2px_10px_rgba(0,0,0,0.8)]">
           {title}
         </h2>
       )}
 
       {description && (
-        <p class="text-white text-sm font-soleil max-w-md leading-relaxed">
+        <p class="text-white text-sm font-soleil max-w-md leading-relaxed [text-shadow:_1px_1px_10px_rgba(0,0,0,0.7)]">
           {description}
         </p>
       )}

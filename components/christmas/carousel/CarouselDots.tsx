@@ -54,19 +54,23 @@ export default function CarouselDots({
 
   return (
     <div
-      class={`absolute bottom-6 left-1/2 z-20 -translate-x-1/2 ${className}`}
+      class={`absolute bottom-4 xl:bottom-6 left-1/2 z-20 -translate-x-1/2 ${className}`}
     >
-      <div class="flex items-center gap-3">
+      <div class="flex items-center">
         {Array.from({ length: itemsCount }).map((_, index) => (
           <button
             key={`dot-${index}`}
             type="button"
             aria-label={`Ir para o banner ${index + 1}`}
             onClick={() => handleDotClick(index)}
-            class={`h-2.5 w-2.5 rounded-full border border-white transition ${
-              activeIndex === index ? "bg-white" : "bg-transparent"
-            }`}
-          />
+            class="p-1"
+          >
+            <span
+              class={`block size-2 xl:size-2.5 rounded-full border border-white transition ${
+                activeIndex === index ? "bg-white" : "bg-transparent"
+              }`}
+            />
+          </button>
         ))}
       </div>
     </div>

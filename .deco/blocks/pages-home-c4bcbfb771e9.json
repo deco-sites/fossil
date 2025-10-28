@@ -66,8 +66,8 @@
               "pauseOnHover": true,
               "delaySeconds": 5,
               "speedMs": 500,
-              "showArrows": false,
-              "showDots": false
+              "showArrows": true,
+              "showDots": true
             },
             "bottomCenterImageWidth": 336,
             "bottomCenterImageHeight": 167,
@@ -122,7 +122,7 @@
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
               "__resolveType": "site/sections/Christmas/cr-nick-list.tsx",
-              "title": "Os clássicos da Fossil a partir de R$ 799",
+              "title": "Os clássicos da Fossil<br />a partir de R$ 799",
               "description": "Designs atemporais com preços especiais",
               "button": {
                 "name": "Compre Agora",
@@ -157,7 +157,8 @@
                   "defaultImageWidth": 355,
                   "defaultImageHeight": 456,
                   "openImageWidth": 307,
-                  "openImageHeight": 352
+                  "openImageHeight": 352,
+                  "buttonText": "Comprar"
                 },
                 {
                   "url": "#",
@@ -169,7 +170,8 @@
                   "defaultImageWidth": 355,
                   "defaultImageHeight": 456,
                   "openImageWidth": 307,
-                  "openImageHeight": 352
+                  "openImageHeight": 352,
+                  "buttonText": "Comprar"
                 },
                 {
                   "name": "Mochilas e bolsas",
@@ -181,7 +183,8 @@
                   "defaultImageWidth": 355,
                   "defaultImageHeight": 456,
                   "openImageWidth": 307,
-                  "openImageHeight": 352
+                  "openImageHeight": 352,
+                  "buttonText": "Comprar"
                 },
                 {
                   "url": "#",
@@ -193,7 +196,8 @@
                   "defaultImageHeight": 456,
                   "openImageWidth": 307,
                   "openImageHeight": 352,
-                  "name": "Carteiras de couro"
+                  "name": "Carteiras de couro",
+                  "buttonText": "Comprar"
                 },
                 {
                   "name": "Relógios anéis especiais ",
@@ -204,7 +208,8 @@
                   "defaultImageWidth": 355,
                   "defaultImageHeight": 456,
                   "openImageWidth": 307,
-                  "openImageHeight": 352
+                  "openImageHeight": 352,
+                  "buttonText": "Comprar"
                 }
               ],
               "products": null,
@@ -267,7 +272,8 @@
                   "url": "#",
                   "defaultImageWidth": 355,
                   "defaultImageHeight": 456,
-                  "openImageHeight": 352
+                  "openImageHeight": 352,
+                  "buttonText": "Explorar"
                 },
                 {
                   "defaultImage": "https://assets.decocache.com/fossil/bf1fbf2b-a9ef-4f74-82b0-a3c5014e7586/cr-carousel-2-2.png",
@@ -278,7 +284,8 @@
                   "defaultImageWidth": 355,
                   "defaultImageHeight": 456,
                   "openImageWidth": 307,
-                  "openImageHeight": 352
+                  "openImageHeight": 352,
+                  "buttonText": "Explorar"
                 },
                 {
                   "name": "Presentes para Ela",
@@ -290,7 +297,8 @@
                   "defaultImageWidth": 355,
                   "defaultImageHeight": 456,
                   "openImageWidth": 307,
-                  "openImageHeight": 352
+                  "openImageHeight": 352,
+                  "buttonText": "Explorar"
                 },
                 {
                   "name": "Estilos para Festas",
@@ -301,7 +309,8 @@
                   "defaultImageHeight": 456,
                   "openImageWidth": 307,
                   "openImageHeight": 352,
-                  "url": "#"
+                  "url": "#",
+                  "buttonText": "Explorar"
                 }
               ],
               "starLeft": {
