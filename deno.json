@@ -1,7 +1,8 @@
 {
   "imports": {
-    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.115.7/",
-    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.81.0/",
+    "@std/http": "jsr:@std/http@^1.0.21",
+    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.127.4/",
+    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.128.13/",
     "$fresh/": "https://deno.land/x/fresh@1.7.3/",
     "preact": "npm:preact@10.23.1",
     "preact-render-to-string": "npm:preact-render-to-string@6.4.2",
@@ -10,10 +11,11 @@
     "std/": "https://deno.land/std@0.190.0/",
     "partytown/": "https://cdn.jsdelivr.net/gh/deco-cx/partytown@0.4.8/",
     "daisyui": "npm:daisyui@4.6.0",
+    "swiper": "npm:swiper@12.0.1",
     "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
-    "@deco/deco": "jsr:@deco/deco@1.115.7",
+    "@deco/deco": "jsr:@deco/deco@1.127.4",
     "@deco/durable": "jsr:@deco/durable@0.5.3",
-    "@deco/dev": "jsr:@deco/dev@1.115.7"
+    "@deco/dev": "jsr:@deco/dev@1.127.4"
   },
   "tasks": {
     "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",

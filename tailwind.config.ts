@@ -64,6 +64,10 @@ export default {
         "gray61": "#618175",
         "nj-primary": "#F5F1E9",
         "nj-secondary": "#287851",
+        "cr-primary": "#E4C063",
+        "cr-bg-primary": "#FFFBF0",
+        "cr-bg-secondary": "#182D16",
+        "cr-bg-terciary": "#657A3B",
       },
       letterSpacing: {
         "one": "1px",

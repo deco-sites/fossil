@@ -85,7 +85,7 @@ function Searchbar(
   const searchInputRef = useRef<HTMLInputElement>(null);
   const { setQuery, payload, loading } = useSuggestions(loader);
   const { products = [], searches = [] } = payload.value ?? {};
-  const hasProducts = Boolean(products.length);
+  const hasProducts = Boolean(products?.length);
   const hasTerms = Boolean(searches.length);
   const topSearches = [
     {
@@ -125,7 +125,7 @@ function Searchbar(
   const handleSearch = (event: Event) => {
     event.preventDefault();
     const value = searchInputRef?.current?.value.trim();
-    if (value) {
+    if (value && globalThis.window?.location) {
       const searchURL = `${action}?${name}=${
         encodeURIComponent(value)
       }&utmi_pc=search&utmi_cp=${encodeURIComponent(value)}`;
@@ -235,7 +235,7 @@ function Searchbar(
                     <span class=" font-bold uppercas w-[80%] text-left border-b-2 border-solid border-black max-md:hidden box-border text-black text-[18px] leading-[18px]  flex pt-4 pb-5">
                       Nossas sugestões
                     </span>
-                    {products.map(
+                    {(products ?? []).map(
                       ({ image, isVariantOf, offers, url }, index) => {
                         const { has_discount, listPrice, price } = useOffer(
                           offers,
@@ -325,7 +325,7 @@ function Searchbar(
                     <span class=" font-bold uppercas w-[80%] text-left border-b-2 border-solid border-black max-md:hidden box-border text-primary leading-[18px]  flex pt-4 pb-5">
                       Nossas sugestões
                     </span>
-                    {products.map(
+                    {(products ?? []).map(
                       ({ image, isVariantOf, offers, url }, index) => {
                         const { has_discount, listPrice, price } = useOffer(
                           offers,

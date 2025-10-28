@@ -36,6 +36,12 @@ export default defineApp(async (_req, ctx) => {
           rel="stylesheet"
         />
 
+        {/* Swiper CSS */}
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+        />
+
         {/* Web Manifest */}
         <link rel="manifest" href={asset("/site.webmanifest")} />
 

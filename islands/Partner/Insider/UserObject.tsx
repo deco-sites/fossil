@@ -1,16 +1,22 @@
 import { useEffect } from "preact/hooks";
 import { useUser } from "apps/vtex/hooks/useUser.ts";
 
+declare global {
+  interface Window {
+    insider_object?: {
+      user?: Record<string, unknown>;
+    };
+  }
+}
+
 export const UserObject = () => {
   const { user } = useUser();
 
   useEffect(() => {
     let user_formatted = { gdpr_optin: true, language: "pt_BR" };
 
-    // deno-lint-ignore ban-ts-comment
-    // @ts-ignore
     globalThis.window.insider_object =
-      JSON.parse(sessionStorage.getItem("user_object")) ||
+      JSON.parse(sessionStorage.getItem("user_object") || "{}") ||
       globalThis.window.insider_object || { user: user_formatted };
 
     if (user.value) {
@@ -67,14 +73,12 @@ export const UserObject = () => {
       }
     }
 
-    // deno-lint-ignore ban-ts-comment
-    // @ts-ignore
-    globalThis.window.insider_object.user = {
-      ...globalThis.window.insider_object.user,
-      ...user_formatted,
-    };
-    // deno-lint-ignore ban-ts-comment
-    // @ts-ignore
+    if (globalThis.window.insider_object) {
+      globalThis.window.insider_object.user = {
+        ...globalThis.window.insider_object.user,
+        ...user_formatted,
+      };
+    }
     sessionStorage.setItem(
       "user_object",
       JSON.stringify(globalThis.window.insider_object),

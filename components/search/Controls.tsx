@@ -39,7 +39,10 @@ function SearchControls(
   }: Props,
 ) {
   const open = useSignal(false);
-  const url = new URL(_url, globalThis.window.location.origin);
+  const url = new URL(
+    _url,
+    globalThis.window?.location?.origin || "http://localhost:8000",
+  );
   const searchParams = url.search;
   const urlSearchCustom = `s?q=${GetSearchQueryParameter(searchParams)}`;
 

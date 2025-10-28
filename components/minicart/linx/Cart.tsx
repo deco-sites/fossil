@@ -3,22 +3,36 @@ import BaseCart from "../common/Cart.tsx";
 
 function Cart() {
   const { cart, loading, updateItem, addCoupon } = useCart();
-  const items = cart.value?.Basket?.Items ?? [];
+  // Using unknown type assertion to handle unknown CartResponse structure
+  const cartData = cart.value as unknown;
+  const items = (cartData as Record<string, unknown>)?.items ??
+    (cartData as Record<string, unknown>)?.products ?? [];
 
-  const total = cart.value?.Basket?.Total ?? 0;
-  const subtotal = cart.value?.Basket?.SubTotal ?? 0;
+  const total = Number((cartData as Record<string, unknown>)?.total ?? 0);
+  const subtotal = Number((cartData as Record<string, unknown>)?.subtotal ?? 0);
   const locale = "pt-BR";
   const currency = "BRL";
-  const coupon = cart.value?.Basket?.Coupons?.[0]?.Code ?? undefined;
+  const coupon = (cartData as Record<string, unknown>)?.coupon;
 
   return (
     <BaseCart
-      items={items.map((item) => ({
-        image: { src: item!.ImagePath!, alt: "product image" },
-        quantity: item!.Quantity!,
-        name: item!.Name!,
-        price: { sale: item!.RetailPrice!, list: item!.ListPrice! },
-      }))}
+      items={Array.isArray(items)
+        ? items.map((item) => {
+          const itemRecord = item as Record<string, unknown>;
+          return {
+            image: {
+              src: String(itemRecord.ImagePath || ""),
+              alt: "product image",
+            },
+            quantity: Number(itemRecord.Quantity ?? 1),
+            name: String(itemRecord.Name || ""),
+            price: {
+              sale: Number(itemRecord.RetailPrice ?? 0),
+              list: Number(itemRecord.ListPrice ?? 0),
+            },
+          };
+        })
+        : []}
       total={total}
       subtotal={subtotal}
       discounts={0}
@@ -29,15 +43,25 @@ function Cart() {
       coupon={coupon?.toString()}
       checkoutHref="/carrinho"
       onAddCoupon={(CouponCode) => addCoupon({ CouponCode })}
-      onUpdateQuantity={(quantity: number, index: number) =>
-        updateItem({
+      onUpdateQuantity={async (quantity: number, index: number) => {
+        const itemsArray = items as unknown[];
+        const item = itemsArray[index] as Record<string, unknown>;
+        await updateItem({
           Quantity: quantity,
-          BasketItemID: items[index]?.BasketItemID,
-        })}
+          BasketItemID: Number(item?.BasketItemID ?? 0),
+        });
+      }}
       itemToAnalyticsItem={(index) => {
-        const item = items[index];
+        const itemsArray = items as unknown[];
+        const item = itemsArray[index] as Record<string, unknown>;
 
-        return item && itemToAnalyticsItem(item, coupon, index);
+        return item &&
+          itemToAnalyticsItem(
+            item as unknown as // deno-lint-ignore no-explicit-any
+            any,
+            coupon as string | undefined,
+            index,
+          );
       }}
     />
   );

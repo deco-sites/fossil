@@ -20,33 +20,33 @@ export default function ProductCardPriceModel(props: Props) {
         </p>
       )}
 
-      <p class="w-full block text-left font-soleil text-black leading-none">
+      <p class="flex items-center w-full text-left font-soleil text-black leading-none gap-[3px]">
         <span class="text-sm font-bold">
           {formatPrice(
             props.priceWithPixDiscount,
-            props.priceCurrency || "BRL"
+            props.priceCurrency || "BRL",
           )}
         </span>
-        <span class="text-[10px] lg:text-xs font-normal"> no PIX</span>
+        <span class="text-[10px] lg:text-xs font-normal">no PIX</span>
       </p>
 
       {props.installmentBillingDuration &&
         props.installmentBillingIncrement && (
-          <p class="text-left text-[10px] lg:text-xs text-black font-soleil font-normal">
-            <span class="">
-              {formatPrice(props.sellerPrice, props.priceCurrency || "BRL")}
-            </span>
-            <span class=""> em até </span>
-            <span class="">{props.installmentBillingDuration}x</span>
-            <span class=""> de </span>
-            <span class="">
-              {formatPrice(
-                props.installmentBillingIncrement,
-                props.priceCurrency || "BRL"
-              )}
-            </span>
-          </p>
-        )}
+        <p class="flex items-center text-left text-[10px] lg:text-xs text-black font-soleil font-normal gap-[3px]">
+          <span>
+            {formatPrice(props.sellerPrice, props.priceCurrency || "BRL")}
+          </span>
+          <span>em até</span>
+          <span>{props.installmentBillingDuration}x</span>
+          <span>de</span>
+          <span>
+            {formatPrice(
+              props.installmentBillingIncrement,
+              props.priceCurrency || "BRL",
+            )}
+          </span>
+        </p>
+      )}
     </div>
   );
 }

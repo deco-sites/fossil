@@ -18,7 +18,7 @@ export default function Section({ placeholderItems, items, slider }: Props) {
       <Carousel {...slider}>
         {allItems.map((item, idx) => (
           <Card
-            key={item?.title ?? idx}
+            key={item?.label ?? idx}
             {...item}
           />
         ))}

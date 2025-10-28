@@ -32,7 +32,10 @@ export const itemToAnalyticsItem = (
     // item_variant: item.skuName,
     item_variant: item.id,
     item_brand: item.additionalInfo.brandName ?? "",
-    item_url: new URL(item.detailUrl, globalThis.location.href).href,
+    item_url:
+      (typeof globalThis.location !== "undefined" && globalThis.location?.href)
+        ? new URL(item.detailUrl, globalThis.location.href).href
+        : item.detailUrl,
     ...(mapItemCategoriesToAnalyticsCategories(item)),
   });
 };

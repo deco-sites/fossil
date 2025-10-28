@@ -1,9 +1,8 @@
 import type { ComponentChildren, VNode } from "preact";
-import { useEffect, useMemo, useRef, useState } from "preact/hooks";
+import { useMemo, useState } from "preact/hooks";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import NJPicture from "../../components/nick-jonas/NJPicture.tsx";
 import {
-  type SwiperInstance,
   type SwiperOptions,
   useSwiperCarousel,
 } from "../../sdk/useSwiperCarousel.ts";
@@ -13,33 +12,102 @@ import { flattenChildren } from "../../util/preact.ts";
  * @titleBy alt
  */
 export interface Item {
+  /**
+   * @title Imagem Desktop
+   * @description Imagem exibida em dispositivos desktop
+   */
   desktopImage?: ImageWidget;
+
+  /**
+   * @title Imagem Mobile
+   * @description Imagem exibida em dispositivos móveis
+   */
   mobileImage?: ImageWidget;
+
+  /**
+   * @title Texto Alternativo
+   * @description Descrição da imagem para acessibilidade
+   */
   alt?: string;
+
+  /**
+   * @title Link
+   * @description URL para onde o item deve redirecionar ao clicar
+   */
   href?: string;
+
+  /**
+   * @title Legenda
+   * @description Texto exibido ao passar o mouse sobre o item
+   */
   caption?: string;
-  /** @title Loading priority */
+
+  /** @ignore true */
   loading?: "eager" | "lazy";
-  /** @title Fetch priority */
+
+  /** @ignore true */
   fetchPriority?: "high" | "low" | "auto";
 }
 
+/**
+ * @title Carrossel Simples
+ * @description Carrossel responsivo com autoplay e navegação por toque
+ */
 export interface Props {
+  /** @ignore true */
   children?: ComponentChildren;
+
+  /** @ignore true */
   slides?: VNode[];
+
+  /**
+   * @title Itens do Carrossel
+   * @description Lista de itens que serão exibidos no carrossel
+   */
   items?: Item[];
+
+  /**
+   * @title Itens por Página (Desktop)
+   * @description Número de itens visíveis simultaneamente em desktop
+   */
   perPage: number;
+
+  /**
+   * @title Itens por Página (Mobile)
+   * @description Número de itens visíveis simultaneamente em dispositivos móveis
+   */
   perPageMobile?: number;
+
+  /**
+   * @title Autoplay (segundos)
+   * @description Tempo em segundos entre as transições automáticas. Use 0 para desativar
+   */
   autoplaySeconds?: number;
+
+  /** @ignore true */
   totalItems?: number;
-  /** @title Enable autoplay pause on hover */
+
+  /**
+   * @title Pausar ao Passar o Mouse
+   * @description Pausa o autoplay quando o usuário passa o mouse sobre o carrossel
+   */
   pauseOnHover?: boolean;
-  /** @title Custom slide width */
+
+  /** @ignore true */
   slideWidth?: string;
-  /** @title Space between slides */
+
+  /**
+   * @title Espaçamento entre Itens
+   * @description Espaço em pixels entre cada item do carrossel
+   */
   spaceBetween?: number;
 }
 
+/**
+ * @title Item do Carrossel
+ * @description Componente interno que renderiza um item individual do carrossel
+ * @ignore true
+ */
 export function NJCarouselItem({
   item,
   index,
@@ -122,17 +190,12 @@ export default function NJSimpleCarousel({
   pauseOnHover = true,
   spaceBetween = 0,
 }: Props) {
-  const swiperRef = useRef<HTMLDivElement>(null);
-  const { isSwiperReady, initSwiper, isLoading } = useSwiperCarousel();
-  const [swiperInstance, setSwiperInstance] = useState<SwiperInstance | null>(
-    null,
-  );
   const [hasError, setHasError] = useState(false);
 
   // Validate props
-  const hasValidItems = items && items.length > 0;
-  const hasValidSlides = slides && slides.length > 0;
-  const hasValidChildren = children;
+  const hasValidItems = Boolean(items && items.length > 0);
+  const hasValidSlides = Boolean(slides && slides.length > 0);
+  const hasValidChildren = Boolean(children);
   const shouldShowCarousel = hasValidItems || hasValidSlides ||
     hasValidChildren;
 
@@ -149,9 +212,9 @@ export default function NJSimpleCarousel({
       spaceBetween,
       loop: shouldShowCarousel
         ? hasValidItems
-          ? items.length > perPage
+          ? (items?.length ?? 0) > perPage
           : hasValidSlides
-          ? slides.length > perPage
+          ? (slides?.length ?? 0) > perPage
           : true
         : false,
       autoplay: autoplaySeconds > 0
@@ -191,38 +254,17 @@ export default function NJSimpleCarousel({
     ],
   );
 
-  useEffect(() => {
-    if (
-      !isSwiperReady ||
-      !swiperRef.current ||
-      swiperInstance ||
-      hasError ||
-      !shouldShowCarousel
-    ) {
-      return;
-    }
-
-    try {
-      const instance = initSwiper(swiperRef.current, swiperOptions);
-      if (instance) {
-        setSwiperInstance(instance);
-        setHasError(false);
-      }
-    } catch (error) {
-      console.error("Failed to initialize Swiper:", error);
-      setHasError(true);
-    }
-  }, [
-    isSwiperReady,
-    swiperInstance,
-    swiperOptions,
-    initSwiper,
-    hasError,
-    shouldShowCarousel,
-  ]);
+  const { containerRef: swiperContainerRef, isReady: isSwiperReady } =
+    useSwiperCarousel({
+      enabled: shouldShowCarousel,
+      options: swiperOptions,
+      onInit: () => setHasError(false),
+      onError: () => setHasError(true),
+      deps: [shouldShowCarousel],
+    });
 
   const slidesToRender: VNode[] = useMemo(() => {
-    if (hasValidItems) {
+    if (hasValidItems && items) {
       return items.map((item, index) => (
         <NJCarouselItem
           key={`item-${index}`}
@@ -234,7 +276,7 @@ export default function NJSimpleCarousel({
       ));
     }
 
-    if (hasValidSlides) {
+    if (hasValidSlides && slides) {
       return slides.map((slide, index) => (
         <div key={`slide-${index}`} className="w-full h-full">
           {slide}
@@ -265,16 +307,6 @@ export default function NJSimpleCarousel({
     );
   }
 
-  // Show loading state
-  if (isLoading) {
-    return (
-      <div class="w-full h-64 flex items-center justify-center bg-gray-100 rounded-lg">
-        <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-primary">
-        </div>
-      </div>
-    );
-  }
-
   // Show error state
   if (hasError) {
     return (
@@ -292,7 +324,7 @@ export default function NJSimpleCarousel({
       aria-label="Carrossel de imagens"
     >
       <div
-        ref={swiperRef}
+        ref={swiperContainerRef}
         class="swiper w-full overflow-hidden"
         aria-live="polite"
       >
