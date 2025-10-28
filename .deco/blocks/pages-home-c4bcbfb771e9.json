@@ -69,7 +69,6 @@
               "showArrows": false,
               "showDots": false
             },
-            "bottomCenterImage": "https://assets.decocache.com/fossil/d1b05e3d-77ab-47c3-806c-7ba5b1715121/ornaments.png",
             "bottomCenterImageWidth": 336,
             "bottomCenterImageHeight": 167,
             "snowFooterDesktop": "https://assets.decocache.com/fossil/92902b5c-2105-4f1f-9ae6-1628f8600289/cr-snow-footer.png",
@@ -81,7 +80,7 @@
           },
           {
             "__resolveType": "site/sections/Christmas/cr-collection.tsx",
-            "title": "Edição de Fim de Ano",
+            "title": "Descontos Black Friday",
             "products": {
               "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
               "props": {
@@ -129,8 +128,8 @@
                 "name": "Compre Agora",
                 "url": "#"
               },
-              "mainImageDesktop": "https://assets.decocache.com/fossil/687ab41e-8616-4e33-9fbd-a29c8f98ff8b/HO25_NickList_D.jpg",
-              "mainImageMobile": "https://assets.decocache.com/fossil/f79b6886-5472-4c4c-8fca-27610f57093c/HO25_NickList_M.jpg",
+              "mainImageDesktop": "https://assets.decocache.com/fossil/e8edc611-26c5-4865-9ee7-fa974a910f47/fossil-banner-secundario-desktop-(2).png",
+              "mainImageMobile": "https://assets.decocache.com/fossil/d12cce80-6efd-4576-9c04-a345772d7903/fossil-banner-secundario--mobile-(2).png",
               "mainImageDesktopWidth": 574,
               "mainImageDesktopHeight": 448,
               "mainImageMobileWidth": 312,
@@ -150,7 +149,7 @@
               "cards": [
                 {
                   "url": "#",
-                  "name": "Clássicos Essenciais Para Ela",
+                  "name": "Acessórios para ela",
                   "image": "https://assets.decocache.com/fossil/f28c7247-4741-4041-be0a-87b322181a35/cr-carousel-1-2.png",
                   "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
                   "defaultImage": "https://assets.decocache.com/fossil/7886dca3-6fc6-4b6e-b64c-917fa7267b51/Secao3_Posicao1_JF04616710_onmodel-desktop.png",
@@ -162,10 +161,10 @@
                 },
                 {
                   "url": "#",
-                  "name": "Dourado & Verde",
+                  "name": "Relógios com design de joia",
                   "image": "https://assets.decocache.com/fossil/6e18e4b0-e167-4892-9938-73628fd91afa/cr-carousel-1-3.png",
-                  "defaultImage": "https://assets.decocache.com/fossil/b7706d3b-82de-430d-bee4-ee6fffe40f01/fossil-banner-secundario-desktop.png",
-                  "openImage": "https://assets.decocache.com/fossil/92af7583-8a99-4aba-aaa1-49d974ec92e1/fossil-banner-secundario--mobile.png",
+                  "defaultImage": "https://assets.decocache.com/fossil/2ddafaae-bc2e-4908-9af2-a4cbc7a784ba/Secao-3_Posicao2---FSL6324450_HO24_AD_63-desktop.png",
+                  "openImage": "https://assets.decocache.com/fossil/f2df0298-f943-4032-a2a8-09da97251529/Secao3_Posicao2_FSL6324450_HO24_AD_63-mobile.png",
                   "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
                   "defaultImageWidth": 355,
                   "defaultImageHeight": 456,
@@ -173,7 +172,7 @@
                   "openImageHeight": 352
                 },
                 {
-                  "name": "Clássicos Essenciais Para Ele",
+                  "name": "Mochilas e bolsas",
                   "image": "https://assets.decocache.com/fossil/bb4db164-5982-483b-a11a-b9e0790b1bf8/cr-carousel-1-1.png",
                   "url": "#",
                   "defaultImage": "https://assets.decocache.com/fossil/dbff602b-6b73-4713-b28a-7041b83a6e73/Secao-3_Posicao3_MBG9630400_onmodel1-desktop.png",
@@ -186,11 +185,22 @@
                 },
                 {
                   "url": "#",
-                  "name": "Nick Jonas x Fossil",
                   "image": "https://assets.decocache.com/fossil/bb4db164-5982-483b-a11a-b9e0790b1bf8/cr-carousel-1-1.png",
-                  "defaultImage": "https://assets.decocache.com/fossil/0cda7fe0-739d-45d9-ada0-4b87913a79ac/cr-carousel-1-4.png",
-                  "openImage": "https://assets.decocache.com/fossil/25051056-52ee-4578-9817-47585b0a4bc7/cr-carousel-1-4-2.png",
+                  "defaultImage": "https://assets.decocache.com/fossil/f761e31e-4eb3-4716-a550-eec1f957e111/Secao3_Posicao4_-desktop.png",
+                  "openImage": "https://assets.decocache.com/fossil/005ac3c1-eb86-4d71-ad4c-8f3f7add5f56/Secao3_Posicao4_-mobile.png",
                   "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
+                  "defaultImageWidth": 355,
+                  "defaultImageHeight": 456,
+                  "openImageWidth": 307,
+                  "openImageHeight": 352,
+                  "name": "Carteiras de couro"
+                },
+                {
+                  "name": "Relógios anéis especiais ",
+                  "defaultImage": "https://assets.decocache.com/fossil/a0bf2659-c8de-4f9a-bdbc-36aaa526a7f1/Secao3_Posicao5_desktop.png",
+                  "openImage": "https://assets.decocache.com/fossil/2c35a834-0889-46a4-a542-5b6d480e78f3/Secao3_Posicao5_-mobile.png",
+                  "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
+                  "url": "#",
                   "defaultImageWidth": 355,
                   "defaultImageHeight": 456,
                   "openImageWidth": 307,
