@@ -260,14 +260,14 @@
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
               "__resolveType": "site/sections/Christmas/cr-watch-guide.tsx",
-              "title": "Guia da Presentes de Natal",
+              "title": "Os bestsellers da Fossil",
               "subtitle": "Compre um, Compre todos",
               "cards": [
                 {
-                  "name": "Presentes para Ele",
+                  "name": "Masculinos favoritos",
                   "label": "TOP 10",
-                  "defaultImage": "https://assets.decocache.com/fossil/cc278d39-f482-4650-b3d0-bcceb9cab55d/cr-carousel-2-1.png",
-                  "openImage": "https://assets.decocache.com/fossil/fae5f27d-fcaa-4aa3-b3ec-fea2d1506eb1/cr-carousel-2-1-2.png",
+                  "defaultImage": "https://assets.decocache.com/fossil/4b868cdc-98ae-4550-9d77-9ddbbf31279d/Secao4_Posicao1_desktop.png",
+                  "openImage": "https://assets.decocache.com/fossil/713d5ad2-64b0-43f2-bfe3-e46ab788567c/Secao4_Posicao1_mobile.png",
                   "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
                   "url": "#",
                   "defaultImageWidth": 355,
@@ -276,9 +276,9 @@
                   "buttonText": "Explorar"
                 },
                 {
-                  "defaultImage": "https://assets.decocache.com/fossil/bf1fbf2b-a9ef-4f74-82b0-a3c5014e7586/cr-carousel-2-2.png",
-                  "openImage": "https://assets.decocache.com/fossil/f76ccdbb-9e40-4e43-b5d7-694705b48d0f/cr-carousel-2-2-2.png",
-                  "name": "O Guia Definitivo de Presentes",
+                  "defaultImage": "https://assets.decocache.com/fossil/9cb4f649-5d4b-4ebd-87be-ef0f58d543f6/Secao4_Posicao2_desktop.png",
+                  "openImage": "https://assets.decocache.com/fossil/454bbfe1-a6cb-4c3e-9ae3-9311a284ba40/Secao4_Posicao2_mobile.png",
+                  "name": "Femininos favoritos",
                   "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
                   "url": "#",
                   "defaultImageWidth": 355,
@@ -288,10 +288,10 @@
                   "buttonText": "Explorar"
                 },
                 {
-                  "name": "Presentes para Ela",
+                  "name": "Minimalistas e delicados favoritos",
                   "label": "TOP 10",
-                  "defaultImage": "https://assets.decocache.com/fossil/f404414d-b553-40c8-8e01-5783a4e6afc8/cr-carousel-2-3.png",
-                  "openImage": "https://assets.decocache.com/fossil/d79acaa0-d0ab-44e8-9e11-c35e755ed85c/cr-carousel-2-3-2.png",
+                  "defaultImage": "https://assets.decocache.com/fossil/1073e9cc-f51d-46a1-b9cd-df85e68217ab/Secao4_Posicao3_desktop.png",
+                  "openImage": "https://assets.decocache.com/fossil/15072e37-2d72-464a-9415-fe70f9923b22/Secao4_Posicao3_mobile.png",
                   "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
                   "url": "#",
                   "defaultImageWidth": 355,
@@ -301,9 +301,9 @@
                   "buttonText": "Explorar"
                 },
                 {
-                  "name": "Estilos para Festas",
-                  "defaultImage": "https://assets.decocache.com/fossil/e5be9641-3343-474c-93ac-cf6d209e07e6/cr-carousel-2-4.png",
-                  "openImage": "https://assets.decocache.com/fossil/dca7500e-1161-4eb1-a6bd-43dcd3ce48b6/cr-carousel-2-4-2.png",
+                  "name": "Acessórios favoritos",
+                  "defaultImage": "https://assets.decocache.com/fossil/24e98abc-f16e-4fe5-8b0f-ad38b837d93e/Secao4_Posicao4_desktop.png",
+                  "openImage": "https://assets.decocache.com/fossil/a181a073-23d7-43d3-a33d-4fae1d24fef7/Secao4_Posicao4_desktop.png",
                   "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
                   "defaultImageWidth": 355,
                   "defaultImageHeight": 456,
@@ -311,6 +311,18 @@
                   "openImageHeight": 352,
                   "url": "#",
                   "buttonText": "Explorar"
+                },
+                {
+                  "name": "Bolsas de couro favoritas",
+                  "defaultImage": "https://assets.decocache.com/fossil/cebd1cf9-ab1d-447b-aab5-97af5588be8a/Secao4_Posicao5_mobile.png",
+                  "openImage": "https://assets.decocache.com/fossil/c5a6d5ca-bb8f-43cc-91d0-491046b58188/Secao4_Posicao5_mobile.png",
+                  "label": "TOP 10",
+                  "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
+                  "url": "#",
+                  "buttonText": "Explorar",
+                  "defaultImageWidth": 355,
+                  "defaultImageHeight": 456,
+                  "openImageHeight": 352
                 }
               ],
               "starLeft": {
