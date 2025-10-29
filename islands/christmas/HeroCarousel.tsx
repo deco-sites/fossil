@@ -77,7 +77,7 @@ export default function HeroCarousel({
   const generatedId = useId();
   const clipPathId = useMemo(
     () => `goldFrameClip-${generatedId.replaceAll(":", "")}`,
-    [generatedId]
+    [generatedId],
   );
   const clipPathUrl = `url(#${clipPathId})`;
 

@@ -51,17 +51,17 @@ export default function HeroSlideContent({
     <div class={className}>
       {title && <h2 class={titleClassName}>{title}</h2>}
 
-      {description?.length ? (
-        <p class={descriptionClassName}>
-          {description.map((part, partIndex) =>
-            part.bold ? (
-              <strong key={`desc-${partIndex}`}>{part.text}</strong>
-            ) : (
-              <Fragment key={`desc-${partIndex}`}>{part.text}</Fragment>
-            )
-          )}
-        </p>
-      ) : null}
+      {description?.length
+        ? (
+          <p class={descriptionClassName}>
+            {description.map((part, partIndex) =>
+              part.bold
+                ? <strong key={`desc-${partIndex}`}>{part.text}</strong>
+                : <Fragment key={`desc-${partIndex}`}>{part.text}</Fragment>
+            )}
+          </p>
+        )
+        : null}
 
       {cta?.label && (
         <div class="pointer-events-auto mt-2">

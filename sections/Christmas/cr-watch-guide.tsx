@@ -104,7 +104,7 @@ function CRWatchGuide({
       <div
         class={clx(
           "container mx-auto px-5 lg:px-16",
-          dividerImage && "pt-8 lg:pt-20"
+          dividerImage && "pt-8 lg:pt-20",
         )}
       >
         <div class="w-fit mx-auto flex flex-col items-center relative lg:mb-8">
