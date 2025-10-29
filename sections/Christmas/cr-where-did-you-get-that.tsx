@@ -29,7 +29,7 @@ export default function CRWhereDidYouGetThat({
   if (!items?.length) return null;
 
   return (
-    <div class="w-full bg-cr-bg-primary pt-2 pb-10">
+    <div class="w-full bg-cr-bg-primary pt-5 xl:pt-8 pb-10">
       <div class="text-center mb-6 lg:mb-8 px-5">
         <h2 class="font-benton italic text-4xl lg:text-6xl text-primary mb-4 leading-none">
           {title}

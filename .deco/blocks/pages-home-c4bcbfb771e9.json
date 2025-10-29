@@ -334,30 +334,8 @@
                 "image": "https://assets.decocache.com/fossil/a2d7c7b7-bee1-4ce6-928f-aab2c19cdb3a/HO25_star_single.png",
                 "width": 27,
                 "height": 37
-              }
-            }
-          },
-          {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "site/sections/Christmas/cr-custom.tsx",
-              "title": "Fossil Personalizados",
-              "description": "Por trás de todo grande presente há quem saiba escolher bem. Esse alguém é você — com gravação e relevo gratuitos.",
-              "button": {
-                "name": "Comprar Presentes Personalizados",
-                "url": "#"
               },
-              "imageDesktop": "https://assets.decocache.com/fossil/e3bc0e67-cb94-4776-a833-a45f29789b44/cr-custom.png",
-              "imageMobile": "https://assets.decocache.com/fossil/a08f1381-7afc-4b74-8de0-d59529e8fb34/cr-custom-mobile.png",
-              "snowFooterDesktop": "https://assets.decocache.com/fossil/92902b5c-2105-4f1f-9ae6-1628f8600289/cr-snow-footer.png",
-              "snowFooterMobile": "https://assets.decocache.com/fossil/79a069c3-5640-48be-9461-bcba70fc2188/cr-snow-footer-mobile.png",
-              "snowFooterMobileWidth": 375,
-              "snowFooterMobileHeight": 92,
-              "snowFooterDesktopWidth": 1280,
-              "snowFooterDesktopHeight": 175,
-              "snowmanImage": "https://assets.decocache.com/fossil/06069609-69fa-4f09-b9c1-3b43ada6f367/cr-snowman-cup.png",
-              "snowmanWidth": 160,
-              "snowmanHeight": 173
+              "paddingBottom": 30
             }
           },
           {

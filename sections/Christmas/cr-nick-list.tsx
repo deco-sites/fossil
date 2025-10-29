@@ -99,7 +99,7 @@ function CRNickList({
   return (
     <div class="relative w-full bg-cr-bg-secondary">
       <div class="container mx-auto px-8 lg:px-16 py-8 lg:pt-20 lg:pb-28 relative z-10">
-        <div class="flex flex-col lg:flex-row justify-end items-center gap-5 lg:gap-10 xl:justify-start">
+        <div class="flex flex-col lg:flex-row justify-end items-center gap-5 lg:gap-10 xl:justify-center">
           <div class="relative">
             <div class="relative">
               {(mainImageDesktop || mainImageMobile) && (

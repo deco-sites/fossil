@@ -13,12 +13,20 @@ export interface ButtonProps {
 
   /** @ignore true */
   class?: string;
+
+  /** @ignore true */
+  onMouseEnter?: () => void;
+
+  /** @ignore true */
+  onMouseLeave?: () => void;
 }
 
 export default function Button({
   name,
   url = "#",
   class: className = "",
+  onMouseEnter,
+  onMouseLeave,
 }: ButtonProps) {
   const baseClasses =
     "inline-flex items-center justify-center py-3 px-4 font-soleil font-medium text-sm rounded-full tracking-wide transition-colors duration-200";
@@ -27,18 +35,8 @@ export default function Button({
     <a
       href={url}
       class={`${baseClasses} leading-none text-xs bg-cr-primary text-primary hover:bg-cr-primary/90 cursor-pointer ${className}`}
-      onMouseEnter={() => {
-        const swiperContainer = document.querySelector(".swiper");
-        if (swiperContainer) {
-          swiperContainer.dispatchEvent(new Event("mouseenter"));
-        }
-      }}
-      onMouseLeave={() => {
-        const swiperContainer = document.querySelector(".swiper");
-        if (swiperContainer) {
-          swiperContainer.dispatchEvent(new Event("mouseleave"));
-        }
-      }}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
     >
       {name}
     </a>

@@ -46,13 +46,13 @@ function getContentClassName(useGoldBorder: boolean): string {
 
 function getTitleClassName(useGoldBorder: boolean): string {
   return useGoldBorder
-    ? "text-3xl font-soleil font-bold sm:text-4xl md:text-5xl [text-shadow:_2px_2px_10px_rgba(0,0,0,0.8)]"
-    : "text-3xl font-sacker font-bold sm:text-4xl md:text-5xl";
+    ? "text-5xl font-benton italic font-bold md:text-6xl [text-shadow:_2px_2px_10px_rgba(0,0,0,0.8)]"
+    : "text-5xl font-benton italic font-bold md:text-6xl";
 }
 
 function getDescriptionClassName(useGoldBorder: boolean): string {
   return useGoldBorder
-    ? "max-w-2xl text-xs font-soleil md:text-sm [text-shadow:_1px_1px_10px_rgba(0,0,0,0.7)]"
+    ? "max-w-2xl text-sm font-soleil md:text-base [text-shadow:_1px_1px_10px_rgba(0,0,0,0.7)]"
     : "max-w-2xl text-sm font-soleil sm:text-base md:text-lg";
 }
 
@@ -77,7 +77,7 @@ export default function HeroCarousel({
   const generatedId = useId();
   const clipPathId = useMemo(
     () => `goldFrameClip-${generatedId.replaceAll(":", "")}`,
-    [generatedId],
+    [generatedId]
   );
   const clipPathUrl = `url(#${clipPathId})`;
 
@@ -139,6 +139,7 @@ export default function HeroCarousel({
               className={getContentClassName(useGoldBorder)}
               titleClassName={getTitleClassName(useGoldBorder)}
               descriptionClassName={getDescriptionClassName(useGoldBorder)}
+              swiperInstance={swiperInstance}
             />
           </div>
         );

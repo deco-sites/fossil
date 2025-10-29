@@ -54,6 +54,12 @@ export interface Props {
   dividerImageHeight?: number;
 
   /**
+   * @title Preenchimento Inferior
+   * @description Preenchimento interno abaixo da seção (em pixels)
+   */
+  paddingBottom?: number;
+
+  /**
    * @ignore true
    */
   device?: "mobile" | "tablet" | "desktop";
@@ -68,6 +74,7 @@ function CRWatchGuide({
   dividerImage,
   dividerImageWidth = 1280,
   dividerImageHeight = 100,
+  paddingBottom,
   device,
 }: ReturnType<Awaited<typeof loader>>) {
   const isDesktop = device === "desktop";
@@ -76,7 +83,12 @@ function CRWatchGuide({
   if (!cards || cards.length === 0) return null;
 
   return (
-    <div class="relative w-full">
+    <div
+      class="relative w-full"
+      style={{
+        paddingBottom: paddingBottom ? `${paddingBottom}px` : undefined,
+      }}
+    >
       {isDesktop && dividerImage && (
         <div class="hidden lg:block absolute top-0 left-0 right-0 z-10 -translate-y-1/2">
           <Image
@@ -92,7 +104,7 @@ function CRWatchGuide({
       <div
         class={clx(
           "container mx-auto px-5 lg:px-16",
-          dividerImage && "pt-8 lg:pt-20",
+          dividerImage && "pt-8 lg:pt-20"
         )}
       >
         <div class="w-fit mx-auto flex flex-col items-center relative lg:mb-8">
