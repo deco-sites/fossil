@@ -1,4 +1,4 @@
-import { useEffect, useId, useMemo, useRef } from "preact/hooks";
+import { useId, useMemo } from "preact/hooks";
 import type { ProductItem } from "../../sections/NickJonas/nj-lp-collection.tsx";
 import type { SwiperOptions } from "../../sdk/useSwiperCarousel.ts";
 import { useSwiperCarousel } from "../../sdk/useSwiperCarousel.ts";
@@ -41,7 +41,7 @@ const useSwiperConfig = (
     const minItemsForLoop = Math.ceil(baseSlidesPerView * 3);
     const hasEnoughItemsForLoop = products.length >= minItemsForLoop;
 
-    return {
+    const config = {
       // Core mobile-first settings optimized for infinite loop
       slidesPerView: 1.2,
       centeredSlides: hasEnoughItemsForLoop,
@@ -111,37 +111,23 @@ const useSwiperConfig = (
         },
       },
     };
+
+    // `loopFillGroupWithBlank` is supported by Swiper but missing in typings for v12.
+    return config as unknown as SwiperOptions;
   }, [products.length, settings]);
 };
 
 export default function NJLPCarousel({ products, settings }: Props) {
   const id = useId();
-  const carouselRef = useRef<HTMLDivElement>(null);
-  const { isSwiperReady, initSwiper } = useSwiperCarousel();
   const swiperOptions = useSwiperConfig(products, settings);
+  const { containerRef: carouselRef, isReady: isSwiperReady } =
+    useSwiperCarousel({
+      enabled: products.length > 0,
+      options: swiperOptions,
+      deps: [products.length],
+    });
 
   const fallbackSlideWidth = useMemo(() => `${100 / 1.2}%`, []);
-
-  // Initialize swiper
-  useEffect(() => {
-    if (!isSwiperReady || !carouselRef.current) return;
-
-    try {
-      const instance = initSwiper(carouselRef.current, swiperOptions);
-      if (instance) {
-        // Cleanup on unmount
-        return () => {
-          try {
-            instance.destroy();
-          } catch (error) {
-            console.warn("Error cleaning up Swiper:", error);
-          }
-        };
-      }
-    } catch (error) {
-      console.error("Failed to initialize Swiper:", error);
-    }
-  }, [isSwiperReady, swiperOptions, initSwiper]);
 
   if (!products.length) {
     return (

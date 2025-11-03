@@ -7,14 +7,21 @@ const PAGE_QUERY_PARAM = "page";
 
 const useSort = () =>
   useMemo(() => {
+    if (!globalThis.window?.location) {
+      return "";
+    }
     const urlSearchParams = new URLSearchParams(
-      globalThis.window.location?.search,
+      globalThis.window.location.search,
     );
     return urlSearchParams.get(SORT_QUERY_PARAM) ?? "";
   }, []);
 
 // TODO: Replace with "search utils"
 const applySort = (e: JSX.TargetedEvent<HTMLSelectElement, Event>) => {
+  if (!globalThis.window?.location) {
+    return;
+  }
+
   const urlSearchParams = new URLSearchParams(
     globalThis.window.location.search,
   );

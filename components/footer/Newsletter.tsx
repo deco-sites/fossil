@@ -4,6 +4,14 @@ import { useSignal } from "@preact/signals";
 import type { JSX } from "preact";
 import Icon from "../ui/Icon.tsx";
 
+declare global {
+  interface Window {
+    insider_object?: {
+      user?: Record<string, unknown>;
+    };
+  }
+}
+
 export interface Form {
   placeholder?: string;
   buttonText?: string;
@@ -31,24 +39,20 @@ const add_email_optin_inside_user_object = (
 ) => {
   let user_formatted = { email_optin };
 
-  // deno-lint-ignore ban-ts-comment
-  // @ts-ignore
   globalThis.window.insider_object =
-    JSON.parse(sessionStorage.getItem("user_object")) ||
+    JSON.parse(sessionStorage.getItem("user_object") || "{}") ||
     globalThis.window.insider_object || { user: user_formatted };
 
   if (email) {
     user_formatted = Object.assign(user_formatted, { email });
   }
 
-  // deno-lint-ignore ban-ts-comment
-  // @ts-ignore
-  globalThis.window.insider_object.user = {
-    ...globalThis.window.insider_object.user,
-    ...user_formatted,
-  };
-  // deno-lint-ignore ban-ts-comment
-  // @ts-ignore
+  if (globalThis.window.insider_object) {
+    globalThis.window.insider_object.user = {
+      ...globalThis.window.insider_object.user,
+      ...user_formatted,
+    };
+  }
   sessionStorage.setItem(
     "user_object",
     JSON.stringify(globalThis.window.insider_object),
