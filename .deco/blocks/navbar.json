@@ -32,7 +32,8 @@
             {
               "@type": "SiteNavigationElement",
               "name": "Anadigi",
-              "url": "/relogio/masculino/anadigi?sort=release%3Adesc"
+              "url": "/relogio/masculino/anadigi?sort=release%3Adesc",
+              "image": null
             },
             {
               "@type": "SiteNavigationElement",
@@ -352,8 +353,8 @@
     {
       "children": [],
       "image": [],
-      "name": "Off",
-      "url": "/off"
+      "name": "Black Friday",
+      "url": "/black-friday"
     }
   ],
   "__resolveType": "commerce/loaders/navbar.ts"
