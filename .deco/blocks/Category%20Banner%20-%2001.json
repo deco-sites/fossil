@@ -74,15 +74,15 @@
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
                 "start": "2025-10-23T03:00:00.000Z",
-                "end": "2025-11-07T02:59:00.000Z"
+                "end": "2025-11-04T02:59:00.000Z"
               }
             },
             {
-              "value": "https://assets.decocache.com/fossil/2de1bf3c-6fe1-470a-8ace-fa74dfe8c498/fossil-DeSK-connect-livelo-(18).jpg",
+              "value": "https://assets.decocache.com/fossil/a9889ce3-e2d0-481c-a4c7-5151534b582e/fossil-DeSK-connect-livelo-(6).jpg",
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
-                "start": "2025-10-21T03:00:00.000Z",
-                "end": "2025-10-23T02:59:00.000Z"
+                "start": "2025-11-04T03:00:00.000Z",
+                "end": "2025-11-06T02:59:00.000Z"
               }
             }
           ]
@@ -95,15 +95,15 @@
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
                 "start": "2025-10-23T03:00:00.000Z",
-                "end": "2025-11-07T02:59:00.000Z"
+                "end": "2025-11-04T02:59:00.000Z"
               }
             },
             {
-              "value": "https://assets.decocache.com/fossil/97a65826-f4b7-4841-945c-434b876fd1d2/Principal-(4).jpg",
+              "value": "https://assets.decocache.com/fossil/1e8c6574-ba51-434e-8323-ab0c01d1d7c2/Principal.jpg",
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
-                "start": "2025-10-21T03:00:00.000Z",
-                "end": "2025-10-23T02:59:00.000Z"
+                "start": "2025-11-04T03:00:00.000Z",
+                "end": "2025-11-06T02:59:00.000Z"
               }
             }
           ]
