@@ -18,12 +18,12 @@
               "__resolveType": "commerce/loaders/product/extensions/listingPage.ts",
               "data": {
                 "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
-                "sort": "discount:desc",
+                "sort": "release:desc",
                 "fuzzy": "automatic",
                 "selectedFacets": [
                   {
                     "key": "productClusterIds",
-                    "value": "2503"
+                    "value": "2653"
                   }
                 ],
                 "count": 24
