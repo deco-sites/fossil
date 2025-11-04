@@ -79,32 +79,42 @@
             "snowFooterMobileHeight": 81
           },
           {
-            "__resolveType": "site/sections/Christmas/cr-collection.tsx",
-            "title": "Descontos Black Friday",
-            "products": {
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-              "props": {
-                "sort": "release:desc",
-                "collection": "2653",
-                "count": 16,
-                "hideUnavailableItems": false
-              }
-            },
-            "iconTextList": [
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
               {
-                "image": "https://assets.decocache.com/fossil/a15c5a2b-125a-401a-93f0-5968a78aba86/cr-tin-icon.png",
-                "alt": "Ícone de lata especial para relógios Fossil",
-                "text": "Latas Exclusivas para Relógios"
-              },
-              {
-                "image": "https://assets.decocache.com/fossil/85b80409-efe0-43ed-ae51-8dd4d3a336ab/cr-gift-card-icon.png",
-                "alt": "Ícone de cartão-presente Fossil",
-                "text": "Presenteie com um Cartão-Presente"
-              },
-              {
-                "image": "https://assets.decocache.com/fossil/a9c1ab8f-d446-43cc-92e0-0f13e0422202/cr-phone-icon.png",
-                "alt": "Ícone de smartphone simbolizando mais formas de pagamento",
-                "text": "Mais Formas de Pagar"
+                "value": {
+                  "__resolveType": "site/sections/Christmas/cr-collection.tsx",
+                  "title": "Descontos Black Friday",
+                  "products": {
+                    "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+                    "props": {
+                      "sort": "release:desc",
+                      "collection": "2653",
+                      "count": 16,
+                      "hideUnavailableItems": false
+                    }
+                  },
+                  "iconTextList": [
+                    {
+                      "image": "https://assets.decocache.com/fossil/a15c5a2b-125a-401a-93f0-5968a78aba86/cr-tin-icon.png",
+                      "alt": "Ícone de lata especial para relógios Fossil",
+                      "text": "Latas Exclusivas para Relógios"
+                    },
+                    {
+                      "image": "https://assets.decocache.com/fossil/85b80409-efe0-43ed-ae51-8dd4d3a336ab/cr-gift-card-icon.png",
+                      "alt": "Ícone de cartão-presente Fossil",
+                      "text": "Presenteie com um Cartão-Presente"
+                    },
+                    {
+                      "image": "https://assets.decocache.com/fossil/a9c1ab8f-d446-43cc-92e0-0f13e0422202/cr-phone-icon.png",
+                      "alt": "Ícone de smartphone simbolizando mais formas de pagamento",
+                      "text": "Mais Formas de Pagar"
+                    }
+                  ]
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/never.ts"
+                }
               }
             ]
           },
