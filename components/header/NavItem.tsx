@@ -17,7 +17,11 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
       <a href={url} class="py-6 is-menu--link">
         <span
           class={`${
-            name?.toLowerCase() === "off" ? "text-[#FF1010]" : "text-black"
+            name?.toLowerCase() === "off"
+              ? "text-[#FF1010]"
+              : name?.toLowerCase() === "black friday"
+              ? "text-[#C41C17]"
+              : "text-black"
           } uppercase text-sm font-medium is-menu--text`}
         >
           {name}
@@ -86,7 +90,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
                         height={236}
                         loading="lazy"
                       />
-                    ),
+                    )
                 )}
             </div>
           </div>
