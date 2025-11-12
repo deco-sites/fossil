@@ -8398,6 +8398,10 @@ details.collapse summary::-webkit-details-marker {
 .tracking-widest {
   letter-spacing: 0.1em;
 }
+.\!text-\[\#C41C17\] {
+  --tw-text-opacity: 1 !important;
+  color: rgb(196 28 23 / var(--tw-text-opacity)) !important;
+}
 .\!text-\[\#FF1010\] {
   --tw-text-opacity: 1 !important;
   color: rgb(255 16 16 / var(--tw-text-opacity)) !important;
@@ -8495,6 +8499,10 @@ details.collapse summary::-webkit-details-marker {
 .text-\[\#9e9e9e\] {
   --tw-text-opacity: 1;
   color: rgb(158 158 158 / var(--tw-text-opacity));
+}
+.text-\[\#C41C17\] {
+  --tw-text-opacity: 1;
+  color: rgb(196 28 23 / var(--tw-text-opacity));
 }
 .text-\[\#C4C4C4\] {
   --tw-text-opacity: 1;
