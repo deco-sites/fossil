@@ -139,7 +139,7 @@
               }
             },
             {
-              "value": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/53fc51b2-f84b-438d-8690-83a788f4367a/2023_FOSSIL-LOGO_white.png",
+              "value": "https://assets.decocache.com/fossil/240eaac5-6c7f-4b2f-9a1e-772845e3cf18/fossil-logo-site.svg",
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
                 "start": "2025-06-13T15:00:00.000Z",
