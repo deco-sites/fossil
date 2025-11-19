@@ -1,5 +1,7 @@
 import { PageInfo, Product } from "apps/commerce/types.ts";
-import ProductCard from "../../components/product/ProductCard.tsx";
+import ProductCard, {
+  DiscountLayout,
+} from "../../components/product/ProductCard.tsx";
 import { Format } from "../../components/search/SearchResult.tsx";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
@@ -24,6 +26,7 @@ export interface Props {
     columns?: Columns;
     format?: Format;
     banners?: Banner[];
+    discountLayout?: DiscountLayout;
   };
 }
 
@@ -39,9 +42,13 @@ const DESKTOP_COLUMNS = {
   5: "sm:grid-cols-5",
 };
 
-function ProductGallery(
-  { products, layout, offset, device, pageInfo }: Props & { device?: string },
-) {
+function ProductGallery({
+  products,
+  layout,
+  offset,
+  device,
+  pageInfo,
+}: Props & { device?: string }) {
   const platform = usePlatform();
   const mobile = MOBILE_COLUMNS[layout?.columns?.mobile ?? 2];
   const desktop = DESKTOP_COLUMNS[layout?.columns?.desktop ?? 4];
@@ -53,12 +60,10 @@ function ProductGallery(
   let i = 6;
 
   return (
-    <div
-      class={`grid ${mobile} gap-2 items-center pt-6 ${desktop} sm:gap-10`}
-    >
+    <div class={`grid ${mobile} gap-2 items-center pt-6 ${desktop} sm:gap-10`}>
       {products?.map((product, index) => {
-        const shouldRenderBanner = remainingBanners.length > 0 &&
-          (index + 1) % i === 0;
+        const shouldRenderBanner =
+          remainingBanners.length > 0 && (index + 1) % i === 0;
         let showBanner = null;
 
         if (shouldRenderBanner) {
@@ -69,34 +74,33 @@ function ProductGallery(
 
         return (
           <>
-            {showBanner && isFirstPage
-              ? (
-                <div class="card cursor-pointer h-full w-full card-compact group lg:border-2 rounded-none border-transparent lg:hover:border-black  lg:p-2">
-                  <a
-                    href={showBanner.url}
-                    class="flex flex-col h-full w-full  group/product lg:p-4"
-                  >
-                    <Image
-                      src={showBanner.img}
-                      width={271}
-                      height={389}
-                      alt={showBanner.alt}
-                      fetchPriority="auto"
-                      class=" w-full h-full object-cover"
-                    />
-                  </a>
-                </div>
-              )
-              : (
-                <ProductCard
-                  key={`product-card-${product.productID}`}
-                  product={product}
-                  preload={index === 0}
-                  index={offset + index}
-                  platform={platform}
-                  device={device}
-                />
-              )}
+            {showBanner && isFirstPage ? (
+              <div class="card cursor-pointer h-full w-full card-compact group lg:border-2 rounded-none border-transparent lg:hover:border-black  lg:p-2">
+                <a
+                  href={showBanner.url}
+                  class="flex flex-col h-full w-full  group/product lg:p-4"
+                >
+                  <Image
+                    src={showBanner.img}
+                    width={271}
+                    height={389}
+                    alt={showBanner.alt}
+                    fetchPriority="auto"
+                    class=" w-full h-full object-cover"
+                  />
+                </a>
+              </div>
+            ) : (
+              <ProductCard
+                key={`product-card-${product.productID}`}
+                product={product}
+                preload={index === 0}
+                index={offset + index}
+                platform={platform}
+                device={device}
+                discountLayout={layout?.discountLayout}
+              />
+            )}
           </>
         );
       })}

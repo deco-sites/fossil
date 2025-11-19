@@ -9,5 +9,9 @@
   },
   "sizeChartLink": {
     "url": "https://www.technos.com.br/api/dataentities/MI/documents/405a6e7f-cce7-11ed-83ab-02f9c48fe6b5/file/attachments/GuiaDeMedidasTechnos.pdf"
+  },
+  "discountLayout": {
+    "type": "percentage",
+    "showBadge": true
   }
 }
