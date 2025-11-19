@@ -15,25 +15,35 @@
       "__resolveType": "site/sections/Content/Reviews.tsx"
     },
     {
-      "__resolveType": "site/sections/Product/ProductShelf.tsx",
-      "products": {
-        "slug": {
-          "param": "slug",
-          "__resolveType": "website/functions/requestToParam.ts"
-        },
-        "crossSelling": "whosawalsosaw",
-        "__resolveType": "vtex/loaders/legacy/relatedProductsLoader.ts"
-      },
-      "layout": {
-        "numberOfSliders": {
-          "mobile": 2,
-          "desktop": 4
-        },
-        "headerAlignment": "center",
-        "showArrows": true,
-        "headerStyle": "variante2"
-      },
-      "title": "QUEM VIU, VIU TAMBÉM"
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Product/ProductShelf.tsx",
+            "products": {
+              "slug": {
+                "param": "slug",
+                "__resolveType": "website/functions/requestToParam.ts"
+              },
+              "crossSelling": "whosawalsosaw",
+              "__resolveType": "vtex/loaders/legacy/relatedProductsLoader.ts"
+            },
+            "layout": {
+              "numberOfSliders": {
+                "mobile": 2,
+                "desktop": 4
+              },
+              "headerAlignment": "center",
+              "showArrows": true,
+              "headerStyle": "variante2"
+            },
+            "title": "QUEM VIU, VIU TAMBÉM"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
+        }
+      ]
     },
     {
       "__resolveType": "Footer - 04"
