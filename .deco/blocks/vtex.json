@@ -18,5 +18,6 @@
   },
   "salesChannel": "15",
   "usePortalSitemap": false,
-  "publicUrl": "secure.fossil.com.br"
+  "publicUrl": "secure.fossil.com.br",
+  "setRefreshToken": false
 }
