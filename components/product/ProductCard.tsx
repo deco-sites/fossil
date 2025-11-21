@@ -145,7 +145,7 @@ function ProductCard({
             {/* Discount % */}
             {has_discount && showBadge && (
               <div class="text-sm">
-                <span class=" h-6 w-6 text-sm lg:w-10 lg:h-10 flex absolute top-[33%] right-0  font-scoutCond z-50 items-center justify-center text-center lg:text-2xl font-medium bg-[#d20d17] text-white rounded-[100px]">
+                <span class=" h-6 w-6 text-sm lg:w-10 lg:h-10 flex absolute top-[33%] right-0  font-scoutCond z-50 items-center justify-center text-center lg:text-[1.3rem] font-medium bg-[#d20d17] text-white rounded-[100px]">
                   {type === "percentage" && discountPercentage > 0
                     ? `${discountPercentage}%`
                     : customText || "OFF"}

@@ -12358,6 +12358,10 @@ details.collapse summary::-webkit-details-marker {
     line-height: 1;
   }
 
+  .lg\:text-\[1\.3rem\] {
+    font-size: 1.3rem;
+  }
+
   .lg\:text-\[13px\] {
     font-size: 13px;
   }
