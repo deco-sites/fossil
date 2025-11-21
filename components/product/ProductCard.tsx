@@ -264,7 +264,6 @@ function ProductCard({
         <div class="flex flex-col">
           <h2
             class="text-xs md:text-sm uppercase  font-normal lg:leading-4  h-auto xs:h-12 lg:h-auto text-primary-content tracking-one"
-            // deno-lint-ignore react-no-danger
             dangerouslySetInnerHTML={{ __html: productName ?? "" }}
           />
         </div>
