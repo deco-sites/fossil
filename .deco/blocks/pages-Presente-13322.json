@@ -1,313 +1,554 @@
 {
-  "name": "Presente",
+  "name": "Presentes",
   "path": "/presentes",
-  "sections": [
-    {
-      "__resolveType": "Header - 01"
-    },
-    {
-      "__resolveType": "site/sections/Hotsites/PresenteBanner.tsx",
-      "banner": {
-        "imageDesktop": "https://assets.decocache.com/fossil/ab7fc212-dadc-47ed-996f-7d4350fe58eb/fossil_banner_presente_header_desktop.png",
-        "imageMobile": "https://assets.decocache.com/fossil/8c51a069-5c19-4f20-9e06-02c81b703cd0/fossil_banner_presente_header_mobile-(1).png"
-      },
-      "cta": {},
-      "logo": {
-        "0": "h",
-        "1": "t",
-        "2": "t",
-        "3": "p",
-        "4": "s",
-        "5": ":",
-        "6": "/",
-        "7": "/",
-        "8": "o",
-        "9": "z",
-        "10": "k",
-        "11": "s",
-        "12": "g",
-        "13": "d",
-        "14": "m",
-        "15": "y",
-        "16": "r",
-        "17": "q",
-        "18": "c",
-        "19": "x",
-        "20": "c",
-        "21": "w",
-        "22": "h",
-        "23": "n",
-        "24": "b",
-        "25": "e",
-        "26": "p",
-        "27": "g",
-        "28": ".",
-        "29": "s",
-        "30": "u",
-        "31": "p",
-        "32": "a",
-        "33": "b",
-        "34": "a",
-        "35": "s",
-        "36": "e",
-        "37": ".",
-        "38": "c",
-        "39": "o",
-        "40": "/",
-        "41": "s",
-        "42": "t",
-        "43": "o",
-        "44": "r",
-        "45": "a",
-        "46": "g",
-        "47": "e",
-        "48": "/",
-        "49": "v",
-        "50": "1",
-        "51": "/",
-        "52": "o",
-        "53": "b",
-        "54": "j",
-        "55": "e",
-        "56": "c",
-        "57": "t",
-        "58": "/",
-        "59": "p",
-        "60": "u",
-        "61": "b",
-        "62": "l",
-        "63": "i",
-        "64": "c",
-        "65": "/",
-        "66": "a",
-        "67": "s",
-        "68": "s",
-        "69": "e",
-        "70": "t",
-        "71": "s",
-        "72": "/",
-        "73": "7",
-        "74": "4",
-        "75": "2",
-        "76": "4",
-        "77": "/",
-        "78": "e",
-        "79": "e",
-        "80": "3",
-        "81": "a",
-        "82": "9",
-        "83": "4",
-        "84": "b",
-        "85": "8",
-        "86": "-",
-        "87": "1",
-        "88": "e",
-        "89": "2",
-        "90": "f",
-        "91": "-",
-        "92": "4",
-        "93": "b",
-        "94": "8",
-        "95": "8",
-        "96": "-",
-        "97": "9",
-        "98": "a",
-        "99": "1",
-        "100": "1",
-        "101": "-",
-        "102": "a",
-        "103": "0",
-        "104": "2",
-        "105": "e",
-        "106": "8",
-        "107": "3",
-        "108": "2",
-        "109": "7",
-        "110": "3",
-        "111": "a",
-        "112": "1",
-        "113": "0",
-        "desktop": {
-          "__resolveType": "website/flags/multivariate/image.ts",
-          "variants": [
-            {
-              "value": "https://assets.decocache.com/fossil/240eaac5-6c7f-4b2f-9a1e-772845e3cf18/fossil-logo-site.svg",
-              "rule": {
-                "__resolveType": "website/matchers/date.ts",
-                "start": "2025-06-13T15:00:00.000Z",
-                "end": "2025-12-31T15:00:00.000Z"
-              }
-            },
-            {
-              "value": "https://assets.decocache.com/fossil/240eaac5-6c7f-4b2f-9a1e-772845e3cf18/fossil-logo-site.svg",
-              "rule": {
-                "__resolveType": "website/matchers/date.ts",
-                "start": "2025-06-13T15:00:00.000Z",
-                "end": "2025-12-31T15:00:00.000Z"
-              }
-            }
-          ]
-        },
-        "mobile": "https://assets.decocache.com/fossil/240eaac5-6c7f-4b2f-9a1e-772845e3cf18/fossil-logo-site.svg"
-      }
-    },
-    {
-      "__resolveType": "site/sections/Hotsites/PresenteInfoCard.tsx",
-      "cards": [
-        {
-          "title": "BESTSELLING RAQUEL",
-          "description": "Encontre modelos femininos para presentear quem ama.",
-          "image": "https://assets.decocache.com/fossil/12a0b6b0-7d20-4262-9afc-a9b7e4bb8b25/fossil_presente_desktop_secao.png",
-          "url": "/relogio/feminino?sort=release%3Adesc",
-          "label": "PRESENTES PARA ELA"
-        },
-        {
-          "title": "SPORT TOURER",
-          "description": "Encontre o modelo perfeito para marcar momentos com quem sempre esteve ao seu lado.",
-          "image": "https://assets.decocache.com/fossil/a1b97a1e-43ac-4ea1-8c4c-c72cb258bd44/LPpresentes_bannersecundario_desk_pais1.jpg",
-          "url": "/relogio/masculino?sort=release%3Adesc",
-          "label": "PRESENTES PARA ELE"
-        }
-      ]
-    },
-    {
-      "__resolveType": "site/sections/Hotsites/PresenteShopByGender.tsx",
-      "title": "CARTEIRAS EM COURO",
-      "image": "https://assets.decocache.com/fossil/ca515711-6407-4076-a191-931824f24ce4/LPpresentes_bannerterciario_desk.jpg",
-      "links": [
-        {
-          "label": "Presentear",
-          "url": "/s?q=carteira+couro&utmi_pc=search&utmi_cp=carteira+couro&sort=release%3Adesc"
-        }
-      ],
-      "description": "Para presentear quem você ama."
-    },
-    {
-      "__resolveType": "site/sections/Hotsites/PresenteActionBanner.tsx",
-      "banner": {
-        "desktop": "https://assets.decocache.com/fossil/9034c3b7-7a19-421a-b252-2e40c0cefd2b/LPpresentes_bannerbolsas_desk_pais-(2).jpg",
-        "mobile": "https://assets.decocache.com/fossil/6c6a4c18-fea2-47f9-9270-5089f229c491/LPpresentes_bannerbolsas_mob_pais-(2).jpg"
-      },
-      "action": {
-        "cta": {
-          "label": "Comprar",
-          "url": "/s?q=mochila+masculina&utmi_pc=search&utmi_cp=mochila+masculina&sort=release%3Adesc"
-        },
-        "logo": {},
-        "title": "MOCHILAS EM COURO ",
-        "description": "Design clássico, couro legítimo e praticidade no dia a dia."
-      }
-    },
-    {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/Product/ProductShelf.tsx",
-            "products": {
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-              "props": {
-                "count": 14,
-                "sort": "release:desc",
-                "collection": "2416"
-              }
-            },
-            "title": "LANÇAMENTOS",
-            "layout": {
-              "numberOfSliders": {
-                "mobile": 2,
-                "desktop": 4
+  "sections": {
+    "__resolveType": "website/flags/multivariate.ts",
+    "variants": [
+      {
+        "value": [
+          {
+            "__resolveType": "Header - 01"
+          },
+          {
+            "__resolveType": "cr-background"
+          },
+          {
+            "__resolveType": "site/sections/Christmas/cr-hero.tsx",
+            "titleText": "Fossil",
+            "snowFooterDesktop": "https://assets.decocache.com/fossil/92902b5c-2105-4f1f-9ae6-1628f8600289/cr-snow-footer.png",
+            "snowFooterMobile": "https://assets.decocache.com/fossil/79a069c3-5640-48be-9461-bcba70fc2188/cr-snow-footer-mobile.png",
+            "snowFooterDesktopWidth": 1280,
+            "snowFooterDesktopHeight": 175,
+            "snowFooterMobileWidth": 375,
+            "snowFooterMobileHeight": 81,
+            "content": {
+              "cta": {
+                "label": "Ver mais",
+                "href": "#"
               },
-              "headerAlignment": "left",
-              "headerfontSize": "Small",
-              "showArrows": true
+              "type": "video",
+              "desktop": "https://assets.decocache.com/fossil/e44a8cc7-f2db-45c1-a872-92c283cf0f4b/LivingRoom_web3.mp4",
+              "autoplay": true,
+              "loop": true,
+              "muted": true,
+              "title": "O Guia de Presentes",
+              "videoZoom": 1.01
             }
           },
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
+          {
+            "__resolveType": "site/sections/Christmas/cr-gifts-by-price.tsx",
+            "cards": [
+              {
+                "label": "Masculinos com até",
+                "value": "40% OFF",
+                "url": "/2672?PS=12&map=productClusterIds&sort=discount%3Adesc"
+              },
+              {
+                "label": "Femininos com até",
+                "value": "40% OFF",
+                "url": "/2671?PS=12&map=productClusterIds&sort=discount%3Adesc"
+              },
+              {
+                "label": "Carteiras e bolsas com até",
+                "value": "30% OFF",
+                "url": "/2673?PS=12&map=productClusterIds&sort=discount%3Adesc"
+              },
+              {
+                "label": "Relógio Anel com",
+                "value": "20% OFF",
+                "url": "/2676?PS=12&map=productClusterIds&sort=discount%3Adesc"
+              }
+            ],
+            "backgroundColor": "branco",
+            "text": "Uma gravação divertida. A cor favorita (dica: é verde). Aquele detalhe que eles queriam, mas não esperavam. Para todas as trocas de presentes deste fim de ano, abra um Fossil e deixe os melhores momentos acontecerem.",
+            "paddingTop": 0
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Christmas/cr-nick-list.tsx",
+              "title": "Os clássicos da Fossil<br />a partir de R$ 799",
+              "mainImageDesktop": "https://assets.decocache.com/fossil/e8edc611-26c5-4865-9ee7-fa974a910f47/fossil-banner-secundario-desktop-(2).png",
+              "mainImageMobile": "https://assets.decocache.com/fossil/d12cce80-6efd-4576-9c04-a345772d7903/fossil-banner-secundario--mobile-(2).png",
+              "stars": {
+                "image": "https://assets.decocache.com/fossil/4fbb02f8-2749-4e14-ad48-a5813d7a2a0a/cr-double-stars.png",
+                "width": 70,
+                "height": 70
+              },
+              "description": "Designs atemporais com preços especiais",
+              "button": {
+                "name": "Compre Agora",
+                "url": "/2675?PS=12&map=productClusterIds&sort=discount%3Adesc"
+              },
+              "mainImageDesktopWidth": 574,
+              "mainImageDesktopHeight": 448,
+              "mainImageMobileWidth": 312,
+              "mainImageMobileHeight": 319,
+              "backgroundColor": "branco"
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Christmas/cr-gift-guide.tsx",
+              "mainImageDesktop": "https://assets.decocache.com/fossil/32a2ecb1-7918-409d-b263-203ded01c1fe/cr-gift-guide.png",
+              "mainImageMobile": "https://assets.decocache.com/fossil/32a2ecb1-7918-409d-b263-203ded01c1fe/cr-gift-guide.png",
+              "backgroundPattern": "https://assets.decocache.com/fossil/f19eb450-6498-4aba-9bde-5d0763fdad5f/cr-pattern.png",
+              "subtitle": "TOP 10 PRESENTES PARA ELE",
+              "title": "Aquele olhar de quem ganhou<br/>exatamente o que queria.",
+              "buttonText": "Guia de Presentes Para Ele",
+              "buttonLink": "#",
+              "stars": {
+                "image": "https://assets.decocache.com/fossil/797a23ae-f770-443e-95ce-77fc6d423adb/HO25_stars_paired_wide.png",
+                "width": 50,
+                "height": 50
+              },
+              "cards": [
+                {
+                  "imageDesktop": "https://assets.decocache.com/fossil/cf38e5f0-0158-4736-b62b-ea9d520b4940/cr-gifts-guide-card-1-1-desk.png",
+                  "imageMobile": "https://assets.decocache.com/fossil/7b7635a1-2ad9-4b72-aa40-b76a659a85c5/cr-gifts-guide-card-1-1-mob.png",
+                  "text": "Comprar Relógios",
+                  "link": "#1"
+                },
+                {
+                  "imageDesktop": "https://assets.decocache.com/fossil/762f8551-6fa1-46c4-ae46-e306e4c76af3/cr-gifts-guide-card-1-2-desk.png",
+                  "imageMobile": "https://assets.decocache.com/fossil/24467d8a-fd9b-44f0-b0b4-73b17dab5cf4/cr-gifts-guide-card-1-2-mob.png",
+                  "text": "Comprar Carteiras",
+                  "link": "#2"
+                },
+                {
+                  "imageDesktop": "https://assets.decocache.com/fossil/0cef806e-dfe7-48c6-b38b-884e62d930f8/cr-gifts-guide-card-1-3-desk.png",
+                  "imageMobile": "https://assets.decocache.com/fossil/3b5856db-0d4d-4b77-9ffd-645b30a27d5b/cr-gifts-guide-card-1-3-mob.png",
+                  "text": "Comprar Joias",
+                  "link": "#3"
+                },
+                {
+                  "imageDesktop": "https://assets.decocache.com/fossil/8e9919e8-94d5-4e0e-8d33-e4e7a1883797/cr-gifts-guide-card-1-4-desk.png",
+                  "imageMobile": "https://assets.decocache.com/fossil/1d04ade2-fc75-463f-a03b-9e2c2119e84b/cr-gifts-guide-card-1-4-mob.png",
+                  "text": "Comprar Acessórios",
+                  "link": "#4"
+                }
+              ],
+              "paddingBottomMobile": false
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Christmas/cr-hero-media.tsx",
+              "subtitle": "PODE DAR UMA ESPIADINHA",
+              "title": "Com presentes assim,<br />quem consegue resistir?",
+              "media": {
+                "desktop": "https://assets.decocache.com/fossil/e44a8cc7-f2db-45c1-a872-92c283cf0f4b/LivingRoom_web3.mp4",
+                "autoplay": true,
+                "loop": true,
+                "muted": true
+              },
+              "bottomDivider": "https://assets.decocache.com/fossil/7dfe563a-3edf-44de-b405-75ef3432c019/cr-divider-lp.png"
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Christmas/cr-gift-guide.tsx",
+              "subtitle": "TOP 25 PRESENTES PARA ELA",
+              "title": "Muito brilho? Ela diz que<br />brilho nunca é demais.",
+              "mainImageDesktop": "https://assets.decocache.com/fossil/0fd50ec1-1eca-4855-b93c-fcd2b8fcf3e0/cr-gift-guide-2.png",
+              "mainImageMobile": "https://assets.decocache.com/fossil/0fd50ec1-1eca-4855-b93c-fcd2b8fcf3e0/cr-gift-guide-2.png",
+              "backgroundPattern": "https://assets.decocache.com/fossil/f19eb450-6498-4aba-9bde-5d0763fdad5f/cr-pattern.png",
+              "buttonText": "Guia de Presentes Para Ela",
+              "buttonLink": "#",
+              "stars": {
+                "image": "https://assets.decocache.com/fossil/797a23ae-f770-443e-95ce-77fc6d423adb/HO25_stars_paired_wide.png",
+                "width": 50,
+                "height": 50
+              },
+              "cards": [
+                {
+                  "imageDesktop": "https://assets.decocache.com/fossil/c714ecfd-e8f6-4e71-adcb-e684d95c25eb/cr-gifts-guide-card-2-1-desk.png",
+                  "imageMobile": "https://assets.decocache.com/fossil/4f2d67dc-151a-430f-af36-9fe79c9ae858/cr-gifts-guide-card-2-1-mob.png",
+                  "text": "Comprar Relógios",
+                  "link": "#1"
+                },
+                {
+                  "imageDesktop": "https://assets.decocache.com/fossil/664ec429-444d-4921-afad-81cc6a79b997/cr-gifts-guide-card-2-2-desk.png",
+                  "imageMobile": "https://assets.decocache.com/fossil/af248bcc-9225-4afb-89ba-07073e552b46/cr-gifts-guide-card-2-2-mob.png",
+                  "text": "Comprar Bolsas",
+                  "link": "#2"
+                },
+                {
+                  "imageDesktop": "https://assets.decocache.com/fossil/122e1287-4448-4ead-84a5-ebe254e08a8d/cr-gifts-guide-card-2-3-desk.png",
+                  "imageMobile": "https://assets.decocache.com/fossil/3593083c-0c8a-4752-a91d-5dd3dbcd4132/cr-gifts-guide-card-2-3-mob.png",
+                  "text": "Comprar Joias",
+                  "link": "#3"
+                },
+                {
+                  "imageDesktop": "https://assets.decocache.com/fossil/87322da3-f46a-494e-bcc8-4bb138c89cef/cr-gifts-guide-card-2-4-desk.png",
+                  "imageMobile": "https://assets.decocache.com/fossil/009cb648-0af9-4787-b307-74042c411fe2/cr-gifts-guide-card-2-4-mob.png",
+                  "text": "Comprar Carteiras",
+                  "link": "#4"
+                }
+              ],
+              "paddingBottomMobile": false
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Christmas/cr-hero-media.tsx",
+              "title": "Dance como quem tem memórias para criar<br />e presentes para dar.",
+              "media": {
+                "desktop": "https://assets.decocache.com/fossil/f61dc66e-bbf2-4553-8827-b39d0d7c7e67/Dancing_web.mp4",
+                "autoplay": true,
+                "loop": true,
+                "muted": true
+              },
+              "bottomDivider": "https://assets.decocache.com/fossil/7dfe563a-3edf-44de-b405-75ef3432c019/cr-divider-lp.png"
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Christmas/cr-custom.tsx",
+              "title": "Vibe de Natal",
+              "description": "Impecável de todos os ângulos. Personalização sempre gratuita e exclusiva — para quem se comportou bem (ou não)",
+              "button": {
+                "name": "Ver Opções Personalizáveis",
+                "url": "#"
+              },
+              "videoDesktop": "https://assets.decocache.com/fossil/ebf0d29c-791e-4d97-a1d9-9bbf519c2e32/cr-custom.mp4",
+              "videoMobile": "https://assets.decocache.com/fossil/ebf0d29c-791e-4d97-a1d9-9bbf519c2e32/cr-custom.mp4",
+              "posterImage": "https://assets.decocache.com/fossil/d31877b0-85cc-4d94-966b-019f03f40460/cr-custom.png"
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Footer - 01"
+            }
+          },
+          {
+            "__resolveType": "site/sections/Content/YourViewsIntegration.tsx"
           }
+        ],
+        "rule": {
+          "__resolveType": "Natal"
         }
-      ]
-    },
-    {
-      "__resolveType": "site/sections/Hotsites/PresenteWhatNews.tsx",
-      "title": "Para presentear quem você ama!",
-      "news": [
-        {
-          "image": "https://assets.decocache.com/fossil/dcdf16d7-af46-4537-ad91-c2dc4d2d99bc/LPpresentes_bannerdepartamento_desk_pais1.jpg",
-          "title": "Breaker Watch",
-          "subtitle": "Sofisticação e resistência em cada detalhe.",
-          "link": {
-            "label": "Comprar",
-            "url": "https://www.fossil.com.br/relogio/masculino?sort=release%3Adesc"
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "Header - 01"
           },
-          "label": "Relógio"
-        },
-        {
-          "image": "https://assets.decocache.com/fossil/c3c001c3-fb6f-4997-802c-4fb2c114efa0/LPpresentes_bannerdepartamento_desk_pais3.jpg",
-          "title": "Fossil Blue Dive Watch",
-          "subtitle": "Perfeito para qualquer ocasião.",
-          "link": {
-            "label": "Comprar",
-            "url": "/s?q=carteira%20masculina&utmi_pc=search&utmi_cp=carteira%20masculina"
+          {
+            "__resolveType": "site/sections/Hotsites/PresenteBanner.tsx",
+            "banner": {
+              "imageDesktop": "https://assets.decocache.com/fossil/ab7fc212-dadc-47ed-996f-7d4350fe58eb/fossil_banner_presente_header_desktop.png",
+              "imageMobile": "https://assets.decocache.com/fossil/8c51a069-5c19-4f20-9e06-02c81b703cd0/fossil_banner_presente_header_mobile-(1).png"
+            },
+            "cta": {},
+            "logo": {
+              "0": "h",
+              "1": "t",
+              "2": "t",
+              "3": "p",
+              "4": "s",
+              "5": ":",
+              "6": "/",
+              "7": "/",
+              "8": "o",
+              "9": "z",
+              "10": "k",
+              "11": "s",
+              "12": "g",
+              "13": "d",
+              "14": "m",
+              "15": "y",
+              "16": "r",
+              "17": "q",
+              "18": "c",
+              "19": "x",
+              "20": "c",
+              "21": "w",
+              "22": "h",
+              "23": "n",
+              "24": "b",
+              "25": "e",
+              "26": "p",
+              "27": "g",
+              "28": ".",
+              "29": "s",
+              "30": "u",
+              "31": "p",
+              "32": "a",
+              "33": "b",
+              "34": "a",
+              "35": "s",
+              "36": "e",
+              "37": ".",
+              "38": "c",
+              "39": "o",
+              "40": "/",
+              "41": "s",
+              "42": "t",
+              "43": "o",
+              "44": "r",
+              "45": "a",
+              "46": "g",
+              "47": "e",
+              "48": "/",
+              "49": "v",
+              "50": "1",
+              "51": "/",
+              "52": "o",
+              "53": "b",
+              "54": "j",
+              "55": "e",
+              "56": "c",
+              "57": "t",
+              "58": "/",
+              "59": "p",
+              "60": "u",
+              "61": "b",
+              "62": "l",
+              "63": "i",
+              "64": "c",
+              "65": "/",
+              "66": "a",
+              "67": "s",
+              "68": "s",
+              "69": "e",
+              "70": "t",
+              "71": "s",
+              "72": "/",
+              "73": "7",
+              "74": "4",
+              "75": "2",
+              "76": "4",
+              "77": "/",
+              "78": "e",
+              "79": "e",
+              "80": "3",
+              "81": "a",
+              "82": "9",
+              "83": "4",
+              "84": "b",
+              "85": "8",
+              "86": "-",
+              "87": "1",
+              "88": "e",
+              "89": "2",
+              "90": "f",
+              "91": "-",
+              "92": "4",
+              "93": "b",
+              "94": "8",
+              "95": "8",
+              "96": "-",
+              "97": "9",
+              "98": "a",
+              "99": "1",
+              "100": "1",
+              "101": "-",
+              "102": "a",
+              "103": "0",
+              "104": "2",
+              "105": "e",
+              "106": "8",
+              "107": "3",
+              "108": "2",
+              "109": "7",
+              "110": "3",
+              "111": "a",
+              "112": "1",
+              "113": "0",
+              "desktop": {
+                "__resolveType": "website/flags/multivariate/image.ts",
+                "variants": [
+                  {
+                    "value": "https://assets.decocache.com/fossil/240eaac5-6c7f-4b2f-9a1e-772845e3cf18/fossil-logo-site.svg",
+                    "rule": {
+                      "__resolveType": "website/matchers/date.ts",
+                      "start": "2025-06-13T15:00:00.000Z",
+                      "end": "2025-12-31T15:00:00.000Z"
+                    }
+                  },
+                  {
+                    "value": "https://assets.decocache.com/fossil/240eaac5-6c7f-4b2f-9a1e-772845e3cf18/fossil-logo-site.svg",
+                    "rule": {
+                      "__resolveType": "website/matchers/date.ts",
+                      "start": "2025-06-13T15:00:00.000Z",
+                      "end": "2025-12-31T15:00:00.000Z"
+                    }
+                  }
+                ]
+              },
+              "mobile": "https://assets.decocache.com/fossil/240eaac5-6c7f-4b2f-9a1e-772845e3cf18/fossil-logo-site.svg"
+            }
           },
-          "label": "Carteira"
-        },
-        {
-          "title": "Harwell Handbag",
-          "image": "https://assets.decocache.com/fossil/36d5f8b4-98c4-47a0-9b53-2de5597c7874/LPpresentes_bannerdepartamento_desk_pais2.jpg",
-          "subtitle": "Para encantar e marcar cada momento especial.",
-          "link": {
-            "label": "Comprar",
-            "url": "https://www.fossil.com.br/s?q=bolsa+em+couro&utmi_pc=search&utmi_cp=bolsa+em+couro&sort=release%3Adesc"
+          {
+            "__resolveType": "site/sections/Hotsites/PresenteInfoCard.tsx",
+            "cards": [
+              {
+                "title": "BESTSELLING RAQUEL",
+                "description": "Encontre modelos femininos para presentear quem ama.",
+                "image": "https://assets.decocache.com/fossil/12a0b6b0-7d20-4262-9afc-a9b7e4bb8b25/fossil_presente_desktop_secao.png",
+                "url": "/relogio/feminino?sort=release%3Adesc",
+                "label": "PRESENTES PARA ELA"
+              },
+              {
+                "title": "SPORT TOURER",
+                "description": "Encontre o modelo perfeito para marcar momentos com quem sempre esteve ao seu lado.",
+                "image": "https://assets.decocache.com/fossil/a1b97a1e-43ac-4ea1-8c4c-c72cb258bd44/LPpresentes_bannersecundario_desk_pais1.jpg",
+                "url": "/relogio/masculino?sort=release%3Adesc",
+                "label": "PRESENTES PARA ELE"
+              }
+            ]
           },
-          "label": "Bolsas em Couro"
-        },
-        {
-          "image": "https://assets.decocache.com/fossil/2511b93b-e512-4e9d-820d-b019a45ea529/LPpresentes_bannerdepartamento_desk_pais4.jpg",
-          "title": "Bold Chains",
-          "subtitle": "Para combinações e diferentes estilos.",
-          "link": {
-            "label": "Comprar",
-            "url": "/lancamentos?sort=release%3Adesc&filter.productClusterIds=2146&filter.genero=masculino"
+          {
+            "__resolveType": "site/sections/Hotsites/PresenteShopByGender.tsx",
+            "title": "CARTEIRAS EM COURO",
+            "image": "https://assets.decocache.com/fossil/ca515711-6407-4076-a191-931824f24ce4/LPpresentes_bannerterciario_desk.jpg",
+            "links": [
+              {
+                "label": "Presentear",
+                "url": "/s?q=carteira+couro&utmi_pc=search&utmi_cp=carteira+couro&sort=release%3Adesc"
+              }
+            ],
+            "description": "Para presentear quem você ama."
           },
-          "label": "Lançamentos"
+          {
+            "__resolveType": "site/sections/Hotsites/PresenteActionBanner.tsx",
+            "banner": {
+              "desktop": "https://assets.decocache.com/fossil/9034c3b7-7a19-421a-b252-2e40c0cefd2b/LPpresentes_bannerbolsas_desk_pais-(2).jpg",
+              "mobile": "https://assets.decocache.com/fossil/6c6a4c18-fea2-47f9-9270-5089f229c491/LPpresentes_bannerbolsas_mob_pais-(2).jpg"
+            },
+            "action": {
+              "cta": {
+                "label": "Comprar",
+                "url": "/s?q=mochila+masculina&utmi_pc=search&utmi_cp=mochila+masculina&sort=release%3Adesc"
+              },
+              "logo": {},
+              "title": "MOCHILAS EM COURO ",
+              "description": "Design clássico, couro legítimo e praticidade no dia a dia."
+            }
+          },
+          {
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
+              {
+                "value": {
+                  "__resolveType": "site/sections/Product/ProductShelf.tsx",
+                  "products": {
+                    "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+                    "props": {
+                      "count": 14,
+                      "sort": "release:desc",
+                      "collection": "2416"
+                    }
+                  },
+                  "title": "LANÇAMENTOS",
+                  "layout": {
+                    "numberOfSliders": {
+                      "mobile": 2,
+                      "desktop": 4
+                    },
+                    "headerAlignment": "left",
+                    "headerfontSize": "Small",
+                    "showArrows": true
+                  }
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                }
+              }
+            ]
+          },
+          {
+            "__resolveType": "site/sections/Hotsites/PresenteWhatNews.tsx",
+            "title": "Para presentear quem você ama!",
+            "news": [
+              {
+                "image": "https://assets.decocache.com/fossil/dcdf16d7-af46-4537-ad91-c2dc4d2d99bc/LPpresentes_bannerdepartamento_desk_pais1.jpg",
+                "title": "Breaker Watch",
+                "subtitle": "Sofisticação e resistência em cada detalhe.",
+                "link": {
+                  "label": "Comprar",
+                  "url": "https://www.fossil.com.br/relogio/masculino?sort=release%3Adesc"
+                },
+                "label": "Relógio"
+              },
+              {
+                "image": "https://assets.decocache.com/fossil/c3c001c3-fb6f-4997-802c-4fb2c114efa0/LPpresentes_bannerdepartamento_desk_pais3.jpg",
+                "title": "Fossil Blue Dive Watch",
+                "subtitle": "Perfeito para qualquer ocasião.",
+                "link": {
+                  "label": "Comprar",
+                  "url": "/s?q=carteira%20masculina&utmi_pc=search&utmi_cp=carteira%20masculina"
+                },
+                "label": "Carteira"
+              },
+              {
+                "title": "Harwell Handbag",
+                "image": "https://assets.decocache.com/fossil/36d5f8b4-98c4-47a0-9b53-2de5597c7874/LPpresentes_bannerdepartamento_desk_pais2.jpg",
+                "subtitle": "Para encantar e marcar cada momento especial.",
+                "link": {
+                  "label": "Comprar",
+                  "url": "https://www.fossil.com.br/s?q=bolsa+em+couro&utmi_pc=search&utmi_cp=bolsa+em+couro&sort=release%3Adesc"
+                },
+                "label": "Bolsas em Couro"
+              },
+              {
+                "image": "https://assets.decocache.com/fossil/2511b93b-e512-4e9d-820d-b019a45ea529/LPpresentes_bannerdepartamento_desk_pais4.jpg",
+                "title": "Bold Chains",
+                "subtitle": "Para combinações e diferentes estilos.",
+                "link": {
+                  "label": "Comprar",
+                  "url": "/lancamentos?sort=release%3Adesc&filter.productClusterIds=2146&filter.genero=masculino"
+                },
+                "label": "Lançamentos"
+              }
+            ]
+          },
+          {
+            "__resolveType": "site/sections/Hotsites/PresenteShopByCategory.tsx",
+            "title": "Para quem você está buscando presentear?",
+            "categories": [
+              {
+                "label": "Relógios Masculinos",
+                "url": "https://www.fossil.com.br/relogio/masculino?sort=release%3Adesc"
+              },
+              {
+                "label": "Relógios Femininos",
+                "url": "https://www.fossil.com.br/relogio/feminino?sort=release%3Adesc"
+              },
+              {
+                "label": "Bolsas Femininas",
+                "url": "https://www.fossil.com.br/bolsasfemininas"
+              },
+              {
+                "label": "Bolsas Masculinas",
+                "url": "https://www.fossil.com.br/bolsasmasculinas"
+              },
+              {
+                "label": "Semi Joias Femininas",
+                "url": "https://www.fossil.com.br/2462?PS=12&map=productClusterIds&O=OrderByReleaseDateDESC"
+              }
+            ]
+          },
+          {
+            "__resolveType": "Footer - 01"
+          },
+          {
+            "__resolveType": "site/sections/Content/YourViewsIntegration.tsx"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
         }
-      ]
-    },
-    {
-      "__resolveType": "site/sections/Hotsites/PresenteShopByCategory.tsx",
-      "title": "Para quem você está buscando presentear?",
-      "categories": [
-        {
-          "label": "Relógios Masculinos",
-          "url": "https://www.fossil.com.br/relogio/masculino?sort=release%3Adesc"
-        },
-        {
-          "label": "Relógios Femininos",
-          "url": "https://www.fossil.com.br/relogio/feminino?sort=release%3Adesc"
-        },
-        {
-          "label": "Bolsas Femininas",
-          "url": "https://www.fossil.com.br/bolsasfemininas"
-        },
-        {
-          "label": "Bolsas Masculinas",
-          "url": "https://www.fossil.com.br/bolsasmasculinas"
-        },
-        {
-          "label": "Semi Joias Femininas",
-          "url": "https://www.fossil.com.br/2462?PS=12&map=productClusterIds&O=OrderByReleaseDateDESC"
-        }
-      ]
-    },
-    {
-      "__resolveType": "Footer - 01"
-    },
-    {
-      "__resolveType": "site/sections/Content/YourViewsIntegration.tsx"
-    }
-  ],
+      }
+    ]
+  },
   "seo": {
     "type": "website",
     "jsonLDs": [],

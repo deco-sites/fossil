@@ -1,0 +1,28 @@
+# Cursor IDE configuration files
+# Allow cursor rules to be accessible, but ignore other cursor data
+!/.cursor/
+
+# Deno Fresh framework cache directory (auto-generated)
+_fresh
+
+# AI assistant configuration directories (project-specific settings)
+.claude
+.factory
+.gemini
+.codex
+
+# Version control and CI/CD
+.github
+
+# Build metadata and test directories
+.metadata
+.tests
+
+# IDE configurations (VSCode)
+.vscode
+
+# Package dependencies (large, frequently changing)
+node_modules
+
+# Local database files
+sqlite.db

@@ -1,4 +1,13 @@
 ## Commits (Conventional Commits)
 
-- `feat:`, `fix:`, `docs:`, `refactor:`, `test:`, `chore:`, `perf:`
-- Scope optional but encouraged: `feat(cart): add coupon stacking`
+Format: `<type>(<scope>): <imperative description>`
+
+- Types: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, `perf`
+- Use imperative mood: "add feature" not "added feature"
+- Breaking changes: `feat!:` or `BREAKING CHANGE:` in body
+- Example: `feat(cart): add coupon stacking support`
+- Generate commit messages in PT-BR
+
+---
+
+**For all other coding rules and conventions, see `.cursor/rules/` directory.**

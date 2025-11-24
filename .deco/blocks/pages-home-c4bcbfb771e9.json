@@ -18,56 +18,56 @@
             "__resolveType": "header"
           },
           {
-            "__resolveType": "site/sections/Christmas/cr-background.tsx",
-            "desktopPattern": "https://assets.decocache.com/fossil/d9180596-83d4-45a7-959f-e118fb471138/cr-background.png",
-            "mobilePattern": "https://assets.decocache.com/fossil/74361c23-db23-4bf7-8e33-63b820406499/cr-background-mobile.png",
-            "backgroundColor": "#182D16"
+            "__resolveType": "cr-background"
           },
           {
             "__resolveType": "site/sections/Christmas/cr-hero.tsx",
             "titleText": "Fossil - Black Friday",
-            "banners": [
-              {
-                "desktop": "https://assets.decocache.com/fossil/449a3a96-d3a4-4076-8c8c-666a95629347/50.png",
-                "mobile": "https://assets.decocache.com/fossil/936da347-cce4-4752-ad21-f95ac6479dff/50-off-mobile.png",
-                "title": "Black Friday",
-                "description": "Descontos de até **50%**",
-                "cta": {
-                  "label": "Comprar",
-                  "href": "/black-friday"
+            "content": {
+              "type": "carousel",
+              "banners": [
+                {
+                  "desktop": "https://assets.decocache.com/fossil/449a3a96-d3a4-4076-8c8c-666a95629347/50.png",
+                  "mobile": "https://assets.decocache.com/fossil/936da347-cce4-4752-ad21-f95ac6479dff/50-off-mobile.png",
+                  "title": "Black Friday",
+                  "description": "Descontos de até **50%**",
+                  "cta": {
+                    "label": "Comprar",
+                    "href": "/black-friday"
+                  },
+                  "alt": "Relógio de pulso prateado com pulseira de metal de elos e mostrador branco em pulso de modelo com roupa preta."
                 },
-                "alt": "Relógio de pulso prateado com pulseira de metal de elos e mostrador branco em pulso de modelo com roupa preta."
-              },
-              {
-                "title": "Black Friday",
-                "description": "Seleção com **15% OFF** + Brinde exclusivo nas compras acima de R$1.500",
-                "cta": {
-                  "label": "Aproveitar",
-                  "href": "/black-friday"
+                {
+                  "title": "Black Friday",
+                  "description": "Seleção com **15% OFF** + Brinde exclusivo nas compras acima de R$1.500",
+                  "cta": {
+                    "label": "Aproveitar",
+                    "href": "/black-friday"
+                  },
+                  "desktop": "https://assets.decocache.com/fossil/dc257929-8d9b-4f23-b3f2-d8e42e687145/15-off.png",
+                  "mobile": "https://assets.decocache.com/fossil/7b6e531e-6cd6-4dc3-9329-8d5d3e2bb8c3/15-off-mobile.png",
+                  "alt": "Relógio de pulso feminino com caixa redonda e pulseira de elos cor rosé gold em braço bronzeado."
                 },
-                "desktop": "https://assets.decocache.com/fossil/dc257929-8d9b-4f23-b3f2-d8e42e687145/15-off.png",
-                "mobile": "https://assets.decocache.com/fossil/7b6e531e-6cd6-4dc3-9329-8d5d3e2bb8c3/15-off-mobile.png",
-                "alt": "Relógio de pulso feminino com caixa redonda e pulseira de elos cor rosé gold em braço bronzeado."
-              },
-              {
-                "desktop": "https://assets.decocache.com/fossil/54f3b2c5-0986-4b6d-9599-aeb9dbd122ca/Best-Sellers_.png",
-                "mobile": "https://assets.decocache.com/fossil/53fa4ed2-844c-486e-8f76-84cff1e8d27a/best-sellers.png",
-                "alt": "Relógio de pulso masculino com caixa prateada, bezel e mostrador na cor verde esmeralda em pulso de modelo com suéter preto.",
-                "title": "Best Sellers",
-                "description": "Por até **R$ 1.399**",
-                "cta": {
-                  "label": "Aproveitar",
-                  "href": "/2675?PS=12&map=productClusterIds&sort=discount%3Adesc"
+                {
+                  "desktop": "https://assets.decocache.com/fossil/54f3b2c5-0986-4b6d-9599-aeb9dbd122ca/Best-Sellers_.png",
+                  "mobile": "https://assets.decocache.com/fossil/53fa4ed2-844c-486e-8f76-84cff1e8d27a/best-sellers.png",
+                  "alt": "Relógio de pulso masculino com caixa prateada, bezel e mostrador na cor verde esmeralda em pulso de modelo com suéter preto.",
+                  "title": "Best Sellers",
+                  "description": "Por até **R$ 1.399**",
+                  "cta": {
+                    "label": "Aproveitar",
+                    "href": "/2675?PS=12&map=productClusterIds&sort=discount%3Adesc"
+                  }
                 }
+              ],
+              "carousel": {
+                "autoplay": true,
+                "pauseOnHover": true,
+                "delaySeconds": 5,
+                "speedMs": 500,
+                "showArrows": true,
+                "showDots": true
               }
-            ],
-            "carousel": {
-              "autoplay": true,
-              "pauseOnHover": true,
-              "delaySeconds": 5,
-              "speedMs": 500,
-              "showArrows": true,
-              "showDots": true
             },
             "bottomCenterImageWidth": 336,
             "bottomCenterImageHeight": 167,
@@ -344,7 +344,7 @@
             "section": {
               "__resolveType": "site/sections/Christmas/cr-where-did-you-get-that.tsx",
               "title": "“Onde Você Comprou Isso?”",
-              "description": "Acabou de chegar — nossos lançadores de conversa mais recentes.",
+              "description": "Acabou de chegar — nossos iniciadores de conversa mais recentes.",
               "autoplaySeconds": 2,
               "items": [
                 {

@@ -1,13 +1,21 @@
 export { default as LoadingFallback } from "../../components/LoadingFallback.tsx";
-import { type FnContext } from "@deco/deco";
-import type { ImageWidget } from "apps/admin/widgets.ts";
+import type { FnContext } from "@deco/deco";
+import type { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import SnowFooter from "../../components/christmas/SnowFooter.tsx";
 import HeroCarousel from "../../islands/christmas/HeroCarousel.tsx";
+import GoldBorder from "../../components/christmas/GoldBorder.tsx";
+import Button from "../../components/christmas/Button.tsx";
 
 import type { BannerItem } from "../../islands/christmas/HeroCarousel.tsx";
+import type { TextSegment } from "../../util/text.ts";
 import { toStrongHTML } from "../../util/text.ts";
 import { withDevice } from "../../sdk/withDevice.ts";
+
+const segmentsToHTML = (segments: TextSegment[]): string =>
+  segments
+    .map((seg) => (seg.bold ? `<strong>${seg.text}</strong>` : seg.text))
+    .join("");
 
 interface BannerCTA {
   /** @title Texto do Botão */
@@ -73,10 +81,12 @@ interface CarouselConfig {
   showDots?: boolean;
 }
 
-export interface Props {
-  /** @title Título (H1 - somente leitores de tela) */
-  /** @description Título principal da página (renderizado como sr-only) */
-  titleText?: string;
+/**
+ * @title Carrossel de Imagens
+ */
+interface ContentCarousel {
+  /** @hide true */
+  type: "carousel";
 
   /** @title Banners */
   /** @description Lista de banners exibidos no carrossel */
@@ -85,6 +95,66 @@ export interface Props {
   /** @title Configurações do carrossel */
   /** @description Controle de autoplay, velocidade e navegação */
   carousel?: CarouselConfig;
+}
+
+/**
+ * @title Vídeo
+ */
+interface ContentVideo {
+  /** @hide true */
+  type: "video";
+
+  /** @title Vídeo Desktop */
+  /** @description Vídeo exibido em telas desktop */
+  desktop: VideoWidget;
+
+  /** @title Vídeo Mobile */
+  /** @description Vídeo exibido em telas mobile (opcional, usa desktop se não definido) */
+  mobile?: VideoWidget;
+
+  /** @title Imagem de Pôster */
+  /** @description Imagem exibida enquanto o vídeo carrega (importante para performance) */
+  posterImage?: ImageWidget;
+
+  /** @title Zoom do Vídeo */
+  /** @description Fator de zoom para cortar parte do vídeo (1.0 = normal, 1.1 = 10% de zoom) */
+  videoZoom?: number;
+
+  /** @title Reprodução Automática */
+  /** @description Inicia o vídeo automaticamente */
+  autoplay?: boolean;
+
+  /** @title Loop */
+  /** @description Repete o vídeo continuamente */
+  loop?: boolean;
+
+  /** @title Mudo */
+  /** @description Reproduz o vídeo sem som */
+  muted?: boolean;
+
+  /** @title Título do Vídeo */
+  /** @description Título exibido sobre o vídeo */
+  title?: string;
+
+  /** @title Descrição do Vídeo */
+  /** @description Texto exibido abaixo do título */
+  description?: string;
+
+  /** @title CTA do Vídeo */
+  /** @description Botão exibido sobre o vídeo */
+  cta?: BannerCTA;
+}
+
+type ContentType = ContentCarousel | ContentVideo;
+
+export interface Props {
+  /** @title Título (H1 - somente leitores de tela) */
+  /** @description Título principal da página (renderizado como sr-only) */
+  titleText?: string;
+
+  /** @title Conteúdo */
+  /** @description Escolha entre carrossel de imagens ou vídeo */
+  content?: ContentType;
 
   /** @title Imagem do Centro da Borda Inferior */
   /** @description Imagem posicionada no centro da borda inferior (não será cortada) */
@@ -142,10 +212,79 @@ const toHeroCarouselItems = (banners?: Banner[]): BannerItem[] =>
     cta: banner.cta,
   }));
 
+interface VideoContentProps {
+  content: ContentVideo;
+  isDesktop: boolean;
+}
+
+function VideoContent({ content, isDesktop }: VideoContentProps) {
+  return (
+    <GoldBorder
+      class="w-full h-full overflow-hidden"
+      videoDesktop={content.desktop}
+      videoMobile={content.mobile || content.desktop}
+      posterImage={content.posterImage}
+      videoZoom={content.videoZoom ?? 1}
+      noPadding
+      variant={isDesktop ? "desktop" : "mobile"}
+      borderPosition={isDesktop ? "both" : "bottom"}
+    >
+      <div class="w-full h-full flex flex-col items-center justify-center text-center p-4">
+        {content.title && (
+          <h2
+            class="font-benton text-[32px] lg:text-[60px] leading-none text-white mb-2 lg:mb-4 [text-shadow:_2px_2px_10px_rgba(0,0,0,0.8)]"
+            // deno-lint-ignore react-no-danger
+            dangerouslySetInnerHTML={{ __html: content.title }}
+          />
+        )}
+        {content.description && (
+          <p
+            class="font-soleil text-[14px] lg:text-[18px] text-white mb-4 lg:mb-6 [text-shadow:_1px_1px_5px_rgba(0,0,0,0.8)]"
+            // deno-lint-ignore react-no-danger
+            dangerouslySetInnerHTML={{
+              __html: segmentsToHTML(toStrongHTML(content.description)),
+            }}
+          />
+        )}
+        {content.cta?.href && content.cta?.label && (
+          <Button name={content.cta.label} url={content.cta.href} />
+        )}
+      </div>
+    </GoldBorder>
+  );
+}
+
+interface CarouselContentProps {
+  content: ContentCarousel;
+  isDesktop: boolean;
+}
+
+function CarouselContent({ content, isDesktop }: CarouselContentProps) {
+  const carouselConfig = { ...DEFAULT_CAROUSEL, ...content.carousel };
+  const heroItems = toHeroCarouselItems(content.banners);
+
+  return (
+    <HeroCarousel
+      items={heroItems}
+      autoplay={carouselConfig.autoplay}
+      pauseOnHover={carouselConfig.pauseOnHover}
+      delaySeconds={carouselConfig.delaySeconds}
+      speedMs={carouselConfig.speedMs}
+      showArrows={carouselConfig.showArrows}
+      showDots={carouselConfig.showDots}
+      useGoldBorder
+      isDesktop={isDesktop}
+    />
+  );
+}
+
+interface LoaderReturn extends Props {
+  device: "mobile" | "tablet" | "desktop";
+}
+
 function CRHero({
   titleText,
-  banners,
-  carousel,
+  content,
   bottomCenterImage,
   bottomCenterImageWidth,
   bottomCenterImageHeight,
@@ -156,12 +295,23 @@ function CRHero({
   snowFooterMobileWidth,
   snowFooterMobileHeight,
   device,
-}: ReturnType<Awaited<typeof loader>>) {
+}: LoaderReturn) {
   const isDesktop = device === "desktop";
-  const carouselConfig = { ...DEFAULT_CAROUSEL, ...carousel };
-  const heroItems = toHeroCarouselItems(banners);
-  const firstBannerTitle = heroItems[0]?.title;
-  const srTitle = titleText || firstBannerTitle || "Campanha de Natal";
+
+  const normalizedContent: ContentType = content ?? {
+    type: "carousel",
+    banners: [],
+    carousel: DEFAULT_CAROUSEL,
+  };
+
+  const isVideo = normalizedContent.type === "video";
+
+  const srTitle = titleText ||
+    (isVideo
+      ? (normalizedContent as ContentVideo).title
+      : toHeroCarouselItems((normalizedContent as ContentCarousel).banners)[0]
+        ?.title) ||
+    "Campanha de Natal";
 
   return (
     <div class="relative w-full overflow-hidden">
@@ -174,17 +324,19 @@ function CRHero({
               isDesktop ? "aspect-video" : "aspect-square w-full"
             }`}
           >
-            <HeroCarousel
-              items={heroItems}
-              autoplay={carouselConfig.autoplay}
-              pauseOnHover={carouselConfig.pauseOnHover}
-              delaySeconds={carouselConfig.delaySeconds}
-              speedMs={carouselConfig.speedMs}
-              showArrows={carouselConfig.showArrows}
-              showDots={carouselConfig.showDots}
-              useGoldBorder
-              isDesktop={isDesktop}
-            />
+            {isVideo
+              ? (
+                <VideoContent
+                  content={normalizedContent as ContentVideo}
+                  isDesktop={isDesktop}
+                />
+              )
+              : (
+                <CarouselContent
+                  content={normalizedContent as ContentCarousel}
+                  isDesktop={isDesktop}
+                />
+              )}
           </div>
 
           {bottomCenterImage && (

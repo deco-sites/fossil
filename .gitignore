@@ -81,6 +81,8 @@ _fresh/
 
 _docker_deps.ts
 .metadata/changeset.json
+.deco/metadata
+.deco/metadata.json
 
 *.tmp
 
@@ -89,6 +91,7 @@ _docker_deps.ts
 .codex/
 .gemini/
 .factory/
+.cursor/
 **/CLAUDE.md
 **/AGENTS.md
 **/GEMINI.md
