@@ -28,12 +28,18 @@
           "desktop": 4
         },
         "variant": "aside",
-        "pagination": "show-more"
+        "pagination": "show-more",
+        "discount": {},
+        "discountLayout": {
+          "type": "text",
+          "showBadge": true
+        }
       },
       "cardLayout": {
         "__resolveType": "Product Card Layout - 01"
       },
-      "startingPage": 1
+      "startingPage": 1,
+      "isCollection": false
     },
     {
       "__resolveType": "Footer - 04"
