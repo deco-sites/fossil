@@ -31,11 +31,11 @@
               "title": "O Guia de Presentes",
               "ctas": [
                 {
-                  "label": "Comprar para Ele",
+                  "label": "Para Eles",
                   "href": "#"
                 },
                 {
-                  "label": "Comprar para Ela",
+                  "label": "Para Elas",
                   "href": "#"
                 }
               ]
@@ -49,26 +49,27 @@
           },
           {
             "__resolveType": "site/sections/Christmas/cr-gifts-by-price.tsx",
+            "title": "Faixa de Preços",
             "cards": [
               {
-                "label": "Masculinos com até",
-                "value": "40% OFF",
-                "url": "/2672?PS=12&map=productClusterIds&sort=discount%3Adesc"
+                "label": "Presentes por até",
+                "value": "R$ 2.999",
+                "url": "#"
               },
               {
-                "label": "Femininos com até",
-                "value": "40% OFF",
-                "url": "/2671?PS=12&map=productClusterIds&sort=discount%3Adesc"
+                "label": "Carteiras e bolsas por até",
+                "value": "R$ 1.999",
+                "url": "#"
               },
               {
-                "label": "Carteiras e bolsas com até",
-                "value": "30% OFF",
-                "url": "/2673?PS=12&map=productClusterIds&sort=discount%3Adesc"
+                "label": "Acessórios por até",
+                "value": "R$ 799",
+                "url": "#"
               },
               {
-                "label": "Relógio Anel com",
-                "value": "20% OFF",
-                "url": "/2676?PS=12&map=productClusterIds&sort=discount%3Adesc"
+                "value": "Best sellers",
+                "url": "#",
+                "label": " "
               }
             ],
             "backgroundColor": "branco",
@@ -217,21 +218,6 @@
                 "muted": true
               },
               "bottomDivider": "https://assets.decocache.com/fossil/7dfe563a-3edf-44de-b405-75ef3432c019/cr-divider-lp.png"
-            }
-          },
-          {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "site/sections/Christmas/cr-custom.tsx",
-              "title": "Vibe de Natal",
-              "description": "Impecável de todos os ângulos. Personalização sempre gratuita e exclusiva — para quem se comportou bem (ou não)",
-              "button": {
-                "name": "Ver Opções Personalizáveis",
-                "url": "#"
-              },
-              "videoDesktop": "https://assets.decocache.com/fossil/ebf0d29c-791e-4d97-a1d9-9bbf519c2e32/cr-custom.mp4",
-              "videoMobile": "https://assets.decocache.com/fossil/ebf0d29c-791e-4d97-a1d9-9bbf519c2e32/cr-custom.mp4",
-              "posterImage": "https://assets.decocache.com/fossil/d31877b0-85cc-4d94-966b-019f03f40460/cr-custom.png"
             }
           },
           {

@@ -11487,10 +11487,6 @@ details.collapse summary::-webkit-details-marker {
     margin-bottom: 0px;
   }
 
-  .lg\:mb-10 {
-    margin-bottom: 2.5rem;
-  }
-
   .lg\:mb-12 {
     margin-bottom: 3rem;
   }
@@ -11529,6 +11525,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:mb-\[10px\] {
     margin-bottom: 10px;
+  }
+
+  .lg\:mb-\[calc\(40px-0\.25rem\)\] {
+    margin-bottom: calc(40px - 0.25rem);
   }
 
   .lg\:ml-0 {

@@ -117,7 +117,7 @@ export default function CRHeroMedia({
     <section
       class={clx(
         "hidden lg:flex relative w-full min-h-[600px] items-center justify-center overflow-visible",
-        bottomDivider && "lg:mb-10",
+        bottomDivider && "lg:mb-[calc(40px-0.25rem)]",
       )}
     >
       {/* Background Media */}
