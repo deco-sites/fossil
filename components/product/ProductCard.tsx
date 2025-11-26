@@ -17,6 +17,16 @@ import ProductCardPriceModel from "./ProductCardPriceModel.tsx";
 import { mapProductToAnalyticsItem } from "../../util/formatToAnalytics.ts";
 //import ProductCardName from "./ProductCardName.tsx";
 
+export type DiscountLayout = {
+  /** @title Show Badge
+   * @description Show the discount badge
+   * @default true
+   */
+  showBadge?: boolean;
+  type: "text" | "percentage";
+  customText?: string;
+};
+
 interface Props {
   product: Product;
   /** Preload card image */
@@ -29,6 +39,10 @@ interface Props {
   index?: number;
 
   platform?: Platform;
+
+  /** @title Discount Layout */
+  /** @description Layout options for discount display */
+  discountLayout?: DiscountLayout;
 }
 
 const WIDTH = 400;
@@ -48,6 +62,7 @@ function ProductCard({
   platform,
   index,
   device,
+  discountLayout,
 }: Props & { device?: string }) {
   const {
     url,
@@ -57,6 +72,11 @@ function ProductCard({
     isVariantOf,
     inProductGroupWithID,
   } = product;
+  const {
+    showBadge = true,
+    type = "percentage",
+    customText = "OFF",
+  } = discountLayout ?? {};
   const id = `product-card-${productID}`;
   const hasVariant = isVariantOf?.hasVariant ?? [];
   const productGroupID = isVariantOf?.productGroupID;
@@ -71,6 +91,11 @@ function ProductCard({
     pixPercentDiscountByDiferenceSellerPrice,
     has_discount,
   } = useOffer(offers);
+
+  // Calcular porcentagem de desconto baseada no listPrice e price
+  const discountPercentage = listPrice && price && listPrice > price
+    ? Math.round(((listPrice - price) / listPrice) * 100)
+    : 0;
 
   const possibilities = useVariantPossibilities(hasVariant, product);
   const variants = Object.entries(Object.values(possibilities)[0] ?? {});
@@ -116,10 +141,12 @@ function ProductCard({
             )}
           >
             {/* Discount % */}
-            {has_discount && (
+            {has_discount && showBadge && (
               <div class="text-sm">
-                <span class=" h-6 w-6 text-sm lg:w-10 lg:h-10 flex absolute top-[33%] right-0  font-scoutCond z-50 items-center justify-center text-center lg:text-2xl font-medium bg-[#d20d17] text-white rounded-[100px]">
-                  OFF
+                <span class=" h-6 w-6 text-sm lg:w-10 lg:h-10 flex absolute top-[33%] right-0  font-scoutCond z-50 items-center justify-center text-center lg:text-[1.3rem] font-medium bg-[#d20d17] text-white rounded-[100px]">
+                  {type === "percentage" && discountPercentage > 0
+                    ? `${discountPercentage}%`
+                    : customText || "OFF"}
                 </span>
               </div>
             )}
@@ -235,7 +262,6 @@ function ProductCard({
         <div class="flex flex-col">
           <h2
             class="text-xs md:text-sm uppercase  font-normal lg:leading-4  h-auto xs:h-12 lg:h-auto text-primary-content tracking-one"
-            // deno-lint-ignore react-no-danger
             dangerouslySetInnerHTML={{ __html: productName ?? "" }}
           />
         </div>

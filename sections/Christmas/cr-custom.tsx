@@ -48,10 +48,16 @@ export interface Props {
   videoMobile?: VideoWidget;
 
   /**
-   * @title Imagem de Pôster do Vídeo
-   * @description Imagem estática exibida enquanto o vídeo carrega
+   * @title Imagem de Pôster do Vídeo (Desktop)
+   * @description Imagem estática exibida enquanto o vídeo carrega no desktop
    */
-  posterImage?: ImageWidget;
+  posterImageDesktop?: ImageWidget;
+
+  /**
+   * @title Imagem de Pôster do Vídeo (Mobile)
+   * @description Imagem estática exibida enquanto o vídeo carrega no mobile
+   */
+  posterImageMobile?: ImageWidget;
 
   /**
    * @title Zoom do Vídeo
@@ -89,6 +95,13 @@ export interface Props {
   videoHeightMobile?: number;
 
   /**
+   * @title Cor do Texto (Desktop)
+   * @description Cor do texto do título e descrição no desktop. No mobile sempre será branco.
+   * @default Escuro
+   */
+  textColor?: "Claro" | "Escuro";
+
+  /**
    * @ignore true
    */
   device?: "mobile" | "tablet" | "desktop";
@@ -100,12 +113,14 @@ function CRCustom({
   button,
   videoDesktop,
   videoMobile,
-  posterImage,
+  posterImageDesktop,
+  posterImageMobile,
   videoZoom = 1.05,
   videoWidth = 1163,
   videoHeight = 658,
   videoWidthMobile = 375,
   videoHeightMobile = 375,
+  textColor = "Escuro",
   device,
 }: ReturnType<Awaited<typeof loader>>) {
   const isDesktop = device === "desktop";
@@ -120,7 +135,7 @@ function CRCustom({
 
   const renderContent = (
     alignment: "left" | "center",
-    textColor: "dark" | "light" = "dark",
+    textColor: "Claro" | "Escuro" = "Escuro",
   ) => (
     <div
       class={`flex flex-col ${
@@ -132,7 +147,7 @@ function CRCustom({
       {title && (
         <h2
           class={`font-benton italic text-4xl lg:text-6xl leading-tight ${
-            textColor === "light" ? "text-white" : "text-primary"
+            textColor === "Claro" ? "text-white" : "text-primary"
           }`}
         >
           {title}
@@ -142,7 +157,7 @@ function CRCustom({
       {description && (
         <p
           class={`text-sm font-soleil max-w-md leading-relaxed ${
-            textColor === "light" ? "text-white" : "text-primary"
+            textColor === "Claro" ? "text-white" : "text-primary"
           }`}
         >
           {description}
@@ -168,11 +183,11 @@ function CRCustom({
                     variant="desktop"
                     videoDesktop={videoDesktop}
                     videoMobile={videoMobile}
-                    posterImage={posterImage}
+                    posterImage={posterImageDesktop}
                     videoZoom={videoZoom}
                   >
                     <div class="flex items-center h-full ml-10 max-w-96">
-                      {renderContent("left")}
+                      {renderContent("left", textColor)}
                     </div>
                   </GoldBorder>
                 </div>
@@ -192,13 +207,13 @@ function CRCustom({
                     borderPosition="both"
                     videoDesktop={videoDesktop}
                     videoMobile={videoMobile}
-                    posterImage={posterImage}
+                    posterImage={posterImageMobile}
                     videoZoom={videoZoom}
                   />
                 </div>
               </div>
               <div class="-mx-5 w-[calc(100% + 40px)] py-8 lg:py-12 px-6 relative">
-                {renderContent("center", "light")}
+                {renderContent("center", "Claro")}
               </div>
             </div>
           )}

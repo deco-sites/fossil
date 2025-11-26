@@ -4944,6 +4944,9 @@ details.collapse summary::-webkit-details-marker {
 .-bottom-12 {
   bottom: -3rem;
 }
+.-bottom-14 {
+  bottom: -3.5rem;
+}
 .-bottom-8 {
   bottom: -2rem;
 }
@@ -5037,6 +5040,9 @@ details.collapse summary::-webkit-details-marker {
 .left-4 {
   left: 1rem;
 }
+.left-6 {
+  left: 1.5rem;
+}
 .left-8 {
   left: 2rem;
 }
@@ -5075,6 +5081,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .right-4 {
   right: 1rem;
+}
+.right-48 {
+  right: 12rem;
 }
 .right-6 {
   right: 1.5rem;
@@ -5462,6 +5471,12 @@ details.collapse summary::-webkit-details-marker {
 .\!mt-8 {
   margin-top: 2rem !important;
 }
+.-mt-0 {
+  margin-top: -0px;
+}
+.-mt-0\.5 {
+  margin-top: -0.125rem;
+}
 .-mt-12 {
   margin-top: -3rem;
 }
@@ -5722,6 +5737,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .aspect-\[31\/21\] {
   aspect-ratio: 31/21;
+}
+.aspect-\[375\/525\] {
+  aspect-ratio: 375/525;
 }
 .aspect-\[412\/302\] {
   aspect-ratio: 412/302;
@@ -6880,6 +6898,9 @@ details.collapse summary::-webkit-details-marker {
 .gap-\[0\.62rem\] {
   gap: 0.62rem;
 }
+.gap-\[10px\] {
+  gap: 10px;
+}
 .gap-\[16px\] {
   gap: 16px;
 }
@@ -7909,6 +7930,9 @@ details.collapse summary::-webkit-details-marker {
 .pb-2 {
   padding-bottom: 0.5rem;
 }
+.pb-20 {
+  padding-bottom: 5rem;
+}
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -7929,6 +7953,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .pb-\[10px\] {
   padding-bottom: 10px;
+}
+.pb-\[120px\] {
+  padding-bottom: 120px;
 }
 .pb-\[15px\] {
   padding-bottom: 15px;
@@ -8413,6 +8440,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .tracking-\[\.0625rem\] {
   letter-spacing: .0625rem;
+}
+.tracking-\[0\.05em\] {
+  letter-spacing: 0.05em;
 }
 .tracking-\[1px\] {
   letter-spacing: 1px;
@@ -11073,6 +11103,10 @@ details.collapse summary::-webkit-details-marker {
     padding-bottom: 50px;
   }
 
+  .md\:pb-0 {
+    padding-bottom: 0px;
+  }
+
   .md\:pb-4 {
     padding-bottom: 1rem;
   }
@@ -11414,6 +11448,11 @@ details.collapse summary::-webkit-details-marker {
     margin-bottom: 75px !important;
   }
 
+  .lg\:-mx-4 {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -11610,6 +11649,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:min-h-\[80vh\] {
     min-height: 80vh;
+  }
+
+  .lg\:\!w-\[calc\(100\%\+32px\)\] {
+    width: calc(100% + 32px) !important;
   }
 
   .lg\:w-1\/2 {
@@ -12442,6 +12485,10 @@ details.collapse summary::-webkit-details-marker {
   .lg\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .lg\:text-\[1\.3rem\] {
+    font-size: 1.3rem;
   }
 
   .lg\:text-\[12px\] {

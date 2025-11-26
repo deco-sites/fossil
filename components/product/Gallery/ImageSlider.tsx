@@ -8,12 +8,17 @@ import { HighLight } from "../ProductHighlights.tsx";
 import { useId } from "../../../sdk/useId.ts";
 import Button from "../../ui/Button.tsx";
 import { useCheckCluster } from "../../../util/useCheckCluster.ts";
+import { DiscountLayout } from "../ProductCard.tsx";
+import { useOffer } from "../../../util/useOffer.ts";
 
 export interface Props {
   /** @title Integration */
   page: ProductDetailsPage | null;
   highlights?: HighLight[];
   device?: string;
+  /** @title Discount Layout */
+  /** @description Layout options for discount display */
+  discountLayout?: DiscountLayout;
 }
 
 const width = 495.35;
@@ -34,17 +39,43 @@ export default function GallerySlider(props: Props) {
 
   const {
     page: { product },
+    discountLayout,
   } = props;
   const aspectRatio = `${width} / ${height}`;
-  const { image: images = [], additionalProperty } = product;
+  const { image: images = [], additionalProperty, offers } = product;
 
-  const isOffCluster = useCheckCluster(additionalProperty || [], "2166");
+  const {
+    listPrice,
+    price,
+    installment,
+    availability,
+    priceWithPixDiscount,
+    pixPercentDiscountByDiferenceSellerPrice,
+    has_discount,
+  } = useOffer(offers);
+
+  const {
+    showBadge = true,
+    type = "percentage",
+    customText = "OFF",
+  } = discountLayout ?? {};
+
+  // Calcular porcentagem de desconto baseada no listPrice e price
+  const discountPercentage = listPrice && price && listPrice > price
+    ? Math.round(((listPrice - price) / listPrice) * 100)
+    : 0;
+
+  console.log(discountLayout, " discountLayout");
+
+  // const isOffCluster = useCheckCluster(additionalProperty || [], "2166");
 
   return (
     <div class="float-left w-[48%] relative max-sm:w-auto max-lg:flex max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:w-full">
-      {isOffCluster && (
+      {has_discount && showBadge && (
         <span class="w-10 h-10 flex absolute top-0 right-0 font-scoutCond z-20 items-center group-hover/discount:z-0 justify-center text-center text-2xl font-medium bg-[#d20d17] text-white rounded-[100px]">
-          OFF
+          {type === "percentage" && discountPercentage > 0
+            ? `${discountPercentage}%`
+            : customText || "OFF"}
         </span>
       )}
       <div

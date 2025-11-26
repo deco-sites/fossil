@@ -18,6 +18,7 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 import { redirect } from "@deco/deco";
 import { usePartialSection } from "@deco/deco/hooks";
 import { mapProductToAnalyticsItem } from "../../util/formatToAnalytics.ts";
+import { DiscountLayout } from "../product/ProductCard.tsx";
 export type Format = "Show More" | "Pagination";
 export interface Banner {
   img: ImageWidget;
@@ -38,6 +39,10 @@ export interface Layout {
    */
   format?: Format;
   banners?: Banner[];
+  /**
+   * @description Opções de layout para exibição de desconto
+   */
+  discountLayout?: DiscountLayout;
 }
 export interface Props {
   /** @title Integration */
@@ -166,6 +171,7 @@ function Result({
                 columns: layout?.columns,
                 format,
                 banners: layout?.banners,
+                discountLayout: layout?.discountLayout,
               }}
               pageInfo={pageInfo}
               device={device}

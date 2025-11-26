@@ -5,6 +5,7 @@ import NotFound from "../../sections/Product/NotFound.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import ProductDescription from "../../components/product/ProductDescription.tsx";
 import { AppContext } from "../../apps/site.ts";
+import { DiscountLayout } from "../../components/product/ProductCard.tsx";
 
 export interface FlagDiscount {
   /**@title tag image */
@@ -26,11 +27,18 @@ export interface Props {
 
   /** @title Size chart link */
   sizeChartLink?: sizeChartLink;
+
+  /** @title Discount Layout */
+  /** @description Layout options for discount display */
+  discountLayout?: DiscountLayout;
 }
 
-export default function ProductDetails(
-  { page, sizeChartLink, device }: Props & { device?: string },
-) {
+export default function ProductDetails({
+  page,
+  sizeChartLink,
+  device,
+  discountLayout,
+}: Props & { device?: string }) {
   if (!page?.seo) {
     return <NotFound />;
   }
@@ -44,7 +52,9 @@ export default function ProductDetails(
       <section class="w-full block px-4 lg:px-0 lg:mb-4">
         <ul class="flex flex-col lg:block max-lg:font-scoutCond font-arial">
           <li class="inline-block pb-1 mr-1  text-[#252525] font-arial font-semibold text-xs my-4 lg:my-0 leading-4">
-            <a href="/" arial-label="Link para home" class="">Fossil /</a>
+            <a href="/" arial-label="Link para home" class="">
+              Fossil /
+            </a>
           </li>
           <li class="inline-block leading-8 text-[#252525] uppercase pb-2 text-28 lg:px-0 lg:pb-1 mr-1 font-medium lg:font-semibold lg:text-xs  lg:leading-4">
             {isVariantOf?.name}
@@ -55,6 +65,7 @@ export default function ProductDetails(
         <ImageGallerySlider
           page={page}
           device={device}
+          discountLayout={discountLayout}
         />
         <ProductInfo
           page={page}

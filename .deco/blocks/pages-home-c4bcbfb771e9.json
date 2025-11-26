@@ -22,52 +22,30 @@
           },
           {
             "__resolveType": "site/sections/Christmas/cr-hero.tsx",
-            "titleText": "Fossil - Black Friday",
             "content": {
-              "type": "carousel",
-              "banners": [
+              "ctas": [
                 {
-                  "desktop": "https://assets.decocache.com/fossil/449a3a96-d3a4-4076-8c8c-666a95629347/50.png",
-                  "mobile": "https://assets.decocache.com/fossil/936da347-cce4-4752-ad21-f95ac6479dff/50-off-mobile.png",
-                  "title": "Black Friday",
-                  "description": "Descontos de até **50%**",
-                  "cta": {
-                    "label": "Comprar",
-                    "href": "/black-friday"
-                  },
-                  "alt": "Relógio de pulso prateado com pulseira de metal de elos e mostrador branco em pulso de modelo com roupa preta."
+                  "label": "Comprar para Ele",
+                  "href": "#"
                 },
                 {
-                  "title": "Black Friday",
-                  "description": "Seleção com **15% OFF** + Brinde exclusivo nas compras acima de R$1.500",
-                  "cta": {
-                    "label": "Aproveitar",
-                    "href": "/black-friday"
-                  },
-                  "desktop": "https://assets.decocache.com/fossil/dc257929-8d9b-4f23-b3f2-d8e42e687145/15-off.png",
-                  "mobile": "https://assets.decocache.com/fossil/7b6e531e-6cd6-4dc3-9329-8d5d3e2bb8c3/15-off-mobile.png",
-                  "alt": "Relógio de pulso feminino com caixa redonda e pulseira de elos cor rosé gold em braço bronzeado."
-                },
-                {
-                  "desktop": "https://assets.decocache.com/fossil/54f3b2c5-0986-4b6d-9599-aeb9dbd122ca/Best-Sellers_.png",
-                  "mobile": "https://assets.decocache.com/fossil/53fa4ed2-844c-486e-8f76-84cff1e8d27a/best-sellers.png",
-                  "alt": "Relógio de pulso masculino com caixa prateada, bezel e mostrador na cor verde esmeralda em pulso de modelo com suéter preto.",
-                  "title": "Best Sellers",
-                  "description": "Por até **R$ 1.399**",
-                  "cta": {
-                    "label": "Aproveitar",
-                    "href": "/2675?PS=12&map=productClusterIds&sort=discount%3Adesc"
-                  }
+                  "label": "Comprar para Ele",
+                  "href": "#"
                 }
               ],
-              "carousel": {
-                "autoplay": true,
-                "pauseOnHover": true,
-                "delaySeconds": 5,
-                "speedMs": 500,
-                "showArrows": true,
-                "showDots": true
-              }
+              "desktop": "https://assets.decocache.com/fossil/8ca8a845-5b97-4dae-85e4-ab65f31d5cd7/FSL_HOL25_30v3_dsk.mp4",
+              "mobile": "https://assets.decocache.com/fossil/b6253549-e2f7-4ae5-a193-397fd9a780c5/FSL_HOL25_30v3_mob.mp4",
+              "posterImageDesktop": "https://assets.decocache.com/fossil/e52f5c60-9f0e-4e72-8f71-e855a8b35f5f/FSL_HOL25_30v3_dsk_poster.webp",
+              "posterImageMobile": "https://assets.decocache.com/fossil/91721a4a-b4d2-4995-9161-00cbd6918616/FSL_HOL25_30v3_mob_poster.webp",
+              "autoplay": true,
+              "loop": true,
+              "muted": true,
+              "titleImage": "https://assets.decocache.com/fossil/bfcce85f-fd80-4a21-914e-e3e7b3b27322/cr-hero-title.png",
+              "title": "Fossil em Festa",
+              "titleSrOnly": true,
+              "titleImageWidth": 302,
+              "titleImageHeight": 146,
+              "description": "A surpresa ideal para cada troca de presentes."
             },
             "bottomCenterImageWidth": 336,
             "bottomCenterImageHeight": 167,
@@ -76,7 +54,9 @@
             "snowFooterDesktopWidth": 1280,
             "snowFooterDesktopHeight": 175,
             "snowFooterMobileWidth": 375,
-            "snowFooterMobileHeight": 81
+            "snowFooterMobileHeight": 81,
+            "bottomCenterImage": "https://assets.decocache.com/fossil/871ed323-71a3-464b-a764-d800356677b8/cr-ornaments.png",
+            "titleText": "Fossil em Festividade"
           },
           {
             "__resolveType": "website/flags/multivariate/section.ts",
@@ -122,23 +102,23 @@
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
               "__resolveType": "site/sections/Christmas/cr-nick-list.tsx",
-              "title": "Os clássicos da Fossil<br />a partir de R$ 799",
-              "description": "Designs atemporais com preços especiais",
-              "button": {
-                "name": "Compre Agora",
-                "url": "/2675?PS=12&map=productClusterIds&sort=discount%3Adesc"
-              },
-              "mainImageDesktop": "https://assets.decocache.com/fossil/e8edc611-26c5-4865-9ee7-fa974a910f47/fossil-banner-secundario-desktop-(2).png",
-              "mainImageMobile": "https://assets.decocache.com/fossil/d12cce80-6efd-4576-9c04-a345772d7903/fossil-banner-secundario--mobile-(2).png",
-              "mainImageDesktopWidth": 574,
-              "mainImageDesktopHeight": 448,
-              "mainImageMobileWidth": 312,
-              "mainImageMobileHeight": 319,
+              "title": "A Lista do Nick",
+              "mainImageDesktop": "https://assets.decocache.com/fossil/fdd49788-a23c-40ea-8abf-e9930bd18c65/HO25_NickList_D.png",
+              "mainImageMobile": "https://assets.decocache.com/fossil/18f5eb38-3e7d-4d95-beee-2c30a0ae59e5/HO25_NickList_M.png",
               "stars": {
                 "image": "https://assets.decocache.com/fossil/4fbb02f8-2749-4e14-ad48-a5813d7a2a0a/cr-double-stars.png",
                 "width": 70,
                 "height": 70
-              }
+              },
+              "description": "Peças de impacto da sua coleção de edição limitada e nossos estilos mais icônicos — os presentes favoritos da Fossil, escolhidos a dedo pelo próprio Nick Jonas.",
+              "button": {
+                "name": "Compre Agora",
+                "url": "#"
+              },
+              "mainImageDesktopWidth": 574,
+              "mainImageDesktopHeight": 448,
+              "mainImageMobileWidth": 312,
+              "mainImageMobileHeight": 319
             }
           },
           {
@@ -337,6 +317,23 @@
                 "height": 37
               },
               "paddingBottom": 30
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Christmas/cr-custom.tsx",
+              "title": "Personalização Fossil",
+              "description": "Todo presente inesquecível tem um toque de mestre. O seu. Garanta gravação e personalização por nossa conta.",
+              "button": {
+                "name": "Explorar Presentes Customizáveis",
+                "url": "#"
+              },
+              "videoDesktop": "https://assets.decocache.com/fossil/f51819d1-5d44-46a5-8f26-21dffeaa3f70/1732ea8b74b20f4bfa4fc24e05e40fe52fc10f3e_dsk.mp4",
+              "videoMobile": "https://assets.decocache.com/fossil/d63fa2ed-72db-479d-a5c4-3957abc9df4d/1732ea8b74b20f4bfa4fc24e05e40fe52fc10f3e_mob.mp4",
+              "posterImageDesktop": "https://assets.decocache.com/fossil/d25d9d63-faee-4837-b40c-e89d97588b1a/1732ea8b74b20f4bfa4fc24e05e40fe52fc10f3e_dsk_poster.webp",
+              "posterImageMobile": "https://assets.decocache.com/fossil/1583a5a1-4919-44e3-8110-6c33e18db675/1732ea8b74b20f4bfa4fc24e05e40fe52fc10f3e_mob_poster.webp",
+              "textColor": "Claro"
             }
           },
           {

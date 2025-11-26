@@ -28,10 +28,15 @@ export interface Props {
    */
   text?: string;
   /**
+   * @title Padding Top
+   * @description Preenchimento interno acima da seção (em pixels)
+   */
+  paddingTop?: number;
+  /**
    * @title Padding Bottom
    * @description Preenchimento interno abaixo da seção (em pixels)
    */
-  paddingTop?: number;
+  paddingBottom?: number;
   /**
    * @ignore true
    */
@@ -44,6 +49,7 @@ function CRGiftsByPrice({
   backgroundColor = "transparente",
   text,
   paddingTop,
+  paddingBottom,
 }: ReturnType<Awaited<typeof loader>>) {
   if (!cards || cards.length === 0) return null;
 
@@ -58,6 +64,9 @@ function CRGiftsByPrice({
         style={{
           paddingTop: typeof paddingTop === "number"
             ? `${paddingTop}px`
+            : undefined,
+          paddingBottom: typeof paddingBottom === "number"
+            ? `${paddingBottom}px`
             : undefined,
         }}
       >

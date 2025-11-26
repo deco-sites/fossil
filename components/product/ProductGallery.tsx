@@ -1,5 +1,7 @@
 import { PageInfo, Product } from "apps/commerce/types.ts";
-import ProductCard from "../../components/product/ProductCard.tsx";
+import ProductCard, {
+  DiscountLayout,
+} from "../../components/product/ProductCard.tsx";
 import { Format } from "../../components/search/SearchResult.tsx";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
@@ -24,6 +26,7 @@ export interface Props {
     columns?: Columns;
     format?: Format;
     banners?: Banner[];
+    discountLayout?: DiscountLayout;
   };
 }
 
@@ -39,9 +42,13 @@ const DESKTOP_COLUMNS = {
   5: "sm:grid-cols-5",
 };
 
-function ProductGallery(
-  { products, layout, offset, device, pageInfo }: Props & { device?: string },
-) {
+function ProductGallery({
+  products,
+  layout,
+  offset,
+  device,
+  pageInfo,
+}: Props & { device?: string }) {
   const platform = usePlatform();
   const mobile = MOBILE_COLUMNS[layout?.columns?.mobile ?? 2];
   const desktop = DESKTOP_COLUMNS[layout?.columns?.desktop ?? 4];
@@ -53,9 +60,7 @@ function ProductGallery(
   let i = 6;
 
   return (
-    <div
-      class={`grid ${mobile} gap-2 items-center pt-6 ${desktop} sm:gap-10`}
-    >
+    <div class={`grid ${mobile} gap-2 items-center pt-6 ${desktop} sm:gap-10`}>
       {products?.map((product, index) => {
         const shouldRenderBanner = remainingBanners.length > 0 &&
           (index + 1) % i === 0;
@@ -95,6 +100,7 @@ function ProductGallery(
                   index={offset + index}
                   platform={platform}
                   device={device}
+                  discountLayout={layout?.discountLayout}
                 />
               )}
           </>

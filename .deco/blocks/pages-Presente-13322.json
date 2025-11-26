@@ -13,27 +13,39 @@
             "__resolveType": "cr-background"
           },
           {
-            "__resolveType": "site/sections/Christmas/cr-hero.tsx",
-            "titleText": "Fossil",
+            "__resolveType": "site/sections/Christmas/cr-hero-lp.tsx",
             "snowFooterDesktop": "https://assets.decocache.com/fossil/92902b5c-2105-4f1f-9ae6-1628f8600289/cr-snow-footer.png",
             "snowFooterMobile": "https://assets.decocache.com/fossil/79a069c3-5640-48be-9461-bcba70fc2188/cr-snow-footer-mobile.png",
             "snowFooterDesktopWidth": 1280,
             "snowFooterDesktopHeight": 175,
             "snowFooterMobileWidth": 375,
             "snowFooterMobileHeight": 81,
+            "titleText": "Fossil em Festa",
             "content": {
-              "cta": {
-                "label": "Ver mais",
-                "href": "#"
-              },
-              "type": "video",
-              "desktop": "https://assets.decocache.com/fossil/e44a8cc7-f2db-45c1-a872-92c283cf0f4b/LivingRoom_web3.mp4",
-              "autoplay": true,
-              "loop": true,
-              "muted": true,
+              "cta": {},
+              "type": "image",
+              "desktop": "https://assets.decocache.com/fossil/28d4affe-b5ee-4ea3-8954-a09b304aa413/cr-hero-lp-desk.png",
+              "mobile": "https://assets.decocache.com/fossil/51090edf-9237-4a2c-b711-fea3f2c567a9/cr-hero-lp-mob.png",
+              "alt": "Casal sentado em frente a uma lareira acesa, sorrindo e trocando presentes embrulhados em um ambiente aconchegante e festivo.",
+              "label": "Fossil em Festa",
               "title": "O Guia de Presentes",
-              "videoZoom": 1.01
-            }
+              "ctas": [
+                {
+                  "label": "Comprar para Ele",
+                  "href": "#"
+                },
+                {
+                  "label": "Comprar para Ela",
+                  "href": "#"
+                }
+              ]
+            },
+            "bottomLeftImage": "https://assets.decocache.com/fossil/5e790404-c7e8-4922-a3ca-9dfa77cd8112/little-ornament.png",
+            "bottomLeftImageWidth": 62,
+            "bottomLeftImageHeight": 78,
+            "bottomRightImage": "https://assets.decocache.com/fossil/0d5d0a42-515c-4d18-bf05-50a349f36767/big-ornament.png",
+            "bottomRightImageWidth": 162,
+            "bottomRightImageHeight": 167
           },
           {
             "__resolveType": "site/sections/Christmas/cr-gifts-by-price.tsx",
@@ -61,24 +73,25 @@
             ],
             "backgroundColor": "branco",
             "text": "Uma gravação divertida. A cor favorita (dica: é verde). Aquele detalhe que eles queriam, mas não esperavam. Para todas as trocas de presentes deste fim de ano, abra um Fossil e deixe os melhores momentos acontecerem.",
-            "paddingTop": 0
+            "paddingTop": 0,
+            "paddingBottom": 0
           },
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
               "__resolveType": "site/sections/Christmas/cr-nick-list.tsx",
-              "title": "Os clássicos da Fossil<br />a partir de R$ 799",
-              "mainImageDesktop": "https://assets.decocache.com/fossil/e8edc611-26c5-4865-9ee7-fa974a910f47/fossil-banner-secundario-desktop-(2).png",
-              "mainImageMobile": "https://assets.decocache.com/fossil/d12cce80-6efd-4576-9c04-a345772d7903/fossil-banner-secundario--mobile-(2).png",
+              "title": "A Lista do Nick",
+              "mainImageDesktop": "https://assets.decocache.com/fossil/fdd49788-a23c-40ea-8abf-e9930bd18c65/HO25_NickList_D.png",
+              "mainImageMobile": "https://assets.decocache.com/fossil/18f5eb38-3e7d-4d95-beee-2c30a0ae59e5/HO25_NickList_M.png",
               "stars": {
                 "image": "https://assets.decocache.com/fossil/4fbb02f8-2749-4e14-ad48-a5813d7a2a0a/cr-double-stars.png",
                 "width": 70,
                 "height": 70
               },
-              "description": "Designs atemporais com preços especiais",
+              "description": "Peças de impacto da sua coleção de edição limitada e nossos estilos mais icônicos — os presentes favoritos da Fossil, escolhidos a dedo pelo próprio Nick Jonas.",
               "button": {
                 "name": "Compre Agora",
-                "url": "/2675?PS=12&map=productClusterIds&sort=discount%3Adesc"
+                "url": "#"
               },
               "mainImageDesktopWidth": 574,
               "mainImageDesktopHeight": 448,
@@ -91,11 +104,11 @@
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
               "__resolveType": "site/sections/Christmas/cr-gift-guide.tsx",
+              "subtitle": "TOP 10 PRESENTES PARA ELE",
+              "title": "Aquele olhar de quem ganhou<br/>exatamente o que queria.",
               "mainImageDesktop": "https://assets.decocache.com/fossil/32a2ecb1-7918-409d-b263-203ded01c1fe/cr-gift-guide.png",
               "mainImageMobile": "https://assets.decocache.com/fossil/32a2ecb1-7918-409d-b263-203ded01c1fe/cr-gift-guide.png",
               "backgroundPattern": "https://assets.decocache.com/fossil/f19eb450-6498-4aba-9bde-5d0763fdad5f/cr-pattern.png",
-              "subtitle": "TOP 10 PRESENTES PARA ELE",
-              "title": "Aquele olhar de quem ganhou<br/>exatamente o que queria.",
               "buttonText": "Guia de Presentes Para Ele",
               "buttonLink": "#",
               "stars": {
@@ -151,8 +164,8 @@
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
               "__resolveType": "site/sections/Christmas/cr-gift-guide.tsx",
-              "subtitle": "TOP 25 PRESENTES PARA ELA",
               "title": "Muito brilho? Ela diz que<br />brilho nunca é demais.",
+              "subtitle": "TOP 25 PRESENTES PARA ELA",
               "mainImageDesktop": "https://assets.decocache.com/fossil/0fd50ec1-1eca-4855-b93c-fcd2b8fcf3e0/cr-gift-guide-2.png",
               "mainImageMobile": "https://assets.decocache.com/fossil/0fd50ec1-1eca-4855-b93c-fcd2b8fcf3e0/cr-gift-guide-2.png",
               "backgroundPattern": "https://assets.decocache.com/fossil/f19eb450-6498-4aba-9bde-5d0763fdad5f/cr-pattern.png",
