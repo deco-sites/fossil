@@ -78,7 +78,7 @@
               }
             },
             {
-              "value": "https://assets.decocache.com/fossil/dc48198a-a412-495e-90c4-d1c7300a489f/fossil-DeSK-connect-livelo-(2).jpg",
+              "value": "https://assets.decocache.com/fossil/0b2aacad-2ec7-4115-b822-18c52ad4a2a1/fossil-DeSK-connect-livelo-2.jpg",
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
                 "start": "2025-11-26T03:00:00.000Z",
