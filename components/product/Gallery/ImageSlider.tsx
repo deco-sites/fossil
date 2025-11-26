@@ -7,7 +7,6 @@ import Image from "apps/website/components/Image.tsx";
 import { HighLight } from "../ProductHighlights.tsx";
 import { useId } from "../../../sdk/useId.ts";
 import Button from "../../ui/Button.tsx";
-import { useCheckCluster } from "../../../util/useCheckCluster.ts";
 import { DiscountLayout } from "../ProductCard.tsx";
 import { useOffer } from "../../../util/useOffer.ts";
 
@@ -42,15 +41,11 @@ export default function GallerySlider(props: Props) {
     discountLayout,
   } = props;
   const aspectRatio = `${width} / ${height}`;
-  const { image: images = [], additionalProperty, offers } = product;
+  const { image: images = [], offers } = product;
 
   const {
     listPrice,
     price,
-    installment,
-    availability,
-    priceWithPixDiscount,
-    pixPercentDiscountByDiferenceSellerPrice,
     has_discount,
   } = useOffer(offers);
 
