@@ -38,7 +38,7 @@
                       "description": "Seleção com  **20% OFF**",
                       "cta": {
                         "label": "Comprar",
-                        "href": "/black-friday"
+                        "href": "/cyber-weekend"
                       }
                     },
                     {
@@ -46,7 +46,7 @@
                       "description": "Bazar com até **50% OFF**",
                       "cta": {
                         "label": "Aproveitar",
-                        "href": "/black-friday"
+                        "href": "/cyber-weekend"
                       },
                       "desktop": "https://assets.decocache.com/fossil/358c89f0-6c33-471f-9778-f76a9252141e/banner2desk.png",
                       "mobile": "https://assets.decocache.com/fossil/8f6f49d6-9569-4aeb-b251-717b76bf50eb/banner2mob.png"
