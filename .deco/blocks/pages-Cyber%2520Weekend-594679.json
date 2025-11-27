@@ -1,0 +1,63 @@
+{
+  "name": "Cyber Weekend",
+  "path": "/cyber-weekend",
+  "sections": [
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "Category Banner - 01"
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Product/SearchResult.tsx",
+            "page": {
+              "__resolveType": "commerce/loaders/product/extensions/listingPage.ts",
+              "data": {
+                "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                "sort": "discount:desc",
+                "fuzzy": "automatic",
+                "selectedFacets": [
+                  {
+                    "key": "productClusterIds",
+                    "value": "2648"
+                  }
+                ],
+                "count": 24
+              },
+              "extensions": []
+            },
+            "layout": {
+              "columns": {
+                "mobile": 2,
+                "desktop": 3
+              },
+              "variant": "aside",
+              "banners": []
+            },
+            "startingPage": 1,
+            "isCollection": false
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer - 04"
+    },
+    {
+      "__resolveType": "YourViewsIntegration"
+    }
+  ],
+  "seo": {
+    "type": "website",
+    "jsonLDs": [],
+    "__resolveType": "site/sections/Seo/SeoBaseCustomV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
