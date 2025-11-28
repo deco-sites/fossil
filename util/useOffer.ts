@@ -50,7 +50,7 @@ export const useOffer = (aggregateOffer?: AggregateOffer) => {
   );
 
   const priceWithPixPayment = offer?.priceSpecification.find(
-    ({ name }) => name?.toLowerCase() === "pix",
+    ({ name }) => name?.toLowerCase().includes("pix"),
   );
 
   const installment = offer?.priceSpecification.reduce(bestInstallment, null);
@@ -61,7 +61,7 @@ export const useOffer = (aggregateOffer?: AggregateOffer) => {
   const priceWithPixDiscount = priceWithPixPayment?.price || price;
 
   const pixPercentDiscountByDiferenceSellerPrice = Math.round(
-    100 - (priceWithPixDiscount * 100) / price,
+    100 - (priceWithPixDiscount * 100) / (installment?.price || price),
   );
 
   return {

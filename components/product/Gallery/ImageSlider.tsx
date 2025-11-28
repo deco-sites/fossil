@@ -66,8 +66,6 @@ export default function GallerySlider(props: Props) {
       ? Math.round(((listPrice - price) / listPrice) * 100)
       : 0;
 
-  console.log(discountLayout, " discountLayout");
-
   // const isOffCluster = useCheckCluster(additionalProperty || [], "2166");
 
   return (

@@ -3,7 +3,7 @@ import { formatPrice } from "../../sdk/format.ts";
 export interface Props {
   priceWithPixDiscount: number;
   priceCurrency?: string;
-  sellerPrice: number;
+  installmentPrice: number;
   listPrice: number;
   hasDiscount: boolean;
   pixPercentDiscountByDiferenceSellerPrice: number;
@@ -34,7 +34,7 @@ export default function ProductCardPriceModel(props: Props) {
         props.installmentBillingIncrement && (
         <p class="flex items-center text-left text-[10px] lg:text-xs text-black font-soleil font-normal gap-[3px]">
           <span>
-            {formatPrice(props.sellerPrice, props.priceCurrency || "BRL")}
+            {formatPrice(props.installmentPrice, props.priceCurrency || "BRL")}
           </span>
           <span>em até</span>
           <span>{props.installmentBillingDuration}x</span>
