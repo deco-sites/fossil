@@ -87,14 +87,14 @@
                       "description": "SÓ HOJE: **30% OFF** em itens selecionados!",
                       "cta": {
                         "label": "Comprar",
-                        "href": "/black-friday"
+                        "href": "/black-friday?sort=price%3Aasc"
                       }
                     },
                     {
                       "description": "SÓ HOJE: Até **50% OFF** em itens de Bazar!",
                       "cta": {
                         "label": "Aproveitar",
-                        "href": "/black-friday"
+                        "href": "/black-friday?sort=discount%3Adesc"
                       },
                       "desktop": "https://assets.decocache.com/fossil/b8b9971a-e4b5-4fee-b5b3-505d38f84063/banner-3-desk.jpg",
                       "mobile": "https://assets.decocache.com/fossil/ad9679ba-993b-4453-b33b-61d8430a4f78/banner-3.jpg",
