@@ -47,6 +47,16 @@ export default defineApp(async (_req, ctx) => {
 
         <link
           rel="preload"
+          href={asset(
+            "/fonts/BentonModernDisplayCompressedItalic_italic_extra-condensed.woff2",
+          )}
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+
+        <link
+          rel="preload"
           type="text/css"
           href={asset("/fonts/SoleilRegular.woff")}
         />

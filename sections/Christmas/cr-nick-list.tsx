@@ -1,10 +1,10 @@
-export { default as LoadingFallback } from "../../components/LoadingFallback.tsx";
-import { type FnContext } from "@deco/deco";
+import type { FnContext } from "@deco/deco";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import Button from "../../components/christmas/Button.tsx";
 import Stars, { type StarsProps } from "../../components/christmas/Stars.tsx";
 import { withDevice } from "../../sdk/withDevice.ts";
+import { clx } from "../../sdk/clx.ts";
 
 export interface ButtonProps {
   /**
@@ -73,6 +73,12 @@ export interface Props {
   stars?: StarsProps;
 
   /**
+   * @title Cor de Fundo
+   * @default verde
+   */
+  backgroundColor?: "verde" | "branco";
+
+  /**
    * @ignore true
    */
   device?: "mobile" | "tablet" | "desktop";
@@ -90,6 +96,7 @@ function CRNickList({
   mainImageMobileHeight,
   stars,
   device,
+  backgroundColor = "verde",
 }: ReturnType<Awaited<typeof loader>>) {
   const isDesktop = device === "desktop";
   const aspectRatio = isDesktop
@@ -97,7 +104,14 @@ function CRNickList({
     : `${mainImageMobileWidth || 600}/${mainImageMobileHeight || 600}`;
 
   return (
-    <div class="relative w-full bg-cr-bg-secondary">
+    <div
+      class={clx(
+        "relative w-full",
+        backgroundColor === "branco"
+          ? "bg-cr-bg-primary"
+          : "bg-cr-bg-secondary",
+      )}
+    >
       <div class="container mx-auto px-8 lg:px-16 py-8 lg:pt-20 lg:pb-28 relative z-10">
         <div class="flex flex-col lg:flex-row justify-end items-center gap-5 lg:gap-10 xl:justify-center">
           <div class="relative">
@@ -106,19 +120,19 @@ function CRNickList({
                 <Picture>
                   <Source
                     media="(max-width: 768px)"
-                    src={mainImageMobile || mainImageDesktop!}
+                    src={mainImageMobile || mainImageDesktop || ""}
                     width={mainImageMobileWidth || 600}
                     height={mainImageMobileHeight || 600}
                   />
                   <Source
                     media="(min-width: 769px)"
-                    src={mainImageDesktop || mainImageMobile!}
+                    src={mainImageDesktop || mainImageMobile || ""}
                     width={mainImageDesktopWidth || 600}
                     height={mainImageDesktopHeight || 600}
                   />
                   <img
                     class="max-w-full rounded-xl lg:max-w-[520px]"
-                    src={mainImageDesktop || mainImageMobile}
+                    src={mainImageDesktop || mainImageMobile || ""}
                     alt={title || "The Nick List"}
                     style={{
                       aspectRatio,
@@ -145,14 +159,26 @@ function CRNickList({
             <div>
               {title && (
                 <h2
-                  class="font-benton italic text-4xl lg:text-5xl xl:text-6xl text-white leading-none mb-1"
+                  class={clx(
+                    "font-benton italic text-4xl lg:text-5xl xl:text-6xl leading-none mb-1",
+                    backgroundColor === "branco"
+                      ? "text-primary"
+                      : "text-white",
+                  )}
                   // deno-lint-ignore react-no-danger
                   dangerouslySetInnerHTML={{ __html: title }}
                 />
               )}
 
               {description && (
-                <p class="font-soleil text-white text-sm leading-relaxed max-w-96">
+                <p
+                  class={clx(
+                    "font-soleil text-sm leading-relaxed max-w-96",
+                    backgroundColor === "branco"
+                      ? "text-primary"
+                      : "text-white",
+                  )}
+                >
                   {description}
                 </p>
               )}
@@ -172,3 +198,4 @@ export const loader = (props: Props, _req: Request, ctx: FnContext) => {
 };
 
 export default CRNickList;
+export { default as LoadingFallback } from "../../components/LoadingFallback.tsx";

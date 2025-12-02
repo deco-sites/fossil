@@ -14,6 +14,7 @@ export default function CarouselSlide({
   renderSlide,
 }: CarouselSlideProps) {
   const alt = item.alt || item.title || `Banner ${index + 1}`;
+  const isFirstSlide = index === 0;
 
   if (renderSlide) {
     return (
@@ -25,13 +26,14 @@ export default function CarouselSlide({
 
   return (
     <div key={alt + index} class="swiper-slide relative h-full">
-      <Picture class="block h-full w-full">
+      <Picture class="block h-full w-full" preload={isFirstSlide}>
         {item.mobile && (
           <Source
             media="(max-width: 767px)"
             src={item.mobile}
             width={750}
             height={FALLBACK_HEIGHT}
+            fetchPriority={isFirstSlide ? "high" : "auto"}
           />
         )}
         {item.desktop && (
@@ -40,11 +42,12 @@ export default function CarouselSlide({
             src={item.desktop}
             width={FALLBACK_WIDTH}
             height={FALLBACK_HEIGHT}
+            fetchPriority={isFirstSlide ? "high" : "auto"}
           />
         )}
         <img
           class="h-full w-full object-cover"
-          loading={index === 0 ? "eager" : "lazy"}
+          loading={isFirstSlide ? "eager" : "lazy"}
           src={item.desktop || item.mobile || ""}
           alt={alt}
         />

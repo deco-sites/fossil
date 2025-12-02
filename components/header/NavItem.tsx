@@ -90,7 +90,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
                         height={236}
                         loading="lazy"
                       />
-                    )
+                    ),
                 )}
             </div>
           </div>
