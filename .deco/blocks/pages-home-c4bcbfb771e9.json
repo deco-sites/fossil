@@ -185,6 +185,45 @@
                   "start": "2025-11-01T15:00:00.000Z",
                   "end": "2025-11-28T02:59:00.000Z"
                 }
+              },
+              {
+                "value": {
+                  "__resolveType": "site/sections/Christmas/cr-hero.tsx",
+                  "titleText": "Fossil - Black Friday",
+                  "banners": [
+                    {
+                      "desktop": "https://assets.decocache.com/fossil/54f3b2c5-0986-4b6d-9599-aeb9dbd122ca/Best-Sellers_.png",
+                      "mobile": "https://assets.decocache.com/fossil/53fa4ed2-844c-486e-8f76-84cff1e8d27a/best-sellers.png",
+                      "title": "Best Sellers",
+                      "cta": {
+                        "label": "Aproveitar",
+                        "href": "/2675?PS=12&map=productClusterIds&sort=discount%3Adesc"
+                      },
+                      "alt": "Relógio de pulso masculino com caixa prateada, bezel e mostrador na cor verde esmeralda em pulso de modelo com suéter preto."
+                    }
+                  ],
+                  "carousel": {
+                    "autoplay": true,
+                    "pauseOnHover": true,
+                    "delaySeconds": 5,
+                    "speedMs": 500,
+                    "showArrows": true,
+                    "showDots": true
+                  },
+                  "bottomCenterImageWidth": 336,
+                  "bottomCenterImageHeight": 167,
+                  "snowFooterDesktop": "https://assets.decocache.com/fossil/92902b5c-2105-4f1f-9ae6-1628f8600289/cr-snow-footer.png",
+                  "snowFooterMobile": "https://assets.decocache.com/fossil/79a069c3-5640-48be-9461-bcba70fc2188/cr-snow-footer-mobile.png",
+                  "snowFooterDesktopWidth": 1280,
+                  "snowFooterDesktopHeight": 175,
+                  "snowFooterMobileWidth": 375,
+                  "snowFooterMobileHeight": 81
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/date.ts",
+                  "start": "2025-12-02T03:00:00.000Z",
+                  "end": "2025-12-07T02:59:00.000Z"
+                }
               }
             ]
           },
