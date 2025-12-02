@@ -46,7 +46,7 @@ export const useOffer = (aggregateOffer?: AggregateOffer) => {
   );
 
   const sellerPrice = offer?.priceSpecification.find(
-    ({ priceType }) => priceType === "https://schema.org/SalePrice",
+    ({ priceType }) => priceType === "https://schema.org/SRP",
   );
 
   const priceWithPixPayment = offer?.priceSpecification.find(
