@@ -99,27 +99,37 @@
             ]
           },
           {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "site/sections/Christmas/cr-nick-list.tsx",
-              "title": "A Lista do Nick",
-              "mainImageDesktop": "https://assets.decocache.com/fossil/fdd49788-a23c-40ea-8abf-e9930bd18c65/HO25_NickList_D.png",
-              "mainImageMobile": "https://assets.decocache.com/fossil/18f5eb38-3e7d-4d95-beee-2c30a0ae59e5/HO25_NickList_M.png",
-              "stars": {
-                "image": "https://assets.decocache.com/fossil/4fbb02f8-2749-4e14-ad48-a5813d7a2a0a/cr-double-stars.png",
-                "width": 70,
-                "height": 70
-              },
-              "description": "Peças de impacto da sua coleção de edição limitada e nossos estilos mais icônicos — os presentes favoritos da Fossil, escolhidos a dedo pelo próprio Nick Jonas.",
-              "button": {
-                "name": "Compre Agora",
-                "url": "/colecao/nick-jonas"
-              },
-              "mainImageDesktopWidth": 574,
-              "mainImageDesktopHeight": 448,
-              "mainImageMobileWidth": 312,
-              "mainImageMobileHeight": 319
-            }
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
+              {
+                "value": {
+                  "__resolveType": "website/sections/Rendering/Lazy.tsx",
+                  "section": {
+                    "__resolveType": "site/sections/Christmas/cr-nick-list.tsx",
+                    "title": "A Lista do Nick",
+                    "mainImageDesktop": "https://assets.decocache.com/fossil/fdd49788-a23c-40ea-8abf-e9930bd18c65/HO25_NickList_D.png",
+                    "mainImageMobile": "https://assets.decocache.com/fossil/18f5eb38-3e7d-4d95-beee-2c30a0ae59e5/HO25_NickList_M.png",
+                    "stars": {
+                      "image": "https://assets.decocache.com/fossil/4fbb02f8-2749-4e14-ad48-a5813d7a2a0a/cr-double-stars.png",
+                      "width": 70,
+                      "height": 70
+                    },
+                    "description": "Peças de impacto da sua coleção de edição limitada e nossos estilos mais icônicos — os presentes favoritos da Fossil, escolhidos a dedo pelo próprio Nick Jonas.",
+                    "button": {
+                      "name": "Compre Agora",
+                      "url": "/colecao/nick-jonas"
+                    },
+                    "mainImageDesktopWidth": 574,
+                    "mainImageDesktopHeight": 448,
+                    "mainImageMobileWidth": 312,
+                    "mainImageMobileHeight": 319
+                  }
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/never.ts"
+                }
+              }
+            ]
           },
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -221,23 +231,23 @@
               "title": "Faixa de Preços",
               "cards": [
                 {
-                  "label": "Presentes por até",
-                  "value": "R$ 2.999",
-                  "url": "#"
+                  "label": "AUTOMÁTICOS",
+                  "value": "Para Eles",
+                  "url": "/relogio/masculino/automatico?sort=release%3Adesc"
                 },
                 {
-                  "label": "Carteiras e bolsas por até",
-                  "value": "R$ 1.999",
-                  "url": "#"
+                  "label": "RELÓGIOS DE FESTA",
+                  "url": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel&sort=release%3Adesc",
+                  "value": "Para Elas"
                 },
                 {
-                  "label": "Acessórios por até",
-                  "value": "R$ 799",
-                  "url": "#"
+                  "label": "PULSEIRAS DE",
+                  "value": "Couro",
+                  "url": "/acessorios?sort=price%3Aasc"
                 },
                 {
                   "value": "Best sellers",
-                  "url": "#",
+                  "url": "/lancamentos",
                   "label": " "
                 }
               ]

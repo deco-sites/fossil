@@ -52,23 +52,23 @@
             "title": "Faixa de Preços",
             "cards": [
               {
-                "label": "Presentes por até",
-                "value": "R$ 2.999",
-                "url": "#"
+                "label": "AUTOMÁTICOS",
+                "value": "Para Eles",
+                "url": "/relogio/masculino/automatico?sort=release%3Adesc"
               },
               {
-                "label": "Carteiras e bolsas por até",
-                "value": "R$ 1.999",
-                "url": "#"
+                "label": "RELÓGIOS DE FESTA",
+                "value": "Para Elas",
+                "url": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel&sort=release%3Adesc"
               },
               {
-                "label": "Acessórios por até",
-                "value": "R$ 799",
-                "url": "#"
+                "label": "PULSEIRAS DE",
+                "value": "Couro",
+                "url": "/relogio/masculino/couro?sort=release%3Adesc"
               },
               {
-                "value": "Best sellers",
-                "url": "#",
+                "value": "Bolsas",
+                "url": "/s?q=bolsa&utmi_pc=search&utmi_cp=bolsa&sort=release%3Adesc",
                 "label": " "
               }
             ],
