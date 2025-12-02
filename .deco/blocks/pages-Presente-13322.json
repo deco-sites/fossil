@@ -32,11 +32,11 @@
               "ctas": [
                 {
                   "label": "Para Eles",
-                  "href": "#"
+                  "href": "/relogio/masculino?sort=release%3Adesc"
                 },
                 {
                   "label": "Para Elas",
-                  "href": "#"
+                  "href": "/relogio/feminino?sort=release%3Adesc"
                 }
               ]
             },
@@ -73,7 +73,7 @@
               }
             ],
             "backgroundColor": "branco",
-            "text": "Uma gravação divertida. A cor favorita (dica: é verde). Aquele detalhe que eles queriam, mas não esperavam. Para todas as trocas de presentes deste fim de ano, abra um Fossil e deixe os melhores momentos acontecerem.",
+            "text": "Detalhes cheio de personalidade. A cor que combina com eles (spoiler: verde). Aquele presente que sempre quiseram, mas nunca imaginaram ganhar. Neste fim de ano, na hora de presentear, escolha Fossil e deixe as melhores lembranças acontecerem.",
             "paddingTop": 0,
             "paddingBottom": 0
           },
@@ -92,7 +92,7 @@
               "description": "Peças de impacto da sua coleção de edição limitada e nossos estilos mais icônicos — os presentes favoritos da Fossil, escolhidos a dedo pelo próprio Nick Jonas.",
               "button": {
                 "name": "Compre Agora",
-                "url": "#"
+                "url": "/colecao/nick-jonas"
               },
               "mainImageDesktopWidth": 574,
               "mainImageDesktopHeight": 448,
@@ -111,7 +111,7 @@
               "mainImageMobile": "https://assets.decocache.com/fossil/32a2ecb1-7918-409d-b263-203ded01c1fe/cr-gift-guide.png",
               "backgroundPattern": "https://assets.decocache.com/fossil/f19eb450-6498-4aba-9bde-5d0763fdad5f/cr-pattern.png",
               "buttonText": "Guia de Presentes Para Ele",
-              "buttonLink": "#",
+              "buttonLink": "/relogio/masculino?sort=release%3Adesc",
               "stars": {
                 "image": "https://assets.decocache.com/fossil/797a23ae-f770-443e-95ce-77fc6d423adb/HO25_stars_paired_wide.png",
                 "width": 50,
@@ -122,25 +122,25 @@
                   "imageDesktop": "https://assets.decocache.com/fossil/cf38e5f0-0158-4736-b62b-ea9d520b4940/cr-gifts-guide-card-1-1-desk.png",
                   "imageMobile": "https://assets.decocache.com/fossil/7b7635a1-2ad9-4b72-aa40-b76a659a85c5/cr-gifts-guide-card-1-1-mob.png",
                   "text": "Comprar Relógios",
-                  "link": "#1"
+                  "link": "/lancamentos"
                 },
                 {
                   "imageDesktop": "https://assets.decocache.com/fossil/762f8551-6fa1-46c4-ae46-e306e4c76af3/cr-gifts-guide-card-1-2-desk.png",
                   "imageMobile": "https://assets.decocache.com/fossil/24467d8a-fd9b-44f0-b0b4-73b17dab5cf4/cr-gifts-guide-card-1-2-mob.png",
                   "text": "Comprar Carteiras",
-                  "link": "#2"
+                  "link": "/s?q=carteira&utmi_pc=search&utmi_cp=carteira"
                 },
                 {
                   "imageDesktop": "https://assets.decocache.com/fossil/0cef806e-dfe7-48c6-b38b-884e62d930f8/cr-gifts-guide-card-1-3-desk.png",
                   "imageMobile": "https://assets.decocache.com/fossil/3b5856db-0d4d-4b77-9ffd-645b30a27d5b/cr-gifts-guide-card-1-3-mob.png",
                   "text": "Comprar Joias",
-                  "link": "#3"
+                  "link": "/s?q=watch%20ring&utmi_pc=search&utmi_cp=watch%20ring"
                 },
                 {
                   "imageDesktop": "https://assets.decocache.com/fossil/8e9919e8-94d5-4e0e-8d33-e4e7a1883797/cr-gifts-guide-card-1-4-desk.png",
                   "imageMobile": "https://assets.decocache.com/fossil/1d04ade2-fc75-463f-a03b-9e2c2119e84b/cr-gifts-guide-card-1-4-mob.png",
-                  "text": "Comprar Acessórios",
-                  "link": "#4"
+                  "text": "Comprar Modelos de Couro",
+                  "link": "/s?q=bolsa%20mochila&utmi_pc=search&utmi_cp=bolsa%20mochila"
                 }
               ],
               "paddingBottomMobile": false
@@ -171,7 +171,7 @@
               "mainImageMobile": "https://assets.decocache.com/fossil/0fd50ec1-1eca-4855-b93c-fcd2b8fcf3e0/cr-gift-guide-2.png",
               "backgroundPattern": "https://assets.decocache.com/fossil/f19eb450-6498-4aba-9bde-5d0763fdad5f/cr-pattern.png",
               "buttonText": "Guia de Presentes Para Ela",
-              "buttonLink": "#",
+              "buttonLink": "/relogio/feminino?sort=release%3Adesc",
               "stars": {
                 "image": "https://assets.decocache.com/fossil/797a23ae-f770-443e-95ce-77fc6d423adb/HO25_stars_paired_wide.png",
                 "width": 50,
@@ -182,25 +182,25 @@
                   "imageDesktop": "https://assets.decocache.com/fossil/c714ecfd-e8f6-4e71-adcb-e684d95c25eb/cr-gifts-guide-card-2-1-desk.png",
                   "imageMobile": "https://assets.decocache.com/fossil/4f2d67dc-151a-430f-af36-9fe79c9ae858/cr-gifts-guide-card-2-1-mob.png",
                   "text": "Comprar Relógios",
-                  "link": "#1"
+                  "link": "/lancamentos?sort=release%3Adesc&filter.productClusterIds=2146&filter.genero=feminino"
                 },
                 {
                   "imageDesktop": "https://assets.decocache.com/fossil/664ec429-444d-4921-afad-81cc6a79b997/cr-gifts-guide-card-2-2-desk.png",
                   "imageMobile": "https://assets.decocache.com/fossil/af248bcc-9225-4afb-89ba-07073e552b46/cr-gifts-guide-card-2-2-mob.png",
                   "text": "Comprar Bolsas",
-                  "link": "#2"
+                  "link": "/bolsasfemininas?sort=discount%3Adesc"
                 },
                 {
                   "imageDesktop": "https://assets.decocache.com/fossil/122e1287-4448-4ead-84a5-ebe254e08a8d/cr-gifts-guide-card-2-3-desk.png",
                   "imageMobile": "https://assets.decocache.com/fossil/3593083c-0c8a-4752-a91d-5dd3dbcd4132/cr-gifts-guide-card-2-3-mob.png",
                   "text": "Comprar Joias",
-                  "link": "#3"
+                  "link": "/acessoriosfemininos?sort=discount%3Adesc"
                 },
                 {
                   "imageDesktop": "https://assets.decocache.com/fossil/87322da3-f46a-494e-bcc8-4bb138c89cef/cr-gifts-guide-card-2-4-desk.png",
                   "imageMobile": "https://assets.decocache.com/fossil/009cb648-0af9-4787-b307-74042c411fe2/cr-gifts-guide-card-2-4-mob.png",
                   "text": "Comprar Carteiras",
-                  "link": "#4"
+                  "link": "/s?q=carteira%20feminino&utmi_pc=search&utmi_cp=carteira%20feminino"
                 }
               ],
               "paddingBottomMobile": false

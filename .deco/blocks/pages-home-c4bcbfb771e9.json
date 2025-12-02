@@ -26,11 +26,11 @@
               "ctas": [
                 {
                   "label": "Para Eles",
-                  "href": "#"
+                  "href": "/relogio/masculino?sort=release%3Adesc"
                 },
                 {
                   "label": "Para Elas",
-                  "href": "#"
+                  "href": "/relogio/feminino?sort=release%3Adesc"
                 }
               ],
               "desktop": "https://assets.decocache.com/fossil/8ca8a845-5b97-4dae-85e4-ab65f31d5cd7/FSL_HOL25_30v3_dsk.mp4",
@@ -113,7 +113,7 @@
               "description": "Peças de impacto da sua coleção de edição limitada e nossos estilos mais icônicos — os presentes favoritos da Fossil, escolhidos a dedo pelo próprio Nick Jonas.",
               "button": {
                 "name": "Compre Agora",
-                "url": "#"
+                "url": "/colecao/nick-jonas"
               },
               "mainImageDesktopWidth": 574,
               "mainImageDesktopHeight": 448,
@@ -128,7 +128,7 @@
               "title": "Guia dos Relógios",
               "cards": [
                 {
-                  "url": "#",
+                  "url": "/relogio/masculino?sort=orders%3Adesc",
                   "name": "Clássicos Essenciais Para Ele",
                   "image": "https://assets.decocache.com/fossil/f28c7247-4741-4041-be0a-87b322181a35/cr-carousel-1-2.png",
                   "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
@@ -142,7 +142,7 @@
                   "alt": "Quatro relógios de pulso Fossil masculinos agrupados artisticamente, exibindo variados estilos com pulseiras de couro marrom e aço prateado, e mostradores nas cores creme, preto, azul texturizado e um modelo esqueleto com mecanismo exposto."
                 },
                 {
-                  "url": "#",
+                  "url": "/relogio/feminino?sort=orders%3Adesc",
                   "name": "Clássicos Essenciais Para Ela",
                   "image": "https://assets.decocache.com/fossil/6e18e4b0-e167-4892-9938-73628fd91afa/cr-carousel-1-3.png",
                   "defaultImage": "https://assets.decocache.com/fossil/64ac6991-3f34-40d6-bcef-07adb6dcc183/cr-carousel-1-2.png",
@@ -167,10 +167,10 @@
                   "openImageHeight": 352,
                   "buttonText": "Comprar",
                   "alt": "Três relógios de pulso Fossil com mostradores na cor verde esmeralda e caixas douradas, dispostos lado a lado sobre fundo verde escuro. À esquerda, modelo com pulseira de elos tipo corrente e vidro facetado; ao centro, modelo retangular com pulseira de couro marrom e ilustração artística no mostrador; à direita, modelo com caixa geométrica e pulseira de aço dourado.",
-                  "url": "#"
+                  "url": "/lancamentos?sort=release%3Adesc&filter.productClusterIds=2146&filter.cor=dourado"
                 },
                 {
-                  "url": "#",
+                  "url": "/colecao/nick-jonas",
                   "image": "https://assets.decocache.com/fossil/bb4db164-5982-483b-a11a-b9e0790b1bf8/cr-carousel-1-1.png",
                   "defaultImage": "https://assets.decocache.com/fossil/0cda7fe0-739d-45d9-ada0-4b87913a79ac/cr-carousel-1-4.png",
                   "openImage": "https://assets.decocache.com/fossil/25051056-52ee-4578-9817-47585b0a4bc7/cr-carousel-1-4-2.png",
@@ -188,7 +188,7 @@
                   "defaultImage": "https://assets.decocache.com/fossil/3e5cacc4-3766-4801-b338-0393ba79c4bb/cr-carousel-1-5.png",
                   "openImage": "https://assets.decocache.com/fossil/834b5224-941c-4c54-99c2-3c6ec5d33abb/cr-carousel-1-5-2.png",
                   "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
-                  "url": "#",
+                  "url": "/s?q=watch%20ring&utmi_pc=search&utmi_cp=watch%20ring",
                   "defaultImageWidth": 355,
                   "defaultImageHeight": 456,
                   "openImageWidth": 307,
@@ -256,7 +256,7 @@
                   "defaultImage": "https://assets.decocache.com/fossil/cc278d39-f482-4650-b3d0-bcceb9cab55d/cr-carousel-2-1.png",
                   "openImage": "https://assets.decocache.com/fossil/fae5f27d-fcaa-4aa3-b3ec-fea2d1506eb1/cr-carousel-2-1-2.png",
                   "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
-                  "url": "/relogio/masculino?sort=discount%3Adesc",
+                  "url": "/relogio/masculino?sort=release%3Adesc",
                   "defaultImageWidth": 355,
                   "defaultImageHeight": 456,
                   "openImageHeight": 352,
@@ -273,7 +273,7 @@
                   "openImageWidth": 307,
                   "openImageHeight": 352,
                   "buttonText": "Explorar",
-                  "url": "#",
+                  "url": "/lancamentos",
                   "alt": "Casal sorridente e abraçado em momento descontraído. O homem veste jaqueta verde e exibe um relógio retangular com pulseira de couro marrom, enquanto a mulher segura a mão dele e usa um relógio retangular dourado com pulseira de metal."
                 },
                 {
@@ -281,7 +281,7 @@
                   "defaultImage": "https://assets.decocache.com/fossil/f404414d-b553-40c8-8e01-5783a4e6afc8/cr-carousel-2-3.png",
                   "openImage": "https://assets.decocache.com/fossil/d79acaa0-d0ab-44e8-9e11-c35e755ed85c/cr-carousel-2-3-2.png",
                   "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
-                  "url": "/relogio/feminino?sort=discount%3Adesc",
+                  "url": "/relogio/feminino?sort=release%3Adesc",
                   "defaultImageWidth": 355,
                   "defaultImageHeight": 456,
                   "openImageWidth": 307,
@@ -291,7 +291,7 @@
                   "alt": "Mulher com cabelo cacheado volumoso sentada confortavelmente no chão, vestindo um conjunto de suéter e calça bege. Ela abraça os joelhos e olha para a câmera, destacando no pulso um relógio dourado de caixa oval, com um sofá verde ao fundo compondo um ambiente aconchegante."
                 },
                 {
-                  "name": "Estilo Festa Para Ela",
+                  "name": "Estilo Festa",
                   "defaultImage": "https://assets.decocache.com/fossil/e5be9641-3343-474c-93ac-cf6d209e07e6/cr-carousel-2-4.png",
                   "openImage": "https://assets.decocache.com/fossil/dca7500e-1161-4eb1-a6bd-43dcd3ce48b6/cr-carousel-2-4-2.png",
                   "hoverBackgroundImage": "https://assets.decocache.com/fossil/ab00043d-1015-48d1-a6e5-a747fa9a9b97/cr-card-bg.png",
@@ -300,7 +300,7 @@
                   "openImageWidth": 307,
                   "openImageHeight": 352,
                   "buttonText": "Explorar",
-                  "url": "#",
+                  "url": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel&sort=release%3Adesc",
                   "alt": "Close-up do pulso de uma mulher usando três relógios Fossil simultaneamente em estilo \"stacking\". A composição inclui um modelo bracelete dourado com caixa oval, um modelo geométrico menor e um relógio retangular delicado com moldura cravejada de cristais e pulseira preta."
                 }
               ],
@@ -327,29 +327,29 @@
               "items": [
                 {
                   "desktopImage": "https://assets.decocache.com/fossil/96fd64f3-1602-4a4f-801c-1b9a28d69b21/HO25_HP_module6_wdygt_3.png",
-                  "alt": "Item 1",
-                  "href": "#",
-                  "caption": "Comprar Item 1",
+                  "alt": "Comprar Acessórios",
+                  "href": "/acessoriosfemininos?sort=release%3Adesc",
+                  "caption": "Comprar Acessórios",
                   "loading": "eager",
                   "fetchPriority": "high"
                 },
                 {
                   "desktopImage": "https://assets.decocache.com/fossil/de62b13c-db72-47a6-ad59-e01685ee07c1/HO25_HP_module6_wdygt_1.png",
-                  "alt": "Item 2",
-                  "caption": "Comprar Item 2",
-                  "href": "#"
+                  "alt": "Comprar Everett",
+                  "caption": "Comprar Everett",
+                  "href": "/s?q=everett&utmi_pc=search&utmi_cp=everett&sort=release%3Adesc"
                 },
                 {
                   "desktopImage": "https://assets.decocache.com/fossil/6ca4a085-8da4-4ce9-b2c3-c06e544b9ca4/HO25_HP_module6_wdygt_2.png",
-                  "alt": "Item 3",
-                  "href": "#",
-                  "caption": "Comprar Item 3"
+                  "alt": "Comprar Relógio Anel",
+                  "href": "/s?q=watch%20ring&utmi_pc=search&utmi_cp=watch%20ring",
+                  "caption": "Comprar Relógio Anel"
                 },
                 {
                   "desktopImage": "https://assets.decocache.com/fossil/9985d919-f88f-433a-8671-d338db45006f/HO25_HP_module6_wdygt_4.png",
-                  "alt": "Item 4",
-                  "href": "#",
-                  "caption": "Comprar Item 4"
+                  "alt": "Comprar Bolsas",
+                  "href": "/bolsasfemininas?sort=release%3Adesc",
+                  "caption": "Comprar Bolsas"
                 }
               ]
             }
