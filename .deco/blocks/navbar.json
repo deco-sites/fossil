@@ -358,8 +358,8 @@
     {
       "children": [],
       "image": [],
-      "name": "Cyber Weekend",
-      "url": "/cyber-weekend"
+      "name": "OFF",
+      "url": "/off"
     }
   ],
   "__resolveType": "commerce/loaders/navbar.ts"
