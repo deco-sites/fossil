@@ -2,24 +2,24 @@
   "banners": [
     {
       "image": {
-        "mobile": "https://assets.decocache.com/fossil/711c6af1-94c6-4303-a485-a480448419b2/Bannerdepagina_colecoes_mob2.jpg",
-        "desktop": "https://assets.decocache.com/fossil/287aa20e-df6d-4e46-a562-986bd3888673/Bannerdepaugina_colecoes_desk2.jpg",
+        "mobile": "https://assets.decocache.com/fossil/5fc4dbee-2bea-409f-9419-35a71f8abcae/Masculinos-mob.png",
+        "desktop": "https://assets.decocache.com/fossil/f2b7d44b-1ad8-4c32-b4d5-cd28221dc3d1/masculino-desk.png",
         "alt": "Banner Relógio Masculino"
       },
       "matcher": "/relogio/masculino*"
     },
     {
       "image": {
-        "desktop": "https://assets.decocache.com/fossil/deaa3314-f773-48af-a54a-d690059e4630/Bannerdepaugina_colecoes_desk3.jpg",
-        "mobile": "https://assets.decocache.com/fossil/243cc07c-88ae-45cb-b78f-7efd5671b356/Bannerdepagina_colecoes_mob3.jpg",
+        "desktop": "https://assets.decocache.com/fossil/d6eb9ae2-94a9-4655-92c4-bff31c2b6a08/feminino-desk.png",
+        "mobile": "https://assets.decocache.com/fossil/b1ed29e3-c016-4c1a-b3e1-12034c7a1a1a/femininos-mob.png",
         "alt": "Banner Relógios Femininos"
       },
       "matcher": "/relogio/feminino*"
     },
     {
       "image": {
-        "desktop": "https://assets.decocache.com/fossil/1b562cc2-050f-483c-aad4-fcc05c5b4729/Bannerdepaugina_colecoes_desk1.jpg",
-        "mobile": "https://assets.decocache.com/fossil/2c20175d-1a26-436e-b608-717a26e9a182/Bannerdepagina_colecoes_mob1.jpg",
+        "desktop": "https://assets.decocache.com/fossil/efe3e5a0-c066-49d1-9a45-ec1bff444b35/lancamentos-desk.png",
+        "mobile": "https://assets.decocache.com/fossil/31099d83-c23c-4a74-bc47-28c44d456be5/lancamentods.png",
         "alt": "Banner Lançamentos"
       },
       "matcher": "/lancamentos*"
@@ -73,8 +73,8 @@
               "value": "https://assets.decocache.com/fossil/7dd893be-de3e-4b93-a207-86836ed8e8d3/Euro_banner_livelo_0707-(2)-(1)-(1).png",
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
-                "start": "2025-11-12T03:00:00.000Z",
-                "end": "2025-11-26T02:59:00.000Z"
+                "start": "2025-11-29T03:00:00.000Z",
+                "end": "2025-12-07T02:59:00.000Z"
               }
             },
             {
@@ -102,8 +102,8 @@
               "value": "https://assets.decocache.com/fossil/f14b0378-b06a-4ec5-b73f-be2294a40178/Euro_banner_livelo_0707_desk.psd-(3)-(2).png",
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
-                "start": "2025-11-12T03:00:00.000Z",
-                "end": "2025-11-26T02:59:00.000Z"
+                "start": "2025-11-29T03:00:00.000Z",
+                "end": "2025-12-07T02:59:00.000Z"
               }
             },
             {

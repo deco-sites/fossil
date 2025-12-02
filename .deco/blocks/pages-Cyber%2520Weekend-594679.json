@@ -1,13 +1,7 @@
 {
-  "name": "Lançamentos",
-  "path": "/lancamentos",
+  "name": "Cyber Weekend",
+  "path": "/cyber-weekend",
   "sections": [
-    {
-      "__resolveType": "website/sections/Seo/Seo.tsx",
-      "type": "website",
-      "titleTemplate": "%s | Deco.cx",
-      "descriptionTemplate": "%s | Deco.cx"
-    },
     {
       "__resolveType": "Header - 01"
     },
@@ -19,6 +13,7 @@
       "variants": [
         {
           "value": {
+            "__resolveType": "site/sections/Product/SearchResult.tsx",
             "page": {
               "__resolveType": "commerce/loaders/product/extensions/listingPage.ts",
               "data": {
@@ -28,10 +23,10 @@
                 "selectedFacets": [
                   {
                     "key": "productClusterIds",
-                    "value": "2146"
+                    "value": "2648"
                   }
                 ],
-                "count": 18
+                "count": 24
               },
               "extensions": []
             },
@@ -40,9 +35,9 @@
                 "mobile": 2,
                 "desktop": 3
               },
-              "variant": "aside"
+              "variant": "aside",
+              "banners": []
             },
-            "__resolveType": "site/sections/Product/SearchResult.tsx",
             "startingPage": 1,
             "isCollection": false
           },

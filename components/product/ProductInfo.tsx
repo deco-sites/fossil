@@ -145,7 +145,7 @@ function ProductInfo({
           installmentBillingIncrement={installment?.billingIncrement}
           priceCurrency={offers?.priceCurrency}
           priceWithPixDiscount={priceWithPixDiscount}
-          sellerPrice={price}
+          installmentPrice={installment?.price || 0}
           listPrice={listPrice}
           pixPercentDiscountByDiferenceSellerPrice={pixPercentDiscountByDiferenceSellerPrice}
         />

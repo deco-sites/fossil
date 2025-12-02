@@ -358,8 +358,8 @@
     {
       "children": [],
       "image": [],
-      "name": "Black Friday",
-      "url": "/black-friday"
+      "name": "OFF",
+      "url": "/off"
     }
   ],
   "__resolveType": "commerce/loaders/navbar.ts"
