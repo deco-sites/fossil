@@ -16,13 +16,15 @@
       "@type": "SiteNavigationElement",
       "image": [
         {
-          "url": "https://data.decoassets.com/fossil/d2da93ea-e38e-43a5-918c-163eb7612600/1742316898262-c5eac8cf-96b6-4a00-9975-f96aebe00dfe",
+          "url": "https://assets.decocache.com/fossil/4dd948a2-1791-4e4b-8fbc-3047855aa0fb/HO25-TopNav-Men.jpg",
           "@type": "ImageObject",
           "video": null,
           "image": null
         },
         {
-          "url": "https://data.decoassets.com/fossil/7fbc515b-2829-4c76-842e-44a92b19a159/1742316899631-a8495e6e-044b-419e-aaea-09f45d2ab01d"
+          "url": "https://assets.decocache.com/fossil/11aff367-eee2-4be7-a2c0-5aadf5ea9aa9/HO25-TopNav-Watches.jpg",
+          "image": null,
+          "video": null
         }
       ],
       "children": [
@@ -172,11 +174,15 @@
       "@type": "SiteNavigationElement",
       "image": [
         {
-          "url": "https://data.decoassets.com/fossil/7a3acea4-4bcb-4d32-9b89-d50545aa4151/1742316900801-d2d905be-0dc2-464b-8876-35a5b630fa04",
-          "@type": "ImageObject"
+          "url": "https://assets.decocache.com/fossil/69239489-a449-4e7c-b198-b0fe7c0ea9f5/HO25-TopNav-Women.jpg",
+          "@type": "ImageObject",
+          "image": null,
+          "video": null
         },
         {
-          "url": "https://data.decoassets.com/fossil/c0317cc2-9786-4f13-899c-02fb3d02befe/1742316902117-5b3e7057-a54b-4d54-872a-b1d7f51ff608"
+          "url": "https://assets.decocache.com/fossil/3234797a-c3b2-429c-9d2e-f8e644c61e1c/HO25-TopNav-Jewelry.jpg",
+          "image": null,
+          "video": null
         }
       ],
       "children": [
@@ -334,12 +340,14 @@
       "name": "Acessórios",
       "image": [
         {
-          "url": "https://data.decoassets.com/fossil/c0df3115-e3eb-494d-b654-9840a94da5fe/1742316903663-787f0d38-1104-4508-a120-c36d6c4e7a12",
+          "url": "https://assets.decocache.com/fossil/321ea3cb-72a1-4785-8c5a-3f48e8bf42f3/HO25-TopNav-Bags.jpg",
           "image": null,
           "video": null
         },
         {
-          "url": "https://data.decoassets.com/fossil/6acaf87a-bece-4ce6-935b-f4622863f732/1742316905123-6c7f2239-f23a-4cb8-b3e6-2fc48cf1acc4"
+          "url": "https://assets.decocache.com/fossil/e95fd05e-2af6-42f6-867b-4a991824a2a8/HO25-TopNav-Wallets.jpg",
+          "image": null,
+          "video": null
         }
       ]
     },
