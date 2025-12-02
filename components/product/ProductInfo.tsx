@@ -47,6 +47,7 @@ function ProductInfo({
     price,
     listPrice,
     seller = "1",
+    has_discount,
     installment,
     availability,
     priceWithPixDiscount,
@@ -142,6 +143,7 @@ function ProductInfo({
       {/* Prices */}
       {availability && (
         <ProductInfoPriceModel
+          hasDiscount={has_discount}
           installmentBillingDuration={installment?.billingDuration}
           installmentBillingIncrement={installment?.billingIncrement}
           priceCurrency={offers?.priceCurrency}
