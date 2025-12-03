@@ -26,17 +26,32 @@ export default function NewsletterFooter({ newsletter, layout = {} }: Props) {
 
     try {
       const formData = new FormData(e.currentTarget);
-      const email = formData.get("email");
-      const Newsletter = true;
-      const data = { email, Newsletter };
+      const email = formData.get("email") as string;
 
+      // Envia para VTEX Master Data
       await fetch("/api/optin", {
         method: "POST",
-        body: JSON.stringify(data),
+        body: JSON.stringify({ email, Newsletter: true }),
         headers: {
           "content-type": "application/json",
           accept: "application/json",
         },
+      });
+
+      // Envia para Dito
+      fetch("/api/dito", {
+        method: "POST",
+        body: JSON.stringify({
+          email,
+          newsletter: true,
+          source: "footer",
+        }),
+        headers: {
+          "content-type": "application/json",
+          accept: "application/json",
+        },
+      }).catch((error) => {
+        console.error("[Dito Integration] Erro ao enviar para Dito:", error);
       });
     } finally {
       loading.value = false;
@@ -49,7 +64,7 @@ export default function NewsletterFooter({ newsletter, layout = {} }: Props) {
       <div
         class={clx(
           "flex flex-col gap-4 w-full md:w-full",
-          tiled && "flex-col lg:justify-between",
+          tiled && "flex-col lg:justify-between"
         )}
       >
         <div class="flex flex-col gap-4">
@@ -77,7 +92,7 @@ export default function NewsletterFooter({ newsletter, layout = {} }: Props) {
     <div
       class={clx(
         "flex flex-col gap-4 w-full md:w-full",
-        tiled && "flex-col lg:justify-between",
+        tiled && "flex-col lg:justify-between"
       )}
     >
       <div class="flex flex-col gap-4">

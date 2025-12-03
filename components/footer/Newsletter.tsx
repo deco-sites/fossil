@@ -31,16 +31,18 @@ export interface Props {
   };
 }
 
-const add_email_optin_inside_user_object = (
-  { email_optin, email }: {
-    email: string;
-    email_optin: boolean;
-  },
-) => {
+const add_email_optin_inside_user_object = ({
+  email_optin,
+  email,
+}: {
+  email: string;
+  email_optin: boolean;
+}) => {
   let user_formatted = { email_optin };
 
-  globalThis.window.insider_object =
-    JSON.parse(sessionStorage.getItem("user_object") || "{}") ||
+  globalThis.window.insider_object = JSON.parse(
+    sessionStorage.getItem("user_object") || "{}"
+  ) ||
     globalThis.window.insider_object || { user: user_formatted };
 
   if (email) {
@@ -55,13 +57,11 @@ const add_email_optin_inside_user_object = (
   }
   sessionStorage.setItem(
     "user_object",
-    JSON.stringify(globalThis.window.insider_object),
+    JSON.stringify(globalThis.window.insider_object)
   );
 };
 
-function Newsletter(
-  { content, layout = {} }: Props,
-) {
+function Newsletter({ content, layout = {} }: Props) {
   const { tiled = false } = layout;
   const loading = useSignal(false);
 
@@ -71,12 +71,29 @@ function Newsletter(
     try {
       loading.value = true;
 
-      const email =
-        (e.currentTarget.elements.namedItem("email") as RadioNodeList)?.value;
+      const email = (
+        e.currentTarget.elements.namedItem("email") as RadioNodeList
+      )?.value;
 
       if (email) {
         await invoke.vtex.actions.newsletter.subscribe({ email });
         add_email_optin_inside_user_object({ email_optin: true, email });
+
+        // Envia para Dito
+        fetch("/api/dito", {
+          method: "POST",
+          body: JSON.stringify({
+            email,
+            newsletter: true,
+            source: "footer",
+          }),
+          headers: {
+            "content-type": "application/json",
+            accept: "application/json",
+          },
+        }).catch((error) => {
+          console.error("[Dito Integration] Erro ao enviar para Dito:", error);
+        });
       } else {
         alert("Erro! Preencha o campo de email.");
       }
@@ -89,7 +106,7 @@ function Newsletter(
     <div
       class={clx(
         "flex flex-col gap-4 w-full md:w-full",
-        tiled && "flex-col lg:justify-between",
+        tiled && "flex-col lg:justify-between"
       )}
     >
       <div class="flex">
@@ -100,10 +117,7 @@ function Newsletter(
         )}
       </div>
       <div class="flex flex-col gap-4">
-        <form
-          class="form-control"
-          onSubmit={handleSubmit}
-        >
+        <form class="form-control" onSubmit={handleSubmit}>
           <div class="flex w-full">
             <input
               name="email"
