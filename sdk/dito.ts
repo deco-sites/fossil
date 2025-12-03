@@ -5,6 +5,8 @@
 
 const DITO_API_URL = "https://ingest.dito.com.br/v2/events";
 const DITO_BRAND = "fossil";
+const DITO_API_KEY =
+    "MjAyNS0xMC0xNyAwOTo1MTozMCAtMDMwMEbDs3NzaWwgLSBPZmljaWFsNDY5";
 
 /**
  * Tipos de ação para eventos do Dito
@@ -212,6 +214,7 @@ export function createNewsletterEvent(
 export interface DitoClientOptions {
     apiUrl?: string;
     brand?: string;
+    apiKey?: string;
 }
 
 /**
@@ -223,6 +226,7 @@ export async function sendDitoEvents(
 ): Promise<Response> {
     const apiUrl = options?.apiUrl ?? DITO_API_URL;
     const brand = options?.brand ?? DITO_BRAND;
+    const apiKey = options?.apiKey ?? DITO_API_KEY;
 
     const response = await fetch(apiUrl, {
         method: "POST",
@@ -230,6 +234,7 @@ export async function sendDitoEvents(
             "Accept": "application/json",
             "Content-Type": "application/json",
             "brand": brand,
+            "Authorization": `Bearer ${apiKey}`,
         },
         body: JSON.stringify(events),
     });
