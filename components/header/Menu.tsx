@@ -16,63 +16,63 @@ function MenuItem({
 
   return (
     <div
-      className={
-        hasChildren
-          ? "collapse"
-          : "collapse-title !uppercase !px-0 !text-sm flex items-center justify-between"
-      }
+      className={hasChildren
+        ? "collapse"
+        : "collapse-title !uppercase !px-0 !text-sm flex items-center justify-between"}
     >
-      {hasChildren ? (
-        <>
-          <input type="checkbox" />
-          <div
-            className={`collapse-title !uppercase !px-0 !text-sm flex items-center justify-between ${
+      {hasChildren
+        ? (
+          <>
+            <input type="checkbox" />
+            <div
+              className={`collapse-title !uppercase !px-0 !text-sm flex items-center justify-between ${
+                item.name?.toLowerCase() === "off"
+                  ? "!text-[#FF1010]"
+                  : item.name?.toLowerCase() === "black friday"
+                  ? "!text-[#C41C17]"
+                  : "!text-black"
+              }`}
+            >
+              {item.name}
+              <span className="font-bold text-3xl leading-4 text-black">
+                &rsaquo;
+              </span>
+            </div>
+
+            <div className="collapse-content">
+              <ul>
+                {item.children?.map((node) => (
+                  <li key={node}>
+                    <MenuItem item={node} />
+                  </li>
+                ))}
+
+                {isParent && (
+                  <li className="grid place-content-center w-64 mt-4 mx-auto bg-warning">
+                    <a className="py-2 px-4 text-white font-se" href={item.url}>
+                      Ver todos
+                    </a>
+                  </li>
+                )}
+              </ul>
+            </div>
+          </>
+        )
+        : (
+          <a
+            href={item.url}
+            className={`${
               item.name?.toLowerCase() === "off"
                 ? "!text-[#FF1010]"
                 : item.name?.toLowerCase() === "black friday"
                 ? "!text-[#C41C17]"
                 : "!text-black"
             }`}
+            alt={item.name}
           >
             {item.name}
-            <span className="font-bold text-3xl leading-4 text-black">
-              &rsaquo;
-            </span>
-          </div>
-
-          <div className="collapse-content">
-            <ul>
-              {item.children?.map((node) => (
-                <li key={node}>
-                  <MenuItem item={node} />
-                </li>
-              ))}
-
-              {isParent && (
-                <li className="grid place-content-center w-64 mt-4 mx-auto bg-warning">
-                  <a className="py-2 px-4 text-white font-se" href={item.url}>
-                    Ver todos
-                  </a>
-                </li>
-              )}
-            </ul>
-          </div>
-        </>
-      ) : (
-        <a
-          href={item.url}
-          className={`${
-            item.name?.toLowerCase() === "off"
-              ? "!text-[#FF1010]"
-              : item.name?.toLowerCase() === "black friday"
-              ? "!text-[#C41C17]"
-              : "!text-black"
-          }`}
-          alt={item.name}
-        >
-          {item.name}
-        </a>
-      )}
+          </a>
+        )}
     </div>
   );
 }
@@ -89,29 +89,31 @@ function Menu({ items }: Props) {
           </li>
         ))}
 
-        {!user.value?.givenName ? (
-          <li>
-            <div class="collapse-title !uppercase !px-0 !text-sm flex items-center justify-between ">
-              <a href="/my-account" alt="account !text-black">
-                MINHA CONTA
-              </a>
-              <span className="font-bold text-3xl leading-4 text-black">
-                &rsaquo;
-              </span>
-            </div>
-          </li>
-        ) : (
-          <li>
-            <div class="collapse-title !uppercase !px-0 !text-sm flex items-center justify-between ">
-              <a
-                href="/api/vtexid/pub/logout?scope=technos&returnUrl=https://www.fossil.com.br"
-                alt="account !text-black "
-              >
-                Sair
-              </a>
-            </div>
-          </li>
-        )}
+        {!user.value?.givenName
+          ? (
+            <li>
+              <div class="collapse-title !uppercase !px-0 !text-sm flex items-center justify-between ">
+                <a href="/my-account" alt="account !text-black">
+                  MINHA CONTA
+                </a>
+                <span className="font-bold text-3xl leading-4 text-black">
+                  &rsaquo;
+                </span>
+              </div>
+            </li>
+          )
+          : (
+            <li>
+              <div class="collapse-title !uppercase !px-0 !text-sm flex items-center justify-between ">
+                <a
+                  href="/api/vtexid/pub/logout?scope=technos&returnUrl=https://www.fossil.com.br"
+                  alt="account !text-black "
+                >
+                  Sair
+                </a>
+              </div>
+            </li>
+          )}
       </ul>
     </div>
   );

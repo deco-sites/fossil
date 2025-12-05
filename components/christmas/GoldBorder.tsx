@@ -1,5 +1,5 @@
-import { ComponentChildren } from "preact";
 import type { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
+import type { ComponentChildren } from "preact";
 import MediaBackground from "./MediaBackground.tsx";
 
 export interface GoldBorderProps {
@@ -166,50 +166,57 @@ export default function GoldBorder({
               preserveAspectRatio="none"
               xmlns="http://www.w3.org/2000/svg"
             >
+              <title>Borda de vídeo natalina</title>
               <defs>
-                <clipPath id={clipId}>
-                  <path d="M1158.07 601.838C1135.81 601.838 1117.76 623.57 1117.76 650.383C1117.76 651.599 1117.81 652.802 1117.88 654H45.1168C45.189 652.802 45.2371 651.599 45.2371 650.383C45.2371 623.57 27.1902 601.838 4.92641 601.838C4.61359 601.838 4.3068 601.856 4 601.868V56.1324C4.3068 56.1384 4.61359 56.1625 4.92641 56.1625C27.1902 56.1625 45.2371 34.4296 45.2371 7.61713C45.2371 6.40139 45.189 5.19769 45.1168 4H1117.88C1117.81 5.19769 1117.76 6.40139 1117.76 7.61713C1117.76 34.4296 1135.81 56.1625 1158.07 56.1625C1158.39 56.1625 1158.69 56.1444 1159 56.1324V601.862C1158.69 601.856 1158.39 601.832 1158.07 601.832V601.838Z" />
+                <clipPath id={clipId} clipPathUnits="objectBoundingBox">
+                  <path
+                    d="M1158.07 601.838C1135.81 601.838 1117.76 623.57 1117.76 650.383C1117.76 651.599 1117.81 652.802 1117.88 654H45.1168C45.189 652.802 45.2371 651.599 45.2371 650.383C45.2371 623.57 27.1902 601.838 4.92641 601.838C4.61359 601.838 4.3068 601.856 4 601.868V56.1324C4.3068 56.1384 4.61359 56.1625 4.92641 56.1625C27.1902 56.1625 45.2371 34.4296 45.2371 7.61713C45.2371 6.40139 45.189 5.19769 45.1168 4H1117.88C1117.81 5.19769 1117.76 6.40139 1117.76 7.61713C1117.76 34.4296 1135.81 56.1625 1158.07 56.1625C1158.39 56.1625 1158.69 56.1444 1159 56.1324V601.862C1158.69 601.856 1158.39 601.832 1158.07 601.832V601.838Z"
+                    transform="scale(0.00085910653 0.00151975684)"
+                  />
                 </clipPath>
               </defs>
             </svg>
-            {videoDesktop && (
-              <video
-                class="hidden lg:block absolute inset-0 w-full h-full object-cover"
-                src={videoDesktop}
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="auto"
-                poster={posterImage || ""}
-                aria-hidden="true"
-                tabIndex={-1}
-                style={{
-                  objectPosition: "50% 50%",
-                  transform: `scale(${videoZoom})`,
-                  clipPath: `url(#${clipId})`,
-                }}
-              />
-            )}
-            {(videoMobile || videoDesktop) && (
-              <video
-                class="block lg:hidden absolute inset-0 w-full h-full object-cover"
-                src={videoMobile || videoDesktop}
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="auto"
-                poster={posterImage || ""}
-                aria-hidden="true"
-                tabIndex={-1}
-                style={{
-                  objectPosition: "50% 50%",
-                  transform: `scale(${videoZoom})`,
-                  clipPath: `url(#${clipId})`,
-                }}
-              />
-            )}
+            <div
+              class="absolute inset-0 w-full h-full overflow-hidden"
+              style={{ clipPath: `url(#${clipId})` }}
+            >
+              {videoDesktop && (
+                <video
+                  class="hidden lg:block absolute inset-0 w-full h-full object-cover"
+                  src={videoDesktop}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="auto"
+                  poster={posterImage || ""}
+                  aria-hidden="true"
+                  tabIndex={-1}
+                  style={{
+                    objectPosition: "50% 50%",
+                    transform: `scale(${videoZoom})`,
+                  }}
+                />
+              )}
+              {(videoMobile || videoDesktop) && (
+                <video
+                  class="block lg:hidden absolute inset-0 w-full h-full object-cover"
+                  src={videoMobile || videoDesktop}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="auto"
+                  poster={posterImage || ""}
+                  aria-hidden="true"
+                  tabIndex={-1}
+                  style={{
+                    objectPosition: "50% 50%",
+                    transform: `scale(${videoZoom})`,
+                  }}
+                />
+              )}
+            </div>
           </>
         )
         : (
@@ -222,9 +229,13 @@ export default function GoldBorder({
               preserveAspectRatio="none"
               xmlns="http://www.w3.org/2000/svg"
             >
+              <title>Borda de vídeo natalina</title>
               <defs>
-                <clipPath id={clipId}>
-                  <path d="M1158.07 601.838C1135.81 601.838 1117.76 623.57 1117.76 650.383C1117.76 651.599 1117.81 652.802 1117.88 654H45.1168C45.189 652.802 45.2371 651.599 45.2371 650.383C45.2371 623.57 27.1902 601.838 4.92641 601.838C4.61359 601.838 4.3068 601.856 4 601.868V56.1324C4.3068 56.1384 4.61359 56.1625 4.92641 56.1625C27.1902 56.1625 45.2371 34.4296 45.2371 7.61713C45.2371 6.40139 45.189 5.19769 45.1168 4H1117.88C1117.81 5.19769 1117.76 6.40139 1117.76 7.61713C1117.76 34.4296 1135.81 56.1625 1158.07 56.1625C1158.39 56.1625 1158.69 56.1444 1159 56.1324V601.862C1158.69 601.856 1158.39 601.832 1158.07 601.832V601.838Z" />
+                <clipPath id={clipId} clipPathUnits="objectBoundingBox">
+                  <path
+                    d="M1158.07 601.838C1135.81 601.838 1117.76 623.57 1117.76 650.383C1117.76 651.599 1117.81 652.802 1117.88 654H45.1168C45.189 652.802 45.2371 651.599 45.2371 650.383C45.2371 623.57 27.1902 601.838 4.92641 601.838C4.61359 601.838 4.3068 601.856 4 601.868V56.1324C4.3068 56.1384 4.61359 56.1625 4.92641 56.1625C27.1902 56.1625 45.2371 34.4296 45.2371 7.61713C45.2371 6.40139 45.189 5.19769 45.1168 4H1117.88C1117.81 5.19769 1117.76 6.40139 1117.76 7.61713C1117.76 34.4296 1135.81 56.1625 1158.07 56.1625C1158.39 56.1625 1158.69 56.1444 1159 56.1324V601.862C1158.69 601.856 1158.39 601.832 1158.07 601.832V601.838Z"
+                    transform="scale(0.00085910653 0.00151975684)"
+                  />
                 </clipPath>
               </defs>
               <image
@@ -246,6 +257,7 @@ export default function GoldBorder({
         preserveAspectRatio="none"
         xmlns="http://www.w3.org/2000/svg"
       >
+        <title>Borda de vídeo natalina</title>
         <defs>
           <filter id="goldGlow">
             <feGaussianBlur stdDeviation="2" result="coloredBlur" />

@@ -93,19 +93,17 @@ function ProductCard({
   } = useOffer(offers);
 
   // Calcular porcentagem de desconto baseada no listPrice e price
-  const discountPercentage =
-    listPrice && price && listPrice > price
-      ? Math.round(((listPrice - price) / listPrice) * 100)
-      : 0;
+  const discountPercentage = listPrice && price && listPrice > price
+    ? Math.round(((listPrice - price) / listPrice) * 100)
+    : 0;
 
   const possibilities = useVariantPossibilities(hasVariant, product);
   const variants = Object.entries(Object.values(possibilities)[0] ?? {});
   const relativeUrl = relative(url);
   const aspectRatio = `${WIDTH} / ${HEIGHT}`;
-  const productName =
-    device === "desktop"
-      ? isVariantOf?.name
-      : truncateText(isVariantOf?.name || "", 46);
+  const productName = device === "desktop"
+    ? isVariantOf?.name
+    : truncateText(isVariantOf?.name || "", 46);
 
   return (
     <div
@@ -139,7 +137,7 @@ function ProductCard({
             class={clx(
               "absolute top-[10%] left-[-15%]  lg:top-0 lg:left-0",
               "z-10 w-full",
-              "flex items-center justify-end"
+              "flex items-center justify-end",
             )}
           >
             {/* Discount % */}
@@ -177,7 +175,7 @@ function ProductCard({
             class={clx(
               "absolute top-0 left-0",
               "grid grid-cols-1 grid-rows-1",
-              "w-full"
+              "w-full",
             )}
           >
             <Image
@@ -190,7 +188,7 @@ function ProductCard({
                 "bg-base-100",
                 "object-cover",
                 "rounded w-full",
-                "col-span-full row-span-full"
+                "col-span-full row-span-full",
               )}
               sizes="(max-width: 400px) 50vw, 20vw"
               preload={preload}
@@ -209,7 +207,7 @@ function ProductCard({
                   "object-cover",
                   "rounded w-full",
                   "col-span-full row-span-full",
-                  "transition-opacity opacity-0 lg:group-hover:opacity-100"
+                  "transition-opacity opacity-0 lg:group-hover:opacity-100",
                 )}
                 sizes="(max-width: 400px) 50vw, 20vw"
                 loading="lazy"
@@ -218,23 +216,25 @@ function ProductCard({
             )}
 
             {device === "desktop" &&
-              (availability ? (
-                <a
-                  href={relativeUrl}
-                  aria-label="view product"
-                  class="!transition-none !h-12 w-[96%] font-scoutCond font-medium items-center justify-center !hover:brightness-90 uppercase !border-warning absolute bottom-2 right-0 !bg-[#A66C18] hidden text-white group-hover/product:flex text-base tracking-[1px]  lg:text-2xl "
-                >
-                  comprar
-                </a>
-              ) : (
-                <a
-                  href={relativeUrl}
-                  aria-label="view product"
-                  class="!transition-none !h-12 w-[96%] font-scoutCond font-medium items-center justify-center !hover:brightness-90 uppercase !border-warning absolute bottom-2 right-0 !bg-[#A66C18] hidden text-white group-hover/product:flex text-base tracking-[1px]  lg:text-2xl "
-                >
-                  Avise-me
-                </a>
-              ))}
+              (availability
+                ? (
+                  <a
+                    href={relativeUrl}
+                    aria-label="view product"
+                    class="!transition-none !h-12 w-[96%] font-scoutCond font-medium items-center justify-center !hover:brightness-90 uppercase !border-warning absolute bottom-2 right-0 !bg-[#A66C18] hidden text-white group-hover/product:flex text-base tracking-[1px]  lg:text-2xl "
+                  >
+                    comprar
+                  </a>
+                )
+                : (
+                  <a
+                    href={relativeUrl}
+                    aria-label="view product"
+                    class="!transition-none !h-12 w-[96%] font-scoutCond font-medium items-center justify-center !hover:brightness-90 uppercase !border-warning absolute bottom-2 right-0 !bg-[#A66C18] hidden text-white group-hover/product:flex text-base tracking-[1px]  lg:text-2xl "
+                  >
+                    Avise-me
+                  </a>
+                ))}
           </a>
         </figure>
 
@@ -247,13 +247,11 @@ function ProductCard({
                 <a href={link}>
                   <Avatar
                     content={value}
-                    variant={
-                      link === relativeUrl
-                        ? "active"
-                        : link
-                        ? "default"
-                        : "disabled"
-                    }
+                    variant={link === relativeUrl
+                      ? "active"
+                      : link
+                      ? "default"
+                      : "disabled"}
                   />
                 </a>
               </li>
@@ -264,6 +262,7 @@ function ProductCard({
         <div class="flex flex-col">
           <h2
             class="text-xs md:text-sm uppercase  font-normal lg:leading-4  h-auto xs:h-12 lg:h-auto text-primary-content tracking-one"
+            // deno-lint-ignore react-no-danger
             dangerouslySetInnerHTML={{ __html: productName ?? "" }}
           />
         </div>
@@ -273,27 +272,27 @@ function ProductCard({
           <div class="yv-review-quickreview" value={inProductGroupWithID}></div>
         </div>
 
-        {availability ? (
-          <>
-            {/* Price from/to */}
-            <ProductCardPriceModel
-              installmentBillingDuration={installment?.billingDuration}
-              installmentBillingIncrement={installment?.billingIncrement}
-              priceCurrency={offers?.priceCurrency}
-              priceWithPixDiscount={priceWithPixDiscount}
-              installmentPrice={installment?.price || 0}
-              hasDiscount={has_discount}
-              listPrice={listPrice}
-              pixPercentDiscountByDiferenceSellerPrice={
-                pixPercentDiscountByDiferenceSellerPrice
-              }
-            />
-          </>
-        ) : (
-          <>
-            <span>Produto Esgotado</span>
-          </>
-        )}
+        {availability
+          ? (
+            <>
+              {/* Price from/to */}
+              <ProductCardPriceModel
+                installmentBillingDuration={installment?.billingDuration}
+                installmentBillingIncrement={installment?.billingIncrement}
+                priceCurrency={offers?.priceCurrency}
+                priceWithPixDiscount={priceWithPixDiscount}
+                installmentPrice={installment?.price || 0}
+                hasDiscount={has_discount}
+                listPrice={listPrice}
+                pixPercentDiscountByDiferenceSellerPrice={pixPercentDiscountByDiferenceSellerPrice}
+              />
+            </>
+          )
+          : (
+            <>
+              <span>Produto Esgotado</span>
+            </>
+          )}
       </div>
     </div>
   );

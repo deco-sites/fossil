@@ -80,10 +80,9 @@ function ProductInfo({
     listPrice,
   });
 
-  const referenceID =
-    product.additionalProperty?.find(
-      ({ valueReference }) => valueReference == "ReferenceID"
-    )?.value ?? product.gtin;
+  const referenceID = product.additionalProperty?.find(
+    ({ valueReference }) => valueReference == "ReferenceID",
+  )?.value ?? product.gtin;
 
   return (
     <div
@@ -93,19 +92,19 @@ function ProductInfo({
       {/* Add to Cart and Favorites button Mobile */}
       {device !== "desktop" && (
         <div class="flex justify-center w-full m-auto">
-          {availability ? (
-            <>
-              {platform === "vtex" && (
-                <AddToCartButtonVTEX
-                  eventParams={{ items: [eventItem] }}
-                  productID={productID}
-                  seller={seller}
-                />
-              )}
-            </>
-          ) : (
-            <OutOfStock productID={productID} />
-          )}
+          {availability
+            ? (
+              <>
+                {platform === "vtex" && (
+                  <AddToCartButtonVTEX
+                    eventParams={{ items: [eventItem] }}
+                    productID={productID}
+                    seller={seller}
+                  />
+                )}
+              </>
+            )
+            : <OutOfStock productID={productID} />}
         </div>
       )}
 
@@ -150,9 +149,7 @@ function ProductInfo({
           priceWithPixDiscount={priceWithPixDiscount}
           installmentPrice={installment?.price || 0}
           listPrice={listPrice}
-          pixPercentDiscountByDiferenceSellerPrice={
-            pixPercentDiscountByDiferenceSellerPrice
-          }
+          pixPercentDiscountByDiferenceSellerPrice={pixPercentDiscountByDiferenceSellerPrice}
         />
       )}
 
@@ -160,21 +157,21 @@ function ProductInfo({
       <div class="flex flex-col gap-2">
         {device === "desktop" && (
           <>
-            {availability ? (
-              <>
-                {platform === "vtex" && (
-                  <>
-                    <AddToCartButtonVTEX
-                      eventParams={{ items: [eventItem] }}
-                      productID={productID}
-                      seller={seller}
-                    />
-                  </>
-                )}
-              </>
-            ) : (
-              <OutOfStock productID={productID} />
-            )}
+            {availability
+              ? (
+                <>
+                  {platform === "vtex" && (
+                    <>
+                      <AddToCartButtonVTEX
+                        eventParams={{ items: [eventItem] }}
+                        productID={productID}
+                        seller={seller}
+                      />
+                    </>
+                  )}
+                </>
+              )
+              : <OutOfStock productID={productID} />}
           </>
         )}
 

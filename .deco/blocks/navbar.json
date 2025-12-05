@@ -16,13 +16,16 @@
       "@type": "SiteNavigationElement",
       "image": [
         {
-          "url": "https://data.decoassets.com/fossil/d2da93ea-e38e-43a5-918c-163eb7612600/1742316898262-c5eac8cf-96b6-4a00-9975-f96aebe00dfe",
+          "url": "https://assets.decocache.com/fossil/4dd948a2-1791-4e4b-8fbc-3047855aa0fb/HO25-TopNav-Men.jpg",
           "@type": "ImageObject",
           "video": null,
           "image": null
         },
         {
-          "url": "https://data.decoassets.com/fossil/7fbc515b-2829-4c76-842e-44a92b19a159/1742316899631-a8495e6e-044b-419e-aaea-09f45d2ab01d"
+          "url": "https://assets.decocache.com/fossil/11aff367-eee2-4be7-a2c0-5aadf5ea9aa9/HO25-TopNav-Watches.jpg",
+          "@type": "ImageObject",
+          "video": null,
+          "image": null
         }
       ],
       "children": [
@@ -32,18 +35,18 @@
             {
               "@type": "SiteNavigationElement",
               "name": "Anadigi",
-              "url": "/relogio/masculino/anadigi?sort=discount%3Adesc",
+              "url": "/relogio/masculino/anadigi?sort=release%3Adesc",
               "image": null
             },
             {
               "@type": "SiteNavigationElement",
               "name": "Analógico",
-              "url": "/relogio/masculino/analogico?sort=discount%3Adesc",
+              "url": "/relogio/masculino/analogico?sort=release%3Adesc",
               "image": null
             },
             {
               "name": "Automático",
-              "url": "/relogio/masculino/automatico?sort=discount%3Adesc",
+              "url": "/relogio/masculino/automatico?sort=release%3Adesc",
               "@type": "SiteNavigationElement",
               "image": null
             },
@@ -51,23 +54,23 @@
               "image": [],
               "children": [],
               "name": "Digital",
-              "url": "/relogio/masculino/digital?sort=discount%3Adesc"
+              "url": "/relogio/masculino/digital?sort=release%3Adesc"
             },
             {
               "image": [],
               "children": [],
               "name": "Multifunção",
-              "url": "/relogio/masculino/multifuncao?sort=discount%3Adesc"
+              "url": "/relogio/masculino/multifuncao?sort=release%3Adesc"
             },
             {
               "image": [],
               "children": [],
               "name": "Cronógrafo",
-              "url": "/relogio/masculino/cronografo?sort=discount%3Adesc"
+              "url": "/relogio/masculino/cronografo?sort=release%3Adesc"
             }
           ],
           "name": "Mecanismo",
-          "url": "/relogio/masculino?sort=discount%3Adesc",
+          "url": "/relogio/masculino?sort=release%3Adesc",
           "image": null
         },
         {
@@ -77,23 +80,23 @@
               "image": [],
               "children": [],
               "name": "Quadrada",
-              "url": "/relogio/masculino/quadrada?sort=discount%3Adesc"
+              "url": "/relogio/masculino/quadrada?sort=release%3Adesc"
             },
             {
               "image": [],
               "children": [],
               "name": "Redonda",
-              "url": "/relogio/masculino/redonda?sort=discount%3Adesc"
+              "url": "/relogio/masculino/redonda?sort=release%3Adesc"
             },
             {
               "image": [],
               "children": [],
               "name": "Retangular",
-              "url": "/relogio/masculino/retangular?sort=discount%3Adesc"
+              "url": "/relogio/masculino/retangular?sort=release%3Adesc"
             }
           ],
           "name": "Caixa",
-          "url": "/relogio/masculino?sort=discount%3Adesc"
+          "url": "/relogio/masculino?sort=release%3Adesc"
         },
         {
           "image": [],
@@ -102,23 +105,23 @@
               "image": [],
               "children": [],
               "name": "Aço",
-              "url": "/relogio/masculino/aco?sort=discount%3Adesc"
+              "url": "/relogio/masculino/aco?sort=release%3Adesc"
             },
             {
               "image": [],
               "children": [],
               "name": "Silicone",
-              "url": "/relogio/masculino/silicone?sort=discount%3Adesc"
+              "url": "/relogio/masculino/silicone?sort=release%3Adesc"
             },
             {
               "image": [],
               "children": [],
               "name": "Couro",
-              "url": "/relogio/masculino/couro?sort=discount%3Adesc"
+              "url": "/relogio/masculino/couro?sort=release%3Adesc"
             }
           ],
           "name": "Pulseira",
-          "url": "/relogio/masculino?sort=discount%3Adesc"
+          "url": "/relogio/masculino?sort=release%3Adesc"
         },
         {
           "image": [],
@@ -127,56 +130,60 @@
               "image": [],
               "children": [],
               "name": "Dourado",
-              "url": "/relogio/masculino/dourado?sort=discount%3Adesc"
+              "url": "/relogio/masculino/dourado?sort=release%3Adesc"
             },
             {
               "image": [],
               "children": [],
               "name": "Prata",
-              "url": "/relogio/masculino/prata?sort=discount%3Adesc"
+              "url": "/relogio/masculino/prata?sort=release%3Adesc"
             },
             {
               "image": [],
               "children": [],
               "name": "Preto",
-              "url": "/relogio/masculino/preto?sort=discount%3Adesc"
+              "url": "/relogio/masculino/preto?sort=release%3Adesc"
             },
             {
               "image": [],
               "children": [],
               "name": "Rosê",
-              "url": "/relogio/masculino/rose?sort=discount%3Adesc"
+              "url": "/relogio/masculino/rose?sort=release%3Adesc"
             },
             {
               "image": [],
               "children": [],
               "name": "Bicolor",
-              "url": "/relogio/masculino/bicolor?sort=discount%3Adesc"
+              "url": "/relogio/masculino/bicolor?sort=release%3Adesc"
             },
             {
               "image": [],
               "children": [],
               "name": "Especiais",
-              "url": "/relogio/masculino/especiais?sort=discount%3Adesc"
+              "url": "/relogio/masculino/especiais?sort=release%3Adesc"
             }
           ],
           "name": "Cor",
-          "url": "/relogio/masculino?sort=discount%3Adesc"
+          "url": "/relogio/masculino?sort=release%3Adesc"
         }
       ],
       "name": "Relógio Masculino",
-      "url": "/relogio/masculino?sort=discount%3Adesc"
+      "url": "/relogio/masculino?sort=release%3Adesc"
     },
     {
-      "url": "/relogio/feminino?sort=discount%3Adesc",
+      "url": "/relogio/feminino?sort=release%3Adesc",
       "@type": "SiteNavigationElement",
       "image": [
         {
-          "url": "https://data.decoassets.com/fossil/7a3acea4-4bcb-4d32-9b89-d50545aa4151/1742316900801-d2d905be-0dc2-464b-8876-35a5b630fa04",
-          "@type": "ImageObject"
+          "url": "https://assets.decocache.com/fossil/69239489-a449-4e7c-b198-b0fe7c0ea9f5/HO25-TopNav-Women.jpg",
+          "@type": "ImageObject",
+          "image": null,
+          "video": null
         },
         {
-          "url": "https://data.decoassets.com/fossil/c0317cc2-9786-4f13-899c-02fb3d02befe/1742316902117-5b3e7057-a54b-4d54-872a-b1d7f51ff608"
+          "url": "https://assets.decocache.com/fossil/3234797a-c3b2-429c-9d2e-f8e644c61e1c/HO25-TopNav-Jewelry.jpg",
+          "image": null,
+          "video": null
         }
       ],
       "children": [
@@ -203,7 +210,7 @@
             }
           ],
           "name": "Mecanismo",
-          "url": "/relogio/feminino?sort=discount%3Adesc",
+          "url": "/relogio/feminino?sort=release%3Adesc",
           "image": null
         },
         {
@@ -211,7 +218,8 @@
             {
               "name": "Quadrada",
               "url": "/relogio/feminino/quadrada?sort=release%3Adesc",
-              "@type": "SiteNavigationElement"
+              "@type": "SiteNavigationElement",
+              "image": null
             },
             {
               "name": "Redonda",
@@ -226,7 +234,7 @@
             }
           ],
           "name": "Caixa",
-          "url": "/relogio/feminino?sort=discount%3Adesc",
+          "url": "/relogio/feminino?sort=release%3Adesc",
           "@type": "SiteNavigationElement",
           "image": null
         },
@@ -247,7 +255,7 @@
             }
           ],
           "name": "Pulseira",
-          "url": "/relogio/feminino?sort=discount%3Adesc"
+          "url": "/relogio/feminino?sort=release%3Adesc"
         },
         {
           "image": [],
@@ -256,41 +264,41 @@
               "image": [],
               "children": [],
               "name": "Dourado",
-              "url": "/relogio/feminino/dourado?sort=discount%3Adesc"
+              "url": "/relogio/feminino/dourado?sort=release%3Adesc"
             },
             {
               "image": [],
               "children": [],
               "name": "Prata",
-              "url": "/relogio/feminino/prata?sort=discount%3Adesc"
+              "url": "/relogio/feminino/prata?sort=release%3Adesc"
             },
             {
               "image": [],
               "children": [],
               "name": "Preto",
-              "url": "/relogio/feminino/preto?sort=discount%3Adesc"
+              "url": "/relogio/feminino/preto?sort=release%3Adesc"
             },
             {
               "image": [],
               "children": [],
               "name": "Rosê",
-              "url": "/relogio/feminino/rose?sort=discount%3Adesc"
+              "url": "/relogio/feminino/rose?sort=release%3Adesc"
             },
             {
               "image": [],
               "children": [],
               "name": "Bicolor",
-              "url": "/relogio/feminino/bicolor?sort=discount%3Adesc"
+              "url": "/relogio/feminino/bicolor?sort=release%3Adesc"
             },
             {
               "image": [],
               "children": [],
               "name": "Especiais",
-              "url": "/relogio/feminino/especiais?sort=discount%3Adesc"
+              "url": "/relogio/feminino/especiais?sort=release%3Adesc"
             }
           ],
           "name": "Cor",
-          "url": "/relogio/feminino?sort=discount%3Adesc"
+          "url": "/relogio/feminino?sort=release%3Adesc"
         }
       ],
       "name": "Relógio Feminino"
@@ -334,12 +342,14 @@
       "name": "Acessórios",
       "image": [
         {
-          "url": "https://data.decoassets.com/fossil/c0df3115-e3eb-494d-b654-9840a94da5fe/1742316903663-787f0d38-1104-4508-a120-c36d6c4e7a12",
+          "url": "https://assets.decocache.com/fossil/321ea3cb-72a1-4785-8c5a-3f48e8bf42f3/HO25-TopNav-Bags.jpg",
           "image": null,
           "video": null
         },
         {
-          "url": "https://data.decoassets.com/fossil/6acaf87a-bece-4ce6-935b-f4622863f732/1742316905123-6c7f2239-f23a-4cb8-b3e6-2fc48cf1acc4"
+          "url": "https://assets.decocache.com/fossil/e95fd05e-2af6-42f6-867b-4a991824a2a8/HO25-TopNav-Wallets.jpg",
+          "image": null,
+          "video": null
         }
       ]
     },
@@ -358,8 +368,8 @@
     {
       "children": [],
       "image": [],
-      "name": "Black Friday",
-      "url": "/black-friday"
+      "name": "OFF",
+      "url": "/off"
     }
   ],
   "__resolveType": "commerce/loaders/navbar.ts"

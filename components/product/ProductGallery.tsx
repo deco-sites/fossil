@@ -62,8 +62,8 @@ function ProductGallery({
   return (
     <div class={`grid ${mobile} gap-2 items-center pt-6 ${desktop} sm:gap-10`}>
       {products?.map((product, index) => {
-        const shouldRenderBanner =
-          remainingBanners.length > 0 && (index + 1) % i === 0;
+        const shouldRenderBanner = remainingBanners.length > 0 &&
+          (index + 1) % i === 0;
         let showBanner = null;
 
         if (shouldRenderBanner) {
@@ -74,33 +74,35 @@ function ProductGallery({
 
         return (
           <>
-            {showBanner && isFirstPage ? (
-              <div class="card cursor-pointer h-full w-full card-compact group lg:border-2 rounded-none border-transparent lg:hover:border-black  lg:p-2">
-                <a
-                  href={showBanner.url}
-                  class="flex flex-col h-full w-full  group/product lg:p-4"
-                >
-                  <Image
-                    src={showBanner.img}
-                    width={271}
-                    height={389}
-                    alt={showBanner.alt}
-                    fetchPriority="auto"
-                    class=" w-full h-full object-cover"
-                  />
-                </a>
-              </div>
-            ) : (
-              <ProductCard
-                key={`product-card-${product.productID}`}
-                product={product}
-                preload={index === 0}
-                index={offset + index}
-                platform={platform}
-                device={device}
-                discountLayout={layout?.discountLayout}
-              />
-            )}
+            {showBanner && isFirstPage
+              ? (
+                <div class="card cursor-pointer h-full w-full card-compact group lg:border-2 rounded-none border-transparent lg:hover:border-black  lg:p-2">
+                  <a
+                    href={showBanner.url}
+                    class="flex flex-col h-full w-full  group/product lg:p-4"
+                  >
+                    <Image
+                      src={showBanner.img}
+                      width={271}
+                      height={389}
+                      alt={showBanner.alt}
+                      fetchPriority="auto"
+                      class=" w-full h-full object-cover"
+                    />
+                  </a>
+                </div>
+              )
+              : (
+                <ProductCard
+                  key={`product-card-${product.productID}`}
+                  product={product}
+                  preload={index === 0}
+                  index={offset + index}
+                  platform={platform}
+                  device={device}
+                  discountLayout={layout?.discountLayout}
+                />
+              )}
           </>
         );
       })}

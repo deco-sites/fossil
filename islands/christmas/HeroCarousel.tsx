@@ -14,9 +14,14 @@ export interface BannerItem {
   desktop?: ImageWidget;
   mobile?: ImageWidget;
   alt?: string;
+  label?: string;
   title?: string;
   description?: TextSegment[];
-  cta?: { label?: string; href?: string };
+  ctas?: { label?: string; href?: string }[];
+  titleImage?: ImageWidget;
+  titleImageWidth?: number;
+  titleImageHeight?: number;
+  titleSrOnly?: boolean;
 }
 
 export interface HeroCarouselProps {
@@ -41,7 +46,7 @@ export interface HeroCarouselProps {
 function getContentClassName(useGoldBorder: boolean): string {
   return useGoldBorder
     ? "relative z-10 h-full flex flex-col items-center justify-center gap-2 md:gap-4 px-8 py-6 lg:px-12 lg:py-10 text-center text-white"
-    : "absolute inset-0 z-10 flex flex-col items-center justify-center gap-4 px-4 text-center text-white";
+    : "absolute inset-0 z-10 flex flex-col items-center justify-end pb-20 md:justify-center md:pb-0 gap-4 px-4 text-center text-white";
 }
 
 function getTitleClassName(useGoldBorder: boolean): string {
@@ -134,8 +139,14 @@ export default function HeroCarousel({
           >
             <HeroSlideContent
               title={item.title}
+              label={item.label}
               description={item.description}
-              cta={item.cta}
+              ctas={item.ctas}
+              titleImage={item.titleImage}
+              titleImageWidth={item.titleImageWidth}
+              titleImageHeight={item.titleImageHeight}
+              titleSrOnly={item.titleSrOnly}
+              isDesktop={isDesktop}
               className={getContentClassName(useGoldBorder)}
               titleClassName={getTitleClassName(useGoldBorder)}
               descriptionClassName={getDescriptionClassName(useGoldBorder)}
