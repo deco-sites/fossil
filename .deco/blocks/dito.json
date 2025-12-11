@@ -3,10 +3,12 @@
   "__resolveType": "site/apps/dito.ts",
   "username": {
     "__resolveType": "website/loaders/secret.ts",
-    "name": "DITO_USER"
+    "name": "DITO_USER",
+    "encrypted": "3d741584af617a993ff93389b9556b2d3388f84b55066cd6c10e53dddcecc850"
   },
   "password": {
     "__resolveType": "website/loaders/secret.ts",
-    "name": "DITO_PASSWORD"
+    "name": "DITO_PASSWORD",
+    "encrypted": "4b7401b93f938f0ffc4fff8c46b73960"
   }
 }
