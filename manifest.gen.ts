@@ -10,10 +10,7 @@ import * as $$$$$$$$$$$4 from "./apps/deco/implementation.ts";
 import * as $$$$$$$$$$$5 from "./apps/deco/vtex.ts";
 import * as $$$$$$$$$$$6 from "./apps/deco/weather.ts";
 import * as $$$$$$$$$$$7 from "./apps/deco/workflows.ts";
-import * as $$$$$$$$$$$8 from "./apps/dito.ts";
-import * as $$$$$$$$$$$9 from "./apps/dito/actions/subscribe.ts";
-import * as $$$$$$$$$$$10 from "./apps/dito/manifest.gen.ts";
-import * as $$$$$$$$$$$11 from "./apps/site.ts";
+import * as $$$$$$$$$$$8 from "./apps/site.ts";
 import * as $$$2 from "./loaders/availableIcons.ts";
 import * as $$$3 from "./loaders/icons.ts";
 import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
@@ -263,10 +260,7 @@ const manifest = {
     "site/apps/deco/vtex.ts": $$$$$$$$$$$5,
     "site/apps/deco/weather.ts": $$$$$$$$$$$6,
     "site/apps/deco/workflows.ts": $$$$$$$$$$$7,
-    "site/apps/dito.ts": $$$$$$$$$$$8,
-    "site/apps/dito/actions/subscribe.ts": $$$$$$$$$$$9,
-    "site/apps/dito/manifest.gen.ts": $$$$$$$$$$$10,
-    "site/apps/site.ts": $$$$$$$$$$$11,
+    "site/apps/site.ts": $$$$$$$$$$$8,
   },
   "name": "site",
   "baseUrl": import.meta.url,

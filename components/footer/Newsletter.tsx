@@ -1,8 +1,15 @@
-import { invoke } from "../../runtime.ts";
 import { clx } from "../../sdk/clx.ts";
 import { useSignal } from "@preact/signals";
 import type { JSX } from "preact";
 import Icon from "../ui/Icon.tsx";
+import { invoke } from "../../runtime.ts";
+
+type DitoSDK = {
+  identify?: (
+    userId: string,
+    traits?: Record<string, unknown>,
+  ) => void;
+};
 
 declare global {
   interface Window {
@@ -76,14 +83,21 @@ function Newsletter({ content, layout = {} }: Props) {
       )?.value;
 
       if (email) {
-        await invoke.vtex.actions.newsletter.subscribe({ email });
+        const vtexPromise = invoke.vtex.actions.newsletter.subscribe({ email });
         add_email_optin_inside_user_object({ email_optin: true, email });
 
-        invoke.dito.actions.subscribe({
-          email,
-          newsletter: true,
-          source: "footer",
+        const ditoPromise = Promise.resolve().then(() => {
+          if (typeof window === "undefined") return;
+          const sdk = (window as typeof window & { dito?: DitoSDK }).dito;
+          if (!sdk?.identify) return;
+          sdk.identify(email, {
+            email,
+            newsletter_optin: true,
+            source: "footer",
+          });
         });
+
+        await Promise.all([vtexPromise, ditoPromise]);
       } else {
         alert("Erro! Preencha o campo de email.");
       }
@@ -117,7 +131,7 @@ function Newsletter({ content, layout = {} }: Props) {
             <button
               type="submit"
               class="border-solid border-primary border-b-[1px]"
-              disabled={loading}
+              disabled={loading.value}
               aria-label={`submit e-mail`}
             >
               <Icon id="EmailSubmitFooter" size={24} strokeWidth={1} />

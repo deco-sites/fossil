@@ -3,7 +3,12 @@ import { useSignal } from "@preact/signals";
 import type { JSX } from "preact";
 import { clx } from "../../sdk/clx.ts";
 import Icon from "../ui/Icon.tsx";
-import { invoke } from "../../runtime.ts";
+type DitoSDK = {
+  identify?: (
+    userId: string,
+    traits?: Record<string, unknown>,
+  ) => void;
+};
 
 export interface Props {
   newsletter: {
@@ -48,23 +53,24 @@ export default function NewsletterFooter({ newsletter, layout = {} }: Props) {
         },
       });
 
-      const ditoPromise = invoke.dito.actions.subscribe({
-        email,
-        newsletter: true,
-        source: "footer",
+      const ditoPromise = Promise.resolve().then(() => {
+        if (typeof window === "undefined") return;
+        const sdk = (window as typeof window & { dito?: DitoSDK }).dito;
+        if (!sdk?.identify) return;
+        sdk.identify(email, {
+          email,
+          newsletter_optin: true,
+          source: "footer",
+        });
       });
 
-      const [optinResponse, ditoResult] = await Promise.all([
+      const [optinResponse] = await Promise.all([
         optinPromise,
         ditoPromise,
       ]);
 
       if (!optinResponse.ok) {
         throw new Error("Falha ao cadastrar na newsletter");
-      }
-
-      if (!ditoResult?.success) {
-        throw new Error("Falha ao enviar para o Dito");
       }
 
       success.value = true;

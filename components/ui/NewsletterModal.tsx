@@ -5,11 +5,16 @@ import { useEffect, useRef } from "preact/compat";
 import { getCookies } from "std/http/mod.ts";
 import { clx } from "../../sdk/clx.ts";
 import type { AppContext } from "../../apps/site.ts";
-import { invoke } from "../../runtime.ts";
 import InputCustom from "./InputCustom.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import type { SectionProps } from "@deco/deco";
+type DitoSDK = {
+  identify?: (
+    userId: string,
+    traits?: Record<string, unknown>,
+  ) => void;
+};
 export interface INewsletterInputProps {
   /**
    * @title Hide input?
@@ -235,27 +240,29 @@ function NewsletterModal({
         },
       });
 
-      const ditoPromise = invoke.dito.actions.subscribe({
-        email,
-        name,
-        phone,
-        dateOfBirth,
-        newsletter: Newsletter,
-        source: "popup",
+      const ditoPromise = Promise.resolve().then(() => {
+        if (!email) return;
+        if (typeof window === "undefined") return;
+        const sdk = (window as typeof window & { dito?: DitoSDK }).dito;
+        if (!sdk?.identify) return;
+
+        sdk.identify(email, {
+          email,
+          name,
+          phone,
+          date_of_birth: dateOfBirth,
+          newsletter_optin: Newsletter,
+          source: "popup",
+        });
       });
 
-      const [optinResponse, ditoResult] = await Promise.all([
+      const [optinResponse] = await Promise.all([
         optinPromise,
         ditoPromise,
       ]);
 
       if (!optinResponse.ok) {
         error.value = "Falha ao cadastrar na newsletter.";
-        return;
-      }
-
-      if (!ditoResult?.success) {
-        error.value = "Falha ao enviar para o Dito.";
         return;
       }
 
