@@ -41,7 +41,7 @@ const add_email_optin_inside_user_object = ({
   let user_formatted = { email_optin };
 
   globalThis.window.insider_object = JSON.parse(
-    sessionStorage.getItem("user_object") || "{}"
+    sessionStorage.getItem("user_object") || "{}",
   ) ||
     globalThis.window.insider_object || { user: user_formatted };
 
@@ -57,7 +57,7 @@ const add_email_optin_inside_user_object = ({
   }
   sessionStorage.setItem(
     "user_object",
-    JSON.stringify(globalThis.window.insider_object)
+    JSON.stringify(globalThis.window.insider_object),
   );
 };
 
@@ -80,19 +80,10 @@ function Newsletter({ content, layout = {} }: Props) {
         add_email_optin_inside_user_object({ email_optin: true, email });
 
         // Envia para Dito
-        fetch("/api/dito", {
-          method: "POST",
-          body: JSON.stringify({
-            email,
-            newsletter: true,
-            source: "footer",
-          }),
-          headers: {
-            "content-type": "application/json",
-            accept: "application/json",
-          },
-        }).catch((error) => {
-          console.error("[Dito Integration] Erro ao enviar para Dito:", error);
+        invoke.dito.actions.subscribe({
+          email,
+          newsletter: true,
+          source: "footer",
         });
       } else {
         alert("Erro! Preencha o campo de email.");
@@ -106,7 +97,7 @@ function Newsletter({ content, layout = {} }: Props) {
     <div
       class={clx(
         "flex flex-col gap-4 w-full md:w-full",
-        tiled && "flex-col lg:justify-between"
+        tiled && "flex-col lg:justify-between",
       )}
     >
       <div class="flex">

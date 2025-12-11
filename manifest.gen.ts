@@ -4,7 +4,10 @@
 
 import * as $$$$$$$$$$$0 from "./apps/deco/analytics.ts";
 import * as $$$$$$$$$$$1 from "./apps/decohub.ts";
-import * as $$$$$$$$$$$2 from "./apps/site.ts";
+import * as $$$$$$$$$$$2 from "./apps/dito.ts";
+import * as $$$$$$$$$$$3 from "./apps/dito/actions/subscribe.ts";
+import * as $$$$$$$$$$$4 from "./apps/dito/manifest.gen.ts";
+import * as $$$$$$$$$$$5 from "./apps/site.ts";
 import * as $$$2 from "./loaders/availableIcons.ts";
 import * as $$$3 from "./loaders/icons.ts";
 import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
@@ -248,7 +251,10 @@ const manifest = {
   "apps": {
     "site/apps/deco/analytics.ts": $$$$$$$$$$$0,
     "site/apps/decohub.ts": $$$$$$$$$$$1,
-    "site/apps/site.ts": $$$$$$$$$$$2,
+    "site/apps/dito.ts": $$$$$$$$$$$2,
+    "site/apps/dito/actions/subscribe.ts": $$$$$$$$$$$3,
+    "site/apps/dito/manifest.gen.ts": $$$$$$$$$$$4,
+    "site/apps/site.ts": $$$$$$$$$$$5,
   },
   "name": "site",
   "baseUrl": import.meta.url,

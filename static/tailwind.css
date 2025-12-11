@@ -8570,6 +8570,10 @@ details.collapse summary::-webkit-details-marker {
   --tw-text-opacity: 1;
   color: rgb(158 158 158 / var(--tw-text-opacity));
 }
+.text-\[\#B91C1C\] {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
+}
 .text-\[\#C41C17\] {
   --tw-text-opacity: 1;
   color: rgb(196 28 23 / var(--tw-text-opacity));

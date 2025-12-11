@@ -1,0 +1,12 @@
+{
+  "brand": "fossil-oficial",
+  "__resolveType": "site/apps/dito.ts",
+  "username": {
+    "__resolveType": "website/loaders/secret.ts",
+    "name": "DITO_USER"
+  },
+  "password": {
+    "__resolveType": "website/loaders/secret.ts",
+    "name": "DITO_PASSWORD"
+  }
+}

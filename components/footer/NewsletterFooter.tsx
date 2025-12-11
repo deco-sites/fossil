@@ -1,8 +1,9 @@
-import { NewsletterForm } from "./Footer.tsx";
+import type { NewsletterForm } from "./Footer.tsx";
 import { useSignal } from "@preact/signals";
 import type { JSX } from "preact";
 import { clx } from "../../sdk/clx.ts";
 import Icon from "../ui/Icon.tsx";
+import { invoke } from "../../runtime.ts";
 
 export interface Props {
   newsletter: {
@@ -20,16 +21,25 @@ export default function NewsletterFooter({ newsletter, layout = {} }: Props) {
   const { tiled = false } = layout;
   const loading = useSignal(false);
   const success = useSignal(false);
+  const error = useSignal<string | null>(null);
 
   const handleSubmit = async (e: JSX.TargetedEvent<HTMLFormElement, Event>) => {
     e.preventDefault();
+
+    loading.value = true;
+    success.value = false;
+    error.value = null;
 
     try {
       const formData = new FormData(e.currentTarget);
       const email = formData.get("email") as string;
 
-      // Envia para VTEX Master Data
-      await fetch("/api/optin", {
+      if (!email) {
+        error.value = "Informe um e-mail válido.";
+        return;
+      }
+
+      const optinPromise = fetch("/api/optin", {
         method: "POST",
         body: JSON.stringify({ email, Newsletter: true }),
         headers: {
@@ -38,24 +48,30 @@ export default function NewsletterFooter({ newsletter, layout = {} }: Props) {
         },
       });
 
-      // Envia para Dito
-      fetch("/api/dito", {
-        method: "POST",
-        body: JSON.stringify({
-          email,
-          newsletter: true,
-          source: "footer",
-        }),
-        headers: {
-          "content-type": "application/json",
-          accept: "application/json",
-        },
-      }).catch((error) => {
-        console.error("[Dito Integration] Erro ao enviar para Dito:", error);
+      const ditoPromise = invoke.dito.actions.subscribe({
+        email,
+        newsletter: true,
+        source: "footer",
       });
+
+      const [optinResponse, ditoResult] = await Promise.all([
+        optinPromise,
+        ditoPromise,
+      ]);
+
+      if (!optinResponse.ok) {
+        throw new Error("Falha ao cadastrar na newsletter");
+      }
+
+      if (!ditoResult?.success) {
+        throw new Error("Falha ao enviar para o Dito");
+      }
+
+      success.value = true;
+    } catch (_err) {
+      error.value = "Não foi possível concluir o cadastro. Tente novamente.";
     } finally {
       loading.value = false;
-      success.value = true;
     }
   };
 
@@ -64,7 +80,7 @@ export default function NewsletterFooter({ newsletter, layout = {} }: Props) {
       <div
         class={clx(
           "flex flex-col gap-4 w-full md:w-full",
-          tiled && "flex-col lg:justify-between"
+          tiled && "flex-col lg:justify-between",
         )}
       >
         <div class="flex flex-col gap-4">
@@ -92,7 +108,7 @@ export default function NewsletterFooter({ newsletter, layout = {} }: Props) {
     <div
       class={clx(
         "flex flex-col gap-4 w-full md:w-full",
-        tiled && "flex-col lg:justify-between"
+        tiled && "flex-col lg:justify-between",
       )}
     >
       <div class="flex flex-col gap-4">
@@ -115,17 +131,25 @@ export default function NewsletterFooter({ newsletter, layout = {} }: Props) {
               name="email"
               class="flex-auto md:flex-none w-9/12 border-solid border-b-[1px] border-primary focus:outline-none  text-base-content"
               placeholder={newsletter?.form?.placeholder || "Digite seu email"}
+              disabled={loading.value}
             />
             <button
               type="submit"
               class="border-solid border-primary border-b-[1px]"
-              disabled={loading}
-              aria-label={`submit e-mail`}
+              disabled={loading.value}
+              aria-label={loading.value ? "Enviando e-mail" : "Enviar e-mail"}
             >
-              <Icon id="EmailSubmitFooter" size={24} strokeWidth={1} />
+              {loading.value
+                ? <span class="loading loading-spinner loading-xs" />
+                : <Icon id="EmailSubmitFooter" size={24} strokeWidth={1} />}
             </button>
           </div>
         </form>
+        {error.value && (
+          <p class="text-sm text-[#B91C1C]" aria-live="assertive">
+            {error.value}
+          </p>
+        )}
       </div>
     </div>
   );
