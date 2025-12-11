@@ -4,12 +4,12 @@ import type { JSX } from "preact";
 import { useEffect, useRef } from "preact/compat";
 import { getCookies } from "std/http/mod.ts";
 import { clx } from "../../sdk/clx.ts";
-import { AppContext } from "../../apps/site.ts";
+import type { AppContext } from "../../apps/site.ts";
 import { invoke } from "../../runtime.ts";
 import InputCustom from "./InputCustom.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
-import { type SectionProps } from "@deco/deco";
+import type { SectionProps } from "@deco/deco";
 export interface INewsletterInputProps {
   /**
    * @title Hide input?
@@ -193,6 +193,7 @@ function NewsletterModal({
   const modalRef = useRef<HTMLDialogElement>(null);
   const loading = useSignal(false);
   const success = useSignal(false);
+  const error = useSignal<string | null>(null);
   useEffect(() => {
     if (isOpen) {
       modalRef.current?.showModal();
@@ -204,6 +205,9 @@ function NewsletterModal({
   }
   const handleSubmit = async (e: JSX.TargetedEvent<HTMLFormElement, Event>) => {
     e.preventDefault();
+    loading.value = true;
+    success.value = false;
+    error.value = null;
     try {
       const getValue = (value: FormDataEntryValue | null): string =>
         typeof value === "string" ? value : "";
@@ -222,8 +226,7 @@ function NewsletterModal({
         dateOfBirth,
       };
 
-      // Envia para VTEX Master Data
-      await fetch("/api/optin", {
+      const optinPromise = fetch("/api/optin", {
         method: "POST",
         body: JSON.stringify(vtexData),
         headers: {
@@ -232,8 +235,7 @@ function NewsletterModal({
         },
       });
 
-      // Envia para Dito
-      invoke.dito.actions.subscribe({
+      const ditoPromise = invoke.dito.actions.subscribe({
         email,
         name,
         phone,
@@ -241,10 +243,32 @@ function NewsletterModal({
         newsletter: Newsletter,
         source: "popup",
       });
-    } finally {
-      loading.value = false;
+
+      const [optinResponse, ditoResult] = await Promise.all([
+        optinPromise,
+        ditoPromise,
+      ]);
+
+      if (!optinResponse.ok) {
+        error.value = "Falha ao cadastrar na newsletter.";
+        return;
+      }
+
+      if (!ditoResult?.success) {
+        error.value = "Falha ao enviar para o Dito.";
+        return;
+      }
+
       success.value = true;
       setCookieOnCloseModal("registered", modalSignExpiredDate);
+    } catch (err) {
+      console.error(
+        "[NewsletterModal] Falha ao enviar inscrição",
+        err instanceof Error ? err.message : err,
+      );
+      error.value = "Não foi possível concluir o cadastro. Tente novamente.";
+    } finally {
+      loading.value = false;
     }
   };
   const setCookieOnCloseModal = (
@@ -256,8 +280,17 @@ function NewsletterModal({
     date.setTime(date.getTime() + expirationSeconds * 24 * 60 * 60 * 1000);
     // deno-lint-ignore no-var
     var expires = "expires=" + date.toUTCString();
+    // biome-ignore lint/suspicious/noDocumentCookie: necessário para persistir estado do modal
     document.cookie = "DecoNewsletterModal" + "=" + cookieValue + ";" +
       expires + ";path=/";
+  };
+  const handleKeyCopy = (
+    event: JSX.TargetedKeyboardEvent<HTMLDivElement | HTMLButtonElement>,
+  ) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      handleClickCopy();
+    }
   };
   function handleClickCopy() {
     const elementTextCupom = refCupom.current;
@@ -397,13 +430,18 @@ function NewsletterModal({
                     )}
 
                     {textCupom && (
-                      <div
+                      <button
+                        type="button"
                         onClick={handleClickCopy}
-                        ref={refCupom}
+                        onKeyDown={handleKeyCopy}
+                        ref={refCupom as unknown as preact.Ref<
+                          HTMLButtonElement
+                        >}
                         class={clx(
                           `relative md:top-[42%] md:-translate-y-[42%] z-10 w-[254px] h-[40px] cursor-pointer md:left-10
                           left-2/4 max-md:-translate-x-1/2 top-[16%] -translate-y-[16%]`,
                         )}
+                        aria-label="Copiar cupom"
                       >
                         <p
                           class={clx(
@@ -428,7 +466,7 @@ function NewsletterModal({
                           strokeWidth={1}
                           class="text-primary-content absolute top-[5px] left-[260px] cursor-pointer"
                         />
-                      </div>
+                      </button>
                     )}
 
                     {imageSuccess?.desktop?.src && imageSuccess.mobile?.src && (
@@ -542,10 +580,22 @@ function NewsletterModal({
                             ? { ...layout?.button?.desktop }
                             : { ...layout?.button?.mobile }),
                         }}
-                        disabled={loading}
+                        disabled={loading.value}
                       >
-                        {form?.button?.label || "Inscreva-se"}
+                        {loading.value
+                          ? <span class="loading loading-spinner loading-xs" />
+                          : (form?.button?.label || "Inscreva-se")}
                       </button>
+                      {
+                        /* {error.value && (
+                        <p
+                          class="text-sm text-[#B91C1C] text-center w-full"
+                          aria-live="assertive"
+                        >
+                          {error.value}
+                        </p>
+                      )} */
+                      }
 
                       <div
                         class={clx(

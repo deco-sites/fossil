@@ -79,7 +79,6 @@ function Newsletter({ content, layout = {} }: Props) {
         await invoke.vtex.actions.newsletter.subscribe({ email });
         add_email_optin_inside_user_object({ email_optin: true, email });
 
-        // Envia para Dito
         invoke.dito.actions.subscribe({
           email,
           newsletter: true,
