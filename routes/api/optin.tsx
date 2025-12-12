@@ -9,17 +9,14 @@ export const handler: Handlers = {
 
     const data = await req.json();
 
-    const response = await fetch(
-      SUBDOMAIN + "/api/dataentities/NT/documents",
-      {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: {
-          "content-type": "application/json",
-          "accept": "application/json",
-        },
+    const response = await fetch(SUBDOMAIN + "/api/dataentities/NT/documents", {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "content-type": "application/json",
+        accept: "application/json",
       },
-    );
+    });
 
     const headers = new Headers(response.headers);
     headers.set("access-control-allow-origin", "*");
