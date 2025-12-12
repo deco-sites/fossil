@@ -78,11 +78,11 @@
               }
             },
             {
-              "value": "https://assets.decocache.com/fossil/174838e4-e578-4e4c-87ad-b661d2ba3695/fossil-DeSK-connect-livelo-(4).jpg",
+              "value": "https://assets.decocache.com/fossil/9a8c7a04-24ca-4c44-9b54-e0b652e70f12/fossil-DeSK-connect-livelo-(6).jpg",
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
-                "start": "2025-12-03T03:00:00.000Z",
-                "end": "2025-12-05T02:59:00.000Z"
+                "start": "2025-12-12T03:00:00.000Z",
+                "end": "2025-12-13T02:59:00.000Z"
               }
             },
             {
@@ -107,11 +107,11 @@
               }
             },
             {
-              "value": "https://assets.decocache.com/fossil/38e7ed63-ab59-4786-bac7-86fba53b43c3/Principal-(4).jpg",
+              "value": "https://assets.decocache.com/fossil/52de4645-2aa9-41cb-b09a-5a8cfcbe9788/Principal-(6).jpg",
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
-                "start": "2025-12-03T03:00:00.000Z",
-                "end": "2025-12-05T02:59:00.000Z"
+                "start": "2025-12-12T03:00:00.000Z",
+                "end": "2025-12-13T02:59:00.000Z"
               }
             },
             {
