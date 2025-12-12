@@ -1,8 +1,9 @@
-import { invoke } from "../../runtime.ts";
 import { clx } from "../../sdk/clx.ts";
 import { useSignal } from "@preact/signals";
 import type { JSX } from "preact";
 import Icon from "../ui/Icon.tsx";
+import { invoke } from "../../runtime.ts";
+import { ditoIdentifyAndTrackSafe } from "../../sdk/dito.ts";
 
 declare global {
   interface Window {
@@ -31,16 +32,18 @@ export interface Props {
   };
 }
 
-const add_email_optin_inside_user_object = (
-  { email_optin, email }: {
-    email: string;
-    email_optin: boolean;
-  },
-) => {
+const add_email_optin_inside_user_object = ({
+  email_optin,
+  email,
+}: {
+  email: string;
+  email_optin: boolean;
+}) => {
   let user_formatted = { email_optin };
 
-  globalThis.window.insider_object =
-    JSON.parse(sessionStorage.getItem("user_object") || "{}") ||
+  globalThis.window.insider_object = JSON.parse(
+    sessionStorage.getItem("user_object") || "{}",
+  ) ||
     globalThis.window.insider_object || { user: user_formatted };
 
   if (email) {
@@ -59,9 +62,7 @@ const add_email_optin_inside_user_object = (
   );
 };
 
-function Newsletter(
-  { content, layout = {} }: Props,
-) {
+function Newsletter({ content, layout = {} }: Props) {
   const { tiled = false } = layout;
   const loading = useSignal(false);
 
@@ -71,12 +72,35 @@ function Newsletter(
     try {
       loading.value = true;
 
-      const email =
-        (e.currentTarget.elements.namedItem("email") as RadioNodeList)?.value;
+      const email = (
+        e.currentTarget.elements.namedItem("email") as RadioNodeList
+      )?.value;
 
       if (email) {
-        await invoke.vtex.actions.newsletter.subscribe({ email });
+        const vtexPromise = invoke.vtex.actions.newsletter.subscribe({ email });
         add_email_optin_inside_user_object({ email_optin: true, email });
+
+        const ditoPromise = ditoIdentifyAndTrackSafe({
+          logLabel: "[Newsletter] Falha ao enviar lead/evento para o Dito",
+          identify: {
+            id: email,
+            email,
+            data: {
+              newsletter_optin: true,
+              source: "footer",
+            },
+          },
+          track: {
+            action: "newsletter_subscribe",
+            data: {
+              email,
+              newsletter_optin: true,
+              source: "footer",
+            },
+          },
+        });
+
+        await Promise.all([vtexPromise, ditoPromise]);
       } else {
         alert("Erro! Preencha o campo de email.");
       }
@@ -100,10 +124,7 @@ function Newsletter(
         )}
       </div>
       <div class="flex flex-col gap-4">
-        <form
-          class="form-control"
-          onSubmit={handleSubmit}
-        >
+        <form class="form-control" onSubmit={handleSubmit}>
           <div class="flex w-full">
             <input
               name="email"
@@ -113,8 +134,8 @@ function Newsletter(
             <button
               type="submit"
               class="border-solid border-primary border-b-[1px]"
-              disabled={loading}
-              aria-label={`submit e-mail`}
+              disabled={loading.value}
+              aria-label="Enviar e-mail"
             >
               <Icon id="EmailSubmitFooter" size={24} strokeWidth={1} />
             </button>
