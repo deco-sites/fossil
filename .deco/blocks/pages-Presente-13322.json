@@ -39,13 +39,7 @@
                   "href": "/relogio/feminino?sort=release%3Adesc"
                 }
               ]
-            },
-            "bottomLeftImage": "https://assets.decocache.com/fossil/5e790404-c7e8-4922-a3ca-9dfa77cd8112/little-ornament.png",
-            "bottomLeftImageWidth": 62,
-            "bottomLeftImageHeight": 78,
-            "bottomRightImage": "https://assets.decocache.com/fossil/0d5d0a42-515c-4d18-bf05-50a349f36767/big-ornament.png",
-            "bottomRightImageWidth": 162,
-            "bottomRightImageHeight": 167
+            }
           },
           {
             "__resolveType": "site/sections/Christmas/cr-gifts-by-price.tsx",
@@ -75,7 +69,13 @@
             "backgroundColor": "branco",
             "text": "Detalhes cheio de personalidade. A cor que combina com eles (spoiler: verde). Aquele presente que sempre quiseram, mas nunca imaginaram ganhar. Neste fim de ano, na hora de presentear, escolha Fossil e deixe as melhores lembranças acontecerem.",
             "paddingTop": 0,
-            "paddingBottom": 0
+            "paddingBottom": 0,
+            "snowFooterDesktop": "https://assets.decocache.com/fossil/92902b5c-2105-4f1f-9ae6-1628f8600289/cr-snow-footer.png",
+            "snowFooterMobile": "https://assets.decocache.com/fossil/79a069c3-5640-48be-9461-bcba70fc2188/cr-snow-footer-mobile.png",
+            "snowFooterDesktopWidth": 1280,
+            "snowFooterDesktopHeight": 175,
+            "snowFooterMobileWidth": 375,
+            "snowFooterMobileHeight": 81
           },
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -144,21 +144,6 @@
                 }
               ],
               "paddingBottomMobile": false
-            }
-          },
-          {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "site/sections/Christmas/cr-hero-media.tsx",
-              "subtitle": "PODE DAR UMA ESPIADINHA",
-              "title": "Com presentes assim,<br />quem consegue resistir?",
-              "media": {
-                "desktop": "https://assets.decocache.com/fossil/e44a8cc7-f2db-45c1-a872-92c283cf0f4b/LivingRoom_web3.mp4",
-                "autoplay": true,
-                "loop": true,
-                "muted": true
-              },
-              "bottomDivider": "https://assets.decocache.com/fossil/7dfe563a-3edf-44de-b405-75ef3432c019/cr-divider-lp.png"
             }
           },
           {
