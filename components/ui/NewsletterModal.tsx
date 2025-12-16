@@ -237,29 +237,13 @@ function NewsletterModal({
       });
 
       const ditoPromise = ditoIdentifyAndTrackSafe({
-        logLabel: "[NewsletterModal] Falha ao enviar lead/evento para o Dito",
-        identify: {
-          id: email,
-          email,
-          data: {
-            name,
-            phone,
-            date_of_birth: dateOfBirth,
-            newsletter_optin: Newsletter,
-            source: "popup",
-          },
-        },
-        track: {
-          action: "newsletter_subscribe",
-          data: {
-            email,
-            name,
-            phone,
-            date_of_birth: dateOfBirth,
-            newsletter_optin: Newsletter,
-            source: "popup",
-          },
-        },
+        email,
+        name,
+        phone,
+        birthday: dateOfBirth,
+        optin: Newsletter,
+        source: "popup",
+        logLabel: "[NewsletterModal] Falha ao enviar para Dito",
       });
 
       const [optinResponse] = await Promise.all([

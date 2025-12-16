@@ -81,23 +81,10 @@ function Newsletter({ content, layout = {} }: Props) {
         add_email_optin_inside_user_object({ email_optin: true, email });
 
         const ditoPromise = ditoIdentifyAndTrackSafe({
-          logLabel: "[Newsletter] Falha ao enviar lead/evento para o Dito",
-          identify: {
-            id: email,
-            email,
-            data: {
-              newsletter_optin: true,
-              source: "footer",
-            },
-          },
-          track: {
-            action: "newsletter_subscribe",
-            data: {
-              email,
-              newsletter_optin: true,
-              source: "footer",
-            },
-          },
+          email,
+          optin: true,
+          source: "newsletter",
+          logLabel: "[Newsletter] Falha ao enviar para Dito",
         });
 
         await Promise.all([vtexPromise, ditoPromise]);

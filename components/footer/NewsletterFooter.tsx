@@ -49,23 +49,10 @@ export default function NewsletterFooter({ newsletter, layout = {} }: Props) {
       });
 
       const ditoPromise = ditoIdentifyAndTrackSafe({
-        logLabel: "[NewsletterFooter] Falha ao enviar lead/evento para o Dito",
-        identify: {
-          id: email,
-          email,
-          data: {
-            newsletter_optin: true,
-            source: "footer",
-          },
-        },
-        track: {
-          action: "newsletter_subscribe",
-          data: {
-            email,
-            newsletter_optin: true,
-            source: "footer",
-          },
-        },
+        email,
+        optin: true,
+        source: "newsletter",
+        logLabel: "[NewsletterFooter] Falha ao enviar para Dito",
       });
 
       const [optinResponse] = await Promise.all([
