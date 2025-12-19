@@ -332,6 +332,12 @@
               "children": [],
               "name": "Acessórios Masculinos",
               "url": "/acessoriosmasculinos?sort=discount%3Adesc"
+            },
+            {
+              "image": [],
+              "children": [],
+              "name": "Relógio Anel",
+              "url": "/relogio-anel"
             }
           ],
           "name": "Acessórios",
