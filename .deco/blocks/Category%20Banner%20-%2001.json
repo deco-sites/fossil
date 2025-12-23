@@ -73,24 +73,24 @@
               "value": "https://assets.decocache.com/fossil/7dd893be-de3e-4b93-a207-86836ed8e8d3/Euro_banner_livelo_0707-(2)-(1)-(1).png",
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
-                "start": "2025-12-19T03:00:00.000Z",
-                "end": "2026-01-01T02:59:00.000Z"
+                "start": "2025-11-29T03:00:00.000Z",
+                "end": "2025-12-03T02:59:00.000Z"
               }
             },
             {
-              "value": "https://assets.decocache.com/fossil/9a8c7a04-24ca-4c44-9b54-e0b652e70f12/fossil-DeSK-connect-livelo-(6).jpg",
+              "value": "https://assets.decocache.com/fossil/174838e4-e578-4e4c-87ad-b661d2ba3695/fossil-DeSK-connect-livelo-(4).jpg",
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
-                "start": "2025-12-12T03:00:00.000Z",
-                "end": "2025-12-13T02:59:00.000Z"
+                "start": "2025-12-03T03:00:00.000Z",
+                "end": "2025-12-05T02:59:00.000Z"
               }
             },
             {
-              "value": "https://assets.decocache.com/fossil/f364dcc8-a8d6-457a-bd1e-0d64a72c8d2a/fossil-DeSK-connect-livelo-(7).jpg",
+              "value": "https://assets.decocache.com/fossil/74ea6eb8-a79b-4693-9d2a-c565ff00cf05/fossil-DeSK-connect-livelo.jpg",
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
-                "start": "2025-12-17T03:00:00.000Z",
-                "end": "2025-12-19T02:59:00.000Z"
+                "start": "2025-11-10T03:00:00.000Z",
+                "end": "2025-11-11T02:59:00.000Z"
               }
             }
           ]
@@ -102,24 +102,24 @@
               "value": "https://assets.decocache.com/fossil/f14b0378-b06a-4ec5-b73f-be2294a40178/Euro_banner_livelo_0707_desk.psd-(3)-(2).png",
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
-                "start": "2025-12-19T03:00:00.000Z",
-                "end": "2027-01-01T02:59:00.000Z"
+                "start": "2025-11-29T03:00:00.000Z",
+                "end": "2026-12-03T02:59:00.000Z"
               }
             },
             {
-              "value": "https://assets.decocache.com/fossil/52de4645-2aa9-41cb-b09a-5a8cfcbe9788/Principal-(6).jpg",
+              "value": "https://assets.decocache.com/fossil/38e7ed63-ab59-4786-bac7-86fba53b43c3/Principal-(4).jpg",
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
-                "start": "2025-12-12T03:00:00.000Z",
-                "end": "2025-12-13T02:59:00.000Z"
+                "start": "2025-12-03T03:00:00.000Z",
+                "end": "2025-12-05T02:59:00.000Z"
               }
             },
             {
-              "value": "https://assets.decocache.com/fossil/21f391ab-dcb2-4b31-ba41-9eb2b77a6eb1/Principal-(7).jpg",
+              "value": "https://assets.decocache.com/fossil/38e198e1-cefd-4107-8a3f-8d035f1e36fb/Principal.jpg",
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
-                "start": "2025-12-17T03:00:00.000Z",
-                "end": "2025-12-19T02:59:00.000Z"
+                "start": "2025-11-10T03:00:00.000Z",
+                "end": "2025-11-11T02:59:00.000Z"
               }
             }
           ]
