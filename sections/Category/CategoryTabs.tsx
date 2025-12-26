@@ -100,15 +100,9 @@ function CategoryTabs({
         )}
       >
         <div class="py-8 lg:py-10 lg:border-b lg:border-b-[#B0B0B0]">
-          <div class="px-6 lg:px-12 flex items-center justify-between mb-4 lg:gap-6 lg:mb-5">
+          <div class="px-6 lg:px-12 mb-4 flex items-center max-lg:justify-between lg:gap-10 lg:mb-5">
             {(title || subtitle) && (
               <h2 class="text-xl font-bold leading-none">
-                {subtitle && (
-                  <span class="max-lg:uppercase max-lg:block max-lg:text-xs max-lg:font-normal">
-                    {subtitle}
-                    <span class="max-lg:hidden">:&nbsp;</span>
-                  </span>
-                )}
                 {title ? title : ""}
               </h2>
             )}
