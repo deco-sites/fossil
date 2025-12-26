@@ -108,7 +108,7 @@ function CRGiftsByPrice({
       >
         <h2 class="sr-only">{title}</h2>
         {text && (
-          <p class="font-soleil text-sm text-center mx-auto max-w-[570px] mb-6 lg:mb-16 whitespace-pre-line">
+          <p class="font-soleil text-sm text-center mx-auto max-w-[580px] mb-6 lg:mb-16 whitespace-pre-line">
             {text}
           </p>
         )}
