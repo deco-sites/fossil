@@ -47,16 +47,14 @@ function NJCollection({
   if (!products || products.length === 0) return null;
 
   return (
-    <div class="w-full bg-nj-primary pt-6 lg:pt-16 pb-3 px-5">
-      <div class="container max-w-7xl">
-        <NJProductCarousel
-          products={products ?? []}
-          title={title}
-          shopAllButton={shopAllButton}
-          promotionalText={promotionalText}
-          carouselId={id}
-        />
-      </div>
+    <div class="px-6 lg:px-12 py-8 lg:py-10 max-w-7xl mx-auto">
+      <NJProductCarousel
+        products={products ?? []}
+        title={title}
+        shopAllButton={shopAllButton}
+        promotionalText={promotionalText}
+        carouselId={id}
+      />
     </div>
   );
 }
