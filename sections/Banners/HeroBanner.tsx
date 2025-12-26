@@ -81,7 +81,7 @@ const HeroBanner = (
   }: HeroPropsBanner & { device?: string },
 ) => {
   return (
-    <div className="w-full m-auto flex items-center">
+    <div className="w-full m-auto lg:flex lg:items-center">
       {device === "desktop"
         ? (
           <Image
@@ -105,11 +105,11 @@ const HeroBanner = (
             loading="lazy"
           />
         )}
-      <div class="px-40 lg:absolute">
-        <h2 class="text-3xl font-bold mb-4 uppercase">
+      <div class="py-9 lg:py-0 px-6 lg:px-10 xl:px-40 lg:absolute max-lg:[bg-#FFFBF0]">
+        <h2 class="text-3xl font-bold mb-3 lg:mb-4 uppercase">
           {title}
         </h2>
-        <p class="text-base mb-4">
+        <p class="text-sm lg:text-base mb-4">
           {subtitle}
         </p>
         <div class="flex gap-2">
