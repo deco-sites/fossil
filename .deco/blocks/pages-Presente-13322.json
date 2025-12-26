@@ -20,22 +20,22 @@
             "snowFooterDesktopHeight": 175,
             "snowFooterMobileWidth": 375,
             "snowFooterMobileHeight": 81,
-            "titleText": "Fossil em Festa",
+            "titleText": "Fossil",
             "content": {
               "cta": {},
               "type": "image",
               "desktop": "https://assets.decocache.com/fossil/28d4affe-b5ee-4ea3-8954-a09b304aa413/cr-hero-lp-desk.png",
               "mobile": "https://assets.decocache.com/fossil/51090edf-9237-4a2c-b711-fea3f2c567a9/cr-hero-lp-mob.png",
               "alt": "Casal sentado em frente a uma lareira acesa, sorrindo e trocando presentes embrulhados em um ambiente aconchegante e festivo.",
-              "label": "Fossil em Festa",
-              "title": "O Guia de Presentes",
+              "label": "Fossil",
+              "title": "Guia de Presentes",
               "ctas": [
                 {
-                  "label": "Para Eles",
+                  "label": "Para eles",
                   "href": "/relogio/masculino?sort=release%3Adesc"
                 },
                 {
-                  "label": "Para Elas",
+                  "label": "Para elas",
                   "href": "/relogio/feminino?sort=release%3Adesc"
                 }
               ]
@@ -46,28 +46,28 @@
             "title": "Faixa de Preços",
             "cards": [
               {
-                "label": "AUTOMÁTICOS",
-                "value": "Para Eles",
-                "url": "/relogio/masculino/automatico?sort=release%3Adesc"
+                "label": "Presentes",
+                "value": "ATÉ R$1.000",
+                "url": "/off?sort=price%3Aasc"
               },
               {
-                "label": "RELÓGIOS DE FESTA",
-                "value": "Para Elas",
-                "url": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel&sort=release%3Adesc"
+                "label": "Presentes com",
+                "value": "35% OFF",
+                "url": "/off?sort=discount%3Adesc"
               },
               {
-                "label": "PULSEIRAS DE",
-                "value": "Couro",
-                "url": "/relogio/masculino/couro?sort=release%3Adesc"
+                "label": "Bolsas e carteiras de",
+                "value": "COURO",
+                "url": "/acessorios?sort=release%3Adesc"
               },
               {
-                "value": "Bolsas",
-                "url": "/s?q=bolsa&utmi_pc=search&utmi_cp=bolsa&sort=release%3Adesc",
-                "label": " "
+                "label": "Relógios",
+                "value": "ANEIS",
+                "url": "/relogio-anel"
               }
             ],
             "backgroundColor": "branco",
-            "text": "Detalhes cheio de personalidade. A cor que combina com eles (spoiler: verde). Aquele presente que sempre quiseram, mas nunca imaginaram ganhar. Neste fim de ano, na hora de presentear, escolha Fossil e deixe as melhores lembranças acontecerem.",
+            "text": "Um guia de presentes pensado para todos da sua lista. De pequenos gestos cheios de significado à peças inesquecíveis. Com a Fossil, cada presente desperta novas memórias.",
             "paddingTop": 0,
             "paddingBottom": 0,
             "snowFooterDesktop": "https://assets.decocache.com/fossil/92902b5c-2105-4f1f-9ae6-1628f8600289/cr-snow-footer.png",
@@ -81,7 +81,7 @@
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
               "__resolveType": "site/sections/Christmas/cr-nick-list.tsx",
-              "title": "A Lista do Nick",
+              "title": "A Seleção do Nick",
               "mainImageDesktop": "https://assets.decocache.com/fossil/fdd49788-a23c-40ea-8abf-e9930bd18c65/HO25_NickList_D.png",
               "mainImageMobile": "https://assets.decocache.com/fossil/18f5eb38-3e7d-4d95-beee-2c30a0ae59e5/HO25_NickList_M.png",
               "stars": {
@@ -89,10 +89,10 @@
                 "width": 70,
                 "height": 70
               },
-              "description": "Peças de impacto da sua coleção de edição limitada e nossos estilos mais icônicos — os presentes favoritos da Fossil, escolhidos a dedo pelo próprio Nick Jonas.",
+              "description": "Peças marcantes da coleção limitada do ano e alguns dos nossos ícones — escolhidos por Nick Jonas.",
               "button": {
-                "name": "Compre Agora",
-                "url": "/colecao/nick-jonas"
+                "name": "Comprar agora",
+                "url": "/s?q=nick&utmi_pc=search&utmi_cp=nick"
               },
               "mainImageDesktopWidth": 574,
               "mainImageDesktopHeight": 448,
@@ -105,12 +105,12 @@
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
               "__resolveType": "site/sections/Christmas/cr-gift-guide.tsx",
-              "subtitle": "TOP 10 PRESENTES PARA ELE",
-              "title": "Aquele olhar de quem ganhou<br/>exatamente o que queria.",
+              "subtitle": "TOP 10 PRESENTES PRA ELE",
+              "title": "A expressão de quem acabou de abrir o presente perfeito.",
               "mainImageDesktop": "https://assets.decocache.com/fossil/32a2ecb1-7918-409d-b263-203ded01c1fe/cr-gift-guide.png",
               "mainImageMobile": "https://assets.decocache.com/fossil/32a2ecb1-7918-409d-b263-203ded01c1fe/cr-gift-guide.png",
               "backgroundPattern": "https://assets.decocache.com/fossil/f19eb450-6498-4aba-9bde-5d0763fdad5f/cr-pattern.png",
-              "buttonText": "Guia de Presentes Para Ele",
+              "buttonText": "Guia de presentes pra ele",
               "buttonLink": "/relogio/masculino?sort=release%3Adesc",
               "stars": {
                 "image": "https://assets.decocache.com/fossil/797a23ae-f770-443e-95ce-77fc6d423adb/HO25_stars_paired_wide.png",
@@ -121,26 +121,26 @@
                 {
                   "imageDesktop": "https://assets.decocache.com/fossil/cf38e5f0-0158-4736-b62b-ea9d520b4940/cr-gifts-guide-card-1-1-desk.png",
                   "imageMobile": "https://assets.decocache.com/fossil/7b7635a1-2ad9-4b72-aa40-b76a659a85c5/cr-gifts-guide-card-1-1-mob.png",
-                  "text": "Comprar Relógios",
-                  "link": "/lancamentos"
+                  "text": "Comprar relógios",
+                  "link": "/relogio/masculino?sort=release%3Adesc "
                 },
                 {
                   "imageDesktop": "https://assets.decocache.com/fossil/762f8551-6fa1-46c4-ae46-e306e4c76af3/cr-gifts-guide-card-1-2-desk.png",
                   "imageMobile": "https://assets.decocache.com/fossil/24467d8a-fd9b-44f0-b0b4-73b17dab5cf4/cr-gifts-guide-card-1-2-mob.png",
-                  "text": "Comprar Carteiras",
-                  "link": "/s?q=carteira&utmi_pc=search&utmi_cp=carteira"
+                  "text": "Comprar carteiras",
+                  "link": "/s?q=carteira+masculino&utmi_pc=search&utmi_cp=carteira+masculino&sort=release%3Adesc"
                 },
                 {
                   "imageDesktop": "https://assets.decocache.com/fossil/0cef806e-dfe7-48c6-b38b-884e62d930f8/cr-gifts-guide-card-1-3-desk.png",
                   "imageMobile": "https://assets.decocache.com/fossil/3b5856db-0d4d-4b77-9ffd-645b30a27d5b/cr-gifts-guide-card-1-3-mob.png",
-                  "text": "Comprar Joias",
-                  "link": "/s?q=watch%20ring&utmi_pc=search&utmi_cp=watch%20ring"
+                  "text": "Comprar joias",
+                  "link": "/s?q=anel&utmi_pc=search&utmi_cp=anel"
                 },
                 {
                   "imageDesktop": "https://assets.decocache.com/fossil/8e9919e8-94d5-4e0e-8d33-e4e7a1883797/cr-gifts-guide-card-1-4-desk.png",
                   "imageMobile": "https://assets.decocache.com/fossil/1d04ade2-fc75-463f-a03b-9e2c2119e84b/cr-gifts-guide-card-1-4-mob.png",
-                  "text": "Comprar Modelos de Couro",
-                  "link": "/s?q=bolsa%20mochila&utmi_pc=search&utmi_cp=bolsa%20mochila"
+                  "text": "Comprar acessórios",
+                  "link": "/acessoriosmasculinos?sort=discount%3Adesc"
                 }
               ],
               "paddingBottomMobile": false
@@ -150,12 +150,12 @@
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
               "__resolveType": "site/sections/Christmas/cr-gift-guide.tsx",
-              "title": "Muito brilho? Ela diz que<br />brilho nunca é demais.",
-              "subtitle": "TOP 25 PRESENTES PARA ELA",
+              "title": "Brilho demais? Ela disse<br> que isso não existe.",
+              "subtitle": "TOP 25 PRESENTES PRA ELA",
               "mainImageDesktop": "https://assets.decocache.com/fossil/0fd50ec1-1eca-4855-b93c-fcd2b8fcf3e0/cr-gift-guide-2.png",
               "mainImageMobile": "https://assets.decocache.com/fossil/0fd50ec1-1eca-4855-b93c-fcd2b8fcf3e0/cr-gift-guide-2.png",
               "backgroundPattern": "https://assets.decocache.com/fossil/f19eb450-6498-4aba-9bde-5d0763fdad5f/cr-pattern.png",
-              "buttonText": "Guia de Presentes Para Ela",
+              "buttonText": "Guia de presentes pra ela",
               "buttonLink": "/relogio/feminino?sort=release%3Adesc",
               "stars": {
                 "image": "https://assets.decocache.com/fossil/797a23ae-f770-443e-95ce-77fc6d423adb/HO25_stars_paired_wide.png",
@@ -166,25 +166,25 @@
                 {
                   "imageDesktop": "https://assets.decocache.com/fossil/c714ecfd-e8f6-4e71-adcb-e684d95c25eb/cr-gifts-guide-card-2-1-desk.png",
                   "imageMobile": "https://assets.decocache.com/fossil/4f2d67dc-151a-430f-af36-9fe79c9ae858/cr-gifts-guide-card-2-1-mob.png",
-                  "text": "Comprar Relógios",
-                  "link": "/lancamentos?sort=release%3Adesc&filter.productClusterIds=2146&filter.genero=feminino"
+                  "text": "Comprar relógios",
+                  "link": "/relogio/feminino?sort=release%3Adesc"
                 },
                 {
                   "imageDesktop": "https://assets.decocache.com/fossil/664ec429-444d-4921-afad-81cc6a79b997/cr-gifts-guide-card-2-2-desk.png",
                   "imageMobile": "https://assets.decocache.com/fossil/af248bcc-9225-4afb-89ba-07073e552b46/cr-gifts-guide-card-2-2-mob.png",
-                  "text": "Comprar Bolsas",
-                  "link": "/bolsasfemininas?sort=discount%3Adesc"
+                  "text": "Comprar bolsas",
+                  "link": "/bolsasfemininas?sort=release%3Adesc"
                 },
                 {
                   "imageDesktop": "https://assets.decocache.com/fossil/122e1287-4448-4ead-84a5-ebe254e08a8d/cr-gifts-guide-card-2-3-desk.png",
                   "imageMobile": "https://assets.decocache.com/fossil/3593083c-0c8a-4752-a91d-5dd3dbcd4132/cr-gifts-guide-card-2-3-mob.png",
-                  "text": "Comprar Joias",
+                  "text": "Comprar joias",
                   "link": "/acessoriosfemininos?sort=discount%3Adesc"
                 },
                 {
                   "imageDesktop": "https://assets.decocache.com/fossil/87322da3-f46a-494e-bcc8-4bb138c89cef/cr-gifts-guide-card-2-4-desk.png",
                   "imageMobile": "https://assets.decocache.com/fossil/009cb648-0af9-4787-b307-74042c411fe2/cr-gifts-guide-card-2-4-mob.png",
-                  "text": "Comprar Carteiras",
+                  "text": "Comprar carteiras",
                   "link": "/s?q=carteira%20feminino&utmi_pc=search&utmi_cp=carteira%20feminino"
                 }
               ],
@@ -195,7 +195,7 @@
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
               "__resolveType": "site/sections/Christmas/cr-hero-media.tsx",
-              "title": "Dance como quem tem memórias para criar<br />e presentes para dar.",
+              "title": "Celebre cada momento como quem tem memórias para criar<br> e presentes para compartilhar.",
               "media": {
                 "desktop": "https://assets.decocache.com/fossil/f61dc66e-bbf2-4553-8827-b39d0d7c7e67/Dancing_web.mp4",
                 "autoplay": true,
