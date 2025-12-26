@@ -91,7 +91,7 @@ const HeroBanner = (
   return (
     <div class="bg-[#FFFBF0]">
       <div className="max-w-7xl mx-auto px-6 py-8 lg:py-12 lg:px-12">
-        <div class={"pb-8 lg:py-12 lg:px-10 xl:px-32"}>
+        <div class={"pb-8 lg:pb-12 lg:px-10 xl:px-32"}>
           <p class="font-bold max-lg:text-sm">
             {tag}
           </p>
