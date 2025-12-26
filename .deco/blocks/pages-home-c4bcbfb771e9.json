@@ -60,11 +60,11 @@
             "alt": "Coleção de relógios da marca Fóssil",
             "button": {
               "label": "Para Ele",
-              "href": "/relogio/masculino?sort=discount%3Adesc"
+              "href": "/relogio/masculino?sort=release%3Adesc"
             },
             "button2": {
               "label": "Para Ela",
-              "href": "/relogio/feminino?sort=discount%3Adesc"
+              "href": "/relogio/feminino?sort=release%3Adesc"
             },
             "title": "UM NOVO COMEÇO",
             "subtitle": "Novos estilos para começar o ano com boas energias."
@@ -124,7 +124,7 @@
             "section": {
               "__resolveType": "site/sections/Category/CategoryTabs.tsx",
               "title": "Clássicos sem erro",
-              "subtitle": "Essenciais atemporais para todos os momentos",
+              "subtitle": "Clássicos & essenciais",
               "firstTabTitle": "Masculinos",
               "secondTabTitle": "Femininos",
               "firstCategoryList": [
@@ -193,7 +193,7 @@
                 "href": "/lancamentos"
               },
               {
-                "image": "https://assets.decocache.com/fossil/9be91f42-fbaa-4285-98a7-611bffa39fac/personalized.png",
+                "image": "https://assets.decocache.com/fossil/ff1295ac-d348-45c8-a64e-1b9767bf857f/couro.png",
                 "label": "Couro",
                 "href": "/acessorios?sort=release%3Adesc"
               }
@@ -201,8 +201,8 @@
           },
           {
             "__resolveType": "site/sections/Newsletter/NewsletterModal.tsx",
-            "textSendSucess": "<p><strong><span style=\"font-size: 31.5pt\">Ganhe 10% off</span></strong></p><p><span style=\"font-size: 19.5pt\">na primeira compra!</span></p>",
-            "text": "<p><span style=\"font-size: 19.5pt\">Cadastre-se no site</span></p><p><strong><span style=\"font-size: 30pt\">e receba promoções exclusivas</span></strong></p>",
+            "textSendSucess": "<p></p>",
+            "text": "<p></p>",
             "colorText": "#000000",
             "backgrounds": {
               "desktop": {
@@ -227,7 +227,7 @@
                 "height": 687
               },
               "mobile": {
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/de80bf78-255f-4cdf-8e0b-79c1e900ecd8/banner-mobile.png",
+                "src": "https://assets.decocache.com/fossil/d30b47ca-524c-4b2d-9cd7-610085a1e4e3/Prancheta-4-(1).png",
                 "width": 393,
                 "height": 555
               }
@@ -241,11 +241,74 @@
               },
               "button": {
                 "label": "Inscreva-se"
+              },
+              "phone": {
+                "show": true
+              },
+              "dateOfBirth": {
+                "placeholder": "DD/MM/AAAA"
               }
             },
             "textFieldCupom": "Use o cupom",
-            "textCupom": "10BOASVINDAS",
-            "is_active": true
+            "textCupom": "BEMVINDO15",
+            "is_active": true,
+            "layout": {
+              "form": {
+                "0": "t",
+                "1": "o",
+                "2": "p",
+                "3": "-",
+                "4": "[",
+                "5": "5",
+                "6": "0",
+                "7": "%",
+                "8": "]",
+                "desktop": {
+                  "top": "60%",
+                  "left": "39px"
+                },
+                "mobile": {
+                  "top": "28%"
+                }
+              },
+              "button": {
+                "tailwind": "bg-primary text-white border border-primary hover:bg-primary/90",
+                "desktop": {
+                  "margin": "0px 0px 0px 70px"
+                }
+              },
+              "text": {
+                "successCouponField": {
+                  "desktop": {
+                    "margin": "81px 0px 8px 16px",
+                    "fontSize": "1.25rem"
+                  },
+                  "tailwind": "font-normal",
+                  "mobile": {
+                    "margin": "117px 0px 0px",
+                    "fontSize": "1.0rem"
+                  }
+                }
+              },
+              "modal": {
+                "maxWidthDesktop": "90%",
+                "maxWidthMobile": "90%",
+                "maxHeightMobile": "350px",
+                "maxHeight": "555px"
+              }
+            },
+            "imageSuccess": {
+              "desktop": {
+                "src": "https://assets.decocache.com/fossil/bafdfafc-3b63-48f9-ae74-643e727edb58/Prancheta-1---2025-09-18T144522.343(1).png",
+                "width": 932,
+                "height": 687
+              },
+              "mobile": {
+                "width": 393,
+                "height": 555,
+                "src": "https://assets.decocache.com/fossil/ff11a13d-a2a9-4825-a65b-b7d7e8af090e/Prancheta-4-1.png"
+              }
+            }
           },
           {
             "__resolveType": "Footer - 04"
