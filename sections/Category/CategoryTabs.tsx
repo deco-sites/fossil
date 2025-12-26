@@ -1,16 +1,16 @@
 export { default as LoadingFallback } from "../../components/LoadingFallback.tsx";
-import { useState } from "preact/hooks";
 import { type FnContext } from "@deco/deco";
-import CategoryCarousel from "./CategoryCarousel.tsx";
+import CategoryCarousel from "../../islands/CategoryCarousel.tsx";
 import { clx } from "../../sdk/clx.ts";
 import { withDevice } from "../../sdk/withDevice.ts";
 import { useId } from "../../sdk/useId.ts";
 import { ImageWidget } from "apps/admin/widgets.ts";
+import { usePartialSection } from "@deco/deco/hooks";
 
 export interface Category {
   /**
    * @title Imagem
-   * @description Tamanho sugerido: 284x348px
+   * @description Tamanho sugerid: 284x348px
    */
   image?: ImageWidget;
   /**
@@ -67,9 +67,14 @@ export interface Props {
    * @ignore true
    */
   device?: "mobile" | "tablet" | "desktop";
+
+  /**
+   * @ignore true
+   */
+  activeIndex: number;
 }
 
-function CategoryTabsIsland({
+function CategoryTabs({
   subtitle,
   title,
   firstTabTitle,
@@ -77,13 +82,12 @@ function CategoryTabsIsland({
   firstCategoryList,
   secondCategoryList,
   device,
+  activeIndex = 0,
 }: ReturnType<Awaited<typeof loader>>) {
   const id = useId();
+  const activeList = activeIndex == 0 ? firstCategoryList : secondCategoryList;
 
   if (!firstCategoryList || firstCategoryList.length === 0) return null;
-
-  const [list, setList] = useState<Category[]>(firstCategoryList);
-  const [active, setActive] = useState<"1" | "2">("1");
 
   const buttonStyle =
     "border border-[#cccccc] rounded-full px-4 lg:px-6 py-2 lg:py-3 text-xs lg:text-base font-medium hover:border-[#242424]";
@@ -108,34 +112,32 @@ function CategoryTabsIsland({
                 {title ? title : ""}
               </h2>
             )}
-            {(firstTabTitle || secondTabTitle) && (
+            {(secondTabTitle && secondCategoryList) && (
               <div class="flex gap-2">
                 {firstTabTitle && (
                   <button
                     class={clx(
                       buttonStyle,
-                      active == "1" &&
+                      activeIndex == 0 &&
                         "bg-[#242424] text-white border-[#242424]",
                     )}
-                    onClick={() => {
-                      setList(firstCategoryList);
-                      setActive("1");
-                    }}
+                    {...usePartialSection<typeof CategoryTabs>({
+                      props: { activeIndex: 0 },
+                    })}
                   >
                     {firstTabTitle}
                   </button>
                 )}
-                {secondCategoryList && (
+                {(secondTabTitle && secondCategoryList) && (
                   <button
                     class={clx(
                       buttonStyle,
-                      active == "2" &&
+                      activeIndex == 1 &&
                         "bg-[#242424] text-white border-[#242424]",
                     )}
-                    onClick={() => {
-                      setList(secondCategoryList);
-                      setActive("2");
-                    }}
+                    {...usePartialSection<typeof CategoryTabs>({
+                      props: { activeIndex: 1 },
+                    })}
                   >
                     {secondTabTitle}
                   </button>
@@ -145,7 +147,7 @@ function CategoryTabsIsland({
           </div>
           <div class="pl-6 lg:px-12 max-w-7xl mx-auto">
             <CategoryCarousel
-              list={list ?? []}
+              list={activeList ?? []}
               device={device}
               carouselId={id}
             />
@@ -161,4 +163,4 @@ export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   return withDevice(props, ctx);
 };
 
-export default CategoryTabsIsland;
+export default CategoryTabs;
