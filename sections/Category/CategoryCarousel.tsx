@@ -1,7 +1,5 @@
 import { useEffect, useMemo, useState } from "preact/hooks";
 import type { Category } from "./CategoryTabs.tsx";
-import CarouselControls from "../../components/common/CarouselControls.tsx";
-import CarouselNavButton from "../../components/common/CarouselNavButton.tsx";
 import { clx } from "../../sdk/clx.ts";
 import {
   type SlidesConfig,
@@ -173,6 +171,7 @@ export default function CategoryCarousel({
                               height={348}
                               loading="lazy"
                               fetchPriority="auto"
+                              decoding="async"
                             />
                           </figure>
                         )}
