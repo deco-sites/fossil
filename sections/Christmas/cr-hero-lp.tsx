@@ -123,30 +123,6 @@ export interface Props {
   /** @description Escolha entre imagem ou vídeo */
   content?: ContentType;
 
-  /** @title Imagem Esquerda Inferior */
-  /** @description Imagem posicionada no canto esquerdo inferior */
-  bottomLeftImage?: ImageWidget;
-
-  /** @title Largura da Imagem Esquerda */
-  /** @description Largura da imagem esquerda inferior */
-  bottomLeftImageWidth?: number;
-
-  /** @title Altura da Imagem Esquerda */
-  /** @description Altura da imagem esquerda inferior */
-  bottomLeftImageHeight?: number;
-
-  /** @title Imagem Direita Inferior */
-  /** @description Imagem posicionada no canto direito inferior */
-  bottomRightImage?: ImageWidget;
-
-  /** @title Largura da Imagem Direita */
-  /** @description Largura da imagem direita inferior */
-  bottomRightImageWidth?: number;
-
-  /** @title Altura da Imagem Direita */
-  /** @description Altura da imagem direita inferior */
-  bottomRightImageHeight?: number;
-
   /** @title Imagem Neve Desktop */
   /** @description Imagem decorativa de neve para desktop */
   snowFooterDesktop?: ImageWidget;
@@ -334,12 +310,6 @@ interface LoaderReturn extends Props {
 function CRHero({
   titleText,
   content,
-  bottomLeftImage,
-  bottomLeftImageWidth,
-  bottomLeftImageHeight,
-  bottomRightImage,
-  bottomRightImageWidth,
-  bottomRightImageHeight,
   snowFooterDesktop,
   snowFooterMobile,
   snowFooterDesktopWidth,
@@ -391,60 +361,6 @@ function CRHero({
                 />
               )}
           </div>
-
-          {bottomLeftImage && isDesktop && (
-            <div class="hidden lg:block absolute bottom-0 left-6 z-30 translate-y-1/2">
-              <Image
-                src={bottomLeftImage}
-                alt="Decoração inferior esquerda"
-                width={bottomLeftImageWidth || 200}
-                height={bottomLeftImageHeight || 200}
-                style={{
-                  width: `${bottomLeftImageWidth || 200}px`,
-                  height: "auto",
-                }}
-                loading="eager"
-                fetchPriority="high"
-                preload
-              />
-            </div>
-          )}
-
-          {bottomLeftImage && isDesktop && (
-            <div class="hidden lg:block absolute -bottom-14 right-48 z-30 translate-y-1/2">
-              <Image
-                src={bottomLeftImage}
-                alt="Decoração inferior direita"
-                width={bottomLeftImageWidth || 200}
-                height={bottomLeftImageHeight || 200}
-                style={{
-                  width: `${bottomLeftImageWidth || 200}px`,
-                  height: "auto",
-                }}
-                loading="eager"
-                fetchPriority="high"
-                preload
-              />
-            </div>
-          )}
-
-          {bottomRightImage && isDesktop && (
-            <div class="hidden lg:block absolute bottom-6 right-6 z-30 translate-y-1/2">
-              <Image
-                src={bottomRightImage}
-                alt="Decoração inferior direita"
-                width={bottomRightImageWidth || 200}
-                height={bottomRightImageHeight || 200}
-                style={{
-                  width: `${bottomRightImageWidth || 200}px`,
-                  height: "auto",
-                }}
-                loading="eager"
-                fetchPriority="high"
-                preload
-              />
-            </div>
-          )}
         </div>
 
         <div class="absolute bottom-0 lg:relative lg:mt-2 lg:flex-shrink-0 w-full z-20 pointer-events-none">
