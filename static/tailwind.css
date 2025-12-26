@@ -10112,10 +10112,6 @@ details.collapse summary::-webkit-details-marker {
     margin-top: 2.5rem;
   }
 
-  .max-lg\:block {
-    display: block;
-  }
-
   .max-lg\:flex {
     display: flex;
   }
@@ -10158,6 +10154,10 @@ details.collapse summary::-webkit-details-marker {
 
   .max-lg\:justify-center {
     justify-content: center;
+  }
+
+  .max-lg\:justify-between {
+    justify-content: space-between;
   }
 
   .max-lg\:gap-10 {
@@ -10212,15 +10212,6 @@ details.collapse summary::-webkit-details-marker {
   .max-lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .max-lg\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-
-  .max-lg\:font-normal {
-    font-weight: 400;
   }
 
   .max-lg\:uppercase {
