@@ -5,7 +5,8 @@ export type CarouselNavDirection = "prev" | "next";
 export type CarouselNavButtonVariant =
   | "christmas"
   | "nick-jonas"
-  | "neutral";
+  | "neutral"
+  | "black";
 
 interface CarouselNavButtonProps {
   id: string;
@@ -22,6 +23,7 @@ const VARIANT_CLASSES: Record<CarouselNavButtonVariant, string> = {
     "bg-cr-bg-terciary text-primary hover:bg-cr-bg-terciary/90 disabled:opacity-50",
   "nick-jonas": "bg-primary text-white hover:bg-primary/90 disabled:opacity-50",
   neutral: "bg-gray-200 text-gray-700 hover:bg-gray-300 disabled:opacity-50",
+  black: "bg-black text-white hover:bg-black disabled:opacity-50",
 };
 
 const ICON_PATH: Record<CarouselNavDirection, string> = {
