@@ -70,6 +70,21 @@
             "subtitle": "Novos estilos para começar o ano com boas energias."
           },
           {
+            "__resolveType": "site/sections/Banners/CTABanner.tsx",
+            "tag": "RENOVE O ESSENCIAL",
+            "title": "Simples, mas nunca óbvio. Os clássicos certos para atualizar o visual.",
+            "banner": {
+              "label": "Comprar Neutra",
+              "image": "https://assets.decocache.com/fossil/6efe1469-57ca-42d1-826e-6b048d634180/shop-neutral.png",
+              "href": "/s?q=neutra&utmi_pc=search&utmi_cp=neutra&sort=release%3Adesc"
+            },
+            "banner2": {
+              "label": "Comprar Raquel",
+              "image": "https://assets.decocache.com/fossil/a8fecb5d-9ad6-428e-b879-22dcb075346c/shop-raquel.png",
+              "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel&sort=release%3Adesc"
+            }
+          },
+          {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
               "__resolveType": "site/sections/NickJonas/nj-collection.tsx",
@@ -87,55 +102,76 @@
             }
           },
           {
-            "__resolveType": "site/sections/Integrations/CategoryTabs.tsx",
-            "title": "Clássicos sem erro",
-            "subtitle": "Essenciais atemporais para todos os momentos",
-            "firstTabTitle": "Masculinos",
-            "secondTabTitle": "Femininos",
-            "firstCategoryList": [
-              {
-                "image": "https://assets.decocache.com/fossil/47e738be-9e35-4c34-8b02-d85fc2e02cc0/machine.png",
-                "label": "Machine",
-                "href": "/s?q=machine&utmi_pc=search&utmi_cp=machine&sort=release%3Adesc"
-              },
-              {
-                "image": "https://assets.decocache.com/fossil/a4075211-f19c-4b1e-a3db-feb9191932bf/everett.png",
-                "label": "Everett",
-                "href": "/s?q=everett&utmi_pc=search&utmi_cp=everett&sort=release%3Adesc"
-              },
-              {
-                "image": "https://assets.decocache.com/fossil/773f4ea9-3a13-4cfc-bea7-be0a9f3a73da/neutra.png",
-                "label": "Neutra",
-                "href": "/s?q=neutra&utmi_pc=search&utmi_cp=neutra&sort=release%3Adesc"
-              },
-              {
-                "image": "https://assets.decocache.com/fossil/dfdd69f7-2141-40d0-82ee-25e1a1a4eccc/townsman.png",
-                "label": "Townsman",
-                "href": "/s?q=townsman&utmi_pc=search&utmi_cp=townsman&sort=release%3Adesc"
-              }
-            ],
-            "secondCategoryList": [
-              {
-                "image": "https://assets.decocache.com/fossil/423b8c3a-f8c4-4358-8a45-b9e8ffda6a95/Harlow.png",
-                "label": "Harlow",
-                "href": "/s?q=harlow&utmi_pc=search&utmi_cp=harlow&sort=release%3Adesc"
-              },
-              {
-                "image": "https://assets.decocache.com/fossil/4c0ae836-7add-4877-9fc9-934a517a3444/Raquel.png",
-                "label": "Raquel",
-                "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel&sort=release%3Adesc"
-              },
-              {
-                "image": "https://assets.decocache.com/fossil/e3d37b02-b911-4bfa-8228-106e34200aaf/Carlie.png",
-                "label": "Carlie",
-                "href": "/s?q=carlie&utmi_pc=search&utmi_cp=carlie&sort=release%3Adesc"
-              },
-              {
-                "image": "https://assets.decocache.com/fossil/59937f19-3e52-4ba7-9f6f-a6297e5995ef/WatchRing.png",
-                "label": "Watch Ring",
-                "href": "/s?q=watch%20ring&utmi_pc=search&utmi_cp=watch%20ring&sort=release%3Adesc"
-              }
-            ]
+            "__resolveType": "site/sections/Banners/StylesBanner.tsx",
+            "tag": "HORA DE CELEBRAR",
+            "title": "Modelos feitos para festas, ótimos para se destacar.",
+            "banner": {
+              "label": "Comprar Relógios Festa",
+              "image": "https://assets.decocache.com/fossil/290d2bab-c27f-4855-a8a3-81e3b387f718/SHOP-PARTY-STYLES.jpg",
+              "href": "/s?q=raquel+harlow&utmi_pc=search&utmi_cp=raquel+harlow&sort=release%3Adesc"
+            },
+            "banner2": {
+              "label": "Comprar Relógio Anel",
+              "image": "https://assets.decocache.com/fossil/d5db4164-361d-4f47-b7f1-11a2fe16e416/SHOP-WATCH-RING.jpg",
+              "href": "/s?q=anel&utmi_pc=search&utmi_cp=anel&sort=release%3Adesc"
+            },
+            "floatingImage": "https://assets.decocache.com/fossil/6d329016-c325-4a21-b951-77fd482974c7/floating-watches.png",
+            "floatingArrow": "https://assets.decocache.com/fossil/299b30e0-db0b-48c8-a4ec-dcdbf96c187f/floating-arrow.png",
+            "floatingText": "MIX QUE SURPREENDE"
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Category/CategoryTabs.tsx",
+              "title": "Clássicos sem erro",
+              "subtitle": "Essenciais atemporais para todos os momentos",
+              "firstTabTitle": "Masculinos",
+              "secondTabTitle": "Femininos",
+              "firstCategoryList": [
+                {
+                  "image": "https://assets.decocache.com/fossil/47e738be-9e35-4c34-8b02-d85fc2e02cc0/machine.png",
+                  "label": "Machine",
+                  "href": "/s?q=machine&utmi_pc=search&utmi_cp=machine&sort=release%3Adesc"
+                },
+                {
+                  "image": "https://assets.decocache.com/fossil/a4075211-f19c-4b1e-a3db-feb9191932bf/everett.png",
+                  "label": "Everett",
+                  "href": "/s?q=everett&utmi_pc=search&utmi_cp=everett&sort=release%3Adesc"
+                },
+                {
+                  "image": "https://assets.decocache.com/fossil/773f4ea9-3a13-4cfc-bea7-be0a9f3a73da/neutra.png",
+                  "label": "Neutra",
+                  "href": "/s?q=neutra&utmi_pc=search&utmi_cp=neutra&sort=release%3Adesc"
+                },
+                {
+                  "image": "https://assets.decocache.com/fossil/dfdd69f7-2141-40d0-82ee-25e1a1a4eccc/townsman.png",
+                  "label": "Townsman",
+                  "href": "/s?q=townsman&utmi_pc=search&utmi_cp=townsman&sort=release%3Adesc"
+                }
+              ],
+              "secondCategoryList": [
+                {
+                  "image": "https://assets.decocache.com/fossil/423b8c3a-f8c4-4358-8a45-b9e8ffda6a95/Harlow.png",
+                  "label": "Harlow",
+                  "href": "/s?q=harlow&utmi_pc=search&utmi_cp=harlow&sort=release%3Adesc"
+                },
+                {
+                  "image": "https://assets.decocache.com/fossil/4c0ae836-7add-4877-9fc9-934a517a3444/Raquel.png",
+                  "label": "Raquel",
+                  "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel&sort=release%3Adesc"
+                },
+                {
+                  "image": "https://assets.decocache.com/fossil/e3d37b02-b911-4bfa-8228-106e34200aaf/Carlie.png",
+                  "label": "Carlie",
+                  "href": "/s?q=carlie&utmi_pc=search&utmi_cp=carlie&sort=release%3Adesc"
+                },
+                {
+                  "image": "https://assets.decocache.com/fossil/59937f19-3e52-4ba7-9f6f-a6297e5995ef/WatchRing.png",
+                  "label": "Watch Ring",
+                  "href": "/s?q=watch%20ring&utmi_pc=search&utmi_cp=watch%20ring&sort=release%3Adesc"
+                }
+              ]
+            }
           },
           {
             "__resolveType": "site/sections/Category/CategoryGridRedesign.tsx",
