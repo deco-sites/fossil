@@ -20,18 +20,18 @@ import {
 
 const NICK_SLIDES_CONFIG: SlidesConfig = {
   base: {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    centeredSlides: true,
+    slidesPerView: 2,
+    spaceBetween: 16,
+    centeredSlides: false,
   },
   sm: {
     slidesPerView: 2,
-    spaceBetween: 15,
+    spaceBetween: 16,
     centeredSlides: false,
   },
   lg: {
     slidesPerView: 4,
-    spaceBetween: 20,
+    spaceBetween: 24,
     centeredSlides: false,
   },
 };
