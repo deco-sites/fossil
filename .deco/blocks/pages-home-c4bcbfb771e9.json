@@ -123,8 +123,7 @@
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
               "__resolveType": "site/sections/Category/CategoryTabs.tsx",
-              "title": "Clássicos sem erro",
-              "subtitle": "Clássicos & essenciais",
+              "title": "Clássicos & essenciais",
               "firstTabTitle": "Masculinos",
               "secondTabTitle": "Femininos",
               "firstCategoryList": [
