@@ -71,17 +71,17 @@ function CategoryGridRedesign(props: Props) {
   return (
     <div
       id={id}
-      class="container mx-auto px-8 lg:px-12"
+      class="max-w-7xl mx-auto px-6 py-8 lg:py-12 lg:px-12"
     >
-      <h2 class="text-xl ">
+      <h2 class="text-xl leading-none font-bold mb-8">
         {title}
       </h2>
 
-      <div class="grid md:grid-cols-2 grid-cols-1 mt-6 px-4 lg:px-20 gap-x-6  gap-y-12">
+      <div class="grid grid-cols-2 gap-x-4 gap-y-7 lg:grid-cols-4 lg:my-6 lg:gap-x-6">
         {list.map((
           { image, href, label },
         ) => (
-          <div class=" flex flex-col gap-4 items-center w-full ">
+          <div class="flex flex-col gap-4">
             <a
               href={href}
               class={` flex items-center w-full `}
@@ -93,8 +93,8 @@ function CategoryGridRedesign(props: Props) {
                       class="w-full h-auto object-cover"
                       src={image}
                       alt={label}
-                      width={610}
-                      height={400}
+                      width={274}
+                      height={360}
                       loading="lazy"
                       fetchPriority="auto"
                     />
@@ -102,7 +102,7 @@ function CategoryGridRedesign(props: Props) {
                 )}
             </a>
             <a
-              class="font-bold uppercase text-base text-primary  px-6  underline"
+              class="text-xs lg:text-base lg:font-bold max-lg:uppercase"
               aria-label={label}
               href={href}
             >
