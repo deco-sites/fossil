@@ -6460,8 +6460,8 @@ details.collapse summary::-webkit-details-marker {
 .max-w-\[540px\] {
   max-width: 540px;
 }
-.max-w-\[570px\] {
-  max-width: 570px;
+.max-w-\[580px\] {
+  max-width: 580px;
 }
 .max-w-\[600px\] {
   max-width: 600px;
@@ -6953,6 +6953,9 @@ details.collapse summary::-webkit-details-marker {
 .gap-y-12 {
   row-gap: 3rem;
 }
+.gap-y-7 {
+  row-gap: 1.75rem;
+}
 .space-y-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
@@ -7248,6 +7251,10 @@ details.collapse summary::-webkit-details-marker {
 .border-\[\#0000004d\] {
   border-color: #0000004d;
 }
+.border-\[\#242424\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(36 36 36 / var(--tw-border-opacity));
+}
 .border-\[\#262626\] {
   --tw-border-opacity: 1;
   border-color: rgb(38 38 38 / var(--tw-border-opacity));
@@ -7275,6 +7282,10 @@ details.collapse summary::-webkit-details-marker {
 .border-\[\#a4a4a4\] {
   --tw-border-opacity: 1;
   border-color: rgb(164 164 164 / var(--tw-border-opacity));
+}
+.border-\[\#cccccc\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(204 204 204 / var(--tw-border-opacity));
 }
 .border-\[\#cea951\] {
   --tw-border-opacity: 1;
@@ -7370,6 +7381,10 @@ details.collapse summary::-webkit-details-marker {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
+.border-b-\[\#B0B0B0\] {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(176 176 176 / var(--tw-border-opacity));
+}
 .border-b-\[\#fff\] {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -7413,6 +7428,10 @@ details.collapse summary::-webkit-details-marker {
 .bg-\[\#161616\] {
   --tw-bg-opacity: 1;
   background-color: rgb(22 22 22 / var(--tw-bg-opacity));
+}
+.bg-\[\#242424\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(36 36 36 / var(--tw-bg-opacity));
 }
 .bg-\[\#262626\] {
   --tw-bg-opacity: 1;
@@ -7780,6 +7799,10 @@ details.collapse summary::-webkit-details-marker {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+.px-40 {
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 .px-5 {
   padding-left: 1.25rem;
@@ -9772,6 +9795,10 @@ details.collapse summary::-webkit-details-marker {
 .hover\:border-none:hover {
   border-style: none;
 }
+.hover\:border-\[\#242424\]:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(36 36 36 / var(--tw-border-opacity));
+}
 .hover\:border-primary:hover {
   --tw-border-opacity: 1;
   border-color: rgb(38 38 38 / var(--tw-border-opacity));
@@ -9779,6 +9806,10 @@ details.collapse summary::-webkit-details-marker {
 .hover\:border-white:hover {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+.hover\:bg-\[\#6A6A6A\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(106 106 106 / var(--tw-bg-opacity));
 }
 .hover\:bg-\[\#8DA460\]:hover {
   --tw-bg-opacity: 1;
@@ -10069,6 +10100,10 @@ details.collapse summary::-webkit-details-marker {
     margin-top: 2.5rem;
   }
 
+  .max-lg\:block {
+    display: block;
+  }
+
   .max-lg\:flex {
     display: flex;
   }
@@ -10165,6 +10200,19 @@ details.collapse summary::-webkit-details-marker {
   .max-lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .max-lg\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .max-lg\:font-normal {
+    font-weight: 400;
+  }
+
+  .max-lg\:uppercase {
+    text-transform: uppercase;
   }
 
   .max-lg\:text-\[\#262626\] {
@@ -11496,6 +11544,11 @@ details.collapse summary::-webkit-details-marker {
     margin-bottom: 1rem;
   }
 
+  .lg\:my-6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
   .lg\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -11535,6 +11588,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:mb-4 {
     margin-bottom: 1rem;
+  }
+
+  .lg\:mb-5 {
+    margin-bottom: 1.25rem;
   }
 
   .lg\:mb-6 {
@@ -12136,6 +12193,11 @@ details.collapse summary::-webkit-details-marker {
          column-gap: 3rem;
   }
 
+  .lg\:gap-x-6 {
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
+  }
+
   .lg\:gap-y-8 {
     row-gap: 2rem;
   }
@@ -12213,6 +12275,11 @@ details.collapse summary::-webkit-details-marker {
   .lg\:border-\[\#CEA951\] {
     --tw-border-opacity: 1;
     border-color: rgb(206 169 81 / var(--tw-border-opacity));
+  }
+
+  .lg\:border-b-\[\#B0B0B0\] {
+    --tw-border-opacity: 1;
+    border-bottom-color: rgb(176 176 176 / var(--tw-border-opacity));
   }
 
   .lg\:bg-\[\#00000099\] {
