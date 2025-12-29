@@ -2,24 +2,24 @@
   "banners": [
     {
       "image": {
-        "mobile": "https://assets.decocache.com/fossil/5fc4dbee-2bea-409f-9419-35a71f8abcae/Masculinos-mob.png",
-        "desktop": "https://assets.decocache.com/fossil/f2b7d44b-1ad8-4c32-b4d5-cd28221dc3d1/masculino-desk.png",
+        "mobile": "https://assets.decocache.com/fossil/749d919d-e77d-4365-b1c6-744e9b2fa845/masculino-mob.png",
+        "desktop": "https://assets.decocache.com/fossil/0bb32157-877b-4ffa-8072-77fa1b20eca4/masculinos-desk.png",
         "alt": "Banner Relógio Masculino"
       },
       "matcher": "/relogio/masculino*"
     },
     {
       "image": {
-        "desktop": "https://assets.decocache.com/fossil/d6eb9ae2-94a9-4655-92c4-bff31c2b6a08/feminino-desk.png",
-        "mobile": "https://assets.decocache.com/fossil/b1ed29e3-c016-4c1a-b3e1-12034c7a1a1a/femininos-mob.png",
+        "desktop": "https://assets.decocache.com/fossil/cc61194d-0f4a-4483-8c3d-e0cb03ebf5d7/feminino-desk-copiar.png",
+        "mobile": "https://assets.decocache.com/fossil/e3f5603e-41cd-4760-80b8-a95ebce6dcb0/femininos-mob-copiar.png",
         "alt": "Banner Relógios Femininos"
       },
       "matcher": "/relogio/feminino*"
     },
     {
       "image": {
-        "desktop": "https://assets.decocache.com/fossil/efe3e5a0-c066-49d1-9a45-ec1bff444b35/lancamentos-desk.png",
-        "mobile": "https://assets.decocache.com/fossil/31099d83-c23c-4a74-bc47-28c44d456be5/lancamentods.png",
+        "desktop": "https://assets.decocache.com/fossil/b3cd7774-cb8a-4263-8bd5-1eb49c593a04/lancamentos-desk-(1).png",
+        "mobile": "https://assets.decocache.com/fossil/43efddc6-1da7-433a-a27d-cf10b92196da/lancamentos_.png",
         "alt": "Banner Lançamentos"
       },
       "matcher": "/lancamentos*"
@@ -50,8 +50,8 @@
     },
     {
       "image": {
-        "mobile": "https://assets.decocache.com/fossil/6f993d36-ad32-4261-a374-2b0c9741c638/Bannerdepagina_colecoes_mob5.jpg",
-        "desktop": "https://assets.decocache.com/fossil/3f6e0e35-f703-4311-a735-5dbf9df9b7c8/Bannerdepaugina_colecoes_desk5.jpg",
+        "mobile": "https://assets.decocache.com/fossil/ce5163f3-8a3d-4042-a2f7-3154dab92ec8/acessorios.jpg",
+        "desktop": "https://assets.decocache.com/fossil/ac45677d-929b-4781-baba-f68a82834279/acessorios-desk.png",
         "alt": "Banner Semi Joias"
       },
       "matcher": "/acessoriosfemininos*"
