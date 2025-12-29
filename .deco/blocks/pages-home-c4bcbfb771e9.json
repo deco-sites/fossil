@@ -15,6 +15,317 @@
             "__resolveType": "Fashion theme"
           },
           {
+            "__resolveType": "site/sections/Header/Header.tsx",
+            "cart": {
+              "freeShippingObjectiveQuantity": 600
+            },
+            "logo": {
+              "alt": "Glamour logo by deco",
+              "src": "https://assets.decocache.com/fossil/240eaac5-6c7f-4b2f-9a1e-772845e3cf18/fossil-logo-site.svg",
+              "width": 80,
+              "height": 48
+            },
+            "alerts": [
+              "Frete Grátis nas compras acima de R$799",
+              "15% OFF na PRIMEIRA COMPRA com o cupom BEMVINDO15"
+            ],
+            "navItems": {
+              "__resolveType": "navbar"
+            },
+            "products": [],
+            "searchbar": {
+              "name": "q",
+              "action": "/s",
+              "loader": {
+                "data": {
+                  "count": 4,
+                  "__resolveType": "vtex/loaders/intelligentSearch/suggestions.ts"
+                },
+                "__resolveType": "resolved"
+              },
+              "placeholder": "digite sua busca"
+            },
+            "suggestions": {
+              "products": [],
+              "searches": []
+            },
+            "logoPosition": "center",
+            "interval": 4,
+            "isShow": true
+          },
+          {
+            "__resolveType": "site/sections/Banners/HeroBanner.tsx",
+            "desktopImage": "https://assets.decocache.com/fossil/150ff971-93ce-43e9-9afb-d43a263dce42/HeroDesktop.png",
+            "mobileImage": "https://assets.decocache.com/fossil/d8edacc3-3e62-4cb5-a057-18aa737cb6db/HeroMobile.png",
+            "alt": "Coleção de relógios da marca Fóssil",
+            "button": {
+              "label": "Para Ele",
+              "href": "/relogio/masculino?sort=release%3Adesc"
+            },
+            "button2": {
+              "label": "Para Ela",
+              "href": "/relogio/feminino?sort=release%3Adesc"
+            },
+            "title": "UM NOVO COMEÇO",
+            "subtitle": "Novos estilos para começar o ano com boas energias."
+          },
+          {
+            "__resolveType": "site/sections/Banners/CTABanner.tsx",
+            "tag": "RENOVE O ESSENCIAL",
+            "title": "Simples, mas nunca óbvio. Os clássicos certos para atualizar o visual.",
+            "banner": {
+              "label": "Comprar Neutra",
+              "image": "https://assets.decocache.com/fossil/6efe1469-57ca-42d1-826e-6b048d634180/shop-neutral.png",
+              "href": "/s?q=neutra&utmi_pc=search&utmi_cp=neutra&sort=release%3Adesc"
+            },
+            "banner2": {
+              "label": "Comprar Raquel",
+              "image": "https://assets.decocache.com/fossil/a8fecb5d-9ad6-428e-b879-22dcb075346c/shop-raquel.png",
+              "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel&sort=release%3Adesc"
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/NickJonas/nj-collection.tsx",
+              "products": {
+                "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+                "props": {
+                  "simulationBehavior": "default",
+                  "sort": "orders:desc",
+                  "fuzzy": "disabled",
+                  "count": 20,
+                  "query": "fossil"
+                }
+              },
+              "title": "Comprar Best Sellers"
+            }
+          },
+          {
+            "__resolveType": "site/sections/Banners/StylesBanner.tsx",
+            "tag": "HORA DE CELEBRAR",
+            "title": "Modelos feitos para festas, ótimos para se destacar.",
+            "banner": {
+              "label": "Comprar Relógios Festa",
+              "image": "https://assets.decocache.com/fossil/290d2bab-c27f-4855-a8a3-81e3b387f718/SHOP-PARTY-STYLES.jpg",
+              "href": "/s?q=raquel+harlow&utmi_pc=search&utmi_cp=raquel+harlow&sort=release%3Adesc"
+            },
+            "banner2": {
+              "label": "Comprar Relógio Anel",
+              "image": "https://assets.decocache.com/fossil/d5db4164-361d-4f47-b7f1-11a2fe16e416/SHOP-WATCH-RING.jpg",
+              "href": "/s?q=anel&utmi_pc=search&utmi_cp=anel&sort=release%3Adesc"
+            },
+            "floatingImage": "https://assets.decocache.com/fossil/6d329016-c325-4a21-b951-77fd482974c7/floating-watches.png",
+            "floatingArrow": "https://assets.decocache.com/fossil/299b30e0-db0b-48c8-a4ec-dcdbf96c187f/floating-arrow.png",
+            "floatingText": "MIX QUE SURPREENDE"
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Category/CategoryTabs.tsx",
+              "title": "Clássicos & essenciais",
+              "firstTabTitle": "Masculinos",
+              "secondTabTitle": "Femininos",
+              "firstCategoryList": [
+                {
+                  "image": "https://assets.decocache.com/fossil/47e738be-9e35-4c34-8b02-d85fc2e02cc0/machine.png",
+                  "label": "Machine",
+                  "href": "/s?q=machine&utmi_pc=search&utmi_cp=machine&sort=release%3Adesc"
+                },
+                {
+                  "image": "https://assets.decocache.com/fossil/a4075211-f19c-4b1e-a3db-feb9191932bf/everett.png",
+                  "label": "Everett",
+                  "href": "/s?q=everett&utmi_pc=search&utmi_cp=everett&sort=release%3Adesc"
+                },
+                {
+                  "image": "https://assets.decocache.com/fossil/773f4ea9-3a13-4cfc-bea7-be0a9f3a73da/neutra.png",
+                  "label": "Neutra",
+                  "href": "/s?q=neutra&utmi_pc=search&utmi_cp=neutra&sort=release%3Adesc"
+                },
+                {
+                  "image": "https://assets.decocache.com/fossil/dfdd69f7-2141-40d0-82ee-25e1a1a4eccc/townsman.png",
+                  "label": "Townsman",
+                  "href": "/s?q=townsman&utmi_pc=search&utmi_cp=townsman&sort=release%3Adesc"
+                }
+              ],
+              "secondCategoryList": [
+                {
+                  "image": "https://assets.decocache.com/fossil/423b8c3a-f8c4-4358-8a45-b9e8ffda6a95/Harlow.png",
+                  "label": "Harlow",
+                  "href": "/s?q=harlow&utmi_pc=search&utmi_cp=harlow&sort=release%3Adesc"
+                },
+                {
+                  "image": "https://assets.decocache.com/fossil/4c0ae836-7add-4877-9fc9-934a517a3444/Raquel.png",
+                  "label": "Raquel",
+                  "href": "/s?q=raquel&utmi_pc=search&utmi_cp=raquel&sort=release%3Adesc"
+                },
+                {
+                  "image": "https://assets.decocache.com/fossil/e3d37b02-b911-4bfa-8228-106e34200aaf/Carlie.png",
+                  "label": "Carlie",
+                  "href": "/s?q=carlie&utmi_pc=search&utmi_cp=carlie&sort=release%3Adesc"
+                },
+                {
+                  "image": "https://assets.decocache.com/fossil/59937f19-3e52-4ba7-9f6f-a6297e5995ef/WatchRing.png",
+                  "label": "Watch Ring",
+                  "href": "/s?q=watch%20ring&utmi_pc=search&utmi_cp=watch%20ring&sort=release%3Adesc"
+                }
+              ]
+            }
+          },
+          {
+            "__resolveType": "site/sections/Category/CategoryGridRedesign.tsx",
+            "title": "Compre por categoria",
+            "list": [
+              {
+                "image": "https://assets.decocache.com/fossil/bdc78c4c-d2ae-4d36-967d-77152834aa1e/mens.png",
+                "label": "Masculino",
+                "href": "/relogio/masculino?sort=discount%3Adesc"
+              },
+              {
+                "image": "https://assets.decocache.com/fossil/40975a56-d083-4f59-96f2-bf2625215cfe/womens.png",
+                "label": "Feminino",
+                "href": "/relogio/feminino?sort=discount%3Adesc"
+              },
+              {
+                "image": "https://assets.decocache.com/fossil/0949cc1b-6d2d-4590-8373-ab3ea2647634/watches.png",
+                "label": "Relógios",
+                "href": "/lancamentos"
+              },
+              {
+                "image": "https://assets.decocache.com/fossil/ff1295ac-d348-45c8-a64e-1b9767bf857f/couro.png",
+                "label": "Couro",
+                "href": "/acessorios?sort=release%3Adesc"
+              }
+            ]
+          },
+          {
+            "__resolveType": "site/sections/Newsletter/NewsletterModal.tsx",
+            "textSendSucess": "<p></p>",
+            "text": "<p></p>",
+            "colorText": "#000000",
+            "backgrounds": {
+              "desktop": {
+                "initial": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/af17e03d-5d4c-49cb-91a0-3c7d93a6bb1a/banner.png",
+                "width": 932,
+                "height": 687,
+                "success": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/ebd4b476-498b-40b9-aaed-507a5e2dce25/banner.png"
+              },
+              "mobile": {
+                "initial": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/910a99f9-2d55-4262-93de-fcd129f74d71/banner-mobile.png",
+                "success": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/fossil/9c3276a1-0691-4f66-959d-b5469736820f/banner-mobile.png",
+                "width": 393,
+                "height": 555
+              }
+            },
+            "modalSignExpiredDate": 360,
+            "modalCloseExpiredDate": 10,
+            "image": {
+              "desktop": {
+                "src": "https://assets.decocache.com/fossil/ae49855a-adff-4016-b9ba-3ae54a0f711c/Prancheta-1---2025-09-18T144528.409.png",
+                "width": 932,
+                "height": 687
+              },
+              "mobile": {
+                "src": "https://assets.decocache.com/fossil/d30b47ca-524c-4b2d-9cd7-610085a1e4e3/Prancheta-4-(1).png",
+                "width": 393,
+                "height": 555
+              }
+            },
+            "form": {
+              "email": {
+                "placeholder": "Seu e-mail"
+              },
+              "name": {
+                "placeholder": "Seu nome"
+              },
+              "button": {
+                "label": "Inscreva-se"
+              },
+              "phone": {
+                "show": true
+              },
+              "dateOfBirth": {
+                "placeholder": "DD/MM/AAAA"
+              }
+            },
+            "textFieldCupom": "Use o cupom",
+            "textCupom": "BEMVINDO15",
+            "is_active": true,
+            "layout": {
+              "form": {
+                "0": "t",
+                "1": "o",
+                "2": "p",
+                "3": "-",
+                "4": "[",
+                "5": "5",
+                "6": "0",
+                "7": "%",
+                "8": "]",
+                "desktop": {
+                  "top": "60%",
+                  "left": "39px"
+                },
+                "mobile": {
+                  "top": "28%"
+                }
+              },
+              "button": {
+                "tailwind": "bg-primary text-white border border-primary hover:bg-primary/90",
+                "desktop": {
+                  "margin": "0px 0px 0px 70px"
+                }
+              },
+              "text": {
+                "successCouponField": {
+                  "desktop": {
+                    "margin": "81px 0px 8px 16px",
+                    "fontSize": "1.25rem"
+                  },
+                  "tailwind": "font-normal",
+                  "mobile": {
+                    "margin": "117px 0px 0px",
+                    "fontSize": "1.0rem"
+                  }
+                }
+              },
+              "modal": {
+                "maxWidthDesktop": "90%",
+                "maxWidthMobile": "90%",
+                "maxHeightMobile": "350px",
+                "maxHeight": "555px"
+              }
+            },
+            "imageSuccess": {
+              "desktop": {
+                "src": "https://assets.decocache.com/fossil/bafdfafc-3b63-48f9-ae74-643e727edb58/Prancheta-1---2025-09-18T144522.343(1).png",
+                "width": 932,
+                "height": 687
+              },
+              "mobile": {
+                "width": 393,
+                "height": 555,
+                "src": "https://assets.decocache.com/fossil/ff11a13d-a2a9-4825-a65b-b7d7e8af090e/Prancheta-4-1.png"
+              }
+            }
+          },
+          {
+            "__resolveType": "Footer - 04"
+          },
+          {
+            "__resolveType": "My Theme"
+          }
+        ],
+        "rule": {
+          "__resolveType": "2025 Redesign"
+        }
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "Fashion theme"
+          },
+          {
             "__resolveType": "header"
           },
           {

@@ -198,7 +198,7 @@ export default function ChristmasGiftGuide({
 
   return (
     <section class="container max-[1320px]:px-5 max-w-7xl mx-auto">
-      <div class="flex flex-col items-center pt-8 lg:py-16 lg:px-0">
+      <div class="flex flex-col items-center my-8 lg:my-16">
         {isDesktop
           ? (
             <GreenBorder

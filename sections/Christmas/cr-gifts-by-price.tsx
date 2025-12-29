@@ -1,5 +1,7 @@
 export { default as LoadingFallback } from "../../components/LoadingFallback.tsx";
 import type { FnContext } from "@deco/deco";
+import type { ImageWidget } from "apps/admin/widgets.ts";
+import SnowFooter from "../../components/christmas/SnowFooter.tsx";
 import PriceCard, {
   type PriceCard as PriceCardType,
 } from "../../components/christmas/PriceCard.tsx";
@@ -41,6 +43,30 @@ export interface Props {
    * @ignore true
    */
   device?: "mobile" | "tablet" | "desktop";
+
+  /** @title Imagem Neve Desktop */
+  /** @description Imagem decorativa de neve para desktop */
+  snowFooterDesktop?: ImageWidget;
+
+  /** @title Imagem Neve Mobile */
+  /** @description Imagem decorativa de neve para mobile */
+  snowFooterMobile?: ImageWidget;
+
+  /** @title Largura da Neve Desktop */
+  /** @description Largura da imagem de neve para desktop */
+  snowFooterDesktopWidth?: number;
+
+  /** @title Altura da Neve Desktop */
+  /** @description Altura da imagem de neve para desktop */
+  snowFooterDesktopHeight?: number;
+
+  /** @title Largura da Neve Mobile */
+  /** @description Largura da imagem de neve para mobile */
+  snowFooterMobileWidth?: number;
+
+  /** @title Altura da Neve Mobile */
+  /** @description Altura da imagem de neve para mobile */
+  snowFooterMobileHeight?: number;
 }
 
 function CRGiftsByPrice({
@@ -50,12 +76,22 @@ function CRGiftsByPrice({
   text,
   paddingTop,
   paddingBottom,
+  snowFooterDesktop,
+  snowFooterMobile,
+  snowFooterDesktopWidth,
+  snowFooterDesktopHeight,
+  snowFooterMobileWidth,
+  snowFooterMobileHeight,
 }: ReturnType<Awaited<typeof loader>>) {
   if (!cards || cards.length === 0) return null;
 
   const bgClass = backgroundColor === "branco"
     ? "bg-cr-bg-primary"
     : "bg-transparent";
+
+  const snowFooterClass = (snowFooterDesktop && snowFooterMobile)
+    ? "-mt-4 lg:-mt-12 xl:-mt-16 2xl:-mt-20"
+    : "";
 
   return (
     <div class={`relative w-full ${bgClass}`}>
@@ -72,7 +108,7 @@ function CRGiftsByPrice({
       >
         <h2 class="sr-only">{title}</h2>
         {text && (
-          <p class="font-soleil text-sm text-center mx-auto max-w-[570px] mb-6 lg:mb-16 whitespace-pre-line">
+          <p class="font-soleil text-sm text-center mx-auto max-w-[580px] mb-6 lg:mb-16 whitespace-pre-line">
             {text}
           </p>
         )}
@@ -81,6 +117,18 @@ function CRGiftsByPrice({
             <PriceCard key={`price-card-${index}`} {...card} />
           ))}
         </div>
+      </div>
+      <div class={snowFooterClass}>
+        <SnowFooter
+          desktopImage={snowFooterDesktop}
+          mobileImage={snowFooterMobile}
+          desktopWidth={snowFooterDesktopWidth}
+          desktopHeight={snowFooterDesktopHeight}
+          mobileWidth={snowFooterMobileWidth}
+          mobileHeight={snowFooterMobileHeight}
+          class="w-full lg:-mx-4 lg:!w-[calc(100%+32px)]"
+          preload
+        />
       </div>
     </div>
   );
