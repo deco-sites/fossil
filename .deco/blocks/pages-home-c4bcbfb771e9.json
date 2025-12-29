@@ -317,16 +317,7 @@
           }
         ],
         "rule": {
-          "__resolveType": "website/matchers/queryString.ts",
-          "conditions": [
-            {
-              "case": {
-                "type": "Equals",
-                "value": "13138"
-              },
-              "param": "task"
-            }
-          ]
+          "__resolveType": "2025 Redesign"
         }
       },
       {
