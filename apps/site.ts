@@ -9,6 +9,7 @@ import { rgb24 } from "std/fmt/colors.ts";
 import manifest, { Manifest } from "../manifest.gen.ts";
 import { type Section } from "@deco/deco/blocks";
 import { type App as A, type AppContext as AC } from "@deco/deco";
+
 export type Props = {
   /**
    * @title Active Commerce Platform

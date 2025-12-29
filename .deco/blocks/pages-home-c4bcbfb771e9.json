@@ -1295,7 +1295,8 @@
               "categoryCard": {
                 "textPosition": "bottom",
                 "textAlignment": "left"
-              }
+              },
+              "headerAlignment": "center"
             },
             "list": [
               {
