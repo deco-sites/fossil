@@ -1,7 +1,7 @@
 {
   "data": {
     "sort": "price:desc",
-    "fuzzy": "automatic",
+    "fuzzy": "disabled",
     "pageOffset": 1,
     "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
     "selectedFacets": [],
