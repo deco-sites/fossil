@@ -2,8 +2,8 @@
   "banners": [
     {
       "image": {
-        "mobile": "https://assets.decocache.com/fossil/749d919d-e77d-4365-b1c6-744e9b2fa845/masculino-mob.png",
-        "desktop": "https://assets.decocache.com/fossil/0bb32157-877b-4ffa-8072-77fa1b20eca4/masculinos-desk.png",
+        "mobile": "https://assets.decocache.com/fossil/951f33eb-8d05-4d16-b0cc-e5e4677f2ff9/masculino-mob.png",
+        "desktop": "https://assets.decocache.com/fossil/de70e8e4-6728-48b6-99fc-bf69f6b81c38/masculinos-desk.png",
         "alt": "Banner Relógio Masculino"
       },
       "matcher": "/relogio/masculino*"
