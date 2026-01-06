@@ -74,7 +74,7 @@
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
                 "start": "2025-11-29T03:00:00.000Z",
-                "end": "2025-12-03T02:59:00.000Z"
+                "end": "2026-01-11T02:59:00.000Z"
               }
             },
             {
@@ -103,7 +103,7 @@
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
                 "start": "2025-11-29T03:00:00.000Z",
-                "end": "2026-12-03T02:59:00.000Z"
+                "end": "2026-01-11T02:59:00.000Z"
               }
             },
             {
