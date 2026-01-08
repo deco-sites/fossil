@@ -74,7 +74,7 @@
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
                 "start": "2026-01-08T03:00:00.000Z",
-                "end": "2026-02-01T02:59:00.000Z"
+                "end": "2026-01-09T02:59:00.000Z"
               }
             },
             {
@@ -86,11 +86,11 @@
               }
             },
             {
-              "value": "https://assets.decocache.com/fossil/74ea6eb8-a79b-4693-9d2a-c565ff00cf05/fossil-DeSK-connect-livelo.jpg",
+              "value": "https://assets.decocache.com/fossil/a1b589f0-e3ec-446f-b765-cf0a6485b8e8/fossil-DeSK-connect-livelo-(3).jpg",
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
-                "start": "2025-11-10T03:00:00.000Z",
-                "end": "2025-11-11T02:59:00.000Z"
+                "start": "2026-01-09T03:00:00.000Z",
+                "end": "2026-01-10T02:59:00.000Z"
               }
             }
           ]
@@ -103,7 +103,7 @@
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
                 "start": "2026-01-08T03:00:00.000Z",
-                "end": "2026-02-01T02:59:00.000Z"
+                "end": "2026-01-09T02:59:00.000Z"
               }
             },
             {
@@ -115,11 +115,11 @@
               }
             },
             {
-              "value": "https://assets.decocache.com/fossil/38e198e1-cefd-4107-8a3f-8d035f1e36fb/Principal.jpg",
+              "value": "https://assets.decocache.com/fossil/2406e8a4-89b5-4f93-9108-abdaca4cb646/fossil_Livelo_NovoMob.png",
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
-                "start": "2025-11-10T03:00:00.000Z",
-                "end": "2025-11-11T02:59:00.000Z"
+                "start": "2026-01-09T03:00:00.000Z",
+                "end": "2026-01-10T02:59:00.000Z"
               }
             }
           ]
