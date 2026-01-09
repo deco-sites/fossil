@@ -73,8 +73,8 @@
               "value": "https://assets.decocache.com/fossil/7dd893be-de3e-4b93-a207-86836ed8e8d3/Euro_banner_livelo_0707-(2)-(1)-(1).png",
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
-                "start": "2026-01-08T03:00:00.000Z",
-                "end": "2026-01-09T02:59:00.000Z"
+                "start": "2026-01-10T03:00:00.000Z",
+                "end": "2026-02-01T02:59:00.000Z"
               }
             },
             {
@@ -102,8 +102,8 @@
               "value": "https://assets.decocache.com/fossil/f14b0378-b06a-4ec5-b73f-be2294a40178/Euro_banner_livelo_0707_desk.psd-(3)-(2).png",
               "rule": {
                 "__resolveType": "website/matchers/date.ts",
-                "start": "2026-01-08T03:00:00.000Z",
-                "end": "2026-01-09T02:59:00.000Z"
+                "start": "2026-01-10T03:00:00.000Z",
+                "end": "2026-02-01T02:59:00.000Z"
               }
             },
             {
