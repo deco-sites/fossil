@@ -55,8 +55,8 @@
           },
           {
             "__resolveType": "site/sections/Banners/HeroBanner.tsx",
-            "desktopImage": "https://assets.decocache.com/fossil/150ff971-93ce-43e9-9afb-d43a263dce42/HeroDesktop.png",
-            "mobileImage": "https://assets.decocache.com/fossil/d8edacc3-3e62-4cb5-a057-18aa737cb6db/HeroMobile.png",
+            "desktopImage": "https://assets.decocache.com/fossil/289247fb-c356-4f50-9684-f4d3b4077a14/banner-home-desk.jpg",
+            "mobileImage": "https://assets.decocache.com/fossil/f084e740-ef34-4666-ac63-a308bdc62a45/banner-home-mobile-(1).jpg",
             "alt": "Coleção de relógios da marca Fóssil",
             "button": {
               "label": "Para Ele",
